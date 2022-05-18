@@ -1,4 +1,4 @@
-# mmmh63_Movwe
+# Movwe版本控制 / 整合
 目錄: <br>
 [說明](#說明)<br>
 [資料夾結構](#資料夾結構)
@@ -24,4 +24,4 @@ ver1.0 -> ver1.1 ........ ver1.9 -> ver2.0
 2. 檔案和資料夾命名**統一英文小寫底線連接** ex: member_icon.jpg
 3. html檔案先統一放到html資料夾，因為接下來要串接，會用php來當主要執行檔。
 
-last edit 0518_ver1.1_增加readme版本紀錄＿翔
+last edit 0518_ver1.2_修改readmeh1＿翔
