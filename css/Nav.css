@@ -318,4 +318,23 @@
     .top_nav{
         max-width: 1920px;
     }
+    .top_nav_searchbar_box {
+        width: 200px;
+    }
+
+    .left_nav {
+        display: block !important;
+    }
+
+    .left_div {
+        display: block !important;
+    }
+
+    .bars {
+        opacity: 0;
+    }
+
+    .top_nav_movwe_img-2 {
+        transform: scale(1);
+    }
 }
