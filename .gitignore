@@ -1,3 +1,4 @@
+
 # General
 .DS_Store
 .AppleDouble
@@ -50,4 +51,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# videos
+*.mov
+*.mp4
 
