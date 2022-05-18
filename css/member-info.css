@@ -5,6 +5,7 @@
 
 .text__container{
     margin: 0px 20px;
+    overflow: visible;
 }
 
 .d-flex {
@@ -777,6 +778,7 @@ th, td{
         justify-content: flex-start;
         align-items: flex-start;
         margin-left: 80px;
+
     }
     .account-pc-right{
        width: 70%;
