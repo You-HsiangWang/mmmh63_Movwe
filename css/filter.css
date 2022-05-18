@@ -1,0 +1,81 @@
+.index_filter {
+    color: rgba(255, 255, 255, 0.5);
+    /* width: 350px;
+    outline: 1px solid red; */
+}
+.index_filter li, .browse-filter-item{
+    font-size: 12px;
+}
+.ott_platform_title ,.genre_title, .browse-filter-title{
+    font-size: 14px;
+}
+.platform li, .genre_item li{
+    color: rgba(255, 255, 255, 0.3);
+}
+.index_filter a{
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+.index_filter li{
+    list-style: none;
+}
+.ott_platform, .genre, .browse-filter{
+    display: flex;
+    align-items: baseline;
+    padding: 8px 0px;
+}
+.platform li, .genre li, .browse-filter-item{
+    width: 64px;
+    height: 20px;
+    text-align: center;
+    margin: 0px 4px;
+}
+.platform, .genre_item, .browse-filter-items{
+    display: flex;
+}
+.filter_2w:hover{
+    color: #10FFA2;
+}
+.filter_2w:hover a{
+    color: #10FFA2;
+}
+.browse-filter{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* outline: 1px solid yellow; */
+}
+.browse-filters li {
+    white-space: nowrap;
+}
+.browse-filters .browse-filter::-webkit-scrollbar {
+    display: none;
+}
+.browse-filter-title{
+    display: block;
+}
+
+
+/* ---PC版--------------------------- */@media screen and (min-width: 750px) {
+    .index_filter li, .browse-filter-item{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .ott_platform_title ,.genre_title, .browse-filter-title{
+        font-size: 24px;
+    }
+    .platform li, .genre li, .browse-filter-item{
+        width: 90px;
+        height: 30px;
+        text-align: center;
+        margin: 0px 4px;
+    }
+    .ott_platform, .genre, .browse-filter{
+        display: flex;
+        align-items: center;
+        padding: 8px 0px;
+    }
+    .platform, .genre_item, .browse-filter-items{
+        margin-left: 4px;
+        margin-top: 4px;
+    }
+}

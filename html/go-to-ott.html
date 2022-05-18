@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,300&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .go-to-ott-01, .go-to-ott-02, .go-to-ott-03{
+            margin: auto;
+        }
+
+    /* ---go-to-ott-01----------------------------- */
+
+        .go-to-ott-01{
+            width: 400px;
+            height: 380px;
+            outline: 2px solid #FEB73A;
+            border-radius: 4px;
+
+        }
+        .go-to-ott-top{
+            height: 50%;
+        }
+        .go-to-ott-pic{
+            background: url(../img/talls_img/king.jfif);
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            position: relative;
+            border-radius: 4px 4px 0 0;
+        }
+        .ott-ep{
+            position: absolute;
+            right: 5%;
+            top: 85%;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .go-to-ott-bottom{
+            background: #24252A;
+            height: 50%;
+            color: #FFFFFD;
+            font-size: 14px;
+        }
+        .go-to-ott-word{
+            width: 90%;
+            margin: auto;
+            padding-top: 20px;
+        }
+        .go-to-ott-word a{
+            color: #10FFA2;
+            text-decoration: none;
+        }
+        .go-ott-btn{
+            transform: translate(70%, 130%);
+        }
+        
+        .go-ott-btn a{
+            color: #000000;
+            text-decoration: none;
+            padding: 10px 10px;
+            background: #10FFA2;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            width: 20%;
+        }
+        .go-ott-icon{
+            width: 60%;
+        }
+        .go-ott-icon img{
+            width: 100%;
+            transform: translateY(2px);
+        }
+        .go-for-coupon{
+            margin-top: 16px;
+        }
+
+
+/* ---go-to-ott-02----------------------------- */
+        .go-to-ott-02{
+            width: 400px;
+            height: 380px;
+            outline: 2px solid #FEB73A;
+            border-radius: 4px;
+            background: #24252A;
+        }
+        .coupon-logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 32px;
+        }
+        .coupon_logopic{
+            width: 80px;
+            height: 80px;
+        }
+        .coupon_logopic img{
+            width: 100%;
+            height: 100%;
+        }
+        .coupon_logoword{
+            width: 45%;
+        }
+        .coupon_logoword img{
+            width: 100%;
+        }
+        .coupon-thanks{
+            font-size: 14px;
+            color: #FFFFFD;
+            text-align: center;
+            margin-top: 24px;
+        }
+        .with-coupon-bottom{
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        .with-coupon-bottom a{
+            text-decoration: none;
+            color: #FFFFFD;
+            font-size: 14px;
+        }
+        .with-coupon{
+            /* outline: 1px solid red; */
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .with-coupon-word{
+            text-align: center;
+            margin-top: 8px;
+            line-height: 32px;
+        }
+        .with-star{
+            /* outline: 1px solid red; */
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .with-star-pic{
+            width: 52px;
+            height: 52px;
+        }
+        .with-star-pic img{
+            width: 100%;
+        }
+        .with-star-word{
+            text-align: center;
+            margin-top: 7px;
+            line-height: 32px;
+        }
+        .middle-line{
+            width: 1px;
+            height: 154px;
+            background-color: rgba(255, 255, 253, 0.5);
+        }
+
+
+
+/* ---go-to-ott-03----------------------------- */
+        .go-to-ott-03{
+            width: 400px;
+            height: 380px;
+            outline: 2px solid #FEB73A;
+            border-radius: 4px;
+            background: #24252A;
+            font-size: 14px;
+            color: #FFFFFD;
+        }
+        .coupon-logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 32px;
+        }
+        .coupon_logopic{
+            width: 80px;
+            height: 80px;
+        }
+        .coupon_logopic img{
+            width: 100%;
+            height: 100%;
+        }
+        .coupon_logoword{
+            width: 45%;
+        }
+        .coupon_logoword img{
+            width: 100%;
+        }
+        .coupon-thanks{
+            text-align: center;
+            margin-top: 24px;
+        }
+        .with-coupon-center a, .with-coupon-last a{
+            text-decoration: none;
+            color: #10FFA2;
+        }
+        .with-coupon-center, .with-coupon-last{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 24px;
+        }
+    </style>
+</head>
+    
+<body>
+<!-------- go-to-ott-01------------------------->
+
+<div class="go-to-ott-01">
+    <div class="go-to-ott-top">
+        <div class="go-to-ott-pic">
+            <div class="ott-ep">第一集</div>
+        </div>
+    </div>
+    <div class="go-to-ott-bottom">
+        <div class="go-to-ott-word">
+            <div class="go-and-see">
+                前往 <a href="#">KKTV</a> 觀看&nbsp國王排名&nbsp第一集
+            </div>
+            <div class="go-for-coupon">
+                現在登入可獲得點數兌換OTT平台折價券！ 先<a href="#">登入</a>再看   
+            </div>
+            
+        </div>
+        <div class="go-ott-btn">
+                <a href="#">前往<div class="go-ott-icon">
+                    <img src="../img/logo/kktv.svg" alt="">
+                </div></a> 
+            </div>
+    </div>
+</div>
+
+
+<br>
+
+<br>
+<br>
+<br>
+
+<!-------- go-to-ott-02------------------------->
+<div class="go-to-ott-02">
+    <div class="with-coupon-top">
+        <div class="coupon-logo">
+            <div class="coupon_logopic">
+                <img src="../img/logo/logo.png" alt="">
+            </div>
+            <div class="coupon_logoword">
+                <img src="../img/logo/logo_word.png" alt="">
+            </div>
+            
+        </div>
+        <div class="coupon-thanks"> 謝謝您使用MOVWE的服務！</div>
+    </div>
+    <div class="with-coupon-bottom">
+        <div class="with-coupon">
+                <a href="#">
+                    <div class="with-coupon-pic">
+                    <img src="../img/talls_img/coupon-for-ott.svg" alt="">
+                </a>
+            </div>
+            <div class="with-coupon-word">
+                <a href="#">
+                    立即註冊 <br>
+                    獲得OTT平台優券
+                </a>
+            </div>
+        </div>
+        <div class="middle-line"></div>
+        <div class="with-star">
+            <a href="#">
+                <div class="with-star-pic">
+                <img src="../img/icons/start.svg" alt="">
+                </div>
+            </a>
+            <div class="with-star-word">
+                <a href="#">
+                    加入書籤 <br>
+                    隨時搜尋
+                </a>
+            </div>
+        </div>
+
+</div>
+
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<!-------- go-to-ott-03------------------------->
+<div class="go-to-ott-03">
+    <div class="with-coupon-top">
+        <div class="coupon-logo">
+            <div class="coupon_logopic">
+                <img src="../img/logo/logo.png" alt="">
+            </div>
+            <div class="coupon_logoword">
+                <img src="../img/logo/logo_word.png" alt="">
+            </div>
+            
+        </div>
+        <div class="coupon-thanks"> 謝謝您使用MOVWE的服務！</div>
+    </div>
+    <div class="with-coupon-center">
+        <div class="with-coupon">
+            <div class="with-coupon-pic">
+                <img src="../img/talls_img/coupon-for-ott.svg" alt="">
+            </div>
+            <div class="with-coupon-word">
+                恭喜！獲得 <a href="#">10</a> 點！<br>
+                前往 <a href="#">優惠券專區</a> 
+            </div>
+        </div>
+    </div>
+    <div class="with-coupon-last">
+        還沒將MOVWE加入書籤嗎？ <a href="#">現在加入</a> 
+    </div>
+</div>    
+
+
+<script src="../js/jquery-3.6.0.js"></script>
+    
+   
+
+</body>
+
+</html>

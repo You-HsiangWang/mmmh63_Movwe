@@ -1,0 +1,244 @@
+.actor-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.actor_pic{
+    width: 151px;
+    height: 227px;
+    width: 42%;
+    /* outline: 1px solid red; */
+}
+.actor_pic img{
+    width: 100%;
+}
+.actor_name{
+    color: rgb(16, 255, 162);
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 16px;
+    width: 50%;
+}
+.actor_filter_word{
+    width: 95%;
+    margin: auto;
+    margin-top: 24px;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.actor_filter_word a{
+    text-decoration: none;
+    color: #ffffff80;
+}
+
+.actor_all{
+    position: relative;
+    color: rgb(16, 255, 162);
+}
+.actor_all a{
+    color: #10ffa2;
+}
+.actor_all::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180%;
+    height: 1.5px;
+    background-color: rgb(16, 255, 162);
+    transform: translate(-9.5px, 22px);
+}
+.actor_movie, .actor_tvshow, .actor_show{
+    position: relative;
+}
+.actor_movie::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180%;
+    height: 1.5px;
+    background-color: rgba(255, 255, 255, 0);
+    transform: translate(-9.5px, 22px);
+}
+.actor_movie:hover::after{
+    background-color: rgb(16, 255, 162) ;
+}
+.actor_tvshow::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180%;
+    height: 1.5px;
+    background-color: rgba(255, 255, 255, 0);
+    transform: translate(-9.5px, 22px);
+}
+.actor_tvshow:hover::after{
+    background-color: rgb(16, 255, 162) ;
+}
+.actor_show::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180%;
+    height: 1.5px;
+    background-color: rgba(255, 255, 255, 0);
+    transform: translate(-9.5px, 22px);
+}
+.actor_show:hover::after{
+    background-color: rgb(16, 255, 162) ;
+}
+.actor_sho{
+    display: none;
+}
+.actor_underline{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 5px;
+}
+.actor_flims{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.actor_flim{
+    margin-top: 40px;
+}
+.ac_flim_pic{
+    width: 110px;
+    height: 146px;
+}
+.ac_flim_pic img{
+    width: 100%;
+    border-radius: 5px;
+}
+.ac_flim_name{
+    margin-top: 18px;
+    /* outline: 1px solid red; */
+    color: #FFFFFD;
+    font-size: 12px;
+}
+.ac_ott{
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+    /* outline: 1px solid red; */
+}
+.ac_netflix, .ac_iqiyi, .ac_kktv, .ac_friday{
+    width: 20px;
+    height: 20px;
+    /* outline: 1px solid red; */
+    margin-right: 4px;
+}
+.ac_netflix img{
+ width: 104.8%;
+}
+/* ---PC版--------------------------- */
+@media screen and (min-width: 750px) {
+    .actor{
+        display: flex;  
+        justify-content: space-between;
+        align-items: flex-start;
+        /* outline: 1px solid red; */
+    }
+    .actor_top{
+        width: 50%;
+        
+    }
+    .actor_right{
+        width: 50%;
+        margin-top: 60px;
+        margin-right: 100px;
+    }
+    .actor_underline{
+        width: 90%;
+    }
+    .actor_flims{
+        width: 90%;
+    }
+    .actor_pic{
+        position: relative;
+        width: 510px;
+        
+        margin-top: 100px;
+        /* outline: 1px solid blue; */
+    }
+    .actor_pic img{
+        width: 100%;
+    }
+    .actor_name{
+        position: absolute;
+        top: 550px;
+        left: 200px;
+        line-height: 90px;
+        font-size: 110px;
+        
+    }
+    .actor_filter_word{
+        font-size: 24px;
+        /* outline: 1px solid yellow; */
+        
+        justify-content: space-between;
+        
+    }
+    .actor_sho{
+        display: block;
+    }
+    .actor_all::after{
+        height: 2px;
+        transform: translate(-18px, 39px);
+    }
+    
+    .actor_movie::after{
+        height: 1.66px;
+        transform: translate(-18px, 39.6px);
+    }
+    
+    .actor_tvshow::after{
+        width: 170%;
+        height: 1.66px;
+        transform: translate(-25px, 39.6px);
+    }
+    
+    .actor_show::after{
+        height: 1.66px;
+        transform: translate(-18px, 39.6px);
+    }
+    
+    .actor_underline{
+        height: 2px;
+    }
+
+    .ac_flim_pic{
+        width: 224px;
+        height: 316px;
+    }
+    .ac_flim_pic img{
+        border-radius: 10px;
+    }
+    .ac_flim_name{
+        font-size: 14px;
+    }
+    .ac_ott{
+        width: 100%;
+        display: flex;
+        margin-top: 5px;
+        /* outline: 1px solid red; */
+    }
+    .actor_flims{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .ac_netflix, .ac_iqiyi, .ac_kktv, .ac_friday{
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+
+}

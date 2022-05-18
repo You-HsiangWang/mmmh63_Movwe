@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Nav.css">
+    <link rel="stylesheet" href="../css/BS.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,300&family=Noto+Serif+TC:wght@200;300;500;700;900&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/actor_02.css">
+    <title>MOVWE-演員資訊</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* outline: 1px solid greenyellow; */
+        }
+
+        body {
+            background-color: rgb(26, 29, 36);
+            font-family: 'Caveat', cursive;
+            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+
+
+        /* @media screen and (max-width: 500px) {
+            .left_nav {
+                display: none;
+            }
+
+        } */
+
+
+        @media screen and (min-width: 750px) {
+            .text__container {
+            width:94%;
+            height: 100vh;
+            /* background-color: rgb(124, 124, 124); */
+            margin: 80px auto 0 auto;
+
+        }
+
+            .top_nav_searchbar_box {
+                width: 200px;
+            }
+
+            .left_nav {
+                display: block !important;
+            }
+
+            .left_div {
+                display: block !important;
+            }
+
+            .bars {
+                opacity: 0;
+            }
+
+            .top_nav_movwe_img-2 {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!----------nav_top-------------->
+    <div class="top_nav">
+        <div class="top_nav_left">
+            <div class="top_nav_logo">
+                <div class="top_nav_logo_box">
+                    <img class="top_nav_movwe_img-2" src="../img/logo/logo.png" alt="">
+                    <i class="fa-solid fa-bars top_nav_movwe_img bars"></i>
+                </div>
+            </div>
+            <div class="top_nav_movwe">
+                <div class="top_nav_movwe_box">
+                    <img class="top_nav_movwe_img" src="../img/logo/logo_word.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="top_nav_right">
+            <div class="top_nav_searchbar_box">
+                <input type="text" class="top_nav_searchbar" placeholder="輸入片名">
+                <div class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="layout">
+        <!----------nav_left-------------->
+        <div class="left_nav">
+            <div class="left_nav_box">
+            </div>
+            <div class="left_nav_box ">
+                <div class="left_nav_home icon_box_W-H">
+                    <div class="nav_icon_box icon_W-H">
+                        <i class="fa-solid fa-house "></i>
+                    </div>
+                </div>
+                <div class="nav_text_01 ">
+                    <div class="h-60px">首頁 <span class="down">
+                            <!-- <i class="fa-solid fa-angle-down"></i> -->
+                        </span> </div>
+                </div>
+
+            </div>
+            <div class="title_bottom">
+                <div class="title_">首頁</div>
+            </div>
+            <div class="left_nav_box Movie">
+                <div class="left_nav_movie icon_box_W-H">
+                    <div class="nav_icon_box icon_W-H">
+                        <i class="fa-solid fa-film"></i>
+                    </div>
+                    <div class="nav_text_01 ">
+                        <div class="h-60px movie_btn">影劇 <span class="down"><i
+                                    class="fa-solid fa-angle-down"></i></span></div>
+                        <p class="text_a">影劇搜尋器</p>
+                        <p class="text_a">ott上片資訊</p>
+                        <p class="text_a">許願池</p>
+                        <p class="text_a">心理測驗</p>
+                        <p class="text_a">我的片單</p>
+                        <p class="text_a">預約片單</p>
+                        <p class="text_a">許願清單</p>
+                        <p class="text_a">曾經瀏覽</p>
+                        <p class="text_a">ott優惠卷</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="title_bottom">
+                <div class="title_">影劇</div>
+            </div>
+            <div class="left_nav_box Store">
+                <div class="left_nav_store icon_box_W-H">
+                    <div class="nav_icon_box icon_W-H">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <div class="nav_text_01 ">
+                        <div class="h-60px store_btn">商城 <span class="down"><i
+                                    class="fa-solid fa-angle-down"></i></span></div>
+                        <p class="text_a">主打活動</p>
+                        <p class="text_a">商品總覽</p>
+                        <p class="text_a">購物車</p>
+                        <p class="text_a">我的訂單</p>
+                    </div>
+                </div>
+            </div>
+            <div class="title_bottom">
+                <div class="title_">商城</div>
+            </div>
+
+            <div class="left_nav_box Form">
+                <div class="left_nav_forum icon_box_W-H">
+                    <div class="nav_icon_box icon_W-H">
+                        <i class="fa-solid fa-pencil pp"></i>
+                    </div>
+                    <div class="nav_text_01 ">
+                        <div class="h-60px form_btn">文章 <span class="down"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+                        <p class="text_a">文章總覽</p>
+                        <p class="text_a">熱門作者</p>
+                        <p class="text_a">熱門文章</p>
+                        <p class="text_a">我的收藏</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="title_bottom">
+                <div class="title_">文章</div>
+            </div>
+
+            <div class="left_nav_box">
+                <div class="left_nav_member icon_box_W-H">
+                    <div class="nav_icon_box icon_W-H">
+                        <i class="fa-solid fa-user-gear"></i>
+                    </div>
+                    <div class="nav_text_01">
+                        <div class="h-60px">會員 <span class="down">
+                                <!-- <i class="fa-solid fa-angle-down"></i> -->
+                            </span></div>
+                        <p>00</p>
+                        <p>00</p>
+                        <p>00</p>
+                        <p>00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="title_bottom">
+                <div class="title_">會員</div>
+            </div>
+
+            <div class="left_nav_box">
+                <div class="left_nav_discount icon_box_W-H">
+                    <div class="nav_icon_box icon_W-H">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <div class="nav_text_01">
+                        <div class="h-60px">優惠 <span class="down">
+                                <!-- <i class="fa-solid fa-angle-down"></i> -->
+                            </span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="title_bottom">
+                <div class="title_">優惠</div>
+            </div>
+            <div class="left_nav_box">
+                <div class="left_nav_discount icon_box_W-H">
+                    <div class="nav_icon_box icon_W-H">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <div class="nav_text_01">
+                        <div class="h-60px">點數 <span class="down">
+                                <!-- <i class="fa-solid fa-angle-down"></i> -->
+                            </span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="title_bottom">
+                <div class="title_">點數</div>
+            </div>
+
+
+        </div>
+        <div class="left_div"></div>
+
+        <!--------------------------------------------------------------------------->
+        <div class="container">
+
+            <!--banner__container----------------->
+            <div class="banner__container">
+                <!-- <img src="./nav_images/carousel-1.jpeg" alt=""> -->
+            </div>
+
+            <!--text__container------內容放這邊------------->
+            <div class="text__container">
+                <div class="actor">
+                    <div class="actor-top">
+                        <div class="actor_pic">
+                            <img src="../img/talls_img/actor-kong.png" alt="">
+                        </div>
+                        <div class="actor_name">GONG <br> YOO</div>
+                    </div>
+                    <div class="actor_right">
+                        <div class="actor_filter" id="actor_tab">
+                            <ul class="actor_filter_word">
+                                <li class="actor_all"><a href="#ac_all">全部</a></li>
+                                <li class="actor_movie"><a href="#ac_movie">電影</a></li>
+                                <li class="actor_tvshow"><a href="#ac_tv">電視劇</a></li>
+                                <li class="actor_show"><a href="#ac_show">綜藝</a></li>
+                                <li class="actor_sho"><a href="#ac_sho"></a></li>
+                                <li class="actor_sho"><a href="#ac_sho"></a></li> 
+                            </ul>
+                            <div class="actor_underline"></div>
+                        </div>
+                        <div class="actor_bottom">
+                            <div id="ac_all" class="tab-inner">
+                                <!-- <div class= "actor_flims" >
+                                    <div class="actor_flim">
+                                        <div class="ac_flim_pic">
+                                            <img src="./talls_img/ghost.jpg" alt="">
+                                        </div>
+                                        <div class="ac_flim_name">
+                                            全部-孤單又燦爛的..
+                                        </div>
+                                        <div class="ac_ott">
+                                            <div class="ac_netflix">
+                                                <img src="./talls_img/netflix.svg" alt="">
+                                            </div>
+                                            <div class="ac_iqiyi">
+                                                <img src="./talls_img/iqiyi.svg" alt="">
+                                            </div>
+                                            <div class="ac_kktv">
+                                                <img src="./talls_img/kktv.svg" alt="">
+                                            </div>
+                                            <div class="ac_friday">
+                                                <img src="./talls_img/friday.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actor_flim">
+                                        <div class="ac_flim_pic">
+                                            <img src="./talls_img/ghost.jpg" alt="">
+                                        </div>
+                                        <div class="ac_flim_name">
+                                            鬼怪-孤單又燦爛的..
+                                        </div>
+                                        <div class="ac_ott">
+                                            <div class="ac_netflix">
+                                                <img src="./talls_img/netflix.svg" alt="">
+                                            </div>
+                                            <div class="ac_iqiyi">
+                                                <img src="./talls_img/iqiyi.svg" alt="">
+                                            </div>
+                                            <div class="ac_kktv">
+                                                <img src="./talls_img/kktv.svg" alt="">
+                                            </div>
+                                            <div class="ac_friday">
+                                                <img src="./talls_img/friday.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actor_flim">
+                                        <div class="ac_flim_pic">
+                                            <img src="./talls_img/ghost.jpg" alt="">
+                                        </div>
+                                        <div class="ac_flim_name">
+                                            鬼怪-孤單又燦爛的..
+                                        </div>
+                                        <div class="ac_ott">
+                                            <div class="ac_netflix">
+                                                <img src="./talls_img/netflix.svg" alt="">
+                                            </div>
+                                            <div class="ac_iqiyi">
+                                                <img src="./talls_img/iqiyi.svg" alt="">
+                                            </div>
+                                            <div class="ac_kktv">
+                                                <img src="./talls_img/kktv.svg" alt="">
+                                            </div>
+                                            <div class="ac_friday">
+                                                <img src="./talls_img/friday.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div> -->
+                            </div>
+                            <div id="ac_movie" class="tab-inner">
+                                <!-- <div class= "actor_flims" >
+                                    <div class="actor_flim">
+                                        <div class="ac_flim_pic">
+                                            <img src="./talls_img/ghost.jpg" alt="">
+                                        </div>
+                                        <div class="ac_flim_name">
+                                            電影-孤單又燦爛的..
+                                        </div>
+                                        <div class="ac_ott">
+                                            <div class="ac_netflix">
+                                                <img src="./talls_img/netflix.svg" alt="">
+                                            </div>
+                                            <div class="ac_iqiyi">
+                                                <img src="./talls_img/iqiyi.svg" alt="">
+                                            </div>
+                                            <div class="ac_kktv">
+                                                <img src="./talls_img/kktv.svg" alt="">
+                                            </div>
+                                            <div class="ac_friday">
+                                                <img src="./talls_img/friday.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actor_flim">
+                                        <div class="ac_flim_pic">
+                                            <img src="./talls_img/ghost.jpg" alt="">
+                                        </div>
+                                        <div class="ac_flim_name">
+                                            鬼怪-孤單又燦爛的..
+                                        </div>
+                                        <div class="ac_ott">
+                                            <div class="ac_netflix">
+                                                <img src="./talls_img/netflix.svg" alt="">
+                                            </div>
+                                            <div class="ac_iqiyi">
+                                                <img src="./talls_img/iqiyi.svg" alt="">
+                                            </div>
+                                            <div class="ac_kktv">
+                                                <img src="./talls_img/kktv.svg" alt="">
+                                            </div>
+                                            <div class="ac_friday">
+                                                <img src="./talls_img/friday.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actor_flim">
+                                        <div class="ac_flim_pic">
+                                            <img src="./talls_img/ghost.jpg" alt="">
+                                        </div>
+                                        <div class="ac_flim_name">
+                                            鬼怪-孤單又燦爛的..
+                                        </div>
+                                        <div class="ac_ott">
+                                            <div class="ac_netflix">
+                                                <img src="./talls_img/netflix.svg" alt="">
+                                            </div>
+                                            <div class="ac_iqiyi">
+                                                <img src="./talls_img/iqiyi.svg" alt="">
+                                            </div>
+                                            <div class="ac_kktv">
+                                                <img src="./talls_img/kktv.svg" alt="">
+                                            </div>
+                                            <div class="ac_friday">
+                                                <img src="./talls_img/friday.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                </div> -->
+                            </div>
+                            <div id="ac_tv" class="tab-inner">
+                                <!-- <div class= "actor_flims" >
+                                    <div class="actor_flim">
+                                        <div class="ac_flim_pic">
+                                            <img src="./talls_img/ghost.jpg" alt="">
+                                        </div>
+                                        <div class="ac_flim_name">
+                                            電視劇-孤單又燦爛..
+                                        </div>
+                                        <div class="ac_ott">
+                                            <div class="ac_netflix">
+                                                <img src="./talls_img/netflix.svg" alt="">
+                                            </div>
+                                            <div class="ac_iqiyi">
+                                                <img src="./talls_img/iqiyi.svg" alt="">
+                                            </div>
+                                            <div class="ac_kktv">
+                                                <img src="./talls_img/kktv.svg" alt="">
+                                            </div>
+                                            <div class="ac_friday">
+                                                <img src="./talls_img/friday.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actor_flim">
+                                        <div class="ac_flim_pic">
+                                            <img src="./talls_img/ghost.jpg" alt="">
+                                        </div>
+                                        <div class="ac_flim_name">
+                                            鬼怪-孤單又燦爛的..
+                                        </div>
+                                        <div class="ac_ott">
+                                            <div class="ac_netflix">
+                                                <img src="./talls_img/netflix.svg" alt="">
+                                            </div>
+                                            <div class="ac_iqiyi">
+                                                <img src="./talls_img/iqiyi.svg" alt="">
+                                            </div>
+                                            <div class="ac_kktv">
+                                                <img src="./talls_img/kktv.svg" alt="">
+                                            </div>
+                                            <div class="ac_friday">
+                                                <img src="./talls_img/friday.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actor_flim">
+                                        <div class="ac_flim_pic">
+                                            <img src="./talls_img/ghost.jpg" alt="">
+                                        </div>
+                                        <div class="ac_flim_name">
+                                            鬼怪-孤單又燦爛的..
+                                        </div>
+                                        <div class="ac_ott">
+                                            <div class="ac_netflix">
+                                                <img src="./talls_img/netflix.svg" alt="">
+                                            </div>
+                                            <div class="ac_iqiyi">
+                                                <img src="./talls_img/iqiyi.svg" alt="">
+                                            </div>
+                                            <div class="ac_kktv">
+                                                <img src="./talls_img/kktv.svg" alt="">
+                                            </div>
+                                            <div class="ac_friday">
+                                                <img src="./talls_img/friday.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div> -->
+                            </div>
+                            <div id="ac_show" class="tab-inner">
+                                <!-- <div class= "actor_flims" >
+                                    <div class="actor_flim">
+                                        <div class="ac_flim_pic">
+                                            <img src="./talls_img/ghost.jpg" alt="">
+                                        </div>
+                                        <div class="ac_flim_name">
+                                            綜藝-孤單又燦爛的..
+                                        </div>
+                                        <div class="ac_ott">
+                                            <div class="ac_netflix">
+                                                <img src="./talls_img/netflix.svg" alt="">
+                                            </div>
+                                            <div class="ac_iqiyi">
+                                                <img src="./talls_img/iqiyi.svg" alt="">
+                                            </div>
+                                            <div class="ac_kktv">
+                                                <img src="./talls_img/kktv.svg" alt="">
+                                            </div>
+                                            <div class="ac_friday">
+                                                <img src="./talls_img/friday.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actor_flim">
+                                        <div class="ac_flim_pic">
+                                            <img src="./talls_img/ghost.jpg" alt="">
+                                        </div>
+                                        <div class="ac_flim_name">
+                                            鬼怪-孤單又燦爛的..
+                                        </div>
+                                        <div class="ac_ott">
+                                            <div class="ac_netflix">
+                                                <img src="./talls_img/netflix.svg" alt="">
+                                            </div>
+                                            <div class="ac_iqiyi">
+                                                <img src="./talls_img/iqiyi.svg" alt="">
+                                            </div>
+                                            <div class="ac_kktv">
+                                                <img src="./talls_img/kktv.svg" alt="">
+                                            </div>
+                                            <div class="ac_friday">
+                                                <img src="./talls_img/friday.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="actor_flim">
+                                        <div class="ac_flim_pic">
+                                            <img src="./talls_img/ghost.jpg" alt="">
+                                        </div>
+                                        <div class="ac_flim_name">
+                                            鬼怪-孤單又燦爛的..
+                                        </div>
+                                        <div class="ac_ott">
+                                            <div class="ac_netflix">
+                                                <img src="./talls_img/netflix.svg" alt="">
+                                            </div>
+                                            <div class="ac_iqiyi">
+                                                <img src="./talls_img/iqiyi.svg" alt="">
+                                            </div>
+                                            <div class="ac_kktv">
+                                                <img src="./talls_img/kktv.svg" alt="">
+                                            </div>
+                                            <div class="ac_friday">
+                                                <img src="./talls_img/friday.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/Nav.js"></script>
+    <script>
+        $(function(){
+            var $li = $('ul.actor_filter_word li');
+             $($li. eq(0) .addClass('active').find('a').attr('href')).siblings('.tab-inner').hide();
+
+             $li.click(function(){
+                $($(this).find('a').attr('href')).show().siblings('.tab-inner').hide();
+                $(this).addClass('active').siblings('.active').removeClass('active');
+             });  
+        });
+    </script>
+     <script>
+        $('.actor_filter_word a').click(function(){
+            console.log('yap');
+            $(this).css('color','#10ffa2').parent().siblings().children().css('color','#ffffff80')
+        })
+    </script>
+</body>
+
+</html>
