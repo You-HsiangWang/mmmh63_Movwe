@@ -10,7 +10,14 @@ for (i = 0; i < l; i++) {
     /* For each element, create a new DIV that will act as the selected item: */
     a = document.createElement("DIV");
     a.setAttribute("class", "select-selected");
-    a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+    if(document.querySelector('.custom-select').getAttribute('data-page') == 1){
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+    }else if(document.querySelector('.custom-select').getAttribute('data-page') == 2){
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex+1].innerHTML;
+    }else if(document.querySelector('.custom-select').getAttribute('data-page') == 3){
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex+2].innerHTML;
+    };
+    // a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
     x[i].appendChild(a);
     /* For each element, create a new DIV that will contain the option list: */
     b = document.createElement("DIV");
@@ -23,6 +30,12 @@ for (i = 0; i < l; i++) {
         c.addEventListener("click", function (e) {
             /* When an item is clicked, update the original select box,
             and the selected item: */
+            // console.log('hi');
+            const isitPointCoupon = document.querySelector('.custom-select').getAttribute('data-which');
+            console.log(isitPointCoupon);
+            if(isitPointCoupon == 'point'){
+                pointCouponChangepage(this);
+            };
             var y, i, k, s, h, sl, yl;
             s = this.parentNode.parentNode.getElementsByTagName("select")[0];
             sl = s.length;
@@ -80,3 +93,17 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+
+// 專門for couponchange專用
+function pointCouponChangepage(doms){
+    if($(doms).index() == 0){
+        console.log('hi1', $(doms).index());
+        location.href = 'point_index.php';
+    }else if($(doms).index() == 1){
+        console.log('hi2', $(doms).index());
+        location.href = 'point_coupon_exchange.php';
+    }else if($(doms).index() == 2){
+        console.log('hi3', $(doms).index());
+        location.href = 'point_mycoupon.php';
+    };
+};

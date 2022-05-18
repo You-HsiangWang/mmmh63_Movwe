@@ -6,6 +6,10 @@ $title = 'MOVWE-帳戶登入';
 
 ?>
 <?php include __DIR__ . '/parts/movwe_head.php' ?>
+<link rel="stylesheet" href="./css/member_login.css">
+</head>
+
+<body>
 
 <div class="login_bgc_slide">
     <div id="slide">
