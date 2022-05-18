@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo/logo.png">
+    <link href="../fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/member_login.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,300&family=Noto+Serif+TC:wght@200;300;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>MOVWE-登入</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* outline: 1px solid greenyellow; */
+        }
+
+        body {
+            background-color: #1a1d24;
+            font-family: 'Caveat', cursive;
+            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        html {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login_bgc_slide">
+        <div id="slide">
+            <div class="box-1">
+                <img src="../img/banner/search_bg.png" alt="">
+
+            </div>
+            <div class="box-2">
+                <img src="../img/banner/search_bg.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="login_bgc">
+        <div class="login_left_col">
+            <div class="login_logo">
+                <img src="../img/logo/logo.png" alt="">
+                <img src="../img/logo/logo_word.png" alt="">
+            </div>
+        </div>
+        <div class="login_right_col">
+            <div class="login_form_container">
+                <div class="login_form_col login_d_none">
+                    <div class="login_form_email_first">
+                        <h2 class="login_form_title">登入</h2>
+                        <h5 class="login_form_title_discrib">還沒有帳號媽？馬上<a href="">建立帳戶</a></h5>
+                        <form action="" name="login_form_email" method="post" class="login_form_email"
+                            id="loginEmailForm">
+                            <section class="login_form_email_feild">
+                                <div>
+                                    <label for="member_email">電子郵件地址</label>
+                                    <input type="email" name="member_email" id="" placeholder="example@email.com"
+                                        class="member_email" autocomplete="off">
+                                    <div class="member_email_alert login_d_none">
+                                        <p>請輸入電子郵件地址</p>
+                                        <img src="../img/icons/triangle-exclamation.svg" alt="">
+                                    </div>
+                                    <div class="member_email_alert login_d_none">
+                                        <p>找不到與該電子郵件地址相關的帳戶。<span>請</span><br>
+                                            <a href="">尋找您的帳戶</a><span>或</span><a href="">建立新帳戶</a>
+                                        </p>
+                                        <img src="../img/icons/triangle-exclamation.svg" alt="">
+                                    </div>
+                                    <div class="member_email_alert login_d_none">
+                                        <img src="../img/icons/check.svg" alt="">
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="login_form_submit_feild">
+                                <div class="login_form_submit_feild_wrap">
+                                    <button type="submit" class="login_form_one_continue">繼續</button>
+                                    <div class="login_loading login_d_none">
+                                        <div class="box">
+                                            <span><img src="../img/logo/logo.gif" alt=""></span>
+                                            <span><img src="../img/logo/logo.gif" alt=""></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </form>
+                        <div class="login_form_divideline">
+                            <div class="login_form_divideline_parts"></div>
+                            <p>或</p>
+                            <div class="login_form_divideline_parts"></div>
+                        </div>
+                        <div class="login_form_thirdparty_login">
+                            <div class="login_form_thirdparty_btn login_google">
+                                <img src="../img/logo/google.svg" alt="">
+                                <a href="">繼續使用Google</a>
+                            </div>
+                            <div class="login_form_thirdparty_btn login_fb">
+                                <img src="../img/logo/facebook_block.svg" alt="">
+                                <a href="">繼續使用Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login_form_col login_d_none">
+                    <div class="login_form_password_first">
+                        <h2 class="login_form_title">輸入您的密碼</h2>
+                        <!-- 抓資料庫的頭像 -->
+                        <div class="login_form_title_usericon">
+                            <div class="login_form_title_usericon_frame"
+                                style="background-image: url(../img/banner/mall_banner.jpg);">
+                            </div>
+                            <h5 class="login_form_title_discrib">個人帳戶
+                                <br>
+                                example@email.com
+                            </h5>
+                        </div>
+                        <form action="" name="login_form_password" method="post" class="login_form_Password" id="loginPasswordForm">
+                            <section class="login_form_password_feild">
+                                <div>
+                                    <label for="member_password">密碼</label>
+                                    <input type="password" name="member_password" placeholder=">"
+                                        class="member_password" autocomplete="off">
+                                    <div class="member_password_status">
+                                        <i class="fa-solid fa-eye"></i>
+                                        <i class="fa-solid fa-eye-slash login_d_none"></i>
+                                        <i class="fa-solid fa-triangle-exclamation login_d_none"></i>
+                                        <i class="fa-solid fa-check login_d_none"></i>
+                                    </div>
+                                    <div class="member_password_alert">
+                                        <a href="">忘記密碼</a>
+                                    </div>
+                                    <div class="member_password_alert login_d_none">
+                                        <p>密碼錯誤。請再試一次。</p>
+                                    </div>
+                                    <div class="member_password_alert login_d_none">
+                                        <p>請輸入密碼。</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="login_form_keeplogin">
+                                <div class="login_form_keeplogin_btn">
+                                    <div class="login_form_keeplogin_btn_bgc"></div>
+                                    <div class="login_form_keeplogin_btn_toggle"></div>
+                                </div>
+                                <p>保持登入</p>
+                            </section>
+                            <section class="login_form_submit_feild">
+                                <div class="login_form_submit_feild_wrap">
+                                    <button type="submit" class="login_form_one_continue">繼續</button>
+                                    <div class="login_loading login_d_none">
+                                        <div class="box">
+                                            <span><img src="../img/logo/logo.gif" alt=""></span>
+                                            <span><img src="../img/logo/logo.gif" alt=""></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </form>
+                        <div class="login_form_divideline">
+                            <div class="login_form_divideline_full"></div>
+                        </div>
+                        <div class="login_form_backtologin">
+                            <a href="">
+                                登入其他帳戶
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="login_form_col login_d_none">
+                    <div class="login_form_login_success">
+                        <!-- 抓資料庫的頭像 -->
+                        <div class="login_form_title_usericon">
+                            <div class="login_form_title_usericon_frame"
+                                style="background-image: url(../img/banner/mall_banner.jpg);">
+                            </div>
+                            <h2 class="login_form_title">Eric,歡迎回來！</h2>
+                        </div>
+                        <div class="login_form_divideline">
+                            <div class="login_form_divideline_full"></div>
+                        </div>
+                        <div class="login_form_toindex">
+                            <p><span>3秒</span> 後為您跳轉回首頁</p>
+                        </div>
+                        <button>
+                            回首頁
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/member_login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊戲結算</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            color: white;
+            /* outline: 1px solid white; */
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        .cont {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background-image: url(../img/other/background_image.jpeg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .board {
+            width: 70%;
+            /* height: 90%; */
+            z-index: 99;
+            background-color: black;
+            border-radius: 20px;
+            border: 6px solid goldenrod;
+        }
+
+        .bg {
+            position: absolute;
+        }
+
+        .bg img {
+            width: 100%;
+        }
+
+        #bgelif {
+            width: 15%;
+            bottom: 0%;
+            left: 0;
+            animation-name: bgelif;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        #bgelif img {
+            animation-name: bgelifimg;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        #bgprincess {
+            width: 10%;
+            bottom: 4%;
+            left: 0%;
+            /* transform: scaleX(-100%); */
+            animation-name: bgprin;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        #bgprincess img {
+            animation-name: bgprinimg;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes bgprinimg {
+            0% {
+                transform: scaleX(-1);
+            }
+
+            50% {
+                transform: scaleX(-1);
+            }
+
+            51% {
+                transform: scaleX(1);
+            }
+
+            100% {
+                transform: scaleX(1);
+            }
+        }
+
+        @keyframes bgprin {
+            0% {
+                transform: translateX(-40vw);
+            }
+
+            50% {
+                transform: translateX(140vw);
+            }
+
+            51% {
+                transform: translateX(140vw);
+            }
+
+            100% {
+                transform: translateX(-40vw);
+            }
+        }
+
+        @keyframes bgelifimg {
+            0% {
+                transform: scaleX(-1);
+            }
+
+            50% {
+                transform: scaleX(-1);
+            }
+
+            51% {
+                transform: scaleX(1);
+            }
+
+            100% {
+                transform: scaleX(1);
+            }
+        }
+
+        @keyframes bgelif {
+            0% {
+                transform: translateX(-40vw);
+            }
+
+            50% {
+                transform: translateX(140vw);
+            }
+
+            51% {
+                transform: translateX(140vw);
+            }
+
+            100% {
+                transform: translateX(-40vw);
+            }
+        }
+
+        /* ---------------------------- */
+        .d-flex {
+            display: flex;
+        }
+
+        .jc-ai {
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .jc-aif {
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .c-flex {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ji-ac {
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .fg-1 {
+            flex-grow: 1;
+        }
+
+        .w-40 {
+            width: 40%;
+        }
+
+        .w-60 {
+            width: 60%;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+        }
+
+        .mg-t4 {
+            margin-top: 4rem;
+        }
+
+        .mg-b4 {
+            margin-bottom: 4rem;
+        }
+
+        .mg-b2 {
+            margin-bottom: 2rem;
+        }
+
+        .mg-lr2 {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        h3 {
+            font-size: 2.4rem;
+            line-height: 1.5;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        button {
+            all: unset;
+            cursor: pointer;
+            padding: 1.2rem 2.0rem;
+            border-radius: 10px;
+            background-color: #10FFA2;
+            font-size: 1.6rem;
+            color: black;
+        }
+
+        .tags {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .tags span {
+            padding: 1.0rem 1.5rem;
+            border-radius: 10px;
+            font-size: 1.6rem;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 8rem;
+        }
+
+        .title {
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .title h3 {
+            margin: 0 2rem;
+        }
+
+        .board_ott_pic_wrap {
+            padding: 2rem 0;
+        }
+
+        .board_ott_score_wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .board_ott_score {
+            align-items: center;
+            margin: 1.6rem;
+        }
+
+        .board_bar_gray {
+            width: 100%;
+            height: .8rem;
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, .5);
+            overflow: hidden;
+        }
+
+        .board_bar_green {
+            width: 95%;
+            height: 100%;
+            background-color: #10FFA2;
+        }
+
+        .board_ott_score:nth-child(1) .board_bar_green{
+            width: 90%;
+        }
+        .board_ott_score:nth-child(2) .board_bar_green{
+            width: 70%;
+        }
+        .board_ott_score:nth-child(3) .board_bar_green{
+            width: 30%;
+        }
+        .board_ott_score:nth-child(4) .board_bar_green{
+            width: 50%;
+        }
+        .board_ott_score:nth-child(5) .board_bar_green{
+            width: 25%;
+        }
+
+        .board_ott_type {
+            white-space: nowrap;
+            margin: 0 2rem;
+        }
+
+        .board_ott_txt {
+            margin: 0 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="bg" id="bgelif">
+            <img src="../img/other/cat.gif" alt="">
+        </div>
+        <div class="bg" id="bgprincess">
+            <img src="../img/other/princess.png" alt="">
+        </div>
+        <div class="board">
+            <div class="container w-100">
+                <div class="d-flex w-100 jc-aif">
+                    <div class="col w-100">
+                        <div class="title d-flex w-100 mg-b2">
+                            <img src="../img/icons/stick.svg" alt="">
+                            <h3>USER的隱藏性格是...</h3>
+                        </div>
+                        <div class="d-flex">
+                            <div class="">
+                                <img src="../img/other/bean.jpg" alt="" style="width: 100%;">
+                            </div>
+                            <div class="c-flex ji-ac">
+                                <div class="tags mg-lr2 mg-b4">
+                                    <span style="color: #10FFA2; border: 1px solid #10FFA2;">喜劇人格</span>
+                                </div>
+                                <p class="mg-lr2 mg-t4">
+                                    喜歡看喜劇片的你，在思想上更有創意、個性也比較外向、大方。在看電影時，喜歡毫無遮攔的哈哈大笑，相對來說也比較沒心機
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col w-100">
+                        <div class="title d-flex w-100 mg-b2">
+                            <img src="../img/icons/stick.svg" alt="">
+                            <h3>推薦影片</h3>
+                        </div>
+                        <div class="d-flex">
+                            <div class="">
+                                <img src="../img/other/videorecon.jpg" alt="" style="width: 100%;">
+                            </div>
+                            <div class="c-flex">
+                                <div class="tags mg-lr2">
+                                    <span style="color: #FEB73A; border: 1px solid #FEB73A;">電視劇</span>
+                                </div>
+                                <div class="d-flex mg-lr2 mg-b2">
+                                    <img src="../img/logo/friday_s.svg" alt="">
+                                    <img src="../img/logo/iqiyi_s.svg" alt="" class="mg-lr2">
+                                </div>
+                                <p class="mg-lr2 mg-b2">
+                                    加油吧威基基2
+                                </p>
+                                <p class="mg-lr2 mg-b2">
+                                    加油吧威基基2 為韓國JTBC於2019年3月25日起播出的月火連續劇。本劇講述高中同學聚集在「威基基民宿」，挑戰夢想...
+                                </p>
+                                <p class="mg-lr2 mg-b2 d-flex jc-ai">
+                                    <i><img src="../img/icons/start.svg" alt=""></i><span>4.8</span><span
+                                        style="color: rgba(255,255,255,.5); margin-left: 3rem">共16集</span>
+                                </p>
+                                <div class="mg-lr2">
+                                    <button>更多資訊</button>
+                                    <button
+                                        style="color: #10FFA2; background-color: transparent; border: #10FFA2 1px solid;">+加入片單</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col w-100">
+                    <div class="title d-flex w-100">
+                        <img src="../img/icons/stick.svg" alt="">
+                        <h3>最適合USER使用的平台是...</h3>
+                    </div>
+                    <div class="row">
+                        <div class="board_ott_pic_wrap col c-flex w-40">
+                            <img src="../img/logo/netflix_s.svg" alt="" style="width: 15%;">
+                            <img src="../img/other/background_image.jpeg" alt="" style="width: 100%;">
+                        </div>
+                        <div class="board_ott_score_wrap col w-60">
+                            <div class="board_ott_score d-flex">
+                                <p class="board_ott_type w-40">原創獨家影視作品</p>
+                                <div class="board_bar_gray">
+                                    <div class="board_bar_green"></div>
+                                </div>
+                            </div>
+                            <div class="board_ott_score d-flex">
+                                <p class="board_ott_type w-40">歐美影視作品</p>
+                                <div class="board_bar_gray">
+                                    <div class="board_bar_green"></div>
+                                </div>
+                            </div>
+                            <div class="board_ott_score d-flex">
+                                <p class="board_ott_type w-40">日本影視作品</p>
+                                <div class="board_bar_gray">
+                                    <div class="board_bar_green"></div>
+                                </div>
+                            </div>
+                            <div class="board_ott_score d-flex">
+                                <p class="board_ott_type w-40">韓國影視作品</p>
+                                <div class="board_bar_gray">
+                                    <div class="board_bar_green"></div>
+                                </div>
+                            </div>
+                            <div class="board_ott_score d-flex">
+                                <p class="board_ott_type w-40">華語影視作品</p>
+                                <div class="board_bar_gray">
+                                    <div class="board_bar_green"></div>
+                                </div>
+                            </div>
+                            <div class="board_ott_score d-flex">
+                                <p class="board_ott_txt">Netflix 為目前在台灣市占率最高且內容最多元豐富的串流平台，收錄非常多的歐美西洋影劇，還有許多獨家的原創電影戲劇，雖然
+                                    Netflix
+                                    在新上檔電影方面還是有些許弱勢，但是依然瑕不掩瑜。
+                                    收費方式已月繳為主，一個帳號更可支援4個裝置同時觀看，適合喜愛和朋友一同分享的你</p>
+                                <!-- <div class="board_bar_gray">
+                                    <div class="board_bar_green"></div>
+                                </div> -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <button>回首頁</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

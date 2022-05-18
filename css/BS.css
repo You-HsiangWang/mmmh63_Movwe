@@ -1,0 +1,332 @@
+    /* --color-- */
+
+    .bgc {
+        background-color: rgb(26, 29, 36);
+    }
+
+    .green {
+        color: rgb(16, 255, 162);
+    }
+
+    .gold {
+        background-color: rgb(254, 183, 58);
+    }
+
+    /* --------------btn------------------------------------- */
+
+
+    .btn_2w {
+        width: 60px;
+        height: 30px;
+        border-radius: 6px;
+        font-size: 14px;
+        background-color: rgb(16, 255, 162);
+        border: 1px solid rgb(107, 107, 107);
+        color: rgb(0, 0, 0);
+        transition: .1s;
+    }
+
+    .btn_2w:hover {
+        transform: scale(1.05);
+        opacity: .8;
+    }
+
+
+
+    /* ------------------------------------------------------ */
+
+    .btn_3w {
+        width: 75px;
+        height: 30px;
+        border-radius: 6px;
+        font-size: 14px;
+        background-color: rgb(16, 255, 162);
+        border: 1px solid rgb(107, 107, 107);
+        color: rgb(0, 0, 0);
+        transition: .1s;
+    }
+
+    .btn_3w:hover {
+        transform: scale(1.05);
+        opacity: .8;
+    }
+
+
+
+    /* ------------------------------------------------------ */
+
+    .btn_4w {
+        width: 90px;
+        height: 30px;
+        border-radius: 6px;
+        font-size: 14px;
+        background-color: rgb(16, 255, 162);
+        border: 1px solid rgb(107, 107, 107);
+        color: rgb(0, 0, 0);
+        transition: .1s;
+    }
+
+    .btn_4w:hover {
+        transform: scale(1.05);
+        opacity: .8;
+    }
+
+
+
+    /* ------------------------------------------------------ */
+    /* -----------l_btn-------------------------------------- */
+
+    .l_btn_2w {
+        width: 67px;
+        height: 45px;
+        border-radius: 6px;
+        font-size: 20px;
+        background-color: rgb(16, 255, 162);
+        border: 1px solid rgb(107, 107, 107);
+        color: rgb(0, 0, 0);
+        transition: .1s;
+    }
+
+    .l_btn_2w:hover {
+        transform: scale(1.05);
+        opacity: .8;
+    }
+
+
+    /* ------------------------------------------------------ */
+
+    .l_btn_3w {
+        width: 112px;
+        height: 45px;
+        border-radius: 6px;
+        font-size: 20px;
+        background-color: rgb(16, 255, 162);
+        border: 1px solid rgb(107, 107, 107);
+        color: rgb(0, 0, 0);
+        transition: .1s;
+    }
+
+    .l_btn_3w:hover {
+        transform: scale(1.05);
+        opacity: .8;
+    }
+
+
+
+    /* ------------------------------------------------------ */
+
+    .l_btn_4w {
+        width: 135px;
+        height: 45px;
+        border-radius: 6px;
+        font-size: 20px;
+        background-color: rgb(16, 255, 162);
+        border: 1px solid rgb(107, 107, 107);
+        color: rgb(0, 0, 0);
+        transition: .1s;
+    }
+
+    .l_btn_4w:hover {
+        transform: scale(1.05);
+        opacity: .8;
+    }
+
+
+
+
+    /* ------------------------------------------------------ */
+
+
+    .prev_btn_2w {
+        width: 60px;
+        height: 30px;
+        border-radius: 6px;
+        font-size: 14px;
+        background-color: rgba(16, 255, 163, 0);
+        border: 1px solid rgb(16, 255, 162);
+        color: rgb(16, 255, 162);
+        transition: .1s;
+    }
+
+    .prev_btn_2w:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px rgb(16, 255, 162) inset;
+    }
+
+
+
+    /* ------------------------------------------------------ */
+
+    .prev_btn_3w {
+        width: 75px;
+        height: 30px;
+        border-radius: 6px;
+        font-size: 14px;
+        background-color: rgba(16, 255, 163, 0);
+        border: 1px solid rgb(16, 255, 162);
+        color: rgb(16, 255, 162);
+        transition: .1s;
+    }
+
+    .prev_btn_3w:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px rgb(16, 255, 162) inset;
+    }
+
+
+
+    /* ------------------------------------------------------ */
+
+    .prev_btn_4w {
+        width: 90px;
+        height: 30px;
+        border-radius: 6px;
+        font-size: 14px;
+        background-color: rgba(16, 255, 163, 0);
+        border: 1px solid rgb(16, 255, 162);
+        color: rgb(16, 255, 162);
+        transition: .1s;
+    }
+
+    .prev_btn_4w:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px rgb(16, 255, 162) inset;
+    }
+
+
+
+    /* ------------------------------------------------------ */
+    /* -----------l_btn-------------------------------------- */
+
+    .prev_l_btn_2w {
+        width: 67px;
+        height: 45px;
+        border-radius: 6px;
+        font-size: 20px;
+        background-color: rgba(16, 255, 163, 0);
+        border: 1px solid rgb(16, 255, 162);
+        color: rgb(16, 255, 162);
+        transition: .1s;
+    }
+
+    .prev_l_btn_2w:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px rgb(16, 255, 162) inset;
+    }
+
+
+
+    /* ------------------------------------------------------ */
+
+    .prev_l_btn_3w {
+        width: 112px;
+        height: 45px;
+        border-radius: 6px;
+        font-size: 20px;
+        background-color: rgba(16, 255, 163, 0);
+        border: 1px solid rgb(16, 255, 162);
+        color: rgb(16, 255, 162);
+        transition: .1s;
+    }
+
+    .prev_l_btn_3w:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px rgb(16, 255, 162) inset;
+    }
+
+
+
+    /* ------------------------------------------------------ */
+
+    .prev_l_btn_4w {
+        width: 135px;
+        height: 45px;
+        border-radius: 6px;
+        font-size: 20px;
+        background-color: rgba(16, 255, 163, 0);
+        border: 1px solid rgb(16, 255, 162);
+        color: rgb(16, 255, 162);
+        transition: .1s;
+    }
+
+    .prev_l_btn_4w:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px rgb(16, 255, 162) inset;
+    }
+
+    /* ------------------------------------------------------ */
+
+    /* ------filter------------------------------------------------ */
+
+
+    .filter_2w {
+        width: 60px;
+        height: 30px;
+        border-radius: 50px;
+        font-size: 14px;
+        background-color: rgba(107, 107, 107, 0);
+        border: 1px solid rgb(107, 107, 107);
+        color: rgb(107, 107, 107);
+        transition: .1s;
+    }
+
+    .filter_2w:hover {
+        box-shadow: 0 0 5px rgb(16, 255, 162);
+    }
+
+
+
+    /* ------------------------------------------------------ */
+
+    .filter_3w {
+        width: 75px;
+        height: 30px;
+        border-radius: 50px;
+        font-size: 14px;
+        background-color: rgba(107, 107, 107, 0);
+        border: 1px solid rgb(107, 107, 107);
+        color: rgb(107, 107, 107);
+        transition: .1s;
+    }
+
+    .filter_3w:hover {
+        box-shadow: 0 0 5px rgb(16, 255, 162);
+    }
+
+
+
+    /* ------------------------------------------------------ */
+
+    .filter_4w {
+        width: 90px;
+        height: 30px;
+        border-radius: 50px;
+        font-size: 14px;
+        background-color: rgba(107, 107, 107, 0);
+        border: 1px solid rgb(107, 107, 107);
+        color: rgb(107, 107, 107);
+        transition: .1s;
+    }
+
+    .filter_4w:hover {
+        box-shadow: 0 0 5px rgb(16, 255, 162);
+    }
+
+    /* ------------------------------------------------------ */
+    /* ----stick-------------------------------------------------- */
+
+    .stick_desk{
+        width: 8px;
+        height: 32px;
+        background-color: rgb(16, 255, 162);
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+
+    .stick_mobile{
+        width: 4px;
+        height: 20px;
+        background-color: rgb(16, 255, 162);
+        border-radius: 50px;
+        margin-right: 5px;
+    }
