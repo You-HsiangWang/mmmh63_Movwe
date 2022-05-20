@@ -1,6 +1,6 @@
 (() => {
     // 點擊卡片跑出光箱 顯示卡片詳細
-    const ceCoupon = document.querySelectorAll('.point-ce-section_coupon-normal');
+    const ceCoupon = document.querySelectorAll('.point-ce-section_coupon');
     const ceCouponArray = [];
     const ceCouponDetail = document.querySelector('#pointCeSectionLightBox');
 

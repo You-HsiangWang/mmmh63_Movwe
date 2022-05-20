@@ -8,8 +8,6 @@ $title = 'MOVWE-如何累積Movwe點數';
 
 <?php include __DIR__ . '/parts/movwe_head.php' ?>
 <link rel="stylesheet" href="./css/point_nav.css">
-<link rel="stylesheet" href="./css/point_coupon_exchange.css">
-<link rel="stylesheet" href="./css/point_mycoupon.css">
 <link rel="stylesheet" href="./css/point_index.css">
 <link rel="stylesheet" href="./css/dropdown_customstyle.css">
 </head>
@@ -208,7 +206,7 @@ $title = 'MOVWE-如何累積Movwe點數';
                             <p class="point-section_nav-showpoints-points">
                                 <!-- 這邊要抓資料庫中的點數 -->
                                 <span id=""><?php if(isset($_SESSION['admin']['member_loginstatus'])){
-                                    echo $_SESSION['admin']['member_loginstatus'] == 1 ? $_SESSION['admin']['member_points'] : '尚未登入';
+                                    echo $_SESSION['admin']['member_loginstatus'] == 1 ? $_SESSION['admin']['member_points'].' pt' : '尚未登入';
                                 }else{
                                     echo '尚未登入';
                                 }?></span>

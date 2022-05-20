@@ -53,6 +53,23 @@
     display: none;
 }
 
+.point-ce-section_card-roll-limited::-webkit-scrollbar{
+    display: none;
+}
+
+.point-mycp-section_coupon-normal{
+    transition: .3s;
+}
+/* .point-mycp-section_coupon-normal > div{
+    transition: .3s;
+} */
+.point-mycp-section_coupon-normal:hover{
+    transform: scale(1.05);
+}
+/* .point-mycp-section_coupon-normal:hover > div{
+    background-color: #10FFA2;
+} */
+
 .point-mycp-section_coupon-normal{
     width: 50%;
     height: 260px;
@@ -196,6 +213,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 45%;
 }
 .point-section_coupon-detail-card-title-right > div > img{
     width: 30px;

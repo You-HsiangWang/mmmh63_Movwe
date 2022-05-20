@@ -46,6 +46,7 @@ if(!empty($row)){
     $output['passwordsuccess'] = true;
     $output['code'] = 'em200';
     $_SESSION['admin'] = [
+        'member_sid' => $row['member_sid'],
         'member_id' => $row['member_id'],
         'member_email' => $row['member_email'],
         'member_password' => $row['member_password'],
