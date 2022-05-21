@@ -449,28 +449,28 @@ function startFight() {
     // let bosstalkP;
 
     // 定義問題和答案和擊倒的對話
-    const qOne = '問題一：xxxxx?';
-    const qTwo = '問題二：xxxxx?';
-    const qThree = '問題三：xxxxx?';
-    const qFour = '問題四：xxxxx?';
+    const qOne = '問題一：一個閒得發慌的周末,你決定打開電視打發時間這時你會選擇...?';
+    const qTwo = '問題二：看完後你覺得劇情有些差強人意，可能是因為不太熟悉該製作團隊的所設計的效果，通常你比較常觀看哪個地區所製作的影視作品呢?';
+    const qThree = '問題三：這時你打開instagram發現你之前很想看的電影居然已經下映了，這時候你會...?';
+    const qFour = '問題四：於是你決定出門去逛逛，到了超市後發現了一個新出的商品而你非常感興趣，而售價方式有以下3種，你會選擇...?';
     const qEnd = '原來你比我還熱愛看劇啊';
     const qEnd2 = '好吧,我承認，你真的很厲害...';
     const qEnd3 = '是我輸了，我會乖乖離開...';
 
-    const aOneOne = 'A. 1xxxxxx';
-    const aTwoOne = 'A. 2xxxxxx';
-    const aThreeOne = 'A. 3xxxxxx';
-    const aFourOne = 'A. 4xxxxxx';
+    const aOneOne = 'A. 驚險刺激的動作大片';
+    const aTwoOne = 'A. 日本';
+    const aThreeOne = 'A. 瘋狂搜尋片源，下映後就是要趕快看到!';
+    const aFourOne = 'A. 找朋友一起大量團購，平分價格也更優惠';
 
-    const aOneTwo = 'B. 1xxxxxx';
-    const aTwoTwo = 'B. 2xxxxxx';
-    const aThreeTwo = 'B. 3xxxxxx';
-    const aFourTwo = 'B. 4xxxxxx';
+    const aOneTwo = 'B. 笑到不要不要的輕鬆喜劇';
+    const aTwoTwo = 'B. 歐美西洋';
+    const aThreeTwo = 'B. 隨緣吧不急著看，之後有找到片源再看就好';
+    const aFourTwo = 'B. 還要找朋友太麻煩了，自己也能一次買很多';
 
-    const aOneThree = 'C. 1xxxxxx';
-    const aTwoThree = 'C. 2xxxxxx';
-    const aThreeThree = 'C. 3xxxxxx';
-    const aFourThree = 'C. 4xxxxxx';
+    const aOneThree = 'C. 啊是初戀的港覺啊愛情片';
+    const aTwoThree = 'C. 韓國';
+    const aThreeThree = 'C. 沒看也沒關係';
+    const aFourThree = 'C. 因為是新產品，先買單包裝的試試看好了';
 
     const aOneFour = 'D. 1xxxxxx';
     const aTwoFour = 'D. 2xxxxxx';
