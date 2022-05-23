@@ -126,15 +126,20 @@ const moveToSlide = (track, currentSlide, targetSlide) => { //需要理解
 }
 
 const updataDots = (currentDot, targetDot) => {
+
     currentDot.classList.remove('current-slide');
     targetDot.classList.add('current-slide');
+
 }
 
 const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     if (targetIndex === 0) {
+
         prevButton.classList.add('is-hidden');
         nextButton.classList.remove('is-hidden')
+
     } else if (targetIndex === slides.length - 1) {
+
         prevButton.classList.remove('is-hidden');
         nextButton.classList.add('is-hidden');
 
@@ -147,6 +152,8 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
 
 // when I click left, move slide to the left
 prevButton.addEventListener('click', e => {
+
+
     const currentSlide = track.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling;
     const currentDot = dotsNav.querySelector('.current-slide');
@@ -158,6 +165,8 @@ prevButton.addEventListener('click', e => {
     moveToSlide(track, currentSlide, prevSlide);
     updataDots(currentDot, prevDot);
     hideShowArrows(slides, prevButton, nextButton, prevIndex)
+    
+
 })
 
 

@@ -1,0 +1,415 @@
+#myBtn{
+    display: none;
+}
+
+.home_banner_box{
+    width: 100%;
+    filter: brightness(30%);
+}
+.search__bigbox{
+    text-align: center;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: aliceblue;
+}
+
+.search_p1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.search_p2{
+font-size: 16px;
+margin-top: 20px;
+}
+.search_p3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#myInput{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(16, 255, 162);
+background-color: rgba(255, 255, 255, 0.48);
+margin: auto;
+outline-style: none;
+font-size: 20px;
+color:rgb(16, 255, 162);
+text-align: center;
+}
+.search_p4{
+    display: flex;
+    justify-content: space-between;
+}
+
+    .ott__logo{
+        /* border-bottom: 1px solid rgb(16, 255, 162); */
+        display: flex;
+        /* align-items: center; */
+        width: 25%;
+        height: 50px;
+        margin-top: 50px;
+        /* margin-right: 50px; */
+    }
+
+    .ott__logo{
+        width: 100%;
+    }
+    /* ----------------- */
+    .section__home__wish{
+        width: 100%;
+        margin-top: 154px;
+
+    }
+    .home__wish_card{
+        width: 450px;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+    .home__wish_card_box{
+        width: 100%;
+        display: flex;
+    }
+    .wish__img__box{
+        width: 280px;
+    }
+    .wish__img__box img{
+        width: 100%;
+    }
+    .wish__card__left{
+        width: 400px;
+        position: relative;
+
+    }
+    .wish__card__right{
+        width: 48%;
+        position: relative;
+    }
+    .typ__movie{
+        text-align: center;
+        font-size: 14px;
+        width: 60px;
+        color: goldenrod;
+        border:1px solid goldenrod;
+        border-radius: 5px;
+    }
+    .wish__right-2{
+        margin-top: 20px;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+    }
+    .wish__right-3{
+        margin-top: 40px;
+        position: relative;
+    }
+    .line_1{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 3px;
+        background-color: rgba(255, 255, 255, 0.524);
+        /* background-color: rgb(16, 255, 162); */
+    }
+    .line_2{
+        position: absolute;
+        top: 0;
+
+        width: 40%;
+        height: 3px;
+        background-color: rgb(16, 255, 162);
+    }
+
+    .wish__right-4{
+        font-size: 14px;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* ------------------ */
+    .home__discount_card_box{
+        width: 100%;
+    }
+
+    .section__home__discount{
+        width: 100%;
+        display: flex;
+        margin-top: 80px;
+
+    }
+    .home__discount__topbox{
+        display: flex;
+        width: 100%;
+    }
+    .home__discount__bottombox{
+        display: flex;
+    width: 100%;
+    margin-top: 20px;
+    }
+    .discount__left{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        color: rgb(16, 255, 162);
+    }
+    .discount__right{
+        width: 80%;
+    }
+    .discount__title{
+        font-size: 16px;
+        color: goldenrod;
+    }
+    .discount__text{
+        font-size: 14px;
+        color: white;
+        margin-top: 20px;
+    }
+    .discount__post{
+        width: 1000px;
+        height: 100%;
+        display: none;
+    }
+
+
+    .game__box{
+        width: 50%;
+    }
+
+    /* ------------------------------------- */
+
+    .bg_video_box{
+        z-index: 99;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        opacity: .75;
+    }
+    /* ------------------------------------- */
+
+    /*  */
+
+    #wrap {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #cccccc;
+        /* white-space: nowrap; */
+        filter: brightness(100%);
+
+    }
+
+    #slide {
+        width: 100%;
+        /* height: ; */
+        position: absolute;
+        animation: slide 100s linear infinite;
+    }
+
+    .box-1 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .box-2 {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+
+    }
+
+    .box__row01{
+        /* display: flex; */
+        width: 29.8%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        overflow: hidden;
+    }
+
+    .row01__img__box{
+        width: 100%;
+        
+    }
+    .row01__img__box img{
+        width: 100%;
+    }
+
+    .box__row02{
+        /* display: flex; */
+
+        width: 19.8%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        overflow: hidden;
+
+    }
+
+    .row02__img__box{
+        width: 100%;
+
+    }
+    .row02__img__box img{
+        width: 100%;
+    }
+
+
+    .box__row03{
+        /* display: flex; */
+
+        width: 29.8%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        overflow: hidden;
+
+    }
+
+    .row03__img__box{
+        width: 100%;
+    }
+    .row03__img__box img{
+        width: 100%;
+    }
+
+
+    .box__row04{
+        /* display: flex; */
+
+        width: 19.8%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        overflow: hidden;
+
+    }
+
+    .row04__img__box{
+        width: 100%;
+    }
+    .row04__img__box img{
+        width: 100%;
+    }
+
+
+    .home__text__box{
+        width: 100%;
+        height: 100%;
+        /* display: none; */
+    }
+
+    .filter__card{
+        width: 20%;
+        height: 100%;
+    }
+
+    .Filter__text__box{
+        margin-top: 40px;
+            width: 100%;
+            /* height: 100%; */
+
+
+    }
+
+    .filter__card:hover .carousel__images__box{
+        transform: scale(0);
+        opacity: .3;
+        /* border: 5px solid wheat; */
+    }
+    
+    .filter__card:hover .imge__card__information{
+        opacity: 1;
+        transform: scale(1.1) ;
+        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+        z-index: 105;
+        background-color: rgb(26, 29, 36);
+        border-top: 2px solid rgb(16, 255, 162);
+        border-bottom: 2px solid rgb(16, 255, 162);
+        box-shadow: 0 -15px 5px -16px rgb(16, 255, 162);
+    }
+    
+    
+    .filter__card:hover .information__bottom{
+        opacity: 1;
+    }
+    
+    
+    
+    .filter__card:hover .information__video {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    
+    }
+    
+
+        
+
+    @keyframes slide {
+        0% {
+            transform: translateY(0); 
+        } 
+
+        100% { 
+            transform: translateY(-50%); 
+        }
+    }
+
+
+    @media screen and (min-width: 750px) {
+
+        .discount__title{
+            font-size: 25px;
+        }
+
+        .discount__text{
+            font-size: 18px;
+
+        }
+        .discount__left{
+            font-size: 100px;
+        }
+        .discount__post{
+            display: block;
+        }
+
+        .home__text__box{
+            width: 100%;
+            height: 100%;
+            /* display: none; */
+        }
+    
+
+        .filter__card{
+            width: 14%;
+            transition: .5s;
+            padding: 0 2px;
+            border-radius: 10px;
+            margin-right: 10px;
+            position: relative;
+                }
+    
+        .Filter__text__box{
+    
+                width: 100%;
+                /* height: 100%; */
+    
+    
+        }
+    
+    
+
+    }
+
