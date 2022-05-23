@@ -1,10 +1,3 @@
-        // 祐翔 加了一個滾動時navbar會變色的 05/10/2022
-        window.addEventListener('scroll',navcolorChange);
-        function navcolorChange (){
-            const $nccScrollTop = $(window).scrollTop();
-            const $nccTopNav = $('.top_nav');
-            ($nccScrollTop >= 1) ? $nccTopNav.css('background-color', '#1A1D24') : $nccTopNav.css('background-color', 'transparent');
-        };
         // ------------------------------------------------------------
         $(window).resize(function () {
             let leftNav = document.querySelector('.left_nav');
@@ -18,23 +11,39 @@
         let leftNav = document.querySelector('.left_nav');
         let logoButton = document.querySelector('.top_nav_logo');
         let leftDiv = document.querySelector('.left_div')
+        let hamberger = document.querySelector('.bars')
+        let closebtn = document.querySelector('.top_nav_movwe_img-2')
 
 
         leftNav.style.display = 'none'
         leftDiv.style.display = 'none'
+        closebtn.style.display = 'none'
+
         logoButton.addEventListener('click', () => {
             if (leftNav.style.display === 'none') {
                 leftNav.style.display = 'block'
+                hamberger.style.display = 'none'
+                closebtn.style.display = 'block'
+
                 // leftDiv.style.display = 'block'
 
             }
             else {
+                closebtn.style.display = 'none'
                 leftNav.style.display = 'none'
+                hamberger.style.display = 'block'
+
                 // leftDiv.style.display = 'none'
 
             }
 
         })
+
+        
+        closebtn.addEventListener('click', () =>{
+
+        })
+
         // ------------------------------------------------------------
 
         leftNav.style.width = '64px'
@@ -117,3 +126,14 @@
                 FormeHeight.style.height = '40px';
             }
         })
+
+        const carBox = document.querySelector('.car_box')
+        const forumBox = document.querySelector('.forum_box')
+        const MoviesBox = document.querySelector('.Movies_box')
+        const addMoviesBtn = document.querySelector('.add_movies')
+
+        addMoviesBtn.addEventListener('click',()=>{
+            MoviesBox.style.opacity = '1'
+
+        })
+
