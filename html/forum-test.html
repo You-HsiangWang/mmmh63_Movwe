@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../fontawesome-free-6.0.0-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Nav.css">
+    <link rel="stylesheet" href="../css/BS.css">
+    <link rel="stylesheet" href="../css/mystyle-forum.css">
+    <link rel="stylesheet" href="../dropdown_customstyle-main/css/dropdown_customstyle.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,300&family=Noto+Serif+TC:wght@200;300;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <title>Movwe 討論區</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* outline: 1px solid greenyellow; */
+        }
+
+        body {
+            background-color: rgb(26, 29, 36);
+            font-family: 'Caveat', cursive;
+            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+
+
+        /* @media screen and (max-width: 500px) {
+            .left_nav {
+                display: none;
+            }
+
+        } */
+
+        /* 手機版 */
+
+        .text__container__m {
+            display: block;
+        }
+
+        .text__container__pc {
+            display: none;
+        }
+
+        /* 最上面的篩選器 */
+
+        .top-filter {
+            width: 100%;
+        }
+
+        .top-filter-div {
+            width: 100%;
+        }
+
+        .top-filter ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .top-filter ul li a h3 {
+            color: #ffffff80;
+        }
+
+        .top-filter ul li a:hover h3 {
+            color: #10FFA2;
+        }
+
+        /* 大家都在討論 + hashtag */
+
+       .hashtag li a {
+           color: #ffffff80;
+           white-space: nowrap;
+       }
+
+       .filter_4w, .filter_3w, .filter_2w {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-right: 5px;
+       }
+
+       /* 電腦版 */
+        @media screen and (min-width: 750px) {
+            .text__container {
+                width: 94%;
+                height: 100vh;
+                /* background-color: rgb(124, 124, 124); */
+                margin: 80px auto 0 auto;
+
+            }
+
+            .top_nav_searchbar_box {
+                width: 200px;
+            }
+
+            .left_nav {
+                display: block !important;
+            }
+
+            .left_div {
+                display: block !important;
+            }
+
+            .bars {
+                opacity: 0;
+            }
+
+            .top_nav_movwe_img-2 {
+                transform: scale(1);
+            }
+
+            /* 桌機版頁面 */
+
+            .text__container__m {
+                display: none;
+            }
+
+            .text__container__pc {
+                display: flex;
+            }
+
+            /* 最上面filter */
+
+            .top-filter {
+                width: 94%;
+            }
+
+            .top-filter ul {
+                justify-content: flex-start;
+            }
+
+            .top-filter ul li {
+                margin-right: 25px;
+            }
+
+            .top-filter h3 {
+                color: #ffffff80;
+            }
+
+            .top-filter ul li a:hover h3 {
+                color: #10FFA2;
+            }
+
+
+            .d-filter-top {
+                display: flex;
+            }
+
+            .d-filter-top h3 {
+                white-space: nowrap;
+            }
+
+            /* 上面border那條線線 */
+
+            .banner__container {
+                border-top: 1px solid #ffffff80;
+                padding-top: 30px;
+            }
+
+            /* 左邊 */
+
+            .left__container {
+                width: 65%;
+            }
+
+            .left__container ul {
+                width: 100%;
+            }
+
+            /* 大家都在討論 hashtag + 我要發文 */
+
+            .left__container ul li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .left__container ul li a {
+                color: #ffffff80;
+            }
+
+            .left-member-img-wrap {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            .left-member-img-wrap img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+
+            input {
+                width: 100%;
+                height: 30px;
+            }
+
+            svg {
+                margin-right: 5px;
+            }
+
+            .d-filter {
+                color: #1CD8FF;
+                border: 1px solid #1CD8FF;
+                padding: 3px 5px;
+                border-radius: 5px;
+            }
+
+            /* 文章作者圖片 */
+
+            .ar-img-wrap {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            ul.ar-filter li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card-article {
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #ffffff80;
+            }
+
+            /* 文章ㄉ圖片 */
+
+            .card-img-wrap {
+                width: 120px;
+                height: 120px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .card-img-wrap img {
+                width: 100%;
+            }
+
+
+            /* 右邊 */
+
+            .right__side {
+                width: 30%;
+            }
+
+            /* 熱門創作者 */
+
+            .card-creater {
+                text-decoration: none;
+                color: #ffffff80;
+                margin-bottom: 20px;
+            }
+
+            /* 熱門創作者頭像 */
+
+            .member-img-wrap {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 10px;
+            }
+
+            .member-img-wrap img {
+                width: 100%;
+            }
+
+            /* 熱門文章 + 許願池 */
+
+            .hot-article .d-filter,
+            .wish__container .d-filter {
+                color: #FEB73A;
+                border: 1px solid #FEB73A;
+            }
+
+            .hot-article .d-filter a,
+            .wish__container .d-filter a {
+                color: #FEB73A;
+            }
+
+            .article-img-wrap,
+            .wish-img-wrap {
+                border-radius: 20px;
+                overflow: hidden;
+            }
+
+            .article-img-wrap img,
+            .wish-img-wrap img {
+                width: 100%;
+            }
+
+            /* 許願池進度條 */
+
+            .process-bar {
+                position: relative;
+                width: 100%;
+                height: 8px;
+                background-color: #ffffff80;
+                border-radius: 10px;
+            }
+
+            .process-bar::before {
+                content: "";
+                position: absolute;
+                width: 60%;
+                height: 8px;
+                background-color: #10FFA2;
+                border-radius: 10px;
+            }
+
+            /* 商城 */
+
+            .product {
+                width: 180px;
+            }
+
+            .product-img-wrap {
+                width: 180px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .product-img-wrap img {
+                width: 100%;
+            }
+
+            .product h2 {
+                display: inline;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!----------nav_top-------------->
+    <div class="top_nav">
+        <div class="top_nav_left">
+            <div class="top_nav_logo">
+                <div class="top_nav_logo_box">
+                    <img class="top_nav_movwe_img-2" src="./img/nav_images/LOGO.png" alt="">
+                    <i class="fa-solid fa-bars top_nav_movwe_img bars"></i>
+                </div>
+            </div>
+            <div class="top_nav_movwe">
+                <div class="top_nav_movwe_box">
+                    <img class="top_nav_movwe_img" src="./img/nav_images/Movwe-.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="top_nav_right">
+            <div class="top_nav_searchbar_box">
+                <input type="text" class="top_nav_searchbar" placeholder="輸入片名">
+                <div class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+            </div>
+        </div>
+    </div>
+    <div class="layout">
+        <!----------nav_left-------------->
+        <div class="left_nav">
+            <div class="left_nav_box">
+            </div>
+            <div class="left_nav_box ">
+                <div class="left_nav_home icon_box_W-H">
+                    <div class="nav_icon_box icon_W-H">
+                        <i class="fa-solid fa-house "></i>
+                    </div>
+                </div>
+                <div class="nav_text_01 ">
+                    <div class="h-60px">首頁 <span class="down">
+                            <!-- <i class="fa-solid fa-angle-down"></i> -->
+                        </span> </div>
+                </div>
+
+            </div>
+            <div class="title_bottom">
+                <div class="title_">首頁</div>
+            </div>
+            <div class="left_nav_box Movie">
+                <div class="left_nav_movie icon_box_W-H">
+                    <div class="nav_icon_box icon_W-H">
+                        <i class="fa-solid fa-film"></i>
+                    </div>
+                    <div class="nav_text_01 ">
+                        <div class="h-60px movie_btn">影劇 <span class="down"><i
+                                    class="fa-solid fa-angle-down"></i></span></div>
+                        <p class="text_a">影劇搜尋器</p>
+                        <p class="text_a">ott上片資訊</p>
+                        <p class="text_a">許願池</p>
+                        <p class="text_a">心理測驗</p>
+                        <p class="text_a">我的片單</p>
+                        <p class="text_a">預約片單</p>
+                        <p class="text_a">許願清單</p>
+                        <p class="text_a">曾經瀏覽</p>
+                        <p class="text_a">ott優惠卷</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="title_bottom">
+                <div class="title_">影劇</div>
+            </div>
+            <div class="left_nav_box Store">
+                <div class="left_nav_store icon_box_W-H">
+                    <div class="nav_icon_box icon_W-H">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <div class="nav_text_01 ">
+                        <div class="h-60px store_btn">商城 <span class="down"><i
+                                    class="fa-solid fa-angle-down"></i></span></div>
+                        <p class="text_a">主打活動</p>
+                        <p class="text_a">商品總覽</p>
+                        <p class="text_a">購物車</p>
+                        <p class="text_a">我的訂單</p>
+                        < class="text_a">商城優或卷</>
+                    </div>
+                </div>
+            </div>
+            <div class="title_bottom">
+                <div class="title_">商城</div>
+            </div>
+
+            <div class="left_nav_box Form">
+                <div class="left_nav_forum icon_box_W-H">
+                    <div class="nav_icon_box icon_W-H">
+                        <i class="fa-solid fa-pencil pp"></i>
+                    </div>
+                    <div class="nav_text_01 ">
+                        <div class="h-60px form_btn">文章 <span class="down"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+                        <p class="text_a">文章總覽</p>
+                        <p class="text_a">熱門作者</p>
+                        <p class="text_a">熱門文章</p>
+                        <p class="text_a">我的收藏</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="title_bottom">
+                <div class="title_">文章</div>
+            </div>
+
+            <div class="left_nav_box">
+                <div class="left_nav_member icon_box_W-H">
+                    <div class="nav_icon_box icon_W-H">
+                        <i class="fa-solid fa-user-gear"></i>
+                    </div>
+                    <div class="nav_text_01">
+                        <div class="h-60px">會員 <span class="down">
+                                <!-- <i class="fa-solid fa-angle-down"></i> -->
+                            </span></div>
+                        <p>00</p>
+                        <p>00</p>
+                        <p>00</p>
+                        <p>00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="title_bottom">
+                <div class="title_">會員</div>
+            </div>
+
+            <div class="left_nav_box">
+                <div class="left_nav_discount icon_box_W-H">
+                    <div class="nav_icon_box icon_W-H">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <div class="nav_text_01">
+                        <div class="h-60px">優惠 <span class="down">
+                                <!-- <i class="fa-solid fa-angle-down"></i> -->
+                            </span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="title_bottom">
+                <div class="title_">優惠</div>
+            </div>
+            <div class="left_nav_box">
+                <div class="left_nav_discount icon_box_W-H">
+                    <div class="nav_icon_box icon_W-H">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <div class="nav_text_01">
+                        <div class="h-60px">點數 <span class="down">
+                                <!-- <i class="fa-solid fa-angle-down"></i> -->
+                            </span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="title_bottom">
+                <div class="title_">點數</div>
+            </div>
+
+
+        </div>
+        <div class="left_div"></div>
+
+        <!--------------------------------------------------------------------------->
+        <div class="container">
+
+            <!--banner__container----------------->
+            <!-- <div class="banner__container">
+                <img src="./nav_images/carousel-1.jpeg" alt="">
+            </div> -->
+
+            <!-- 最上面的filter -->
+            <div class="top-filter d-flex justify-between align-item-center mt-80 mb-20">
+                <div class="top-filter-div">
+                    <ul class="d-flex">
+                        <li><a href="#">
+                                <h3>全部</h3>
+                            </a></li>
+                        <li><a href="#">
+                                <h3>電影</h3>
+                            </a></li>
+                        <li><a href="#">
+                                <h3>影劇</h3>
+                            </a></li>
+                        <li><a href="#">
+                                <h3>綜藝</h3>
+                            </a></li>
+                        <li><a href="#">
+                                <h3>動畫</h3>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- banner圖 -->
+            <div class="banner__container">
+                <img src="https://www.dramaqueen.com.tw/images/banner/118122f91008bfc6c0b95a0993fd5743d7cd.png" alt="">
+            </div>
+            <!--text__container------內容放這邊------------->
+            <!-- 手機板頁面 -->
+            <div class="text__container text__container__m d-flex justify-between">
+                    <!-- 大家都在討論 + hashtag -->
+                    <div>
+                        <div class="d-flex align-item-center">
+                            <div class="stick_desk"></div>
+                            <h2>大家都在討論</h2>
+                        </div>
+                        <div>
+                            <ul class="d-flex hashtag mt-20">
+                                <li class="filter_4w"><a href="#">#社內相親</a></li>
+                                <li class="filter_4w"><a href="#">#國王排名</a></li>                               
+                                <li class="filter_3w"><a href="#">#松本潤</a></li>
+                                <li class="filter_4w"><a href="#">#愛的迫降</a></li>                         
+                                <li class="filter_2w"><a href="#">#玄彬</a></li>
+                            </ul>
+                            <ul class="d-flex hashtag mt-10">
+                                <li class="filter_3w"><a href="#">#安孝燮</a></li>
+                                <li class="filter_3w"><a href="#">#小栗旬</a></li>
+                                <li class="filter_3w"><a href="#">#金世正</a></li>
+                        
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 我要發文 -->
+                    <div class="d-flex align-item-center mt-30 mb-30">
+                        <div class="left-member-img-wrap mr-20">
+                            <img src="./img/1.jpg" alt="">
+                        </div>
+                        <input type="text" placeholder=" 吉川先貝，我要發文...">
+                    </div>
+                    <!-- 文章 -->
+                    <div class="card-article d-flex justify-between align-item-center">
+                        <!-- 文章內文(左邊) -->
+                        <div class="flex-grow">
+                            <div class="d-flex justify-between align-item-center">
+                                <div class="d-flex">
+                                    <!-- 文章分類 -->
+                                    <a class="d-filter mr-20" href="#">動畫</a>
+                                    <!-- 文章作者 -->
+                                    <div class="d-flex align-item-center">
+                                        <!-- 文章作者圖片 -->
+                                        <div class="ar-img-wrap mr-10">
+                                            <a href="#"><img src="./img/1.jpg" alt=""></a>
+                                        </div>
+                                        <a href="#"><span>翔子學妹</span></a>
+                                    </div>
+                                </div>
+                                <!-- 發文時間 -->
+                                <div><span>5小時前</span></div>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <h2 class="mt-10">國王排名好豪看R~~ k-on超好看der</h2>
+                                </a>
+                                <p class="mt-10">於是開啟我的打鼓之路之後輾轉成為前端工程師</p>
+                            </div>
+                            <!-- 愛心 留言 收藏 hashtag -->
+                            <div class="d-flex justify-between mt-30">
+                                <!-- 包svgㄉdiv -->
+                                <div class="d-flex align-item-center">
+                                    <input type="button" hidden>
+                                    <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1427_26189)">
+                                            <path
+                                                d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z"
+                                                fill="#10FFA2" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1427_26189">
+                                                <rect width="17.5403" height="15" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    </input>
+                                    <span class="mr-20">25</span>
+                                    <input type="button" hidden>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z"
+                                            fill="#10FFA2" />
+                                    </svg>
+                                    </input>
+                                    <span class="mr-20">45</span>
+                                    <input type="button" hidden>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z"
+                                            stroke="#10FFA2" />
+                                        <path
+                                            d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z"
+                                            fill="#10FFA2" />
+                                    </svg>
+                                    </input>
+                                    <span class="mr-20">30</span>
+                                </div>
+                                <div>
+                                    <ul class="d-flex ar-filter">
+                                        <li class="filter_4w"><a href="#">#國王排名</a></li>
+                                        <li class="filter_4w ml-10"><a href="#">#深田詠美</a></li>
+                                        <li class="filter_3w ml-10"><a href="#">#松本潤</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 文章圖(右邊) -->
+                        <div>
+                            <div class="card-img-wrap ml-20">
+                                <img src="./img/1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 熱門創作者 -->
+                    <div>
+                        <div class="d-flex align-item-center">
+                            <div class="stick_desk"></div>
+                            <h2>熱門創作者排行</h2>
+                        </div>
+                        <div class="mt-20 ml-20">
+                            <a href="#" class="card-creater">
+                                <div class="d-flex align-item-center">
+                                    <div class="member-img-wrap">
+                                        <img src="./img/1.jpg" alt="">
+                                    </div>
+                                    <div class="creater">
+                                        <h4>翔子學妹</h4>
+                                        <span>136篇文章</span><br>
+                                        <span>學妹の日劇片單</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 熱門文章 -->
+                    <div class="mt-20">
+                        <div class="d-flex align-item-center">
+                            <div class="stick_desk"></div>
+                            <h2>熱門文章</h2>
+                        </div>
+                        <div class="mt-20">
+                            <div class="hot-article">
+                                <div class="article-img-wrap">
+                                    <img src="./img/2.jpg" alt="">
+                                </div>
+                                <div class="d-flex align-item-center">
+                                    <div class="d-filter mr-10"><a href="#">電視劇</a></div>
+                                    <a href="#">
+                                        <h4>步步驚心哭得我不要不要</h4>
+                                    </a>
+                                </div>
+                                <p>
+                                    李準基、IU主演的《步步驚心麗》已經完結六年了，悲劇的結局卻讓網友始終念念不忘，之前網路也一直有傳言有另外拍現代版結局，最近李準基也首度談到現代版結局走向！
+                                </p>
+                                <div class="d-flex justify-end align-item-center mt-10">
+                                    <input type="button" hidden>
+                                    <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1427_26189)">
+                                            <path
+                                                d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z"
+                                                fill="#10FFA2" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1427_26189">
+                                                <rect width="17.5403" height="15" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    </input>
+                                    <span class="mr-20">25</span>
+                                    <input type="button" hidden>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z"
+                                            fill="#10FFA2" />
+                                    </svg>
+                                    </input>
+                                    <span class="mr-20">45</span>
+                                    <input type="button" hidden>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z"
+                                            stroke="#10FFA2" />
+                                        <path
+                                            d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z"
+                                            fill="#10FFA2" />
+                                    </svg>
+                                    </input>
+                                    <span class="mr-20">30</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 許願池 -->
+                    <div class="mt-20 wish__container">
+                        <div class="d-flex align-item-center ">
+                            <div class="stick_desk"></div>
+                            <h2>就差你一票!</h2>
+                        </div>
+                        <div>
+                            <div class="wish-img-wrap mt-20">
+                                <img src="./img/2.jpg" alt="">
+                            </div>
+                            <div class="d-flex justify-between align-item-center">
+                                <div class="d-flex align-item-center">
+                                    <div class="d-filter mr-10"><a href="#">電視劇</a></div>
+                                    <a href="#">
+                                        <h4>步步驚心</h4>
+                                    </a>
+                                </div>
+                                <div><span>2010</span></div>
+                            </div>
+                            <div class="process-bar mt-10 mb-10"></div>
+                            <div class="d-flex justify-end">
+                                <span>
+                                    已有2094人參與許願
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 商城!! -->
+                    <div>
+                        <div class="d-flex align-item-center mt-20">
+                            <div class="stick_desk"></div>
+                            <h2>限時特惠中!</h2>
+                        </div>
+                        <a href="#">
+                            <div class="product mt-20">
+                                <div class="product-img-wrap">
+                                    <img src="./img/3.jpg" alt="">
+                                </div>
+                                <div class="d-flex justify-between align-item-center">
+                                    <div>
+                                        <h4>波吉卡克 1/7 PVC模型</h4>
+                                        <span>NTD</span>
+                                        <h2>2,350</h2>
+                                    </div>
+                                    <div>
+                                        <svg width="25" height="25" viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.2281 10.4877H3.74425C3.54564 10.4877 3.35517 10.4087 3.21473 10.2683C3.0743 10.1278 2.9954 9.93722 2.9954 9.73855C2.9954 9.53987 3.0743 9.34933 3.21473 9.20884C3.35517 9.06835 3.54564 8.98943 3.74425 8.98943H11.5622C12.063 8.98946 12.5493 8.82214 12.9441 8.51406C13.3389 8.20597 13.6196 7.77477 13.7414 7.28893L14.977 2.42715C15.005 2.31658 15.0075 2.20107 14.9841 2.08942C14.9608 1.97777 14.9122 1.87293 14.8422 1.7829C14.7694 1.69056 14.6758 1.61667 14.5692 1.56722C14.4625 1.51776 14.3457 1.49413 14.2281 1.49824H3.56452C3.41003 1.06109 3.12415 0.682446 2.74608 0.414217C2.36801 0.145987 1.91626 0.0013031 1.45277 0H0.74885C0.550242 0 0.35977 0.0789248 0.219333 0.219412C0.0788964 0.359899 0 0.55044 0 0.749119C0 0.947798 0.0788964 1.13834 0.219333 1.27883C0.35977 1.41931 0.550242 1.49824 0.74885 1.49824H1.45277C1.62383 1.49325 1.79144 1.54703 1.92769 1.65062C2.06394 1.75421 2.16062 1.90136 2.20162 2.06757L2.24655 2.42715L3.54206 7.49119C2.94624 7.51801 2.38547 7.78051 1.98312 8.22093C1.58077 8.66136 1.36979 9.24364 1.3966 9.83968C1.42342 10.4357 1.68582 10.9967 2.12609 11.3992C2.56636 11.8017 3.14843 12.0127 3.74425 11.9859H3.87904C3.75588 12.3254 3.71631 12.6895 3.76367 13.0475C3.81103 13.4055 3.94393 13.7468 4.15111 14.0425C4.3583 14.3382 4.63367 14.5796 4.95391 14.7463C5.27414 14.913 5.62981 15 5.9908 15C6.35178 15 6.70745 14.913 7.02769 14.7463C7.34793 14.5796 7.6233 14.3382 7.83048 14.0425C8.03767 13.7468 8.17057 13.4055 8.21793 13.0475C8.26529 12.6895 8.22571 12.3254 8.10255 11.9859H9.86984C9.74668 12.3254 9.7071 12.6895 9.75446 13.0475C9.80182 13.4055 9.93472 13.7468 10.1419 14.0425C10.3491 14.3382 10.6245 14.5796 10.9447 14.7463C11.2649 14.913 11.6206 15 11.9816 15C12.3426 15 12.6983 14.913 13.0185 14.7463C13.3387 14.5796 13.6141 14.3382 13.8213 14.0425C14.0285 13.7468 14.1614 13.4055 14.2087 13.0475C14.2561 12.6895 14.2165 12.3254 14.0934 11.9859H14.2281C14.4268 11.9859 14.6172 11.907 14.7577 11.7665C14.8981 11.626 14.977 11.4355 14.977 11.2368C14.977 11.0381 14.8981 10.8476 14.7577 10.7071C14.6172 10.5666 14.4268 10.4877 14.2281 10.4877ZM13.2696 2.99648L12.2886 6.92186C12.2476 7.08807 12.1509 7.23522 12.0147 7.33881C11.8784 7.4424 11.7108 7.49617 11.5398 7.49119H5.0772L3.95393 2.99648H13.2696ZM5.9908 13.4841C5.84269 13.4841 5.69791 13.4402 5.57476 13.3579C5.45161 13.2756 5.35563 13.1586 5.29895 13.0217C5.24227 12.8848 5.22744 12.7342 5.25634 12.5889C5.28523 12.4436 5.35655 12.3101 5.46128 12.2053C5.56601 12.1005 5.69944 12.0292 5.8447 12.0003C5.98997 11.9714 6.14054 11.9862 6.27737 12.0429C6.4142 12.0996 6.53116 12.1956 6.61344 12.3188C6.69573 12.442 6.73965 12.5869 6.73965 12.735C6.73965 12.9337 6.66075 13.1242 6.52031 13.2647C6.37988 13.4052 6.18941 13.4841 5.9908 13.4841ZM11.9816 13.4841C11.8335 13.4841 11.6887 13.4402 11.5656 13.3579C11.4424 13.2756 11.3464 13.1586 11.2897 13.0217C11.2331 12.8848 11.2182 12.7342 11.2471 12.5889C11.276 12.4436 11.3473 12.3101 11.4521 12.2053C11.5568 12.1005 11.6902 12.0292 11.8355 12.0003C11.9808 11.9714 12.1313 11.9862 12.2682 12.0429C12.405 12.0996 12.522 12.1956 12.6042 12.3188C12.6865 12.442 12.7304 12.5869 12.7304 12.735C12.7304 12.9337 12.6515 13.1242 12.5111 13.2647C12.3707 13.4052 12.1802 13.4841 11.9816 13.4841Z"
+                                                fill="#10FFA2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+              
+            </div>
+            <!-- 桌機版頁面 -->
+            <div class="text__container text__container__pc d-flex justify-between">
+                <!-- 左邊區塊 -->
+                <div class="left__container">
+                    <!-- 大家都在討論 + hashtag -->
+                    <div>
+                        <div class="d-flex align-item-center">
+                            <div class="stick_desk"></div>
+                            <h2>大家都在討論</h2>
+                        </div>
+                        <ul class="d-flex mt-20">
+                            <li class="filter_4w mr-10"><a href="#">#社內相親</a></li>
+                            <li class="filter_4w mr-10"><a href="#">#國王排名</a></li>
+                            <li class="filter_3w mr-10"><a href="#">#安孝燮</a></li>
+                            <li class="filter_3w mr-10"><a href="#">#小栗旬</a></li>
+                            <li class="filter_3w mr-10"><a href="#">#松本潤</a></li>
+                            <li class="filter_4w mr-10"><a href="#">#愛的迫降</a></li>
+                            <li class="filter_3w mr-10"><a href="#">#金世正</a></li>
+                            <li class="filter_2w mr-10"><a href="#">#玄彬</a></li>
+                        </ul>
+                    </div>
+                    <!-- 我要發文 -->
+                    <div class="d-flex align-item-center mt-30 mb-30">
+                        <div class="left-member-img-wrap mr-20">
+                            <img src="./img/1.jpg" alt="">
+                        </div>
+                        <input type="text" placeholder=" 吉川先貝，我要發文...">
+                    </div>
+                    <!-- 文章 -->
+                    <div class="card-article d-flex justify-between align-item-center">
+                        <!-- 文章內文(左邊) -->
+                        <div class="flex-grow">
+                            <div class="d-flex justify-between align-item-center">
+                                <div class="d-flex">
+                                    <!-- 文章分類 -->
+                                    <a class="d-filter mr-20" href="#">動畫</a>
+                                    <!-- 文章作者 -->
+                                    <div class="d-flex align-item-center">
+                                        <!-- 文章作者圖片 -->
+                                        <div class="ar-img-wrap mr-10">
+                                            <a href="#"><img src="./img/1.jpg" alt=""></a>
+                                        </div>
+                                        <a href="#"><span>翔子學妹</span></a>
+                                    </div>
+                                </div>
+                                <!-- 發文時間 -->
+                                <div><span>5小時前</span></div>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <h2 class="mt-10">國王排名好豪看R~~ k-on超好看der</h2>
+                                </a>
+                                <p class="mt-10">於是開啟我的打鼓之路之後輾轉成為前端工程師</p>
+                            </div>
+                            <!-- 愛心 留言 收藏 hashtag -->
+                            <div class="d-flex justify-between mt-30">
+                                <!-- 包svgㄉdiv -->
+                                <div class="d-flex align-item-center">
+                                    <input type="button" hidden>
+                                    <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1427_26189)">
+                                            <path
+                                                d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z"
+                                                fill="#10FFA2" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1427_26189">
+                                                <rect width="17.5403" height="15" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    </input>
+                                    <span class="mr-20">25</span>
+                                    <input type="button" hidden>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z"
+                                            fill="#10FFA2" />
+                                    </svg>
+                                    </input>
+                                    <span class="mr-20">45</span>
+                                    <input type="button" hidden>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z"
+                                            stroke="#10FFA2" />
+                                        <path
+                                            d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z"
+                                            fill="#10FFA2" />
+                                    </svg>
+                                    </input>
+                                    <span class="mr-20">30</span>
+                                </div>
+                                <div>
+                                    <ul class="d-flex ar-filter">
+                                        <li class="filter_4w"><a href="#">#國王排名</a></li>
+                                        <li class="filter_4w ml-10"><a href="#">#深田詠美</a></li>
+                                        <li class="filter_3w ml-10"><a href="#">#松本潤</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 文章圖(右邊) -->
+                        <div>
+                            <div class="card-img-wrap ml-20">
+                                <img src="./img/1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右邊區塊 -->
+                <div class="right__side">
+                    <!-- 熱門創作者 -->
+                    <div>
+                        <div class="d-flex align-item-center">
+                            <div class="stick_desk"></div>
+                            <h2>熱門創作者排行</h2>
+                        </div>
+                        <div class="mt-20 ml-20">
+                            <a href="#" class="card-creater">
+                                <div class="d-flex align-item-center">
+                                    <div class="member-img-wrap">
+                                        <img src="./img/1.jpg" alt="">
+                                    </div>
+                                    <div class="creater">
+                                        <h4>翔子學妹</h4>
+                                        <span>136篇文章</span><br>
+                                        <span>學妹の日劇片單</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 熱門文章 -->
+                    <div class="mt-20">
+                        <div class="d-flex align-item-center">
+                            <div class="stick_desk"></div>
+                            <h2>熱門文章</h2>
+                        </div>
+                        <div class="mt-20">
+                            <div class="hot-article">
+                                <div class="article-img-wrap">
+                                    <img src="./img/2.jpg" alt="">
+                                </div>
+                                <div class="d-flex align-item-center">
+                                    <div class="d-filter mr-10"><a href="#">電視劇</a></div>
+                                    <a href="#">
+                                        <h4>步步驚心哭得我不要不要</h4>
+                                    </a>
+                                </div>
+                                <p>
+                                    李準基、IU主演的《步步驚心麗》已經完結六年了，悲劇的結局卻讓網友始終念念不忘，之前網路也一直有傳言有另外拍現代版結局，最近李準基也首度談到現代版結局走向！
+                                </p>
+                                <div class="d-flex justify-end align-item-center mt-10">
+                                    <input type="button" hidden>
+                                    <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1427_26189)">
+                                            <path
+                                                d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z"
+                                                fill="#10FFA2" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1427_26189">
+                                                <rect width="17.5403" height="15" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    </input>
+                                    <span class="mr-20">25</span>
+                                    <input type="button" hidden>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z"
+                                            fill="#10FFA2" />
+                                    </svg>
+                                    </input>
+                                    <span class="mr-20">45</span>
+                                    <input type="button" hidden>
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z"
+                                            stroke="#10FFA2" />
+                                        <path
+                                            d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z"
+                                            fill="#10FFA2" />
+                                    </svg>
+                                    </input>
+                                    <span class="mr-20">30</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 許願池 -->
+                    <div class="mt-20 wish__container">
+                        <div class="d-flex align-item-center ">
+                            <div class="stick_desk"></div>
+                            <h2>就差你一票!</h2>
+                        </div>
+                        <div>
+                            <div class="wish-img-wrap mt-20">
+                                <img src="./img/2.jpg" alt="">
+                            </div>
+                            <div class="d-flex justify-between align-item-center">
+                                <div class="d-flex align-item-center">
+                                    <div class="d-filter mr-10"><a href="#">電視劇</a></div>
+                                    <a href="#">
+                                        <h4>步步驚心</h4>
+                                    </a>
+                                </div>
+                                <div><span>2010</span></div>
+                            </div>
+                            <div class="process-bar mt-10 mb-10"></div>
+                            <div class="d-flex justify-end">
+                                <span>
+                                    已有2094人參與許願
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 商城!! -->
+                    <div>
+                        <div class="d-flex align-item-center mt-20">
+                            <div class="stick_desk"></div>
+                            <h2>限時特惠中!</h2>
+                        </div>
+                        <a href="#">
+                            <div class="product mt-20">
+                                <div class="product-img-wrap">
+                                    <img src="./img/3.jpg" alt="">
+                                </div>
+                                <div class="d-flex justify-between align-item-center">
+                                    <div>
+                                        <h4>波吉卡克 1/7 PVC模型</h4>
+                                        <span>NTD</span>
+                                        <h2>2,350</h2>
+                                    </div>
+                                    <div>
+                                        <svg width="25" height="25" viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.2281 10.4877H3.74425C3.54564 10.4877 3.35517 10.4087 3.21473 10.2683C3.0743 10.1278 2.9954 9.93722 2.9954 9.73855C2.9954 9.53987 3.0743 9.34933 3.21473 9.20884C3.35517 9.06835 3.54564 8.98943 3.74425 8.98943H11.5622C12.063 8.98946 12.5493 8.82214 12.9441 8.51406C13.3389 8.20597 13.6196 7.77477 13.7414 7.28893L14.977 2.42715C15.005 2.31658 15.0075 2.20107 14.9841 2.08942C14.9608 1.97777 14.9122 1.87293 14.8422 1.7829C14.7694 1.69056 14.6758 1.61667 14.5692 1.56722C14.4625 1.51776 14.3457 1.49413 14.2281 1.49824H3.56452C3.41003 1.06109 3.12415 0.682446 2.74608 0.414217C2.36801 0.145987 1.91626 0.0013031 1.45277 0H0.74885C0.550242 0 0.35977 0.0789248 0.219333 0.219412C0.0788964 0.359899 0 0.55044 0 0.749119C0 0.947798 0.0788964 1.13834 0.219333 1.27883C0.35977 1.41931 0.550242 1.49824 0.74885 1.49824H1.45277C1.62383 1.49325 1.79144 1.54703 1.92769 1.65062C2.06394 1.75421 2.16062 1.90136 2.20162 2.06757L2.24655 2.42715L3.54206 7.49119C2.94624 7.51801 2.38547 7.78051 1.98312 8.22093C1.58077 8.66136 1.36979 9.24364 1.3966 9.83968C1.42342 10.4357 1.68582 10.9967 2.12609 11.3992C2.56636 11.8017 3.14843 12.0127 3.74425 11.9859H3.87904C3.75588 12.3254 3.71631 12.6895 3.76367 13.0475C3.81103 13.4055 3.94393 13.7468 4.15111 14.0425C4.3583 14.3382 4.63367 14.5796 4.95391 14.7463C5.27414 14.913 5.62981 15 5.9908 15C6.35178 15 6.70745 14.913 7.02769 14.7463C7.34793 14.5796 7.6233 14.3382 7.83048 14.0425C8.03767 13.7468 8.17057 13.4055 8.21793 13.0475C8.26529 12.6895 8.22571 12.3254 8.10255 11.9859H9.86984C9.74668 12.3254 9.7071 12.6895 9.75446 13.0475C9.80182 13.4055 9.93472 13.7468 10.1419 14.0425C10.3491 14.3382 10.6245 14.5796 10.9447 14.7463C11.2649 14.913 11.6206 15 11.9816 15C12.3426 15 12.6983 14.913 13.0185 14.7463C13.3387 14.5796 13.6141 14.3382 13.8213 14.0425C14.0285 13.7468 14.1614 13.4055 14.2087 13.0475C14.2561 12.6895 14.2165 12.3254 14.0934 11.9859H14.2281C14.4268 11.9859 14.6172 11.907 14.7577 11.7665C14.8981 11.626 14.977 11.4355 14.977 11.2368C14.977 11.0381 14.8981 10.8476 14.7577 10.7071C14.6172 10.5666 14.4268 10.4877 14.2281 10.4877ZM13.2696 2.99648L12.2886 6.92186C12.2476 7.08807 12.1509 7.23522 12.0147 7.33881C11.8784 7.4424 11.7108 7.49617 11.5398 7.49119H5.0772L3.95393 2.99648H13.2696ZM5.9908 13.4841C5.84269 13.4841 5.69791 13.4402 5.57476 13.3579C5.45161 13.2756 5.35563 13.1586 5.29895 13.0217C5.24227 12.8848 5.22744 12.7342 5.25634 12.5889C5.28523 12.4436 5.35655 12.3101 5.46128 12.2053C5.56601 12.1005 5.69944 12.0292 5.8447 12.0003C5.98997 11.9714 6.14054 11.9862 6.27737 12.0429C6.4142 12.0996 6.53116 12.1956 6.61344 12.3188C6.69573 12.442 6.73965 12.5869 6.73965 12.735C6.73965 12.9337 6.66075 13.1242 6.52031 13.2647C6.37988 13.4052 6.18941 13.4841 5.9908 13.4841ZM11.9816 13.4841C11.8335 13.4841 11.6887 13.4402 11.5656 13.3579C11.4424 13.2756 11.3464 13.1586 11.2897 13.0217C11.2331 12.8848 11.2182 12.7342 11.2471 12.5889C11.276 12.4436 11.3473 12.3101 11.4521 12.2053C11.5568 12.1005 11.6902 12.0292 11.8355 12.0003C11.9808 11.9714 12.1313 11.9862 12.2682 12.0429C12.405 12.0996 12.522 12.1956 12.6042 12.3188C12.6865 12.442 12.7304 12.5869 12.7304 12.735C12.7304 12.9337 12.6515 13.1242 12.5111 13.2647C12.3707 13.4052 12.1802 13.4841 11.9816 13.4841Z"
+                                                fill="#10FFA2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./dropdown_customstyle-main/js/dropdown_customstyle.js"></script>
+    <script src="./js/Nav.js"></script>
+
+    <script>
+
+
+
+    </script>
+
+</body>
+
+</html>
