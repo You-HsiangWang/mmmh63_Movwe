@@ -1,0 +1,269 @@
+.carousel__big__box__9{
+    width: 100%;
+    margin-top: 160px;
+
+}
+.carousel__title__section__9{
+    display: flex;
+}
+
+
+.carousel__title__9{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+color: white;
+
+
+}
+
+.carousle__button__9 {
+    width: 5%;
+    height: 150%;
+    background-color: rgb(26, 29, 36);
+    z-index: 90;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.5);
+}
+
+
+.side__left__9 {
+    width: 100%;
+    height: 100%;
+    color: antiquewhite;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    transform: translateX(-10px);
+}
+.side__right__9 {
+    width: 100%;
+    height: 100%;
+    color: antiquewhite;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    /* position: absolute;
+    top: 50%; */
+    /* transform: translateY(-50%); */
+}
+
+.side__left__9:hover .left__icon__9{
+transform: scale(1.2);
+color:rgb(16, 255, 162) ;
+}
+
+.side__right__9:hover .right__icon__9{
+    transform: scale(1.2);
+    color:rgb(16, 255, 162) ;
+    }
+    
+
+.left__icon__9{
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.52);
+    transition: .1s;
+}
+
+
+.right__icon__9{
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.52);
+    transition: .1s;
+
+}
+
+
+.carousel__button--left__9 {
+    position: absolute;
+    left: -5%;
+    top: 51%;
+    transform: translateY(-50%);
+    /* border-radius: 0 10px 10px 0; */
+}
+
+
+.carousel__button--right__9 {
+    position: absolute;
+    right: -5%;
+    top: 51.1%;
+    transform: translateY(-50%);
+    /* border-radius: 10px 0 0 10px; */
+
+}
+
+
+.carousel__9 {
+    position: relative;
+    /* height: 600px; */
+    width: 100%;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+.carousel__images__9 {
+    width: 100%;
+    border-radius: 10px;
+    /* height: 500px; */
+}
+
+.carousel__track-container__9 {
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 10px;
+    height: 360px;
+
+    /* overflow-x: hidden; */
+    /* background-color: rgb(146, 255, 52); */
+    /* padding: 10px; */
+    /* height: 100%; */
+}
+
+.carousel__track__9 {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: .5s;
+}
+
+.carousel__slide__9 {
+    /* display: flex; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__nav__9 {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.carousel__indicator__9 {
+
+    width: 25px;
+    height: 5px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.carousel__indicator__9.current-slide__9 {
+    background-color: rgba(0, 0, 0, 0.499);
+}
+
+.is-hidden__9 {
+    display: none;
+}
+
+.image__box__9 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image__card__9 {
+    width: 33.3%;
+    transition: .5s;
+    padding: 0 2px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.image__card__9:hover {
+    z-index: 99;
+    transform: scale(1.15);
+    /* border: 5px solid wheat; */
+}
+
+
+
+.card4__9 {
+    display: none;
+}
+
+.card5__9 {
+    display: none;
+}
+
+.card6__9 {
+    display: none;
+}
+
+.card7__9 {
+    display: none;
+}
+
+/* -----card_text------------ */
+
+
+.movie__name__9{
+    color: white;
+    font-size: 14px;
+    padding: 0px 0;
+}
+.movie__icons__9{
+    display: flex;
+}
+.movie__icon__box__9{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+
+@media screen and (min-width: 750px) {
+
+    .image__card__9 {
+        width: 25%;
+        padding: 3px;
+    }
+
+    .card4__9 {
+        display: block;
+    }
+
+    .card5__9 {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .card6__9 {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+    .card7__9 {
+        display: block;
+    }
+
+    .movie__name__9{
+        color: white;
+        font-size: 16px;
+        padding: 5px 0;
+    }
+    .movie__icons__9{
+        display: flex;
+    }
+    .movie__icon__box__9{
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+    
+}

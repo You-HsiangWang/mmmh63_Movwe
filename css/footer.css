@@ -17,9 +17,11 @@
     justify-content:center;
 }
 .footer__container{
-    margin-top: 60vh;
+    margin-top: 100px;
     width: 100%;
     font-size: 14px;
+    position: absolute;
+    top: 100%;
 }
 .foot{
     display: flex;
@@ -74,7 +76,7 @@ margin-top: 50px;
 
 }
 .bo{
-border-bottom: 1px solid#10FFA2;
+border-bottom: 1px solid #10FFA2;
 margin-top: 20px;
 }
 .la{

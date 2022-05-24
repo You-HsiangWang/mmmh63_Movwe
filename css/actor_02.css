@@ -1,17 +1,35 @@
+.actor__right__container{
+    height: 90vh;
+width: 60%;
+overflow: hidden;
+display: flex;
+justify-content: center;
+}
+.go_to_ott_box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .actor-top{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .actor_pic{
     width: 151px;
     height: 227px;
     width: 42%;
     /* outline: 1px solid red; */
 }
+
 .actor_pic img{
     width: 100%;
 }
+
 .actor_name{
     color: rgb(16, 255, 162);
     font-size: 50px;
@@ -19,6 +37,7 @@
     margin-left: 16px;
     width: 50%;
 }
+
 .actor_filter_word{
     width: 95%;
     margin: auto;
@@ -28,6 +47,7 @@
     justify-content: space-between;
     list-style-type: none;
 }
+
 .actor_filter_word a{
     text-decoration: none;
     color: #ffffff80;
@@ -35,11 +55,13 @@
 
 .actor_all{
     position: relative;
-    color: rgb(16, 255, 162);
+    /* color: rgb(16, 255, 162); */
 }
+
 .actor_all a{
-    color: #10ffa2;
+    /* color: #10ffa2; */
 }
+
 .actor_all::after{
     content: '';
     position: absolute;
@@ -47,12 +69,18 @@
     left: 0;
     width: 180%;
     height: 1.5px;
-    background-color: rgb(16, 255, 162);
+    /* background-color: rgb(16, 255, 162); */
     transform: translate(-9.5px, 22px);
 }
+
+.actor_all:hover::after{
+    background-color: rgb(16, 255, 162) ;
+}
+
 .actor_movie, .actor_tvshow, .actor_show{
     position: relative;
 }
+
 .actor_movie::after{
     content: '';
     position: absolute;
@@ -63,9 +91,11 @@
     background-color: rgba(255, 255, 255, 0);
     transform: translate(-9.5px, 22px);
 }
+
 .actor_movie:hover::after{
     background-color: rgb(16, 255, 162) ;
 }
+
 .actor_tvshow::after{
     content: '';
     position: absolute;
@@ -76,9 +106,11 @@
     background-color: rgba(255, 255, 255, 0);
     transform: translate(-9.5px, 22px);
 }
+
 .actor_tvshow:hover::after{
     background-color: rgb(16, 255, 162) ;
 }
+
 .actor_show::after{
     content: '';
     position: absolute;
@@ -89,25 +121,31 @@
     background-color: rgba(255, 255, 255, 0);
     transform: translate(-9.5px, 22px);
 }
+
 .actor_show:hover::after{
     background-color: rgb(16, 255, 162) ;
 }
+
 .actor_sho{
     display: none;
 }
+
 .actor_underline{
     width: 100%;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.5);
     margin-top: 5px;
 }
+
 .actor_flims{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .actor_flim{
     margin-top: 40px;
+
 }
 .ac_flim_pic{
     width: 110px;
@@ -151,9 +189,9 @@
         
     }
     .actor_right{
-        width: 50%;
+        width: 90%;
         margin-top: 60px;
-        margin-right: 100px;
+        /* margin-right: 100px; */
     }
     .actor_underline{
         width: 90%;
