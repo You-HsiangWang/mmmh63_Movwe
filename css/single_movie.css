@@ -1,0 +1,568 @@
+.mobile__none{
+    display: none;
+}
+.section__1{
+    margin-top: 80px;
+    width: 100%;
+
+}
+.section__1_rightbox{
+    width: 45%;
+    position: relative;
+}
+
+.section__1_bottombox{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section__1_bigbox{
+    display: flex;
+    justify-content: space-between;
+}
+.section__1_left_box{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.section__1_imgbox{
+    width: 90%;
+}
+.section__1_imgbox img{
+    width: 100%;
+    border-radius: 5px;
+
+}
+.star__box{
+    width: 100%;
+    position: relative;
+}
+.star_box_1{
+    width: 130px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.star_box_1-2{
+    width: 130px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+}
+.typ_1{
+    width: 60px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: rgba(16, 255, 163, 0);
+    border: 1px solid rgba(255, 255, 255, 0.505);
+    color: rgba(255, 255, 255, 0.505);
+    transition: .1s;
+    margin-right: 10px;
+
+}
+
+.typ_2{
+    width: 60px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: rgba(16, 255, 163, 0);
+    border: 1px solid rgba(255, 255, 255, 0.505);
+    color: rgba(255, 255, 255, 0.505);
+    transition: .1s;
+}
+
+.star_box_2{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.star_point{
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(16, 255, 162) ;
+}
+.star_icon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 5px;
+}
+.star_icon-img{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+.star_icon-img img{
+    width: 100%;
+}
+.star_box_3{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: aliceblue;
+}
+.icon__box{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25%;
+}
+
+.icon__box img{
+    margin-right: 10px;
+    width: 30px ;
+    height: 30px;
+}
+
+.add_mymoviebtn{
+
+    width: 100%;
+    height: 30px;
+    background-color: rgb(16, 255, 162);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border: none;
+}
+.movie__text{
+    margin-top: 10px;
+    line-height: 1.4;
+    color: aliceblue;
+}
+.add__mymovie__box{
+    width: 100%;
+    
+}
+.movie__poster{
+    position: relative;
+    display: none;
+}
+
+.movie__poster__box__h1{
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(16, 255, 162) ;
+}
+.section__title{
+    display: flex;
+    margin: 20px auto;
+}
+.ott__update{
+    display: flex;
+    margin-right: 10px;
+}
+.ott__update-1{
+    margin-top: 20px;
+    color:aliceblue;
+}
+.ott__update-2{
+    display: flex;
+    margin-top: 20px;
+}
+.mr-5px{
+    margin-right: 10px;
+}
+.ott__update__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 24px;
+}
+/* ---section__2---------- */
+.section__2{
+    margin-top: 40px;
+    width: 100%;
+}
+.section__2_bigbox{
+    height: 300px;
+}
+
+.actor__card__box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+    /* overflow-y: hidden; */
+}
+
+.actor__card__box::-webkit-scrollbar {
+    display: none;
+}
+.actor__card{
+    width: 150px;
+    height: 150px;
+    margin: 20px 25px 0 0;
+    transition: .2s;
+
+}
+
+.actor__card:hover{
+    transform: translateY(-5%) scale(1.05);
+}
+
+
+.actor__card:hover .actor__card__text{
+
+    color: rgb(16, 255, 162);
+
+}
+
+.actor__card:hover .actor__img-box{
+    filter: brightness(110%);
+    /* filter: grayscale(0%); */
+
+box-shadow: 0 0 10px rgb(16, 255, 162);
+
+}
+
+.actor__card:hover .actor__img_filter{
+    filter: grayscale(0%);
+
+box-shadow: 0 0 10px rgb(16, 255, 162);
+
+}
+
+.actor__img-box{
+    transition: .2s;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    /* filter: grayscale(20%); */
+
+}
+
+.actor__img{
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.actor__img_filter{
+
+position: absolute;
+top: 0;
+left: 0;    
+filter: grayscale(50%);
+transition: .2s;
+
+}
+.actor__card__text{
+    text-align: center;
+transition: .2s ;
+    margin-top: 5px;
+    color: aliceblue;
+}
+.Actor__name{
+    font-size: 16px;
+}
+/* ---section__3---------- */
+.section__3{
+    width: 100%;
+    margin-top: 110px;
+}
+.ott__update__card-box{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+.ott__update__card{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    margin-right: 20px;
+
+}
+.ott__update__imgbox{
+    width: 300px;
+    height: 200px;
+}
+.ott__update__card img{
+width: 100%;
+    /* width: 100%; */
+    border-radius: 5px;
+
+}
+/* --section__4--------------- */
+.section__4{
+    width: 100%;
+    margin-top: 110px;
+}
+
+.ott__store__card-box{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+.ott__store__card{
+    width: 200px;
+    height: 280px;
+    border-radius: 5px;
+    margin-right: 20px;
+
+}
+.ott__store__imgbox{
+    width: 200px;
+    height: 280px;
+}
+.ott__store__card img{
+width: 100%;
+height: 100%;
+    /* width: 100%; */
+    border-radius: 5px;
+
+}
+
+.ott__store__productname{
+    margin-top: 10px;
+    color:aliceblue;
+}
+
+.ott__store__productprice{
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+.product__price{
+    color: goldenrod;
+    font-size: 20px;
+}
+/* --section__5--------------- */
+.section__5{
+    width: 100%;
+    margin-top: 150px;
+}
+
+.ott__article__card-box{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+.ott__article__card{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    margin-right: 20px;
+
+}
+.ott__article__imgbox{
+    width: 100%;
+}
+
+.ott__article__imgbox img{
+width: 100%;
+}
+
+.ott__article__card img{
+width: 100%;
+height: 100%;
+    /* width: 100%; */
+    border-radius: 5px;
+
+}
+
+.ott__article__typ{
+    width: 60px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 10px;
+    background-color: rgba(16, 255, 163, 0);
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    transition: .1s;
+    margin-top: 10px;
+
+}
+
+.ott__article__productname{
+    margin-top: 10px;
+    color:aliceblue;
+}
+
+.ott__article__productprice{
+    margin-top: 10px;
+    color: rgba(240, 248, 255, 0.48);
+}
+
+.product__price{
+    color: goldenrod;
+    font-size: 20px;
+}
+.ott__likeicons{
+    transition: .3s ;
+    opacity: 0;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.ott__likeicon-box{
+    display: flex;
+    color: rgba(240, 248, 255, 0.493);
+}
+
+.likeicon__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    
+}
+.mr__5px{
+    margin-right: 5px;
+}
+
+/* --section__6--------------- */
+.section__6{
+    width: 100%;
+    margin-top: 204px;
+}
+.ott__movie__productname{
+    font-size: 16px;
+    margin-top: 10px;
+    color: aliceblue;
+}
+.ott__movie__otticon{
+    margin-top: 10px;
+    display: flex;
+}
+
+.ott__icon_box{
+    margin-right: 8px;
+}
+
+.shadow {
+    width: 100%;
+    height: 310px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgb(26, 29, 36));
+    position: absolute;
+    bottom: 0;
+}
+
+.shadow2 {
+    width: 100%;
+    height: 310px;
+    background: linear-gradient(rgb(26, 29, 36), rgba(0, 0, 0, 0));
+    position: absolute;
+    top: 0;
+
+}
+
+.movie__poster__box{
+    position: relative;
+}
+
+
+.banner__logo{
+    width: 15%;
+
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+.banner__logo img{
+    width: 100%;
+}
+
+
+
+@media screen and (min-width: 750px) {
+
+    
+    .display__show{
+        display: block;
+        position: relative;
+    }
+    
+    .desk__disp__none{
+        display: none;
+    }
+    .section__1_left_box{
+        width: 20%;
+    }
+    .section__1_imgbox{
+        width: 100%;
+    }
+    .section__1_imgbox img{
+        width: 100%;
+    }
+    .section__1_rightbox{
+        width: 26%;
+    }
+    .star_box_1{
+        width: 130px;
+    }
+    .icon__box{
+        width: 30%;
+        justify-content: flex-end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 0;
+    }
+    .add_mymoviebtn{
+        width: 30%;
+
+    }
+    .add__mymovie__box{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    .movie__poster{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        /* align-items: center; */
+    }
+    .movie__poster__box{
+        width: 100%;
+    }
+    .movie__poster__box__img{
+        width: 100%;
+        border-radius: 8px;
+    }
+    .actor__card__box{
+        overflow:visible;
+    }
+    .movie__text{
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 1.6;
+
+    }
+    
+}

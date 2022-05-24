@@ -320,6 +320,8 @@ text-align: center;
     .Filter__text__box{
         margin-top: 40px;
             width: 100%;
+                    display: none;
+
             /* height: 100%; */
 
 
