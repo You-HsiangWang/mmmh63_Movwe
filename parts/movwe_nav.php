@@ -1,40 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../fontawesome/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/Nav.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <title>Document</title>
-    <style>
-    </style>
-</head>
-
-<body>
-    <!----------nav_top-------------->
-    <div class="Navbar__container">
+<div class="Navbar__container">
         <div class="top_nav">
             <div class="top_nav_left">
                 <div class="top_nav_logo">
                     <div class="top_nav_logo_box">
-                        <img class="top_nav_movwe_img-2" src="../img/icons/close.svg" alt="">
+                        <img class="top_nav_movwe_img-2" src="./img/icons/close.svg" alt="">
                         <i class="fa-solid fa-bars top_nav_movwe_img bars"></i>
-                        <img class="origin__logo" src="../img/logo/logo.svg" alt="">
+                        <img class="origin__logo" src="./img/logo/logo.svg" alt="">
                     </div>
                 </div>
                 <a href="Home-0516-final copy.html">
                     <div class="top_nav_movwe_box">
                         <div class="movwe__box">
-                            <img class="top_nav_movwe_img mobil__show" src="../img/logo/logo_movwe_word.svg" alt="">
-                            <img class="top_nav_movwe_img desk__show" src="../img/logo/logo_word.svg" alt="">    
+                            <img class="top_nav_movwe_img mobil__show" src="./img/logo/logo_movwe_word.svg" alt="">
+                            <img class="top_nav_movwe_img desk__show" src="./img/logo/logo_word.svg" alt="">    
                         </div>
                     </div>
                 </a>
@@ -216,10 +194,3 @@
             </div>
         </div>
     </div>
-
-    <script src="../js/jquery-3.6.0.js"></script>
-    <script src="../js/Nav.js"></script>
-
-</body>
-
-</html>
