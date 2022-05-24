@@ -232,11 +232,16 @@ width: 100%;
 }
 
 .top_nav_movwe_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 120px;
     height: 36px;
 }
 
 .top_nav_movwe_img {
+    margin-top: 20%;
+    height: 100%;
     width: 100%;
 }
 
