@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .actor__right__container{
     height: 90vh;
 width: 60%;

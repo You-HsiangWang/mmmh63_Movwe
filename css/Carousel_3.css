@@ -121,6 +121,7 @@ color:rgb(16, 255, 162) ;
     /* height: 500px; */
 }
 .update__date{
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.468);
         box-shadow: 0 0 10px rgb(16, 255, 162) inset;
 
@@ -238,6 +239,9 @@ color:rgb(16, 255, 162) ;
 transform: translate(0%,100%);
 
 }
+
+
+
 
 .image__card__3:hover .movie__icons__3{
     transform:translate(-50%,-50%) scale(1.2);
@@ -369,6 +373,7 @@ background-color:rgba(255, 255, 255, 0.487)
 
 
 .Point{
+    transition: .3s;
     width: 12px;
     height: 12px;
     border-radius: 50px;
@@ -391,9 +396,22 @@ background-color:rgba(255, 255, 255, 0.487)
 
 
 .movie__name__wait{
-    opacity: 0;
+display: none;
+    /* opacity: 0; */
 }
 
+.movie__name__bt{
+display: block;
+
+}
+.image__card__3:hover .movie__name__wait{
+display: block;
+}
+
+
+.image__card__3:hover .movie__name__bt{
+display: none;
+}
 
 
 @media screen and (min-width: 750px) {
