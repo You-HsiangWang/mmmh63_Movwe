@@ -1,11 +1,12 @@
-.Navbar__container{
+.Navbar__container {
     width: 100%;
     overflow: hidden;
 }
 
-.desk__show{
+.desk__show {
     display: none;
 }
+
 .icon_box_W-H {
     width: 40px;
     height: 40px;
@@ -70,7 +71,7 @@
 }
 
 
-.banner__container img{
+.banner__container img {
     width: 100%;
 }
 
@@ -83,10 +84,10 @@
     position: relative;
 }
 
-.banner__container video{
+.banner__container video {
     display: none;
-width: 100%;
-/* height: 100vh; */
+    width: 100%;
+    /* height: 100vh; */
 }
 
 .Home__bg__img {
@@ -96,7 +97,7 @@ width: 100%;
 
 
 .text__container {
-    width:95%;
+    width: 95%;
     height: 100%;
     /* background-color: rgb(124, 124, 124); */
     margin: 40px auto 0 auto;
@@ -137,7 +138,7 @@ width: 100%;
 .top_nav_searchbar_box {
     position: relative;
     margin-right: 20px;
-    width: 150px;
+    width: 60%;
     height: 30px;
 
 }
@@ -200,9 +201,9 @@ width: 100%;
     transition: .3s;
     position: absolute;
     left: 0;
-    top: 15%;
 }
-.origin__logo{
+
+.origin__logo {
     width: 100%;
     display: none;
 }
@@ -232,21 +233,26 @@ width: 100%;
 }
 
 .top_nav_movwe_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 120px;
     height: 36px;
 }
 
 .top_nav_movwe_img {
+    margin-top: 20%;
+    height: 100%;
     width: 100%;
 }
 
-.top__like__icons_{
+.top__like__icons_ {
 
     display: flex;
 
 }
 
-.car_box{
+.car_box {
     width: 30px;
     height: 30px;
     margin-right: 20px;
@@ -255,20 +261,12 @@ width: 100%;
     opacity: 0;
 }
 
-.car_box img{
+.car_box img {
     width: 100%;
 
 }
 
-.forum_box{
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-    position: relative;
-    transition: .3s;
-    opacity: 0;
-}
-.Movies_box{
+.forum_box {
     width: 30px;
     height: 30px;
     margin-right: 20px;
@@ -277,29 +275,38 @@ width: 100%;
     opacity: 0;
 }
 
-.forum_box img{
+.Movies_box {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    position: relative;
+    transition: .3s;
+    opacity: 0;
+}
+
+.forum_box img {
     width: 100%;
-    
+
 }
 
 
-.add_number{
+.add_number {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 15px;
     height: 15px;
-    color:rgb(16, 255, 162) ;
+    color: rgb(16, 255, 162);
     position: absolute;
     bottom: -80%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border-radius: 50px;
     border: 1px solid rgb(16, 255, 162);
 }
 
-.movies_like{
-    color:rgb(16, 255, 162) ;
+.movies_like {
+    color: rgb(16, 255, 162);
 }
 
 
@@ -316,7 +323,8 @@ width: 100%;
     z-index: 99;
     display: none;
 }
-.left_nav a{
+
+.left_nav a {
     color: rgba(255, 255, 255, 0.542);
     text-decoration: none;
 
@@ -346,7 +354,8 @@ width: 100%;
     transition: .3s;
 
 }
-.Left__nav__bd{
+
+.Left__nav__bd {
     transform: translateY(70px);
 }
 
@@ -433,45 +442,101 @@ width: 100%;
 .down {
     margin-left: 15px;
 }
+
 @media screen and (min-width: 750px) {
     .Home__banner {
         height: 100vh;
     }
-    
-    .banner__container video{
+
+    .banner__container video {
         display: block;
     }
 
-    .Home__bg__img{
+    .Home__bg__img {
 
         filter: brightness(100%);
 
     }
-    
 
-
-
-
-    .bars{
+    .bars {
         display: block !important;
     }
-    .origin__logo{
+
+    .origin__logo {
         display: block;
     }
 
 
-    .mobil__show{
+    .mobil__show {
         display: none;
     }
 
-    .desk__show{
+    .desk__show {
         display: block;
     }
-    
+
     .top_nav {
-    width: 100%;
+        width: 100%;
 
         max-width: 1950px;
     }
 
+    .top_nav_searchbar_box {
+        position: relative;
+        margin-right: 20px;
+        width: 50%;
+        height: 30px;
+    
+    }
+    
+    .left_nav {
+        display: block !important;
+    }
+
+    .left_div {
+        display: block !important;
+    }
+
+    .bars {
+        opacity: 0;
+    }
+
+    .top_nav_movwe_img-2 {
+        transform: scale(1);
+    }
+
+}
+
+@media screen and (min-width: 750px) {
+    .text__container {
+        width: 94%;
+        /* height: 100vh; */
+        /* background-color: rgb(124, 124, 124); */
+        margin: 80px auto 0 auto;
+
+    }
+
+    .top_nav_searchbar_box {
+        position: relative;
+        margin-right: 20px;
+        width: 30%;
+        height: 30px;
+    
+    }
+    
+    .left_nav {
+        display: block !important;
+    }
+
+    .left_div {
+        display: block !important;
+    }
+
+    .bars {
+        opacity: 0;
+    }
+
+    .top_nav_movwe_img-2 {
+        display: none !important;
+    }
 }

@@ -114,7 +114,7 @@ require './parts/movwe_connect_db.php';
 
 <body>
     <!----------nav_top-------------->
-
+    
     <!--text__container------內容放這邊------------->
 
     <div class="text__container">

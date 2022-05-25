@@ -1,0 +1,48 @@
+.go-to-ott-03{
+    width: 400px;
+    height: 380px;
+    outline: 2px solid #FEB73A;
+    border-radius: 4px;
+    background: #24252A;
+    font-size: 14px;
+    color: #FFFFFD;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+.coupon-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+}
+.coupon_logopic{
+    width: 80px;
+    height: 80px;
+}
+.coupon_logopic img{
+    width: 100%;
+    height: 100%;
+}
+.coupon_logoword{
+    width: 45%;
+}
+.coupon_logoword img{
+    width: 100%;
+}
+.coupon-thanks{
+    text-align: center;
+    margin-top: 24px;
+}
+.with-coupon-center a, .with-coupon-last a{
+    text-decoration: none;
+    color: #10FFA2;
+}
+.with-coupon-center, .with-coupon-last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+}
