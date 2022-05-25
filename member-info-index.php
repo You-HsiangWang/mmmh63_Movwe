@@ -17,10 +17,10 @@
 
 <body>
     <!----------nav_top-------------->
-    <?php include __DIR__. './parts/movwe_nav.php' ?>
+    <?php include __DIR__. '/parts/movwe_nav.php' ?>
     
     <div class="layout">
-        <?php include __DIR__. './parts/movwe_nav_leftdiv.php' ?>
+        <?php include __DIR__. '/parts/movwe_nav_leftdiv.php' ?>
 
         <div class="container">
 
