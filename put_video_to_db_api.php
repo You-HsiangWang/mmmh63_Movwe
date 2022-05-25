@@ -29,18 +29,20 @@ $videoid = isset($_POST['linkkey']) ? trim('vd' . $_POST['linkkey']) : '';
 $videogenre = '影劇';
 $videoplace = '韓國';
 $videoclicks = random_int(1, 100);
-$videostillsarray = json_encode($_POST['videoarray']['previewpic']);
+$videostillsarray = is_array($_POST['videoarray']['previewpic']) ? json_encode($_POST['videoarray']['previewpic']) : $_POST['videoarray']['previewpic'];
 $videostills = isset($videostillsarray) ? trim($videostillsarray) : '';
+// ------------------------------------------
+$addday = 20;
 $videoupload = date("Y-m-d H:i:s");
 $date = date("Y-m-d");
 $date1 = str_replace('-', '/', $date);
 $nextweek = date('Y-m-d', strtotime($date1 . "+$linkid days"));
-$nnextweek = date('Y-m-d', strtotime($date1 . "+$linkid$linkid days"));
+$nnextweek = date('Y-m-d', strtotime($date1 . "+$linkid$addday days"));
 
 // 將資料新增到資料庫
-$putvid = 'INSERT INTO `video`(`link_key`, `video_id`, `video_name`, `video_genre`, `video_place`, `video_update_time`, `video_rating`, `video_year`, `video_stills`, `video_poster_ver`, `video_poster_hor`, `video_info`, `video_clicks`, `video_style`, `video_ottlink`, `video_online_time`, `video_offline_time`, `video_upload_time`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)';
+$putvid = 'INSERT INTO `video`(`link_key`, `video_id`, `video_name`, `video_genre`, `video_place`, `video_update_time`, `video_rating`, `video_year`, `video_stills`, `video_poster_ver`, `video_poster_hor`, `video_info`, `video_clicks`, `video_style`, `video_ottlink`, `video_online_time`, `video_offline_time`, `video_upload_time`, `video_ott`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)';
 $putvidstmt = $pdo->prepare($putvid);
-$putvidstmt->execute([$linkid, $videoid, $videoname, $videogenre, $videoplace, $videoupdatetime, $videoscore, $videoyear, $videostills, $videopic, $videobigpic, $videoinfo, $videoclicks, $videostyle, $videoottlink, $nnextweek, $nextweek, $videoupload]);
+$putvidstmt->execute([$linkid, $videoid, $videoname, $videogenre, $videoplace, $videoupdatetime, $videoscore, $videoyear, $videostills, $videopic, $videobigpic, $videoinfo, $videoclicks, $videostyle, $videoottlink, $nextweek, $nnextweek, $videoupload, $ottvideo]);
 
 $output['rowCountVideo'] = $putvidstmt->rowCount();
 if ($putvidstmt->rowCount() == 1) {
@@ -55,6 +57,7 @@ if ($putvidstmt->rowCount() == 1) {
     exit;
 };
 
+if(is_array($_POST['videoarray']['actorname'])){
 for ($i = 0; $i < count($_POST['videoarray']['actorname']); $i++) {
     $actorname = isset($_POST['videoarray']['actorname'][$i]) ? trim($_POST['videoarray']['actorname'][$i]) : '';
     $actoricon = isset($_POST['videoarray']['actoricon'][$i]) ? trim($_POST['videoarray']['actoricon'][$i]) : '';
@@ -121,6 +124,63 @@ for ($i = 0; $i < count($_POST['videoarray']['actorname']); $i++) {
         $output['code_av'] = 'av401';
         echo json_encode($output, JSON_UNESCAPED_UNICODE);
         exit;
+    };
+};
+}else {
+    $output['inputsuccess_Actor'] = false;
+    $output['code_a'] = 'a403';
+    $output['error_a'] = '沒有演員資料';
+    // echo json_encode($output, JSON_UNESCAPED_UNICODE);
+    // exit;
+};
+
+if (is_array($_POST['videoarray']['previewpic'])) {
+    $getvidsid = 'SELECT `video_sid` FROM `video` WHERE `video_name` = ?';
+    $getvidsidstmt = $pdo->prepare($getvidsid);
+    $getvidsidstmt->execute([$videoname]);
+    $getvidsidrow = $getvidsidstmt->fetch();
+
+    $videopreviewpicarray = $_POST['videoarray']['previewpic'];
+    $videopreviewnamearray = $_POST['videoarray']['previewname'];
+    $arraycount = count($videopreviewpicarray);
+
+    for ($i = 0; $i < $arraycount; $i++) {
+        $putpre = 'INSERT INTO `video_episode_data`(`v_episode_name`, `v_episode_pic`, `v_episode_video_sid`) VALUES (?,?,?)';
+        $putprestmt = $pdo->prepare($putpre);
+        $putprestmt->execute([$videopreviewnamearray[$i], $videopreviewpicarray[$i], $getvidsidrow['video_sid']]);
+
+        $output['rowcountPre'] = $putprestmt->rowCount();
+        if ($putprestmt->rowCount() == 1) {
+            $output['inputsuccess_pre'] = true;
+            $output['code_p'] = 'p200';
+            $output['error_p'] = 'p新增級數成功';
+        } else {
+            $output['inputsuccess_pre'] = false;
+            $output['code_p'] = 'p400';
+            $output['error_p'] = 'p新增級數失敗';
+        };
+    };
+} else {
+    $getvidsid = 'SELECT `video_sid` FROM `video` WHERE `video_name` = ?';
+    $getvidsidstmt = $pdo->prepare($getvidsid);
+    $getvidsidstmt->execute([$videoname]);
+    $getvidsidrow = $getvidsidstmt->fetch();
+
+    $videopreviewname = $_POST['videoarray']['previewname'];
+    $videopreviewpic = $_POST['videoarray']['previewpic'];
+    $putpre = 'INSERT INTO `video_episode_data`(`v_episode_name`, `v_episode_pic`, `v_episode_video_sid`) VALUES (?,?,?)';
+    $putprestmt = $pdo->prepare($putpre);
+    $putprestmt->execute([$videopreviewname, $videopreviewpic, $getvidsidrow['video_sid']]);
+
+    $output['rowcountPre'] = $putprestmt->rowCount();
+    if ($putprestmt->rowCount() == 1) {
+        $output['inputsuccess_pre'] = true;
+        $output['code_p'] = 'p200';
+        $output['error_p'] = 'p新增級數成功';
+    } else {
+        $output['inputsuccess_pre'] = false;
+        $output['code_p'] = 'p400';
+        $output['error_p'] = 'p新增級數失敗';
     };
 };
 

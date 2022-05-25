@@ -28,7 +28,7 @@ require './parts/movwe_connect_db.php';
             result = request.response;
             console.log(result);
             changeJson(result);
-            let linkid = 0;
+            let linkid = 103;
             // result.length
             for (let i = 0; i < result.length; i++) {
                 linkid++;
