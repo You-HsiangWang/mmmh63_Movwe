@@ -64,15 +64,44 @@ html {
     display: none;
 }
 
-/* 商品顏色 */
+/* 優惠券選取 input樣式 */
 
-.color {
+/* https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
+
+fieldset {
+    border: none;
+}
+
+fieldset input[type="radio"] {
+    position: relative;
+    appearance: none;
+    background-color: #000;
     width: 20px;
     height: 20px;
+    border: 2px solid #10FFA2;
     border-radius: 50%;
-    border: 2px solid transparent;
-    background-color: var(--color);
 }
+
+fieldset input[type="radio"]::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 5px);
+    left: calc(50% - 5px);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #10FFA2;
+    transform: scale(0);
+}
+
+fieldset input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+fieldset input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
 
 /* 商品規格 */
 
