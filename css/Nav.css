@@ -462,6 +462,7 @@
     margin-left: 15px;
 }
 
+<<<<<<< Updated upstream
 
 
 .top__nav__member{
@@ -597,6 +598,12 @@ top: 100%;
 
 
 
+=======
+.top__nave__nember{
+    margin-right: 5%;
+}
+
+>>>>>>> Stashed changes
 @media screen and (min-width: 750px) {
     .Home__banner {
         height: 100vh;
