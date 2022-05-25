@@ -8,8 +8,8 @@
 .slider{
     /* box-shadow: 0 0 10px rgb(16, 255, 162); */
     
-    border-top: 2px solid rgb(16, 255, 162);
-    border-bottom: 2px solid rgb(16, 255, 162);
+    /* border-top: 2px solid rgb(16, 255, 162);
+    border-bottom: 2px solid rgb(16, 255, 162); */
     border-radius: 8px;
     overflow: hidden;
     width: 100%;
