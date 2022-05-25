@@ -16,7 +16,7 @@ require './parts/movwe_connect_db.php';
 <body>
     <script src="./js/jquery-3.6.0.js"></script>
     <script>
-        const requestUrl = './json/videodb_kr_tel.json';
+        const requestUrl = './json/videodb_jp_animae.json';
         const request = new XMLHttpRequest();
         let result;
 
@@ -47,7 +47,7 @@ require './parts/movwe_connect_db.php';
                 r[i]['previewbigpic'] = a1[a1.length - 1];
 
                 const a4 = r[i]['videosrc'].split('/');
-                r[i]['videosrc'] = a4[a1.length - 1];
+                r[i]['videosrc'] = a4[a4.length - 1];
 
                 for (let ii = 0; ii < r[i]['actoricon'].length; ii++) {
                     const a2 = r[i]['actoricon'][ii].split('/');

@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="../css/Nav.css">
     <link rel="stylesheet" href="../css/BS.css">
     <link rel="stylesheet" href="../css/mystyle.css">
-    <link rel="stylesheet" href="../css/dropdown_customstyle.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../img/logo/logo.png">
+    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../dropdown_customstyle-main/css/dropdown_customstyle.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/nav_images/LOGO.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,300&family=Noto+Serif+TC:wght@200;300;500;700;900&display=swap"
         rel="stylesheet">
@@ -330,6 +331,13 @@
             height: 100px;
         }
 
+        .forum__banner__carousel__box {
+            position: relative;
+            /* background-color: #fff; */
+            width: 100%;
+            height: 30vh;
+        }
+
 
         /* 電腦版 */
 
@@ -477,37 +485,67 @@
                 display: none;
             }
 
-            
+
         }
     </style>
 </head>
 
 <body>
     <!----------nav_top-------------->
-    <div class="top_nav">
-        <div class="top_nav_left">
-            <div class="top_nav_logo">
-                <div class="top_nav_logo_box">
-                    <img class="top_nav_movwe_img-2" src="../img/logo/logo.png" alt="">
-                    <i class="fa-solid fa-bars top_nav_movwe_img bars"></i>
+    <div class="Navbar__container">
+        <div class="top_nav">
+            <div class="top_nav_left">
+                <div class="top_nav_logo">
+                    <div class="top_nav_logo_box">
+                        <img class="top_nav_movwe_img-2" src="../img/icons/close.svg" alt="">
+                        <i class="fa-solid fa-bars top_nav_movwe_img bars"></i>
+                        <img class="origin__logo" src="../img/logo/logo.svg" alt="">
+                    </div>
                 </div>
+                <a href="Home-0516-final copy.html">
+                    <div class="top_nav_movwe_box">
+                        <img class="top_nav_movwe_img mobil__show" src="../img/logo/logo_movwe_word.svg" alt="">
+                        <img class="top_nav_movwe_img desk__show" src="../img/logo/logo_word.svg" alt="">
+                    </div>
+                </a>
             </div>
-            <div class="top_nav_movwe">
-                <div class="top_nav_movwe_box">
-                    <img class="top_nav_movwe_img" src="../img/logo/logo_word.png" alt="">
+            <div class="top_nav_right">
+                <div class="top__like__icons_">
+                    <div class="Movies_box">
+                        <div class="add_number">
+                            <p>
+                                1
+                            </p>
+                        </div>
+                        <div class="nav_icon_box icon_W-H">
+                            <i class="fa-solid fa-film movies_like"></i>
+                        </div>
+                            </div>
+                    <div class="car_box">
+                        <div class="add_number">
+                            <p>
+                                1
+                            </p>
+                        </div>
+                        <img src="../img/icons/cart-shopping.svg" alt="">
+                    </div>
+                    <div class="forum_box">
+                        <div class="add_number">
+                            <p>
+                                1
+                            </p>
+                        </div>
+                        <img src="../img/icons/tag.svg" alt="">
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="top_nav_right">
-            <div class="top_nav_searchbar_box">
-                <input type="text" class="top_nav_searchbar" placeholder="輸入片名">
-                <div class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="top_nav_searchbar_box">
 
+                    <input type="text" class="top_nav_searchbar" placeholder="輸入片名">
+                    <div class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+                </div>
             </div>
         </div>
-    </div>
-    <div class="layout">
-        <!----------nav_left-------------->
         <div class="left_nav">
             <div class="left_nav_box">
             </div>
@@ -644,6 +682,9 @@
 
 
         </div>
+    </div>
+    <div class="layout">
+        <!----------nav_left-------------->
         <div class="left_div"></div>
 
         <!--------------------------------------------------------------------------->
@@ -680,16 +721,28 @@
                     </select>
                 </div>
             </div>
-
-            <!-- banner圖 電腦版-->
-            <div class="banner__container banner__container__pc">
-                <img src="../img/forum/forum_banner.jpg" alt="">
+            <div class="forum__banner__carousel__box">
+                <div id="slider" class="slider__forum" style=" width: 100%; margin: 0 auto">
+                    <div class="slide">
+                        <img src="../img/banner/forum_banner.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="../img/banner/forum_banner.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="../img/banner/forum_banner.jpg" alt="">
+                    </div>
+                </div>
             </div>
+            <!-- banner圖 電腦版-->
+            <!-- <div class="banner__container banner__container__pc">
+                <img src="../img/forum_banner.jpg" alt="">
+            </div> -->
 
             <!-- banner圖 手機版-->
-            <div class="banner__container banner__container__m">
-                <img src="../img/forum/forum_banner_s.jpg" alt="">
-            </div>
+            <!-- <div class="banner__container banner__container__m">
+                <img src="../img/forum_banner_s.jpg" alt="">
+            </div> -->
 
             <!--text__container------內容放這邊------------->
             <div class="text__container">
@@ -738,7 +791,7 @@
                     <!-- 我要發文 -->
                     <div class="d-flex justify-center align-item-center mt-20 mb-20">
                         <div class="member-img-wrap ml-10">
-                            <img src="../img/forum/1.jpg" alt="">
+                            <img src="../img/center/1.jpg" alt="">
                         </div>
                         <div class="publish flex-grow ml-20 ">
                             <input type="text" placeholder=" 翔子學妹，我要發文...">
@@ -795,7 +848,7 @@
                                     <!-- 文章作者 -->
                                     <div class="d-flex align-item-center">
                                         <div class="author-img-wrap mr-10">
-                                            <a href="#"><img src="../img/tinytall.jpg" alt=""></a>
+                                            <a href="#"><img src="../img/center/tinytall.jpg" alt=""></a>
                                         </div>
                                         <a href="#">
                                             <p>胎尼頭</p>
@@ -831,7 +884,7 @@
                                 <!-- 文章圖片 -->
                                 <div class="card-article-right d-flex align-item-center">
                                     <div class="article-img-wrap d-flex align-item-center">
-                                        <img src="../img/2521.jpg" alt="">
+                                        <img src="../img/center/2521.jpg" alt="">
                                     </div>
                                 </div>
 
@@ -889,7 +942,7 @@
                                     <!-- 文章作者 -->
                                     <div class="d-flex align-item-center">
                                         <div class="author-img-wrap mr-10">
-                                            <a href="#"><img src="../img/dino.jpg" alt=""></a>
+                                            <a href="#"><img src="../img/center/dino.jpg" alt=""></a>
                                         </div>
                                         <a href="#">
                                             <p>切版王笠鴿</p>
@@ -922,7 +975,7 @@
                                 <!-- 文章圖片 -->
                                 <div class="card-article-right d-flex align-item-center">
                                     <div class="article-img-wrap d-flex align-item-center">
-                                        <img src="../img/harry.jpg" alt="">
+                                        <img src="../img/center/harry.jpg" alt="">
                                     </div>
                                 </div>
 
@@ -980,7 +1033,7 @@
                                     <!-- 文章作者 -->
                                     <div class="d-flex align-item-center">
                                         <div class="author-img-wrap mr-10">
-                                            <a href="#"><img src="../img/dino.jpg" alt=""></a>
+                                            <a href="#"><img src="../img/center/dino.jpg" alt=""></a>
                                         </div>
                                         <a href="#">
                                             <p>切版王笠鴿</p>
@@ -1015,7 +1068,10 @@
                                 <!-- 文章圖片 -->
                                 <div class="card-article-right d-flex align-item-center">
                                     <div class="article-img-wrap d-flex align-item-center">
-                                        <img src="../img/ourblues.jpg" alt="">
+
+
+                                        <img src="../img/center/ourblues.jpg" alt="">
+
                                     </div>
                                 </div>
 
@@ -1073,7 +1129,10 @@
                                     <!-- 文章作者 -->
                                     <div class="d-flex align-item-center">
                                         <div class="author-img-wrap mr-10">
-                                            <a href="#"><img src="../img/1.jpg" alt=""></a>
+
+
+                                            <a href="#"><img src="../img/center/1.jpg" alt=""></a>
+
                                         </div>
                                         <a href="#">
                                             <p>翔子學妹</p>
@@ -1130,7 +1189,9 @@
                                 <!-- 文章圖片 -->
                                 <div class="card-article-right d-flex align-item-center">
                                     <div class="article-img-wrap d-flex align-item-center">
-                                        <img src="../img/king.jpg" alt="">
+
+                                        <img src="../img/center/king.jpg" alt="">
+
                                     </div>
                                 </div>
 
@@ -1188,7 +1249,9 @@
                                     <!-- 文章作者 -->
                                     <div class="d-flex align-item-center">
                                         <div class="author-img-wrap mr-10">
-                                            <a href="#"><img src="../img/wife.jpg" alt=""></a>
+
+                                            <a href="#"><img src="../img/center/wife.jpg" alt=""></a>
+
                                         </div>
                                         <a href="#">
                                             <p>桌布是結衣</p>
@@ -1219,7 +1282,9 @@
                                 <!-- 文章圖片 -->
                                 <div class="card-article-right d-flex align-item-center">
                                     <div class="article-img-wrap d-flex align-item-center">
-                                        <img src="../img/love.png" alt="">
+
+                                        <img src="../img/center/love.png" alt="">
+
                                     </div>
                                 </div>
 
@@ -1277,7 +1342,9 @@
                                     <!-- 文章作者 -->
                                     <div class="d-flex align-item-center">
                                         <div class="author-img-wrap mr-10">
-                                            <a href="#"><img src="../img/8.jpg" alt=""></a>
+
+                                            <a href="#"><img src="../img/center/8.jpg" alt=""></a>
+
                                         </div>
                                         <a href="#">
                                             <p>瀚瀚子與鳥鳥</p>
@@ -1307,7 +1374,10 @@
                                 <!-- 文章圖片 -->
                                 <div class="card-article-right d-flex align-item-center">
                                     <div class="article-img-wrap d-flex align-item-center">
-                                        <img src="../img/e.jpg" alt="">
+
+
+                                        <img src="../img/center/e.jpg" alt="">
+
                                     </div>
                                 </div>
 
@@ -1365,7 +1435,9 @@
                                     <!-- 文章作者 -->
                                     <div class="d-flex align-item-center">
                                         <div class="author-img-wrap mr-10">
-                                            <a href="#"><img src="../img/8.jpg" alt=""></a>
+
+                                            <a href="#"><img src="../img/center/8.jpg" alt=""></a>
+
                                         </div>
                                         <a href="#">
                                             <p>瀚瀚子與鳥鳥</p>
@@ -1395,7 +1467,11 @@
                                 <!-- 文章圖片 -->
                                 <div class="card-article-right d-flex align-item-center">
                                     <div class="article-img-wrap d-flex align-item-center">
-                                        <img src="../img/spider.jpg" alt="">
+
+                     
+
+                                        <img src="../img/center/spider.jpg" alt="">
+
                                     </div>
                                 </div>
 
@@ -1463,7 +1539,9 @@
                             <div class="hot-article">
                                 <div class="d-flex justify-center">
                                     <div class="article-img-wrap">
-                                        <img src="../img/hot.jpg" alt="">
+
+                                        <img src="../img/center/hot.jpg" alt="">
+
                                     </div>
                                 </div>
                                 <div class="d-flex align-item-center mt-10 single">
@@ -1490,7 +1568,9 @@
                                 <a href="#">
                                     <li class="train-list d-flex align-item-center">
                                         <div class="member-img-wrap mr-20">
-                                            <img src="../img/1.jpg" alt="">
+
+                                            <img src="../img/center/1.jpg" alt="">
+
                                         </div>
                                         <div class="creator">
                                             <h4>翔子學妹</h4>
@@ -1502,7 +1582,9 @@
                                 <a href="#">
                                     <li class="train-list d-flex align-item-center">
                                         <div class="member-img-wrap mr-20">
-                                            <img src="../img/8.jpg" alt="">
+
+                                            <img src="../img/center/8.jpg" alt="">
+
                                         </div>
                                         <div class="creator">
                                             <h4>瀚瀚子與鳥鳥</h4>
@@ -1514,7 +1596,9 @@
                                 <a href="#">
                                     <li class="train-list d-flex align-item-center">
                                         <div class="member-img-wrap mr-20">
-                                            <img src="../img/tinytall.jpg" alt="">
+
+                                            <img src="../img/center/tinytall.jpg" alt="">
+
                                         </div>
                                         <div class="creator">
                                             <h4>胎尼頭</h4>
@@ -1526,7 +1610,9 @@
                                 <a href="#">
                                     <li class="train-list d-flex align-item-center">
                                         <div class="member-img-wrap mr-20">
-                                            <img src="../img/dino.jpg" alt="">
+
+                                            <img src="../img/center/dino.jpg" alt="">
+
                                         </div>
                                         <div class="creator">
                                             <h4>切版王笠鴿</h4>
@@ -1538,7 +1624,9 @@
                                 <a href="#">
                                     <li class="train-list d-flex align-item-center">
                                         <div class="member-img-wrap mr-20">
-                                            <img src="../img/wife.jpg" alt="">
+
+                                            <img src="../img/center/wife.jpg" alt="">
+
                                         </div>
                                         <div class="creator">
                                             <h4>桌布是結衣</h4>
@@ -1575,7 +1663,9 @@
                         </div>
                         <div>
                             <div class="wish-img-wrap mt-20">
-                                <img src="../img/pd.jpg" alt="">
+
+                                <img src="../img/center/pd.jpg" alt="">
+
                             </div>
                             <div class="d-flex justify-between align-item-center">
                                 <div class="d-flex align-item-center mt-10">
@@ -1602,7 +1692,9 @@
                         </div>
                         <div class="row_products mt-20">
                             <div class="mall_product">
-                                <img src="../img/p.png" alt="">
+
+                                <img src="../img/center/p.png" alt="">
+
                                 <div class="container_product_details">
                                     <p>波吉卡克 1/7 PVC模型</p>
                                     <div class="product_text">
@@ -1612,7 +1704,9 @@
                                 </div>
                             </div>
                             <div class="mall_product">
-                                <img src="../img/p.png" alt="">
+
+                                <img src="../img/center/p.png" alt="">
+
                                 <div class="container_product_details">
                                     <p>波吉卡克 1/7 PVC模型</p>
                                     <div class="product_text">
@@ -1631,8 +1725,21 @@
 
         <script src="../js/jquery-3.6.0.js"></script>
         <script src="../js/Nav.js"></script>
-        <script src="../dropdown_customstyle-main/js/dropdown_customstyle.js"></script>
+
+        <script src="../js/dropdown_customstyle.js"></script>
+
+        <script src="../js/slider.js"></script>
+
         <script>
+
+
+            var slider = new Slider("slider", {
+                play_icon: '<i class="fas fa-play"></i>',
+                pause_icon: '<i class="far fa-pause-circle"></i>',
+                prev_icon: '<i class="fas fa-angle-left"></i>',
+                next_icon: '<i class="fas fa-angle-right"></i>'
+            });
+
 
             // 最上面的filter點選切換顏色
 

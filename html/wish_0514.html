@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Caveat:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        /* outline: solid greenyellow; */
+    }
+
+    body {
+        background-color: rgb(22, 22, 22);
+        overflow: hidden;
+        font-family: 'Cairo', sans-serif;
+        font-family: 'Caveat', cursive;
+    }
+
+    .Text__gold {
+        color: rgb(218, 180, 84);
+    }
+
+    .Big__container {
+        width: 100%;
+        /* height: ; */
+        overflow: hidden;
+        position: relative;
+    }
+
+    .Page01__container {
+        width: 100%;
+        /* height: 100%; */
+        /* opacity: 0; */
+    }
+
+    .video_box {
+        width: 100%;
+        height: 100%;
+        opacity: .4;
+        overflow: hidden;
+        transition: 3s;
+        transition-delay: .5s;
+
+    }
+
+    .video_box video {
+        width: 100%;
+
+    }
+
+    .Cloud__left__box {
+        position: absolute;
+        bottom: 0;
+        transition: 2s;
+        opacity: .15;
+        width: 60%;
+        height: 100%;
+    }
+
+    .Cloud__left {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+
+    }
+
+    .Cloud__right__box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: 2s;
+        opacity: .15;
+        width: 60%;
+        height: 100%;
+    }
+
+    .Cloud__right {
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+    }
+
+    .Carpet__box {
+        transition: 3s;
+        transition-delay: .3s;
+        width: 20%;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform-origin: 50% 50%;
+
+        transform: translate(-40%, -50%);
+        opacity: .8;
+
+    }
+
+    .Carpet {
+        width: 100%;
+        transform-origin: center;
+    }
+
+    @keyframes up_down {
+
+        0% {
+
+            transform: translateY(-10%) translateX(-10%) rotate(15deg);
+        }
+
+        50% {
+
+            transform: translateY(-30%) translateX(-30%) rotate(-10deg);
+        }
+
+        100% {
+
+            transform: translateY(-10%) translateX(-10%) rotate(15deg);
+
+        }
+
+
+    }
+
+    .Carpet-animation {
+        transform-origin: 50% 50%;
+        animation-name: up_down;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    .Wish__text__box {
+        transition: 2s;
+        transition-delay: 1.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        color: rgb(16, 255, 162);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .Wish__text {
+        transition: 3s;
+        transition-delay: .8s;
+    }
+
+    .Enter {
+        padding: 5px 15px;
+        margin-top: 50px;
+        font-size: 20px;
+        border-radius: 20px;
+        border: 1px solid rgb(16, 255, 162);
+        color: rgb(16, 255, 162);
+
+        /* font-family: 'Caveat', cursive;
+        font-family: 'Cormorant Garamond', serif;
+        font-family: 'Dancing Script', cursive; */
+        background-color: rgba(240, 248, 255, 0);
+        transition: .2s;
+        cursor: pointer;
+
+
+    }
+
+    .Enter:hover {
+        font-weight: 700;
+        border: 1px solid rgb(16, 255, 162);
+        background-color: rgb(16, 255, 162);
+        color: rgb(0, 0, 0);
+        box-shadow: 0 0 10px rgb(16, 255, 162);
+        transform: translateY(-10%);
+        cursor: pointer;
+
+    }
+
+    .audio__box {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        transition: .2s;
+
+        /* opacity: .5; */
+    }
+
+    .Skip {
+        position: absolute;
+        border: none;
+        font-size: 30px;
+        bottom: 15%;
+        right: 10%;
+        color: rgb(16, 255, 162);
+        background-color: rgba(240, 248, 255, 0);
+        transition: .2s;
+    }
+
+    .Skip:hover {
+        font-size: 35px;
+        border-bottom: 1px solid rgb(16, 255, 162);
+    }
+
+    /* ------------------------------------------- */
+
+    .Page__2__container {
+        opacity: 0;
+        transform: scale(0);
+        /* display: none; */
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        /* opacity: 0; */
+        transition: 2s;
+        transition-delay: 3.5s;
+
+    }
+
+    .Page__2__insidecontainer {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: 3s;
+        transition-delay: .3s;
+    }
+
+    .Stars {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .treasure__cave {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        /* z-index: 99; */
+    }
+
+    .Page__2_text__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 30%;
+        left: 8%;
+        color: rgb(16, 255, 162);
+        font-size: 50px;
+
+    }
+
+    .Enter_2 {
+        padding: 5px 15px;
+        margin-top: 50px;
+        font-size: 20px;
+        border-radius: 20px;
+        border: 1px solid rgb(16, 255, 162);
+        color: rgb(16, 255, 162);
+
+        /* font-family: 'Caveat', cursive;
+        font-family: 'Cormorant Garamond', serif;
+        font-family: 'Dancing Script', cursive; */
+        background-color: rgba(240, 248, 255, 0);
+        transition: .2s;
+        cursor: pointer;
+
+
+    }
+
+    .Enter_2:hover {
+        font-weight: 700;
+        border: 1px solid rgb(16, 255, 162);
+        background-color: rgb(16, 255, 162);
+        color: rgb(0, 0, 0);
+        box-shadow: 0 0 10px rgb(16, 255, 162);
+        transform: translateY(-10%);
+        cursor: pointer;
+
+    }
+
+
+    /* ------------------------------------------- */
+
+    .Page__3__conrainer {
+        opacity: 0;
+        transform: scale(0);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transition: 3s;
+        transition-delay: 2s;
+    }
+
+    .Page__3__insidecoiner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: 2s;
+        overflow: hidden;
+
+    }
+
+    .Page__3__bg {
+        transition: 1s;
+        transition-delay: .3s;
+        filter: brightness(85%);
+        width: 100%;
+    }
+
+    .Enter_3 {
+        padding: 5px 15px;
+        margin-top: 50px;
+        font-size: 20px;
+        border-radius: 20px;
+        border: 1px solid rgb(16, 255, 162);
+        color: rgb(16, 255, 162);
+
+        /* font-family: 'Caveat', cursive;
+        font-family: 'Cormorant Garamond', serif;
+        font-family: 'Dancing Script', cursive; */
+        background-color: rgba(240, 248, 255, 0);
+        transition: .2s;
+        cursor: pointer;
+
+    }
+
+    .Enter_3:hover {
+        font-weight: 700;
+        border: 1px solid rgb(16, 255, 162);
+        background-color: rgb(16, 255, 162);
+        color: rgb(0, 0, 0);
+        box-shadow: 0 0 10px rgb(16, 255, 162);
+        transform: translateY(-10%);
+        cursor: pointer;
+
+    }
+
+
+
+    @keyframes shinning {
+        0% {
+            filter: brightness(60%);
+            transform: rotate(0deg);
+        }
+
+        50% {
+            filter: brightness(130%);
+            transform: rotate(5deg);
+
+        }
+
+        100% {
+            filter: brightness(60%);
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes shinning_2 {
+        0% {
+            filter: brightness(60%);
+        }
+
+        50% {
+            filter: brightness(150%);
+
+        }
+
+        100% {
+            filter: brightness(60%);
+        }
+    }
+
+    /* ------------------------------------------- */
+
+
+    .Lamp__box {
+        /* animation-name: shinning_2;
+        animation-duration: 2s;
+        animation-iteration-count: infinite; */
+        width: 10%;
+        position: absolute;
+        top: 10%;
+        left: 45.3%;
+        transition: .8s;
+    }
+
+    .lamp__1 {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transition: .8s;
+        filter: brightness(60%);
+    }
+
+    .lamp__2 {
+        opacity: 0;
+        width: 100%;
+        transition: .8s;
+
+    }
+
+    /* .Lamp__box:hover {
+        animation-name: none;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform: scale(1.1) rotate(6deg) translateY(-8%);
+        filter: brightness(120%);
+
+
+    }
+
+    .Lamp__box:hover .lamp__1 {
+        opacity: 0;
+    }
+
+    .Lamp__box:hover .lamp__2 {
+        opacity: 1;
+    } */
+
+    /* ------------------------------------------- */
+
+
+    .gb__box {
+        animation-name: shinning;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        width: 10%;
+        position: absolute;
+        top: 65%;
+        right: 25.3%;
+        transition: .2s;
+
+    }
+
+    .gb_1 {
+        position: absolute;
+        top: 0;
+        width: 50%;
+        transition: .2s;
+
+    }
+
+    .gb_2 {
+        opacity: 0;
+        width: 50%;
+        transition: .2s;
+    }
+
+    .gb__box:hover {
+        animation-name: none;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform: scale(1.1) rotate(6deg) translateY(-8%);
+        /* filter: brightness(120%); */
+
+
+    }
+
+
+    .gb__box:hover .gb_1 {
+        opacity: 0;
+    }
+
+    .gb__box:hover .gb_2 {
+        opacity: 1;
+        /* transform: scale(1.05); */
+    }
+
+    /* ------------------------------------------- */
+
+    .cheese__box {
+        animation-name: shinning;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        width: 12%;
+        position: absolute;
+        top: 55%;
+        left: 25.3%;
+        transition: .2s;
+    }
+
+    .cheese_1 {
+        position: absolute;
+        top: 0;
+        width: 50%;
+        transition: .2s;
+
+    }
+
+    .cheese_2 {
+        opacity: 0;
+        width: 50%;
+        transition: .2s;
+    }
+
+    .cheese__box:hover {
+        animation-name: none;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform: scale(1.1) rotate(6deg) translateY(-8%);
+        /* filter: brightness(110%); */
+
+
+    }
+
+
+    .cheese__box:hover .cheese_1 {
+        opacity: 0;
+    }
+
+    .cheese__box:hover .cheese_2 {
+        opacity: 1;
+        /* transform: scale(1.05); */
+    }
+
+
+
+    /* ------------------------------------------- */
+
+    .Golden__Snitch__box {
+        animation-name: shinning;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        width: 12%;
+        position: absolute;
+        top: 40%;
+        left: 45.3%;
+        transition: .2s;
+    }
+
+    .Golden__Snitch_1 {
+        position: absolute;
+        top: 0;
+        width: 50%;
+        transition: .2s;
+
+    }
+
+    .Golden__Snitch_2 {
+        opacity: 0;
+        width: 50%;
+        transition: .2s;
+    }
+
+    .Golden__Snitch__box:hover {
+        animation-name: none;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform: scale(1.1) rotate(6deg) translateY(-8%);
+        /* filter: brightness(110%); */
+
+
+    }
+
+
+    .Golden__Snitch__box:hover .Golden__Snitch_1 {
+        opacity: 0;
+    }
+
+    .Golden__Snitch__box:hover .Golden__Snitch_2 {
+        opacity: 1;
+        /* transform: scale(1.05); */
+    }
+
+
+    /* ------------------------------------------- */
+
+    .Acorn__box {
+        animation-name: shinning;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        width: 10%;
+        position: absolute;
+        top: 70%;
+        left: 45.3%;
+        transition: .2s;
+    }
+
+    .Acorn_1 {
+        position: absolute;
+        top: 0;
+        width: 50%;
+        transition: .2s;
+
+    }
+
+    .Acorn_2 {
+        opacity: 0;
+        width: 50%;
+        transition: .2s;
+    }
+
+    .Acorn__box:hover {
+        animation-name: none;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform: scale(1.1) rotate(6deg) translateY(-8%);
+        /* filter: brightness(110%); */
+
+
+    }
+
+
+    .Acorn__box:hover .Acorn_1 {
+        opacity: 0;
+    }
+
+    .Acorn__box:hover .Acorn_2 {
+        opacity: 1;
+        /* transform: scale(1.05); */
+    }
+
+    /* ------------------------------------------- */
+
+    .jerry-haad {
+        width: 10%;
+        position: absolute;
+        top: 10%;
+        right: 0;
+        transition: .3s;
+
+    }
+
+    .tom-haad {
+        width: 10%;
+        position: absolute;
+        top: 20%;
+        left: -0.5%;
+        transition: .3s;
+
+    }
+
+    .Acorn-haad {
+
+        width: 20%;
+        position: absolute;
+        bottom: 0%;
+        left: 0;
+        transition: .3s;
+
+    }
+
+    .Grangon-haad {
+        width: 20%;
+        position: absolute;
+        bottom: 6%;
+        right: 8%;
+        transition: .3s;
+    }
+
+    .Roun-head {
+        width: 18%;
+        position: absolute;
+        bottom: -6%;
+        right: -5%;
+        transition: 3.5s;
+
+    }
+
+    .Abu_3 {
+        width: 12%;
+        position: absolute;
+        top: 22%;
+        right: 35%;
+        transition: .3s;
+        transition-delay: .3s;
+
+    }
+
+    .Cat_1 {
+        width: 5%;
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        transition: .3s;
+        transition-delay: .3s;
+
+    }
+
+    .Page__3__text__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+        position: absolute;
+        top: 10%;
+        right: 20%;
+        transition: .3s;
+        color: rgb(16, 255, 162);
+        font-size: 50px;
+        transition-delay: .3s;
+
+    }
+
+    /* ------------------------------------------- */
+
+    @keyframes shake {
+
+0% {
+    transform: rotate(3deg);
+}
+
+5% {
+    transform: rotate(-3deg);
+
+}
+
+10% {
+    transform: rotate(3deg);
+
+}
+
+15% {
+    transform: rotate(-3deg);
+
+}
+
+20% {
+    transform: rotate(3deg);
+
+}
+
+25% {
+    transform: rotate(-3deg);
+
+}
+
+30% {
+    transform: rotate(3deg);
+
+}
+
+35% {
+    transform: rotate(-3deg);
+
+}
+
+40% {
+    transform: rotate(5deg);
+
+}
+
+45% {
+    transform: rotate(-3deg);
+
+}
+
+50% {
+    transform: rotate(3deg);
+
+}
+
+55% {
+    transform: rotate(-3deg);
+
+}
+
+}
+
+/* ----------------------------- */
+
+@keyframes genie {
+    0%{
+        filter: brightness(80%);
+        transform: scale(1) rotate(2deg);
+    }
+    50%{
+        filter: brightness(150%);
+        transform: scale(1.1) rotate(-2deg);
+
+    }
+    100%{
+        filter: brightness(80%);
+        transform: scale(1) rotate(2deg);
+
+    }
+}
+
+
+
+
+
+/* ----------------------------- */
+
+
+    .Page__4__container {
+        opacity: 0;
+        transform: scale(0);
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transition: 3s;
+        transition-delay: 2s;
+    }
+
+    .Page__4__insidecoiner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: 1.5s;
+        transition-delay: 2.8s;
+        overflow: hidden;
+
+    }
+
+    .Page_4_mv {
+        width: 100%;
+        height: 100%;
+        opacity: .5;
+    }
+
+
+    .Page4__lamp__box{
+        width: 25%;
+        position: absolute;
+        bottom: 20%;
+        left: 10%;
+        transition: 2s;
+        transition-delay: 2.5s;
+        animation-name: shake;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    .Page4__lamp {
+        width: 100%;
+        /* transform:  scale(0); */
+        transition: 2s;
+
+    }
+
+    .Page__4__text__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        position: absolute;
+        top: 20%;
+        left: 6%;
+        transition: 2s;
+        color: rgb(16, 255, 162);
+        font-size: 50px;
+        transition-delay: 2.5s;
+    }
+
+
+    .Enter_4 {
+        padding: 5px 15px;
+        margin-top: 50px;
+        font-size: 20px;
+        border-radius: 20px;
+        border: 1px solid rgb(16, 255, 162);
+        color: rgb(16, 255, 162);
+
+        /* font-family: 'Caveat', cursive;
+        font-family: 'Cormorant Garamond', serif;
+        font-family: 'Dancing Script', cursive; */
+        background-color: rgba(240, 248, 255, 0);
+        transition: .2s;
+        cursor: pointer;
+
+
+    }
+
+    .Enter_4:hover {
+        font-weight: 700;
+        border: 1px solid rgb(16, 255, 162);
+        background-color: rgb(16, 255, 162);
+        color: rgb(0, 0, 0);
+        box-shadow: 0 0 10px rgb(16, 255, 162);
+        transform: translateY(-10%);
+        cursor: pointer;
+    }
+
+    .Page__4__genie__box{
+        opacity: 0;
+        transform: scale(0);
+        width: 25%;
+        position: absolute;
+        bottom: 20%;
+        left: 10%;
+        transition: 2s;
+        transition-delay: 2.8s;
+        transform-origin: 40%,40%;
+
+
+    }
+
+    .Page__4__genie{
+        width: 100%;
+        transition: 2s;
+        animation-name: genie;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+
+    }
+
+    .Page__5__text__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        position: absolute;
+        top: 20%;
+        right: 18%;
+        transition: 2s;
+        color: rgb(16, 255, 162);
+        font-size: 50px;
+        transition-delay: 2.5s;
+        opacity: 0;
+    }
+
+
+    .Enter_5 {
+        padding: 5px 15px;
+        margin-top: 30px;
+        font-size: 20px;
+        border-radius: 20px;
+        border: 1px solid rgb(16, 255, 162);
+        color: rgb(16, 255, 162);
+
+        /* font-family: 'Caveat', cursive;
+        font-family: 'Cormorant Garamond', serif;
+        font-family: 'Dancing Script', cursive; */
+        background-color: rgba(240, 248, 255, 0);
+        transition: .2s;
+        cursor: pointer;
+
+    }
+
+    .Enter_5:hover {
+        font-weight: 700;
+        border: 1px solid rgb(16, 255, 162);
+        background-color: rgb(16, 255, 162);
+        color: rgb(0, 0, 0);
+        box-shadow: 0 0 10px rgb(16, 255, 162);
+        transform: translateY(-10%);
+        cursor: pointer;
+    }
+
+    .Wish__input{
+        text-align: center;
+        margin-top: 20px;
+        width: 60%;
+        height: 30px;
+        border: 1px solid rgb(16, 255, 162);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.616);
+        outline-style: none;
+        font-size: 18px;
+        color: rgb(21, 21, 21);
+    }
+
+
+.Page4__TV__box{
+    opacity: 0;
+    position: relative;
+    width: 25%;
+    /* height: 100%; */
+        position: absolute;
+        bottom: 20%;
+        right: 20%;
+        transition: 2s;
+        transition-delay: 2.8s;
+        transform-origin: 40%,40%;
+        overflow: hidden;
+
+}
+    .Page4__TV{
+        position: absolute;
+        top: 0 ;
+        left: 0;
+        width: 105%;
+        transition: 2s;
+        z-index: 99;
+
+    }
+    .TV__mv1{
+        width: 90%;
+        transform: translate(8%,10%);
+
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-60%,-55%); */
+        transition: 1s;
+
+    }
+    .TV__mv2{
+        width: 108%;
+        position: absolute;
+        top: 10%  ;
+        left: 2%;
+        opacity: 0;
+        transition: 1s;
+        transition-delay: 1s;
+    }
+
+    .Thanks__card{
+        width: 30%;
+        height: 30%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0);
+        background-color: rgba(0, 0, 0, 0.748);
+        border: 2px solid goldenrod;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        transition-delay: 2.8s;
+    }
+
+    .Thanks_logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Thanks_Movwe{
+        margin-top: 10px;
+        width: 60%;
+    }
+
+    .Thanks__text{
+        margin-top: 10px    ;
+        color: white;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 2rem;
+    }
+    .Wish{
+        margin: 20px 0;
+    }
+    .Enter_6 {
+        padding: 5px 15px;
+        margin: 30px auto 0 auto;
+        font-size: 20px;
+        border-radius: 20px;
+        border: 1px solid rgb(16, 255, 162);
+        color: rgb(16, 255, 162);
+
+        /* font-family: 'Caveat', cursive;
+        font-family: 'Cormorant Garamond', serif;
+        font-family: 'Dancing Script', cursive; */
+        background-color: rgba(240, 248, 255, 0);
+        transition: .2s;
+        cursor: pointer;
+
+    }
+
+    .Enter_6:hover {
+        font-weight: 700;
+        border: 1px solid rgb(16, 255, 162);
+        background-color: rgb(16, 255, 162);
+        color: rgb(0, 0, 0);
+        box-shadow: 0 0 10px rgb(16, 255, 162);
+        transform: translateY(-10%);
+        cursor: pointer;
+    }
+
+
+
+    @keyframes Color {
+        0%{
+            filter: brightness(70%);
+
+        }
+        50%{
+            filter: brightness(150%);
+
+        }
+        100%{
+            filter: brightness(70%);
+
+        }
+    }
+
+    .Color_anmation{
+        animation-name: Color;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+
+    }
+
+
+
+    
+    /* ------------------------------------------- */
+</style>
+
+<body>
+    <div class="Big__container">
+        <div class="Page01__container">
+            <div class="video_box">
+                <video class="Stars" src="./images/wish_img/lightning.mov" autoplay loop muted></video>
+            </div>
+            <div class="Cloud__left__box">
+                <img class="Cloud__left" src="./images/wish_img/cloud-left.png" alt="">
+            </div>
+            <div class="Cloud__right__box">
+                <img class="Cloud__right" src="./images/wish_img/cloud-right.png" alt="">
+            </div>
+            <div class="Carpet__box">
+                <img class="Carpet Carpet-animation" src="./images/wish_img/Carpet.png" alt="">
+            </div>
+            <div class="Wish__text__box">
+                <p class="Wish__text Color_anmation">
+                    Find out the <span class="Text__gold">lamp</span> and make a wish .
+                </p>
+                <button class="Enter">
+                    Continue
+                </button>
+            </div>
+            <div class="audio__box">
+                <audio controls style="color: aquamarine;"
+                    src="./music/arabian-nights-2019-from-aladdin-audio-only.mp3"></audio>
+            </div>
+            <button class="Skip">
+                Skip
+            </button>
+        </div>
+
+        <!-- ------------------------------------- -->
+
+        <div class="Page__2__container">
+            <div class="Page__2__insidecontainer">
+                <video src="./images/wish_img/stars.mov" autoplay loop muted></video>
+                <img class="treasure__cave" src="./images/wish_img/treasure_cave.png" alt="">
+                <div class="Page__2_text__box">
+                    <div class="Page__2_text">
+                        <p class="Color_anmation">
+                            Don't touch anything without the <span class="Text__gold">lamp .</span>
+                        </p>
+                    </div>
+                    <button class="Enter_2">
+                        Continue
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------------- -->
+
+        <div class="Page__3__conrainer">
+            <div class="Page__3__insidecoiner">
+                <img class="Page__3__bg" src="./images/wish_img/Page_3.png" alt="">
+                <div class="Lamp__box">
+                    <img class="lamp__1" src="./images/wish_img/lamp_1.png" alt="">
+                    <img class="lamp__2" src="./images/wish_img/lamp_2.png" alt="">
+                </div>
+                <div class="gb__box">
+                    <img src="./images/wish_img/gb_1.png" alt="" class="gb_1">
+                    <img src="./images/wish_img/gb_2.png" alt="" class="gb_2">
+                </div>
+                <div class="cheese__box">
+                    <img src="./images/wish_img/cheese_1.png" alt="" class="cheese_1">
+                    <img src="./images/wish_img/cheese_2.png" alt="" class="cheese_2">
+                </div>
+                <div class="Golden__Snitch__box">
+                    <img src="./images/wish_img/Golden_Snitch_1.png" alt="" class="Golden__Snitch_1">
+                    <img src="./images/wish_img/Golden_Snitch_2.png" alt="" class="Golden__Snitch_2">
+                </div>
+                <div class="Acorn__box">
+                    <img src="./images/wish_img/Acorn_1.png" alt="" class="Acorn_1">
+                    <img src="./images/wish_img/Acorn_2.png" alt="" class="Acorn_2">
+                </div>
+                <!----------->
+                <img class="jerry-haad" src="./images/wish_img/jerry-haad.png" alt="">
+                <img class="tom-haad" src="./images/wish_img/tom-haad.png" alt="">
+                <img class="Acorn-haad" src="./images/wish_img/Acorn-head.png" alt="">
+                <img class="Grangon-haad" src="./images/wish_img/Drangon_dead.png" alt="">
+                <img class="Roun-head" src="./images/wish_img/Roun-head.png" alt="">
+                <img class="Abu_3" src="./images/wish_img/Abu_3.png" alt="">
+                <img class="Cat_1" src="./images/wish_img/Cat_1.png" alt="">
+                <div class="Page__3__text__box">
+                    <p class="Color_anmation">
+                        It's it !
+                    </p>
+                    <button class="Enter_3">
+                        Take it
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="Page__4__container">
+            <div class="Page__4__insidecoiner">
+                <video class="Page_4_mv" src="./images/wish_img/Page_4_mv.mov" autoplay loop muted></video>
+                <div class="Page4__lamp__box">
+                    <img class="Page4__lamp" src="./images/wish_img/Page4__lamp.png" alt="">
+                </div>
+                <div class="Page__4__text__box">
+                    <p class="Color_anmation">
+                        Show me the Movwe genie!
+                    </p>
+                    <button class="Enter_4">
+                        Wipe the lamp
+                    </button>
+                </div>
+                <div class="Page__4__genie__box">
+                    <img class="Page__4__genie" src="./images/wish_img/Aladdin__logo.png" alt="">
+                </div>
+                <div class="Page__5__text__box">
+                    <p class="Color_anmation">
+                        Make a wish
+                    </p>
+                    <input type="text" class="Wish__input" placeholder="輸入片名">
+                    <button class="Enter_5">
+                        Enter
+                    </button>
+                </div>
+
+                    <div class="Page4__TV__box">
+                        <img class="Page4__TV" src="./images/wish_img/TV.png" alt="">
+                        <img class="TV__mv1" src="./images/video/filter02.gif"></img>
+                        <video class="TV__mv2" src="./images/video/single_mv-2.mov"autoplay loop muted></video>
+                    </div>
+                </div>
+                <div class="Thanks__card">
+                    <div class="Thanks_logo">
+                        <img class="Thanks_Movwe" src="./images/Movwe-.png" alt="">
+                    </div>
+                    <div class="Thanks__text">
+                        <p> <span></span>
+                            許願成功！<br> <span class="Text__gold Wish">大家身體健康絕對平安</span> <br> 病毒什麼的嫩嫩啦～
+                        </p>
+                    </div>
+                    <button class="Enter_6">
+                        回許願池首頁
+                    </button>
+                </div>
+        </div>
+    </div>
+
+
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        let continutBtn = document.querySelector('.Enter');
+        let continutBtn_2 = document.querySelector('.Enter_2');
+        let continutBtn_3 = document.querySelector('.Enter_3');
+        let continutBtn_4 = document.querySelector('.Enter_4');
+        let continutBtn_5 = document.querySelector('.Enter_5');
+        let leftCloud = document.querySelector('.Cloud__left__box');
+        let rightCloud = document.querySelector('.Cloud__right__box');
+        let Lightning = document.querySelector('.video_box')
+        let Carpet = document.querySelector('.Carpet__box')
+        let theText = document.querySelector('.Wish__text')
+        let audioBox = document.querySelector('.audio__box')
+        let Skip = document.querySelector('.Skip')
+        let Page2 = document.querySelector('.Page__2__container')
+        let Page2Insidecontainer = document.querySelector('.Page__2__insidecontainer')
+        let Page3 = document.querySelector('.Page__3__conrainer')
+        let Page3Insidecontainer = document.querySelector('.Page__3__insidecoiner')
+        let Page4 = document.querySelector('.Page__4__container')
+        let Page4Insidecontainer = document.querySelector('.Page__4__insidecoiner')
+        let Page4Lamp = document.querySelector('.Page4__lamp')
+        let Page4LampBox = document.querySelector('.Page4__lamp__box')
+        let Page4TextBox = document.querySelector('.Page__4__text__box')
+        let Page4GenieBox = document.querySelector('.Page__4__genie__box')
+        let TV_Mv1 = document.querySelector('.TV__mv1')
+        let TV_Mv2 = document.querySelector('.TV__mv2')
+        let ThanksCard = document.querySelector('.Thanks__card')
+        let Page5TextBox = document.querySelector('.Page__5__text__box')
+        let Page4TVBox = document.querySelector('.Page4__TV__box')
+
+
+        continutBtn.addEventListener('click', () => {
+            continutBtn.style.opacity = "0"
+            // -------------------------------------------------------
+            leftCloud.style.transform = "translateX(-110%)"
+            leftCloud.style.opacity = "0"
+            // -------------------------------------------------------
+            rightCloud.style.transform = "translateX(110%)"
+            rightCloud.style.opacity = "0"
+            // -------------------------------------------------------
+            Lightning.style.opacity = '0'
+            // -------------------------------------------------------
+            Carpet.style.transform = "translateX(410%) scale(0)"
+            // -------------------------------------------------------
+            theText.style.transform = 'scale(3.5)'
+            theText.style.opacity = '0'
+
+            audioBox.style.opacity = '0'
+
+            Skip.style.opacity = '0'
+
+            Page2.style.transform = 'scale(1)'
+            Page2.style.opacity = '1'
+
+
+        })
+
+        continutBtn_2.addEventListener('click', () => {
+            Page2Insidecontainer.style.transform = 'scale(8)translateX(-300px)'
+            Page2Insidecontainer.style.opacity = '0'
+            Page2.style.transform = 'scale(0)'
+
+            Page3.style.transform = 'scale(1)'
+            Page3.style.opacity = '1'
+
+        })
+        continutBtn_3.addEventListener('click', () => {
+            Page3Insidecontainer.style.transform = 'scale(0) rotate(720deg)'
+            Page3.style.transform = 'scale(0)'
+            Page4.style.transform = 'scale(1) rotate(720deg)'
+            Page4.style.opacity = '1'
+
+
+        })
+        continutBtn_4.addEventListener('click',() =>{
+            Page4Lamp.style.filter = 'brightness(500%)'
+            // Page4Lamp.style.transitionDelay = '1s'
+            Page4LampBox.style.animation = 'none'
+            Page4LampBox.style.opacity = '0'
+            Page4LampBox.style.width = '0%'
+            Page4TextBox.style.transform = 'scale(0)'
+
+            Page4GenieBox.style.opacity = '1'
+            Page4GenieBox.style.transform = 'scale(1) rotate(1080deg)'
+
+            Page5TextBox.style.opacity = '1'
+            Page4TVBox.style.opacity = '1'
+
+
+
+        })
+
+        continutBtn_5.addEventListener('click',() =>{
+            TV_Mv1.style.filter = 'brightness(300%)'
+            TV_Mv2.style.opacity = '1'
+            ThanksCard.style.transform = 'translate(-50%,-50%) scale(1)'
+            Page4Insidecontainer.style.filter = 'brightness(20%)'
+        })
+
+
+        // -------------------------------------------------------
+
+        let cheeseBox = document.querySelector('.cheese__box')
+        let jerryHaad = document.querySelector('.jerry-haad')
+        let tomHaad = document.querySelector('.tom-haad')
+
+
+        jerryHaad.style.transform = 'translateX(110%)'
+        tomHaad.style.transform = 'translateX(-110%)'
+
+        cheeseBox.addEventListener('mouseenter', () => {
+            jerryHaad.style.transform = 'translateX(0%)'
+            tomHaad.style.transform = 'translateX(0%)'
+        })
+        cheeseBox.addEventListener('click', () => {
+            jerryHaad.style.transform = 'translateX(110%)'
+            tomHaad.style.transform = 'translateX(-110%)'
+            cheeseBox.style.width = "0%"
+
+        })
+        // -------------------------------------------------------
+        let AcornHaad = document.querySelector('.Acorn-haad')
+        let AcornBox = document.querySelector('.Acorn__box')
+
+        AcornHaad.style.transform = 'translateY(110%)'
+
+
+        AcornBox.addEventListener('mouseenter', () => {
+            AcornHaad.style.transform = 'translateY(-30%) translateX(40%)'
+        })
+        AcornBox.addEventListener('click', () => {
+            AcornHaad.style.transform = 'translateY(110%)'
+            AcornBox.style.width = "0%"
+        })
+        // -------------------------------------------------------
+        let GrangonHaad = document.querySelector('.Grangon-haad')
+        let gbBox = document.querySelector('.gb__box')
+
+        GrangonHaad.style.opacity = '0'
+        gbBox.addEventListener('mouseenter', () => {
+            GrangonHaad.style.opacity = '.7'
+        })
+        gbBox.addEventListener('click', () => {
+            GrangonHaad.style.opacity = '0'
+            gbBox.style.width = "0%"
+
+        })
+
+        // -------------------------------------------------------
+        let RounHead = document.querySelector('.Roun-head')
+        let GoldenSnitchBox = document.querySelector('.Golden__Snitch__box')
+
+        RounHead.style.transform = "translate(110%,110%)"
+        GoldenSnitchBox.addEventListener('mouseenter', () => {
+            RounHead.style.transform = "translate(-560%,-460%)"
+        })
+        GoldenSnitchBox.addEventListener('click', () => {
+            GoldenSnitchBox.style.width = "0%"
+        })
+
+
+        // -------------------------------------------------------
+
+
+
+        let LampBox = document.querySelector('.Lamp__box')
+        let lamp__1 = document.querySelector('.lamp__1')
+        let lamp__2 = document.querySelector('.lamp__2')
+        let Page3TextBox = document.querySelector('.Page__3__text__box')
+        let Abu__3 = document.querySelector('.Abu_3')
+        let Cat__1 = document.querySelector('.Cat_1')
+        let Page3Bg = document.querySelector('.Page__3__bg')
+
+
+        Page3TextBox.style.opacity = '0'
+        Abu__3.style.opacity = '0'
+        Cat__1.style.opacity = '0'
+
+        LampBox.addEventListener('mouseenter', () => {
+            lamp__1.style.opacity = '0'
+            lamp__2.style.opacity = '1'
+            lamp__2.style.transform = 'scale(1.15) translateY(-12%) rotate(5deg)'
+            Page3TextBox.style.opacity = '1'
+            Abu__3.style.opacity = '1'
+            Cat__1.style.opacity = '1'
+            Page3Bg.style.filter = 'brightness(20%)';
+            cheeseBox.style.width = "0%"
+            AcornBox.style.width = "0%"
+            gbBox.style.width = "0%"
+            GoldenSnitchBox.style.width = "0%"
+
+
+
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+.carousel__big__box__10{
+    width: 100%;
+    margin-top: 260px;
+
+}
+.carousel__title__section{
+    display: flex;
+}
+
+
+.carousel__title{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+color: white;
+
+
+}
+
+.carousle__button {
+
+    width: 5%;
+    height: 150%;
+    background-color: rgb(26, 29, 36);
+    z-index: 90;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.5);
+}
+
+
+.side__left {
+    width: 100%;
+    height: 100%;
+    color: antiquewhite;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    transform: translateX(-10px);
+}
+.side__right {
+    width: 100%;
+    height: 100%;
+    color: antiquewhite;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    /* position: absolute;
+    top: 50%; */
+    /* transform: translateY(-50%); */
+}
+
+.side__left:hover .left__icon{
+transform: scale(1.2);
+color:rgb(16, 255, 162) ;
+}
+
+.side__right:hover .right__icon{
+    transform: scale(1.2);
+    color:rgb(16, 255, 162) ;
+    }
+    
+
+.left__icon{
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.52);
+    transition: .1s;
+}
+
+
+.right__icon{
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.52);
+    transition: .1s;
+
+}
+
+
+.carousel__button--left {
+    position: absolute;
+    left: -5%;
+    top: 51%;
+    transform: translateY(-50%);
+    /* border-radius: 0 10px 10px 0; */
+}
+
+
+.carousel__button--right {
+    position: absolute;
+    right: -5%;
+    top: 51.1%;
+    transform: translateY(-50%);
+    /* border-radius: 10px 0 0 10px; */
+
+}
+
+
+.carousel {
+    position: relative;
+    /* height: 600px; */
+    width: 100%;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+.carousel__images {
+    width: 100%;
+    border-radius: 10px;
+    /* height: 500px; */
+}
+
+.carousel__track-container {
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 10px;
+    /* overflow-x: hidden; */
+    /* background-color: rgb(146, 255, 52); */
+    /* padding: 10px; */
+    /* height: 100%; */
+}
+
+.carousel__track {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: .5s;
+}
+
+.carousel__slide {
+    /* display: flex; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__nav {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.carousel__indicator {
+
+    width: 25px;
+    height: 5px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+    background-color: rgba(0, 0, 0, 0.499);
+}
+
+.is-hidden {
+    display: none;
+}
+
+.image__box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image__card {
+    width: 33.3%;
+    transition: .5s;
+    padding: 0 2px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.image__card:hover {
+    z-index: 99;
+    transform: scale(1.15);
+    /* border: 5px solid wheat; */
+}
+
+
+
+.card4 {
+    display: none;
+}
+
+.card5 {
+    display: none;
+}
+
+.card6 {
+    display: none;
+}
+
+.card7 {
+    display: none;
+}
+
+/* -----card_text------------ */
+
+
+.movie__name{
+    color: white;
+    font-size: 14px;
+    padding: 0px 0;
+}
+.movie__icons{
+    display: flex;
+}
+.movie__icon__box{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+
+@media screen and (min-width: 750px) {
+
+    .image__card {
+        width: 25%;
+        padding: 3px;
+    }
+
+    .card4 {
+        display: block;
+    }
+
+    .card5 {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .card6 {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+    .card7 {
+        display: block;
+    }
+
+    .movie__name{
+        color: white;
+        font-size: 16px;
+        padding: 5px 0;
+    }
+    .movie__icons{
+        display: flex;
+    }
+    .movie__icon__box{
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+    
+}
