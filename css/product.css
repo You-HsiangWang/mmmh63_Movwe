@@ -64,7 +64,7 @@ html {
     display: none;
 }
 
-/* 商品選項 input樣式 */
+/* 優惠券選取 input樣式 */
 
 /* https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
 
@@ -92,6 +92,10 @@ fieldset input[type="radio"]::before {
     border-radius: 50%;
     background-color: #10FFA2;
     transform: scale(0);
+}
+
+fieldset input[type="radio"]:checked::before {
+    transform: scale(1);
 }
 
 fieldset input[type="radio"]:checked::before {
