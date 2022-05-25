@@ -567,7 +567,9 @@ svg {
     border-radius: 50%;
     overflow: hidden;
 }
-
+.ar-img-wrap img{
+    width: 100%;
+}
 ul.ar-filter li {
     display: flex;
     justify-content: center;
@@ -678,9 +680,9 @@ th, td{
 /* .orderDetail-btn a{
     color: #FC6F51;
 } */
-/* .od-pc{
+.od-pc{
     display: none;
-} */
+}
 .od-mweb tr{
     display: flex;
     justify-content: flex-start;
@@ -960,14 +962,19 @@ th, td{
     .od-pc td{
         border: 1px solid rgba(167, 5, 5, 0)
     }
-
+    .od-pc{
+        display: table;
+    }
+    .od-mweb{
+        display:none;
+    }
     
 }
 
 /* 訂單 */
     @media only screen and (max-width:750px){
         table{
-            width: 85%;
+            width: 100%;
         }
         thead{
             display: none ;

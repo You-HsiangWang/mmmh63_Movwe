@@ -5,7 +5,10 @@
     <link rel="stylesheet" href="./css/no-article.css">
     
     
-    <script src="./js/jquery-3.6.0.js"></script>  
+    <script src="./js/jquery-3.6.0.js"></script>
+    <style>
+    
+    </style>
 </head>
 
 <body>
@@ -1072,7 +1075,7 @@
                                         
                                         <br>
                                         <!-- 訂單明細2 -->
-                                        <table class="orderDetail-table-2">
+                                        <table class="orderDetail-table-2 od-pc">
                                             <thead>
                                                 <tr>
                                                     <th>商品名</th>
@@ -1083,7 +1086,7 @@
                                                     <th>小計</th>
                                                 </tr>
                                             </thead>
-                                            <tbody class="od-pc">
+                                            <tbody>
                                                 <tr>
                                                     <td class="od-product">
                                                         <div class="od-num">1.</div>
@@ -1127,8 +1130,21 @@
                                                     <td class="gw">NTD890</td>
                                                 </tr>
                                             </tbody>    
+                                        </table>
+
+                                        <table class="orderDetail-table-2 od-mweb">
                                             
-                                            <tbody class="od-mweb">
+                                            <thead>
+                                                <tr>
+                                                    <th>商品名</th>
+                                                    <th>顏色</th>
+                                                    <th>尺寸</th>
+                                                    <th>價格</th>
+                                                    <th>數量</th>
+                                                    <th>小計</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
                                                 <tr>
                                                     <td class="od-left">
                                                         <div class="od-pic">

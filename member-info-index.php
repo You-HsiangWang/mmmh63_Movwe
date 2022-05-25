@@ -9,9 +9,24 @@
     
 
     <style>
+        /* *{
+            outline:1px solid red;
+        } */
         .display_none{
             display: none;
         }
+        /* .od-pc{
+            display:none;
+        } */
+        /* @media screen and (min-width: 750px) {
+            .od-pc{
+            display: table;
+            }
+            .od-mweb{
+            display:none;
+        }
+        
+        } */
     </style>
 </head>
 
@@ -120,94 +135,6 @@
                                         <div class="info_acc_word">我的片單</div>
                                     </div>
                                     <div class="actor_flims ">
-                                        <div class="actor_flim">
-                                            <div class="ac_flim_pic">
-                                                <img src="./img/talls_img/ghost.jpg" alt="">
-                                            </div>
-                                            <div class="ac_flim_name">
-                                                鬼怪-孤單又燦爛的..
-                                            </div>
-                                            <div class="ac_ott">
-                                                <div class="ac_netflix">
-                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_iqiyi">
-                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_kktv">
-                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_friday">
-                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="actor_flim">
-                                            <div class="ac_flim_pic">
-                                                <img src="./img/talls_img/ghost.jpg" alt="">
-                                            </div>
-                                            <div class="ac_flim_name">
-                                                鬼怪-孤單又燦爛的..
-                                            </div>
-                                            <div class="ac_ott">
-                                                <div class="ac_netflix">
-                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_iqiyi">
-                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_kktv">
-                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_friday">
-                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="actor_flim">
-                                            <div class="ac_flim_pic">
-                                                <img src="./img/talls_img/ghost.jpg" alt="">
-                                            </div>
-                                            <div class="ac_flim_name">
-                                                鬼怪-孤單又燦爛的..
-                                            </div>
-                                            <div class="ac_ott">
-                                                <div class="ac_netflix">
-                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_iqiyi">
-                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_kktv">
-                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_friday">
-                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="actor_flim">
-                                            <div class="ac_flim_pic">
-                                                <img src="./img/talls_img/ghost.jpg" alt="">
-                                            </div>
-                                            <div class="ac_flim_name">
-                                                鬼怪-孤單又燦爛的..
-                                            </div>
-                                            <div class="ac_ott">
-                                                <div class="ac_netflix">
-                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_iqiyi">
-                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_kktv">
-                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_friday">
-                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="actor_flim">
                                             <div class="ac_flim_pic">
                                                 <img src="./img/talls_img/ghost.jpg" alt="">
@@ -1079,7 +1006,7 @@
                                         
                                         <br>
                                         <!-- 訂單明細2 -->
-                                        <table class="orderDetail-table-2">
+                                        <table class="orderDetail-table-2 od-pc">
                                             <thead>
                                                 <tr>
                                                     <th>商品名</th>
@@ -1090,7 +1017,7 @@
                                                     <th>小計</th>
                                                 </tr>
                                             </thead>
-                                            <tbody class="od-pc">
+                                            <tbody>
                                                 <tr>
                                                     <td class="od-product">
                                                         <div class="od-num">1.</div>
@@ -1134,8 +1061,21 @@
                                                     <td class="gw">NTD890</td>
                                                 </tr>
                                             </tbody>    
+                                        </table>
+
+                                        <table class="orderDetail-table-2 od-mweb">
                                             
-                                            <tbody class="od-mweb">
+                                            <thead>
+                                                <tr>
+                                                    <th>商品名</th>
+                                                    <th>顏色</th>
+                                                    <th>尺寸</th>
+                                                    <th>價格</th>
+                                                    <th>數量</th>
+                                                    <th>小計</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
                                                 <tr>
                                                     <td class="od-left">
                                                         <div class="od-pic">
