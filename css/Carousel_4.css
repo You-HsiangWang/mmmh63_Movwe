@@ -1,6 +1,7 @@
+
 .carousel__big__box__4{
     width: 100%;
-    margin-top: 40px;
+    margin-top: 0px;
 
 }
 .carousel__title__section__4{
@@ -107,10 +108,36 @@ color:rgb(16, 255, 162) ;
     /* overflow: hidden; */
 }
 
+.update__img__box{
+    width: 100%;
+    position: relative;
+}
+
 .carousel__images__4 {
+    transition: .3s;
+    filter: brightness(100%);
     width: 100%;
     border-radius: 10px;
     /* height: 500px; */
+}
+.update__date{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.468);
+        box-shadow: 0 0 10px rgb(16, 255, 162) inset;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px 5px 15px;
+    border: 2px solid rgb(16, 255, 162);
+    /* border-radius: 10px; */
+    transition: .3s;
+    color: rgb(16, 255, 162);
+    font-size: 30px;
+    position: absolute;
+    top: 30%  ;
+    left: 50% ;
+    transform: translate(-50%,-200%) scale(0);
 }
 
 .carousel__track-container__4 {
@@ -175,8 +202,13 @@ color:rgb(16, 255, 162) ;
 }
 
 
+/* .image__card__4:hover {
+    z-index: 99;
+    transform: scale(1.05);
+    border: 5px solid wheat;
+} */
 
-
+/* ---------------------------- */
 
 .image__card__4 {
     width: 33.3%;
@@ -196,11 +228,41 @@ color:rgb(16, 255, 162) ;
 
 
 
-.image__card__4:hover .carousel__images__box__4{
-    transform: scale(0);
-    opacity: .3;
-    /* border: 5px solid wheat; */
+.image__card__4:hover .carousel__images__4{
+    filter: brightness(20%);
 }
+
+.image__card__4:hover .update__date{
+    transform: translate(-50%,-50%) scale(1);
+}
+.image__card__4:hover .up__date{
+transform: translate(0%,100%);
+
+}
+
+
+
+
+.image__card__4:hover .movie__icons__4{
+    transform:translate(-50%,-50%) scale(1.2);
+}
+
+
+
+
+.image__card__4:hover .movie__name__4{
+    font-size: 18px;
+    font-weight: 500;
+    transform: translateY(-400%);
+    color: rgb(16, 255, 162);
+
+}
+
+
+
+
+
+
 
 .image__card__4:hover .imge__card__information{
     opacity: 1;
@@ -225,10 +287,6 @@ color:rgb(16, 255, 162) ;
 
 
 
-
-
-
-
 .card4__4 {
     display: none;
 }
@@ -249,18 +307,40 @@ color:rgb(16, 255, 162) ;
 
 
 .movie__name__4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
     color: white;
     font-size: 14px;
     padding: 0px 0;
 }
 .movie__icons__4{
+    transition: .3s;
     display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) scale(0);
 }
 .movie__icon__box__4{
+    transition: .2s;
+    border-radius: 5px;
+    border: 1px solid rgb(16, 255, 162);
+    /* box-shadow: 0 0 10px rgb(16, 255, 162); */
     width: 24px;
     height: 24px;
     margin-right: 8px;
 }
+
+.movie__icon__box__4:hover{
+    box-shadow: 0 0 10px rgb(16, 255, 162);
+    transform: translateY(-8%) scale(1.05);
+
+
+}
+
 .carousel__images__box__4{
     position: relative;
 }
@@ -285,27 +365,60 @@ background-color:rgba(255, 255, 255, 0.487)
     position: absolute;
     left: 50%;
     top: -40px;
-    transform: translateX(-50%);
+    transform:translate(-50%,0%);
     /* width: 100%; */
 }
 
+
+
+
 .Point{
+    transition: .3s;
     width: 12px;
     height: 12px;
     border-radius: 50px;
     margin: auto;
     background-color: rgb(16, 255, 162);
 }
+
+
+
+
+
 .up__date{
+    transition: .3s;
     color: white;
     font-size: 16px;
     padding-top: 5px;
 }
+
+
+
+
+.movie__name__wait{
+display: none;
+    /* opacity: 0; */
+}
+
+.movie__name__bt{
+display: block;
+
+}
+.image__card__4:hover .movie__name__wait{
+display: block;
+}
+
+
+.image__card__4:hover .movie__name__bt{
+display: none;
+}
+
+
 @media screen and (min-width: 750px) {
 
     .carousel__big__box__4{
         width: 100%;
-        margin-top: 200px;
+        margin-top: 120px;
     
     }
     

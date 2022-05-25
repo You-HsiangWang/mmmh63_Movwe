@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .mobile__none{
     display: none;
 }
