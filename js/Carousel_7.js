@@ -190,3 +190,13 @@ dotsNav__7.addEventListener('click', e => {
     // }
 
 })
+
+const ShopCardIcon = document.querySelector('.Shop__card__icon');
+
+
+
+// ShopCardIcon.style.color = 'rgba(255, 255, 255, 0.743)';
+
+
+
+
