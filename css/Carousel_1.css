@@ -13,6 +13,10 @@
     margin-top: 80px;
 
 }
+
+.margin__tp__100{
+    margin-top: 100px;
+}
 .carousel__title__section{
     display: flex;
 }
@@ -252,6 +256,7 @@ color:rgb(16, 255, 162) ;
 
 .image__card:hover .information__bottom{
     opacity: 1;
+    color: rgba(0, 0, 0, 0);
 }
 
 
