@@ -78,12 +78,12 @@ function addPCFunction() {
 
 $('.buy').click(function(){
     console.log('hello' , this);
-    $('.cart-success').css('display' , 'flex');
+    $('.blackblack').css('display' , 'flex');
 });
 
 // 點選關閉彈跳視窗
 
 $('.close').click(function(){
     console.log('hello' , this);
-    $('.cart-success').css('display' , 'none');
+    $('.blackblack').css('display' , 'none');
 });
