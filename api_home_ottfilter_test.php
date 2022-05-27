@@ -102,57 +102,28 @@ $ottFilterStmt->bindValue(':fStyleSql', $fStyleSql, PDO::PARAM_STR);
 $ottFilterStmt->execute();
 $ottFilterRow = $ottFilterStmt->fetchAll();
 
-$videoIds = [];
-foreach($ottFilterRow as $r){
-    $videoIds[] = $r['video_sid'];
-}
-
-$actors_sql = sprintf("SELECT * FROM `video_actor_combine` WHERE `vac_video_sid` IN (%s)", implode(',', $videoIds));
-
-$actors = $pdo->query($actors_sql)->fetchAll();
-/*
 if (empty($ottFilterRow)) {
     $output = [
         'filtsuccess' => false,
         'code' => 401,
         'error' => '影劇查找失敗'
     ];
-    // echo json_encode($output, JSON_UNESCAPED_UNICODE);
-    // exit;
+    echo json_encode($output, JSON_UNESCAPED_UNICODE);
+    exit;
 };
 if (!empty($ottFilterRow)) {
     $output = [
         'filtsuccess' => true,
         'code' => 200,
         'error' => '影劇查找成功',
-        'test' => $ottFilterRow[0]['video_name'],
         'dom' => $ottFilterRow
     ];
-
-    $ai = 0;
-
-
-
-    while($ai < count($ottFilterRow)){
-    $actora =  $ottFilterRow[$ai]['video_sid'];
-    $actorSql = "SELECT `vac_actorname` FROM `video_actor_combine` WHERE `vac_video_sid` = $actora";
-    $actorstmt = $pdo->prepare($actorSql);
-    $actorstmt->execute();
-    if(!empty($actorstmt->fetchAll())){
-        $actarray = array("actor_name" => ($actorstmt->fetchAll()));
-        array_merge($ottFilterRow[$ai], $actarray);
-    };
-    $ai = $ai + 1;
-    };
-    
-    // echo json_encode($output, JSON_UNESCAPED_UNICODE);
-    // exit;
+    echo json_encode($output, JSON_UNESCAPED_UNICODE);
 };
-*/
 ?>
 
 <?php foreach ($ottFilterRow as $ottFilterRowInfo) : ?>
-    <div class="filter__card" data-videoSid="<?php // $ottFilterRowInfo["actor_name"][0] ?>">
+    <div class="filter__card" data-videoSid="<?= $ottFilterRowInfo['video_sid'] ?>">
         <div class="imge__card__information">
             <div class="information__top">
                 <img class="information__video" src="./videodb/video/<?= $ottFilterRowInfo['video_poster_hor'] ?>" alt="">
@@ -162,27 +133,26 @@ if (!empty($ottFilterRow)) {
                     <div class="information__bottom_1 Bottom__display">
                         <p class="information__typ"><?= $ottFilterRowInfo['video_genre'] ?></p>
                         <div class="bottom_6_icon_box">
-                            <?php
-                            $ottdata = [
-                                '1' => 'friday_s.svg',
-                                '2' => 'iqiyi_s.svg',
-                                '3' => 'kktv_s.svg',
-                                '4' => 'netflix_s.svg',
-                            ];
-
-                            $ar = json_decode($ottFilterRowInfo['video_ott'], true);
-                            if ($ar and count($ar)) {
-                                foreach ($ar as $v) {
-                                    if (!empty($data[$v])) {
-                                        echo '<a href="#">
-                                        <p class="bottom_6_icon">
-                                            <img src="./img/logo/' . $data[$v] . '" alt="">
-                                        </p>
-                                    </a>';
-                                    }
-                                }
-                            }
-                            ?>
+                            <a href="#">
+                                <p class="bottom_6_icon">
+                                    <img src="./img/logo/friday_s.svg" alt="">
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="bottom_6_icon">
+                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="bottom_6_icon">
+                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                </p>
+                            </a>
+                            <a href="#">
+                                <p class="bottom_6_icon">
+                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                </p>
+                            </a>
                         </div>
                     </div>
                     <div class="information__bottom_2 Bottom__display">
@@ -204,50 +174,16 @@ if (!empty($ottFilterRow)) {
                     <div class="information__bottom_5 Bottom__display">
                         <a href="#">
                             <p class="information__actor__name">
-                                <?php
-
-                                ?>
                             </p>
                         </a>
                         <span class="speace"> / </span>
                         <a href="#">
                             <p class="information__actor__name">
-                                <?php
-                                /*
-                                $ottFilterActorSql = 'SELECT `vac_actorname` FROM `video_actor_combine` WHERE `vac_video_sid` = :vidsid LIMIT 3';
-                                $ottFilterActorStmt = $pdo->prepare($ottFilterActorSql);
-                                $ottFilterActorStmt->bindValue(':vidsid', $ottFilterRowInfo['video_sid'], PDO::PARAM_INT);
-                                // $ottFilterActorStmt->bindValue(':preactor', 3, PDO::PARAM_INT);
-                                $ottFilterActorStmt->execute();
-                                $ottFilterActorRow = $ottFilterActorStmt->fetchAll();
-                                if (!empty($ottFilterActorRow['vac_actorname'])) {
-                                    echo json_encode($ottFilterActorRow['vac_actorname'][1], JSON_UNESCAPED_UNICODE);
-                                };
-                                */
-                                ?>
-                                <?php
-                                    foreach($actors as $a):
-                                        if($ottFilterRowInfo['video_sid'] == $a['vac_video_sid']){
-                                            echo " {$a['vac_actorname']} <br>";
-                                        }
-                                    endforeach;
-                                ?>
                             </p>
                         </a>
                         <span class="speace"> / </span>
                         <a href="#">
                             <p class="information__actor__name">
-                                <?php
-                                $ottFilterActorSql = 'SELECT `vac_actorname` FROM `video_actor_combine` WHERE `vac_video_sid` = :vidsid LIMIT 3';
-                                $ottFilterActorStmt = $pdo->prepare($ottFilterActorSql);
-                                $ottFilterActorStmt->bindValue(':vidsid', $ottFilterRowInfo['video_sid'], PDO::PARAM_INT);
-                                // $ottFilterActorStmt->bindValue(':preactor', 3, PDO::PARAM_INT);
-                                $ottFilterActorStmt->execute();
-                                $ottFilterActorRow = $ottFilterActorStmt->fetchAll();
-                                if (!empty($ottFilterActorRow['vac_actorname'])) {
-                                    echo json_encode($ottFilterActorRow['vac_actorname'][2], JSON_UNESCAPED_UNICODE);
-                                };
-                                ?>
                             </p>
                         </a>
 
