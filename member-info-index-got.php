@@ -7,7 +7,9 @@
     
     <script src="./js/jquery-3.6.0.js"></script>
     <style>
-    
+    .text__container{
+            height: 80vh;
+        }
     </style>
 </head>
 
@@ -2021,7 +2023,7 @@
     // 4個大頁籤 商品發亮
     $('.account_product a').css('color','#10ffa2')
     $('.account_product').siblings().css('color','#ffffff80');
-    
+
     // 影劇的tablet分類 僅顯示"影劇區"
     $('#acc_product').css('display', 'flex')
     $('#acc_product').siblings().css('display', 'none');
@@ -2030,6 +2032,7 @@
     $('.account_children_mall').css('display','block')
     $('.account_children_mall').siblings().css('display','none');
 
+
     //商品tablet分類 歷史訂單亮起 
     $('.info_child_order01 a').css('color','#10ffa2')
     $('.info_child_order01').siblings('li').css('color','#ffffff80');
@@ -2037,9 +2040,10 @@
 
     //影劇下方內容 僅顯示"歷史訂單
     $('#info_mall').css('display','block')
-    $('#info_mall-02').css('display','none')
-    
+    $('#info_mall').siblings().css('display','none');
+
     $('.account_product').on('click',oldOreder);
+
 
     //商品底線亮起 其餘底線消失
     $('.account_product').click(function(){
@@ -2172,8 +2176,8 @@
     })
 
     $('.od-btn').click(function(){
-        $('#info_mall-02').css('display','none')
-        $('.hs-order').css('display','block')
+        $('#info_mall').css('display','block')
+        $('.cuxian').css('display','none')
     })
 </script>
 
