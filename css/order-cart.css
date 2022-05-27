@@ -1,0 +1,162 @@
+/* @media screen and (max-width: 500px) {
+            .left_nav {
+                display: none;
+            }
+
+        } */
+
+.text__container {
+    width: 95%;
+    height: 100vh;
+    /* background-color: rgb(124, 124, 124); */
+    margin: 80px auto 0 auto;
+
+}
+
+.top_nav_searchbar_box {
+    width: 200px;
+}
+
+.left_nav {
+    display: block !important;
+}
+
+.left_div {
+    display: block !important;
+}
+
+.bars {
+    opacity: 0;
+}
+
+.top_nav_movwe_img-2 {
+    transform: scale(1);
+}
+
+/* 進度條 */
+
+.progress-bar {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* table */
+
+.booking-list table {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.booking-list table th,
+.booking-list table td {
+    /* width: 150px; */
+    height: 100px;
+    /* text-align: center; */
+    /* white-space: nowrap; */
+
+}
+
+.booking-list table img {
+    /* width: 100%; */
+    width: 100px;
+    height: 100px;
+}
+
+/* 商品數量 */
+
+.button-number {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+#quantity {
+    width: 15px;
+    color: #fff;
+    background-color: #1A1D24;
+    border: none;
+    text-align: right;
+}
+
+/* 商品價格 */
+
+#singlePrice,
+#subTotalPrice {
+    font-size: 16px;
+    color: #fff;
+}
+
+#noProduct {
+    display: none;
+}
+
+/* 優惠券 */
+
+.discount-info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* 商品移除 checkbox樣式 */
+
+input[type="checkbox"]+span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="checkbox"]+span>svg {
+    display: none;
+}
+
+input[type="checkbox"]:checked+span>svg {
+    display: block;
+    font-size: 1.6rem;
+}
+
+/* 優惠券選取 input樣式 */
+
+/* https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
+
+fieldset {
+    border: none;
+}
+
+input[type="radio"] {
+    position: relative;
+    appearance: none;
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #10FFA2;
+    border-radius: 50%;
+}
+
+input[type="radio"]::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 5px);
+    left: calc(50% - 5px);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #10FFA2;
+    transform: scale(0);
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+/* 運送地區 svg方向 */
+
+.star-svg {
+    transform: rotate(90deg);
+}
