@@ -3,113 +3,18 @@
 require './parts/movwe_connect_db.php';
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./fontawesome/css/all.css">
-    <link rel="stylesheet" href="./css/Nav.css">
-    <link rel="stylesheet" href="./css/BS.css">
-    <link rel="stylesheet" href="./css/Home.css">
-    <link rel="stylesheet" href="./css/filter.css">
-    <link rel="stylesheet" href="./css/Carousel_1.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../images/LOGO.png">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,300&family=Noto+Serif+TC:wght@200;300;500;700;900&display=swap" rel="stylesheet">
-    <script src="./js/jquery-3.6.0.js"></script>
-
-    <title>Movwe</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            outline: 1px solid greenyellow;
-        }
-
-        body {
-            background-color: rgb(26, 29, 36);
-            font-family: 'Caveat', cursive;
-            font-family: 'Cormorant Garamond', serif;
-            font-family: 'Noto Serif TC', serif;
-            /* overflow-x: hidden; */
-
-        }
-
-        html {
-            font-size: 12px;
-            overflow-x: hidden;
-
-
-        }
-
-
-        footer {
-            width: 100%;
-            height: 100px;
-            background-color: rgb(0, 0, 0);
-            margin-top: 100px;
-
-
-        }
-
-
-        .dino__footer {
-            height: 500px;
-            background-color: #fff;
-            width: 100%;
-            /* height: 50vh; */
-            /* background-color: rgb(124, 124, 124); */
-            margin: 0 auto;
-            /* overflow: hidden; */
-            position: absolute;
-            top: 100%;
-
-        }
-
-
-
-        /* @media screen and (max-width: 500px) {
-            .left_nav {
-                display: none;
-            }
-
-        } */
-
-
-        @media screen and (min-width: 750px) {
-            .text__container {
-                width: 94%;
-                height: 100vh;
-                /* background-color: rgb(124, 124, 124); */
-                margin: 80px auto 0 auto;
-
-            }
-
-            .top_nav_searchbar_box {
-                width: 200px;
-            }
-
-            .left_nav {
-                display: block !important;
-            }
-
-            .left_div {
-                display: block !important;
-            }
-
-            .bars {
-                opacity: 0;
-            }
-
-            .top_nav_movwe_img-2 {
-                display: none !important;
-            }
-        }
-
-        /* --------------------- */
-    </style>
+<?php include __DIR__ . '/parts/movwe_head.php'; ?>
+<link rel="stylesheet" href="./css/Home.css">
+<link rel="stylesheet" href="./css/filter.css">
+<link rel="stylesheet" href="./css/Carousel_1.css">
+<script src="./js/jquery-3.6.0.js"></script>
+<!-- h1h1h1h1h1h1h1h1h11h1h11h1h1h1h1h1h1h1h1h1h1h1h1h1h1h1h1 -->
+<style>
+    .Filter__text__box {
+        display: flex;
+    }
+</style>
 </head>
 
 <body>
@@ -143,7 +48,7 @@ require './parts/movwe_connect_db.php';
                     </button>
                     <button class="filter_2w genre_item__2 filter_function ff_genr" data-filter='2'>電視劇
                     </button>
-                    <button class="filter_2w genre_item__3 ff_genr" data-filter='3'>綜藝
+                    <button class="filter_2w genre_item__3 filter_function ff_genr" data-filter='3'>綜藝
                     </button>
                     <button class="filter_2w genre_item__4 filter_function ff_genr" data-filter='4'>動畫
                     </button>
@@ -162,11 +67,11 @@ require './parts/movwe_connect_db.php';
                             日本
                         </button>
                         <button class="browse-filter-item filter_2w browse_item__3 filter_function ff_plac" data-filter='3'>
-                            歐美西洋
+                            歐美
                         </button>
-                        <button class="browse-filter-item filter_2w browse_item__4 ff_plac" data-filter='4'>
+                        <button class="browse-filter-item filter_2w browse_item__4 filter_function ff_plac" data-filter='4'>
                             台灣 </button>
-                        <button class="browse-filter-item filter_2w browse_item__5 ff_plac" data-filter='5'>
+                        <button class="browse-filter-item filter_2w browse_item__5 filter_function ff_plac" data-filter='5'>
                             中國 </button>
                     </ul>
                 </li>
@@ -176,27 +81,24 @@ require './parts/movwe_connect_db.php';
                     </div>
                     <ul class="browse-filter-items">
                         <button class="browse-filter-item filter_2w style_item__1 filter_function ff_styl" data-filter='1'>
-                            浪漫愛情 </button>
+                            浪漫愛情</button>
                         <button class="browse-filter-item filter_2w style_item__2 filter_function ff_styl" data-filter='2'>
-                            懸疑推理 </button>
+                            輕鬆喜劇</button>
                         <button class="browse-filter-item filter_2w style_item__3 filter_function ff_styl" data-filter='3'>
-                            社會現場 </button>
+                            劇情文藝</button>
                         <button class="browse-filter-item filter_2w style_item__4 filter_function ff_styl" data-filter='4'>
-                            輕鬆喜劇 </button>
+                            青春校園</button>
                         <button class="browse-filter-item filter_2w style_item__5 filter_function ff_styl" data-filter='5'>
-                            靈異驚悚 </button>
+                            奇幻冒險</button>
                         <button class="browse-filter-item filter_2w style_item__6 filter_function ff_styl" data-filter='6'>
-                            奇幻冒險 </button>
+                            科技未來</button>
                         <button class="browse-filter-item filter_2w style_item__7 filter_function ff_styl" data-filter='7'>
-                            青春校園 </button>
+                            犯罪動作</button>
                         <button class="browse-filter-item filter_2w style_item__8 filter_function ff_styl" data-filter='8'>
-                            時代史劇 </button>
+                            懸疑推理</button>
                         <button class="browse-filter-item filter_2w style_item__9 filter_function ff_styl" data-filter='9'>
-                            闔家觀賞 </button>
-                        <button class="browse-filter-item filter_2w style_item__10 filter_function ff_styl" data-filter='10'>
-                            運動競技 </button>
-                        <button class="browse-filter-item filter_2w style_item__11 filter_function ff_styl" data-filter='11'>
-                            實境遊戲 </button>
+                            靈異驚悚</button>
+
                     </ul>
                 </li>
             </ul>
@@ -205,7 +107,7 @@ require './parts/movwe_connect_db.php';
         <!------篩選後_BOX----------------------------------->
         <div class="Filter__text__box">
 
-            <!-- <div class="filter__card">
+            <div class="filter__card">
                 <div class="imge__card__information">
                     <div class="information__top">
                         <img class="information__video" src="./videodb/video/a_100394134_m_601_m1_1013_638.webp" alt="">
@@ -314,61 +216,132 @@ require './parts/movwe_connect_db.php';
                         </div>
                         <div class="movie__icons">
                             <div class="movie__icon__box">
-                                <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                             </div>
                             <div class="movie__icon__box"> <a href=""></a>
-                                <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                             </div>
                             <div class="movie__icon__box">
-                                <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                             </div>
                             <div class="movie__icon__box">
-                                <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
         </div>
 
+    </div>
 
-        <script src="./js/Carousel_1.js"></script>
+    <!-- <script src="./js/Carousel_1.js"></script> -->
+    <script src="./js/Filter.js"></script>
 
-        <script>
-            const filterBtns = document.querySelectorAll('.filter_function');
+    <script>
+        // 綁定filterbtn點擊後要觸發的功能 filterApi---------------------------------------
+        const filterBtns = document.querySelectorAll('.filter_function');
+        for (let i = 0; i < filterBtns.length; i++) {
+            filterBtns[i].addEventListener('click', filterActive);
+        };
 
-            function filterApi() {
-                // 宣告變數
-                let filtPlat;
-                let filtGenre;
-                let filtPlace;
-                let filtStyle;
-                const filtPlatArray = [];
+        // 切換filterbtn active的狀態 並呼叫filterGetData--------------------------------
+        function filterActive() {
+            // 將btn拆成4列 第一列多選
+            // 1-1.判斷ott平台btn 被點擊的active狀態 原本active
+            if ($(this).hasClass('ff_plat filterActive')) {
+                $(this).removeClass('filterActive');
+                filterGetData();
+            }
+            // 原本不active
+            else if ($(this).hasClass('ff_plat') && !$(this).hasClass('filterActive')) {
+                $(this).addClass('filterActive');
+                filterGetData();
+            }
+            // 1-2.判斷其他單選btn 被點擊的active狀態 原本active
+            else if ($(this).hasClass('ff_genr filterActive') || $(this).hasClass('ff_plac filterActive') || $(this).hasClass('ff_styl filterActive')) {
+                $(this).removeClass('filterActive');
+                filterGetData();
+            }
+            // 原本不active
+            else if (($(this).hasClass('ff_genr') || $(this).hasClass('ff_plac') || $(this).hasClass('ff_styl')) && !$(this).hasClass('filterActive')) {
+                $(this).addClass('filterActive');
+                $(this).siblings().removeClass('filterActive');
+                filterGetData();
+            };
+        };
+        // 將filterbtn拆成四組 判斷情況每一行activebtn的數量 1.都沒有就返回預設 2.有任一個 取得data-值 並呼叫api----------------------------------------------------------------------------
+        function filterGetData() {
+            // 宣告變數 拿到4個row 全部有active的btn
+            const fPlat = document.querySelectorAll('.ff_plat.filterActive.filter_function');
+            const fGenre = document.querySelectorAll('.ff_genr.filterActive.filter_function');
+            const fPlace = document.querySelectorAll('.ff_plac.filterActive.filter_function');
+            const fStyle = document.querySelectorAll('.ff_styl.filterActive.filter_function');
+            // 宣告儲存data-filter的變數 用來送值到api
+            let fPlatArray = [];
+            let dPlarData;
+            let fGenrData;
+            let fPlacData;
+            let fStylData;
+            // 宣告傳去api的物件 
+            let fDataObj = {};
 
-                // 判斷
-                if ($(this).hasClass('.ff_plat.filterActive')) {
-                    $(this).removeClass('filterActive');
-                    filtPlat = document.querySelectorAll('.ff_plat.filterActive.filter_function');
-
-                    for (let i = 0; i < filtPlat.length; i++) {
-                        filtPlatArray.push(filtPlat[i].getAttribute('data-filter'))
+            // 若四個row都返回空陣列 => 返回初始狀態 
+            if (fPlat.length == 0 && fGenre.length == 0 && fPlace.length == 0 && fStyle.length == 0) {
+                // display none filter
+                // display block 
+                console.log('返回初始狀態');
+            } else {
+                console.log('要呼叫api');
+                // 先判斷是否沒有被點擊
+                if (fPlat.length != 0) {
+                    // ottbtn 特別多選 要傳陣列 
+                    for (let i1 = 0; i1 < fPlat.length; i1++) {
+                        // 拿到data-filter
+                        fPlatData = fPlat[i1].getAttribute('data-filter');
+                        // 傳這個到api
+                        fPlatArray.push(fPlatData);
                     };
-                } else if ($(this).hasClass('.ff_plat') && !$(this).hasClass('.filterActive')) {
-                    $(this).addClass('filterActive');
+                } else {
+                    fPlatArray = '0';
                 };
 
+                // 其餘三個直接拿陣列的第一個 data-filter 若有被點擊拿data 若沒有拿0
+                fGenrData = (fGenre.length != 0) ? fGenre[0].getAttribute('data-filter') : '0';
+                fPlacData = (fPlace.length != 0) ? fPlace[0].getAttribute('data-filter') : '0';
+                fStylData = (fStyle.length != 0) ? fStyle[0].getAttribute('data-filter') : '0';
 
-
-
-                $.get('ott_filter_api.php', {}, function(data) {}, 'json');
+                //f_ott陣列裡面放數字 其他都是數字
+                fDataObj = {
+                    "f_ott": fPlatArray,
+                    "f_genre": fGenrData,
+                    "f_place": fPlacData,
+                    "f_style": fStylData,
+                };
+                console.log(fPlatArray, fGenrData, fPlacData, fStylData, fDataObj);
+                // 呼叫傳送api 把obj傳過去
+                filterApi(fDataObj);
             };
+        };
+        // 傳給api然後對api回傳的內容做壞壞的事---------------------------------------------
+        function filterApi(par) {
+            $.get('api_home_ottfilter.php', par, function(data) {
+                console.log(data);
+                // 這邊應該要傳回api寫好的html
 
 
-            for (let i = 0; i < filterBtns.length; i++) {
-                filterBtns[i].addEventListener('click', filterApi);
-            };
-        </script>
+
+            }, 'json');
+        };
+        // loading時給預設值
+        // const fDefaultObj = {
+        //     "f_ott": '0',
+        //     "f_genre": '0',
+        //     "f_place": '0',
+        //     "f_style": '0',
+        // };
+    </script>
 
 </body>
 

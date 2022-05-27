@@ -1,0 +1,105 @@
+body {
+    overflow-x: hidden;
+}
+
+
+.carousel__big__box__wish__page{
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+.carousel__title__section__wish__page{
+    display: flex;
+}
+
+
+.carousel__title__wish__page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+.wish__input__container{
+    width: 100%;
+}
+.wish__input__box{
+    width: 100%;
+}
+.wish__input__title{
+    width: 100%;
+    color: rgb(16, 255, 162);
+    font-size: 20px;
+    margin: 40px 0 0 0px;
+
+}
+
+.wish__input__box{
+    margin: 20px 0 0 0px;
+}
+
+.wish__input{
+
+    background-color: rgba(255, 255, 255, 0.462);
+    height: 25px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    outline-style: none;
+
+}
+.wish__button{
+
+    margin-top: 20px;
+
+}
+.wish__button__box{
+    width: 100%;
+}
+
+
+.wish__input__{
+
+
+}
+
+
+@media screen and (min-width: 750px) {
+    .wish__input__title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    .wish__input__{
+        margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .wish__input{
+        height: 30px;
+    }
+
+
+.wish__button__box{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn_2w{
+    font-size: 18px;
+    width: 100px;
+}
+
+
+}
+
+

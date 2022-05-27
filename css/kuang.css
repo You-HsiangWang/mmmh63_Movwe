@@ -1,0 +1,89 @@
+.kuang_bg{
+    width: 100%;
+    height: 100vh;
+    background-color: #24252ac8;
+    transform: translateY(-100vh);
+    
+}
+.kuang{
+    margin: auto;
+    transform: translateY(40vh);
+    width: 350px;
+    height: 280px;
+    outline: 2px solid #FEB73A;
+    border-radius: 4px;
+    background: #24252A;
+    font-size: 14px;
+    color: #FFFFFD;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.kuang-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+}
+.kuang_logopic{
+    width: 80px;
+    height: 80px;
+}
+.kuang_logopic img{
+    width: 100%;
+    height: 100%;
+}
+.kuang_logoword{
+    width: 45%;
+}
+.kuang_logoword img{
+    width: 100%;
+}
+.kuang-word{
+    font-size: 14px;
+}
+.kuang-center a, .kuang-last a{
+    text-decoration: none;
+    color: #10FFA2;
+}
+.kuang-center, .kuang-last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+}
+.confirm_btn{
+    color: #000000;
+    cursor: pointer;
+    padding: 10px 10px;
+    background: #10FFA2;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 20%;
+    transition: .1s;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+.confirm_btn:hover{
+    transform: scale(1.05);
+    opacity: .8;
+}
+
+
+@media screen and (min-width: 750px) {
+    .kuang_bg{
+        width: calc(100vw - 64px);
+        height: 100vh;
+        transform: translate(-3vw ,-85vh);
+    }
+    .kuang{
+        transform: translateY(40vh);
+        width: 400px;
+        height: 280px;
+    }
+    .kuang-word{
+        font-size: 24px;
+    }
+}

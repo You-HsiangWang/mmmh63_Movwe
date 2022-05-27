@@ -7,21 +7,21 @@
 
 body {
     background-color: #1a1d24;
-    font-family: 'Caveat', cursive;
-    font-family: 'Cormorant Garamond', serif;
-    font-family: 'Noto Serif TC', serif;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    /* overflow-x: hidden; */
 }
 
 html {
     font-size: 12px;
+    /* overflow-x: hidden; */
 }
 
 @media screen and (min-width: 750px) {
     .text__container {
-        width: 95%;
+        width: 94%;
         /* height: 100vh; */
         /* background-color: rgb(124, 124, 124); */
         margin: 80px auto 0 auto;
-
     }
 }

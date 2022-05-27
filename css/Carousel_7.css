@@ -1,0 +1,400 @@
+
+.carousel__big__box__7{
+    width: 100%;
+    margin-top: 200px;
+
+}
+
+.actor__text__container{
+    width: 100%;
+    margin-top: 100px;
+
+}
+
+
+
+.carousel__title__section__7{
+    display: flex;
+}
+
+
+.carousel__title__7{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+color: white;
+
+
+}
+
+.carousle__button__7 {
+
+    width: 5%;
+    height: 120%;
+    background-color: rgb(26, 29, 36);
+    z-index: 90;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.5);
+}
+
+
+.side__left__7 {
+    width: 100%;
+    height: 100%;
+    color: antiquewhite;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    transform: translateX(-10px);
+}
+.side__right__7 {
+    width: 100%;
+    height: 100%;
+    color: antiquewhite;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    /* position: absolute;
+    top: 50%; */
+    /* transform: translateY(-50%); */
+}
+
+.side__left__7:hover .left__icon__7{
+transform: scale(1.2);
+color:rgb(16, 255, 162) ;
+}
+
+.side__right__7:hover .right__icon__7{
+    transform: scale(1.2);
+    color:rgb(16, 255, 162) ;
+    }
+    
+
+.left__icon__7{
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.52);
+    transition: .1s;
+}
+
+
+.right__icon__7{
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.52);
+    transition: .1s;
+
+}
+
+
+.carousel__button--left__7 {
+    position: absolute;
+    left: -5%;
+    top: 36%;
+    transform: translateY(-50%);
+    /* border-radius: 0 10px 10px 0; */
+}
+
+
+.carousel__button--right__7 {
+    position: absolute;
+    right: -5%;
+    top: 36%;
+    transform: translateY(-50%);
+    /* border-radius: 10px 0 0 10px; */
+
+}
+
+
+.carousel__7 {
+    position: relative;
+    /* height: 600px; */
+    width: 100%;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+.carousel__images__7 {
+    transition: .3s;
+    width: 100%;
+    border-radius: 10px;
+    /* height: 500px; */
+}
+
+.carousel__track-container__7 {
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 10px;
+    height: 360px;
+
+    /* overflow-x: hidden; */
+    /* background-color: rgb(146, 255, 52); */
+    /* padding: 10px; */
+    /* height: 100%; */
+}
+
+.carousel__track__7 {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: .5s;
+}
+
+.carousel__slide__7 {
+    /* display: flex; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__nav__7 {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.carousel__indicator__7 {
+
+    width: 25px;
+    height: 5px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.carousel__indicator__7.current-slide__7 {
+    background-color: rgba(0, 0, 0, 0.499);
+}
+
+.is-hidden__7 {
+    display: none;
+}
+
+.image__box__7 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image__card__7 {
+    /* overflow: hidden; */
+    width: 33.3%;
+    transition: .5s;
+    padding: 0 2px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.image__card__7:hover .carousel__images__7{
+    z-index: 99;
+    transform: scale(1.05) translateY(-5%);
+    filter: brightness(120%);
+    /* outline: solid rgb(16, 255, 162); */
+    /* border: 2px solid rgb(16, 255, 162); */
+    /* border: 5px solid wheat; */
+}
+
+
+.image__card__7:hover .Product__id{
+    transform: translateX(65%);
+
+    /* border: 5px solid wheat; */
+}
+
+.image__card__7:hover .Shop__card__icon__box{
+    transform: translateX(455%);
+
+    /* border: 5px solid wheat; */
+}
+
+.image__card__7:hover .Product__id{
+    opacity: 0;
+
+    /* border: 5px solid wheat; */
+}
+
+.image__card__7:hover .movie__icon__box__7{
+transform: translateX(85%);
+    filter: brightness(130%);
+
+}
+
+.image__card__7:hover .product__typ-1{
+opacity: 0;
+
+}
+.image__card__7:hover .Price{
+    font-size: 25px;
+
+}
+.image__card__7:hover .ntd{
+    color:rgb(16, 255, 162) ;
+    font-size: 18px;
+
+}
+
+.Shop__card__icon__box:hover .shop__card{
+color: rgb(16, 255, 162);
+
+}
+
+
+.Shop__card__icon__box:hover .Shop__card__icon{
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 2px rgb(16, 255, 163);
+
+}
+
+
+
+
+
+
+
+.card4__7 {
+    display: none;
+}
+
+.card5__7 {
+    display: none;
+}
+
+.card6__7 {
+    display: none;
+}
+
+.card7__7 {
+    display: none;
+}
+
+/* -----card_text------------ */
+
+
+.movie__name__7{
+    overflow: hidden;
+    position: relative;
+    transition: .3s;
+    color: white;
+    font-size: 14px;
+    padding: 0px 0;
+}
+
+.Shop__card__icon__box{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+
+position: absolute;
+top: 0  ;
+left: -15%;
+}
+
+
+
+.Shop__card__icon{
+    transition: .3s;
+    color: rgba(255, 255, 255, 0.743);
+    /* -webkit-text-stroke: 2px rgb(16, 255, 163); */
+
+}
+
+
+.movie__icons__7{
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+    display: flex;
+    justify-content: space-between;
+}
+.movie__icon__box__7{
+    /* background-color: #fff; */
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    /* height: 24px; */
+}
+.Product__id{
+    transition: .3s;
+}
+.Price{
+    transition: .3s;
+    font-size: 20px;
+    color: goldenrod;
+    margin-right: 3px;
+}
+.ntd{
+    transition: .3s;
+    font-size: 14px;
+    color: white;
+}
+.product__typ-1{
+    display: none;
+    /* transition: .3s; */
+    color: white;
+    font-size: 14px;
+}
+
+
+@media screen and (min-width: 750px) {
+
+    .image__card__7 {
+        width: 25%;
+        padding: 3px;
+    }
+
+    .card4__7 {
+        display: block;
+    }
+
+    .card5__7 {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .card6__7 {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+    .card7__7 {
+        display: block;
+    }
+
+    .movie__name__7{
+        color: white;
+        font-size: 16px;
+        padding: 5px 0;
+    }
+    .movie__icons__7{
+        display: flex;
+    }
+    .movie__icon__box__7{
+        height: 24px;
+    }
+
+    .actor__text__container{
+        width: 100%;
+        margin-top: 100px;
+    
+    }
+    
+    
+    
+}

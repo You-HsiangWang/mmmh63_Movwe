@@ -1,0 +1,36 @@
+/* 目前沒有文章 */
+.no-article{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    justify-content: space-between;
+    display: none;
+}
+.no-article-pic{
+    width: 150px;
+    height: 150px;
+}
+.no-article-pic img{
+    width: 100%;
+}
+.no-article-word{
+    font-size: 20px;
+}
+.no-article-btn a{
+    text-decoration: none;
+    color: #24252A;
+    background-color:#10FFA2;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+.no-article-btn{
+    transition: .1s;
+    margin-top: 24px;
+}
+.no-article-btn:hover{
+    transform: scale(1.05);
+    opacity: .8;
+}
