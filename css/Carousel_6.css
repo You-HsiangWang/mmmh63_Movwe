@@ -17,14 +17,54 @@
 
 
 .carousel__title__6{
+    width: 100%;
 display: flex;
-justify-content: center;
+justify-content: start;
 align-items: center;
 font-size: 24px;
 color: white;
+}
 
+.single__page__iQiYi{
+    border-bottom: 1px solid rgba(16, 255, 163, 0) ;
+
+    transition: .2s;
+    margin-left: 3%;
+}
+.single__page__iQiYi:hover{
+    border-bottom: 1px solid rgb(16, 255, 162) ;
+    color: rgb(16, 255, 162);
+}
+
+
+.single__page__Netflix{
+    border-bottom: 1px solid rgba(16, 255, 163, 0) ;
+
+    transition: .2s;
+    margin-left: 3%;
+}
+
+.single__page__Netflix:hover{
+    
+border-bottom: 1px solid rgb(16, 255, 162) ;
+    color: rgb(16, 255, 162);
+}
+
+.switch__iQiyi{
+position: absolute;
+top: 0;
+left: 0 ;
 
 }
+.switch__netflex{
+position: absolute;
+top: 0;
+left: 0 ;
+
+}
+
+
+
 
 .carousle__button__6 {
 
@@ -426,6 +466,17 @@ background-color:rgba(255, 255, 255, 0.487)
     font-size: 16px;
     padding-top: 5px;
 }
+
+
+
+.switch__netflex{
+    position: absolute;
+    top: 0;
+    left: 0 ;
+    
+    }
+    
+
 @media screen and (min-width: 750px) {
 .Desk__none{
     display: none;
