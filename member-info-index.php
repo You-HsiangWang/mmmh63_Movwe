@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="./css/member-info-php.css">
     <link rel="stylesheet" href="./css/kuang.css">
     <link rel="stylesheet" href="./css/no-article.css">
+    <link rel="stylesheet" href="./css/Carousel_1.css">
     
     
     <script src="./js/jquery-3.6.0.js"></script>    
@@ -49,12 +50,53 @@
             border-radius: 7px
         }
         .d-filter-a{
-        color: #1CD8FF;
-        border: 1px solid #1CD8FF;
+            color: #1CD8FF;
+            border: 1px solid #1CD8FF;
         }
         .d-filter-d {
-        color: #FC6F51;
-        border: 1px solid #FC6F51;
+            color: #FC6F51;
+            border: 1px solid #FC6F51;
+        }
+        .wishcard:hover{
+            transform: translateY(-5%);
+            border-radius: 8px;
+            transform: scale(1.02);
+        }
+        .wishcard:hover .wish_vote{
+            color: rgb(16, 255, 163);
+        }
+        .wishcard:hover .wish_word_middle{
+            color: rgb(16, 255, 163);
+        }
+        .wishcard:hover .wish_total::after{
+            filter: brightness(130%);
+            background-color:rgb(16, 255, 163);
+            box-shadow: 0 0 5px rgb(16, 255, 163)
+        }
+        .image__card{
+            width: 110px;
+        }
+        .imge__card__information{
+            display:none;
+        }
+        .push__up p{
+            color: #1A1D24;
+        }
+        @media screen and (min-width: 750px) {
+            .imge__card__information{
+                display:block;
+            }
+            .image__card{
+                width: 200px;
+            }
+            .image__card{
+                margin-bottom: 100px;
+            }
+            .image__card:hover .imge__card__information{
+                border-top: 2px solid rgba(16, 255, 163, 0);
+                border-bottom: 2px solid rgba(16, 255, 163, 0);
+                box-shadow: 0 -15px 5px -16px rgba(16, 255, 163, 0);
+            }
         }
     </style>
 </head>
@@ -75,7 +117,7 @@
                         <div class="account-left">
                             <div class="account-pic">
                                 <img class="img-ori" src="./img/member/account.jfif" alt="">
-                                <img class="img-new display_none" src="./img/member/author.jpg" alt="">
+                                <img class="img-new display_none" src="./img/talls_img/hehe.png" alt="">
                             </div>
                             <div class="account-name">Eric</div>                        
                         </div>
@@ -152,7 +194,6 @@
                                     </ul>
                                 </div>
                             </div>
-
                         </div>
 
                         <!-- 下方顯示內容 -->
@@ -165,28 +206,135 @@
                                     </div>
                                     <!-- 動態產生 -->
                                     <div class="actor_flims">
+                                        <div class="image__card">
+                                            <div class="imge__card__information">
+
+                                                <div class="information__top">
+                                                            <img class="information__video"
+                                                                src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                </div>
+                                                        
+                                                <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    影劇
+                                                                </p>
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/friday_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw"
+                                                                        target="_blank">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
+                                                                    </p>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/kktv_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    孤單又燦爛的神 鬼怪
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.9
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="information__bottom_4 Bottom__display">
+                                                                <p>
+                                                                    浪漫愛情 /
+                                                                </p>
+                                                                <p>
+                                                                    奇幻冒險
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        孔劉
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        金高銀
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+
+                                                                    <p class="information__actor__name">
+                                                                        劉寅娜
+                                                                    </p>
+                                                                </a>
+
+                                                            </div>
+
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細...
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up add_movies">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
+                                                </div>
+                                            </div>    
+
                                         <div class="actor_flim">
-                                            <div class="ac_flim_pic">
-                                                <img src="./img/movie-poster/spy.webp" alt="">
-                                            </div>
-                                            <div class="ac_flim_name">
-                                                SPY X FAMILY間諜家家酒
-                                            </div>
-                                            <div class="ac_ott">
-                                                <div class="ac_netflix">
-                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_iqiyi">
-                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_kktv">
-                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_friday">
-                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                </div>
-                                            </div>
+                                                    <div class="ac_flim_pic">
+                                                        <img src="./img/movie-poster/spy.webp" alt="">
+                                                    </div>
+                                                    <div class="ac_flim_name">
+                                                        SPY X FAMILY間諜家家酒
+                                                    </div>
+                                                    <div class="ac_ott">
+                                                        <div class="ac_netflix">
+                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                        </div>
+                                                        <div class="ac_iqiyi">
+                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                        </div>
+                                                        <div class="ac_kktv">
+                                                            <img src="./img/logo/kktv_s.svg" alt="">
+                                                        </div>
+                                                        <div class="ac_friday">
+                                                            <img src="./img/logo/friday_s.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                        </div>     
+                                                             
                                         </div>
+
+                                        
+
                                         <?php foreach ($FLrow as $FLrowinfo) : ?>
                                             <div class="actor_flim">
                                                 <div class="ac_flim_pic">
@@ -382,187 +530,7 @@
                                             
                                     </div>
                                 </div>
-                                <!-- <div id="myBooking" class="child-inner">
-                                    <div class="info_acc_title">
-                                        <div class="stick_mobile"></div>
-                                        <div class="info_acc_word">預約上片</div>
-                                    </div>
-                                    <div class="timeline-back"></div>
-                                    <div class="booking-timeline">
-                                        <div class="timeline-box">
-                                            <div class="flim_timeline"></div>
-                                            <div class="release-time">
-                                                <div class="timeline_ball">
-                                                    <div class="dot-ball"></div>
-                                                </div>
-                                                <div class="timeline_word">
-                                                    06-07 <br> 週二
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-box">
-                                            <div class="flim_timeline"></div>
-                                            <div class="release-time">
-                                                <div class="timeline_ball">
-                                                    <div class="dot-ball"></div>
-                                                </div>
-                                                <div class="timeline_word">
-                                                    06-07 <br> 週二
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-box">
-                                            <div class="flim_timeline"></div>
-                                            <div class="release-time">
-                                                <div class="timeline_ball">
-                                                    <div class="dot-ball"></div>
-                                                </div>
-                                                <div class="timeline_word">
-                                                    06-07 <br> 週二
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-box mweb">
-                                            <div class="flim_timeline"></div>
-                                            <div class="release-time">
-                                                <div class="timeline_ball">
-                                                    <div class="dot-ball"></div>
-                                                </div>
-                                                <div class="timeline_word">
-                                                    06-07 <br> 週二
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-box mweb">
-                                            <div class="flim_timeline"></div>
-                                            <div class="release-time">
-                                                <div class="timeline_ball">
-                                                    <div class="dot-ball"></div>
-                                                </div>
-                                                <div class="timeline_word">
-                                                    06-07 <br> 週二
-                                                </div>
-                                            </div>
-                                        </div> 
-                                                                               
-                                    </div>
-                                    
-
-                                    
-                                    <div class="actor_flims ">
-                                        <div class="actor_flim">
-                                            <div class="ac_flim_pic">
-                                                <img src="./img/talls_img/ghost.jpg" alt="">
-                                            </div>
-                                            <div class="ac_flim_name">
-                                                鬼怪-孤單又燦爛的..
-                                            </div>
-                                            <div class="ac_ott">
-                                                <div class="ac_netflix">
-                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_iqiyi">
-                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_kktv">
-                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_friday">
-                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="actor_flim">
-                                            <div class="ac_flim_pic">
-                                                <img src="./img/talls_img/ghost.jpg" alt="">
-                                            </div>
-                                            <div class="ac_flim_name">
-                                                鬼怪-孤單又燦爛的..
-                                            </div>
-                                            <div class="ac_ott">
-                                                <div class="ac_netflix">
-                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_iqiyi">
-                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_kktv">
-                                                    <img src="../img/logo/kktv_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_friday">
-                                                    <img src="../img/logo/friday_s.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="actor_flim">
-                                            <div class="ac_flim_pic">
-                                                <img src="./img/talls_img/ghost.jpg" alt="">
-                                            </div>
-                                            <div class="ac_flim_name">
-                                                鬼怪-孤單又燦爛的..
-                                            </div>
-                                            <div class="ac_ott">
-                                                <div class="ac_netflix">
-                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_iqiyi">
-                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_kktv">
-                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_friday">
-                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="actor_flim mweb">
-                                            <div class="ac_flim_pic">
-                                                <img src="./img/talls_img/ghost.jpg" alt="">
-                                            </div>
-                                            <div class="ac_flim_name">
-                                                鬼怪-孤單又燦爛的..
-                                            </div>
-                                            <div class="ac_ott">
-                                                <div class="ac_netflix">
-                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_iqiyi">
-                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_kktv">
-                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_friday">
-                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="actor_flim mweb">
-                                            <div class="ac_flim_pic">
-                                                <img src="./img/talls_img/ghost.jpg" alt="">
-                                            </div>
-                                            <div class="ac_flim_name">
-                                                鬼怪-孤單又燦爛的..
-                                            </div>
-                                            <div class="ac_ott">
-                                                <div class="ac_netflix">
-                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_iqiyi">
-                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_kktv">
-                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                </div>
-                                                <div class="ac_friday">
-                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>     -->
+                                
                                 <div id="myHistory" class="child-inner">
                                     <div class="info_acc_title">
                                         <div class="stick_mobile"></div>
@@ -1068,7 +1036,7 @@
                                             <!-- 文章圖(右邊) -->
                                             <div>
                                                 <div class="card-img-wrap ml-20">
-                                                    <img src="./img/talls_img/he.jpg" alt="">
+                                                    <img src="./img/talls_img/hehe.png" alt="">
                                                 </div>
                                             </div>
                                         </div>                                        
@@ -1494,7 +1462,7 @@
                                             <!-- 文章圖(右邊) -->
                                             <div>
                                                 <div class="card-img-wrap ml-20">
-                                                    <img src="./img/talls_img/he.jpg" alt="">
+                                                    <img src="./img/talls_img/hehe.png" alt="">
                                                 </div>
                                             </div>
                                         </div>                                        
