@@ -1,3 +1,7 @@
+.Click_filter{
+    background-color: #10FFA2;
+}
+
 .index_filter {
     color: rgb(134, 133, 133);
     /* width: 350px;
@@ -10,10 +14,10 @@
     font-size: 14px;
 }
 .platform button, .genre_item button{
-    color: rgba(255, 255, 255, 0.3);
+    color: rgb(134, 133, 133);
 }
 .index_filter a{
-    color: rgba(255, 255, 255, 0.3);
+    color: rgb(134, 133, 133);
     text-decoration: none;
 }
 .index_filter button{

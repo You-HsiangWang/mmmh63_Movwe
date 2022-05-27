@@ -190,3 +190,91 @@ dotsNav__6.addEventListener('click', e => {
     // }
 
 })
+
+
+
+
+const singlePageIQiYi = document.querySelector('.single__page__iQiYi')
+const singlePageNetflix = document.querySelector('.single__page__Netflix')
+
+const switchNetflex = document.querySelector('.switch__netflex')
+const switchNetflex_2 = document.querySelector('.switch__netflex_2')
+const switchNetflex_3 = document.querySelector('.switch__netflex_3')
+const switchNetflex_4 = document.querySelector('.switch__netflex_4')
+const switchNetflex_5 = document.querySelector('.switch__netflex_5')
+const switchNetflex_6 = document.querySelector('.switch__netflex_6')
+const switchNetflex_7 = document.querySelector('.switch__netflex_7')
+const switchNetflex_8 = document.querySelector('.switch__netflex_8')
+const switchNetflex_9 = document.querySelector('.switch__netflex_9')
+const switchNetflex_10 = document.querySelector('.switch__netflex_10')
+
+const switchIQiyi = document.querySelector('.switch__iQiyi')
+const switchIQiyi_2 = document.querySelector('.switch__iQiyi_2')
+const switchIQiyi_3 = document.querySelector('.switch__iQiyi_3')
+const switchIQiyi_4 = document.querySelector('.switch__iQiyi_4')
+const switchIQiyi_5 = document.querySelector('.switch__iQiyi_5')
+const switchIQiyi_6 = document.querySelector('.switch__iQiyi_6')
+const switchIQiyi_7 = document.querySelector('.switch__iQiyi_7')
+const switchIQiyi_8 = document.querySelector('.switch__iQiyi_8')
+const switchIQiyi_9 = document.querySelector('.switch__iQiyi_9')
+const switchIQiyi_10 = document.querySelector('.switch__iQiyi_10')
+
+
+
+
+
+
+singlePageIQiYi.addEventListener('click',()=>{
+
+    switchIQiyi.style.display = ('block');
+    switchIQiyi_2.style.display = ('block');
+    switchIQiyi_3.style.display = ('block');
+    switchIQiyi_4.style.display = ('block');
+    switchIQiyi_5.style.display = ('block');
+    switchIQiyi_6.style.display = ('block');
+    switchIQiyi_7.style.display = ('block');
+    switchIQiyi_8.style.display = ('block');
+    switchIQiyi_9.style.display = ('block');
+    switchIQiyi_10.style.display = ('block');
+
+    switchNetflex.style.display = ('none')
+    switchNetflex_2.style.display = ('none')
+    switchNetflex_3.style.display = ('none')
+    switchNetflex_4.style.display = ('none')
+    switchNetflex_5.style.display = ('none')
+    switchNetflex_6.style.display = ('none')
+    switchNetflex_7.style.display = ('none')
+    switchNetflex_8.style.display = ('none')
+    switchNetflex_9.style.display = ('none')
+    switchNetflex_10.style.display = ('none')
+
+})
+
+
+singlePageNetflix.addEventListener('click',()=>{
+
+    switchIQiyi.style.display = ('none');
+    switchIQiyi_2.style.display = ('none');
+    switchIQiyi_3.style.display = ('none');
+    switchIQiyi_4.style.display = ('none');
+    switchIQiyi_5.style.display = ('none');
+    switchIQiyi_6.style.display = ('none');
+    switchIQiyi_7.style.display = ('none');
+    switchIQiyi_8.style.display = ('none');
+    switchIQiyi_9.style.display = ('none');
+    switchIQiyi_10.style.display = ('none');
+
+
+    switchNetflex.style.display = ('block')
+    switchNetflex_2.style.display = ('block')
+    switchNetflex_3.style.display = ('block')
+    switchNetflex_4.style.display = ('block')
+    switchNetflex_5.style.display = ('block')
+    switchNetflex_6.style.display = ('block')
+    switchNetflex_7.style.display = ('block')
+    switchNetflex_8.style.display = ('block')
+    switchNetflex_9.style.display = ('block')
+    switchNetflex_10.style.display = ('block')
+
+})
+

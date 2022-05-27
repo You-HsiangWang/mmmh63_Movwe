@@ -266,12 +266,12 @@
         font-size: 14px;
         background-color: rgba(107, 107, 107, 0);
         border: 1px solid rgb(107, 107, 107);
-        color: rgb(107, 107, 107);
+        color: rgb(134, 133, 133);
         transition: .1s;
     }
 
     .filter_2w:hover {
-        box-shadow: 0 0 5px rgb(16, 255, 162);
+        box-shadow: 0 0 5px rgb(16, 255, 162) !important;
     }
 
 
@@ -285,12 +285,12 @@
         font-size: 14px;
         background-color: rgba(107, 107, 107, 0);
         border: 1px solid rgb(107, 107, 107);
-        color: rgb(107, 107, 107);
+        color: rgb(134, 133, 133);
         transition: .1s;
     }
 
     .filter_3w:hover {
-        box-shadow: 0 0 5px rgb(16, 255, 162);
+        box-shadow: 0 0 5px rgb(16, 255, 162) !important;
     }
 
 
@@ -304,12 +304,12 @@
         font-size: 14px;
         background-color: rgba(107, 107, 107, 0);
         border: 1px solid rgb(107, 107, 107);
-        color: rgb(107, 107, 107);
+        color: rgb(134, 133, 133);
         transition: .1s;
     }
 
     .filter_4w:hover {
-        box-shadow: 0 0 5px rgb(16, 255, 162);
+        box-shadow: 0 0 5px rgb(16, 255, 162) !important;
     }
 
     /* ------------------------------------------------------ */

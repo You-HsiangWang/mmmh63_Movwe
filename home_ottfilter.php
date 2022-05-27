@@ -9,7 +9,6 @@ require './parts/movwe_connect_db.php';
 <link rel="stylesheet" href="./css/filter.css">
 <link rel="stylesheet" href="./css/Carousel_1.css">
 <script src="./js/jquery-3.6.0.js"></script>
-<!-- h1h1h1h1h1h1h1h1h11h1h11h1h1h1h1h1h1h1h1h1h1h1h1h1h1h1h1 -->
 <style>
     .Filter__text__box {
         display: flex;
@@ -105,9 +104,8 @@ require './parts/movwe_connect_db.php';
         </div>
 
         <!------篩選後_BOX----------------------------------->
-        <div class="Filter__text__box">
-
-            <div class="filter__card">
+        <div class="Filter__text__box" id="ottFilterSearchFunc">
+            <!-- <div class="filter__card">
                 <div class="imge__card__information">
                     <div class="information__top">
                         <img class="information__video" src="./videodb/video/a_100394134_m_601_m1_1013_638.webp" alt="">
@@ -230,8 +228,7 @@ require './parts/movwe_connect_db.php';
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </div> -->
         </div>
 
     </div>
@@ -319,28 +316,55 @@ require './parts/movwe_connect_db.php';
                     "f_place": fPlacData,
                     "f_style": fStylData,
                 };
-                console.log(fPlatArray, fGenrData, fPlacData, fStylData, fDataObj);
+                // console.log(fPlatArray, fGenrData, fPlacData, fStylData, fDataObj);
                 // 呼叫傳送api 把obj傳過去
                 filterApi(fDataObj);
             };
         };
         // 傳給api然後對api回傳的內容做壞壞的事---------------------------------------------
-        function filterApi(par) {
-            $.get('api_home_ottfilter.php', par, function(data) {
-                console.log(data);
+        // function filterApi(par) {
+        //     $.get('api_home_ottfilter_test.php', par, function(data) {
+        //         console.log(data);
                 // 這邊應該要傳回api寫好的html
+        //     }, 'json');
+        // };
+        function filterApi(par) {
+            $.get('api_home_ottfilter.php', par, function(data){
+                $('#ottFilterSearchFunc').html(data);
+            }, 'text');
 
-
-
-            }, 'json');
+/*
+            $.ajax({
+                type: 'get',
+                url: 'api_home_ottfilter.php',
+                async: true,
+                cache: false,
+                dataType: 'json',
+                data: par,
+                success: function(){
+                    console.log('success');
+                },
+                error: function(){
+                    console.log('error');
+                },
+                complete: function(){
+                    console.log('complete');
+                },
+            }).done(function(data){
+                console.log('done');
+                console.log(data);
+                $('#ottFilterSearchFunc').html(data.dom);
+            });
+            */
         };
         // loading時給預設值
-        // const fDefaultObj = {
-        //     "f_ott": '0',
-        //     "f_genre": '0',
-        //     "f_place": '0',
-        //     "f_style": '0',
-        // };
+        const fDefaultObj = {
+            f_ott: '0',
+            f_genre: '0',
+            f_place: '0',
+            f_style: '0',
+        };
+        filterApi(fDefaultObj);
     </script>
 
 </body>
