@@ -21,6 +21,56 @@ html{
     color: aliceblue;
 }
 
+.benner_text_box-1{
+    transition: .6s;
+    transition-delay: .05s;
+}
+.benner_text_box-2{
+    transition: .6s;
+    transition-delay: .1s;
+}
+.benner_text_box-3{
+    transition: .6s;
+    transition-delay: .15s;
+
+}
+.benner_text_box-4{
+    transition: .6s;
+    transition-delay: .2s;
+
+}
+.benner_text_box-5{
+    transition: .6s;
+    transition-delay: .25s;
+
+}
+.search__bigbox:hover .benner_text_box-1{
+    transform: translateY(-100%);
+    opacity: 0;
+
+}
+.search__bigbox:hover .benner_text_box-2{
+    transform: translateY(100%);
+    opacity: 0;
+
+}
+.search__bigbox:hover .benner_text_box-3{
+    transform: translateY(-100%);
+    opacity: 0;
+
+}
+.search__bigbox:hover .benner_text_box-4{
+    transform: translateY(100%);
+    opacity: 0;
+
+}
+.search__bigbox:hover .benner_text_box-5{
+    transform: translateY(-100%);
+    opacity: 0;
+
+}
+
+
 .search_p2{
 font-size: 16px;
 margin-top: 20px;
@@ -372,7 +422,7 @@ text-align: center;
 
 
     .movwe_1{
-       /* transition: ;      */
+        transition: .5s;
        animation-name: home__movwe_1;
        animation-duration: 3s;
        animation-iteration-count: infinite;
@@ -381,14 +431,14 @@ text-align: center;
 
     }
     .movwe_2{
-       /* transition: ;      */
+        transition: .5s;
        animation-name: home__movwe_1;
        animation-duration: 3s;
        animation-iteration-count: infinite;
 animation-delay: 1.2s;
     }
     .movwe_3{
-       /* transition: ;      */
+        transition: .5s;
        animation-name: home__movwe_1;
        animation-duration: 3s;
        animation-iteration-count: infinite;
@@ -396,7 +446,7 @@ animation-delay: 1.2s;
 
     }
     .movwe_4{
-       /* transition: ;      */
+        transition: .5s;
        animation-name: home__movwe_1;
        animation-duration: 3s;
        animation-iteration-count: infinite;
@@ -404,7 +454,7 @@ animation-delay: 1.2s;
 
     }
     .movwe_5{
-       /* transition: ;      */
+        transition: .5s;
        animation-name: home__movwe_1;
        animation-duration: 3s;
        animation-iteration-count: infinite;
