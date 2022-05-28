@@ -90,7 +90,7 @@
                 width: 200px;
             }
             .image__card{
-                margin-bottom: 100px;
+                margin-bottom: 60px;
             }
             .image__card:hover .imge__card__information{
                 border-top: 2px solid rgba(16, 255, 163, 0);
