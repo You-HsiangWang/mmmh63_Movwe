@@ -31,7 +31,7 @@ color: white;
 .carousle__button__7 {
 
     width: 5%;
-    height: 120%;
+    height: 260px;
     background-color: rgb(26, 29, 36);
     z-index: 90;
     border: none;
@@ -92,8 +92,8 @@ color:rgb(16, 255, 162) ;
 
 .carousel__button--left__7 {
     position: absolute;
-    left: -5%;
-    top: 36%;
+    left: -20px;
+    top: 120px;
     transform: translateY(-50%);
     /* border-radius: 0 10px 10px 0; */
 }
@@ -101,8 +101,8 @@ color:rgb(16, 255, 162) ;
 
 .carousel__button--right__7 {
     position: absolute;
-    right: -5%;
-    top: 36%;
+    right: -20px;
+    top: 120px;
     transform: translateY(-50%);
     /* border-radius: 10px 0 0 10px; */
 
@@ -110,6 +110,8 @@ color:rgb(16, 255, 162) ;
 
 
 .carousel__7 {
+    height: 360px;
+
     position: relative;
     /* height: 600px; */
     width: 100%;
@@ -395,6 +397,29 @@ left: -15%;
     
     }
     
+    .carousel__button--left__7 {
+        position: absolute;
+        left: -88px;
+        top: 150px;
+        transform: translateY(-50%);
+        /* border-radius: 0 10px 10px 0; */
+    }
     
+    
+    .carousel__button--right__7 {
+        position: absolute;
+        right: -88px;
+        top: 150px;
+        /* transform: translateY(-50%); */
+        /* border-radius: 10px 0 0 10px; */
+    
+    }
+
+    .carousle__button__7{
+height: 350px;
+
+
+    }
+
     
 }

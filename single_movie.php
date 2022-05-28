@@ -1,25 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../fontawesome/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/Nav.css">
-    <link rel="stylesheet" href="../css/BS.css">
-    <link rel="stylesheet" href="../css/single_movie.css">
-    <link rel="stylesheet" href="../css/Carousel_1.css">
-    <link rel="stylesheet" href="../css/Carousel_6.css">
-    <link rel="stylesheet" href="../css/Carousel_7.css">
-    <link rel="stylesheet" href="../css/Carousel_8.css">
-    <link rel="stylesheet" href="../css/slider.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/lightbox.css" type="text/css" media="screen" />
+require './parts/movwe_connect_db.php';
 
-    <!-- <link rel="stylesheet" href="./css/single_movie.css"> -->
+?>
+
+<?php include __DIR__ . '/parts/movwe_head.php'; ?>
+    <link href="./fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/Nav.css">
+    <link rel="stylesheet" href="./css/BS.css">
+    <link rel="stylesheet" href="./css/single_movie.css">
+    <link rel="stylesheet" href="./css/Carousel_1.css">
+    <link rel="stylesheet" href="./css/Carousel_6.css">
+    <link rel="stylesheet" href="./css/Carousel_7.css">
+    <link rel="stylesheet" href="./css/Carousel_8.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,300&family=Noto+Serif+TC:wght@200;300;500;700;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
 
     <title>Document</title>
@@ -27,14 +26,13 @@
         * {
             margin: 0;
             padding: 0;
-            outline: 1px solid greenyellow;
+            /* outline: 1px solid greenyellow; */
         }
 
         body {
             background-color: rgb(26, 29, 36);
-            font-family: 'Caveat', cursive;
-            font-family: 'Cormorant Garamond', serif;
-            font-family: 'Noto Serif TC', serif;
+            font-family: 'Cairo', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
             overflow-x: hidden;
 
         }
@@ -99,43 +97,66 @@
 
 <body>
     <!----------nav_top-------------->
-    <!-- hihihihi -->
-    <!-- hahahahahahaha -->
-    <!-- hohohohohohohohohoho -->
     <div class="Navbar__container">
         <div class="top_nav">
             <div class="top_nav_left">
                 <div class="top_nav_logo">
                     <div class="top_nav_logo_box">
-                        <img class="top_nav_movwe_img-2" src="../img/icons/close.svg" alt="">
+                        <img class="top_nav_movwe_img-2" src="./img/icons/close.svg" alt="">
                         <i class="fa-solid fa-bars top_nav_movwe_img bars"></i>
-                        <img class="origin__logo" src="../img/logo/logo.svg" alt="">
+                        <img class="origin__logo" src="./img/logo/logo.svg" alt="">
                     </div>
                 </div>
-                <div class="top_nav_movwe">
-                    <a href="Home-0516-final copy.html">
-                        <div class="top_nav_movwe_box">
-                            <img class="top_nav_movwe_img mobil__show" src="../img/logo/logo_movwe_word.svg" alt="">
-                            <img class="top_nav_movwe_img desk__show" src="../img/logo/logo_word.svg" alt="">
-                        </div>
-                    </a>
-                </div>
+                <a href="Home-0516-final copy.html">
+                    <div class="top_nav_movwe_box">
+                        <img class="top_nav_movwe_img mobil__show" src="./img/logo/logo_movwe_word.svg" alt="">
+                        <img class="top_nav_movwe_img desk__show" src="./img/logo/logo_word.svg" alt="">
+                    </div>
+                </a>
             </div>
             <div class="top_nav_right">
-                <div class="top__like__icons_">
-
-                </div>
                 <div class="top_nav_searchbar_box">
                     <input type="text" class="top_nav_searchbar" placeholder="輸入片名">
                     <div class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-
                 </div>
+
+                <a class="top__nav__icon__box " href="#">
+                    <div class="top__nav__member">
+                        <div class="nav_icon_box icon_W-H">
+                            <i class="fa-solid fa-cart-shopping shop__card"></i>
+                        </div>
+                        <p class="shopcard__text">購物車</p>
+                    </div>
+                </a>
+
+                <a class="top__nav__icon__box" href="#">
+                    <div class="top__nav__member">
+                        <div class="nav_icon_box icon_W-H">
+                            <i class="fa-solid fa-file-video movie__likes"></i>
+                        </div>
+                        <p class="movie__like__text">片單</p>
+                    </div>
+                </a>
+
+                <a class="top__nav__icon__box" href="#">
+                    <div class="top__nav__member">
+                        <div class="nav_icon_box icon_W-H">
+                            <i class="fa-solid fa-user member__login"></i>
+                            <div class="nav__member__picture__box">
+                                <img class="nav__member__picture" src="./img/center/actor-1.jpeg" alt="">
+                            </div>
+                        </div>
+                        <p class="home__logout">登出</p>
+                        <p class="home__login">登入</p>
+                    </div>
+                </a>
+
             </div>
         </div>
         <div class="left_nav">
             <div class="left_nav_box">
             </div>
-            <div class="left_nav_box ">
+            <!-- <div class="left_nav_box ">
                 <div class="left_nav_home icon_box_W-H">
                     <div class="nav_icon_box icon_W-H">
                         <i class="fa-solid fa-house "></i>
@@ -143,14 +164,13 @@
                 </div>
                 <div class="nav_text_01 ">
                     <div class="h-60px">首頁 <span class="down">
-                            <!-- <i class="fa-solid fa-angle-down"></i> -->
                         </span> </div>
                 </div>
 
             </div>
             <div class="title_bottom">
                 <div class="title_">首頁</div>
-            </div>
+            </div> -->
             <div class="left_nav_box Movie">
                 <div class="left_nav_movie icon_box_W-H">
                     <div class="nav_icon_box icon_W-H">
@@ -159,15 +179,33 @@
                     <div class="nav_text_01 ">
                         <div class="h-60px movie_btn">影劇 <span class="down"><i
                                     class="fa-solid fa-angle-down"></i></span></div>
-                        <p class="text_a">影劇搜尋器</p>
-                        <p class="text_a">ott上片資訊</p>
-                        <p class="text_a">許願池</p>
-                        <p class="text_a">心理測驗</p>
-                        <p class="text_a">我的片單</p>
-                        <p class="text_a">預約片單</p>
-                        <p class="text_a">許願清單</p>
-                        <p class="text_a">曾經瀏覽</p>
-                        <p class="text_a">ott優惠卷</p>
+                        <a href="#">
+                            <p class="text_a">影劇搜尋器</p>
+                        </a>
+                        <a href="#">
+                            <p class="text_a">ott上片資訊</p>
+                        </a>
+                        <a href="#">
+                            <p class="text_a">許願池</p>
+                        </a>
+                        <a href="#">
+                            <p class="text_a">心理測驗</p>
+                        </a>
+                        <a href="#">
+                            <p class="text_a">我的片單</p>
+                        </a>
+                        <a href="#">
+                            <p class="text_a">預約片單</p>
+                        </a>
+                        <a href="#">
+                            <p class="text_a">許願清單</p>
+                        </a>
+                        <a href="#">
+                            <p class="text_a">曾經瀏覽</p>
+                        </a>
+                        <a href="#">
+                            <p class="text_a">ott優惠卷</p>
+                        </a>
 
                     </div>
                 </div>
@@ -183,10 +221,18 @@
                     <div class="nav_text_01 ">
                         <div class="h-60px store_btn">商城 <span class="down"><i
                                     class="fa-solid fa-angle-down"></i></span></div>
-                        <p class="text_a">主打活動</p>
-                        <p class="text_a">商品總覽</p>
-                        <p class="text_a">購物車</p>
-                        <p class="text_a">我的訂單</p>
+                        <a href="#">
+                            <p class="text_a">主打活動</p>
+                        </a>
+                        <a href="#">
+                            <p class="text_a">商品總覽</p>
+                        </a>
+                        <a href="#">
+                            <p class="text_a">購物車</p>
+                        </a>
+                        <a href="#">
+                            <p class="text_a">我的訂單</p>
+                        </a>
                         < class="text_a">商城優或卷</>
                     </div>
                 </div>
@@ -203,10 +249,18 @@
                     <div class="nav_text_01 ">
                         <div class="h-60px form_btn">文章 <span class="down"><i class="fa-solid fa-angle-down"></i></span>
                         </div>
-                        <p class="text_a">文章總覽</p>
-                        <p class="text_a">熱門作者</p>
-                        <p class="text_a">熱門文章</p>
-                        <p class="text_a">我的收藏</p>
+                        <a href="#">
+                            <p class="text_a">文章總覽</p>
+                        </a>
+                        <a href="#">
+                            <p class="text_a">熱門作者</p>
+                        </a>
+                        <a href="#">
+                            <p class="text_a">熱門文章</p>
+                        </a>
+                        <a href="#">
+                            <p class="text_a">我的收藏</p>
+                        </a>
 
                     </div>
                 </div>
@@ -215,14 +269,13 @@
                 <div class="title_">文章</div>
             </div>
 
-            <div class="left_nav_box">
+            <!-- <div class="left_nav_box">
                 <div class="left_nav_member icon_box_W-H">
                     <div class="nav_icon_box icon_W-H">
                         <i class="fa-solid fa-user-gear"></i>
                     </div>
                     <div class="nav_text_01">
                         <div class="h-60px">會員 <span class="down">
-                                <!-- <i class="fa-solid fa-angle-down"></i> -->
                             </span></div>
                         <p>00</p>
                         <p>00</p>
@@ -233,7 +286,7 @@
             </div>
             <div class="title_bottom">
                 <div class="title_">會員</div>
-            </div>
+            </div> -->
 
             <div class="left_nav_box">
                 <div class="left_nav_discount icon_box_W-H">
@@ -250,21 +303,20 @@
             <div class="title_bottom">
                 <div class="title_">優惠</div>
             </div>
-            <div class="left_nav_box">
+            <!-- <div class="left_nav_box">
                 <div class="left_nav_discount icon_box_W-H">
                     <div class="nav_icon_box icon_W-H">
                         <i class="fa-solid fa-coins"></i>
                     </div>
                     <div class="nav_text_01">
                         <div class="h-60px">點數 <span class="down">
-                                <!-- <i class="fa-solid fa-angle-down"></i> -->
                             </span></div>
                     </div>
                 </div>
             </div>
             <div class="title_bottom">
                 <div class="title_">點數</div>
-            </div>
+            </div> -->
 
 
         </div>
@@ -278,13 +330,13 @@
 
             <!--banner__container----------------->
             <div class="banner__container">
-                <!-- <img src="../img/center/single_page_banner-2.png" alt=""> -->
-                <video src="../img/center/single_mv-2.mov" autoplay loop muted></video>
+                <!-- <img src="./img/center/single_page_banner-2.png" alt=""> -->
+                <video src="./img/center/single_mv-2.mov" autoplay loop muted></video>
                 <!-- autoplay  loop  muted -->
                 <div class="shadow"></div>
                 <div class="shadow2"></div>
                 <div class="banner__logo">
-                    <img src="../img/center/banner__logo.png" alt="">
+                    <img src="./img/center/banner__logo.png" alt="">
                 </div>
             </div>
 
@@ -294,7 +346,7 @@
                     <div class="section__1_bigbox">
                         <div class="section__1_left_box">
                             <div class="section__1_imgbox">
-                                <img src="../img/center/h_1.jpeg" alt="">
+                                <img src="./img/center/h_1.jpeg" alt="">
                             </div>
                         </div>
                         <div class="section__1_rightbox">
@@ -317,7 +369,7 @@
                                 <div class="star_box_2">
                                     <div class="star_icon">
                                         <div class="star_icon-img">
-                                            <img src="../img/icons/start.svg" alt="">
+                                            <img src="./img/icons/start.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="star_point">
@@ -335,11 +387,11 @@
                             </div>
                             <div class="icon__box">
 
-                                <a href=""><img class="bottom_6_icon" src="../img/logo/friday_s.svg" alt=""></a>
+                                <a href=""><img class="bottom_6_icon" src="./img/logo/friday_s.svg" alt=""></a>
                                 <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw"
-                                    target="_blank"><img class="bottom_6_icon" src="../img/logo/iqiyi_s.svg" alt=""></a>
-                                <a href=""><img class="bottom_6_icon" src="../img/logo/kktv_s.svg" alt=""></a>
-                                <a href=""><img class="bottom_6_icon" src="../img/logo/netflix_s.svg" alt=""></a>
+                                    target="_blank"><img class="bottom_6_icon" src="./img/logo/iqiyi_s.svg" alt=""></a>
+                                <a href=""><img class="bottom_6_icon" src="./img/logo/kktv_s.svg" alt=""></a>
+                                <a href=""><img class="bottom_6_icon" src="./img/logo/netflix_s.svg" alt=""></a>
                             </div>
                             <div class="section__1_bottombox display__show mobile__none">
                                 <div class="add__mymovie__box">
@@ -366,24 +418,24 @@
                                 <div id="slider"
                                     style="max-height: 400px; width: 90%; max-width: 960px; margin: 0 auto">
                                     <div class="slide">
-                                        <a href="../img/center/single__post-1.png" rel="lightbox[plants]"><img
-                                                src="../img/center/single__post-1.png" alt="" /></a>
+                                        <a href="./img/center/single__post-1.png" rel="lightbox[plants]"><img
+                                                src="./img/center/single__post-1.png" alt="" /></a>
                                     </div>
                                     <div class="slide">
-                                        <a href="../img/center/single__post-2.png" rel="lightbox[plants]"><img
-                                                src="../img/center/single__post-2.png" alt="" /></a>
+                                        <a href="./img/center/single__post-2.png" rel="lightbox[plants]"><img
+                                                src="./img/center/single__post-2.png" alt="" /></a>
                                     </div>
                                     <div class="slide">
-                                        <a href="../img/center/single__post-3.png" rel="lightbox[plants]"><img
-                                                src="../img/center/single__post-3.png" alt="" /></a>
+                                        <a href="./img/center/single__post-3.png" rel="lightbox[plants]"><img
+                                                src="./img/center/single__post-3.png" alt="" /></a>
                                     </div>
                                     <div class="slide">
-                                        <a href="../img/center/single__post-4.png" rel="lightbox[plants]"><img
-                                                src="../img/center/single__post-4.png" alt="" /></a>
+                                        <a href="./img/center/single__post-4.png" rel="lightbox[plants]"><img
+                                                src="./img/center/single__post-4.png" alt="" /></a>
                                     </div>
                                     <div class="slide">
-                                        <a href="../img/center/single__post-5.png" rel="lightbox[plants]"><img
-                                                src="../img/center/single__post-5.png" alt="" /></a>
+                                        <a href="./img/center/single__post-5.png" rel="lightbox[plants]"><img
+                                                src="./img/center/single__post-5.png" alt="" /></a>
                                     </div>
                                 </div>
                             </div>
@@ -397,7 +449,7 @@
                         </button>
                         <div class="movie__text">
                             <p>
-                                讓角色化阻力為助力，設法克服缺陷更上一層樓，是勾勒劇情張力的關鍵要素之一。例如電影《雷神索爾》中主角曾一度失去神力，經歷一番酸甜苦辣才取回，也實現精神上的成長。但如果面對的是物理上無法改善的問題，到底人讓角色化阻力為助力，設法克服缺陷更上一層樓，是勾勒劇情張力的關鍵要素之一。例如電影《雷神索爾》中主角曾一度失去神力，經歷一番酸甜苦辣才取回，也實現精神上的成長。但如果面對的是物理上無法改善的問題，到底人...
+                                讓角色化阻力為助力，設法克服缺陷更上一層樓，是勾勒劇情張力的關鍵要素之一。例如電影《雷神索爾》中主角曾一度失去神力，經歷一番酸甜苦辣才取回，也實現精神上的成長。但如果面對的是物理上無法改善的問題，到底人讓角色化阻力為助力，設法克服缺陷更上一層樓，是勾勒劇情張力的關鍵要素之一。例如電影《雷神索爾》中主角曾一度失去神力，經歷一番酸甜苦辣才取回，也實現精神上的成長。但如果面對的是物理上無法改善的問題，到底人..
                             </p>
                         </div>
                     </div>
@@ -416,11 +468,11 @@
                             </div>
                         </div>
                         <div class="actor__card__box">
-                            <a href="actor-page.html">
+                            <a href="actor_page.php" style="text-decoration:none;">
                                 <div class="actor__card">
                                     <div class="actor__img-box">
-                                        <img class="actor__img" src="../img/center/actor-1.jpeg" alt="">
-                                        <img class="actor__img_filter" src="../img/center/actor-1.jpeg" alt="">
+                                        <img class="actor__img" src="./img/center/actor-1.jpeg" alt="">
+                                        <img class="actor__img_filter" src="./img/center/actor-1.jpeg" alt="">
                                     </div>
                                     <div class="actor__card__text">
                                         <p class="Actor__name">孔劉</p>
@@ -430,7 +482,7 @@
                             </a>
                             <div class="actor__card">
                                 <div class="actor__img-box">
-                                    <img src="../img/center/actor-2.jpeg" alt="">
+                                    <img src="./img/center/actor-2.jpeg" alt="">
                                     alt="">
                                 </div>
                                 <div class="actor__card__text">
@@ -440,7 +492,7 @@
                             </div>
                             <div class="actor__card">
                                 <div class="actor__img-box">
-                                    <img src="../img/center/actor-3.jpeg" alt="">
+                                    <img src="./img/center/actor-3.jpeg" alt="">
                                 </div>
                                 <div class="actor__card__text">
                                     <p class="Actor__name">陸星材</p>
@@ -449,7 +501,7 @@
                             </div>
                             <div class="actor__card">
                                 <div class="actor__img-box">
-                                    <img src="../img/center/actor-4.jpeg" alt="">
+                                    <img src="./img/center/actor-4.jpeg" alt="">
                                 </div>
                                 <div class="actor__card__text">
                                     <p class="Actor__name">郭東延</p>
@@ -458,7 +510,7 @@
                             </div>
                             <div class="actor__card">
                                 <div class="actor__img-box">
-                                    <img src="../img/center/actor-7.jpeg" alt="">
+                                    <img src="./img/center/actor-7.jpeg" alt="">
                                 </div>
                                 <div class="actor__card__text">
                                     <p class="Actor__name">李應福</p>
@@ -467,7 +519,7 @@
                             </div>
                             <div class="actor__card">
                                 <div class="actor__img-box">
-                                    <img src="../img/center/actor-6.jpeg" alt="">
+                                    <img src="./img/center/actor-6.jpeg" alt="">
                                 </div>
                                 <div class="actor__card__text">
                                     <p class="Actor__name">劉寅娜</p>
@@ -513,91 +565,91 @@
                                     <div class="image__box__6">
                                         <div class="image__card__6">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-1.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-1.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi">
-                                                <img class="carousel__images__6" src="../img/center/Episode-1.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-1.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex">
-                                                <img class="carousel__images__6" src="../img/center/Episode-11.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-11.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/other/num01.png" alt="">
+                                                <img src="./img/other/num01.png" alt="">
                                             </div>
                                         </div>
 
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-2.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-2.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_2">
-                                                <img class="carousel__images__6" src="../img/center/Episode-2.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-2.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_2">
-                                                <img class="carousel__images__6" src="../img/center/Episode-12.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-12.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/other/num02.png" alt="">
+                                                <img src="./img/other/num02.png" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-3.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-3.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_3">
-                                                <img class="carousel__images__6" src="../img/center/Episode-3.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-3.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_3">
-                                                <img class="carousel__images__6" src="../img/center/Episode-13.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-13.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/center/03.svg" alt="">
+                                                <img src="./img/center/03.svg" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-4.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-4.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_4">
-                                                <img class="carousel__images__6" src="../img/center/Episode-4.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-4.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_4">
-                                                <img class="carousel__images__6" src="../img/center/Episode-14.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-14.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/center/04.svg" alt="">
+                                                <img src="./img/center/04.svg" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-5.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-5.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_5">
-                                                <img class="carousel__images__6" src="../img/center/Episode-5.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-5.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_5">
-                                                <img class="carousel__images__6" src="../img/center/Episode-15.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-15.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/center/05.svg" alt="">
+                                                <img src="./img/center/05.svg" alt="">
                                             </div>
 
                                         </div>
@@ -605,91 +657,91 @@
                                     <div class="image__box__6">
                                         <div class="image__card__6">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-6.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-6.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-6.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-6.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-16.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-16.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/center/06.svg" alt="">
+                                                <img src="./img/center/06.svg" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-7.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-7.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_7">
-                                                <img class="carousel__images__6" src="../img/center/Episode-7.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-7.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_7">
-                                                <img class="carousel__images__6" src="../img/center/Episode-17.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-17.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/center/07.svg" alt="">
+                                                <img src="./img/center/07.svg" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-8.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-8.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_8">
-                                                <img class="carousel__images__6" src="../img/center/Episode-8.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-8.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_8">
-                                                <img class="carousel__images__6" src="../img/center/Episode-18.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-18.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/center/09.svg" alt="">
+                                                <img src="./img/center/09.svg" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-9.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-9.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_9">
-                                                <img class="carousel__images__6" src="../img/center/Episode-9.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-9.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_9">
-                                                <img class="carousel__images__6" src="../img/center/Episode-19.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-19.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/other/num09.png" alt="">
+                                                <img src="./img/other/num09.png" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-10.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-10.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_10">
-                                                <img class="carousel__images__6" src="../img/center/Episode-10.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-10.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_10">
-                                                <img class="carousel__images__6" src="../img/center/Episode-5.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-5.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/other/num10.png" alt="">
+                                                <img src="./img/other/num10.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -698,75 +750,75 @@
                                     <div class="image__box__6">
                                         <div class="image__card__6">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-11.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-11.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="../img/center/Episode-11.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-11.jpg"
                                                     alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/center/01.svg" alt="">
+                                                <img src="./img/center/01.svg" alt="">
                                             </div>
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-12.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-12.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="../img/center/Episode-12.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-12.jpg"
                                                     alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/center/02.svg" alt="">
-                                            </div>
-
-                                        </div>
-                                        <div class="image__card__6 wish__card-2">
-                                            <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-13.jpg"
-                                                    alt="">
-                                            </div>
-                                            <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="../img/center/Episode-13.jpg"
-                                                    alt="">
-
-                                            </div>
-                                            <div class="single__page__dark_number">
-                                                <img src="../img/center/03.svg" alt="">
+                                                <img src="./img/center/02.svg" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-14.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-13.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="../img/center/Episode-14.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-13.jpg"
                                                     alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/center/04.svg" alt="">
+                                                <img src="./img/center/03.svg" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-15.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-14.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="../img/center/Episode-15.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-14.jpg"
                                                     alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/center/05.svg" alt="">
+                                                <img src="./img/center/04.svg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <div class="image__card__6 wish__card-2">
+                                            <div class="carousel__images__box__6">
+                                                <img class="carousel__images__6" src="./img/center/Episode-15.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="single__page__dark_box">
+                                                <img class="carousel__images__6" src="./img/center/Episode-15.jpg"
+                                                    alt="">
+
+                                            </div>
+                                            <div class="single__page__dark_number">
+                                                <img src="./img/center/05.svg" alt="">
                                             </div>
 
                                         </div>
@@ -774,75 +826,75 @@
                                     <div class="image__box__6">
                                         <div class="image__card__6">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-16.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-16.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="../img/center/Episode-16.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-16.jpg"
                                                     alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/center/06.svg" alt="">
+                                                <img src="./img/center/06.svg" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-17.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-17.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="../img/center/Episode-17.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-17.jpg"
                                                     alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/center/07.svg" alt="">
+                                                <img src="./img/center/07.svg" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-18.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-18.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="../img/center/Episode-18.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-18.jpg"
                                                     alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/center/08.svg" alt="">
+                                                <img src="./img/center/08.svg" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-19.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-19.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="../img/center/Episode-19.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-19.jpg"
                                                     alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/center/09.svg" alt="">
+                                                <img src="./img/center/09.svg" alt="">
                                             </div>
                                         </div>
                                         <div class="image__card__6 wish__card-2 carousel__opacity_0">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="../img/center/Episode-10.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-10.jpg"
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="../img/center/Episode-10.jpg"
+                                                <img class="carousel__images__6" src="./img/center/Episode-10.jpg"
                                                     alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="../img/center/10.svg" alt="">
+                                                <img src="./img/center/10.svg" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -893,7 +945,7 @@
                                     <div class="image__box__7">
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="../img/center/product-3.jpeg"
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
                                                     alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
@@ -926,7 +978,7 @@
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="../img/center/product-3.jpeg"
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
                                                     alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
@@ -959,7 +1011,7 @@
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="../img/center/product-3.jpeg"
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
                                                     alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
@@ -992,7 +1044,7 @@
                                         </div>
                                         <div class="image__card__7 card4__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="../img/center/product-3.jpeg"
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
                                                     alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
@@ -1025,7 +1077,7 @@
                                         </div>
                                         <div class="image__card__7 card5__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="../img/center/product-3.jpeg"
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
                                                     alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
@@ -1058,7 +1110,7 @@
                                         </div>
                                         <div class="image__card__7 card6__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="../img/center/product-3.jpeg"
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
                                                     alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
@@ -1091,7 +1143,7 @@
                                         </div>
                                         <div class="image__card__7 card7__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="../img/center/product-3.jpeg"
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
                                                     alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
@@ -1128,7 +1180,7 @@
                                     <div class="image__box__7">
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="../img/center/product-3.jpeg"
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
                                                     alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
@@ -1161,7 +1213,7 @@
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="../img/center/product-3.jpeg"
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
                                                     alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
@@ -1194,7 +1246,7 @@
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="../img/center/product-3.jpeg"
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
                                                     alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
@@ -1227,7 +1279,7 @@
                                         </div>
                                         <div class="image__card__7 card4__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="../img/center/product-3.jpeg"
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
                                                     alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
@@ -1260,7 +1312,7 @@
                                         </div>
                                         <div class="image__card__7 card5__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="../img/center/product-3.jpeg"
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
                                                     alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
@@ -1293,7 +1345,7 @@
                                         </div>
                                         <div class="image__card__7 card6__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="../img/center/product-3.jpeg"
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
                                                     alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
@@ -1325,7 +1377,7 @@
                                         </div>
                                         <div class="image__card__7 card7__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="../img/center/product-3.jpeg"
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
                                                     alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
@@ -1407,7 +1459,7 @@
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
                                                     <img class="carousel__images__8"
-                                                        src="../img/center/single__post-5.png" alt="">
+                                                        src="./img/center/single__post-5.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1416,24 +1468,24 @@
                                                     明天也想見到你明信片
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基...
+                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/heart.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
                                                                     alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/message.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
                                                                     alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/tag.svg" alt="">
+                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
                                                                 500
@@ -1447,7 +1499,7 @@
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
                                                     <img class="carousel__images__8"
-                                                        src="../img/center/single__post-4.png" alt="">
+                                                        src="./img/center/single__post-4.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1456,24 +1508,24 @@
                                                     明天也想見到你明信片
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基...
+                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/heart.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
                                                                     alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/message.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
                                                                     alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/tag.svg" alt="">
+                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
                                                                 500
@@ -1487,7 +1539,7 @@
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
                                                     <img class="carousel__images__8"
-                                                        src="../img/center/single__post-3.png" alt="">
+                                                        src="./img/center/single__post-3.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1496,24 +1548,24 @@
                                                     明天也想見到你明信片
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基...
+                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/heart.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
                                                                     alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/message.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
                                                                     alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/tag.svg" alt="">
+                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
                                                                 500
@@ -1527,7 +1579,7 @@
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
                                                     <img class="carousel__images__8"
-                                                        src="../img/center/single__post-2.png" alt="">
+                                                        src="./img/center/single__post-2.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1536,24 +1588,24 @@
                                                     明天也想見到你明信片
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基...
+                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/heart.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
                                                                     alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/message.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
                                                                     alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/tag.svg" alt="">
+                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
                                                                 500
@@ -1567,7 +1619,7 @@
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
                                                     <img class="carousel__images__8"
-                                                        src="../img/center/single__post-1.png" alt="">
+                                                        src="./img/center/single__post-1.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1576,24 +1628,24 @@
                                                     明天也想見到你明信片
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基...
+                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/heart.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
                                                                     alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/message.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
                                                                     alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/tag.svg" alt="">
+                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
                                                                 500
@@ -1611,7 +1663,7 @@
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
                                                     <img class="carousel__images__8"
-                                                        src="../img/center/single__post-5.png" alt="">
+                                                        src="./img/center/single__post-5.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1620,24 +1672,24 @@
                                                     明天也想見到你明信片
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基...
+                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/heart.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
                                                                     alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/message.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
                                                                     alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/tag.svg" alt="">
+                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
                                                                 500
@@ -1651,7 +1703,7 @@
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
                                                     <img class="carousel__images__8"
-                                                        src="../img/center/single__post-4.png" alt="">
+                                                        src="./img/center/single__post-4.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1660,24 +1712,24 @@
                                                     明天也想見到你明信片
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基...
+                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/heart.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
                                                                     alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/message.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
                                                                     alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/tag.svg" alt="">
+                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
                                                                 500
@@ -1691,7 +1743,7 @@
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
                                                     <img class="carousel__images__8"
-                                                        src="../img/center/single__post-3.png" alt="">
+                                                        src="./img/center/single__post-3.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1700,24 +1752,24 @@
                                                     明天也想見到你明信片
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基...
+                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/heart.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
                                                                     alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/message.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
                                                                     alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/tag.svg" alt="">
+                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
                                                                 500
@@ -1731,7 +1783,7 @@
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
                                                     <img class="carousel__images__8"
-                                                        src="../img/center/single__post-2.png" alt="">
+                                                        src="./img/center/single__post-2.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1740,24 +1792,24 @@
                                                     明天也想見到你明信片
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基...
+                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/heart.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
                                                                     alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/message.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
                                                                     alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/tag.svg" alt="">
+                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
                                                                 500
@@ -1771,7 +1823,7 @@
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
                                                     <img class="carousel__images__8"
-                                                        src="../img/center/single__post-1.png" alt="">
+                                                        src="./img/center/single__post-1.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1780,24 +1832,24 @@
                                                     明天也想見到你明信片
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基...
+                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/heart.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
                                                                     alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/message.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
                                                                     alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/tag.svg" alt="">
+                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
                                                                 500
@@ -1815,7 +1867,7 @@
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
                                                     <img class="carousel__images__8"
-                                                        src="../img/center/single__post-5.png" alt="">
+                                                        src="./img/center/single__post-5.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1824,24 +1876,24 @@
                                                     明天也想見到你明信片
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基...
+                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/heart.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
                                                                     alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/message.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
                                                                     alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/tag.svg" alt="">
+                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
                                                                 500
@@ -1855,7 +1907,7 @@
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
                                                     <img class="carousel__images__8"
-                                                        src="../img/center/single__post-4.png" alt="">
+                                                        src="./img/center/single__post-4.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1864,24 +1916,24 @@
                                                     明天也想見到你明信片
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基...
+                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/heart.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
                                                                     alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/message.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
                                                                     alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/tag.svg" alt="">
+                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
                                                                 500
@@ -1895,7 +1947,7 @@
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
                                                     <img class="carousel__images__8"
-                                                        src="../img/center/single__post-3.png" alt="">
+                                                        src="./img/center/single__post-3.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1904,24 +1956,24 @@
                                                     明天也想見到你明信片
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基...
+                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/heart.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
                                                                     alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/message.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
                                                                     alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/tag.svg" alt="">
+                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
                                                                 500
@@ -1935,7 +1987,7 @@
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
                                                     <img class="carousel__images__8"
-                                                        src="../img/center/single__post-2.png" alt="">
+                                                        src="./img/center/single__post-2.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1944,24 +1996,24 @@
                                                     明天也想見到你明信片
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基...
+                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/heart.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
                                                                     alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/message.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
                                                                     alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/tag.svg" alt="">
+                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
                                                                 500
@@ -1975,7 +2027,7 @@
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
                                                     <img class="carousel__images__8"
-                                                        src="../img/center/single__post-1.png" alt="">
+                                                        src="./img/center/single__post-1.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1984,24 +2036,24 @@
                                                     明天也想見到你明信片
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基...
+                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/heart.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
                                                                     alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/message.svg"
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
                                                                     alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="../img/icons/tag.svg" alt="">
+                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
                                                                 500
@@ -2058,7 +2110,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/movie_card-W-1.jpeg" alt="">
+                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
@@ -2068,22 +2120,22 @@
                                                         <div class="bottom_6_icon_box">
                                                             <a href="#">
                                                                 <!-- <p class="bottom_6_icon">
-                                                                    <img src="../img/logo/friday_s.svg" alt="">
+                                                                    <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p> -->
                                                             </a>
                                                             <a href="#">
                                                                 <p class="bottom_6_icon">
-                                                                    <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
                                                             </a>
                                                             </p>
                                                             <a href="#">
                                                                 <!-- <p class="bottom_6_icon">
-                                                                    <img src="../img/logo/kktv_s.svg" alt="">
+                                                                    <img src="./img/logo/kktv_s.svg" alt="">
                                                                 </p> -->
                                                             </a>
                                                             <a href="#">
                                                                 <p class="bottom_6_icon">
-                                                                    <img src="../img/logo/netflix_s.svg" alt="">
+                                                                    <img src="./img/logo/netflix_s.svg" alt="">
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -2097,7 +2149,7 @@
                                                     <div class="information__bottom_3 Bottom__display">
                                                         <div class="information__star">
                                                             <div class="information__staricon_box">
-                                                                <img src="../img/icons/start.svg" alt="">
+                                                                <img src="./img/icons/start.svg" alt="">
                                                             </div>
                                                         </div>
                                                         <div class="information__point">
@@ -2139,7 +2191,7 @@
                                                     <div class="information__bottom_6-5 Bottom__display">
                                                         <a href="./single-movie-page0511.html">
                                                             <p class="detail">
-                                                                查看詳細...
+                                                                查看詳細..
                                                             </p>
                                                         </a>
                                                     </div>
@@ -2154,7 +2206,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h_1.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/h_1.jpeg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -2163,16 +2215,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2182,7 +2234,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_16w.jpeg" alt="">
+                                                        src="./img/center/h_16w.jpeg" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -2193,22 +2245,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <!-- <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a> -->
                                                             </div>
@@ -2222,7 +2274,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -2264,7 +2316,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -2279,7 +2331,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h-7.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/h-7.jpeg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -2288,16 +2340,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div> -->
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                         </div> -->
                                                     </div>
                                                 </div>
@@ -2307,7 +2359,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_17w.jpeg" alt="">
+                                                        src="./img/center/h_17w.jpeg" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -2318,22 +2370,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                             </div>
@@ -2347,7 +2399,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -2388,7 +2440,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -2403,7 +2455,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h-6.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/h-6.jpeg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -2412,16 +2464,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div> -->
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                         </div> -->
                                                     </div>
                                                 </div>
@@ -2431,7 +2483,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_18w.jpeg" alt="">
+                                                        src="./img/center/h_18w.jpeg" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -2442,22 +2494,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                             </div>
@@ -2471,7 +2523,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -2513,7 +2565,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -2528,7 +2580,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h-5.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/h-5.jpeg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -2537,16 +2589,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2556,7 +2608,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_19w.webp" alt="">
+                                                        src="./img/center/h_19w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -2567,22 +2619,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                             </div>
@@ -2596,7 +2648,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -2638,7 +2690,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -2653,7 +2705,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h-4.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/h-4.jpeg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -2662,16 +2714,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2681,7 +2733,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_20w.jpeg" alt="">
+                                                        src="./img/center/h_20w.jpeg" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -2692,22 +2744,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                             </div>
@@ -2721,7 +2773,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -2763,7 +2815,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -2778,7 +2830,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h-3.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/h-3.jpeg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -2787,16 +2839,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div> -->
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                         </div> -->
                                                     </div>
                                                 </div>
@@ -2806,7 +2858,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_21w.jpeg" alt="">
+                                                        src="./img/center/h_21w.jpeg" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -2817,22 +2869,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                             </div>
@@ -2846,7 +2898,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -2888,7 +2940,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -2903,7 +2955,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h-2.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/h-2.jpeg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -2912,16 +2964,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2934,7 +2986,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_2w.webp" alt="">
+                                                        src="./img/center/h_2w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -2945,22 +2997,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                             </div>
@@ -2974,7 +3026,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -3015,7 +3067,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -3030,7 +3082,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h_2.webp" alt="">
+                                                <img class="carousel__images" src="./img/center/h_2.webp" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -3039,16 +3091,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div>
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                         </div> -->
                                                     </div>
                                                 </div>
@@ -3058,7 +3110,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_3w.webp" alt="">
+                                                        src="./img/center/h_3w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -3069,22 +3121,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                             </div>
@@ -3098,7 +3150,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -3140,7 +3192,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -3155,7 +3207,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h_3.webp" alt="">
+                                                <img class="carousel__images" src="./img/center/h_3.webp" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -3164,16 +3216,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div>
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                         </div> -->
                                                     </div>
                                                 </div>
@@ -3183,7 +3235,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_4w.webp" alt="">
+                                                        src="./img/center/h_4w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -3194,22 +3246,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                             </div>
@@ -3223,7 +3275,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -3265,7 +3317,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -3280,7 +3332,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h_4.webp" alt="">
+                                                <img class="carousel__images" src="./img/center/h_4.webp" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -3289,16 +3341,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -3308,7 +3360,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_5w.webp" alt="">
+                                                        src="./img/center/h_5w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -3319,22 +3371,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                             </div>
@@ -3348,7 +3400,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -3390,7 +3442,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -3405,7 +3457,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h_5.webp" alt="">
+                                                <img class="carousel__images" src="./img/center/h_5.webp" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -3414,16 +3466,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div> -->
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                         </div> -->
                                                     </div>
                                                 </div>
@@ -3433,7 +3485,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_6w.webp" alt="">
+                                                        src="./img/center/h_6w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -3444,22 +3496,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                             </div>
@@ -3473,7 +3525,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -3515,7 +3567,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -3530,7 +3582,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h_6.webp" alt="">
+                                                <img class="carousel__images" src="./img/center/h_6.webp" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -3539,16 +3591,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
 
                                                         </div>
                                                     </div>
@@ -3559,7 +3611,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_7w.webp" alt="">
+                                                        src="./img/center/h_7w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -3570,22 +3622,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                             </div>
@@ -3599,7 +3651,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -3641,7 +3693,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -3656,7 +3708,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h_7.webp" alt="">
+                                                <img class="carousel__images" src="./img/center/h_7.webp" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -3665,16 +3717,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
 
                                                         </div>
                                                     </div>
@@ -3685,7 +3737,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_8w.webp" alt="">
+                                                        src="./img/center/h_8w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -3696,22 +3748,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                             </div>
@@ -3725,7 +3777,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -3767,7 +3819,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -3782,7 +3834,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h_8.webp" alt="">
+                                                <img class="carousel__images" src="./img/center/h_8.webp" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -3791,16 +3843,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
 
                                                         </div>
                                                     </div>
@@ -3814,7 +3866,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_9w.webp" alt="">
+                                                        src="./img/center/h_9w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -3825,22 +3877,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                             </div>
@@ -3854,7 +3906,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -3896,7 +3948,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -3911,7 +3963,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h_9.webp" alt="">
+                                                <img class="carousel__images" src="./img/center/h_9.webp" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -3920,16 +3972,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
 
                                                         </div>
                                                     </div>
@@ -3940,7 +3992,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_10w.webp" alt="">
+                                                        src="./img/center/h_10w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -3951,22 +4003,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                             </div>
@@ -3980,7 +4032,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -4022,7 +4074,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -4037,7 +4089,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h_10.webp" alt="">
+                                                <img class="carousel__images" src="./img/center/h_10.webp" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -4046,16 +4098,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
 
                                                         </div>
                                                     </div>
@@ -4066,7 +4118,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_12w.webp" alt="">
+                                                        src="./img/center/h_12w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -4077,22 +4129,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                             </div>
@@ -4106,7 +4158,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -4148,7 +4200,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -4163,7 +4215,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h_12.webp" alt="">
+                                                <img class="carousel__images" src="./img/center/h_12.webp" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -4172,16 +4224,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
 
                                                         </div>
                                                     </div>
@@ -4192,7 +4244,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_11w.webp" alt="">
+                                                        src="./img/center/h_11w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -4203,22 +4255,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                             </div>
@@ -4232,7 +4284,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -4271,7 +4323,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -4286,7 +4338,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h_11.webp" alt="">
+                                                <img class="carousel__images" src="./img/center/h_11.webp" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -4295,16 +4347,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
 
                                                         </div>
                                                     </div>
@@ -4315,7 +4367,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_13w.webp" alt="">
+                                                        src="./img/center/h_13w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -4326,22 +4378,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                             </div>
@@ -4355,7 +4407,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -4397,7 +4449,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -4412,7 +4464,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h_13.webp" alt="">
+                                                <img class="carousel__images" src="./img/center/h_13.webp" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -4421,16 +4473,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
 
                                                         </div>
                                                     </div>
@@ -4441,7 +4493,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_14w.webp" alt="">
+                                                        src="./img/center/h_14w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -4452,22 +4504,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                             </div>
@@ -4481,7 +4533,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -4523,7 +4575,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -4538,7 +4590,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h_14.webp" alt="">
+                                                <img class="carousel__images" src="./img/center/h_14.webp" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -4547,16 +4599,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
 
                                                         </div>
                                                     </div>
@@ -4567,7 +4619,7 @@
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video"
-                                                        src="../img/center/h_15w.webp" alt="">
+                                                        src="./img/center/h_15w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -4578,22 +4630,22 @@
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
                                                                     <!-- <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/friday_s.svg" alt="">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/iqiyi_s.svg" alt="">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/kktv_s.svg" alt="">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
-                                                                        <img src="../img/logo/netflix_s.svg" alt="">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a>
                                                             </div>
@@ -4607,7 +4659,7 @@
                                                         <div class="information__bottom_3 Bottom__display">
                                                             <div class="information__star">
                                                                 <div class="information__staricon_box">
-                                                                    <img src="../img/icons/start.svg" alt="">
+                                                                    <img src="./img/icons/start.svg" alt="">
                                                                 </div>
                                                             </div>
                                                             <div class="information__point">
@@ -4649,7 +4701,7 @@
                                                         <div class="information__bottom_6-5 Bottom__display">
                                                             <a href="./single-movie-page0511.html">
                                                                 <p class="detail">
-                                                                    查看詳細...
+                                                                    查看詳細..
                                                                 </p>
                                                             </a>
                                                         </div>
@@ -4664,7 +4716,7 @@
                                                 </a>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="../img/center/h_15.webp" alt="">
+                                                <img class="carousel__images" src="./img/center/h_15.webp" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -4673,16 +4725,16 @@
                                                     </div>
                                                     <div class="movie__icons">
                                                         <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/friday_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div> -->
                                                         <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="../img/logo/iqiyi_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/kktv_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
-                                                            <a href=""><img src="../img/logo/netflix_s.svg" alt=""></a>
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
 
                                                         </div>
                                                     </div>
@@ -4781,16 +4833,16 @@
                         <div class="credit-card">
                             <ul class="list-unstyled d-flex justify-content-center ott-platform">
                                 <a href="#">
-                                    <li class="mr-2"><img src="../img/logo/netflix.svg" alt=""></li>
+                                    <li class="mr-2"><img src="./img/logo/netflix.svg" alt=""></li>
                                 </a>
                                 <a href="#">
-                                    <li class="mr-2"><img src="../img/logo/IQiyi.svg" alt=""></li>
+                                    <li class="mr-2"><img src="./img/logo/IQiyi.svg" alt=""></li>
                                 </a>
                                 <a href="#">
-                                    <li class="mr-2"><img src="../img/talls_img/kktv (1).svg" alt=""></li>
+                                    <li class="mr-2"><img src="./img/talls_img/kktv (1).svg" alt=""></li>
                                 </a>
                                 <a href="#">
-                                    <li class="f-ott"><img src="../img/talls_img/friday.svg" alt=""></li>
+                                    <li class="f-ott"><img src="./img/talls_img/friday.svg" alt=""></li>
                                 </a>
 
                             </ul>
@@ -4805,17 +4857,17 @@
 
 
 
-    <script src="../js/jquery-3.6.0.js"></script>
-    <script src="../js/jquery-1.7.2.min.js"></script>
-    <script src="../js/Nav.js"></script>
-    <script src="../js/Carousel_1.js"></script>
-    <script src="../js/Carousel_6.js"></script>
-    <script src="../js/Carousel_7.js"></script>
-    <script src="../js/Carousel_8.js"></script>
-    <script src="../js/Carousel_9.js"></script>
-    <script src="../js/slider.js"></script>
-    <script src="../js/lightbox.js"></script>
-    <script src="../js/jquery-ui-1.8.18.custom.min.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/jquery-1.7.2.min.js"></script>
+    <script src="./js/Nav.js"></script>
+    <script src="./js/Carousel_1.js"></script>
+    <script src="./js/Carousel_6.js"></script>
+    <script src="./js/Carousel_7.js"></script>
+    <script src="./js/Carousel_8.js"></script>
+    <script src="./js/Carousel_9.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/lightbox.js"></script>
+    <script src="./js/jquery-ui-1.8.18.custom.min.js"></script>
     <script>
         var slider = new Slider("slider", {
             play_icon: '<i class="fas fa-play"></i>',
