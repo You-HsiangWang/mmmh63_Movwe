@@ -11,6 +11,9 @@
     font-size: 12px;
 }
 .ott_platform_title ,.genre_title, .browse-filter-title{
+    width: 40px;
+
+
     font-size: 14px;
 }
 .platform button, .genre_item button{
@@ -35,11 +38,13 @@
     margin: 0px 4px;
 }
 .platform, .genre_item, .browse-filter-items{
+    overflow-x: scroll;
+    overflow-y: hidden;
     display: flex;
 }
 .browse-filter{
-    overflow-x: scroll;
-    overflow-y: hidden;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
     /* outline: 1px solid yellow; */
 }
 .browse-filters button {
@@ -49,9 +54,24 @@
     display: none;
 }
 .browse-filter-title{
+    position: relative;
     color:#10FFA2 ;
     display: block;
 }
+.location{
+    width: 40px;
+}
+
+.Style{
+    width: 40px;
+
+}
+.Style_box{
+    width: 40px;
+
+}
+
+
 .genre_title{
     color:#10FFA2 ;
 
@@ -76,6 +96,7 @@
         line-height: 28px;
     }
     .ott_platform_title ,.genre_title, .browse-filter-title{
+        width: 70px;
         font-size: 24px;
     }
     .platform button, .genre button, .browse-filter-item{
@@ -93,4 +114,13 @@
         margin-left: 4px;
         margin-top: 4px;
     }
+
+    .location{
+        width: 70px;
+    }
+    
+    .Style{
+        width: 70px;
+    }
+    
 }

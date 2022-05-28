@@ -288,11 +288,21 @@ require './parts/movwe_connect_db.php';
                 <div class="search__bigbox">
                     <div class="search_p1">
                         <div class="Title__movwe__animation">
-                            <div class="movwe_1">M</div>
-                            <div class="movwe_2">o</div>
-                            <div class="movwe_3">v</div>
-                            <div class="movwe_4">w</div>
-                            <div class="movwe_5">e</div>
+                            <div class="benner_text_box-1">
+                                <div class="movwe_1">M</div>
+                                </div>
+                            <div class="benner_text_box-2">
+                                <div class="movwe_2">o</div>
+                                </div>
+                            <div class="benner_text_box-3">
+                                <div class="movwe_3">v</div>
+                                </div>
+                            <div class="benner_text_box-4">
+                                <div class="movwe_4">w</div>
+                                </div>
+                            <div class="benner_text_box-5">
+                                <div class="movwe_5">e</div>
+                                </div>
                         </div>
                     </div>
                     <div class="search_p2 green">
@@ -360,7 +370,7 @@ require './parts/movwe_connect_db.php';
                     <ul class="browse-filters">
                         <li class="browse-filter">
                             <div class="browse-filter-title">
-                                <span>地區 /</span>
+                                <div class="location">地區 /</div>
                             </div>
                             <ul class="browse-filter-items">
                                 <button class="browse-filter-item filter_2w browse_item__1">
@@ -380,7 +390,7 @@ require './parts/movwe_connect_db.php';
                         </li>
                         <li class="browse-filter">
                             <div class="browse-filter-title">
-                                <span>風格 /</span>
+                                <div class="Style">風格 /</div>
                             </div>
                             <ul class="browse-filter-items">
                                 <button class="browse-filter-item filter_2w style_item__1">
@@ -726,7 +736,6 @@ require './parts/movwe_connect_db.php';
                                                                     </p>
                                                                 </a>
                                                             </div>
-
                                                         </div>
                                                         <div class="information__bottom_2 Bottom__display">
                                                             <p class="information__name">
