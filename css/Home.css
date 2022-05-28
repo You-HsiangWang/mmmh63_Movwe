@@ -1,5 +1,5 @@
-body {
-    overflow-x: hidden;
+html{
+    overflow-x:hidden;
 }
 
 
@@ -21,10 +21,56 @@ body {
     color: aliceblue;
 }
 
-.search_p1{
-
-    /* font-weight: 700; */
+.benner_text_box-1{
+    transition: .6s;
+    transition-delay: .05s;
 }
+.benner_text_box-2{
+    transition: .6s;
+    transition-delay: .1s;
+}
+.benner_text_box-3{
+    transition: .6s;
+    transition-delay: .15s;
+
+}
+.benner_text_box-4{
+    transition: .6s;
+    transition-delay: .2s;
+
+}
+.benner_text_box-5{
+    transition: .6s;
+    transition-delay: .25s;
+
+}
+.search__bigbox:hover .benner_text_box-1{
+    transform: translateY(-100%);
+    opacity: 0;
+
+}
+.search__bigbox:hover .benner_text_box-2{
+    transform: translateY(100%);
+    opacity: 0;
+
+}
+.search__bigbox:hover .benner_text_box-3{
+    transform: translateY(-100%);
+    opacity: 0;
+
+}
+.search__bigbox:hover .benner_text_box-4{
+    transform: translateY(100%);
+    opacity: 0;
+
+}
+.search__bigbox:hover .benner_text_box-5{
+    transform: translateY(-100%);
+    opacity: 0;
+
+}
+
+
 .search_p2{
 font-size: 16px;
 margin-top: 20px;
@@ -325,7 +371,7 @@ text-align: center;
     .Filter__text__box{
         margin-top: 40px;
             width: 100%;
-                    display: none;
+                    display: flex;
 
             /* height: 100%; */
 
@@ -367,7 +413,7 @@ text-align: center;
         align-items: center;
             /* color: #FFF; */
             color: rgba(0, 0, 0, 0.8);
-            font-size: 150px;
+            font-size: 50px;
             -webkit-text-stroke: 3px rgb(16, 255, 163);
         font-family: 'Luckiest Guy', cursive;
 
@@ -376,7 +422,7 @@ text-align: center;
 
 
     .movwe_1{
-       /* transition: ;      */
+        transition: .5s;
        animation-name: home__movwe_1;
        animation-duration: 3s;
        animation-iteration-count: infinite;
@@ -385,14 +431,14 @@ text-align: center;
 
     }
     .movwe_2{
-       /* transition: ;      */
+        transition: .5s;
        animation-name: home__movwe_1;
        animation-duration: 3s;
        animation-iteration-count: infinite;
 animation-delay: 1.2s;
     }
     .movwe_3{
-       /* transition: ;      */
+        transition: .5s;
        animation-name: home__movwe_1;
        animation-duration: 3s;
        animation-iteration-count: infinite;
@@ -400,7 +446,7 @@ animation-delay: 1.2s;
 
     }
     .movwe_4{
-       /* transition: ;      */
+        transition: .5s;
        animation-name: home__movwe_1;
        animation-duration: 3s;
        animation-iteration-count: infinite;
@@ -408,7 +454,7 @@ animation-delay: 1.2s;
 
     }
     .movwe_5{
-       /* transition: ;      */
+        transition: .5s;
        animation-name: home__movwe_1;
        animation-duration: 3s;
        animation-iteration-count: infinite;
@@ -515,6 +561,10 @@ animation-delay: 1.2s;
                 /* height: 100%; */
     
     
+        }
+
+        .Title__movwe__animation{
+            font-size: 150px;
         }
     
     
