@@ -18,6 +18,7 @@ require './parts/movwe_connect_db.php';
     <link rel="stylesheet" href="./css/Carousel_5.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/filter_function.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -336,7 +337,7 @@ require './parts/movwe_connect_db.php';
             <!--text__container------內容放這邊------------->
 
             <div class="text__container">
-                <div class="index_filter">
+                <!-- <div class="index_filter">
                     <div class="ott_platform">
                         <div class="ott_platform_title">
                             <span>平台 / </span>
@@ -418,11 +419,11 @@ require './parts/movwe_connect_db.php';
                             </ul>
                         </li>
                     </ul>
-                </div>
+                </div> -->
 
                 <!------篩選後_BOX----------------------------------->
 
-                <div class="Filter__text__box">
+                <!-- <div class="Filter__text__box">
                     <div class="filter__card">
                         <div class="imge__card__information">
                             <div class="information__top">
@@ -547,7 +548,8 @@ require './parts/movwe_connect_db.php';
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
+                <?php include __DIR__. '/parts/movwe_filter_function.php' ?>
 
 
                 <!------預設＿篩選前_BOX----------------------------------->
@@ -5420,6 +5422,8 @@ require './parts/movwe_connect_db.php';
     <script src="./js/Carousel_4.js"></script>
     <script src="./js/Carousel_5.js"></script>
     <script src="./js/home.js"></script>
+    <script src="./js/filter_function.js"></script>
+    
     <script>
     // </script>
     //
