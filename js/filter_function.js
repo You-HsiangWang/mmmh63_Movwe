@@ -7,6 +7,10 @@
 
     // 切換filterbtn active的狀態 並呼叫filterGetData--------------------------------
     function filterActive() {
+        if(!$('.home__text__box').hasClass('home_d_none')){
+            $('.home__text__box').addClass('home_d_none');
+        };
+
         // 頁面歸零
         counter = 0;
         // size
@@ -28,6 +32,7 @@
             if (!$('.filter_function').hasClass('filterActive')) {
                 $('#ottFilterSearchFunc').addClass('filter_d_none');
                 console.log('filter工程生退');
+                $('.home__text__box').removeClass('home_d_none');
                 return;
             };
         }
@@ -37,6 +42,7 @@
             filterGetData(pagestart, pagesize, scrollfunc);
             if (!$('.filter_function').hasClass('filterActive')) {
                 $('#ottFilterSearchFunc').addClass('filter_d_none');
+                $('.home__text__box').removeClass('home_d_none');
                 console.log('filter工程生退');
                 exit;
             };
@@ -47,6 +53,7 @@
             filterGetData(pagestart, pagesize, scrollfunc);
             if (!$('.filter_function').hasClass('filterActive')) {
                 $('#ottFilterSearchFunc').addClass('filter_d_none');
+                $('.home__text__box').removeClass('home_d_none');
                 console.log('filter工程生退');
                 exit;
             };
@@ -58,6 +65,7 @@
             filterGetData(pagestart, pagesize, scrollfunc);
             if (!$('.filter_function').hasClass('filterActive')) {
                 $('#ottFilterSearchFunc').addClass('filter_d_none');
+                $('.home__text__box').removeClass('home_d_none');
                 console.log('filter工程生退');
                 exit;
             };
