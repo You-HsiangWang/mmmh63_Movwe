@@ -1,5 +1,5 @@
-body {
-    overflow-x: hidden;
+html{
+    overflow-x:hidden;
 }
 
 
@@ -21,10 +21,6 @@ body {
     color: aliceblue;
 }
 
-.search_p1{
-
-    /* font-weight: 700; */
-}
 .search_p2{
 font-size: 16px;
 margin-top: 20px;
@@ -367,7 +363,7 @@ text-align: center;
         align-items: center;
             /* color: #FFF; */
             color: rgba(0, 0, 0, 0.8);
-            font-size: 150px;
+            font-size: 50px;
             -webkit-text-stroke: 3px rgb(16, 255, 163);
         font-family: 'Luckiest Guy', cursive;
 
@@ -515,6 +511,10 @@ animation-delay: 1.2s;
                 /* height: 100%; */
     
     
+        }
+
+        .Title__movwe__animation{
+            font-size: 150px;
         }
     
     
