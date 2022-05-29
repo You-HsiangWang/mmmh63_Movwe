@@ -87,3 +87,5 @@ $('.close').click(function(){
     console.log('hello' , this);
     $('.blackblack').css('display' , 'none');
 });
+
+// TODO: 印出所選的商品規格跟數量

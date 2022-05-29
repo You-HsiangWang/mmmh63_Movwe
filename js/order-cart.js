@@ -61,10 +61,13 @@ function deleteFunction() {
 
 var singlePrice = '840';
 var subTotalPrice = `<h4>${singlePrice * q}</h4>`;
+
 document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
 
+
+var q = parseInt(document.getElementById('quantity').value);
+
 function addFunction() {
-    var q = parseInt(document.getElementById('quantity').value);
     q = isNaN(q) ? 0 : q;
     q++;
     document.getElementById('quantity').value = q;
@@ -91,4 +94,18 @@ $('#discountInfo').click(function () {
     $('#discountInfo').toggleClass('border-bottom-main-color');
 });
 
+// 商品總數量與總金額
 
+var totalQuantity = `<h4>總共有${q}項商品</h4>`;
+document.getElementById('totalQuantity').innerHTML = 
+totalQuantity
+
+// 點優惠券折抵金額
+
+$('#discount1').click(function(){
+    console.log('discount1', this);
+    $('#discountQQ').innerHTML('<h4>NTD 50</h4>')
+});
+
+var d1 = document.getElementById('discount1').value;
+var discountQQ = document.getElementById('discountQQ');
