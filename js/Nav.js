@@ -127,13 +127,13 @@
             }
         })
 
-        const carBox = document.querySelector('.car_box')
-        const forumBox = document.querySelector('.forum_box')
-        const MoviesBox = document.querySelector('.Movies_box')
-        const addMoviesBtn = document.querySelector('.add_movies')
+        // const carBox = document.querySelector('.car_box')
+        // const forumBox = document.querySelector('.forum_box')
+        // const MoviesBox = document.querySelector('.Movies_box')
+        // const addMoviesBtn = document.querySelector('.add_movies')
 
-        addMoviesBtn.addEventListener('click',()=>{
-            MoviesBox.style.opacity = '1'
+        // addMoviesBtn.addEventListener('click',()=>{
+        //     MoviesBox.style.opacity = '1'
 
-        })
+        // })
 

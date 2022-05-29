@@ -279,6 +279,7 @@ color:rgb(16, 255, 162) ;
     border-radius: 10px;
 
 }
+
 .wish__text__04{
     display: flex;
     justify-content: flex-end;
@@ -317,7 +318,7 @@ justify-content: flex-end;
 
 
 .image__card__5:hover{
-    box-shadow: 0 0 10px rgb(16, 255, 163);
+    /* box-shadow: 0 0 10px rgb(16, 255, 163); */
     transform: translateY(-5%);
 }
 
