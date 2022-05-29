@@ -20,9 +20,8 @@ color: white;
 }
 
 .carousle__button__4 {
-
     width: 5%;
-    height: 130%;
+    height: 260px;
     background-color: rgb(26, 29, 36);
     z-index: 90;
     border: none;
@@ -83,8 +82,8 @@ color:rgb(16, 255, 162) ;
 
 .carousel__button--left__4 {
     position: absolute;
-    left: -5%;
-    top: 70%;
+    left: -20px;
+    top: 120px;
     transform: translateY(-50%);
     /* border-radius: 0 10px 10px 0; */
 }
@@ -92,8 +91,8 @@ color:rgb(16, 255, 162) ;
 
 .carousel__button--right__4 {
     position: absolute;
-    right: -5%;
-    top: 70%;
+    right: -20px;
+    top: 120px;
     transform: translateY(-50%);
     /* border-radius: 10px 0 0 10px; */
 
@@ -101,6 +100,8 @@ color:rgb(16, 255, 162) ;
 
 
 .carousel__4 {
+    height: 360px;
+
     position: relative;
     /* height: 600px; */
     width: 100%;
@@ -470,5 +471,28 @@ display: none;
         transform: translateX(-50%);
         /* width: 100%; */
     }
+
+    .carousel__button--left__4 {
+        position: absolute;
+        left: -88px;
+        top: 240px;
+        transform: translateY(-50%);
+        /* border-radius: 0 10px 10px 0; */
+    }
+    
+    
+    .carousel__button--right__4 {
+        position: absolute;
+        right: -88px;
+        top: 240px;
+        /* transform: translateY(-50%); */
+        /* border-radius: 10px 0 0 10px; */
+    
+    }
+    .carousle__button__4{
+
+        height: 420px;
+    }
+
     
 }
