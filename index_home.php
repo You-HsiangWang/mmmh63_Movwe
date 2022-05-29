@@ -5,33 +5,31 @@ require './parts/movwe_connect_db.php';
 ?>
 
 <?php include __DIR__ . '/parts/movwe_head.php'; ?>
-    <link rel="stylesheet" href="./fontawesome/css/all.css">
-    <link rel="stylesheet" href="./css/Nav.css">
-    <link rel="stylesheet" href="./css/BS.css">
-    <link rel="stylesheet" href="./css/Home.css">
-    <link rel="stylesheet" href="./css/single_movie.css">
-    <link rel="stylesheet" href="./css/filter.css">
-    <link rel="stylesheet" href="./css/Carousel_1.css">
-    <link rel="stylesheet" href="./css/Carousel_2.css">
-    <link rel="stylesheet" href="./css/Carousel_3.css">
-    <link rel="stylesheet" href="./css/Carousel_4.css">
-    <link rel="stylesheet" href="./css/Carousel_5.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/filter_function.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
+<link rel="stylesheet" href="./fontawesome/css/all.css">
+<link rel="stylesheet" href="./css/Nav.css">
+<link rel="stylesheet" href="./css/BS.css">
+<link rel="stylesheet" href="./css/Home.css">
+<link rel="stylesheet" href="./css/single_movie.css">
+<link rel="stylesheet" href="./css/filter.css">
+<link rel="stylesheet" href="./css/Carousel_1.css">
+<link rel="stylesheet" href="./css/Carousel_2.css">
+<link rel="stylesheet" href="./css/Carousel_3.css">
+<link rel="stylesheet" href="./css/Carousel_4.css">
+<link rel="stylesheet" href="./css/Carousel_5.css">
+<link rel="stylesheet" href="./css/footer.css">
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/filter_function.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-    <title>Movwe</title>
-    <style>
-        /* --------------------- */
-    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<title>Movwe</title>
+<style>
+    /* --------------------- */
+</style>
 </head>
 
 <body>
@@ -116,8 +114,7 @@ require './parts/movwe_connect_db.php';
                         <i class="fa-solid fa-film"></i>
                     </div>
                     <div class="nav_text_01 ">
-                        <div class="h-60px movie_btn">影劇 <span class="down"><i
-                                    class="fa-solid fa-angle-down"></i></span></div>
+                        <div class="h-60px movie_btn">影劇 <span class="down"><i class="fa-solid fa-angle-down"></i></span></div>
                         <a href="#">
                             <p class="text_a">影劇搜尋器</p>
                         </a>
@@ -158,8 +155,7 @@ require './parts/movwe_connect_db.php';
                         <i class="fa-solid fa-store"></i>
                     </div>
                     <div class="nav_text_01 ">
-                        <div class="h-60px store_btn">商城 <span class="down"><i
-                                    class="fa-solid fa-angle-down"></i></span></div>
+                        <div class="h-60px store_btn">商城 <span class="down"><i class="fa-solid fa-angle-down"></i></span></div>
                         <a href="#">
                             <p class="text_a">主打活動</p>
                         </a>
@@ -264,7 +260,7 @@ require './parts/movwe_connect_db.php';
     <div class="layout">
         <div class="left_div"></div>
         <!----------nav_left-------------->
-        
+
         <!--------------------------------------------------------------------------->
         <div class="container">
 
@@ -291,30 +287,38 @@ require './parts/movwe_connect_db.php';
                         <div class="Title__movwe__animation">
                             <div class="benner_text_box-1">
                                 <div class="movwe_1">M</div>
-                                </div>
+                            </div>
                             <div class="benner_text_box-2">
                                 <div class="movwe_2">o</div>
-                                </div>
+                            </div>
                             <div class="benner_text_box-3">
                                 <div class="movwe_3">v</div>
-                                </div>
+                            </div>
                             <div class="benner_text_box-4">
                                 <div class="movwe_4">w</div>
-                                </div>
+                            </div>
                             <div class="benner_text_box-5">
                                 <div class="movwe_5">e</div>
-                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="search_p2 green">
-                        <p>
-                            四大平台同步搜尋
-                        </p>
+                        <div class="search_p2">
+                            <div class="home__title__box">
+                                <div class="home__title-1">提</div>
+                                <div class="home__title-2">供</div>
+                                <div class="home__title-3">您</div>
+                                <div class="home__title-4">最</div>
+                                <div class="home__title-5">新</div>
+                                <div class="home__title-6">的</div>
+                                <div class="home__title-7">上</div>
+                                <div class="home__title-8">片</div>
+                                <div class="home__title-9">資</div>
+                                <div class="home__title-10">訊</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="search_p3">
                         <input id="myInput" placeholder="輸入片名">
-                        <button id="myBtn"
-                            onclick="javascript:window.location.href='./search_page.php'">Button</button>
+                        <button id="myBtn" onclick="javascript:window.location.href='./search_page.php'">Button</button>
 
                     </div>
                     <div class="search_p4">
@@ -549,11 +553,22 @@ require './parts/movwe_connect_db.php';
                         </div>
                     </div>
                 </div> -->
-                <?php include __DIR__. '/parts/movwe_filter_function.php' ?>
+                <?php include __DIR__ . '/parts/movwe_filter_function.php' ?>
 
 
                 <!------預設＿篩選前_BOX----------------------------------->
                 <div class="home__text__box">
+                    <a href="./wish_page.php">
+                        <div class="wish__lamp__box">
+                            <div class="home__make__a__wish">
+                                <p>
+                                    Make a wish?
+                                </p>
+                            </div>
+                            <img class="magic__lamp-1" src="./img/center/magic_lamp_hover.png" alt="">
+                            <img class="magic__lamp-2" src="./img/center/magic_lamp.png" alt="">
+                        </div>
+                    </a>
 
                     <!--Carouse_1----------------------------->
 
@@ -562,7 +577,7 @@ require './parts/movwe_connect_db.php';
                             <div class="stick_desk"></div>
                             <div class="carousel__title">
                                 <p>
-                                    搜尋結果
+                                    推薦給您
                                 </p>
                             </div>
                         </div>
@@ -576,12 +591,10 @@ require './parts/movwe_connect_db.php';
                                 <ul class="carousel__track">
                                     <li class="carousel__slide current-slide">
                                         <div class="image__box">
-
                                             <div class="image__card">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                     </div>
                                                     <div class="information__bottom">
                                                         <div class="information__bottom_1 Bottom__display">
@@ -590,9 +603,9 @@ require './parts/movwe_connect_db.php';
                                                             </p>
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
+                                                                    <!-- <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/friday_s.svg" alt="">
+                                                                </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
@@ -600,9 +613,9 @@ require './parts/movwe_connect_db.php';
                                                                 </a>
                                                                 </p>
                                                                 <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
+                                                                    <!-- <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                </p> -->
                                                                 </a>
                                                                 <a href="#">
                                                                     <p class="bottom_6_icon">
@@ -674,157 +687,28 @@ require './parts/movwe_connect_db.php';
                                                             </button>
                                                         </div>
                                                     </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-2.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h_1.jpeg" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
-                                                            </p>
-                                                        </div>
-                                                        <div class="movie__icons">
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
-                                                            </div>
-                                                            <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
-                                                            </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- ---加迴圈 -->
-                                            <div class="image__card">
-                                                <div class="imge__card__information">
-                                                    <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
-                                                    </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw"
-                                                                    target="_blank">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
-                                                                </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
                                                                 孤單又燦爛的神 鬼怪
                                                             </p>
                                                         </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__point">
-                                                                <p>
-                                                                    4.9
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up add_movies">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-1.jpeg" alt="">
-                                                    <div class="image__card__text">
-                                                        <div class="movie__name">
-                                                            <p>
-                                                                真愛每一天
-                                                            </p>
-                                                        </div>
                                                         <div class="movie__icons">
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
-                                                            </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
+                                                        </div> -->
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href="https://www.iq.com/?lang=zh_tw"><img
-                                                                        src="./img/logo/iqiyi_s.svg" alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
+                                                        </div> -->
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -833,125 +717,246 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_16w.jpeg" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    影劇
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/friday_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
                                                                     </p>
-                                                                </a>
-                                                                <a href="#">
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <!-- <a href="#">
                                                                     <p class="bottom_6_icon">
                                                                         <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
-                                                                </a>
-                                                            </div>
+                                                                </a> -->
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    分秒幣爭
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.5
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    懸疑推理/
+                                                                </p>
+                                                                <p>
+                                                                    社會現場
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        金惠秀
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        劉亞仁
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        許峻豪
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-5.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h-7.jpeg" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                分秒幣爭
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
+                                                        </div> -->
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+                                                        </div> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="image__card">
+                                                <div class="imge__card__information">
+                                                    <div class="information__top">
+                                                        <img class="information__video" src="./img/center/h_17w.jpeg" alt="">
+                                                    </div>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    影劇
+                                                                </p>
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/friday_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
+                                                                    </p>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/kktv_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
+
                                                             </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    驅魔使者
+                                                                </p>
                                                             </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.8
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="information__bottom_4 Bottom__display">
+                                                                <p>
+                                                                    懸疑推理 /
+                                                                </p>
+                                                                <p>
+                                                                    社會現場
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        朴敘俊
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        安聖基
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        禹棹煥
+                                                                    </p>
+                                                                </a>
+
+                                                            </div>
+
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="carousel__images__box">
+                                                    <img class="carousel__images" src="./img/center/h-6.jpeg" alt="">
+                                                    <div class="image__card__text">
+                                                        <div class="movie__name">
+                                                            <p>
+                                                                驅魔使者
+                                                            </p>
+                                                        </div>
+                                                        <div class="movie__icons">
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
+                                                        </div> -->
+                                                            <div class="movie__icon__box"> <a href=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
+                                                            </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
+                                                        </div> -->
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+                                                        </div> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -959,124 +964,122 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card card4">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_18w.jpeg" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    影劇
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/friday_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
+                                                                    </p>
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
                                                                         <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    婚禮的那一天
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.5
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    浪漫愛情 /
+                                                                </p>
+                                                                <p>
+                                                                    輕鬆喜劇
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        樸寶英
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        金英光
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        高圭弼
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-7.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h-5.jpeg" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                婚禮的那一天
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
+                                                        </div> -->
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1085,124 +1088,122 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card card5">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_19w.webp" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    影劇
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
                                                                     </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/kktv_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    臥底巨星
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.7
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    輕鬆喜劇 /
+                                                                </p>
+                                                                <p>
+                                                                    運動競技
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        陳奕迅
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        李榮浩
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        李一桐
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-3.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h-4.jpeg" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                臥底巨星
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
-                                                            </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
+                                                        </div> -->
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1211,125 +1212,123 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card card6">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_20w.jpeg" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    影劇
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/friday_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
+                                                                    </p>
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
                                                                         <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
                                                                         <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    </p> -->
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    愛上變身情人
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.6
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    浪漫愛情 /
+                                                                </p>
+                                                                <p>
+                                                                    奇幻冒險
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        韓孝周
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        李凡秀
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        樸信惠
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-6.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h-3.jpeg" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                愛上變身情人
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
-                                                            </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
+                                                        </div> -->
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+                                                        </div> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1337,255 +1336,249 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card card7">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_21w.jpeg" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    影劇
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
+                                                                    </p>
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
                                                                         <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    霹靂交鋒
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.3
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    浪漫愛情 /
+                                                                </p>
+                                                                <p>
+                                                                    運動競技
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        羅美蘭
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        李聖經
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        尹相鉉
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-4.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h-2.jpeg" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                霹靂交鋒
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
-                                                            </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
+                                                        </div> -->
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
+                                                        </div> -->
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
                                     </li>
                                     <li class="carousel__slide current-slide">
                                         <div class="image__box">
                                             <div class="image__card">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_2w.webp" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    動畫
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/friday_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
                                                                     </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/kktv_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    國王排名
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        5.0
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    奇幻冒險 /
+                                                                </p>
+                                                                <p>
+                                                                    闔家觀賞
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        日向未南
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        村瀨步
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        梶裕貴
+                                                                    </p>
+                                                                </a>
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                            </div>
 
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-2.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h_2.webp" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                國王排名
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
-                                                            </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+                                                        </div> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1593,125 +1586,123 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_3w.webp" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    影劇
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/friday_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
                                                                     </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/kktv_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
                                                                         <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    </p> -->
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    MIU404
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.8
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    社會現場 /
+                                                                </p>
+                                                                <p>
+                                                                    懸疑推理
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        綾野剛
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        星野源
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        岡田健史
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-1.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h_3.webp" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                MIU404
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
-                                                            </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+                                                        </div> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1719,124 +1710,122 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_4w.webp" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    動畫
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
+                                                                    </p>
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
                                                                         <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    你的名字
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.6
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    輕鬆喜劇 /
+                                                                </p>
+                                                                <p>
+                                                                    奇幻冒險
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        神木隆之介
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        上白石萌音
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        市原悅子
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-5.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h_4.webp" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                你的名字
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
-                                                            </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
+                                                        </div> -->
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
+                                                        </div> -->
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1845,125 +1834,123 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card card4">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_5w.webp" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    電影
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/friday_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
+                                                                    </p>
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
                                                                         <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
                                                                         <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    </p> -->
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    活下去Alive
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.3
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    浪漫愛情 /
+                                                                </p>
+                                                                <p>
+                                                                    奇幻冒險
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        松下奈緒
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        倉光泰子
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        巖城隆一
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-7.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h_5.webp" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                活下去Alive
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
-                                                            </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
+                                                        </div> -->
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+                                                        </div> -->
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1971,124 +1958,123 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card card5">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_6w.webp" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    影劇
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
+                                                                    </p>
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
                                                                         <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    駭客軍團
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.6
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    社會現場 /
+                                                                </p>
+                                                                <p>
+                                                                    懸疑推理
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        馬利克
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        克利斯汀
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        波西亞
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-3.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h_6.webp" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                駭客軍團
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2097,103 +2083,104 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card card6">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_7w.webp" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    動畫
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/friday_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
+                                                                    </p>
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
                                                                         <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    鋼之鍊金術師
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.9
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    浪漫愛情 /
+                                                                </p>
+                                                                <p>
+                                                                    奇幻冒險
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        濱田賢二
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        志村知幸
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        早志勇紀
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-6.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h_7.webp" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
@@ -2202,19 +2189,17 @@ require './parts/movwe_connect_db.php';
                                                         </div>
                                                         <div class="movie__icons">
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
+                                                        </div> -->
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2223,254 +2208,251 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card card7">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_8w.webp" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    電影
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
+                                                                    </p>
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
                                                                         <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    非賣品
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.5
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    社會現場 /
+                                                                </p>
+                                                                <p>
+                                                                    懸疑推理
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        馬東石
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        宋智孝
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        金盛吳
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-4.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h_8.webp" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                非賣品
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
-                                                            </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
+                                                        </div> -->
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
+                                                        </div> -->
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
                                     </li>
                                     <li class="carousel__slide current-slide">
                                         <div class="image__box">
                                             <div class="image__card">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_9w.webp" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    動畫
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
                                                                     </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/kktv_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    工作細胞
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.7
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    輕鬆喜劇 /
+                                                                </p>
+                                                                <p>
+                                                                    闔家觀賞
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        榎木淳彌
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        KENN
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        橫山遵
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-2.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h_9.webp" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                工作細胞
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
-                                                            </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
+                                                        </div> -->
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2479,124 +2461,123 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_10w.webp" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    電影
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/friday_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
                                                                     </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/kktv_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    酒鬼都市女人們
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.9
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    浪漫愛情 /
+                                                                </p>
+                                                                <p>
+                                                                    輕鬆喜劇
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        李善彬
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        韓善伙
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        崔始源
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-1.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h_10.webp" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                酒鬼都市女人們
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2605,124 +2586,123 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_12w.webp" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    影劇
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/friday_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
+                                                                    </p>
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
                                                                         <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    Bad and Crazy
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.9
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    浪漫愛情 /
+                                                                </p>
+                                                                <p>
+                                                                    社會現場
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        魏嘏雋
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        李棟旭
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        韓智恩
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-5.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h_12.webp" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                Bad and Crazy
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
+                                                        </div> -->
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2731,124 +2711,120 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card card4">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_11w.webp" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    影劇
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
                                                                     </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/kktv_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    優秀巫師賈斗心
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.5
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    靈異驚悚 /
+                                                                </p>
+                                                                <p>
+                                                                    懸疑推理
                                                                 </p>
                                                             </div>
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        孔劉
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        金高銀
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        劉寅娜
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-7.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h_11.webp" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                優秀巫師賈斗心
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
-                                                            </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
+                                                        </div> -->
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2857,124 +2833,123 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card card5">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_13w.webp" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    電影
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/friday_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
+                                                                    </p>
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
                                                                         <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    東京愛情故事
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.6
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    浪漫愛情 /
+                                                                </p>
+                                                                <p>
+                                                                    闔家觀賞
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        江口洋介
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        鈴木保奈美
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        有森也實
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-3.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h_13.webp" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                東京愛情故事
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
+                                                        </div> -->
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -2983,103 +2958,104 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card card6">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_14w.webp" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    影劇
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/friday_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
                                                                     </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/kktv_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    我可能不會愛你
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.3
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    浪漫愛情 /
+                                                                </p>
+                                                                <p>
+                                                                    輕鬆喜劇
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        李陣郁
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        河智苑
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        尹鈞相
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-6.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h_14.webp" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
@@ -3088,19 +3064,17 @@ require './parts/movwe_connect_db.php';
                                                         </div>
                                                         <div class="movie__icons">
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -3109,130 +3083,128 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card card7">
                                                 <div class="imge__card__information">
                                                     <div class="information__top">
-                                                        <img class="information__video"
-                                                            src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                        <img class="information__video" src="./img/center/h_15w.webp" alt="">
                                                     </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                    <a href="#">
+                                                        <div class="information__bottom">
+                                                            <div class="information__bottom_1 Bottom__display">
+                                                                <p class="information__typ">
+                                                                    影劇
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
+                                                                <div class="bottom_6_icon_box">
+                                                                    <a href="#">
+                                                                        <!-- <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
+                                                                    </p> -->
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </a>
                                                                     </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/kktv_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        <p class="bottom_6_icon">
+                                                                            <img src="./img/logo/netflix_s.svg" alt="">
+                                                                        </p>
+                                                                    </a>
+                                                                </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                            <div class="information__bottom_2 Bottom__display">
+                                                                <p class="information__name">
+                                                                    一起吃晚餐媽
+                                                                </p>
+                                                            </div>
+                                                            <div class="information__bottom_3 Bottom__display">
+                                                                <div class="information__star">
+                                                                    <div class="information__staricon_box">
+                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="information__point">
+                                                                    <p>
+                                                                        4.8
+                                                                    </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="information__point">
+                                                            <div class="information__bottom_4 Bottom__display">
                                                                 <p>
-                                                                    4.9
+                                                                    浪漫愛情 /
+                                                                </p>
+                                                                <p>
+                                                                    闔家觀賞
                                                                 </p>
                                                             </div>
-                                                        </div>
-                                                        <div class="information__bottom_4 Bottom__display">
-                                                            <p>
-                                                                浪漫愛情 /
-                                                            </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
+                                                            <div class="information__bottom_5 Bottom__display">
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        徐智慧
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
+                                                                    <p class="information__actor__name">
+                                                                        宋承憲
+                                                                    </p>
+                                                                </a>
+                                                                <span class="speace"> / </span>
+                                                                <a href="#">
 
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
+                                                                    <p class="information__actor__name">
+                                                                        孫娜恩
+                                                                    </p>
+                                                                </a>
 
-                                                        </div>
+                                                            </div>
 
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
+                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                <a href="./single-movie-page0511.html">
+                                                                    <p class="detail">
+                                                                        查看詳細..
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+                                                            <div class="information__bottom_6 Bottom__display">
+                                                                <button class="push__up">
+                                                                    <p>
+                                                                        ＋ 加入片單
+                                                                    </p>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h-4.jpeg" alt="">
+                                                    <img class="carousel__images" src="./img/center/h_15.webp" alt="">
                                                     <div class="image__card__text">
                                                         <div class="movie__name">
                                                             <p>
-                                                                真愛每一天
+                                                                一起吃晚餐嗎
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons">
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
-                                                            </div>
+                                                            <!-- <div class="movie__icon__box">
+                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
+                                                        </div> -->
                                                             <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
                                     </li>
                                 </ul>
                                 <button class="carousle__button carousel__button--right">
@@ -3286,12 +3258,11 @@ require './parts/movwe_connect_db.php';
                                                         <div class="carousel__images__2__box">
                                                             <div class="dark__box">
                                                             </div>
-                                                            <img class="carousel__images__2"
-                                                                src="./img/center/h-1.jpeg" alt="">
+                                                            <img class="carousel__images__2" src="./img/center/top_1.jpg" alt="">
                                                             <div class="image__card__text image__card__text__hidden">
                                                                 <div class="movie__name">
                                                                     <p>
-                                                                        真愛每一天
+                                                                        雙面人魔
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -3308,12 +3279,11 @@ require './parts/movwe_connect_db.php';
                                                         <div class="carousel__images__2__box">
                                                             <div class="dark__box">
                                                             </div>
-                                                            <img class="carousel__images__2"
-                                                                src="./img/center/h-2.jpeg" alt="">
+                                                            <img class="carousel__images__2" src="./img/center/top_3.jpg" alt="">
                                                             <div class="image__card__text image__card__text__hidden">
                                                                 <div class="movie__name">
                                                                     <p>
-                                                                        真愛每一天
+                                                                        天國之吻
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -3331,12 +3301,11 @@ require './parts/movwe_connect_db.php';
                                                         <div class="carousel__images__2__box">
                                                             <div class="dark__box">
                                                             </div>
-                                                            <img class="carousel__images__2"
-                                                                src="./img/center/h-3.jpeg" alt="">
+                                                            <img class="carousel__images__2" src="./img/center/top_6.jpg" alt="">
                                                             <div class="image__card__text image__card__text__hidden">
                                                                 <div class="movie__name">
                                                                     <p>
-                                                                        真愛每一天
+                                                                        大英雄天團
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -3354,12 +3323,11 @@ require './parts/movwe_connect_db.php';
                                                         <div class="carousel__images__2__box">
                                                             <div class="dark__box">
                                                             </div>
-                                                            <img class="carousel__images__2"
-                                                                src="./img/center/h-4.jpeg" alt="">
+                                                            <img class="carousel__images__2" src="./img/center/top_4.jpg" alt="">
                                                             <div class="image__card__text image__card__text__hidden">
                                                                 <div class="movie__name">
                                                                     <p>
-                                                                        真愛每一天
+                                                                        獵魔士
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -3377,8 +3345,7 @@ require './parts/movwe_connect_db.php';
                                                         <div class="carousel__images__2__box">
                                                             <div class="dark__box">
                                                             </div>
-                                                            <img class="carousel__images__2"
-                                                                src="./img/center/h-5.jpeg" alt="">
+                                                            <img class="carousel__images__2" src="./img/center/top_8.jpg" alt="">
                                                             <div class="image__card__text image__card__text__hidden">
                                                                 <div class="movie__name">
                                                                     <p>
@@ -3404,12 +3371,11 @@ require './parts/movwe_connect_db.php';
                                                         <div class="carousel__images__2__box">
                                                             <div class="dark__box">
                                                             </div>
-                                                            <img class="carousel__images__2"
-                                                                src="./img/center/h-6.jpeg" alt="">
+                                                            <img class="carousel__images__2" src="./img/center/top_6.jpg" alt="">
                                                             <div class="image__card__text image__card__text__hidden">
                                                                 <div class="movie__name">
                                                                     <p>
-                                                                        真愛每一天
+                                                                        
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -3427,8 +3393,7 @@ require './parts/movwe_connect_db.php';
                                                         <div class="carousel__images__2__box">
                                                             <div class="dark__box">
                                                             </div>
-                                                            <img class="carousel__images__2"
-                                                                src="./img/center/h-7.jpeg" alt="">
+                                                            <img class="carousel__images__2" src="./img/center/h-7.jpeg" alt="">
                                                             <div class="image__card__text image__card__text__hidden">
                                                                 <div class="movie__name">
                                                                     <p>
@@ -3450,8 +3415,7 @@ require './parts/movwe_connect_db.php';
                                                         <div class="carousel__images__2__box">
                                                             <div class="dark__box">
                                                             </div>
-                                                            <img class="carousel__images__2"
-                                                                src="./img/center/h-3.jpeg" alt="">
+                                                            <img class="carousel__images__2" src="./img/center/h-3.jpeg" alt="">
                                                             <div class="image__card__text image__card__text__hidden">
                                                                 <div class="movie__name">
                                                                     <p>
@@ -3473,8 +3437,7 @@ require './parts/movwe_connect_db.php';
                                                         <div class="carousel__images__2__box">
                                                             <div class="dark__box">
                                                             </div>
-                                                            <img class="carousel__images__2"
-                                                                src="./img/center/h-4.jpeg" alt="">
+                                                            <img class="carousel__images__2" src="./img/center/h-4.jpeg" alt="">
                                                             <div class="image__card__text image__card__text__hidden">
                                                                 <div class="movie__name">
                                                                     <p>
@@ -3490,14 +3453,13 @@ require './parts/movwe_connect_db.php';
                                             <div class="image__card__2 card5__2">
                                                 <div class="carousel__images__box__2">
                                                     <div class="top__10__box">
-                                                        <div class="top__10__img__box">
+                                                        <div class="top__10__img__box top__10__img__box-10">
                                                             <img class="top__10__img" src="./img/center/10.svg" alt="">
                                                         </div>
                                                         <div class="carousel__images__2__box">
                                                             <div class="dark__box">
                                                             </div>
-                                                            <img class="carousel__images__2"
-                                                                src="./img/center/h-6.jpeg" alt="">
+                                                            <img class="carousel__images__2" src="./img/center/h-6.jpeg" alt="">
                                                             <div class="image__card__text image__card__text__hidden">
                                                                 <div class="movie__name">
                                                                     <p>
@@ -3542,7 +3504,7 @@ require './parts/movwe_connect_db.php';
                             <div class="stick_desk"></div>
                             <div class="carousel__title__3">
                                 <p>
-                                    本週上線
+                                    即將上線
                                 </p>
                             </div>
                         </div>
@@ -3564,32 +3526,28 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            6/10
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__3" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__3" src="./img/center/wait-1.jpg" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                6/10
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__3">
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__3">
+                                                            <!-- <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -3601,7 +3559,7 @@ require './parts/movwe_connect_db.php';
                                                                 敬請期待
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                我的夏日大戀習
                                                             </p>
                                                         </div>
                                                     </div>
@@ -3612,33 +3570,31 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            6/17
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__3" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__3" src="./img/center/wait-2.jpg" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                6/17
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__3">
-                                                            <div class="movie__icon__box__3">
+                                                            <!-- <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/friday_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__3"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__3">
+                                                            <!-- <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/netflix_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                         </div>
 
                                                     </div>
@@ -3649,7 +3605,7 @@ require './parts/movwe_connect_db.php';
                                                                 敬請期待
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                尋人啟弒
                                                             </p>
                                                         </div>
                                                     </div>
@@ -3660,32 +3616,28 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            6/17
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__3" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__3" src="./img/center/wait-3.jpg" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                6/17
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__3">
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__3">
+                                                            <!-- <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -3697,7 +3649,7 @@ require './parts/movwe_connect_db.php';
                                                                 敬請期待
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                隔離巢
                                                             </p>
                                                         </div>
                                                     </div>
@@ -3708,32 +3660,28 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            6/18
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__3" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__3" src="./img/center/wait-11.jpg" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                6/18
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__3">
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__3">
+                                                            <!-- <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -3745,7 +3693,7 @@ require './parts/movwe_connect_db.php';
                                                                 敬請期待
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                怪獸死了怎麼辦
                                                             </p>
                                                         </div>
                                                     </div>
@@ -3756,32 +3704,29 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            6/17
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__3" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__3" src="./img/center/wait-5.jpg" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                6/17
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__3">
-                                                            <div class="movie__icon__box__3">
+                                                            <!-- <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/friday_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__3"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__3">
+                                                            <!-- <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -3793,7 +3738,7 @@ require './parts/movwe_connect_db.php';
                                                                 敬請期待
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                法屍浪漫
                                                             </p>
                                                         </div>
                                                     </div>
@@ -3804,32 +3749,29 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            6/17
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__3" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__3" src="./img/center/wait-8.jpg" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                6/17
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__3">
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__3"> <a href=""></a>
+                                                            <!-- <div class="movie__icon__box__3"> <a href=""></a>
                                                                 <a href=""><img src="./img/logo/iqiyi_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -3841,7 +3783,7 @@ require './parts/movwe_connect_db.php';
                                                                 敬請期待
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                午後彌撒
                                                             </p>
                                                         </div>
                                                     </div>
@@ -3852,32 +3794,28 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            6/17
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__3" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__3" src="./img/center/wait-10.jpg" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                6/17
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__3">
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -3889,7 +3827,7 @@ require './parts/movwe_connect_db.php';
                                                                 敬請期待
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                蘿莉塔
                                                             </p>
                                                         </div>
                                                     </div>
@@ -3907,32 +3845,29 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            7/8
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__3" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__3" src="./img/center/wait-12.jpg" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                7/8
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__3">
-                                                            <div class="movie__icon__box__3">
+                                                            <!-- <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/friday_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__3"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__3">
+                                                            <!-- <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -3944,7 +3879,7 @@ require './parts/movwe_connect_db.php';
                                                                 敬請期待
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                高畑勲影展
                                                             </p>
                                                         </div>
                                                     </div>
@@ -3955,33 +3890,31 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            7/22
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__3" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__3" src="./img/center/wait-19.jpg" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                7/22
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__3">
-                                                            <div class="movie__icon__box__3">
+                                                            <!-- <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/friday_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__3"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__3">
+                                                            <!-- <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/netflix_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                         </div>
 
                                                     </div>
@@ -3992,7 +3925,7 @@ require './parts/movwe_connect_db.php';
                                                                 敬請期待
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                拜金女王的性愛派對
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4003,33 +3936,31 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            7/28
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__3" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__3" src="./img/center/wait-15.jpg" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                7/28
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__3">
-                                                            <div class="movie__icon__box__3">
+                                                            <!-- <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/friday_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__3"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__3">
+                                                            <!-- <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/netflix_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                         </div>
 
                                                     </div>
@@ -4040,7 +3971,7 @@ require './parts/movwe_connect_db.php';
                                                                 敬請期待
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                子彈列車
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4051,32 +3982,29 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            7/28
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__3" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__3" src="./img/center/wait-16.jpg" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                7/28
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__3">
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__3"> <a href=""></a>
+                                                            <!-- <div class="movie__icon__box__3"> <a href=""></a>
                                                                 <a href=""><img src="./img/logo/iqiyi_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -4088,7 +4016,7 @@ require './parts/movwe_connect_db.php';
                                                                 敬請期待
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                超級寵物
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4099,33 +4027,30 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            7/28
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__3" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__3" src="./img/center/wait-17.jpg" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                7/28
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__3">
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__3">
+                                                            <!-- <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/netflix_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                         </div>
 
                                                     </div>
@@ -4136,7 +4061,7 @@ require './parts/movwe_connect_db.php';
                                                                 敬請期待
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                沼澤謀殺案
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4147,32 +4072,28 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            7/30
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__3" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__3" src="./img/center/wait-14.jpg" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                7/30
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__3">
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -4184,7 +4105,7 @@ require './parts/movwe_connect_db.php';
                                                                 敬請期待
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                拜金女王的性愛派對
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4195,32 +4116,30 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            8/2
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__3" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__3" src="./img/center/wait-20.jpg" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                8/2
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__3">
-                                                            <div class="movie__icon__box__3">
+                                                            <!-- <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/friday_s.svg"
                                                                         alt=""></a>
-                                                            </div>
-                                                            <div class="movie__icon__box__3"> <a href=""></a>
+                                                            </div> -->
+                                                            <!-- <div class="movie__icon__box__3"> <a href=""></a>
                                                                 <a href=""><img src="./img/logo/iqiyi_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__3">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__3">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -4232,7 +4151,7 @@ require './parts/movwe_connect_db.php';
                                                                 敬請期待
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                獸
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4269,7 +4188,7 @@ require './parts/movwe_connect_db.php';
                             <div class="stick_desk"></div>
                             <div class="carousel__title__4">
                                 <p>
-                                    本週上線
+                                    即將下線
                                 </p>
                             </div>
                         </div>
@@ -4291,32 +4210,28 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            6/15
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__4" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__4" src="./img/center/down-1.webp" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                6/15
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__4">
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__4">
+                                                            <!-- <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -4325,10 +4240,10 @@ require './parts/movwe_connect_db.php';
                                                     <div class="image__card__text__4">
                                                         <div class="movie__name__4">
                                                             <p class="movie__name__wait">
-                                                                敬請期待
+                                                                火速欣賞
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                Legacies
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4339,32 +4254,30 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            6/18
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__4" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__4" src="./img/center/down-2.webp" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                6/18
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__4">
-                                                            <div class="movie__icon__box__4">
+                                                            <!-- <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/friday_s.svg"
                                                                         alt=""></a>
-                                                            </div>
-                                                            <div class="movie__icon__box__4"> <a href=""></a>
+                                                            </div> -->
+                                                            <!-- <div class="movie__icon__box__4"> <a href=""></a>
                                                                 <a href=""><img src="./img/logo/iqiyi_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -4373,10 +4286,10 @@ require './parts/movwe_connect_db.php';
                                                     <div class="image__card__text__4">
                                                         <div class="movie__name__4">
                                                             <p class="movie__name__wait">
-                                                                敬請期待
+                                                                火速欣賞
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                Chicago MED
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4387,33 +4300,31 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            6/20
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__4" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__4" src="./img/center/down-3.webp" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                6/20
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__4">
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__4"> <a href=""></a>
+                                                            <!-- <div class="movie__icon__box__4"> <a href=""></a>
                                                                 <a href=""><img src="./img/logo/iqiyi_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__4">
+                                                            <!-- <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/netflix_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                         </div>
 
                                                     </div>
@@ -4421,10 +4332,10 @@ require './parts/movwe_connect_db.php';
                                                     <div class="image__card__text__4">
                                                         <div class="movie__name__4">
                                                             <p class="movie__name__wait">
-                                                                敬請期待
+                                                                火速欣賞
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                浪子神探
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4435,32 +4346,28 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            6/20
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__4" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__4" src="./img/center/down-4.webp" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                6/20
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__4">
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__4">
+                                                            <!-- <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -4469,10 +4376,10 @@ require './parts/movwe_connect_db.php';
                                                     <div class="image__card__text__4">
                                                         <div class="movie__name__4">
                                                             <p class="movie__name__wait">
-                                                                敬請期待
+                                                                火速欣賞
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                法外搜查
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4483,32 +4390,29 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            6/21
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__4" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__4" src="./img/center/down-5.webp" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                6/21
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__4">
-                                                            <div class="movie__icon__box__4">
+                                                            <!-- <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/friday_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__4"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__4">
+                                                            <!-- <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -4517,10 +4421,10 @@ require './parts/movwe_connect_db.php';
                                                     <div class="image__card__text__4">
                                                         <div class="movie__name__4">
                                                             <p class="movie__name__wait">
-                                                                敬請期待
+                                                                火速欣賞
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                優雅的朋友們
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4531,32 +4435,29 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            6/25
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__4" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__4" src="./img/center/down-6.webp" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                6/25
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__4">
-                                                            <div class="movie__icon__box__4">
+                                                            <!-- <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/friday_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__4"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__4">
+                                                            <!-- <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -4565,10 +4466,10 @@ require './parts/movwe_connect_db.php';
                                                     <div class="image__card__text__4">
                                                         <div class="movie__name__4">
                                                             <p class="movie__name__wait">
-                                                                敬請期待
+                                                                火速欣賞
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                獵人
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4579,32 +4480,29 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            6/25
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__4" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__4" src="./img/center/down-7.webp" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                6/25
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__4">
-                                                            <div class="movie__icon__box__4">
+                                                            <!-- <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/friday_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__4"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -4613,10 +4511,10 @@ require './parts/movwe_connect_db.php';
                                                     <div class="image__card__text__4">
                                                         <div class="movie__name__4">
                                                             <p class="movie__name__wait">
-                                                                敬請期待
+                                                                火速欣賞
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                寶可夢旅途
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4634,32 +4532,28 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            6/28
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__4" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__4" src="./img/center/down-8.webp" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                6/28
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__4">
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -4668,10 +4562,10 @@ require './parts/movwe_connect_db.php';
                                                     <div class="image__card__text__4">
                                                         <div class="movie__name__4">
                                                             <p class="movie__name__wait">
-                                                                敬請期待
+                                                                火速欣賞
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                良醫墨非
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4682,32 +4576,28 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            6/30
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__4" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__4" src="./img/center/down-9.webp" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                6/30
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__4">
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -4716,10 +4606,10 @@ require './parts/movwe_connect_db.php';
                                                     <div class="image__card__text__4">
                                                         <div class="movie__name__4">
                                                             <p class="movie__name__wait">
-                                                                敬請期待
+                                                                火速欣賞
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                小南的迷你情人
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4730,33 +4620,30 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            7/2
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__4" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__4" src="./img/center/down-10.webp" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                7/2
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__4">
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__4">
+                                                            <!-- <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/netflix_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                         </div>
 
                                                     </div>
@@ -4764,10 +4651,10 @@ require './parts/movwe_connect_db.php';
                                                     <div class="image__card__text__4">
                                                         <div class="movie__name__4">
                                                             <p class="movie__name__wait">
-                                                                敬請期待
+                                                                火速欣賞
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                Boruto
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4778,32 +4665,28 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            7/5
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__4" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__4" src="./img/center/down-11.webp" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                7/5
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__4">
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -4812,10 +4695,10 @@ require './parts/movwe_connect_db.php';
                                                     <div class="image__card__text__4">
                                                         <div class="movie__name__4">
                                                             <p class="movie__name__wait">
-                                                                敬請期待
+                                                                火速欣賞
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                庫洛魔法使
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4826,32 +4709,29 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            7/8
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__4" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__4" src="./img/center/down-12.webp" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                7/8
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__4">
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__4"> <a href=""></a>
+                                                            <!-- <div class="movie__icon__box__4"> <a href=""></a>
                                                                 <a href=""><img src="./img/logo/iqiyi_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -4860,10 +4740,10 @@ require './parts/movwe_connect_db.php';
                                                     <div class="image__card__text__4">
                                                         <div class="movie__name__4">
                                                             <p class="movie__name__wait">
-                                                                敬請期待
+                                                                火速欣賞
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                房仲女王2
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4874,33 +4754,30 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            7/15
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__4" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__4" src="./img/center/down-13.webp" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                7/15
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__4">
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
-                                                            <div class="movie__icon__box__4">
+                                                            <!-- <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/netflix_s.svg"
                                                                         alt=""></a>
-                                                            </div>
+                                                            </div> -->
                                                         </div>
 
                                                     </div>
@@ -4908,10 +4785,10 @@ require './parts/movwe_connect_db.php';
                                                     <div class="image__card__text__4">
                                                         <div class="movie__name__4">
                                                             <p class="movie__name__wait">
-                                                                敬請期待
+                                                                火速欣賞
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                大叔的愛
                                                             </p>
                                                         </div>
                                                     </div>
@@ -4922,32 +4799,28 @@ require './parts/movwe_connect_db.php';
                                                     <div class="up__date__box">
                                                         <div class="Point"></div>
                                                         <div class="up__date">
-                                                            6/7
+                                                            7/18
                                                         </div>
                                                     </div>
                                                     <div class="update__img__box">
-                                                        <img class="carousel__images__4" src="./img/center/h-1.jpeg"
-                                                            alt="">
+                                                        <img class="carousel__images__4" src="./img/center/down-14.webp" alt="">
                                                         <div class="update__date">
                                                             <p>
-                                                                6/7
+                                                                7/18
                                                             </p>
                                                         </div>
                                                         <div class="movie__icons__4">
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/friday_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4">
                                                                 <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                             </div>
                                                             <div class="movie__icon__box__4">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg"
-                                                                        alt=""></a>
+                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                             </div>
                                                         </div>
 
@@ -4956,10 +4829,10 @@ require './parts/movwe_connect_db.php';
                                                     <div class="image__card__text__4">
                                                         <div class="movie__name__4">
                                                             <p class="movie__name__wait">
-                                                                敬請期待
+                                                                火速欣賞
                                                             </p>
                                                             <p class="movie__name__bt">
-                                                                真愛每一天
+                                                                Chicago MED
                                                             </p>
                                                         </div>
                                                     </div>
@@ -5013,13 +4886,13 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__box__5">
                                             <div class="image__card__5">
                                                 <div class="carousel__images__box__5">
-                                                    <img class="carousel__images__5" src="./img/center/w-1.jpg" alt="">
+                                                    <img class="carousel__images__5" src="./img/center/wish_movie-1.webp" alt="">
                                                 </div>
                                                 <div class="wish__text__box">
                                                     <div class="wish__text__top">
                                                         <div class="wish__card__typ">
                                                             <p>
-                                                                電視劇
+                                                                電影
                                                             </p>
                                                         </div>
                                                         <div class="wish__icon">
@@ -5028,7 +4901,7 @@ require './parts/movwe_connect_db.php';
                                                     </div>
                                                     <div class="wish__text__02">
                                                         <p>
-                                                            星際效應
+                                                            雙重人生
                                                         </p>
                                                     </div>
                                                     <div class="wish__text__03">
@@ -5038,14 +4911,14 @@ require './parts/movwe_connect_db.php';
                                                     </div>
                                                     <div class="wish__text__04">
                                                         <p>
-                                                            已有6543人參與投票
+                                                            已有2543人參與投票
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="image__card__5 wish__card-2">
                                                 <div class="carousel__images__box__5">
-                                                    <img class="carousel__images__5" src="./img/center/w-2.jpg" alt="">
+                                                    <img class="carousel__images__5" src="./img/center/wish_movie-2.webp" alt="">
                                                 </div>
                                                 <div class="wish__text__box">
                                                     <div class="wish__text__top">
@@ -5055,12 +4928,12 @@ require './parts/movwe_connect_db.php';
                                                             </p>
                                                         </div>
                                                         <div class="wish__icon">
-                                                            <img src="./icons/core/wish-clicked.svg" alt="">
+                                                        <img src="./img/icons/wish-clicked.svg" alt="">
                                                         </div>
                                                     </div>
                                                     <div class="wish__text__02">
                                                         <p>
-                                                            星際效應
+                                                            芝加哥醫情
                                                         </p>
                                                     </div>
                                                     <div class="wish__text__03">
@@ -5070,7 +4943,7 @@ require './parts/movwe_connect_db.php';
                                                     </div>
                                                     <div class="wish__text__04">
                                                         <p>
-                                                            已有6543人參與投票
+                                                            已有3041人參與投票
                                                         </p>
                                                     </div>
                                                 </div>
@@ -5082,7 +4955,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__box__5">
                                             <div class="image__card__5">
                                                 <div class="carousel__images__box__5">
-                                                    <img class="carousel__images__5" src="./img/center/w-1.jpg" alt="">
+                                                    <img class="carousel__images__5" src="./img/center/wish_movie-3.webp" alt="">
                                                 </div>
                                                 <div class="wish__text__box">
                                                     <div class="wish__text__top">
@@ -5092,12 +4965,12 @@ require './parts/movwe_connect_db.php';
                                                             </p>
                                                         </div>
                                                         <div class="wish__icon">
-                                                            <img src="./icons/core/wish-clicked.svg" alt="">
+                                                        <img src="./img/icons/wish-clicked.svg" alt="">
                                                         </div>
                                                     </div>
                                                     <div class="wish__text__02">
                                                         <p>
-                                                            星際效應
+                                                            默默奉獻的 灰姑娘藥師
                                                         </p>
                                                     </div>
                                                     <div class="wish__text__03">
@@ -5107,14 +4980,14 @@ require './parts/movwe_connect_db.php';
                                                     </div>
                                                     <div class="wish__text__04">
                                                         <p>
-                                                            已有6543人參與投票
+                                                            已有1034人參與投票
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="image__card__5 wish__card-2">
                                                 <div class="carousel__images__box__5">
-                                                    <img class="carousel__images__5" src="./img/center/w-1.jpg" alt="">
+                                                    <img class="carousel__images__5" src="./img/center/wish_movie-4.webp" alt="">
                                                 </div>
                                                 <div class="wish__text__box">
                                                     <div class="wish__text__top">
@@ -5124,12 +4997,12 @@ require './parts/movwe_connect_db.php';
                                                             </p>
                                                         </div>
                                                         <div class="wish__icon">
-                                                            <img src="./icons/core/wish-clicked.svg" alt="">
+                                                        <img src="./img/icons/wish-clicked.svg" alt="">
                                                         </div>
                                                     </div>
                                                     <div class="wish__text__02">
                                                         <p>
-                                                            星際效應
+                                                                九尾狐傳
                                                         </p>
                                                     </div>
                                                     <div class="wish__text__03">
@@ -5139,7 +5012,7 @@ require './parts/movwe_connect_db.php';
                                                     </div>
                                                     <div class="wish__text__04">
                                                         <p>
-                                                            已有6543人參與投票
+                                                            已有2543人參與投票
                                                         </p>
                                                     </div>
                                                 </div>
@@ -5151,22 +5024,22 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__box__5">
                                             <div class="image__card__5">
                                                 <div class="carousel__images__box__5">
-                                                    <img class="carousel__images__5" src="./img/center/w-2.jpg" alt="">
+                                                    <img class="carousel__images__5" src="./img/center/wish_movie-5.webp" alt="">
                                                 </div>
                                                 <div class="wish__text__box">
                                                     <div class="wish__text__top">
                                                         <div class="wish__card__typ">
                                                             <p>
-                                                                電視劇
+                                                                動畫
                                                             </p>
                                                         </div>
                                                         <div class="wish__icon">
-                                                            <img src="./icons/core/wish-clicked.svg" alt="">
+                                                        <img src="./img/icons/wish-clicked.svg" alt="">
                                                         </div>
                                                     </div>
                                                     <div class="wish__text__02">
                                                         <p>
-                                                            星際效應
+                                                            咒術迴戰
                                                         </p>
                                                     </div>
                                                     <div class="wish__text__03">
@@ -5176,14 +5049,14 @@ require './parts/movwe_connect_db.php';
                                                     </div>
                                                     <div class="wish__text__04">
                                                         <p>
-                                                            已有6543人參與投票
+                                                            已有4523人參與投票
                                                         </p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="image__card__5 wish__card-2">
                                                 <div class="carousel__images__box__5">
-                                                    <img class="carousel__images__5" src="./img/center/w-1.jpg" alt="">
+                                                    <img class="carousel__images__5" src="./img/center/wish_movie-6.webp" alt="">
                                                 </div>
                                                 <div class="wish__text__box">
                                                     <div class="wish__text__top">
@@ -5193,12 +5066,12 @@ require './parts/movwe_connect_db.php';
                                                             </p>
                                                         </div>
                                                         <div class="wish__icon">
-                                                            <img src="./icons/core/wish-clicked.svg" alt="">
+                                                        <img src="./img/icons/wish-clicked.svg" alt="">
                                                         </div>
                                                     </div>
                                                     <div class="wish__text__02">
                                                         <p>
-                                                            星際效應
+                                                            所以我和黑粉結婚了
                                                         </p>
                                                     </div>
                                                     <div class="wish__text__03">
@@ -5208,7 +5081,7 @@ require './parts/movwe_connect_db.php';
                                                     </div>
                                                     <div class="wish__text__04">
                                                         <p>
-                                                            已有6543人參與投票
+                                                            已有1543人參與投票
                                                         </p>
                                                     </div>
                                                 </div>
@@ -5308,9 +5181,9 @@ require './parts/movwe_connect_db.php';
                                     總是在花冤枉錢？到底哪個才是最適合自己的平台呢?
                                     就讓movwe幫你找到命定的影劇平台
                                 </p>
-                                <p class="test__number">
+                                <div class="test__number">
                                     已有2345678人完成檢測
-                                </p>
+                                </div>
                                 <div class="join__box">
                                     <button class="btn_4w">立即檢測</button>
                                 </div>
@@ -5321,87 +5194,6 @@ require './parts/movwe_connect_db.php';
                         </div>
                     </div>
                 </div>
-                <!-- <footer></footer> -->
-                <!-- <div class="footer__container">
-                <div class="footer-wrap">
-                    <div class="footer">
-                        <div class="foot bo">
-                            <div class="footer-top">
-                                <div class="f-head mb-3">MOVWE</div>
-                                <div class="handle han1">+</div>
-                            </div>
-
-                            <div class="f-content f-con1">
-                                <ul class="list-unstyled">
-                                    <a href="#">
-                                        <li class="mb-2">關於我們</li>
-                                    </a>
-                                    <a href="#">
-                                        <li class="mb-2">影劇許願池</li>
-                                    </a>
-                                    <a href="#">
-                                        <li class="mb-3">點數優惠</li>
-                                    </a>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="foot bo">
-                            <div class="footer-top">
-                                <div class="f-head mb-3">合作夥伴</div>
-                                <div class="handle han2">+</div>
-                            </div>
-
-                            <div class="f-content f-con2">
-                                <ul class="list-unstyled">
-                                    <a href="#">
-                                        <li class="mb-2">平台合作</li>
-                                    </a>
-                                    <a href="#">
-                                        <li class="mb-3">廣告刊登</li>
-                                    </a>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="foot bo">
-                            <div class="footer-top">
-                                <div class="f-head mb-3">追蹤動態</div>
-                                <div class="handle han3">+</div>
-                            </div>
-
-                            <div class="f-content f-con3">
-                                <ul class="list-unstyled">
-                                    <a href="#">
-                                        <li class="mb-2">Facebook 粉絲團</li>
-                                    </a>
-                                    <a href="#">
-                                        <li class="mb-3">Instagram</li>
-                                    </a>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="credit-card">
-                            <ul class="list-unstyled d-flex justify-content-center ott-platform">
-                                <a href="#">
-                                    <li class="mr-2"><img src="./img/logo/netflix.svg" alt=""></li>
-                                </a>
-                                <a href="#">
-                                    <li class="mr-2"><img src="./img/logo/IQiyi.svg" alt=""></li>
-                                </a>
-                                <a href="#">
-                                    <li class="mr-2"><img src="./img/talls_img/kktv (1).svg" alt=""></li>
-                                </a>
-                                <a href="#">
-                                    <li class="f-ott"><img src="./img/talls_img/friday.svg" alt=""></li>
-                                </a>
-
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div> -->
 
 
             </div>
@@ -5423,9 +5215,10 @@ require './parts/movwe_connect_db.php';
     <script src="./js/Carousel_5.js"></script>
     <script src="./js/home.js"></script>
     <script src="./js/filter_function.js"></script>
-    
+
     <script>
-    // </script>
+        // 
+    </script>
     //
     <script>
     </script>

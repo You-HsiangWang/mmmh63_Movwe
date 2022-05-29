@@ -123,6 +123,7 @@ color:rgb(16, 255, 162) ;
 }
 
 .carousel__images__5 {
+
     width: 100%;
     border-radius: 10px;
     transition: .3s;
@@ -397,6 +398,7 @@ justify-content: flex-end;
     margin-right: 8px;
 }
 .carousel__images__box__5{
+    width: 100%;
     position: relative;
     border-radius: 5px;
 }
@@ -506,7 +508,7 @@ background-color:rgba(255, 255, 255, 0.487)
     }
 
     .game__box{
-        width: 45%;
+        width: 35%;
     }
 
 
@@ -548,7 +550,7 @@ background-color:rgba(255, 255, 255, 0.487)
     .carousel__button--left__5 {
         position: absolute;
         left: -88px;
-        top: 80px;
+        top: 100px;
         transform: translateY(-50%);
         /* border-radius: 0 10px 10px 0; */
     }
@@ -557,17 +559,27 @@ background-color:rgba(255, 255, 255, 0.487)
     .carousel__button--right__5 {
         position: absolute;
         right: -88px;
-        top: 80px;
+        top: 100px;
         /* transform: translateY(-50%); */
         /* border-radius: 10px 0 0 10px; */
     
     }
 
     .carousle__button__5{
-height: 280px;
+height: 300px;
 
 
     }
+
+    .carousel__images__box__5{
+        width: 45%;
+    }
+
+    .test__number{
+        margin-top: 100px;
+        font-size: 16px;
+    }
+    
 
     
 }
