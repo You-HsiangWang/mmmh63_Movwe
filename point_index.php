@@ -162,13 +162,13 @@ $title = 'MOVWE-如何累積Movwe點數';
                             <img src="./img/logo/kktv.svg" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
-                            <img src="./img/other/discount_3hr.png" alt="">
+                            <img src="./img/other/discount_250.png" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/IQiyi.svg" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
-                            <img src="./img/other/discount_250.png" alt="">
+                            <img src="./img/other/discount_4hr.png" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/friday.svg" alt="">
