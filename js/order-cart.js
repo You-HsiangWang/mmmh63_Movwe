@@ -16,15 +16,21 @@
 
 // }
 
-function deleteFunction() {
-    // Get the checkbox
-    var checkBox = document.getElementById("checkOneItem");
-    // Get the output text
-    var text = document.getElementById("text");
+// Get the checkbox
+var checkBox = document.getElementById("checkOneItem");
+// Get the output text
+var text = document.getElementById("text");
 
+var nn = document.getElementById('noProduct');
+
+
+function deleteFunction() {
     if (checkBox.checked == true) {
         if (confirm("確定要移除本商品嗎?") == true) {
             text.style.display = "none";
+            // 如果購物車裡沒有商品
+            nn.style.removeProperty('display', 'none');
+            nn.style.setProperty('display', 'flex');
         }
     } else {
         alert("請勾選要移除的商品");
@@ -76,19 +82,6 @@ function subFunction() {
         document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
     }
 };
-
-// TODO: 如果購物車裡沒有商品
-
-var n = document.getElementById('text');
-
-console.log(n);
-
-
-if (n.style.display('none') = true) {
-    document.getElementById('noProduct').style.removeProperty('display', 'none');
-    document.getElementById('noProduct').style.setProperty('display', 'block');
-
-} 
 
 // 優惠券詳情 展開
 
