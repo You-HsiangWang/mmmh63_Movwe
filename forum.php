@@ -1,690 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../fontawesome/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/Nav.css">
-    <link rel="stylesheet" href="../css/BS.css">
-    <link rel="stylesheet" href="../css/mystyle.css">
-    <link rel="stylesheet" href="../css/slider.css">
-    <link rel="stylesheet" href="../css/dropdown_customstyle.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../img/nav_images/LOGO.png">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,300&family=Noto+Serif+TC:wght@200;300;500;700;900&display=swap"
-        rel="stylesheet">
+// require './parts/movwe_connect_db.php';
+// $pageName = 'login';
+$title = 'Movwe-討論區';
 
-    <title>Movwe 討論區首頁</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            /* outline: 1px solid greenyellow; */
-        }
+?>
 
-        body {
-            background-color: rgb(26, 29, 36);
-            font-family: 'Caveat', cursive;
-            font-family: 'Cormorant Garamond', serif;
-            font-family: 'Noto Serif TC', serif;
-        }
+<?php include __DIR__ . './parts/movwe_head.php' ?>
 
-        html {
-            font-size: 12px;
-        }
 
-
-
-        /* @media screen and (max-width: 500px) {
-            .left_nav {
-                display: none;
-            }
-
-        } */
-
-        /* 手機版 */
-
-        /* 最上面的filter */
-
-        .filter-top {
-            width: 100%;
-        }
-
-        .filter-top ul {
-            width: 100%;
-        }
-
-        /* banner */
-
-        .forum__banner__carousel__box__pc {
-            display: none;
-        }
-       
-
-        /* 最新與熱門篩選器 */
-
-        .select-pc {
-            display: none;
-        }
-
-        .select-m {
-            display: block;
-        }
-
-        /* 大家都在討論 */
-
-        .discussion-pc {
-            display: none;
-        }
-
-        .discussion-m {
-            display: block;
-        }
-
-        /* 我要發文 */
-
-        .member-img-wrap {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            overflow: hidden;
-        }
-
-        .publish input[type=text] {
-            width: 95%;
-            /* box-sizing: border-box; */
-            color: #fff;
-            background-color: #1A1D24;
-            border: none;
-            outline-style: none;
-            border-bottom: 1px solid #ffffff80;
-            padding-bottom: 5px;
-        }
-
-        /* hashtag */
-
-        /* .hashtag {
-            width: 100%;
-            overflow: hidden;
-        } */
-
-        .hashtag li {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 6px;
-            margin-bottom: 5px;
-        }
-
-        .hashtag a {
-            color: #ffffff80;
-        }
-
-        a.hashtag:hover {
-            color: #10FFA2;
-        }
-
-        /* 文章 */
-
-        .card-article {
-            width: 100%;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #ffffff80;
-        }
-
-        .card-article-left {
-            width: 65%;
-        }
-
-        /* 文章作者頭像 */
-
-        .author-img-wrap {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            overflow: hidden;
-        }
-
-        .author-img-wrap img {
-            width: 100%;
-        }
-
-        /* 文章圖 */
-
-        .card-article-right {
-            width: 30%;
-        }
-
-        .article-img-wrap {
-            width: 100%;
-        }
-
-        .article-img-wrap img {
-            width: 100%;
-            /* height: 100%; */
-            border-radius: 10px;
-
-        }
-
-        /* 熱門文章輪播牆 */
-
-        /* .hot-article-train {
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .hot-article-car {
-            width: 500%;
-        } */
-
-        /* 熱門文章 */
-
-        .hot-article .article-img-wrap {
-            width: 100%;
-            height: 200px;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .hot-article .article-img-wrap img {
-            width: 100%;
-            object-fit: cover;
-
-        }
-
-        .hot-article a {
-            white-space: nowrap;
-        }
-
-        .single {
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-
-        .multiple {
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        /* 熱門創作者 */
-
-        /* 輪播強喔 強不是錯字 我就強 */
-
-        .hot-creator {
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .hot-creator-train {
-            width: 500%;
-        }
-
-        .hot-creator-train a {
-            margin-right: 20px;
-        }
-
-        /* 輪播牆箭頭 */
-
-        .hot-creator {
-            position: relative;
-        }
-
-        .arrow-right {
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: #Ffffff80;
-            top: 20%;
-            right: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* 許願池 */
-
-        .wish-img-wrap {
-            width: 100%;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .progress-bar {
-            position: relative;
-            width: 100%;
-            height: 10px;
-            background-color: #Ffffff80;
-            border-radius: 10px;
-        }
-
-        .progress-bar::before {
-            content: "";
-            position: absolute;
-            width: 75%;
-            height: 10px;
-            background-color: #10FFA2;
-            border-radius: 10px;
-        }
-
-        /* 商城 */
-
-        .mall_product {
-            width: 48.5%;
-        }
-
-        .container_product_details {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-        }
-
-        .row_products {
-            display: flex;
-            flex-direction: row;
-            gap: 3%;
-            flex-wrap: wrap;
-        }
-
-        .mall_product p {
-            color: #FFFFFD;
-        }
-
-        .mall_product .price {
-            color: #FEB73A;
-        }
-
-        .mall_product p span {
-            color: rgb(150, 150, 150);
-        }
-
-        .product_text {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .product_text .tag {
-            color: rgba(255, 255, 255, 0.5);
-            line-height: 20px;
-        }
-
-
-        /* 頁數 */
-
-        .page {
-            height: 100px;
-        }
-
-        .forum__banner__carousel__box {
-            position: relative;
-            /* background-color: #fff; */
-            width: 100%;
-            height: 30vh;
-        }
-
-
-        /* 電腦版 */
-
-        @media screen and (min-width: 750px) {
-
-            h4 {
-                font-size: 20px;
-            }
-
-            p {
-                font-size: 18px;
-            }
-
-            a {
-                font-size: 16px;
-            }
-
-            span {
-                font-size: 14px;
-            }
-
-            .text__container {
-                width: 94%;
-                /* height: 100vh; */
-                /* background-color: rgb(124, 124, 124); */
-                margin: 0 auto;
-                display: flex;
-                justify-content:space-between;
-            }
-
-            .container__left {
-                display: block;
-                width: 65%;
-            }
-
-            .container__right {
-                display: block;
-                width: 30%;
-            }
-
-            .top_nav_searchbar_box {
-                width: 200px;
-            }
-
-            .left_nav {
-                display: block !important;
-            }
-
-            .left_div {
-                display: block !important;
-            }
-
-            .bars {
-                opacity: 0;
-            }
-
-            .top_nav_movwe_img-2 {
-                transform: scale(1);
-            }
-
-            /* 最上面篩選器 */
-
-            .filter-top {
-                width: 94%;
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .filter-top ul {
-                justify-content: flex-start;
-            }
-
-            .filter-top ul li {
-                margin-right: 15px;
-            }
-
-            /* banner */
-
-            .forum__banner__carousel__box__pc {
-                display: block;
-            }
-
-            .forum__banner__carousel__box__m {
-                display: none;
-            }
-
-            /* 最新與熱門 */
-
-            .select-pc {
-                background-color: #10FFA2;
-                border-radius: 10px 10px 0 0 ;
-                display: block;
-            }
-
-            .select-m {
-                display: none;
-            }
-
-            /* 大家都在討論 */
-
-            .discussion-pc {
-                display: block;
-            }
-
-            .discussion-m {
-                display: none;
-            }
-
-            /* 文章 */
-
-            .card-article-left {
-                width: 85%;
-            }
-
-            .card-article-right {
-                width: 10%;
-            }
-
-            .card-article-left .multiple {
-                display: -webkit-box;
-                -webkit-line-clamp: 5;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-            }
-
-            /* 文章圖 */
-
-            .article-img-wrap {
-                width: 150px;
-                height: 150px;
-            }
-
-            /* 熱門文章 */
-
-            .hot-article .article-img-wrap {
-                width: 100%;
-                height: 200px;
-            }
-
-            /* 熱門作者 */
-
-            .hot-creator ul {
-                display: block;
-            }
-
-            .arrow-right {
-                display: none;
-            }
-
-
-        }
-    </style>
+<link rel="stylesheet" href="./css/mystyle.css">
+<link rel="stylesheet" href="./css/forum.css">
+   
 </head>
 
 <body>
-    <!----------nav_top-------------->
-    <div class="Navbar__container">
-        <div class="top_nav">
-            <div class="top_nav_left">
-                <div class="top_nav_logo">
-                    <div class="top_nav_logo_box">
-                        <img class="top_nav_movwe_img-2" src="../img/icons/close.svg" alt="">
-                        <i class="fa-solid fa-bars top_nav_movwe_img bars"></i>
-                        <img class="origin__logo" src="../img/logo/logo.svg" alt="">
-                    </div>
-                </div>
-                <a href="Home-0516-final copy.html">
-                    <div class="top_nav_movwe_box">
-                        <img class="top_nav_movwe_img mobil__show" src="../img/logo/logo_movwe_word.svg" alt="">
-                        <img class="top_nav_movwe_img desk__show" src="../img/logo/logo_word.svg" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="top_nav_right">
-                <div class="top__like__icons_">
-                    <div class="Movies_box">
-                        <div class="add_number">
-                            <p>
-                                1
-                            </p>
-                        </div>
-                        <div class="nav_icon_box icon_W-H">
-                            <i class="fa-solid fa-film movies_like"></i>
-                        </div>
-                            </div>
-                    <div class="car_box">
-                        <div class="add_number">
-                            <p>
-                                1
-                            </p>
-                        </div>
-                        <img src="../img/icons/cart-shopping.svg" alt="">
-                    </div>
-                    <div class="forum_box">
-                        <div class="add_number">
-                            <p>
-                                1
-                            </p>
-                        </div>
-                        <img src="../img/icons/tag.svg" alt="">
-                    </div>
-                </div>
-                <div class="top_nav_searchbar_box">
-
-                    <input type="text" class="top_nav_searchbar" placeholder="輸入片名">
-                    <div class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-
-                </div>
-            </div>
-        </div>
-        <div class="left_nav">
-            <div class="left_nav_box">
-            </div>
-            <div class="left_nav_box ">
-                <div class="left_nav_home icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-house "></i>
-                    </div>
-                </div>
-                <div class="nav_text_01 ">
-                    <div class="h-60px">首頁 <span class="down">
-                            <!-- <i class="fa-solid fa-angle-down"></i> -->
-                        </span> </div>
-                </div>
-
-            </div>
-            <div class="title_bottom">
-                <div class="title_">首頁</div>
-            </div>
-            <div class="left_nav_box Movie">
-                <div class="left_nav_movie icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-film"></i>
-                    </div>
-                    <div class="nav_text_01 ">
-                        <div class="h-60px movie_btn">影劇 <span class="down"><i
-                                    class="fa-solid fa-angle-down"></i></span></div>
-                        <p class="text_a">影劇搜尋器</p>
-                        <p class="text_a">ott上片資訊</p>
-                        <p class="text_a">許願池</p>
-                        <p class="text_a">心理測驗</p>
-                        <p class="text_a">我的片單</p>
-                        <p class="text_a">預約片單</p>
-                        <p class="text_a">許願清單</p>
-                        <p class="text_a">曾經瀏覽</p>
-                        <p class="text_a">ott優惠卷</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">影劇</div>
-            </div>
-            <div class="left_nav_box Store">
-                <div class="left_nav_store icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-store"></i>
-                    </div>
-                    <div class="nav_text_01 ">
-                        <div class="h-60px store_btn">商城 <span class="down"><i
-                                    class="fa-solid fa-angle-down"></i></span></div>
-                        <p class="text_a">主打活動</p>
-                        <p class="text_a">商品總覽</p>
-                        <p class="text_a">購物車</p>
-                        <p class="text_a">我的訂單</p>
-                        < class="text_a">商城優或卷</>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">商城</div>
-            </div>
-
-            <div class="left_nav_box Form">
-                <div class="left_nav_forum icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-pencil pp"></i>
-                    </div>
-                    <div class="nav_text_01 ">
-                        <div class="h-60px form_btn">文章 <span class="down"><i class="fa-solid fa-angle-down"></i></span>
-                        </div>
-                        <p class="text_a">文章總覽</p>
-                        <p class="text_a">熱門作者</p>
-                        <p class="text_a">熱門文章</p>
-                        <p class="text_a">我的收藏</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">文章</div>
-            </div>
-
-            <div class="left_nav_box">
-                <div class="left_nav_member icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-user-gear"></i>
-                    </div>
-                    <div class="nav_text_01">
-                        <div class="h-60px">會員 <span class="down">
-                                <!-- <i class="fa-solid fa-angle-down"></i> -->
-                            </span></div>
-                        <p>00</p>
-                        <p>00</p>
-                        <p>00</p>
-                        <p>00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">會員</div>
-            </div>
-
-            <div class="left_nav_box">
-                <div class="left_nav_discount icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-hand-holding-dollar"></i>
-                    </div>
-                    <div class="nav_text_01">
-                        <div class="h-60px">優惠 <span class="down">
-                                <!-- <i class="fa-solid fa-angle-down"></i> -->
-                            </span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">優惠</div>
-            </div>
-            <div class="left_nav_box">
-                <div class="left_nav_discount icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-coins"></i>
-                    </div>
-                    <div class="nav_text_01">
-                        <div class="h-60px">點數 <span class="down">
-                                <!-- <i class="fa-solid fa-angle-down"></i> -->
-                            </span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">點數</div>
-            </div>
-
-
-        </div>
-    </div>
+<?php include __DIR__ . './parts/movwe_nav.php' ?>
     <div class="layout">
-        <!----------nav_left-------------->
-        <div class="left_div"></div>
+    
+        <?php include __DIR__ . './parts/movwe_nav_leftdiv.php' ?>
 
-        <!--------------------------------------------------------------------------->
         <div class="container">
-
-            <!--banner__container----------------->
-            <!-- <div class="banner__container">
-                <img src="./nav_images/carousel-1.jpeg" alt="">
-            </div> -->
 
             <!-- 最上面的filter -->
             <div class="filter-top mt-80 mb-20">
@@ -716,13 +52,13 @@
             <div class="forum__banner__carousel__box forum__banner__carousel__box__pc">
                 <div id="slider" class="slider__forum" style=" width: 100%; margin: 0 auto">
                     <div class="slide">
-                        <img src="../img/banner/forum_banner01.jpg" alt="">
+                        <img src="./img/banner/forum_banner01.jpg" alt="">
                     </div>
                     <div class="slide">
-                        <img src="../img/banner/forum_banner02.jpg" alt="">
+                        <img src="./img/banner/forum_banner02.jpg" alt="">
                     </div>
                     <div class="slide">
-                        <img src="../img/banner/forum_banner03.jpg" alt="">
+                        <img src="./img/banner/forum_banner03.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -730,13 +66,13 @@
             <div class="forum__banner__carousel__box forum__banner__carousel__box__m">
                 <div id="sliderM" class="slider__forum" style=" width: 100%; margin: 0 auto">
                     <div class="slide">
-                        <img src="../img/banner/forum_banner01_s.jpg" alt="">
+                        <img src="./img/banner/forum_banner01_s.jpg" alt="">
                     </div>
                     <div class="slide">
-                        <img src="../img/banner/forum_banner02_s.jpg" alt="">
+                        <img src="./img/banner/forum_banner02_s.jpg" alt="">
                     </div>
                     <div class="slide">
-                        <img src="../img/banner/forum_banner03_s.jpg" alt="">
+                        <img src="./img/banner/forum_banner03_s.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -788,7 +124,7 @@
                     <!-- 我要發文 -->
                     <div class="d-flex justify-center align-item-center mt-20 mb-20">
                         <div class="member-img-wrap ml-10">
-                            <img src="../img/center/1.jpg" alt="">
+                            <img src="./img/center/1.jpg" alt="">
                         </div>
                         <div class="publish flex-grow ml-20 ">
                             <input type="text" placeholder=" 翔子學妹，我要發文...">
@@ -845,7 +181,7 @@
                                     <!-- 文章作者 -->
                                     <div class="d-flex align-item-center">
                                         <div class="author-img-wrap mr-10">
-                                            <a href="#"><img src="../img/center/tinytall.jpg" alt=""></a>
+                                            <a href="#"><img src="./img/center/tinytall.jpg" alt=""></a>
                                         </div>
                                         <a href="#">
                                             <p>胎尼頭</p>
@@ -859,7 +195,7 @@
                                 <!-- 文章內文(左邊) -->
                                 <div class="card-article-left">
                                     <div>
-                                        <a href="#">
+                                        <a href="./forum_article.php">
                                             <h4 class="mt-10">2521感想ㄧ事與願違是另有安排</h4>
                                         </a>
                                         <p class="mt-10 multiple">
@@ -881,7 +217,7 @@
                                 <!-- 文章圖片 -->
                                 <div class="card-article-right d-flex align-item-center">
                                     <div class="article-img-wrap d-flex align-item-center">
-                                        <img src="../img/center/2521.jpg" alt="">
+                                        <img src="./img/center/2521.jpg" alt="">
                                     </div>
                                 </div>
 
@@ -939,7 +275,7 @@
                                     <!-- 文章作者 -->
                                     <div class="d-flex align-item-center">
                                         <div class="author-img-wrap mr-10">
-                                            <a href="#"><img src="../img/center/dino.jpg" alt=""></a>
+                                            <a href="#"><img src="./img/center/dino.jpg" alt=""></a>
                                         </div>
                                         <a href="#">
                                             <p>切版王笠鴿</p>
@@ -972,7 +308,7 @@
                                 <!-- 文章圖片 -->
                                 <div class="card-article-right d-flex align-item-center">
                                     <div class="article-img-wrap d-flex align-item-center">
-                                        <img src="../img/center/harry.jpg" alt="">
+                                        <img src="./img/center/harry.jpg" alt="">
                                     </div>
                                 </div>
 
@@ -1030,7 +366,7 @@
                                     <!-- 文章作者 -->
                                     <div class="d-flex align-item-center">
                                         <div class="author-img-wrap mr-10">
-                                            <a href="#"><img src="../img/center/dino.jpg" alt=""></a>
+                                            <a href="#"><img src="./img/center/dino.jpg" alt=""></a>
                                         </div>
                                         <a href="#">
                                             <p>切版王笠鴿</p>
@@ -1067,7 +403,7 @@
                                     <div class="article-img-wrap d-flex align-item-center">
 
 
-                                        <img src="../img/center/ourblues.jpg" alt="">
+                                        <img src="./img/center/ourblues.jpg" alt="">
 
                                     </div>
                                 </div>
@@ -1128,7 +464,7 @@
                                         <div class="author-img-wrap mr-10">
 
 
-                                            <a href="#"><img src="../img/center/1.jpg" alt=""></a>
+                                            <a href="#"><img src="./img/center/1.jpg" alt=""></a>
 
                                         </div>
                                         <a href="#">
@@ -1187,7 +523,7 @@
                                 <div class="card-article-right d-flex align-item-center">
                                     <div class="article-img-wrap d-flex align-item-center">
 
-                                        <img src="../img/center/king.jpg" alt="">
+                                        <img src="./img/center/king.jpg" alt="">
 
                                     </div>
                                 </div>
@@ -1247,7 +583,7 @@
                                     <div class="d-flex align-item-center">
                                         <div class="author-img-wrap mr-10">
 
-                                            <a href="#"><img src="../img/center/wife.jpg" alt=""></a>
+                                            <a href="#"><img src="./img/center/wife.jpg" alt=""></a>
 
                                         </div>
                                         <a href="#">
@@ -1280,7 +616,7 @@
                                 <div class="card-article-right d-flex align-item-center">
                                     <div class="article-img-wrap d-flex align-item-center">
 
-                                        <img src="../img/center/love.png" alt="">
+                                        <img src="./img/center/love.png" alt="">
 
                                     </div>
                                 </div>
@@ -1340,7 +676,7 @@
                                     <div class="d-flex align-item-center">
                                         <div class="author-img-wrap mr-10">
 
-                                            <a href="#"><img src="../img/center/8.jpg" alt=""></a>
+                                            <a href="#"><img src="./img/center/8.jpg" alt=""></a>
 
                                         </div>
                                         <a href="#">
@@ -1373,7 +709,7 @@
                                     <div class="article-img-wrap d-flex align-item-center">
 
 
-                                        <img src="../img/center/e.jpg" alt="">
+                                        <img src="./img/center/e.jpg" alt="">
 
                                     </div>
                                 </div>
@@ -1433,7 +769,7 @@
                                     <div class="d-flex align-item-center">
                                         <div class="author-img-wrap mr-10">
 
-                                            <a href="#"><img src="../img/center/8.jpg" alt=""></a>
+                                            <a href="#"><img src="./img/center/8.jpg" alt=""></a>
 
                                         </div>
                                         <a href="#">
@@ -1467,7 +803,7 @@
 
                      
 
-                                        <img src="../img/center/spider.jpg" alt="">
+                                        <img src="./img/center/spider.jpg" alt="">
 
                                     </div>
                                 </div>
@@ -1537,7 +873,7 @@
                                 <div class="d-flex justify-center">
                                     <div class="article-img-wrap">
 
-                                        <img src="../img/center/hot.jpg" alt="">
+                                        <img src="./img/center/hot.jpg" alt="">
 
                                     </div>
                                 </div>
@@ -1566,7 +902,7 @@
                                     <li class="train-list d-flex align-item-center">
                                         <div class="member-img-wrap mr-20">
 
-                                            <img src="../img/center/1.jpg" alt="">
+                                            <img src="./img/center/1.jpg" alt="">
 
                                         </div>
                                         <div class="creator">
@@ -1580,7 +916,7 @@
                                     <li class="train-list d-flex align-item-center">
                                         <div class="member-img-wrap mr-20">
 
-                                            <img src="../img/center/8.jpg" alt="">
+                                            <img src="./img/center/8.jpg" alt="">
 
                                         </div>
                                         <div class="creator">
@@ -1594,7 +930,7 @@
                                     <li class="train-list d-flex align-item-center">
                                         <div class="member-img-wrap mr-20">
 
-                                            <img src="../img/center/tinytall.jpg" alt="">
+                                            <img src="./img/center/tinytall.jpg" alt="">
 
                                         </div>
                                         <div class="creator">
@@ -1608,7 +944,7 @@
                                     <li class="train-list d-flex align-item-center">
                                         <div class="member-img-wrap mr-20">
 
-                                            <img src="../img/center/dino.jpg" alt="">
+                                            <img src="./img/center/dino.jpg" alt="">
 
                                         </div>
                                         <div class="creator">
@@ -1622,13 +958,13 @@
                                     <li class="train-list d-flex align-item-center">
                                         <div class="member-img-wrap mr-20">
 
-                                            <img src="../img/center/wife.jpg" alt="">
+                                            <img src="./img/center/wife.jpg" alt="">
 
                                         </div>
                                         <div class="creator">
                                             <h4>桌布是結衣</h4>
                                             <span>16篇文章</span><br>
-                                            <span>黑橘股票不要買</span>
+                                            <span>黑橘遊戲不要玩</span>
                                         </div>
                                     </li>
                                 </a>
@@ -1660,9 +996,7 @@
                         </div>
                         <div>
                             <div class="wish-img-wrap mt-20">
-
-                                <img src="../img/center/pd.jpg" alt="">
-
+                                <img src="./img/center/pd.jpg" alt="">
                             </div>
                             <div class="d-flex justify-between align-item-center">
                                 <div class="d-flex align-item-center mt-10">
@@ -1673,10 +1007,50 @@
                                 </div>
                                 <div><span>2005</span></div>
                             </div>
-                            <div class="progress-bar mt-10 mb-10"></div>
+                            <div class="progress-bar-1 mt-10 mb-10"></div>
                             <div class="d-flex justify-end">
                                 <span>
                                     已有2094人參與許願
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="wish-img-wrap mt-20">
+                                <img src="./img/forum/z.jpg" alt="">
+                            </div>
+                            <div class="d-flex justify-between align-item-center">
+                                <div class="d-flex align-item-center mt-10">
+                                    <div class="d-filter d-filter-a mr-10">動漫</div>
+                                    <a href="#">
+                                        <h4>末日之戰 Z</h4>
+                                    </a>
+                                </div>
+                                <div><span>2013</span></div>
+                            </div>
+                            <div class="progress-bar-2 mt-10 mb-10"></div>
+                            <div class="d-flex justify-end">
+                                <span>
+                                    已有1345人參與許願
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="wish-img-wrap mt-20">
+                                <img src="./img/forum/nana.jpeg" alt="">
+                            </div>
+                            <div class="d-flex justify-between align-item-center">
+                                <div class="d-flex align-item-center mt-10">
+                                    <div class="d-filter d-filter-m mr-10">電影</div>
+                                    <a href="#">
+                                        <h4>NANA</h4>
+                                    </a>
+                                </div>
+                                <div><span>2005</span></div>
+                            </div>
+                            <div class="progress-bar-3 mt-10 mb-10"></div>
+                            <div class="d-flex justify-end">
+                                <span>
+                                    已有457人參與許願
                                 </span>
                             </div>
                         </div>
@@ -1690,7 +1064,7 @@
                         <div class="row_products mt-20">
                             <div class="mall_product">
 
-                                <img src="../img/center/p.png" alt="">
+                                <img src="./img/center/p.png" alt="">
 
                                 <div class="container_product_details">
                                     <p>波吉卡克 1/7 PVC模型</p>
@@ -1702,7 +1076,7 @@
                             </div>
                             <div class="mall_product">
 
-                                <img src="../img/center/p.png" alt="">
+                                <img src="./img/center/p.png" alt="">
 
                                 <div class="container_product_details">
                                     <p>波吉卡克 1/7 PVC模型</p>
@@ -1718,59 +1092,8 @@
             </div>
         </div>
 
+        <?php include __DIR__ . './parts/movwe_scripts.php' ?>
+    <script src="./js/forum.js"></script>
 
 
-        <script src="../js/jquery-3.6.0.js"></script>
-        <script src="../js/Nav.js"></script>
-
-        <script src="../js/dropdown_customstyle.js"></script>
-
-        <script src="../js/slider.js"></script>
-
-        <script>
-
-
-            var slider = new Slider("slider", {
-                play_icon: '<i class="fas fa-play"></i>',
-                pause_icon: '<i class="far fa-pause-circle"></i>',
-                prev_icon: '<i class="fas fa-angle-left"></i>',
-                next_icon: '<i class="fas fa-angle-right"></i>'
-            });
-
-            // 最上面的filter點選切換顏色
-
-            $('.filter-top ul h4').click(function () {
-                console.log('hello', this);
-                $(this).addClass('main-color')
-                $(this).parent().parent().siblings().children().children().removeClass('main-color');
-            });
-
-            // 熱門文章輪播牆
-
-            // 熱門創作者輪播牆
-
-            var page = 0;
-
-            $('.arrow-right').click(function () {
-                page++;
-
-                if (page >= 5) {
-                    page = 0
-                }
-
-                pageUpdate()
-
-            })
-
-            function pageUpdate() {
-                console.log('hello', this);
-                $('.hot-creator-train').css('transform', `translateX(${page * -$('.train-list').width()}px)`)
-
-            }
-
-        // 我自己寫ㄉ 我好棒 \ ( ^ 0 ^ ) /
-
-        </script>
-</body>
-
-</html>
+    <?php include __DIR__ . './parts/movwe_footer.php' ?>

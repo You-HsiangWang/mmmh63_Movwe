@@ -1,0 +1,473 @@
+/* 手機版 */
+
+/* 最上面的filter */
+
+.filter-top {
+    width: 100%;
+}
+
+.filter-top ul {
+    width: 100%;
+}
+
+/* banner */
+
+.forum__banner__carousel__box__pc {
+    display: none;
+}
+
+
+/* 最新與熱門篩選器 */
+
+.select-pc {
+    display: none;
+}
+
+.select-m {
+    display: block;
+}
+
+/* 大家都在討論 */
+
+.discussion-pc {
+    display: none;
+}
+
+.discussion-m {
+    display: block;
+}
+
+/* 我要發文 */
+
+.member-img-wrap {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.publish input[type=text] {
+    width: 95%;
+    /* box-sizing: border-box; */
+    color: #fff;
+    background-color: #1A1D24;
+    border: none;
+    outline-style: none;
+    border-bottom: 1px solid #ffffff80;
+    padding-bottom: 5px;
+}
+
+/* hashtag */
+
+/* .hashtag {
+            width: 100%;
+            overflow: hidden;
+        } */
+
+.hashtag li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px;
+    margin-bottom: 5px;
+}
+
+.hashtag a {
+    color: #ffffff80;
+}
+
+a.hashtag:hover {
+    color: #10FFA2;
+}
+
+/* 文章 */
+
+.card-article {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff80;
+}
+
+.card-article-left {
+    width: 65%;
+}
+
+/* 文章作者頭像 */
+
+.author-img-wrap {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.author-img-wrap img {
+    width: 100%;
+}
+
+/* 文章圖 */
+
+.card-article-right {
+    width: 30%;
+}
+
+.article-img-wrap {
+    width: 100%;
+}
+
+.article-img-wrap img {
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 10px;
+
+}
+
+/* 熱門文章輪播牆 */
+
+/* .hot-article-train {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .hot-article-car {
+            width: 500%;
+        } */
+
+/* 熱門文章 */
+
+.hot-article .article-img-wrap {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hot-article .article-img-wrap img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.hot-article a {
+    white-space: nowrap;
+}
+
+.single {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.multiple {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* 熱門創作者 */
+
+/* 輪播強喔 強不是錯字 我就強 */
+
+.hot-creator {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hot-creator-train {
+    width: 500%;
+}
+
+.hot-creator-train a {
+    margin-right: 20px;
+}
+
+/* 輪播牆箭頭 */
+
+.hot-creator {
+    position: relative;
+}
+
+.arrow-right {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #Ffffff80;
+    top: 20%;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 許願池 */
+
+.wish-img-wrap {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar-1 {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #Ffffff80;
+    border-radius: 10px;
+}
+
+.progress-bar-1::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 10px;
+    background-color: #10FFA2;
+    border-radius: 10px;
+}
+
+.progress-bar-2 {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #Ffffff80;
+    border-radius: 10px;
+}
+
+.progress-bar-2::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 10px;
+    background-color: #10FFA2;
+    border-radius: 10px;
+}
+
+.progress-bar-3 {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #Ffffff80;
+    border-radius: 10px;
+}
+
+.progress-bar-3::before {
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 10px;
+    background-color: #10FFA2;
+    border-radius: 10px;
+}
+
+/* 商城 */
+
+.mall_product {
+    width: 48.5%;
+}
+
+.container_product_details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.row_products {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    flex-wrap: wrap;
+}
+
+.mall_product p {
+    color: #FFFFFD;
+}
+
+.mall_product .price {
+    color: #FEB73A;
+}
+
+.mall_product p span {
+    color: rgb(150, 150, 150);
+}
+
+.product_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_text .tag {
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 20px;
+}
+
+
+/* 頁數 */
+
+.page {
+    height: 100px;
+}
+
+.forum__banner__carousel__box {
+    position: relative;
+    /* background-color: #fff; */
+    width: 100%;
+    height: 30vh;
+}
+
+.filter_2w a:hover,
+.filter_3w a:hover,
+.filter_4w a:hover {
+    color: #10FFA2;
+}
+
+/* 電腦版 */
+
+@media screen and (min-width: 750px) {
+
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    span {
+        font-size: 14px;
+    }
+
+    .text__container {
+        width: 94%;
+        /* height: 100vh; */
+        /* background-color: rgb(124, 124, 124); */
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container__left {
+        display: block;
+        width: 65%;
+    }
+
+    .container__right {
+        display: block;
+        width: 30%;
+    }
+
+    .top_nav_searchbar_box {
+        width: 200px;
+    }
+
+    .left_nav {
+        display: block !important;
+    }
+
+    .left_div {
+        display: block !important;
+    }
+
+    .bars {
+        opacity: 0;
+    }
+
+    .top_nav_movwe_img-2 {
+        transform: scale(1);
+    }
+
+    /* 最上面篩選器 */
+
+    .filter-top {
+        width: 94%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .filter-top ul {
+        justify-content: flex-start;
+    }
+
+    .filter-top ul li {
+        margin-right: 15px;
+    }
+
+    /* banner */
+
+    .forum__banner__carousel__box__pc {
+        display: block;
+    }
+
+    .forum__banner__carousel__box__m {
+        display: none;
+    }
+
+    /* 最新與熱門 */
+
+    .select-pc {
+        background-color: #10FFA2;
+        border-radius: 10px 10px 0 0;
+        display: block;
+    }
+
+    .select-m {
+        display: none;
+    }
+
+    /* 大家都在討論 */
+
+    .discussion-pc {
+        display: block;
+    }
+
+    .discussion-m {
+        display: none;
+    }
+
+    /* 文章 */
+
+    .card-article-left {
+        width: 85%;
+    }
+
+    .card-article-right {
+        width: 10%;
+    }
+
+    .card-article-left .multiple {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* 文章圖 */
+
+    .article-img-wrap {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* 熱門文章 */
+
+    .hot-article .article-img-wrap {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* 熱門作者 */
+
+    .hot-creator ul {
+        display: block;
+    }
+
+    .arrow-right {
+        display: none;
+    }
+
+
+}
