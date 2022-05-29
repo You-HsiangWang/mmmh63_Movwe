@@ -58,21 +58,10 @@
 
         /* banner */
 
-        .banner__container__pc {
+        .forum__banner__carousel__box__pc {
             display: none;
         }
-
-        /* banner上面border那條線線 */
-
-        .banner__container {
-            border-top: 1px solid #ffffff80;
-            padding-top: 20px;
-        }
-
-        .banner__container img {
-            width: 100%;
-            object-fit: cover;
-        }
+       
 
         /* 最新與熱門篩選器 */
 
@@ -416,11 +405,11 @@
 
             /* banner */
 
-            .banner__container__pc {
+            .forum__banner__carousel__box__pc {
                 display: block;
             }
 
-            .banner__container__m {
+            .forum__banner__carousel__box__m {
                 display: none;
             }
 
@@ -723,28 +712,34 @@
                     </select>
                 </div>
             </div>
-            <div class="forum__banner__carousel__box">
+
+            <div class="forum__banner__carousel__box forum__banner__carousel__box__pc">
                 <div id="slider" class="slider__forum" style=" width: 100%; margin: 0 auto">
                     <div class="slide">
-                        <img src="../img/banner/forum_banner.jpg" alt="">
+                        <img src="../img/banner/forum_banner01.jpg" alt="">
                     </div>
                     <div class="slide">
-                        <img src="../img/banner/forum_banner.jpg" alt="">
+                        <img src="../img/banner/forum_banner02.jpg" alt="">
                     </div>
                     <div class="slide">
-                        <img src="../img/banner/forum_banner.jpg" alt="">
+                        <img src="../img/banner/forum_banner03.jpg" alt="">
                     </div>
                 </div>
             </div>
-            <!-- banner圖 電腦版-->
-            <!-- <div class="banner__container banner__container__pc">
-                <img src="../img/forum_banner.jpg" alt="">
-            </div> -->
 
-            <!-- banner圖 手機版-->
-            <!-- <div class="banner__container banner__container__m">
-                <img src="../img/forum_banner_s.jpg" alt="">
-            </div> -->
+            <div class="forum__banner__carousel__box forum__banner__carousel__box__m">
+                <div id="sliderM" class="slider__forum" style=" width: 100%; margin: 0 auto">
+                    <div class="slide">
+                        <img src="../img/banner/forum_banner01_s.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="../img/banner/forum_banner02_s.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="../img/banner/forum_banner03_s.jpg" alt="">
+                    </div>
+                </div>
+            </div>
 
             <!--text__container------內容放這邊------------->
             <div class="text__container">
@@ -1741,7 +1736,6 @@
                 prev_icon: '<i class="fas fa-angle-left"></i>',
                 next_icon: '<i class="fas fa-angle-right"></i>'
             });
-
 
             // 最上面的filter點選切換顏色
 

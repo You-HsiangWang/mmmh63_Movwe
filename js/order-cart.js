@@ -16,15 +16,21 @@
 
 // }
 
-function deleteFunction() {
-    // Get the checkbox
-    var checkBox = document.getElementById("checkOneItem");
-    // Get the output text
-    var text = document.getElementById("text");
+// Get the checkbox
+var checkBox = document.getElementById("checkOneItem");
+// Get the output text
+var text = document.getElementById("text");
 
+var nn = document.getElementById('noProduct');
+
+
+function deleteFunction() {
     if (checkBox.checked == true) {
         if (confirm("確定要移除本商品嗎?") == true) {
             text.style.display = "none";
+            // 如果購物車裡沒有商品
+            nn.style.removeProperty('display', 'none');
+            nn.style.setProperty('display', 'flex');
         }
     } else {
         alert("請勾選要移除的商品");
@@ -55,10 +61,13 @@ function deleteFunction() {
 
 var singlePrice = '840';
 var subTotalPrice = `<h4>${singlePrice * q}</h4>`;
+
 document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
 
+
+var q = parseInt(document.getElementById('quantity').value);
+
 function addFunction() {
-    var q = parseInt(document.getElementById('quantity').value);
     q = isNaN(q) ? 0 : q;
     q++;
     document.getElementById('quantity').value = q;
@@ -77,19 +86,6 @@ function subFunction() {
     }
 };
 
-// TODO: 如果購物車裡沒有商品
-
-var n = document.getElementById('text');
-
-console.log(n);
-
-
-if (n.style.display('none') = true) {
-    document.getElementById('noProduct').style.removeProperty('display', 'none');
-    document.getElementById('noProduct').style.setProperty('display', 'block');
-
-} 
-
 // 優惠券詳情 展開
 
 $('#discountInfo').click(function () {
@@ -98,4 +94,18 @@ $('#discountInfo').click(function () {
     $('#discountInfo').toggleClass('border-bottom-main-color');
 });
 
+// 商品總數量與總金額
 
+var totalQuantity = `<h4>總共有${q}項商品</h4>`;
+document.getElementById('totalQuantity').innerHTML = 
+totalQuantity
+
+// 點優惠券折抵金額
+
+$('#discount1').click(function(){
+    console.log('discount1', this);
+    $('#discountQQ').innerHTML('<h4>NTD 50</h4>')
+});
+
+var d1 = document.getElementById('discount1').value;
+var discountQQ = document.getElementById('discountQQ');

@@ -269,8 +269,16 @@ display: flex;
     transition: .3s;
 
 }
-.top__10__img{
+.top__10__img__box-10{
+    width: 45%;
+    position: absolute;
+    top: 130px;
+    left: -10%;
+    transition: .3s;
 
+}
+.top__10__img{
+width: 100%;
 }
 
 

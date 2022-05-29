@@ -1125,16 +1125,16 @@ require './parts/movwe_connect_db.php';
     <div class="Big__container">
         <div class="Page01__container">
             <div class="video_box">
-                <video class="Stars" src="./images/wish_img/lightning.mov" autoplay loop muted></video>
+                <video class="Stars" src="./img/wish_img/lightning.mov" autoplay loop muted></video>
             </div>
             <div class="Cloud__left__box">
-                <img class="Cloud__left" src="./images/wish_img/cloud-left.png" alt="">
+                <img class="Cloud__left" src="./img/wish_img/cloud-left.png" alt="">
             </div>
             <div class="Cloud__right__box">
-                <img class="Cloud__right" src="./images/wish_img/cloud-right.png" alt="">
+                <img class="Cloud__right" src="./img/wish_img/cloud-right.png" alt="">
             </div>
             <div class="Carpet__box">
-                <img class="Carpet Carpet-animation" src="./images/wish_img/Carpet.png" alt="">
+                <img class="Carpet Carpet-animation" src="./img/wish_img/Carpet.png" alt="">
             </div>
             <div class="Wish__text__box">
                 <p class="Wish__text Color_anmation">
@@ -1145,8 +1145,8 @@ require './parts/movwe_connect_db.php';
                 </button>
             </div>
             <div class="audio__box">
-                <audio controls style="color: aquamarine;"
-                    src="./music/arabian-nights-2019-from-aladdin-audio-only.mp3"></audio>
+                <!-- <audio controls style="color: aquamarine;"
+                    src="./music/arabian-nights-2019-from-aladdin-audio-only.mp3"></audio> -->
             </div>
             <button class="Skip">
                 Skip
@@ -1157,12 +1157,12 @@ require './parts/movwe_connect_db.php';
 
         <div class="Page__2__container">
             <div class="Page__2__insidecontainer">
-                <video src="./images/wish_img/stars.mov" autoplay loop muted></video>
-                <img class="treasure__cave" src="./images/wish_img/treasure_cave.png" alt="">
+                <video src="./img/wish_img/stars.mov" autoplay loop muted></video>
+                <img class="treasure__cave" src="./img/wish_img/treasure_cave.png" alt="">
                 <div class="Page__2_text__box">
                     <div class="Page__2_text">
                         <p class="Color_anmation">
-                            Don't touch anything without the <span class="Text__gold">lamp .</span>
+                            Touch nothing but the <span class="Text__gold">lamp .</span>
                         </p>
                     </div>
                     <button class="Enter_2">
@@ -1175,35 +1175,35 @@ require './parts/movwe_connect_db.php';
 
         <div class="Page__3__conrainer">
             <div class="Page__3__insidecoiner">
-                <img class="Page__3__bg" src="./images/wish_img/Page_3.png" alt="">
+                <img class="Page__3__bg" src="./img/wish_img/Page_3.png" alt="">
                 <div class="Lamp__box">
-                    <img class="lamp__1" src="./images/wish_img/lamp_1.png" alt="">
-                    <img class="lamp__2" src="./images/wish_img/lamp_2.png" alt="">
+                    <img class="lamp__1" src="./img/wish_img/lamp_1.png" alt="">
+                    <img class="lamp__2" src="./img/wish_img/lamp_2.png" alt="">
                 </div>
                 <div class="gb__box">
-                    <img src="./images/wish_img/gb_1.png" alt="" class="gb_1">
-                    <img src="./images/wish_img/gb_2.png" alt="" class="gb_2">
+                    <img src="./img/wish_img/gb_1.png" alt="" class="gb_1">
+                    <img src="./img/wish_img/gb_2.png" alt="" class="gb_2">
                 </div>
                 <div class="cheese__box">
-                    <img src="./images/wish_img/cheese_1.png" alt="" class="cheese_1">
-                    <img src="./images/wish_img/cheese_2.png" alt="" class="cheese_2">
+                    <img src="./img/wish_img/cheese_1.png" alt="" class="cheese_1">
+                    <img src="./img/wish_img/cheese_2.png" alt="" class="cheese_2">
                 </div>
                 <div class="Golden__Snitch__box">
-                    <img src="./images/wish_img/Golden_Snitch_1.png" alt="" class="Golden__Snitch_1">
-                    <img src="./images/wish_img/Golden_Snitch_2.png" alt="" class="Golden__Snitch_2">
+                    <img src="./img/wish_img/Golden_Snitch_1.png" alt="" class="Golden__Snitch_1">
+                    <img src="./img/wish_img/Golden_Snitch_2.png" alt="" class="Golden__Snitch_2">
                 </div>
                 <div class="Acorn__box">
-                    <img src="./images/wish_img/Acorn_1.png" alt="" class="Acorn_1">
-                    <img src="./images/wish_img/Acorn_2.png" alt="" class="Acorn_2">
+                    <img src="./img/wish_img/Acorn_1.png" alt="" class="Acorn_1">
+                    <img src="./img/wish_img/Acorn_2.png" alt="" class="Acorn_2">
                 </div>
                 <!----------->
-                <img class="jerry-haad" src="./images/wish_img/jerry-haad.png" alt="">
-                <img class="tom-haad" src="./images/wish_img/tom-haad.png" alt="">
-                <img class="Acorn-haad" src="./images/wish_img/Acorn-head.png" alt="">
-                <img class="Grangon-haad" src="./images/wish_img/Drangon_dead.png" alt="">
-                <img class="Roun-head" src="./images/wish_img/Roun-head.png" alt="">
-                <img class="Abu_3" src="./images/wish_img/Abu_3.png" alt="">
-                <img class="Cat_1" src="./images/wish_img/Cat_1.png" alt="">
+                <img class="jerry-haad" src="./img/wish_img/jerry-haad.png" alt="">
+                <img class="tom-haad" src="./img/wish_img/tom-haad.png" alt="">
+                <img class="Acorn-haad" src="./img/wish_img/Acorn-head.png" alt="">
+                <img class="Grangon-haad" src="./img/wish_img/Drangon_dead.png" alt="">
+                <img class="Roun-head" src="./img/wish_img/Roun-head.png" alt="">
+                <img class="Abu_3" src="./img/wish_img/Abu_3.png" alt="">
+                <img class="Cat_1" src="./img/wish_img/Cat_1.png" alt="">
                 <div class="Page__3__text__box">
                     <p class="Color_anmation">
                         It's it !
@@ -1216,9 +1216,9 @@ require './parts/movwe_connect_db.php';
         </div>
         <div class="Page__4__container">
             <div class="Page__4__insidecoiner">
-                <video class="Page_4_mv" src="./images/wish_img/Page_4_mv.mov" autoplay loop muted></video>
+                <video class="Page_4_mv" src="./img/wish_img/Page_4_mv.mov" autoplay loop muted></video>
                 <div class="Page4__lamp__box">
-                    <img class="Page4__lamp" src="./images/wish_img/Page4__lamp.png" alt="">
+                    <img class="Page4__lamp" src="./img/wish_img/Page4__lamp.png" alt="">
                 </div>
                 <div class="Page__4__text__box">
                     <p class="Color_anmation">
@@ -1229,7 +1229,7 @@ require './parts/movwe_connect_db.php';
                     </button>
                 </div>
                 <div class="Page__4__genie__box">
-                    <img class="Page__4__genie" src="./images/wish_img/Aladdin__logo.png" alt="">
+                    <img class="Page__4__genie" src="./img/wish_img/Aladdin__logo.png" alt="">
                 </div>
                 <div class="Page__5__text__box">
                     <p class="Color_anmation">
@@ -1242,23 +1242,26 @@ require './parts/movwe_connect_db.php';
                 </div>
 
                     <div class="Page4__TV__box">
-                        <img class="Page4__TV" src="./images/wish_img/TV.png" alt="">
-                        <img class="TV__mv1" src="./images/video/filter02.gif"></img>
-                        <video class="TV__mv2" src="./images/video/single_mv-2.mov"autoplay loop muted></video>
+                        <img class="Page4__TV" src="./img/wish_img/TV.png" alt="">
+                        <img class="TV__mv1" src="./img/wish_img/filter02.gif"></img>
+                        <video class="TV__mv2" src="./img/wish_img/single_mv-2.mov"autoplay loop muted></video>
                     </div>
                 </div>
                 <div class="Thanks__card">
                     <div class="Thanks_logo">
-                        <img class="Thanks_Movwe" src="./images/Movwe-.png" alt="">
+                        <img class="Thanks_Movwe" src="./img/Movwe-.png" alt="">
                     </div>
                     <div class="Thanks__text">
                         <p> <span></span>
-                            許願成功！<br> <span class="Text__gold Wish">大家身體健康絕對平安</span> <br> 病毒什麼的嫩嫩啦～
+                            許願成功！<br> <span class="Text__gold Wish">天國之吻</span> <br> 已成功加入片單
                         </p>
                     </div>
-                    <button class="Enter_6">
-                        回許願池首頁
-                    </button>
+                    <a href="./index_home.php">
+
+                        <button class="Enter_6">
+                            回許願池首頁
+                        </button>
+                    </a>
                 </div>
         </div>
     </div>

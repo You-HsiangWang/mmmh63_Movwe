@@ -93,6 +93,14 @@
     display: none;
 }
 
+/* 如果購物車內沒有商品 */
+
+#noProduct {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 /* 優惠券 */
 
 .discount-info {
