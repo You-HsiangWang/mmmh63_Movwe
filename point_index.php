@@ -134,19 +134,19 @@ $title = 'MOVWE-如何累積Movwe點數';
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/netflix.svg" alt="">
                         </div>
-                        <div class="point-section_animate_roll_train_imgwrap"><img src="./img/other/discount_01.svg" alt="">
+                        <div class="point-section_animate_roll_train_imgwrap"><img src="./img/other/discount_200.png" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/kktv.svg" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
-                            <img src="./img/other/discount_02.svg" alt="">
+                            <img src="./img/other/discount_7days.png" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/IQiyi.svg" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
-                            <img src="./img/other/discount_03.svg" alt="">
+                            <img src="./img/other/discount_50.png" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/friday.svg" alt="">
@@ -156,19 +156,19 @@ $title = 'MOVWE-如何累積Movwe點數';
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/netflix.svg" alt="">
                         </div>
-                        <div class="point-section_animate_roll_train_imgwrap"><img src="./img/other/discount_01.svg" alt="">
+                        <div class="point-section_animate_roll_train_imgwrap"><img src="./img/other/discount_4days.png" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/kktv.svg" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
-                            <img src="./img/other/discount_02.svg" alt="">
+                            <img src="./img/other/discount_3hr.png" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/IQiyi.svg" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
-                            <img src="./img/other/discount_03.svg" alt="">
+                            <img src="./img/other/discount_250.png" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/friday.svg" alt="">
