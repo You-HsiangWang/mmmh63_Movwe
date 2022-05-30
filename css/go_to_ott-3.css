@@ -8,7 +8,7 @@
     color: #FFFFFD;
     position: absolute;
     top: 52%;
-    left: 32%;
+    left: 50%;
     transform: translate(-50%,-50%);
     z-index: 999;
 }

@@ -10,6 +10,10 @@ const storeDis = document.querySelector('.store__dis')
 const storeMarvel = document.querySelector('.store__marvel')
 
 
+
+storeStar.style.display = 'none'
+storeDis.style.display = 'none'
+storeMarvel.style.display = 'none'
 mainBtn.addEventListener('click',()=>{
     storeMain.style.display = 'block'
     storeStar.style.display = 'none'

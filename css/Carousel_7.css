@@ -207,19 +207,19 @@ color:rgb(16, 255, 162) ;
 
 
 .image__card__7:hover .Product__id{
-    transform: translateX(65%);
+    /* transform: translateX(65%); */
 
     /* border: 5px solid wheat; */
 }
 
 .image__card__7:hover .Shop__card__icon__box{
-    transform: translateX(455%);
+    /* transform: translateX(455%); */
 
     /* border: 5px solid wheat; */
 }
 
 .image__card__7:hover .Product__id{
-    opacity: 0;
+    /* opacity: 0; */
 
     /* border: 5px solid wheat; */
 }

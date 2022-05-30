@@ -434,7 +434,7 @@ $title = 'MOVWE-商城';
                                             <div class="movie__icons__12">
                                                 <div class="movie__icon__box__12">
                                                     <p class="Price">
-                                                        799
+                                                        999
                                                     </p>
                                                     <p class="ntd">
                                                         NTD
@@ -757,7 +757,7 @@ $title = 'MOVWE-商城';
                                             <div class="movie__icons__12">
                                                 <div class="movie__icon__box__12">
                                                     <p class="Price">
-                                                        799
+                                                        699
                                                     </p>
                                                     <p class="ntd">
                                                         NTD
@@ -1080,7 +1080,7 @@ $title = 'MOVWE-商城';
                                             <div class="movie__icons__12">
                                                 <div class="movie__icon__box__12">
                                                     <p class="Price">
-                                                        799
+                                                        899
                                                     </p>
                                                     <p class="ntd">
                                                         NTD
