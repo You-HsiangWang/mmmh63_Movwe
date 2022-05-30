@@ -17,11 +17,11 @@
     justify-content:center;
 }
 .footer__container{
-    margin-top: 100px;
+    margin-top: 60px;
     width: 100%;
     font-size: 14px;
-    position: absolute;
-    top: 100%;
+    position: relative;
+    bottom: 0%;
 }
 .foot{
     display: flex;
@@ -35,31 +35,34 @@
 .f-content{
     display: none;
 }
+.f-content li{
+    cursor: pointer;
+}
 .f-content a{
     color: #FFFFFD ;
     text-decoration: none;
     justify-content: flex-start;
 }
 .footer-wrap{
-background: #20242c;
-padding-top: 40px;
-padding-bottom: 80px;
+    background: #20242c;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .foot{
-width: 90%;
-display: flex;
-justify-content: space-between;
-color: #1A1D24;
-font-weight: bolder;
-margin-bottom: 10px;
-margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: #1A1D24;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin: auto;
 }
 .f-head{
-color: #10FFA2;
+    color: #10FFA2;
 }
 .footer img{
-width: 70px;
+    width: 70px;
 }
 .f-ott{
     width:95px;
@@ -70,17 +73,17 @@ width: 70px;
     width: 100%;
 }
 .credit-card{
-width: 100%;
-margin: auto;
-margin-top: 50px;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
 
 }
 .bo{
-border-bottom: 1px solid #10FFA2;
-margin-top: 20px;
+    border-bottom: 1px solid #10FFA2;
+    margin-top: 20px;
 }
 .la{
-margin-top: 10px;
+    margin-top: 10px;
 }
 .handle{
     color: #10FFA2;
