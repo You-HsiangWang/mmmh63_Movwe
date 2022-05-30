@@ -4,7 +4,7 @@ require './parts/movwe_connect_db.php';
 
 ?>
 
-<div class="index_filter">
+<div class="index_filter" id="index_filter">
     <div class="ott_platform">
         <div class="ott_platform_title">
             <span>平台 / </span>

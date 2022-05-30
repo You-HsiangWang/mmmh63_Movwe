@@ -26,7 +26,7 @@ $title = 'MOVWE-帳戶登入';
     <div class="login_left_col">
         <div class="login_logo">
             <img src="./img/logo/logo.png" alt="">
-            <img src="./img/logo/logo_word.png" alt="">
+            <a href="index_home.php"><img src="./img/logo/logo_word.png" alt=""></a>
         </div>
     </div>
     <div class="login_right_col">
@@ -59,10 +59,10 @@ $title = 'MOVWE-帳戶登入';
                             <div class="login_form_submit_feild_wrap">
                                 <button type="submit" class="login_form_one_continue">繼續</button>
                                 <div class="login_loading login_d_none">
-                                    <div class="box">
+                                    <!-- <div class="box">
                                         <span><img src="./img/logo/logo.gif" alt=""></span>
                                         <span><img src="./img/logo/logo.gif" alt=""></span>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                             </div>
@@ -130,10 +130,10 @@ $title = 'MOVWE-帳戶登入';
                             <div class="login_form_submit_feild_wrap">
                                 <button type="submit" class="login_form_one_continue">繼續</button>
                                 <div class="login_loading login_d_none">
-                                    <div class="box">
+                                    <!-- <div class="box">
                                         <span><img src="./img/logo/logo.gif" alt=""></span>
                                         <span><img src="./img/logo/logo.gif" alt=""></span>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </section>
@@ -254,10 +254,10 @@ $title = 'MOVWE-帳戶登入';
                             <div class="register_form_submit_feild_wrap">
                                 <button type="submit" class="register_form_one_continue">註冊</button>
                                 <div class="register_loading login_d_none">
-                                    <div class="box">
+                                    <!-- <div class="box">
                                         <span><img src="./img/logo/logo.gif" alt=""></span>
                                         <span><img src="./img/logo/logo.gif" alt=""></span>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                             </div>
