@@ -24,9 +24,6 @@ body {
 .wish__input__container{
     width: 100%;
 }
-.wish__input__box{
-    width: 100%;
-}
 .wish__input__title{
     width: 100%;
     color: rgb(16, 255, 162);
@@ -36,18 +33,31 @@ body {
 }
 
 .wish__input__box{
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
     margin: 20px 0 0 0px;
+}
+
+.wish__input__{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .wish__input{
 
-    background-color: rgba(255, 255, 255, 0.462);
-    height: 25px;
-    width: 50%;
-    border: none;
+    transition: .3s;
+    width: 30%;
+    height: 30px;
     border-radius: 5px;
-    margin-top: 15px;
-    outline-style: none;
+    border: 1px solid rgb(16, 255, 162);
+background-color: rgba(255, 255, 255, 0.48);
+margin: auto;
+outline-style: none;
+font-size: 20px;
+color:rgb(16, 255, 162);
+text-align: center;
 
 }
 .wish__button{

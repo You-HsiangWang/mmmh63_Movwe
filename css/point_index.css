@@ -1,8 +1,14 @@
+/* nav------------------------------------------------- */
+.top_nav {
+    background-color: rgba(43, 44, 49, 0.993);
+}
+
 /* 點數區 banner------------------------------------------- */
 /* 點數區 banner */
-p{
+p {
     font-size: 16px;
 }
+
 .point-section_banner {
     width: 100%;
     padding-top: 106px;
@@ -68,6 +74,14 @@ p{
     color: #10FFA2;
 }
 
+/* 點數區animation roll wrap 包了卡片介紹跟animate 用flexdirection切換 */
+.point-section-animate-wrap {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
 /* 點數區 說明 的animation roll */
 /* 點數區 說明 的animation roll img大小控制 */
 .point-section_animate_roll_train_imgwrap {
@@ -77,11 +91,13 @@ p{
     align-items: center;
     padding: 40px;
 }
-.point-section_animate_roll_train_imgwrap > img{
+
+.point-section_animate_roll_train_imgwrap>img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
+
 /* 點數區 說明 的animation roll 100%外框 */
 .point-section_animate_roll {
     padding: 20px 0;
@@ -103,6 +119,7 @@ p{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
+
 .point-section_animate_roll_train.rollone {
     animation-name: infinityrolling1;
 }
@@ -192,7 +209,7 @@ p{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 /* 點數區塊二 卡片 */
@@ -209,13 +226,15 @@ p{
     padding: 20px;
     position: relative;
 }
-.point-section_info_card_imganimation{
+
+.point-section_info_card_imganimation {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.point-section_info_card_imgwrap img{
+
+.point-section_info_card_imgwrap img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -233,11 +252,13 @@ p{
 .point-section_info_card:nth-child(2) {
     flex-direction: row-reverse;
 }
+
 .point-section_info_card:nth-child(2) .point-section_info_card_imgwrap {
     padding: 0 20px 0 0;
 }
+
 /* 點數區塊二 桌機版roll消失 */
-.point-section_animate_roll_fullsize{
+.point-section_animate_roll_fullsize {
     display: none;
 }
 
@@ -260,7 +281,8 @@ p{
     justify-content: center;
     align-items: center;
 }
-.point-section_info_numberpicphone img{
+
+.point-section_info_numberpicphone img {
     width: 300px;
 }
 
@@ -315,12 +337,14 @@ p{
     width: 100%;
     color: white;
 }
+
 /* 點數區塊三 步驟圖片 消失 */
-.point-section_info_numberpic{
+.point-section_info_numberpic {
     display: none;
 }
+
 /* 點數區塊三 大wrap margin 消失 */
-.point-section_info_numbercard_fullsize{
+.point-section_info_numbercard_fullsize {
     margin-bottom: 0;
 }
 
@@ -329,19 +353,24 @@ p{
 ------------------------ */
 
 @media screen and (min-width: 750px) {
+
     /* 大小改成60% */
-    .text__container.point_index_width-60_destkoponly{
+    .text__container.point_index_width-60_destkoponly {
         width: 60%;
     }
-    .point-section_info_title{
+
+    .point-section_info_title {
         width: 60%;
     }
-    .point-section_info_wrap{
+
+    .point-section_info_wrap {
         width: 60%;
     }
-    .point-section_info_cardwrap{
+
+    .point-section_info_cardwrap {
         width: 60%;
     }
+
     /* 點數區 banner ------------------------------------------ */
     .point-section_banner h1 {
         font-size: 5rem;
@@ -353,12 +382,14 @@ p{
         margin: 0 auto;
         display: flex;
     }
+
     /* 點數區塊一 把文字致中 */
     .point-section_info_text {
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
+
     /* 點數區塊一 桌機版圖片位置 */
     .point-section_info_img {
         display: flex;
@@ -366,39 +397,44 @@ p{
         align-items: center;
         width: 50%;
     }
-    .point-section_info_img img{
+
+    .point-section_info_img img {
         width: 300px;
     }
 
-    /* 點數區塊一 手機版animation消失 */
-    .point-section_animate_roll {
-        display: none;
+    /* 點數區塊一 animation 交換排列 */
+    .point-section-animate-wrap {
+        /* flex-direction: column-reverse; */
     }
 
     /* 點數區塊二 -------------------------------------------- */
     /* 點數區塊二 卡片排版改變 */
-    .point-section_info_cardwrap{
+    .point-section_info_cardwrap {
         flex-direction: row;
         justify-content: center;
     }
+
     /* 點數區塊二 卡片致中 */
-    .point-section_info_card{
+    .point-section_info_card {
         height: 20vh;
         justify-content: center;
     }
+
     /* 點數區塊二 圖片大小改變 */
-    .point-section_info_card_imgwrap{
+    .point-section_info_card_imgwrap {
         height: 100%;
         padding: 0 20px 0 20px;
     }
+
     /* 點數區塊二 圖片大小改變 此區留給做動畫的時候 */
-    .point-section_info_card_imganimation{
+    .point-section_info_card_imganimation {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     /* 點數區塊二 圖片大小改變 */
     .point-section_info_card_imgwrap img {
         /* width: 260px; */
@@ -406,64 +442,97 @@ p{
         height: 100%;
         object-fit: contain;
     }
+
     /* 點數區塊二 文字排版改變*/
-    .point-section_info_card p{
+    .point-section_info_card p {
         width: auto;
     }
+
     /* 點數區塊二 文字排版改變*/
-    .point-section_info_card:nth-child(2){
+    .point-section_info_card:nth-child(2) {
         flex-direction: row;
     }
+
     /* 點數區塊二 animation roll出現*/
-    .point-section_animate_roll_fullsize {
+    /* .point-section_animate_roll_fullsize {
         padding: 20px 0;
         width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         overflow: hidden;
-    }
-/* 點數區塊三 -------------------------------------------------*/
-/* 點數區塊三 大圖消失*/
-    .point-section_info_numberpicphone{
+    } */
+
+    /* 點數區塊三 -------------------------------------------------*/
+    /* 點數區塊三 大圖消失*/
+    .point-section_info_numberpicphone {
         display: none;
     }
-/* 點數區塊三 小圖們出現消失*/
-    .point-section_info_numbercard_fullsize{
+
+    /* 點數區塊三 小圖們出現消失*/
+    .point-section_info_numbercard_fullsize {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         margin-bottom: 20px;
     }
+
     /* 點數區塊三 包card的大wrap*/
-    .point-section_info_numberpic{
+    .point-section_info_numberpic {
         display: flex;
         width: 50%;
         justify-content: center;
         align-items: center;
     }
-    .point-section_info_numberpic img{
+
+    .point-section_info_numberpic img {
         width: 300px;
     }
-    .point-section_info_numbercard_numwrap img{
+
+    .point-section_info_numbercard_numwrap img {
         width: 60px;
     }
+
     /* 點數區塊三 排版改變*/
-    .point-section_info_numbercard_fullsize:nth-child(1) .point-section_info_numbercard, .point-section_info_numbercard_fullsize:nth-child(3) .point-section_info_numbercard{
+    .point-section_info_numbercard_fullsize:nth-child(1) .point-section_info_numbercard,
+    .point-section_info_numbercard_fullsize:nth-child(3) .point-section_info_numbercard {
         flex-direction: row-reverse;
         justify-content: flex-end;
     }
-    .point-section_info_numbercard_fullsize:nth-child(1) .point-section_info_numbercard .point-section_info_card_pwrap, .point-section_info_numbercard_fullsize:nth-child(3) .point-section_info_numbercard .point-section_info_card_pwrap{
-        padding: 0 20px 0 0 ;
+
+    .point-section_info_numbercard_fullsize:nth-child(1) .point-section_info_numbercard .point-section_info_card_pwrap,
+    .point-section_info_numbercard_fullsize:nth-child(3) .point-section_info_numbercard .point-section_info_card_pwrap {
+        padding: 0 20px 0 0;
     }
-    .point-section_info_card_pwrap{
+
+    .point-section_info_card_pwrap {
         width: auto;
     }
-    .point-section_info_numbercard_fullsize:nth-child(2), .point-section_info_numbercard_fullsize:nth-child(4){
+
+    .point-section_info_numbercard_fullsize:nth-child(2),
+    .point-section_info_numbercard_fullsize:nth-child(4) {
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-    .point-section_info_numbercard{
+
+    .point-section_info_numbercard {
         justify-content: flex-end;
+    }
+
+    /* 滑入function */
+    .p_slide-in{
+        transition: 1s;
+    }
+    .p_silde-l{
+        transform: translateX(-400px);
+        opacity: 0;
+    }
+    .p_silde-r{
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    .p-slide-active{
+        transform: translateX(0);
+        opacity: 1;
     }
 }

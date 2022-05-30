@@ -15,165 +15,9 @@ $title = 'MOVWE-如何累積Movwe點數';
 <body>
 
     <!----------nav_top-------------->
-    <div class="top_nav">
-        <div class="top_nav_left">
-            <div class="top_nav_logo">
-                <div class="top_nav_logo_box">
-                    <img class="top_nav_movwe_img-2" src="./img/logo/logo.png" alt="">
-                    <i class="fa-solid fa-bars top_nav_movwe_img bars"></i>
-                </div>
-            </div>
-            <div class="top_nav_movwe">
-                <div class="top_nav_movwe_box">
-                    <img class="top_nav_movwe_img" src="./img/logo/logo_word.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="top_nav_right">
-            <div class="top_nav_searchbar_box">
-                <input type="text" class="top_nav_searchbar" placeholder="輸入片名">
-                <div class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-
-            </div>
-        </div>
-    </div>
+    <?php include __DIR__ . '/parts/movwe_nav_fin.php' ?>
     <div class="layout">
-        <!----------nav_left-------------->
-        <div class="left_nav">
-            <div class="left_nav_box">
-            </div>
-            <div class="left_nav_box ">
-                <div class="left_nav_home icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-house "></i>
-                    </div>
-                </div>
-                <div class="nav_text_01 ">
-                    <div class="h-60px">首頁 <span class="down">
-                            <!-- <i class="fa-solid fa-angle-down"></i> -->
-                        </span> </div>
-                </div>
-
-            </div>
-            <div class="title_bottom">
-                <div class="title_">首頁</div>
-            </div>
-            <div class="left_nav_box Movie">
-                <div class="left_nav_movie icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-film"></i>
-                    </div>
-                    <div class="nav_text_01 ">
-                        <div class="h-60px movie_btn">影劇 <span class="down"><i class="fa-solid fa-angle-down"></i></span></div>
-                        <p class="text_a">影劇搜尋器</p>
-                        <p class="text_a">ott上片資訊</p>
-                        <p class="text_a">許願池</p>
-                        <p class="text_a">心理測驗</p>
-                        <p class="text_a">我的片單</p>
-                        <p class="text_a">預約片單</p>
-                        <p class="text_a">許願清單</p>
-                        <p class="text_a">曾經瀏覽</p>
-                        <p class="text_a">ott優惠卷</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">影劇</div>
-            </div>
-            <div class="left_nav_box Store">
-                <div class="left_nav_store icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-store"></i>
-                    </div>
-                    <div class="nav_text_01 ">
-                        <div class="h-60px store_btn">商城 <span class="down"><i class="fa-solid fa-angle-down"></i></span></div>
-                        <p class="text_a">主打活動</p>
-                        <p class="text_a">商品總覽</p>
-                        <p class="text_a">購物車</p>
-                        <p class="text_a">我的訂單</p>
-                        < class="text_a">商城優或卷</>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">商城</div>
-            </div>
-
-            <div class="left_nav_box Form">
-                <div class="left_nav_forum icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-pencil pp"></i>
-                    </div>
-                    <div class="nav_text_01 ">
-                        <div class="h-60px form_btn">文章 <span class="down"><i class="fa-solid fa-angle-down"></i></span>
-                        </div>
-                        <p class="text_a">文章總覽</p>
-                        <p class="text_a">熱門作者</p>
-                        <p class="text_a">熱門文章</p>
-                        <p class="text_a">我的收藏</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">文章</div>
-            </div>
-
-            <div class="left_nav_box">
-                <div class="left_nav_member icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-user-gear"></i>
-                    </div>
-                    <div class="nav_text_01">
-                        <div class="h-60px">會員 <span class="down">
-                                <!-- <i class="fa-solid fa-angle-down"></i> -->
-                            </span></div>
-                        <p>00</p>
-                        <p>00</p>
-                        <p>00</p>
-                        <p>00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">會員</div>
-            </div>
-
-            <div class="left_nav_box">
-                <div class="left_nav_discount icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-hand-holding-dollar"></i>
-                    </div>
-                    <div class="nav_text_01">
-                        <div class="h-60px">優惠 <span class="down">
-                                <!-- <i class="fa-solid fa-angle-down"></i> -->
-                            </span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">優惠</div>
-            </div>
-            <div class="left_nav_box">
-                <div class="left_nav_discount icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-coins"></i>
-                    </div>
-                    <div class="nav_text_01">
-                        <div class="h-60px">點數 <span class="down">
-                                <!-- <i class="fa-solid fa-angle-down"></i> -->
-                            </span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">點數</div>
-            </div>
-
-
-        </div>
-        <div class="left_div"></div>
+        <?php include __DIR__ . '/parts/movwe_nav_leftdiv.php' ?>
 
         <!--------------------------------------------------------------------------->
         <div class="container">
@@ -205,11 +49,11 @@ $title = 'MOVWE-如何累積Movwe點數';
                             </p>
                             <p class="point-section_nav-showpoints-points">
                                 <!-- 這邊要抓資料庫中的點數 -->
-                                <span id=""><?php if(isset($_SESSION['admin']['member_loginstatus'])){
-                                    echo $_SESSION['admin']['member_loginstatus'] == 1 ? $_SESSION['admin']['member_points'].' pt' : '尚未登入';
-                                }else{
-                                    echo '尚未登入';
-                                }?></span>
+                                <span id=""><?php if (isset($_SESSION['admin']['member_loginstatus'])) {
+                                                echo $_SESSION['admin']['member_loginstatus'] == 1 ? $_SESSION['admin']['member_points'] . ' pt' : '尚未登入';
+                                            } else {
+                                                echo '尚未登入';
+                                            } ?></span>
                             </p>
                         </div>
 
@@ -218,11 +62,11 @@ $title = 'MOVWE-如何累積Movwe點數';
             </div>
             <div class="point-section_banner">
                 <div class="point-section_banner_container">
-                    <img src="./img/banner/point_banner.png" alt="">
-                    <h1>用MOVWE<br>換Movie</h1>
+                    <img src="./img/banner/point_banner.jpg" alt="">
+                    <!-- <h1>用MOVWE<br>換Movie</h1> -->
                 </div>
             </div>
-            <div class="point-section_info_one">
+            <div class="point-section_info_one p_slide-in p_silde-l">
                 <div class="point-section_info_title">
                     <img src="./img/icons/stick-s.svg" alt="">
                     <h2>什麼是MOVWE點數？</h2>
@@ -234,27 +78,75 @@ $title = 'MOVWE-如何累積Movwe點數';
                         </p>
                     </div>
                     <div class="point-section_info_img">
-                        <img src="./img/banner/point.png" alt="">
+                        <img src="./img/banner/mell_point.jpg" alt="">
                     </div>
                 </div>
+                <!-- <div class="point-section_animate_roll">
+                    <div class="point-section_animate_roll_train rollone">
+                        <div class="point-section_animate_roll_train_imgwrap">
+                            <img src="./img/logo/netflix.svg" alt="">
+                        </div>
+                        <div class="point-section_animate_roll_train_imgwrap"><img src="./img/other/discount_01.svg" alt="">
+                        </div>
+                        <div class="point-section_animate_roll_train_imgwrap">
+                            <img src="./img/logo/kktv.svg" alt="">
+                        </div>
+                        <div class="point-section_animate_roll_train_imgwrap">
+                            <img src="./img/other/discount_02.svg" alt="">
+                        </div>
+                        <div class="point-section_animate_roll_train_imgwrap">
+                            <img src="./img/logo/IQiyi.svg" alt="">
+                        </div>
+                        <div class="point-section_animate_roll_train_imgwrap">
+                            <img src="./img/other/discount_03.svg" alt="">
+                        </div>
+                        <div class="point-section_animate_roll_train_imgwrap">
+                            <img src="./img/logo/friday.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="point-section_animate_roll_train rolltwo">
+                        <div class="point-section_animate_roll_train_imgwrap">
+                            <img src="./img/logo/netflix.svg" alt="">
+                        </div>
+                        <div class="point-section_animate_roll_train_imgwrap"><img src="./img/other/discount_01.svg" alt="">
+                        </div>
+                        <div class="point-section_animate_roll_train_imgwrap">
+                            <img src="./img/logo/kktv.svg" alt="">
+                        </div>
+                        <div class="point-section_animate_roll_train_imgwrap">
+                            <img src="./img/other/discount_02.svg" alt="">
+                        </div>
+                        <div class="point-section_animate_roll_train_imgwrap">
+                            <img src="./img/logo/IQiyi.svg" alt="">
+                        </div>
+                        <div class="point-section_animate_roll_train_imgwrap">
+                            <img src="./img/other/discount_03.svg" alt="">
+                        </div>
+                        <div class="point-section_animate_roll_train_imgwrap">
+                            <img src="./img/logo/friday.svg" alt="">
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="point-section-animate-wrap">
                 <div class="point-section_animate_roll">
                     <div class="point-section_animate_roll_train rollone">
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/netflix.svg" alt="">
                         </div>
-                        <div class="point-section_animate_roll_train_imgwrap"><img src="./img/other/discount_01.svg" alt="">
+                        <div class="point-section_animate_roll_train_imgwrap"><img src="./img/other/discount_200.png" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/kktv.svg" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
-                            <img src="./img/other/discount_02.svg" alt="">
+                            <img src="./img/other/discount_7days.png" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/IQiyi.svg" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
-                            <img src="./img/other/discount_03.svg" alt="">
+                            <img src="./img/other/discount_50.png" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/friday.svg" alt="">
@@ -264,56 +156,55 @@ $title = 'MOVWE-如何累積Movwe點數';
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/netflix.svg" alt="">
                         </div>
-                        <div class="point-section_animate_roll_train_imgwrap"><img src="./img/other/discount_01.svg" alt="">
+                        <div class="point-section_animate_roll_train_imgwrap"><img src="./img/other/discount_4days.png" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/kktv.svg" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
-                            <img src="./img/other/discount_02.svg" alt="">
+                            <img src="./img/other/discount_250.png" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/IQiyi.svg" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
-                            <img src="./img/other/discount_03.svg" alt="">
+                            <img src="./img/other/discount_4hr.png" alt="">
                         </div>
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/friday.svg" alt="">
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- 這邊可以加消失出現的動畫 -->
-            <div class="point-section_info_two">
-                <div class="point-section_info_title">
-                    <img src="./img/icons/stick-s.svg" alt="">
-                    <h2>MOVWE點數可以換什麼東西？</h2>
-                </div>
-                <div class="point-section_info_cardwrap">
-                    <div class="point-section_info_card">
-                        <div class="point-section_info_card_imgwrap">
-                            <div class="point-section_info_card_imganimation">
-                                <img src="./img/logo/netflix_s.svg" alt="">
-                            </div>
-                        </div>
-                        <p>
-                            商城折價券
-                        </p>
+                <!-- 這邊可以加消失出現的動畫 -->
+                <div class="point-section_info_two p_slide-in p_silde-r">
+                    <div class="point-section_info_title">
+                        <img src="./img/icons/stick-s.svg" alt="">
+                        <h2>MOVWE點數可以換什麼東西？</h2>
                     </div>
-                    <div class="point-section_info_card">
-                        <div class="point-section_info_card_imgwrap">
-                            <div class="point-section_info_card_imganimation">
-                                <img src="./img/other/discount_02.svg" alt="">
+                    <div class="point-section_info_cardwrap">
+                        <div class="point-section_info_card">
+                            <div class="point-section_info_card_imgwrap">
+                                <div class="point-section_info_card_imganimation">
+                                    <img src="./img/other/discount_50.png" alt="">
+                                </div>
                             </div>
+                            <p>
+                                商城折價券
+                            </p>
+                        </div>
+                        <div class="point-section_info_card">
+                            <div class="point-section_info_card_imgwrap">
+                                <div class="point-section_info_card_imganimation">
+                                    <img src="./img/other/discount_2hr.png" alt="">
+                                </div>
 
+                            </div>
+                            <p>
+                                OTT平台優惠
+                            </p>
                         </div>
-                        <p>
-                            OTT平台優惠
-                        </p>
                     </div>
-                </div>
-                <div class="point-section_animate_roll_fullsize">
+                    <!-- <div class="point-section_animate_roll_fullsize">
                     <div class="point-section_animate_roll_train rollone">
                         <div class="point-section_animate_roll_train_imgwrap">
                             <img src="./img/logo/netflix.svg" alt="">
@@ -358,8 +249,10 @@ $title = 'MOVWE-如何累積Movwe點數';
                             <img src="./img/logo/friday.svg" alt="">
                         </div>
                     </div>
+                </div> -->
                 </div>
             </div>
+
             <!--text__container------內容放這邊------------->
             <div class="text__container point_index_width-60_destkoponly">
                 <div class="point-section_info_three">
@@ -372,7 +265,7 @@ $title = 'MOVWE-如何累積Movwe點數';
                         <img src="./img/banner/point.png" alt="">
                     </div>
                     <div class="point-section_info_numbercardwrap">
-                        <div class="point-section_info_numbercard_fullsize">
+                        <div class="point-section_info_numbercard_fullsize p_slide-in p_silde-l">
                             <div class="point-section_info_numbercard">
                                 <div class="point-section_info_numbercard_numwrap">
 
@@ -388,7 +281,7 @@ $title = 'MOVWE-如何累積Movwe點數';
                                 <img src="./img/banner/point.png" alt="">
                             </div>
                         </div>
-                        <div class="point-section_info_numbercard_fullsize">
+                        <div class="point-section_info_numbercard_fullsize p_slide-in p_silde-r">
                             <div class="point-section_info_numbercard">
                                 <div class="point-section_info_numbercard_numwrap">
 
@@ -406,7 +299,7 @@ $title = 'MOVWE-如何累積Movwe點數';
                                 <img src="./img/banner/share.png" alt="">
                             </div>
                         </div>
-                        <div class="point-section_info_numbercard_fullsize">
+                        <div class="point-section_info_numbercard_fullsize p_slide-in p_silde-l">
                             <div class="point-section_info_numbercard">
                                 <div class="point-section_info_numbercard_numwrap">
 
@@ -419,10 +312,10 @@ $title = 'MOVWE-如何累積Movwe點數';
                                 </div>
                             </div>
                             <div class="point-section_info_numberpic">
-                                <img src="./img/banner/point.png" alt="">
+                                <img src="./img/banner/mall_banner_s.jpg" alt="">
                             </div>
                         </div>
-                        <div class="point-section_info_numbercard_fullsize">
+                        <div class="point-section_info_numbercard_fullsize p_slide-in p_silde-r">
                             <div class="point-section_info_numbercard">
                                 <div class="point-section_info_numbercard_numwrap">
 
@@ -435,20 +328,21 @@ $title = 'MOVWE-如何累積Movwe點數';
                                 </div>
                             </div>
                             <div class="point-section_info_numberpic">
-                                <img src="./img/banner/share.png" alt="">
+                                <img src="./img/banner/forum_banner01_s.jpg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- footer -->
+            <?php include __DIR__. '/parts/movwe_footer.php' ?>
         </div>
     </div>
 
-
-
-    <script src="./js/jquery-3.6.0.js"></script>
     <script src="./js/Nav.js"></script>
     <script src="./js/dropdown_customstyle.js"></script>
+    <script src="./js/point_index.js"></script>
 
 </body>
 

@@ -1244,19 +1244,19 @@ require './parts/movwe_connect_db.php';
                     <div class="Page4__TV__box">
                         <img class="Page4__TV" src="./img/wish_img/TV.png" alt="">
                         <img class="TV__mv1" src="./img/wish_img/filter02.gif"></img>
-                        <video class="TV__mv2" src="./img/wish_img/single_mv-2.mov"autoplay loop muted></video>
+                        <video class="TV__mv2" src="./img/wish_img/pd_mv.mov"autoplay loop muted></video>
                     </div>
                 </div>
                 <div class="Thanks__card">
                     <div class="Thanks_logo">
-                        <img class="Thanks_Movwe" src="./img/Movwe-.png" alt="">
+                        <img class="Thanks_Movwe" src="./img/logo/logo.png" alt="">
                     </div>
                     <div class="Thanks__text">
                         <p> <span></span>
                             許願成功！<br> <span class="Text__gold Wish">天國之吻</span> <br> 已成功加入片單
                         </p>
                     </div>
-                    <a href="./index_home.php">
+                    <a href="./wish_home.php">
 
                         <button class="Enter_6">
                             回許願池首頁
