@@ -1025,7 +1025,7 @@ body {
     /* 表單container */
     .register_form_container {
         width: 50%;
-        height: 80vh;
+        /* height: 80vh; */
     }
 
     /* 表單背景和padding */
