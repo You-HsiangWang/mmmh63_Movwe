@@ -44,7 +44,7 @@
                 $('#ottFilterSearchFunc').addClass('filter_d_none');
                 $('.home__text__box').removeClass('home_d_none');
                 console.log('filter工程生退');
-                exit;
+                return;
             };
         }
         // 1-2.判斷其他單選btn 被點擊的active狀態 原本active
@@ -55,7 +55,7 @@
                 $('#ottFilterSearchFunc').addClass('filter_d_none');
                 $('.home__text__box').removeClass('home_d_none');
                 console.log('filter工程生退');
-                exit;
+                return;
             };
         }
         // 原本不active
@@ -67,7 +67,7 @@
                 $('#ottFilterSearchFunc').addClass('filter_d_none');
                 $('.home__text__box').removeClass('home_d_none');
                 console.log('filter工程生退');
-                exit;
+                return;
             };
         };
     };

@@ -5,16 +5,16 @@ require './parts/movwe_connect_db.php';
 ?>
 
 <?php include __DIR__ . '/parts/movwe_head.php'; ?>
-    <link href="./fontawesome/css/all.css" rel="stylesheet">
+    <!-- <link href="./fontawesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/Nav.css">
-    <link rel="stylesheet" href="./css/BS.css">
+    <link rel="stylesheet" href="./css/BS.css"> -->
     <link rel="stylesheet" href="./css/single_movie.css">
     <link rel="stylesheet" href="./css/Carousel_1.css">
     <link rel="stylesheet" href="./css/Carousel_6.css">
     <link rel="stylesheet" href="./css/Carousel_7.css">
     <link rel="stylesheet" href="./css/Carousel_8.css">
     <link rel="stylesheet" href="./css/slider.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <!-- <link rel="stylesheet" href="./css/footer.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -331,12 +331,12 @@ require './parts/movwe_connect_db.php';
             <!--banner__container----------------->
             <div class="banner__container">
                 <!-- <img src="./img/center/single_page_banner-2.png" alt=""> -->
-                <video src="./img/center/single_mv-2.mov" autoplay loop muted></video>
+                <video src="./img/video_dino/single_mv-2.mov" autoplay loop muted></video>
                 <!-- autoplay  loop  muted -->
                 <div class="shadow"></div>
                 <div class="shadow2"></div>
                 <div class="banner__logo">
-                    <img src="./img/center/banner__logo.png" alt="">
+                    <img src="./img/other/movie_title.png" alt="">
                 </div>
             </div>
 

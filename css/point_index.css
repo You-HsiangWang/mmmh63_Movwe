@@ -134,10 +134,6 @@ p {
         opacity: 1;
     }
 
-    48% {
-        transform: translateX(-100%);
-        opacity: 1;
-    }
 
     49% {
         transform: translateX(-100%);
@@ -160,7 +156,7 @@ p {
     }
 
     100% {
-        transform: translateX(1%);
+        transform: translateX(0%);
         opacity: 1;
     }
 }
@@ -222,7 +218,7 @@ p {
 
 /* 點數區塊二 卡片內的圖的div */
 .point-section_info_card_imgwrap {
-    width: 40%;
+    width: 55%;
     padding: 20px;
     position: relative;
 }
@@ -400,6 +396,7 @@ p {
 
     .point-section_info_img img {
         width: 300px;
+        border-radius: 10px;
     }
 
     /* 點數區塊一 animation 交換排列 */
