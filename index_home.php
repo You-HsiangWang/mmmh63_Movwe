@@ -4968,7 +4968,7 @@ $title = 'MOVWE-就要你放膽搜';
                                 </div>
                             </div>
                             <div class="discount__img__box game__box">
-                                <img src="./img/banner/game.png" alt="">
+                                <img src="./img/banner/game_s.png" alt="">
                             </div>
                         </div>
                     </div>
