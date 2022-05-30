@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="./css/Carousel_1.css">
     
     
-    <script src="./js/jquery-3.6.0.js"></script>
+    <!-- <script src="./js/jquery-3.6.0.js"></script> -->
     <style>
         .display_none{
             display: none;
@@ -135,7 +135,7 @@
 
 <body>
     <!----------nav_top-------------->
-    <?php include __DIR__. '/parts/movwe_nav.php' ?>
+    <?php include __DIR__. '/parts/movwe_nav_fin.php' ?>
 
     <div class="layout">
         <?php include __DIR__. '/parts/movwe_nav_leftdiv.php' ?>

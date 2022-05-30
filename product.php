@@ -6,7 +6,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪 周邊娃娃';
 
 ?>
 
-<?php include __DIR__ . './parts/movwe_head.php' ?>
+<?php include __DIR__ . '/parts/movwe_head.php' ?>
 
 
 <link rel="stylesheet" href="./css/mystyle.css">
@@ -16,11 +16,11 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪 周邊娃娃';
 
 <body>
 
-    <?php include __DIR__ . './parts/movwe_nav.php' ?>
+    <?php include __DIR__. '/parts/movwe_nav_fin.php' ?>
 
     <div class="layout">
 
-        <?php include __DIR__ . './parts/movwe_nav_leftdiv.php' ?>
+        <?php include __DIR__. '/parts/movwe_nav_leftdiv.php' ?>
 
         <div class="container">
 
@@ -436,13 +436,15 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪 周邊娃娃';
                     </div>
                 </div>
             </div>
+
+            <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
 
 
 
 
-        <?php include __DIR__ . './parts/movwe_scripts.php' ?>
+        <?php include __DIR__ . '/parts/movwe_scripts.php' ?>
         <script src="./js/product.js"></script>
+</body>
 
-
-        <?php include __DIR__ . './parts/movwe_footer.php' ?>
+</html>

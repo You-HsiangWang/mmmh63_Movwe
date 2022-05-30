@@ -1,329 +1,32 @@
 <?php
 
 require './parts/movwe_connect_db.php';
+$title = 'MOVWE-孤單又燦爛的神-鬼怪';
 
 ?>
 
 <?php include __DIR__ . '/parts/movwe_head.php'; ?>
-    <!-- <link href="./fontawesome/css/all.css" rel="stylesheet">
+<!-- <link href="./fontawesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/Nav.css">
     <link rel="stylesheet" href="./css/BS.css"> -->
-    <link rel="stylesheet" href="./css/single_movie.css">
-    <link rel="stylesheet" href="./css/Carousel_1.css">
-    <link rel="stylesheet" href="./css/Carousel_6.css">
-    <link rel="stylesheet" href="./css/Carousel_7.css">
-    <link rel="stylesheet" href="./css/Carousel_8.css">
-    <link rel="stylesheet" href="./css/slider.css">
-    <!-- <link rel="stylesheet" href="./css/footer.css"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-
-    <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            outline: 1px solid greenyellow;
-        }
-
-        body {
-            background-color: rgb(26, 29, 36);
-            font-family: 'Cairo', sans-serif;
-    font-family: 'Noto Sans TC', sans-serif;
-            overflow-x: hidden;
-
-        }
-
-        html {
-            font-size: 12px;
-            /* overflow-x: hidden; */
-
-        }
-
-
-
-
-
-        /* @media screen and (max-width: 500px) {
-            .left_nav {
-                display: none;
-            }
-
-        } */
-
-
-
-
-        @media screen and (min-width: 750px) {
-            .text__container {
-                width: 94%;
-                height: 100vh;
-                /* background-color: rgb(124, 124, 124); */
-                margin: 80px auto 0 auto;
-
-            }
-
-            .top_nav_searchbar_box {
-                width: 200px;
-            }
-
-            .left_nav {
-                display: block !important;
-            }
-
-            .left_div {
-                display: block !important;
-            }
-
-            .bars {
-                opacity: 0;
-            }
-
-            .top_nav_movwe_img-2 {
-                display: none !important;
-            }
-        }
-
-        /* ---------------------------------------- */
-
-
-
-        /* ---------------------------------------- */
-    </style>
+<link rel="stylesheet" href="./css/single_movie.css">
+<link rel="stylesheet" href="./css/Carousel_1.css">
+<link rel="stylesheet" href="./css/Carousel_6.css">
+<link rel="stylesheet" href="./css/Carousel_7.css">
+<link rel="stylesheet" href="./css/Carousel_8.css">
+<link rel="stylesheet" href="./css/slider.css">
+<!-- <link rel="stylesheet" href="./css/footer.css"> -->
+<style>
+    /*  */
+</style>
 </head>
 
 <body>
     <!----------nav_top-------------->
-    <div class="Navbar__container">
-        <div class="top_nav">
-            <div class="top_nav_left">
-                <div class="top_nav_logo">
-                    <div class="top_nav_logo_box">
-                        <img class="top_nav_movwe_img-2" src="./img/icons/close.svg" alt="">
-                        <i class="fa-solid fa-bars top_nav_movwe_img bars"></i>
-                        <img class="origin__logo" src="./img/logo/logo.svg" alt="">
-                    </div>
-                </div>
-                <a href="Home-0516-final copy.html">
-                    <div class="top_nav_movwe_box">
-                        <img class="top_nav_movwe_img mobil__show" src="./img/logo/logo_movwe_word.svg" alt="">
-                        <img class="top_nav_movwe_img desk__show" src="./img/logo/logo_word.svg" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="top_nav_right">
-                <div class="top_nav_searchbar_box">
-                    <input type="text" class="top_nav_searchbar" placeholder="輸入片名">
-                    <div class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                </div>
-
-                <a class="top__nav__icon__box " href="#">
-                    <div class="top__nav__member">
-                        <div class="nav_icon_box icon_W-H">
-                            <i class="fa-solid fa-cart-shopping shop__card"></i>
-                        </div>
-                        <p class="shopcard__text">購物車</p>
-                    </div>
-                </a>
-
-                <a class="top__nav__icon__box" href="#">
-                    <div class="top__nav__member">
-                        <div class="nav_icon_box icon_W-H">
-                            <i class="fa-solid fa-file-video movie__likes"></i>
-                        </div>
-                        <p class="movie__like__text">片單</p>
-                    </div>
-                </a>
-
-                <a class="top__nav__icon__box" href="#">
-                    <div class="top__nav__member">
-                        <div class="nav_icon_box icon_W-H">
-                            <i class="fa-solid fa-user member__login"></i>
-                            <div class="nav__member__picture__box">
-                                <img class="nav__member__picture" src="./img/center/actor-1.jpeg" alt="">
-                            </div>
-                        </div>
-                        <p class="home__logout">登出</p>
-                        <p class="home__login">登入</p>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-        <div class="left_nav">
-            <div class="left_nav_box">
-            </div>
-            <!-- <div class="left_nav_box ">
-                <div class="left_nav_home icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-house "></i>
-                    </div>
-                </div>
-                <div class="nav_text_01 ">
-                    <div class="h-60px">首頁 <span class="down">
-                        </span> </div>
-                </div>
-
-            </div>
-            <div class="title_bottom">
-                <div class="title_">首頁</div>
-            </div> -->
-            <div class="left_nav_box Movie">
-                <div class="left_nav_movie icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-film"></i>
-                    </div>
-                    <div class="nav_text_01 ">
-                        <div class="h-60px movie_btn">影劇 <span class="down"><i
-                                    class="fa-solid fa-angle-down"></i></span></div>
-                        <a href="#">
-                            <p class="text_a">影劇搜尋器</p>
-                        </a>
-                        <a href="#">
-                            <p class="text_a">ott上片資訊</p>
-                        </a>
-                        <a href="#">
-                            <p class="text_a">許願池</p>
-                        </a>
-                        <a href="#">
-                            <p class="text_a">心理測驗</p>
-                        </a>
-                        <a href="#">
-                            <p class="text_a">我的片單</p>
-                        </a>
-                        <a href="#">
-                            <p class="text_a">預約片單</p>
-                        </a>
-                        <a href="#">
-                            <p class="text_a">許願清單</p>
-                        </a>
-                        <a href="#">
-                            <p class="text_a">曾經瀏覽</p>
-                        </a>
-                        <a href="#">
-                            <p class="text_a">ott優惠卷</p>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">影劇</div>
-            </div>
-            <div class="left_nav_box Store">
-                <div class="left_nav_store icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-store"></i>
-                    </div>
-                    <div class="nav_text_01 ">
-                        <div class="h-60px store_btn">商城 <span class="down"><i
-                                    class="fa-solid fa-angle-down"></i></span></div>
-                        <a href="#">
-                            <p class="text_a">主打活動</p>
-                        </a>
-                        <a href="#">
-                            <p class="text_a">商品總覽</p>
-                        </a>
-                        <a href="#">
-                            <p class="text_a">購物車</p>
-                        </a>
-                        <a href="#">
-                            <p class="text_a">我的訂單</p>
-                        </a>
-                        < class="text_a">商城優或卷</>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">商城</div>
-            </div>
-
-            <div class="left_nav_box Form">
-                <div class="left_nav_forum icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-pencil pp"></i>
-                    </div>
-                    <div class="nav_text_01 ">
-                        <div class="h-60px form_btn">文章 <span class="down"><i class="fa-solid fa-angle-down"></i></span>
-                        </div>
-                        <a href="#">
-                            <p class="text_a">文章總覽</p>
-                        </a>
-                        <a href="#">
-                            <p class="text_a">熱門作者</p>
-                        </a>
-                        <a href="#">
-                            <p class="text_a">熱門文章</p>
-                        </a>
-                        <a href="#">
-                            <p class="text_a">我的收藏</p>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">文章</div>
-            </div>
-
-            <!-- <div class="left_nav_box">
-                <div class="left_nav_member icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-user-gear"></i>
-                    </div>
-                    <div class="nav_text_01">
-                        <div class="h-60px">會員 <span class="down">
-                            </span></div>
-                        <p>00</p>
-                        <p>00</p>
-                        <p>00</p>
-                        <p>00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">會員</div>
-            </div> -->
-
-            <div class="left_nav_box">
-                <div class="left_nav_discount icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-hand-holding-dollar"></i>
-                    </div>
-                    <div class="nav_text_01">
-                        <div class="h-60px">優惠 <span class="down">
-                                <!-- <i class="fa-solid fa-angle-down"></i> -->
-                            </span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">優惠</div>
-            </div>
-            <!-- <div class="left_nav_box">
-                <div class="left_nav_discount icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-coins"></i>
-                    </div>
-                    <div class="nav_text_01">
-                        <div class="h-60px">點數 <span class="down">
-                            </span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">點數</div>
-            </div> -->
-
-
-        </div>
-    </div>
+    <?php include __DIR__. '/parts/movwe_nav_fin.php' ?>
     <div class="layout">
-        <div class="left_div"></div>
         <!----------nav_left-------------->
+        <?php include __DIR__. '/parts/movwe_nav_leftdiv.php' ?>
 
         <!--------------------------------------------------------------------------->
         <div class="container">
@@ -388,8 +91,7 @@ require './parts/movwe_connect_db.php';
                             <div class="icon__box">
 
                                 <a href=""><img class="bottom_6_icon" src="./img/logo/friday_s.svg" alt=""></a>
-                                <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw"
-                                    target="_blank"><img class="bottom_6_icon" src="./img/logo/iqiyi_s.svg" alt=""></a>
+                                <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw" target="_blank"><img class="bottom_6_icon" src="./img/logo/iqiyi_s.svg" alt=""></a>
                                 <a href=""><img class="bottom_6_icon" src="./img/logo/kktv_s.svg" alt=""></a>
                                 <a href=""><img class="bottom_6_icon" src="./img/logo/netflix_s.svg" alt=""></a>
                             </div>
@@ -415,27 +117,21 @@ require './parts/movwe_connect_db.php';
                             <div class="movie__poster__box">
                                 <h1 class="movie__poster__box__h1">精彩劇照</h1>
 
-                                <div id="slider"
-                                    style="max-height: 400px; width: 90%; max-width: 960px; margin: 0 auto">
+                                <div id="slider" style="max-height: 400px; width: 90%; max-width: 960px; margin: 0 auto">
                                     <div class="slide">
-                                        <a href="./img/center/single__post-1.png" rel="lightbox[plants]"><img
-                                                src="./img/center/single__post-1.png" alt="" /></a>
+                                        <a href="./img/center/single__post-1.png" rel="lightbox[plants]"><img src="./img/center/single__post-1.png" alt="" /></a>
                                     </div>
                                     <div class="slide">
-                                        <a href="./img/center/single__post-2.png" rel="lightbox[plants]"><img
-                                                src="./img/center/single__post-2.png" alt="" /></a>
+                                        <a href="./img/center/single__post-2.png" rel="lightbox[plants]"><img src="./img/center/single__post-2.png" alt="" /></a>
                                     </div>
                                     <div class="slide">
-                                        <a href="./img/center/single__post-3.png" rel="lightbox[plants]"><img
-                                                src="./img/center/single__post-3.png" alt="" /></a>
+                                        <a href="./img/center/single__post-3.png" rel="lightbox[plants]"><img src="./img/center/single__post-3.png" alt="" /></a>
                                     </div>
                                     <div class="slide">
-                                        <a href="./img/center/single__post-4.png" rel="lightbox[plants]"><img
-                                                src="./img/center/single__post-4.png" alt="" /></a>
+                                        <a href="./img/center/single__post-4.png" rel="lightbox[plants]"><img src="./img/center/single__post-4.png" alt="" /></a>
                                     </div>
                                     <div class="slide">
-                                        <a href="./img/center/single__post-5.png" rel="lightbox[plants]"><img
-                                                src="./img/center/single__post-5.png" alt="" /></a>
+                                        <a href="./img/center/single__post-5.png" rel="lightbox[plants]"><img src="./img/center/single__post-5.png" alt="" /></a>
                                     </div>
                                 </div>
                             </div>
@@ -565,16 +261,13 @@ require './parts/movwe_connect_db.php';
                                     <div class="image__box__6">
                                         <div class="image__card__6">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-1.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-1.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi">
-                                                <img class="carousel__images__6" src="./img/center/Episode-1.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-1.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex">
-                                                <img class="carousel__images__6" src="./img/center/Episode-11.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-11.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_number">
                                                 <img src="./img/other/num01.png" alt="">
@@ -583,73 +276,61 @@ require './parts/movwe_connect_db.php';
 
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-2.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-2.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_2">
-                                                <img class="carousel__images__6" src="./img/center/Episode-2.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-2.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_2">
-                                                <img class="carousel__images__6" src="./img/center/Episode-12.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-12.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num02.png" alt="">
+                                                <img src="./img/other/num02.png" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-3.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-3.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_3">
-                                                <img class="carousel__images__6" src="./img/center/Episode-3.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-3.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_3">
-                                                <img class="carousel__images__6" src="./img/center/Episode-13.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-13.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num03.png" alt="">
+                                                <img src="./img/other/num03.png" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-4.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-4.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_4">
-                                                <img class="carousel__images__6" src="./img/center/Episode-4.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-4.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_4">
-                                                <img class="carousel__images__6" src="./img/center/Episode-14.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-14.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num04.png" alt="">
+                                                <img src="./img/other/num04.png" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-5.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-5.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_5">
-                                                <img class="carousel__images__6" src="./img/center/Episode-5.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-5.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_5">
-                                                <img class="carousel__images__6" src="./img/center/Episode-15.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-15.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num05.png" alt="">
+                                                <img src="./img/other/num05.png" alt="">
                                             </div>
 
                                         </div>
@@ -657,91 +338,76 @@ require './parts/movwe_connect_db.php';
                                     <div class="image__box__6">
                                         <div class="image__card__6">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-6.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-6.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-6.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-6.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-16.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-16.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num06.png" alt="">
+                                                <img src="./img/other/num06.png" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-7.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-7.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_7">
-                                                <img class="carousel__images__6" src="./img/center/Episode-7.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-7.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_7">
-                                                <img class="carousel__images__6" src="./img/center/Episode-17.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-17.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num07.png" alt="">
+                                                <img src="./img/other/num07.png" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-8.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-8.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_8">
-                                                <img class="carousel__images__6" src="./img/center/Episode-8.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-8.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_8">
-                                                <img class="carousel__images__6" src="./img/center/Episode-18.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-18.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num08.png" alt="">
+                                                <img src="./img/other/num08.png" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-9.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-9.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_9">
-                                                <img class="carousel__images__6" src="./img/center/Episode-9.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-9.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_9">
-                                                <img class="carousel__images__6" src="./img/center/Episode-19.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-19.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num09.png" alt="">
+                                                <img src="./img/other/num09.png" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-10.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-10.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__iQiyi_10">
-                                                <img class="carousel__images__6" src="./img/center/Episode-10.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-10.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box switch__netflex_10">
-                                                <img class="carousel__images__6" src="./img/center/Episode-5.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-5.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num10.png" alt="">
+                                                <img src="./img/other/num10.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -750,75 +416,65 @@ require './parts/movwe_connect_db.php';
                                     <div class="image__box__6">
                                         <div class="image__card__6">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-11.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-11.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="./img/center/Episode-11.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-11.jpg" alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num11.png" alt="">
+                                                <img src="./img/other/num11.png" alt="">
                                             </div>
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-12.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-12.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="./img/center/Episode-12.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-12.jpg" alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num12.png" alt="">
+                                                <img src="./img/other/num12.png" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-13.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-13.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="./img/center/Episode-13.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-13.jpg" alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num13.png" alt="">
+                                                <img src="./img/other/num13.png" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-14.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-14.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="./img/center/Episode-14.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-14.jpg" alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num14.png" alt="">
+                                                <img src="./img/other/num14.png" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-15.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-15.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="./img/center/Episode-15.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-15.jpg" alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num15.png" alt="">
+                                                <img src="./img/other/num15.png" alt="">
                                             </div>
 
                                         </div>
@@ -826,71 +482,61 @@ require './parts/movwe_connect_db.php';
                                     <div class="image__box__6">
                                         <div class="image__card__6">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-16.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-16.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="./img/center/Episode-16.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-16.jpg" alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num16.png" alt="">
+                                                <img src="./img/other/num16.png" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-17.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-17.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="./img/center/Episode-17.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-17.jpg" alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num17.png" alt="">
+                                                <img src="./img/other/num17.png" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-18.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-18.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="./img/center/Episode-18.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-18.jpg" alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num18.png" alt="">
+                                                <img src="./img/other/num18.png" alt="">
                                             </div>
 
                                         </div>
                                         <div class="image__card__6 wish__card-2">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-19.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-19.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="./img/center/Episode-19.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-19.jpg" alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                            <img src="./img/other/num19.png" alt="">
+                                                <img src="./img/other/num19.png" alt="">
                                             </div>
                                         </div>
                                         <div class="image__card__6 wish__card-2 carousel__opacity_0">
                                             <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-10.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-10.jpg" alt="">
                                             </div>
                                             <div class="single__page__dark_box">
-                                                <img class="carousel__images__6" src="./img/center/Episode-10.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__6" src="./img/center/Episode-10.jpg" alt="">
 
                                             </div>
                                             <div class="single__page__dark_number">
@@ -945,8 +591,7 @@ require './parts/movwe_connect_db.php';
                                     <div class="image__box__7">
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -954,8 +599,7 @@ require './parts/movwe_connect_db.php';
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
-                                                            <i
-                                                                class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
+                                                            <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
                                                             </b>
                                                     </div>
                                                     <div class="movie__icons__7">
@@ -978,8 +622,7 @@ require './parts/movwe_connect_db.php';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -987,8 +630,7 @@ require './parts/movwe_connect_db.php';
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
-                                                            <i
-                                                                class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
+                                                            <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
                                                             </b>
                                                     </div>
                                                     <div class="movie__icons__7">
@@ -1011,8 +653,7 @@ require './parts/movwe_connect_db.php';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -1020,8 +661,7 @@ require './parts/movwe_connect_db.php';
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
-                                                            <i
-                                                                class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
+                                                            <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
                                                             </b>
                                                     </div>
                                                     <div class="movie__icons__7">
@@ -1044,8 +684,7 @@ require './parts/movwe_connect_db.php';
                                         </div>
                                         <div class="image__card__7 card4__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -1053,8 +692,7 @@ require './parts/movwe_connect_db.php';
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
-                                                            <i
-                                                                class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
+                                                            <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
                                                             </b>
                                                     </div>
                                                     <div class="movie__icons__7">
@@ -1077,8 +715,7 @@ require './parts/movwe_connect_db.php';
                                         </div>
                                         <div class="image__card__7 card5__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -1086,8 +723,7 @@ require './parts/movwe_connect_db.php';
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
-                                                            <i
-                                                                class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
+                                                            <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
                                                             </b>
                                                     </div>
                                                     <div class="movie__icons__7">
@@ -1110,8 +746,7 @@ require './parts/movwe_connect_db.php';
                                         </div>
                                         <div class="image__card__7 card6__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -1119,8 +754,7 @@ require './parts/movwe_connect_db.php';
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
-                                                            <i
-                                                                class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
+                                                            <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
                                                             </b>
                                                     </div>
                                                     <div class="movie__icons__7">
@@ -1143,8 +777,7 @@ require './parts/movwe_connect_db.php';
                                         </div>
                                         <div class="image__card__7 card7__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -1152,8 +785,7 @@ require './parts/movwe_connect_db.php';
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
-                                                            <i
-                                                                class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
+                                                            <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
                                                             </b>
                                                     </div>
                                                     <div class="movie__icons__7">
@@ -1180,8 +812,7 @@ require './parts/movwe_connect_db.php';
                                     <div class="image__box__7">
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -1189,8 +820,7 @@ require './parts/movwe_connect_db.php';
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
-                                                            <i
-                                                                class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
+                                                            <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
                                                             </b>
                                                     </div>
                                                     <div class="movie__icons__7">
@@ -1213,8 +843,7 @@ require './parts/movwe_connect_db.php';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -1222,8 +851,7 @@ require './parts/movwe_connect_db.php';
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
-                                                            <i
-                                                                class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
+                                                            <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
                                                             </b>
                                                     </div>
                                                     <div class="movie__icons__7">
@@ -1246,8 +874,7 @@ require './parts/movwe_connect_db.php';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -1255,8 +882,7 @@ require './parts/movwe_connect_db.php';
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
-                                                            <i
-                                                                class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
+                                                            <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
                                                             </b>
                                                     </div>
                                                     <div class="movie__icons__7">
@@ -1279,8 +905,7 @@ require './parts/movwe_connect_db.php';
                                         </div>
                                         <div class="image__card__7 card4__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -1288,8 +913,7 @@ require './parts/movwe_connect_db.php';
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
-                                                            <i
-                                                                class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
+                                                            <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
                                                             </b>
                                                     </div>
                                                     <div class="movie__icons__7">
@@ -1312,8 +936,7 @@ require './parts/movwe_connect_db.php';
                                         </div>
                                         <div class="image__card__7 card5__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -1321,8 +944,7 @@ require './parts/movwe_connect_db.php';
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
-                                                            <i
-                                                                class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
+                                                            <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
                                                             </b>
                                                     </div>
                                                     <div class="movie__icons__7">
@@ -1345,16 +967,14 @@ require './parts/movwe_connect_db.php';
                                         </div>
                                         <div class="image__card__7 card6__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
                                                             豪華精裝典藏A版/2CD
                                                         </p>
                                                         <button class="Shop__card__icon__box">
-                                                            <i
-                                                                class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
+                                                            <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
                                                             </b>
                                                     </div>
                                                     <div class="movie__icons__7">
@@ -1377,8 +997,7 @@ require './parts/movwe_connect_db.php';
                                         </div>
                                         <div class="image__card__7 card7__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -1386,8 +1005,7 @@ require './parts/movwe_connect_db.php';
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
-                                                            <i
-                                                                class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
+                                                            <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
                                                             </b>
                                                     </div>
                                                     <div class="movie__icons__7">
@@ -1458,8 +1076,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card__8">
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8"
-                                                        src="./img/center/single__post-5.png" alt="">
+                                                    <img class="carousel__images__8" src="./img/center/single__post-5.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1473,13 +1090,11 @@ require './parts/movwe_connect_db.php';
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
@@ -1498,8 +1113,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card__8 image__card__8__mob_none">
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8"
-                                                        src="./img/center/single__post-4.png" alt="">
+                                                    <img class="carousel__images__8" src="./img/center/single__post-4.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1513,13 +1127,11 @@ require './parts/movwe_connect_db.php';
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
@@ -1538,8 +1150,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card__8 image__card__8__mob_none">
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8"
-                                                        src="./img/center/single__post-3.png" alt="">
+                                                    <img class="carousel__images__8" src="./img/center/single__post-3.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1553,13 +1164,11 @@ require './parts/movwe_connect_db.php';
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
@@ -1578,8 +1187,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card__8 image__card__8__mob_none">
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8"
-                                                        src="./img/center/single__post-2.png" alt="">
+                                                    <img class="carousel__images__8" src="./img/center/single__post-2.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1593,13 +1201,11 @@ require './parts/movwe_connect_db.php';
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
@@ -1618,8 +1224,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card__8 image__card__8__mob_none">
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8"
-                                                        src="./img/center/single__post-1.png" alt="">
+                                                    <img class="carousel__images__8" src="./img/center/single__post-1.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1633,13 +1238,11 @@ require './parts/movwe_connect_db.php';
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
@@ -1662,8 +1265,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card__8">
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8"
-                                                        src="./img/center/single__post-5.png" alt="">
+                                                    <img class="carousel__images__8" src="./img/center/single__post-5.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1677,13 +1279,11 @@ require './parts/movwe_connect_db.php';
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
@@ -1702,8 +1302,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card__8 image__card__8__mob_none">
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8"
-                                                        src="./img/center/single__post-4.png" alt="">
+                                                    <img class="carousel__images__8" src="./img/center/single__post-4.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1717,13 +1316,11 @@ require './parts/movwe_connect_db.php';
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
@@ -1742,8 +1339,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card__8 image__card__8__mob_none">
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8"
-                                                        src="./img/center/single__post-3.png" alt="">
+                                                    <img class="carousel__images__8" src="./img/center/single__post-3.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1757,13 +1353,11 @@ require './parts/movwe_connect_db.php';
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
@@ -1782,8 +1376,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card__8 image__card__8__mob_none">
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8"
-                                                        src="./img/center/single__post-2.png" alt="">
+                                                    <img class="carousel__images__8" src="./img/center/single__post-2.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1797,13 +1390,11 @@ require './parts/movwe_connect_db.php';
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
@@ -1822,8 +1413,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card__8 image__card__8__mob_none">
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8"
-                                                        src="./img/center/single__post-1.png" alt="">
+                                                    <img class="carousel__images__8" src="./img/center/single__post-1.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1837,13 +1427,11 @@ require './parts/movwe_connect_db.php';
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
@@ -1866,8 +1454,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card__8">
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8"
-                                                        src="./img/center/single__post-5.png" alt="">
+                                                    <img class="carousel__images__8" src="./img/center/single__post-5.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1881,13 +1468,11 @@ require './parts/movwe_connect_db.php';
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
@@ -1906,8 +1491,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card__8 image__card__8__mob_none">
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8"
-                                                        src="./img/center/single__post-4.png" alt="">
+                                                    <img class="carousel__images__8" src="./img/center/single__post-4.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1921,13 +1505,11 @@ require './parts/movwe_connect_db.php';
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
@@ -1946,8 +1528,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card__8 image__card__8__mob_none">
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8"
-                                                        src="./img/center/single__post-3.png" alt="">
+                                                    <img class="carousel__images__8" src="./img/center/single__post-3.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -1961,13 +1542,11 @@ require './parts/movwe_connect_db.php';
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
@@ -1986,8 +1565,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card__8 image__card__8__mob_none">
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8"
-                                                        src="./img/center/single__post-2.png" alt="">
+                                                    <img class="carousel__images__8" src="./img/center/single__post-2.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -2001,13 +1579,11 @@ require './parts/movwe_connect_db.php';
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
@@ -2026,8 +1602,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card__8 image__card__8__mob_none">
                                             <div class="carousel__images__box__8">
                                                 <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8"
-                                                        src="./img/center/single__post-1.png" alt="">
+                                                    <img class="carousel__images__8" src="./img/center/single__post-1.png" alt="">
                                                 </div>
                                                 <div class="ott__article__typ">
                                                     電視劇
@@ -2041,13 +1616,11 @@ require './parts/movwe_connect_db.php';
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
                                                             <div>500</div>
                                                         </div>
                                                         <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg"
-                                                                    alt=""></div>
+                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
                                                                 500
                                                             </div>
@@ -2109,8 +1682,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
@@ -2233,8 +1805,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_16w.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/h_16w.jpeg" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -2358,8 +1929,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_17w.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/h_17w.jpeg" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -2482,8 +2052,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card card4">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_18w.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/h_18w.jpeg" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -2607,8 +2176,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card card5">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_19w.webp" alt="">
+                                                    <img class="information__video" src="./img/center/h_19w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -2732,8 +2300,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card card6">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_20w.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/h_20w.jpeg" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -2857,8 +2424,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card card7">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_21w.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/h_21w.jpeg" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -2985,8 +2551,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_2w.webp" alt="">
+                                                    <img class="information__video" src="./img/center/h_2w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -3109,14 +2674,13 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_3w.webp" alt="">
+                                                    <img class="information__video" src="./img/center/h_3w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
                                                         <div class="information__bottom_1 Bottom__display">
                                                             <p class="information__typ">
-                                                            影劇
+                                                                影劇
                                                             </p>
                                                             <div class="bottom_6_icon_box">
                                                                 <a href="#">
@@ -3234,8 +2798,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_4w.webp" alt="">
+                                                    <img class="information__video" src="./img/center/h_4w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -3359,8 +2922,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card card4">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_5w.webp" alt="">
+                                                    <img class="information__video" src="./img/center/h_5w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -3484,8 +3046,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card card5">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_6w.webp" alt="">
+                                                    <img class="information__video" src="./img/center/h_6w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -3551,7 +3112,7 @@ require './parts/movwe_connect_db.php';
                                                             <span class="speace"> / </span>
                                                             <a href="#">
                                                                 <p class="information__actor__name">
-                                                                    克利斯汀 
+                                                                    克利斯汀
                                                                 </p>
                                                             </a>
                                                             <span class="speace"> / </span>
@@ -3610,8 +3171,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card card6">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_7w.webp" alt="">
+                                                    <img class="information__video" src="./img/center/h_7w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -3736,8 +3296,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card card7">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_8w.webp" alt="">
+                                                    <img class="information__video" src="./img/center/h_8w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -3865,8 +3424,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_9w.webp" alt="">
+                                                    <img class="information__video" src="./img/center/h_9w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -3900,7 +3458,7 @@ require './parts/movwe_connect_db.php';
                                                         </div>
                                                         <div class="information__bottom_2 Bottom__display">
                                                             <p class="information__name">
-                                                                    工作細胞
+                                                                工作細胞
                                                             </p>
                                                         </div>
                                                         <div class="information__bottom_3 Bottom__display">
@@ -3920,7 +3478,7 @@ require './parts/movwe_connect_db.php';
                                                                 輕鬆喜劇 /
                                                             </p>
                                                             <p>
-                                                                闔家觀賞 
+                                                                闔家觀賞
                                                             </p>
                                                         </div>
                                                         <div class="information__bottom_5 Bottom__display">
@@ -3991,8 +3549,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_10w.webp" alt="">
+                                                    <img class="information__video" src="./img/center/h_10w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -4117,8 +3674,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_12w.webp" alt="">
+                                                    <img class="information__video" src="./img/center/h_12w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -4243,8 +3799,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card card4">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_11w.webp" alt="">
+                                                    <img class="information__video" src="./img/center/h_11w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -4366,8 +3921,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card card5">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_13w.webp" alt="">
+                                                    <img class="information__video" src="./img/center/h_13w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -4492,8 +4046,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card card6">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_14w.webp" alt="">
+                                                    <img class="information__video" src="./img/center/h_14w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -4618,8 +4171,7 @@ require './parts/movwe_connect_db.php';
                                         <div class="image__card card7">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/h_15w.webp" alt="">
+                                                    <img class="information__video" src="./img/center/h_15w.webp" alt="">
                                                 </div>
                                                 <a href="#">
                                                     <div class="information__bottom">
@@ -4771,13 +4323,14 @@ require './parts/movwe_connect_db.php';
 
             </div>
 
+            <?php include __DIR__. '/parts/movwe_footer.php' ?>
         </div>
     </div>
 
 
 
 
-    <script src="./js/jquery-3.6.0.js"></script>
+    <!-- <script src="./js/jquery-3.6.0.js"></script> -->
     <script src="./js/jquery-1.7.2.min.js"></script>
     <script src="./js/Nav.js"></script>
     <script src="./js/Carousel_1.js"></script>

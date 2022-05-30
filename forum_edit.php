@@ -6,7 +6,7 @@ $title = 'Movwe-我要發文';
 
 ?>
 
-<?php include __DIR__ . './parts/movwe_head.php' ?>
+<?php include __DIR__ . '/parts/movwe_head.php' ?>
 
 
 <link rel="stylesheet" href="./css/mystyle.css">
@@ -18,10 +18,10 @@ $title = 'Movwe-我要發文';
 </head>
 
 <body>
-    <?php include __DIR__ . './parts/movwe_nav.php' ?>
+    <?php include __DIR__. '/parts/movwe_nav.php' ?>
     <div class="layout">
 
-        <?php include __DIR__ . './parts/movwe_nav_leftdiv.php' ?>
+        <?php include __DIR__. '/parts/movwe_nav_leftdiv.php' ?>
 
         <div class="container">
 
@@ -114,11 +114,13 @@ $title = 'Movwe-我要發文';
                 </div>
 
             </div>
+            <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
     </div>
 
 
-    <?php include __DIR__ . './parts/movwe_scripts.php' ?>
+    <?php include __DIR__ . '/parts/movwe_scripts.php' ?>
     <script src="./js/forum_edit.js"></script>
 
-    <?php include __DIR__ . './parts/movwe_footer.php' ?>
+</body>
+</html>

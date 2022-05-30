@@ -6,7 +6,7 @@ $title = '2521感想ㄧ事與願違是另有安排';
 
 ?>
 
-<?php include __DIR__ . './parts/movwe_head.php' ?>
+<?php include __DIR__ . '/parts/movwe_head.php' ?>
 
 
 <link rel="stylesheet" href="./css/mystyle.css">
@@ -15,10 +15,10 @@ $title = '2521感想ㄧ事與願違是另有安排';
 </head>
 
 <body>
-    <?php include __DIR__ . './parts/movwe_nav.php' ?>
+    <?php include __DIR__ . '/parts/movwe_nav_fin.php' ?>
     <div class="layout">
 
-        <?php include __DIR__ . './parts/movwe_nav_leftdiv.php' ?>
+        <?php include __DIR__ . '/parts/movwe_nav_leftdiv.php' ?>
 
         <div class="container">
             <!--text__container------內容放這邊------------->
@@ -296,8 +296,10 @@ $title = '2521感想ㄧ事與願違是另有安排';
                     </div>
                 </div>
             </div>
+
+            <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
 
-        <?php include __DIR__ . './parts/movwe_scripts.php' ?>
-
-        <?php include __DIR__ . './parts/movwe_footer.php' ?>
+        <?php include __DIR__ . '/parts/movwe_scripts.php' ?>
+</body>
+</html>
