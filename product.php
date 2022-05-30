@@ -278,7 +278,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪 周邊娃娃';
                                     請到優惠券專區了解詳情!</h4>
                             </div>
                             <div class="d-flex justify-center align-item-center mt-10">
-                                <img src="./img/banner/mell_point.jpg" alt="">
+                                <img src="./img/banner/mell_point.jpg" alt="" href="./point_index.php">
                             </div>
                         </div>
 
@@ -352,7 +352,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪 周邊娃娃';
                                     請到優惠券專區了解詳情!</h4>
                             </div>
                             <div class="mt-10">
-                                <img src="./img/banner/point.png" alt="">
+                                <img src="./img/banner/point.png" alt="" href="./point_index.php">
                             </div>
                         </div>
                     </div>
