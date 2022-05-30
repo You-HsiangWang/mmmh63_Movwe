@@ -82,6 +82,21 @@
             background-color:rgb(16, 255, 163);
             box-shadow: 0 0 5px rgb(16, 255, 163)
         }
+        .wishcard:hover .wish_total_1::after{
+            filter: brightness(130%);
+            background-color:rgb(16, 255, 163);
+            box-shadow: 0 0 5px rgb(16, 255, 163)
+        }
+        .wishcard:hover .wish_total_2::after{
+            filter: brightness(130%);
+            background-color:rgb(16, 255, 163);
+            box-shadow: 0 0 5px rgb(16, 255, 163)
+        }
+        .wishcard:hover .wish_total_3::after{
+            filter: brightness(130%);
+            background-color:rgb(16, 255, 163);
+            box-shadow: 0 0 5px rgb(16, 255, 163)
+        }
         .image__card{
             width: 110px;
         }
@@ -105,6 +120,15 @@
                 border-top: 2px solid rgba(16, 255, 163, 0);
                 border-bottom: 2px solid rgba(16, 255, 163, 0);
                 box-shadow: 0 -15px 5px -16px rgba(16, 255, 163, 0);
+            }
+            .card-article:hover{
+            transform: translateY(-5%);
+            border-radius: 8px;
+            transform: scale(1.02);
+            transition: .5s;
+            }
+            .posticon-hashtag{
+                cursor: pointer;
             }
         }
     </style>
@@ -278,7 +302,7 @@
                                                                     闔家觀賞
                                                                 </p>
                                                             </div>
-                                                            <div class="information__bottom_5 Bottom__display">
+                                                            <!-- <div class="information__bottom_5 Bottom__display">
                                                                 <a href="#">
                                                                     <p class="information__actor__name">
                                                                         安妮亞
@@ -298,7 +322,7 @@
                                                                     </p>
                                                                 </a>
 
-                                                            </div>
+                                                            </div> -->
 
                                                             <div class="information__bottom_6-5 Bottom__display">
                                                                 <a href="./single-movie-page0511.html">
@@ -381,7 +405,7 @@
                                                                     闔家觀賞
                                                                 </p>
                                                             </div>
-                                                            <div class="information__bottom_5 Bottom__display">
+                                                            <!-- <div class="information__bottom_5 Bottom__display">
                                                                 <a href="#">
                                                                     <p class="information__actor__name">
                                                                         蔡淑臻
@@ -401,7 +425,7 @@
                                                                     </p>
                                                                 </a>
 
-                                                            </div>
+                                                            </div> -->
 
                                                             <div class="information__bottom_6-5 Bottom__display">
                                                                 <a href="./single-movie-page0511.html">
@@ -492,7 +516,7 @@
                                                                     懸疑推理
                                                                 </p>
                                                             </div>
-                                                            <div class="information__bottom_5 Bottom__display">
+                                                            <!-- <div class="information__bottom_5 Bottom__display">
                                                                 <a href="#">
                                                                     <p class="information__actor__name">
                                                                         大衛·芬奇
@@ -505,7 +529,7 @@
                                                                     </p>
                                                                 </a>
 
-                                                            </div>
+                                                            </div> -->
 
                                                             <div class="information__bottom_6-5 Bottom__display">
                                                                 <a href="./single-movie-page0511.html">
@@ -545,31 +569,45 @@
                                                                 
                                                         <div class="information__bottom">
                                                                     <div class="information__bottom_1 Bottom__display">
-                                                                        <p class="information__typ">
-                                                                            <?= $FLrowinfo['video_genre'] ?>
-                                                                        </p>
+                                                                    <p class="information__typ" style="<?php
+                                                                        $ottcolor = [
+                                                                            '2' => '#10FFA2',
+                                                                            '3' => '#1CD8FF',
+                                                                            '1' => '#FC6F51',
+                                                                        ];
+                                                                        if($FLrowinfo['video_genre'] == '影劇'){
+                                                                            $color = $ottcolor['1'];
+                                                                        }else if($HLrowinfo['video_genre'] == '電影'){
+                                                                            $color = $ottcolor['2'];
+                                                                        }else if($FLrowinfo['video_genre'] == '動畫'){
+                                                                            $color = $ottcolor['3'];
+                                                                        };
+                                                                        echo 'color:' . $color .'; border: 1px solid' . $color;
+                                                                        ?>"><?= $FLrowinfo['video_genre'] ?>
+                                                                    </p>
+                                                                        
                                                                         <div class="bottom_6_icon_box">
-                                                                            <a href="#">
-                                                                                <p class="bottom_6_icon">
-                                                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                                                </p>
-                                                                            </a>
-                                                                            <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw"
-                                                                                target="_blank">
-                                                                                <p class="bottom_6_icon">
-                                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                            </a>
-                                                                            </p>
-                                                                            <a href="#">
-                                                                                <p class="bottom_6_icon">
-                                                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                                                </p>
-                                                                            </a>
-                                                                            <a href="#">
-                                                                                <p class="bottom_6_icon">
-                                                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                                                </p>
-                                                                            </a>
+                                                                            <?php
+                                                                            $ottdata = [
+                                                                                '4' => 'friday_s.svg',
+                                                                                '2' => 'iqiyi_s.svg',
+                                                                                '3' => 'kktv_s.svg',
+                                                                                '1' => 'netflix_s.svg',
+                                                                            ];
+
+                                                                            $ar = json_decode($FLrowinfo['video_ott'], true);
+                                                                            if ($ar and count($ar)) {
+                                                                                foreach ($ar as $v) {
+                                                                                    if (!empty($ottdata[$v])) {
+                                                                                        echo '<a href="#">
+                                                                                        <p class="bottom_6_icon">
+                                                                                            <img src="./img/logo/' . $ottdata[$v] . '" alt="">
+                                                                                        </p>
+                                                                                    </a>';
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                            ?>
                                                                         </div>
 
                                                                     </div>
@@ -592,13 +630,13 @@
                                                                     </div>
                                                                     <div class="information__bottom_4 Bottom__display">
                                                                         <p>
-                                                                            <?= $FLrowinfo['video_style'] ?>
+                                                                            <?= str_replace('，', ' / ', str_replace(' ', '', $FLrowinfo['video_style'])) ?>
                                                                         </p>
                                                                         <!-- <p>
                                                                             奇幻冒險
                                                                         </p> -->
                                                                     </div>
-                                                                    <div class="information__bottom_5 Bottom__display">
+                                                                    <!-- <div class="information__bottom_5 Bottom__display">
                                                                         <a href="#">
                                                                             <p class="information__actor__name">
                                                                                 孔劉
@@ -618,7 +656,7 @@
                                                                             </p>
                                                                         </a>
 
-                                                                    </div>
+                                                                    </div> -->
 
                                                                     <div class="information__bottom_6-5 Bottom__display">
                                                                         <a href="./single-movie-page0511.html">
@@ -637,19 +675,29 @@
                                                         <div class="ac_flim_name">
                                                             <?= $FLrowinfo['video_name'] ?>
                                                         </div>
+
                                                         <div class="ac_ott">
-                                                            <div class="ac_friday">
-                                                                <img src="./img/logo/friday_s.svg" alt="">
-                                                            </div>
-                                                            <div class="ac_iqiyi">
-                                                                <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                            </div>
-                                                            <div class="ac_kktv">
-                                                                <img src="./img/logo/kktv_s.svg" alt="">
-                                                            </div>
-                                                            <div class="ac_netflix">
-                                                                <img src="./img/logo/netflix_s.svg" alt="">
-                                                            </div>
+                                                            <?php
+                                                            $ottdata = [
+                                                                '4' => 'friday_s.svg',
+                                                                '2' => 'iqiyi_s.svg',
+                                                                '3' => 'kktv_s.svg',
+                                                                '1' => 'netflix_s.svg',
+                                                            ];
+                                                            $ar = json_decode($FLrowinfo['video_ott'], true);
+                                                                if ($ar and count($ar)) {
+                                                                    foreach ($ar as $v) {
+                                                                        if (!empty($ottdata[$v])) {
+                                                                            echo '<a href="#">
+                                                                            <div class="ac_netflix">
+                                                                                <img src="./img/logo/' . $ottdata[$v] . '" alt="">
+                                                                            </div>
+                                                                            
+                                                                        </a>';
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ?>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -750,8 +798,8 @@
                                                 </div>
                                                 <div class="wish_words">
                                                     <div class="wish_word_top">
-                                                        <div class="wish_type d-filter-d">
-                                                            影劇
+                                                        <div class="wish_type d-filter-m">
+                                                            電影
                                                         </div>
                                                         <button class="wish_btn">
                                                             <div class="wish_icon">
@@ -760,7 +808,7 @@
                                                         </button>
                                                     </div>
                                                     <div class="wish_word_middle">
-                                                        東大特訓班
+                                                        變身國王
                                                     </div>
                                                     <div class="wish_word_bottom">
                                                         <div class="wish_total_2"></div>
@@ -769,142 +817,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                        </div> 
-                                            <!-- 動態產生 -->
-                                            <!-- <?php foreach ($WLrow as $WLrowinfo) : ?>
-                                                <div class="wishcard">
-                                                    <div class="wish_pic">
-                                                        <img src="./videodb/video/<?= $WLrowinfo['video_poster_hor'] ?>" alt="">
-                                                    </div>
-                                                    <div class="wish_words">
-                                                        <div class="wish_word_top">
-                                                            <div class="wish_type">
-                                                                <?= $WLrowinfo['video_genre'] ?>
-                                                            </div>
-                                                            <button class="wish_btn">
-                                                                <div class="wish_icon">
-                                                                    <img src="./img/icons/wish.svg" alt="">
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                        <div class="wish_word_middle">
-                                                        <?= $WLrowinfo['video_name'] ?>
-                                                        </div>
-                                                        <div class="wish_word_bottom">
-                                                            <div class="wish_total"></div>
-                                                            <div class="wish_vote">
-                                                                已有 <span>2467</span> 人參與許願
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            <?php endforeach; ?> -->
-
-                                            <!-- <div class="wishcard">
-                                                <div class="wish_pic">
-                                                    <img src="./img/member/batman.png" alt="">
-                                                </div>
-                                                <div class="wish_words">
-                                                    <div class="wish_word_top">
-                                                        <div class="wish_type">
-                                                            電影
-                                                        </div>
-                                                        <button class="wish_btn">
-                                                            <div class="wish_icon">
-                                                                <img src="./img/icons/wish.svg" alt="">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="wish_word_middle">
-                                                        蝙蝠俠
-                                                    </div>
-                                                    <div class="wish_word_bottom">
-                                                        <div class="wish_total"></div>
-                                                        <div class="wish_vote">
-                                                            已有 <span>2467</span> 人參與許願
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wishcard">
-                                                <div class="wish_pic">
-                                                    <img src="./img/member/batman.png" alt="">
-                                                </div>
-                                                <div class="wish_words">
-                                                    <div class="wish_word_top">
-                                                        <div class="wish_type">
-                                                            電影
-                                                        </div>
-                                                        <button class="wish_btn">
-                                                            <div class="wish_icon">
-                                                                <img src="./img/icons/wish.svg" alt="">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="wish_word_middle">
-                                                        蝙蝠俠
-                                                    </div>
-                                                    <div class="wish_word_bottom">
-                                                        <div class="wish_total"></div>
-                                                        <div class="wish_vote">
-                                                            已有 <span>2467</span> 人參與許願
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wishcard">
-                                                <div class="wish_pic">
-                                                    <img src="./img/member/batman.png" alt="">
-                                                </div>
-                                                <div class="wish_words">
-                                                    <div class="wish_word_top">
-                                                        <div class="wish_type">
-                                                            電影
-                                                        </div>
-                                                        <button class="wish_btn">
-                                                            <div class="wish_icon">
-                                                                <img src="./img/icons/wish.svg" alt="">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="wish_word_middle">
-                                                        蝙蝠俠
-                                                    </div>
-                                                    <div class="wish_word_bottom">
-                                                        <div class="wish_total"></div>
-                                                        <div class="wish_vote">
-                                                            已有 <span>2467</span> 人參與許願
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wishcard">
-                                                <div class="wish_pic">
-                                                    <img src="./img/member/batman.png" alt="">
-                                                </div>
-                                                <div class="wish_words">
-                                                    <div class="wish_word_top">
-                                                        <div class="wish_type">
-                                                            電影
-                                                        </div>
-                                                        <button class="wish_btn">
-                                                            <div class="wish_icon">
-                                                                <img src="./img/icons/wish.svg" alt="">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="wish_word_middle">
-                                                        蝙蝠俠
-                                                    </div>
-                                                    <div class="wish_word_bottom">
-                                                        <div class="wish_total"></div>
-                                                        <div class="wish_vote">
-                                                            已有 <span>2467</span> 人參與許願
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div> -->
-                                            
+                                        </div>                             
                                     </div>
                                 </div>
                                 
@@ -979,7 +892,7 @@
                                                                     奇幻冒險
                                                                 </p>
                                                             </div>
-                                                            <div class="information__bottom_5 Bottom__display">
+                                                            <!-- <div class="information__bottom_5 Bottom__display">
                                                                 <a href="#">
                                                                     <p class="information__actor__name">
                                                                         孔劉
@@ -999,7 +912,7 @@
                                                                     </p>
                                                                 </a>
 
-                                                            </div>
+                                                            </div> -->
 
                                                             <div class="information__bottom_6-5 Bottom__display">
                                                                 <a href="./single-movie-page0511.html">
@@ -1054,31 +967,46 @@
                                                                 
                                                         <div class="information__bottom">
                                                                     <div class="information__bottom_1 Bottom__display">
-                                                                        <p class="information__typ">
-                                                                            <?= $HLrowinfo['video_genre'] ?>
-                                                                        </p>
+
+                                                                    <p class="information__typ" style="<?php
+                                                                        $ottcolor = [
+                                                                            '2' => '#10FFA2',
+                                                                            '3' => '#1CD8FF',
+                                                                            '1' => '#FC6F51',
+                                                                        ];
+                                                                        if($HLrowinfo['video_genre'] == '影劇'){
+                                                                            $color = $ottcolor['1'];
+                                                                        }else if($HLrowinfo['video_genre'] == '電影'){
+                                                                            $color = $ottcolor['2'];
+                                                                        }else if($HLrowinfo['video_genre'] == '動畫'){
+                                                                            $color = $ottcolor['3'];
+                                                                        };
+                                                                        echo 'color:' . $color .'; border: 1px solid' . $color;
+                                                                        ?>"><?= $HLrowinfo['video_genre'] ?>
+                                                                    </p>
+
                                                                         <div class="bottom_6_icon_box">
-                                                                            <a href="#">
-                                                                                <p class="bottom_6_icon">
-                                                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                                                </p>
-                                                                            </a>
-                                                                            <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw"
-                                                                                target="_blank">
-                                                                                <p class="bottom_6_icon">
-                                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                            </a>
-                                                                            </p>
-                                                                            <a href="#">
-                                                                                <p class="bottom_6_icon">
-                                                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                                                </p>
-                                                                            </a>
-                                                                            <a href="#">
-                                                                                <p class="bottom_6_icon">
-                                                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                                                </p>
-                                                                            </a>
+                                                                            <?php
+                                                                            $ottdata = [
+                                                                                '4' => 'friday_s.svg',
+                                                                                '2' => 'iqiyi_s.svg',
+                                                                                '3' => 'kktv_s.svg',
+                                                                                '1' => 'netflix_s.svg',
+                                                                            ];
+
+                                                                            $ar = json_decode($HLrowinfo['video_ott'], true);
+                                                                            if ($ar and count($ar)) {
+                                                                                foreach ($ar as $v) {
+                                                                                    if (!empty($ottdata[$v])) {
+                                                                                        echo '<a href="#">
+                                                                                        <p class="bottom_6_icon">
+                                                                                            <img src="./img/logo/' . $ottdata[$v] . '" alt="">
+                                                                                        </p>
+                                                                                    </a>';
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                            ?>
                                                                         </div>
 
                                                                     </div>
@@ -1101,13 +1029,13 @@
                                                                     </div>
                                                                     <div class="information__bottom_4 Bottom__display">
                                                                         <p>
-                                                                            <?= $HLrowinfo['video_style'] ?>
+                                                                            <?= str_replace('，', ' / ', str_replace(' ', '', $HLrowinfo['video_style'])) ?>
                                                                         </p>
                                                                         <!-- <p>
                                                                             奇幻冒險
                                                                         </p> -->
                                                                     </div>
-                                                                    <div class="information__bottom_5 Bottom__display">
+                                                                    <!-- <div class="information__bottom_5 Bottom__display">
                                                                         <a href="#">
                                                                             <p class="information__actor__name">
                                                                                 孔劉
@@ -1127,7 +1055,7 @@
                                                                             </p>
                                                                         </a>
 
-                                                                    </div>
+                                                                    </div> -->
 
                                                                     <div class="information__bottom_6-5 Bottom__display">
                                                                         <a href="./single-movie-page0511.html">
@@ -1154,18 +1082,27 @@
                                                             <?= $HLrowinfo['video_name'] ?>
                                                         </div>
                                                         <div class="ac_ott">
-                                                            <div class="ac_friday">
-                                                                <img src="./img/logo/friday_s.svg" alt="">
-                                                            </div>
-                                                            <div class="ac_iqiyi">
-                                                                <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                            </div>
-                                                            <div class="ac_kktv">
-                                                                <img src="./img/logo/kktv_s.svg" alt="">
-                                                            </div>
-                                                            <div class="ac_netflix">
-                                                                <img src="./img/logo/netflix_s.svg" alt="">
-                                                            </div>
+                                                            <?php
+                                                            $ottdata = [
+                                                                '4' => 'friday_s.svg',
+                                                                '2' => 'iqiyi_s.svg',
+                                                                '3' => 'kktv_s.svg',
+                                                                '1' => 'netflix_s.svg',
+                                                            ];
+                                                            $ar = json_decode($HLrowinfo['video_ott'], true);
+                                                                if ($ar and count($ar)) {
+                                                                    foreach ($ar as $v) {
+                                                                        if (!empty($ottdata[$v])) {
+                                                                            echo '<a href="#">
+                                                                            <div class="ac_netflix">
+                                                                                <img src="./img/logo/' . $ottdata[$v] . '" alt="">
+                                                                            </div>
+                                                                            
+                                                                        </a>';
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ?>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1533,14 +1470,9 @@
                                                             </input>
                                                             <span class="mr-20">43</span>
                                                             <input type="button" hidden>
-                                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z"
-                                                                    stroke="#10FFA2" />
-                                                                <path
-                                                                    d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z"
-                                                                    fill="#10FFA2" />
+                                                            <svg width="15" height="15" viewBox="0 0 15 15"         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z" fill="#10FFA2"/>
+                                                                <path d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z" fill="#1A1D24"/>
                                                             </svg>
                                                             </input>
                                                             <span class="mr-20">19</span>
@@ -1628,14 +1560,9 @@
                                                             </input>
                                                             <span class="mr-20">48</span>
                                                             <input type="button" hidden>
-                                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z"
-                                                                    stroke="#10FFA2" />
-                                                                <path
-                                                                    d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z"
-                                                                    fill="#10FFA2" />
+                                                            <svg width="15" height="15" viewBox="0 0 15 15"         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z" fill="#10FFA2"/>
+                                                                <path d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z" fill="#1A1D24"/>
                                                             </svg>
                                                             </input>
                                                             <span class="mr-20">32</span>
@@ -1723,14 +1650,9 @@
                                                             </input>
                                                             <span class="mr-20">24</span>
                                                             <input type="button" hidden>
-                                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z"
-                                                                    stroke="#10FFA2" />
-                                                                <path
-                                                                    d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z"
-                                                                    fill="#10FFA2" />
+                                                            <svg width="15" height="15" viewBox="0 0 15 15"         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z" fill="#10FFA2"/>
+                                                                <path d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z" fill="#1A1D24"/>
                                                             </svg>
                                                             </input>
                                                             <span class="mr-20">67</span>
@@ -1818,14 +1740,9 @@
                                                             </input>
                                                             <span class="mr-20">45</span>
                                                             <input type="button" hidden>
-                                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z"
-                                                                    stroke="#10FFA2" />
-                                                                <path
-                                                                    d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z"
-                                                                    fill="#10FFA2" />
+                                                            <svg width="15" height="15" viewBox="0 0 15 15"         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z" fill="#10FFA2"/>
+                                                                <path d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z" fill="#1A1D24"/>
                                                             </svg>
                                                             </input>
                                                             <span class="mr-20">21</span>
@@ -1895,7 +1812,7 @@
                                             </button>                                            
                                         </div>
                                     </div>
-                                    <div class="art-card co-art-card">
+                                    <div class="art-card">
                                         <svg class="art-card-checked appear" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M14.25 0H0.75C0.551088 0 0.360322 0.0790176 0.21967 0.21967C0.0790176 0.360322 0 0.551088 0 0.75V14.25C0 14.4489 0.0790176 14.6397 0.21967 14.7803C0.360322 14.921 0.551088 15 0.75 15H14.25C14.4489 15 14.6397 14.921 14.7803 14.7803C14.921 14.6397 15 14.4489 15 14.25V0.75C15 0.551088 14.921 0.360322 14.7803 0.21967C14.6397 0.0790176 14.4489 0 14.25 0V0ZM13.5 13.5H1.5V1.5H13.5V13.5Z" fill="#10FFA2"/>
                                             <path d="M11.8117 4.20543C12.0628 4.4789 12.0628 4.92082 11.8117 5.19429L6.66851 10.7949C6.41738 11.0684 6.01155 11.0684 5.76042 10.7949L3.18829 7.99459C2.93724 7.72113 2.93724 7.2792 3.18829 7.00574C3.43938 6.73227 3.84641 6.73227 4.09754 7.00574L6.19638 9.30942L10.9036 4.20543C11.1547 3.93152 11.5605 3.93152 11.8117 4.20543Z" fill="#10FFA2"/>
@@ -1990,7 +1907,7 @@
                                             </div>
                                         </div>                                        
                                     </div>
-                                    <div class="art-card co-art-card">
+                                    <div class="art-card">
                                         <svg class="art-card-checked appear" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M14.25 0H0.75C0.551088 0 0.360322 0.0790176 0.21967 0.21967C0.0790176 0.360322 0 0.551088 0 0.75V14.25C0 14.4489 0.0790176 14.6397 0.21967 14.7803C0.360322 14.921 0.551088 15 0.75 15H14.25C14.4489 15 14.6397 14.921 14.7803 14.7803C14.921 14.6397 15 14.4489 15 14.25V0.75C15 0.551088 14.921 0.360322 14.7803 0.21967C14.6397 0.0790176 14.4489 0 14.25 0V0ZM13.5 13.5H1.5V1.5H13.5V13.5Z" fill="#10FFA2"/>
                                             <path d="M11.8117 4.20543C12.0628 4.4789 12.0628 4.92082 11.8117 5.19429L6.66851 10.7949C6.41738 11.0684 6.01155 11.0684 5.76042 10.7949L3.18829 7.99459C2.93724 7.72113 2.93724 7.2792 3.18829 7.00574C3.43938 6.73227 3.84641 6.73227 4.09754 7.00574L6.19638 9.30942L10.9036 4.20543C11.1547 3.93152 11.5605 3.93152 11.8117 4.20543Z" fill="#10FFA2"/>

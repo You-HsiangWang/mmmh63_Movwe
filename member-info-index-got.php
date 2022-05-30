@@ -78,6 +78,21 @@
             background-color:rgb(16, 255, 163);
             box-shadow: 0 0 5px rgb(16, 255, 163)
         }
+        .wishcard:hover .wish_total_1::after{
+            filter: brightness(130%);
+            background-color:rgb(16, 255, 163);
+            box-shadow: 0 0 5px rgb(16, 255, 163)
+        }
+        .wishcard:hover .wish_total_2::after{
+            filter: brightness(130%);
+            background-color:rgb(16, 255, 163);
+            box-shadow: 0 0 5px rgb(16, 255, 163)
+        }
+        .wishcard:hover .wish_total_3::after{
+            filter: brightness(130%);
+            background-color:rgb(16, 255, 163);
+            box-shadow: 0 0 5px rgb(16, 255, 163)
+        }        
         .image__card{
             width: 110px;
         }
@@ -102,6 +117,15 @@
                 border-bottom: 2px solid rgba(16, 255, 163, 0);
                 box-shadow: 0 -15px 5px -16px rgba(16, 255, 163, 0);
             }
+            .card-article:hover{
+            transform: translateY(-5%);
+            border-radius: 8px;
+            transform: scale(1.02);
+            transition: .5s;
+            }       
+            .posticon-hashtag{
+                cursor: pointer;
+            }     
         }    
         .no-article{
             display:flex
@@ -277,7 +301,7 @@
                                                                     闔家觀賞
                                                                 </p>
                                                             </div>
-                                                            <div class="information__bottom_5 Bottom__display">
+                                                            <!-- <div class="information__bottom_5 Bottom__display">
                                                                 <a href="#">
                                                                     <p class="information__actor__name">
                                                                         安妮亞
@@ -297,7 +321,7 @@
                                                                     </p>
                                                                 </a>
 
-                                                            </div>
+                                                            </div> -->
 
                                                             <div class="information__bottom_6-5 Bottom__display">
                                                                 <a href="./single-movie-page0511.html">
@@ -380,7 +404,7 @@
                                                                     闔家觀賞
                                                                 </p>
                                                             </div>
-                                                            <div class="information__bottom_5 Bottom__display">
+                                                            <!-- <div class="information__bottom_5 Bottom__display">
                                                                 <a href="#">
                                                                     <p class="information__actor__name">
                                                                         蔡淑臻
@@ -400,7 +424,7 @@
                                                                     </p>
                                                                 </a>
 
-                                                            </div>
+                                                            </div> -->
 
                                                             <div class="information__bottom_6-5 Bottom__display">
                                                                 <a href="./single-movie-page0511.html">
@@ -491,7 +515,7 @@
                                                                     懸疑推理
                                                                 </p>
                                                             </div>
-                                                            <div class="information__bottom_5 Bottom__display">
+                                                            <!-- <div class="information__bottom_5 Bottom__display">
                                                                 <a href="#">
                                                                     <p class="information__actor__name">
                                                                         大衛·芬奇
@@ -504,7 +528,7 @@
                                                                     </p>
                                                                 </a>
 
-                                                            </div>
+                                                            </div> -->
 
                                                             <div class="information__bottom_6-5 Bottom__display">
                                                                 <a href="./single-movie-page0511.html">
@@ -544,31 +568,44 @@
                                                                 
                                                         <div class="information__bottom">
                                                                     <div class="information__bottom_1 Bottom__display">
-                                                                        <p class="information__typ">
-                                                                            <?= $FLrowinfo['video_genre'] ?>
-                                                                        </p>
+                                                                    <p class="information__typ" style="<?php
+                                                                        $ottcolor = [
+                                                                            '2' => '#10FFA2',
+                                                                            '3' => '#1CD8FF',
+                                                                            '1' => '#FC6F51',
+                                                                        ];
+                                                                        if($FLrowinfo['video_genre'] == '影劇'){
+                                                                            $color = $ottcolor['1'];
+                                                                        }else if($HLrowinfo['video_genre'] == '電影'){
+                                                                            $color = $ottcolor['2'];
+                                                                        }else if($FLrowinfo['video_genre'] == '動畫'){
+                                                                            $color = $ottcolor['3'];
+                                                                        };
+                                                                        echo 'color:' . $color .'; border: 1px solid' . $color;
+                                                                        ?>"><?= $FLrowinfo['video_genre'] ?>
+                                                                    </p>
                                                                         <div class="bottom_6_icon_box">
-                                                                            <a href="#">
-                                                                                <p class="bottom_6_icon">
-                                                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                                                </p>
-                                                                            </a>
-                                                                            <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw"
-                                                                                target="_blank">
-                                                                                <p class="bottom_6_icon">
-                                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                            </a>
-                                                                            </p>
-                                                                            <a href="#">
-                                                                                <p class="bottom_6_icon">
-                                                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                                                </p>
-                                                                            </a>
-                                                                            <a href="#">
-                                                                                <p class="bottom_6_icon">
-                                                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                                                </p>
-                                                                            </a>
+                                                                            <?php
+                                                                            $ottdata = [
+                                                                                '4' => 'friday_s.svg',
+                                                                                '2' => 'iqiyi_s.svg',
+                                                                                '3' => 'kktv_s.svg',
+                                                                                '1' => 'netflix_s.svg',
+                                                                            ];
+
+                                                                            $ar = json_decode($FLrowinfo['video_ott'], true);
+                                                                            if ($ar and count($ar)) {
+                                                                                foreach ($ar as $v) {
+                                                                                    if (!empty($ottdata[$v])) {
+                                                                                        echo '<a href="#">
+                                                                                        <p class="bottom_6_icon">
+                                                                                            <img src="./img/logo/' . $ottdata[$v] . '" alt="">
+                                                                                        </p>
+                                                                                    </a>';
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                            ?>
                                                                         </div>
 
                                                                     </div>
@@ -591,13 +628,13 @@
                                                                     </div>
                                                                     <div class="information__bottom_4 Bottom__display">
                                                                         <p>
-                                                                            <?= $FLrowinfo['video_style'] ?>
-                                                                        </p>
+                                                                            <?= str_replace('，', ' / ', str_replace(' ', '', $FLrowinfo['video_style'])) ?>
+                                                                            </p>
                                                                         <!-- <p>
                                                                             奇幻冒險
                                                                         </p> -->
                                                                     </div>
-                                                                    <div class="information__bottom_5 Bottom__display">
+                                                                    <!-- <div class="information__bottom_5 Bottom__display">
                                                                         <a href="#">
                                                                             <p class="information__actor__name">
                                                                                 孔劉
@@ -617,7 +654,7 @@
                                                                             </p>
                                                                         </a>
 
-                                                                    </div>
+                                                                    </div> -->
 
                                                                     <div class="information__bottom_6-5 Bottom__display">
                                                                         <a href="./single-movie-page0511.html">
@@ -636,19 +673,29 @@
                                                         <div class="ac_flim_name">
                                                             <?= $FLrowinfo['video_name'] ?>
                                                         </div>
+
                                                         <div class="ac_ott">
-                                                            <div class="ac_friday">
-                                                                <img src="./img/logo/friday_s.svg" alt="">
-                                                            </div>
-                                                            <div class="ac_iqiyi">
-                                                                <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                            </div>
-                                                            <div class="ac_kktv">
-                                                                <img src="./img/logo/kktv_s.svg" alt="">
-                                                            </div>
-                                                            <div class="ac_netflix">
-                                                                <img src="./img/logo/netflix_s.svg" alt="">
-                                                            </div>
+                                                            <?php
+                                                            $ottdata = [
+                                                                '4' => 'friday_s.svg',
+                                                                '2' => 'iqiyi_s.svg',
+                                                                '3' => 'kktv_s.svg',
+                                                                '1' => 'netflix_s.svg',
+                                                            ];
+                                                            $ar = json_decode($FLrowinfo['video_ott'], true);
+                                                                if ($ar and count($ar)) {
+                                                                    foreach ($ar as $v) {
+                                                                        if (!empty($ottdata[$v])) {
+                                                                            echo '<a href="#">
+                                                                            <div class="ac_netflix">
+                                                                                <img src="./img/logo/' . $ottdata[$v] . '" alt="">
+                                                                            </div>
+                                                                            
+                                                                        </a>';
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ?>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -749,8 +796,8 @@
                                                 </div>
                                                 <div class="wish_words">
                                                     <div class="wish_word_top">
-                                                        <div class="wish_type d-filter-d">
-                                                            影劇
+                                                        <div class="wish_type d-filter-m">
+                                                            電影
                                                         </div>
                                                         <button class="wish_btn">
                                                             <div class="wish_icon">
@@ -759,7 +806,7 @@
                                                         </button>
                                                     </div>
                                                     <div class="wish_word_middle">
-                                                        東大特訓班
+                                                        變身國王
                                                     </div>
                                                     <div class="wish_word_bottom">
                                                         <div class="wish_total_2"></div>
@@ -1053,31 +1100,44 @@
                                                                 
                                                         <div class="information__bottom">
                                                                     <div class="information__bottom_1 Bottom__display">
-                                                                        <p class="information__typ">
-                                                                            <?= $HLrowinfo['video_genre'] ?>
-                                                                        </p>
+                                                                    <p class="information__typ" style="<?php
+                                                                        $ottcolor = [
+                                                                            '2' => '#10FFA2',
+                                                                            '3' => '#1CD8FF',
+                                                                            '1' => '#FC6F51',
+                                                                        ];
+                                                                        if($HLrowinfo['video_genre'] == '影劇'){
+                                                                            $color = $ottcolor['1'];
+                                                                        }else if($HLrowinfo['video_genre'] == '電影'){
+                                                                            $color = $ottcolor['2'];
+                                                                        }else if($HLrowinfo['video_genre'] == '動畫'){
+                                                                            $color = $ottcolor['3'];
+                                                                        };
+                                                                        echo 'color:' . $color .'; border: 1px solid' . $color;
+                                                                        ?>"><?= $HLrowinfo['video_genre'] ?>
+                                                                    </p>
                                                                         <div class="bottom_6_icon_box">
-                                                                            <a href="#">
-                                                                                <p class="bottom_6_icon">
-                                                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                                                </p>
-                                                                            </a>
-                                                                            <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw"
-                                                                                target="_blank">
-                                                                                <p class="bottom_6_icon">
-                                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                            </a>
-                                                                            </p>
-                                                                            <a href="#">
-                                                                                <p class="bottom_6_icon">
-                                                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                                                </p>
-                                                                            </a>
-                                                                            <a href="#">
-                                                                                <p class="bottom_6_icon">
-                                                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                                                </p>
-                                                                            </a>
+                                                                            <?php
+                                                                            $ottdata = [
+                                                                                '4' => 'friday_s.svg',
+                                                                                '2' => 'iqiyi_s.svg',
+                                                                                '3' => 'kktv_s.svg',
+                                                                                '1' => 'netflix_s.svg',
+                                                                            ];
+
+                                                                            $ar = json_decode($HLrowinfo['video_ott'], true);
+                                                                            if ($ar and count($ar)) {
+                                                                                foreach ($ar as $v) {
+                                                                                    if (!empty($ottdata[$v])) {
+                                                                                        echo '<a href="#">
+                                                                                        <p class="bottom_6_icon">
+                                                                                            <img src="./img/logo/' . $ottdata[$v] . '" alt="">
+                                                                                        </p>
+                                                                                    </a>';
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                            ?>
                                                                         </div>
 
                                                                     </div>
@@ -1100,7 +1160,7 @@
                                                                     </div>
                                                                     <div class="information__bottom_4 Bottom__display">
                                                                         <p>
-                                                                            <?= $HLrowinfo['video_style'] ?>
+                                                                            <?= str_replace('，', ' / ', str_replace(' ', '', $HLrowinfo['video_style'])) ?>
                                                                         </p>
                                                                         <!-- <p>
                                                                             奇幻冒險
@@ -1153,18 +1213,27 @@
                                                             <?= $HLrowinfo['video_name'] ?>
                                                         </div>
                                                         <div class="ac_ott">
-                                                            <div class="ac_friday">
-                                                                <img src="./img/logo/friday_s.svg" alt="">
-                                                            </div>
-                                                            <div class="ac_iqiyi">
-                                                                <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                            </div>
-                                                            <div class="ac_kktv">
-                                                                <img src="./img/logo/kktv_s.svg" alt="">
-                                                            </div>
-                                                            <div class="ac_netflix">
-                                                                <img src="./img/logo/netflix_s.svg" alt="">
-                                                            </div>
+                                                            <?php
+                                                            $ottdata = [
+                                                                '4' => 'friday_s.svg',
+                                                                '2' => 'iqiyi_s.svg',
+                                                                '3' => 'kktv_s.svg',
+                                                                '1' => 'netflix_s.svg',
+                                                            ];
+                                                            $ar = json_decode($HLrowinfo['video_ott'], true);
+                                                                if ($ar and count($ar)) {
+                                                                    foreach ($ar as $v) {
+                                                                        if (!empty($ottdata[$v])) {
+                                                                            echo '<a href="#">
+                                                                            <div class="ac_netflix">
+                                                                                <img src="./img/logo/' . $ottdata[$v] . '" alt="">
+                                                                            </div>
+                                                                            
+                                                                        </a>';
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ?>
                                                         </div>
                                                     </div>
                                                 </div>
