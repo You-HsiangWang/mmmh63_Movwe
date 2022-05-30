@@ -1,0 +1,94 @@
+/* @media screen and (max-width: 500px) {
+    .left_nav {
+        display: none;
+    }
+
+} */
+
+.text__container {
+    width: 95%;
+    height: 100vh;
+    /* background-color: rgb(124, 124, 124); */
+    margin: 80px auto 0 auto;
+
+}
+
+.top_nav_searchbar_box {
+    width: 200px;
+}
+
+.left_nav {
+    display: block !important;
+}
+
+.left_div {
+    display: block !important;
+}
+
+.bars {
+    opacity: 0;
+}
+
+.top_nav_movwe_img-2 {
+    transform: scale(1);
+}
+
+/* 進度條 */
+
+.progress-bar {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* 訂單完成 */
+
+.order-finish {
+    height: 200px;
+}
+
+/* 訂單明細 table */
+
+.booking-list table {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.booking-list table th,
+.booking-list table td {
+    /* width: 150px; */
+    height: 100px;
+    /* text-align: center; */
+}
+
+.booking-list table img {
+    /* width: 100%; */
+    width: 100px;
+    height: 100px;
+}
+
+/* 結帳明細 */
+
+.payment-list {
+    width: 60%;
+    margin: 100px auto;
+}
+
+.payment-list table {
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+}
+
+.payment-list table,
+.payment-list th,
+.payment-list td {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+
+.payment-list th,
+.payment-list td {
+    padding: 10px;
+    text-align: left;
+}

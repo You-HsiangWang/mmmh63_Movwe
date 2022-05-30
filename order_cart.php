@@ -2,7 +2,7 @@
 
 require './parts/movwe_connect_db.php';
 $pageName = 'login';
-$title = '購物車內容';
+$title = 'Movwe-購物車內容';
 
 ?>
 
@@ -20,7 +20,6 @@ $title = '購物車內容';
     
         <?php include __DIR__ . './parts/movwe_nav_leftdiv.php' ?>
 
-   
         <div class="container">
 
             <!--text__container------內容放這邊------------->
@@ -327,7 +326,7 @@ $title = '購物車內容';
                         </div>
                     </div>
                     <!-- 下一步按鈕 -->
-                    <a href="./order-delivery.html">
+                    <a href="./order_delivery.php">
                         <button class="btn_3w">下一步</button>
                     </a>
                 </div>
@@ -337,10 +336,7 @@ $title = '購物車內容';
 
     
     <?php include __DIR__ . './parts/movwe_scripts.php' ?>
-    <script src="./js/order-cart.js"></script>
+    <script src="./js/order_cart.js"></script>
 
 
     <?php include __DIR__ . './parts/movwe_footer.php' ?>
-
-    <script src="../js/jquery-3.6.0.js"></script>
-    <script src="../js/Nav.js"></script>
