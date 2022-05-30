@@ -1,11 +1,11 @@
 /* mall */
-* {
+*{
     /* outline: 1px red solid; */
 }
 
-.outline {
+/* .outline {
     outline: 3px rgb(0, 255, 0) solid;
-}
+} */
 
 p {
     color: #fff;
@@ -28,6 +28,13 @@ h3 {
 
 .w_50{
     width: 50%;
+}
+
+.mt_20{
+    margin-top: 20px;
+}
+.mt_60{
+    margin-top: 60px;
 }
 
 .opacity{
@@ -65,7 +72,13 @@ h3 {
 /* discount */
 .mall_discount{
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-around;
+}
+
+.mall_content{
+    display: flex;
+    align-items: center;
+
 }
 
 .mall_discount  .img_wrap{
