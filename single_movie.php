@@ -26,7 +26,7 @@ require './parts/movwe_connect_db.php';
         * {
             margin: 0;
             padding: 0;
-            /* outline: 1px solid greenyellow; */
+            outline: 1px solid greenyellow;
         }
 
         body {
