@@ -23,6 +23,10 @@ $title = 'MOVWE-搜尋結果';
 <style>
     /* 手機版 */
 
+    *{
+        outline: 1px solid greenyellow;
+    }
+
     .single {
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -185,7 +189,7 @@ $title = 'MOVWE-搜尋結果';
             </div>
 
             <!--text__container------內容放這邊------------->
-            <div class="text__container flex-col">
+            <div class="text__container flex-col margin__bt__100">
 
                 <div class="searchpage__filter">
                     <div class="big__search">
@@ -224,11 +228,6 @@ $title = 'MOVWE-搜尋結果';
                     </div>
                     <div class="carousel__7">
                         <div class="carousel__track-container__7">
-                            <button class="carousle__button__7 carousel__button--left__7 is-hidden__7">
-                                <div class="side__left__7">
-                                    <i class="fa-solid fa-chevron-left left__icon__7"></i>
-                                </div>
-                            </button>
                             <ul class="carousel__track__7 search__track">
                                 <li class="carousel__slide__7 current-slide__7">
                                     <div class="image__box__7">
@@ -605,199 +604,6 @@ $title = 'MOVWE-搜尋結果';
                                     </div>
                                 </li>
                             </ul>
-                            <ul class="carousel__track__7">
-                                <li class="carousel__slide__7 current-slide__7">
-                                    <div class="image__box__7">
-                                        <div class="image__card__7">
-                                            <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
-                                                <div class="image__card__text__7">
-                                                    <div class="movie__name__7">
-                                                        <p>
-                                                            豪華精裝典藏A版/2CD </p>
-                                                    </div>
-                                                    <div class="movie__icons__7">
-                                                        <div class="movie__icon__box__7">
-                                                            <p class="Price">
-                                                                799
-                                                            </p>
-                                                            <p class="ntd">
-                                                                NTD
-                                                            </p>
-                                                        </div>
-                                                        <div class="movie__icon__box__7">
-                                                            <p class="product__typ-1">
-                                                                鬼怪
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image__card__7">
-                                            <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_2.jpg" alt="">
-                                                <div class="image__card__text__7">
-                                                    <div class="movie__name__7">
-                                                        <p>
-                                                            豪華精裝典藏A版/2CD </p>
-                                                    </div>
-                                                    <div class="movie__icons__7">
-                                                        <div class="movie__icon__box__7">
-                                                            <p class="Price">
-                                                                799
-                                                            </p>
-                                                            <p class="ntd">
-                                                                NTD
-                                                            </p>
-                                                        </div>
-                                                        <div class="movie__icon__box__7">
-                                                            <p class="product__typ-1">
-                                                                鬼怪
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image__card__7">
-                                            <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
-                                                <div class="image__card__text__7">
-                                                    <div class="movie__name__7">
-                                                        <p>
-                                                            豪華精裝典藏A版/2CD </p>
-                                                    </div>
-                                                    <div class="movie__icons__7">
-                                                        <div class="movie__icon__box__7">
-                                                            <p class="Price">
-                                                                799
-                                                            </p>
-                                                            <p class="ntd">
-                                                                NTD
-                                                            </p>
-                                                        </div>
-                                                        <div class="movie__icon__box__7">
-                                                            <p class="product__typ-1">
-                                                                鬼怪
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image__card__7 card4__7">
-                                            <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_4.jpg" alt="">
-                                                <div class="image__card__text__7">
-                                                    <div class="movie__name__7">
-                                                        <p>
-                                                            豪華精裝典藏A版/2CD </p>
-                                                    </div>
-                                                    <div class="movie__icons__7">
-                                                        <div class="movie__icon__box__7">
-                                                            <p class="Price">
-                                                                799
-                                                            </p>
-                                                            <p class="ntd">
-                                                                NTD
-                                                            </p>
-                                                        </div>
-                                                        <div class="movie__icon__box__7">
-                                                            <p class="product__typ-1">
-                                                                鬼怪
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image__card__7 card5__7">
-                                            <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
-                                                <div class="image__card__text__7">
-                                                    <div class="movie__name__7">
-                                                        <p>
-                                                            豪華精裝典藏A版/2CD </p>
-                                                    </div>
-                                                    <div class="movie__icons__7">
-                                                        <div class="movie__icon__box__7">
-                                                            <p class="Price">
-                                                                799
-                                                            </p>
-                                                            <p class="ntd">
-                                                                NTD
-                                                            </p>
-                                                        </div>
-                                                        <div class="movie__icon__box__7">
-                                                            <p class="product__typ-1">
-                                                                鬼怪
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image__card__7 card6__7">
-                                            <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_2.jpg" alt="">
-                                                <div class="image__card__text__7">
-                                                    <div class="movie__name__7">
-                                                        <p>
-                                                            豪華精裝典藏A版/2CD </p>
-                                                    </div>
-                                                    <div class="movie__icons__7">
-                                                        <div class="movie__icon__box__7">
-                                                            <p class="Price">
-                                                                799
-                                                            </p>
-                                                            <p class="ntd">
-                                                                NTD
-                                                            </p>
-                                                        </div>
-                                                        <div class="movie__icon__box__7">
-                                                            <p class="product__typ-1">
-                                                                鬼怪
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image__card__7 card7__7">
-                                            <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
-                                                <div class="image__card__text__7">
-                                                    <div class="movie__name__7">
-                                                        <p>
-                                                            豪華精裝典藏A版/2CD </p>
-                                                    </div>
-                                                    <div class="movie__icons__7">
-                                                        <div class="movie__icon__box__7">
-                                                            <p class="Price">
-                                                                799
-                                                            </p>
-                                                            <p class="ntd">
-                                                                NTD
-                                                            </p>
-                                                        </div>
-                                                        <div class="movie__icon__box__7">
-                                                            <p class="product__typ-1">
-                                                                鬼怪
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <button class="carousle__button__7 carousel__button--right__7">
-                                <div class="side__right__7">
-                                    <i class="fa-solid fa-chevron-right right__icon__7"></i>
-                                </div>
-                            </button>
                             <div class="carousel__nav__7">
                                 <button class="carousel__indicator__7 current-slide__7"></button>
                                 <button class="carousel__indicator__7"></button>
@@ -919,7 +725,7 @@ $title = 'MOVWE-搜尋結果';
                                                     </div>
 
                                                     <div class="information__bottom_6-5 Bottom__display">
-                                                        <a href="./single-movie-page0511.html">
+                                                        <a href="./single_movie.php">
                                                             <p class="detail">
                                                                 查看詳細..
                                                             </p>
@@ -936,7 +742,7 @@ $title = 'MOVWE-搜尋結果';
 
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/h-1.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/h_1.jpeg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -1043,7 +849,7 @@ $title = 'MOVWE-搜尋結果';
                                                     </div>
 
                                                     <div class="information__bottom_6-5 Bottom__display">
-                                                        <a href="./single-movie-page0511.html">
+                                                        <a href="#">
                                                             <p class="detail">
                                                                 查看詳細..
                                                             </p>
@@ -1059,7 +865,7 @@ $title = 'MOVWE-搜尋結果';
                                                 </div>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/h-7.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/search-1.sm.jpg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -1181,7 +987,7 @@ $title = 'MOVWE-搜尋結果';
                                                 </div>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/h-6.jpeg" alt="">
+                                            <img class="carousel__images" src="./img/center/search-2.sm.jpg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -1303,7 +1109,7 @@ $title = 'MOVWE-搜尋結果';
                                                 </div>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/h-5.jpeg" alt="">
+                                            <img class="carousel__images" src="./img/center/search-3.sm.jpg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -1425,7 +1231,7 @@ $title = 'MOVWE-搜尋結果';
                                                 </div>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/h-4.jpeg" alt="">
+                                            <img class="carousel__images" src="./img/center/search-4.sm.jpg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -1547,7 +1353,7 @@ $title = 'MOVWE-搜尋結果';
                                                 </div>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/h-3.jpeg" alt="">
+                                            <img class="carousel__images" src="./img/center/search-5.sm.jpg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -1669,7 +1475,7 @@ $title = 'MOVWE-搜尋結果';
                                                 </div>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/h-2.jpeg" alt="">
+                                            <img class="carousel__images" src="./img/center/search-6.sm.jpg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -1797,7 +1603,7 @@ $title = 'MOVWE-搜尋結果';
 
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/h-1.jpeg" alt="">
+                                            <img class="carousel__images" src="./img/center/search-7.sm.jpg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -1920,7 +1726,7 @@ $title = 'MOVWE-搜尋結果';
                                                 </div>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/h-7.jpeg" alt="">
+                                            <img class="carousel__images" src="./img/center/search-8.sm.jpg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -2042,7 +1848,7 @@ $title = 'MOVWE-搜尋結果';
                                                 </div>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/h-6.jpeg" alt="">
+                                            <img class="carousel__images" src="./img/center/search-9.sm.jpg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -2164,7 +1970,7 @@ $title = 'MOVWE-搜尋結果';
                                                 </div>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/h-5.jpeg" alt="">
+                                            <img class="carousel__images" src="./img/center/search-10.sm.jpg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -2286,7 +2092,7 @@ $title = 'MOVWE-搜尋結果';
                                                 </div>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/h-4.jpeg" alt="">
+                                            <img class="carousel__images" src="./img/center/search-11.sm.jpg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -2408,7 +2214,7 @@ $title = 'MOVWE-搜尋結果';
                                                 </div>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/h-3.jpeg" alt="">
+                                            <img class="carousel__images" src="./img/center/search-12.sm.jpg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -2530,7 +2336,7 @@ $title = 'MOVWE-搜尋結果';
                                                 </div>
                                             </div>
                                             <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/h-2.jpeg" alt="">
+                                            <img class="carousel__images" src="./img/center/search-13.sm.jpg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
@@ -3179,7 +2985,7 @@ $title = 'MOVWE-搜尋結果';
             </div>
         </div>
     </div>
-    <?php include __DIR__ . '/parts/movwe_footer.php' ?>
+    <!-- <?php include __DIR__ . '/parts/movwe_footer.php' ?> -->
 </div>
 
 

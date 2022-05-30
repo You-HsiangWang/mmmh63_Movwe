@@ -29,6 +29,12 @@ margin-right: 12px;
     outline-style: none;
 }
 
+.bt__box{
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+}
+
 
 /* ---PC版--------------------------- */
 @media screen and (min-width: 750px) {
