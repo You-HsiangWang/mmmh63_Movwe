@@ -1020,7 +1020,7 @@ $title = 'Movwe-討論區';
                             </div>
                             <div class="d-flex justify-between align-item-center">
                                 <div class="d-flex align-item-center mt-10">
-                                    <div class="d-filter d-filter-a mr-10">動漫</div>
+                                    <div class="d-filter d-filter-m mr-10">電影</div>
                                     <a href="#">
                                         <h4>末日之戰 Z</h4>
                                     </a>
