@@ -466,13 +466,13 @@ styleItem__2.addEventListener('click',() =>{
         styleItem__9.style.color = 'rgb(134, 133, 133)'
         styleItem__9.style.boxShadow = '0 0 0'
 
-        styleItem__10.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__10.style.color = 'rgb(134, 133, 133)'
-        styleItem__10.style.boxShadow = '0 0 0'
+        // styleItem__10.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+        // styleItem__10.style.color = 'rgb(134, 133, 133)'
+        // styleItem__10.style.boxShadow = '0 0 0'
 
-        styleItem__11.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__11.style.color = 'rgb(134, 133, 133)'
-        styleItem__11.style.boxShadow = '0 0 0'
+        // styleItem__11.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+        // styleItem__11.style.color = 'rgb(134, 133, 133)'
+        // styleItem__11.style.boxShadow = '0 0 0'
 
     }
     else{
@@ -867,115 +867,115 @@ styleItem__9.addEventListener('click',() =>{
         }
     })
 
-styleItem__10.style.backgroundColor = 'rgba(107, 107, 107, 0)'
-styleItem__10.addEventListener('click',() =>{
-    if(styleItem__10.style.backgroundColor === 'rgba(107, 107, 107, 0)'){
-        styleItem__10.style.backgroundColor = 'rgb(16, 255, 162)'
-        styleItem__10.style.color = '#000'
-        styleItem__10.style.boxShadow = '0 0 5px rgb(16, 255, 162)'
+// styleItem__10.style.backgroundColor = 'rgba(107, 107, 107, 0)'
+// styleItem__10.addEventListener('click',() =>{
+//     if(styleItem__10.style.backgroundColor === 'rgba(107, 107, 107, 0)'){
+//         styleItem__10.style.backgroundColor = 'rgb(16, 255, 162)'
+//         styleItem__10.style.color = '#000'
+//         styleItem__10.style.boxShadow = '0 0 5px rgb(16, 255, 162)'
 
-        styleItem__2.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__2.style.color = 'rgb(134, 133, 133)'
-        styleItem__2.style.boxShadow = '0 0 0'
+//         styleItem__2.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__2.style.color = 'rgb(134, 133, 133)'
+//         styleItem__2.style.boxShadow = '0 0 0'
 
-        styleItem__3.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__3.style.color = 'rgb(134, 133, 133)'
-        styleItem__3.style.boxShadow = '0 0 0'
+//         styleItem__3.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__3.style.color = 'rgb(134, 133, 133)'
+//         styleItem__3.style.boxShadow = '0 0 0'
 
-        styleItem__4.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__4.style.color = 'rgb(134, 133, 133)'
-        styleItem__4.style.boxShadow = '0 0 0'
+//         styleItem__4.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__4.style.color = 'rgb(134, 133, 133)'
+//         styleItem__4.style.boxShadow = '0 0 0'
 
-        styleItem__5.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__5.style.color = 'rgb(134, 133, 133)'
-        styleItem__5.style.boxShadow = '0 0 0'
+//         styleItem__5.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__5.style.color = 'rgb(134, 133, 133)'
+//         styleItem__5.style.boxShadow = '0 0 0'
         
-        styleItem__6.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__6.style.color = 'rgb(134, 133, 133)'
-        styleItem__6.style.boxShadow = '0 0 0'
+//         styleItem__6.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__6.style.color = 'rgb(134, 133, 133)'
+//         styleItem__6.style.boxShadow = '0 0 0'
 
-        styleItem__7.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__7.style.color = 'rgb(134, 133, 133)'
-        styleItem__7.style.boxShadow = '0 0 0'
+//         styleItem__7.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__7.style.color = 'rgb(134, 133, 133)'
+//         styleItem__7.style.boxShadow = '0 0 0'
 
-        styleItem__8.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__8.style.color = 'rgb(134, 133, 133)'
-        styleItem__8.style.boxShadow = '0 0 0'
+//         styleItem__8.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__8.style.color = 'rgb(134, 133, 133)'
+//         styleItem__8.style.boxShadow = '0 0 0'
 
-        styleItem__9.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__9.style.color = 'rgb(134, 133, 133)'
-        styleItem__9.style.boxShadow = '0 0 0'
+//         styleItem__9.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__9.style.color = 'rgb(134, 133, 133)'
+//         styleItem__9.style.boxShadow = '0 0 0'
 
-        styleItem__1.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__1.style.color = 'rgb(134, 133, 133)'
-        styleItem__1.style.boxShadow = '0 0 0'
+//         styleItem__1.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__1.style.color = 'rgb(134, 133, 133)'
+//         styleItem__1.style.boxShadow = '0 0 0'
 
-        styleItem__11.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__11.style.color = 'rgb(134, 133, 133)'
-        styleItem__11.style.boxShadow = '0 0 0'
+//         styleItem__11.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__11.style.color = 'rgb(134, 133, 133)'
+//         styleItem__11.style.boxShadow = '0 0 0'
 
-    }
-    else{
-        styleItem__10.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__10.style.color = 'rgb(134, 133, 133)'
-        styleItem__10.style.boxShadow = '0 0 0'
-        }
-    })
+//     }
+//     else{
+//         styleItem__10.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__10.style.color = 'rgb(134, 133, 133)'
+//         styleItem__10.style.boxShadow = '0 0 0'
+//         }
+//     })
 
-styleItem__11.style.backgroundColor = 'rgba(107, 107, 107, 0)'
-styleItem__11.addEventListener('click',() =>{
-    if(styleItem__11.style.backgroundColor === 'rgba(107, 107, 107, 0)'){
-        styleItem__11.style.backgroundColor = 'rgb(16, 255, 162)'
-        styleItem__11.style.color = '#000'
-        styleItem__11.style.boxShadow = '0 0 5px rgb(16, 255, 162)'
+// styleItem__11.style.backgroundColor = 'rgba(107, 107, 107, 0)'
+// styleItem__11.addEventListener('click',() =>{
+//     if(styleItem__11.style.backgroundColor === 'rgba(107, 107, 107, 0)'){
+//         styleItem__11.style.backgroundColor = 'rgb(16, 255, 162)'
+//         styleItem__11.style.color = '#000'
+//         styleItem__11.style.boxShadow = '0 0 5px rgb(16, 255, 162)'
 
-        styleItem__2.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__2.style.color = 'rgb(134, 133, 133)'
-        styleItem__2.style.boxShadow = '0 0 0'
+//         styleItem__2.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__2.style.color = 'rgb(134, 133, 133)'
+//         styleItem__2.style.boxShadow = '0 0 0'
 
-        styleItem__3.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__3.style.color = 'rgb(134, 133, 133)'
-        styleItem__3.style.boxShadow = '0 0 0'
+//         styleItem__3.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__3.style.color = 'rgb(134, 133, 133)'
+//         styleItem__3.style.boxShadow = '0 0 0'
 
-        styleItem__4.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__4.style.color = 'rgb(134, 133, 133)'
-        styleItem__4.style.boxShadow = '0 0 0'
+//         styleItem__4.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__4.style.color = 'rgb(134, 133, 133)'
+//         styleItem__4.style.boxShadow = '0 0 0'
 
-        styleItem__5.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__5.style.color = 'rgb(134, 133, 133)'
-        styleItem__5.style.boxShadow = '0 0 0'
+//         styleItem__5.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__5.style.color = 'rgb(134, 133, 133)'
+//         styleItem__5.style.boxShadow = '0 0 0'
         
-        styleItem__6.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__6.style.color = 'rgb(134, 133, 133)'
-        styleItem__6.style.boxShadow = '0 0 0'
+//         styleItem__6.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__6.style.color = 'rgb(134, 133, 133)'
+//         styleItem__6.style.boxShadow = '0 0 0'
 
-        styleItem__7.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__7.style.color = 'rgb(134, 133, 133)'
-        styleItem__7.style.boxShadow = '0 0 0'
+//         styleItem__7.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__7.style.color = 'rgb(134, 133, 133)'
+//         styleItem__7.style.boxShadow = '0 0 0'
 
-        styleItem__8.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__8.style.color = 'rgb(134, 133, 133)'
-        styleItem__8.style.boxShadow = '0 0 0'
+//         styleItem__8.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__8.style.color = 'rgb(134, 133, 133)'
+//         styleItem__8.style.boxShadow = '0 0 0'
 
-        styleItem__9.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__9.style.color = 'rgb(134, 133, 133)'
-        styleItem__9.style.boxShadow = '0 0 0'
+//         styleItem__9.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__9.style.color = 'rgb(134, 133, 133)'
+//         styleItem__9.style.boxShadow = '0 0 0'
 
-        styleItem__10.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__10.style.color = 'rgb(134, 133, 133)'
-        styleItem__10.style.boxShadow = '0 0 0'
+//         styleItem__10.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__10.style.color = 'rgb(134, 133, 133)'
+//         styleItem__10.style.boxShadow = '0 0 0'
 
-        styleItem__1.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__1.style.color = 'rgb(134, 133, 133)'
-        styleItem__1.style.boxShadow = '0 0 0'
+//         styleItem__1.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__1.style.color = 'rgb(134, 133, 133)'
+//         styleItem__1.style.boxShadow = '0 0 0'
 
-    }
-    else{
-        styleItem__11.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
-        styleItem__11.style.color = 'rgb(134, 133, 133)'
-        styleItem__11.style.boxShadow = '0 0 0'
-        }
-    })
+//     }
+//     else{
+//         styleItem__11.style.backgroundColor = 'rgba(107, 107, 107, 0)' 
+//         styleItem__11.style.color = 'rgb(134, 133, 133)'
+//         styleItem__11.style.boxShadow = '0 0 0'
+//         }
+//     })
 
 
 

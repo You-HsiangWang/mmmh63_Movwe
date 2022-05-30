@@ -1,24 +1,25 @@
 <?php
 
 require './parts/movwe_connect_db.php';
+$title = 'MOVWE-搜尋結果';
 
 ?>
 
 <?php include __DIR__ . '/parts/movwe_head.php'; ?>
-    <link href="./fontawesome/css/all.css" rel="stylesheet">
+    <!-- <link href="./fontawesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/Nav.css">
-    <link rel="stylesheet" href="./css/BS.css">
+    <link rel="stylesheet" href="./css/BS.css"> -->
     <link rel="stylesheet" href="./css/mystyle.css">
     <link rel="stylesheet" href="./css/search__filter.css">
     <link rel="stylesheet" href="./css/Carousel_1.css">
     <link rel="stylesheet" href="./css/Carousel_7.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="shortcut icon" type="image/x-icon" href="./img/nav_images/LOGO.png">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./img/nav_images/LOGO.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
 
-    <title>Movwe</title>
+    <!-- <title>Movwe</title> -->
     <style>
 
 
@@ -170,174 +171,10 @@ require './parts/movwe_connect_db.php';
 
 <body>
     <!----------nav_top-------------->
-    <div class="Navbar__container">
-        <div class="top_nav">
-            <div class="top_nav_left">
-                <div class="top_nav_logo">
-                    <div class="top_nav_logo_box">
-                        <img class="top_nav_movwe_img-2" src="./img/icons/close.svg" alt="">
-                        <i class="fa-solid fa-bars top_nav_movwe_img bars"></i>
-                        <img class="origin__logo" src="./img/logo/logo.svg" alt="">
-                    </div>
-                </div>
-                <div class="top_nav_movwe">
-                    <a href="Home-0516-final copy.html">
-                        <div class="top_nav_movwe_box">
-                            <img class="top_nav_movwe_img mobil__show" src="./img/logo/logo_movwe_word.svg" alt="">
-                            <img class="top_nav_movwe_img desk__show" src="./img/logo/logo_word.svg" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="top_nav_right">
-                <div class="top__like__icons_">
-
-                </div>
-                <div class="top_nav_searchbar_box">
-                    <input type="text" class="top_nav_searchbar" placeholder="輸入片名">
-                    <div class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-
-                </div>
-            </div>
-        </div>
-        <div class="left_nav">
-            <div class="left_nav_box">
-            </div>
-            <div class="left_nav_box ">
-                <div class="left_nav_home icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-house "></i>
-                    </div>
-                </div>
-                <div class="nav_text_01 ">
-                    <div class="h-60px">首頁 <span class="down">
-                            <!-- <i class="fa-solid fa-angle-down"></i> -->
-                        </span> </div>
-                </div>
-
-            </div>
-            <div class="title_bottom">
-                <div class="title_">首頁</div>
-            </div>
-            <div class="left_nav_box Movie">
-                <div class="left_nav_movie icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-film"></i>
-                    </div>
-                    <div class="nav_text_01 ">
-                        <div class="h-60px movie_btn">影劇 <span class="down"><i
-                                    class="fa-solid fa-angle-down"></i></span></div>
-                        <p class="text_a">影劇搜尋器</p>
-                        <p class="text_a">ott上片資訊</p>
-                        <p class="text_a">許願池</p>
-                        <p class="text_a">心理測驗</p>
-                        <p class="text_a">我的片單</p>
-                        <p class="text_a">預約片單</p>
-                        <p class="text_a">許願清單</p>
-                        <p class="text_a">曾經瀏覽</p>
-                        <p class="text_a">ott優惠卷</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">影劇</div>
-            </div>
-            <div class="left_nav_box Store">
-                <div class="left_nav_store icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-store"></i>
-                    </div>
-                    <div class="nav_text_01 ">
-                        <div class="h-60px store_btn">商城 <span class="down"><i
-                                    class="fa-solid fa-angle-down"></i></span></div>
-                        <p class="text_a">主打活動</p>
-                        <p class="text_a">商品總覽</p>
-                        <p class="text_a">購物車</p>
-                        <p class="text_a">我的訂單</p>
-                        < class="text_a">商城優或卷</>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">商城</div>
-            </div>
-
-            <div class="left_nav_box Form">
-                <div class="left_nav_forum icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-pencil pp"></i>
-                    </div>
-                    <div class="nav_text_01 ">
-                        <div class="h-60px form_btn">文章 <span class="down"><i class="fa-solid fa-angle-down"></i></span>
-                        </div>
-                        <p class="text_a">文章總覽</p>
-                        <p class="text_a">熱門作者</p>
-                        <p class="text_a">熱門文章</p>
-                        <p class="text_a">我的收藏</p>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">文章</div>
-            </div>
-
-            <div class="left_nav_box">
-                <div class="left_nav_member icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-user-gear"></i>
-                    </div>
-                    <div class="nav_text_01">
-                        <div class="h-60px">會員 <span class="down">
-                                <!-- <i class="fa-solid fa-angle-down"></i> -->
-                            </span></div>
-                        <p>00</p>
-                        <p>00</p>
-                        <p>00</p>
-                        <p>00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">會員</div>
-            </div>
-
-            <div class="left_nav_box">
-                <div class="left_nav_discount icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-hand-holding-dollar"></i>
-                    </div>
-                    <div class="nav_text_01">
-                        <div class="h-60px">優惠 <span class="down">
-                                <!-- <i class="fa-solid fa-angle-down"></i> -->
-                            </span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">優惠</div>
-            </div>
-            <div class="left_nav_box">
-                <div class="left_nav_discount icon_box_W-H">
-                    <div class="nav_icon_box icon_W-H">
-                        <i class="fa-solid fa-coins"></i>
-                    </div>
-                    <div class="nav_text_01">
-                        <div class="h-60px">點數 <span class="down">
-                                <!-- <i class="fa-solid fa-angle-down"></i> -->
-                            </span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="title_bottom">
-                <div class="title_">點數</div>
-            </div>
-
-
-        </div>
-    </div>
+    <?php include __DIR__. '/parts/movwe_nav_fin.php' ?>
     <div class="layout">
-        <div class="left_div"></div>
+        <?php include __DIR__. '/parts/movwe_nav_leftdiv.php' ?>
+        <!-- <div class="left_div"></div> -->
         <!----------nav_left-------------->
 
         <!--------------------------------------------------------------------------->
@@ -3454,23 +3291,19 @@ require './parts/movwe_connect_db.php';
                     </div>
                 </div>
             </div>
+
+            <?php include __DIR__. '/parts/movwe_footer.php' ?>
         </div>
     </div>
     </div>
 
 
 
-    <script src="./js/jquery-3.6.0.js"></script>
+    <!-- <script src="./js/jquery-3.6.0.js"></script> -->
     <script src="./js/Nav.js"></script>
     <script src="./js/Carousel_1.js"></script>
     <script src="./js/Carousel_7.js"></script>
     <script ript src="./js/seacher_page.js"></script>
-    <script>
-
-
-
-
-    </script>
 </body>
 
 </html>
