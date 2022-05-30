@@ -12,40 +12,14 @@ require './parts/movwe_connect_db.php';
     <link rel="stylesheet" href="./css/search__filter.css">
     <link rel="stylesheet" href="./css/Carousel_1.css">
     <link rel="stylesheet" href="./css/Carousel_7.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="shortcut icon" type="image/x-icon" href="./img/nav_images/LOGO.png">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,300&family=Noto+Serif+TC:wght@200;300;500;700;900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <title>Movwe</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            /* outline: 1px solid greenyellow; */
-        }
-
-
-        body {
-            background-color: rgb(26, 29, 36);
-            font-family: 'Caveat', cursive;
-            font-family: 'Cormorant Garamond', serif;
-            font-family: 'Noto Serif TC', serif;
-            overflow-x: hidden;
-        }
-
-        html {
-            font-size: 12px;
-        }
-
-
-
-        /* @media screen and (max-width: 500px) {
-            .left_nav {
-                display: none;
-            }
-
-        } */
 
 
         /* 手機版 */

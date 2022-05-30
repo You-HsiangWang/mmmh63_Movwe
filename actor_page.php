@@ -11,9 +11,9 @@ require './parts/movwe_connect_db.php';
     <link rel="stylesheet" href="./css/actor_02.css">
     <link rel="stylesheet" href="./css/Carousel_1.css">
     <link rel="stylesheet" href="./css/go_to_ott-3.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,300&family=Noto+Serif+TC:wght@200;300;500;700;900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
         * {
@@ -24,9 +24,8 @@ require './parts/movwe_connect_db.php';
 
         body {
             background-color: rgb(26, 29, 36);
-            font-family: 'Caveat', cursive;
-            font-family: 'Cormorant Garamond', serif;
-            font-family: 'Noto Serif TC', serif;
+            font-family: 'Cairo', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
             overflow-x: hidden;
         }
 

@@ -595,7 +595,7 @@ require './parts/movwe_connect_db.php';
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/other/num02.png" alt="">
+                                            <img src="./img/other/num02.png" alt="">
                                             </div>
 
                                         </div>
@@ -613,7 +613,7 @@ require './parts/movwe_connect_db.php';
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/center/03.svg" alt="">
+                                            <img src="./img/other/num03.png" alt="">
                                             </div>
 
                                         </div>
@@ -631,7 +631,7 @@ require './parts/movwe_connect_db.php';
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/center/04.svg" alt="">
+                                            <img src="./img/other/num04.png" alt="">
                                             </div>
 
                                         </div>
@@ -649,7 +649,7 @@ require './parts/movwe_connect_db.php';
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/center/05.svg" alt="">
+                                            <img src="./img/other/num05.png" alt="">
                                             </div>
 
                                         </div>
@@ -669,7 +669,7 @@ require './parts/movwe_connect_db.php';
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/center/06.svg" alt="">
+                                            <img src="./img/other/num06.png" alt="">
                                             </div>
 
                                         </div>
@@ -687,7 +687,7 @@ require './parts/movwe_connect_db.php';
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/center/07.svg" alt="">
+                                            <img src="./img/other/num07.png" alt="">
                                             </div>
 
                                         </div>
@@ -705,7 +705,7 @@ require './parts/movwe_connect_db.php';
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/center/09.svg" alt="">
+                                            <img src="./img/other/num08.png" alt="">
                                             </div>
 
                                         </div>
@@ -723,7 +723,7 @@ require './parts/movwe_connect_db.php';
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/other/num09.png" alt="">
+                                            <img src="./img/other/num09.png" alt="">
                                             </div>
 
                                         </div>
@@ -741,7 +741,7 @@ require './parts/movwe_connect_db.php';
                                                     alt="">
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/other/num10.png" alt="">
+                                            <img src="./img/other/num10.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -759,7 +759,7 @@ require './parts/movwe_connect_db.php';
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/center/01.svg" alt="">
+                                            <img src="./img/other/num11.png" alt="">
                                             </div>
                                         </div>
                                         <div class="image__card__6 wish__card-2">
@@ -773,7 +773,7 @@ require './parts/movwe_connect_db.php';
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/center/02.svg" alt="">
+                                            <img src="./img/other/num12.png" alt="">
                                             </div>
 
                                         </div>
@@ -788,7 +788,7 @@ require './parts/movwe_connect_db.php';
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/center/03.svg" alt="">
+                                            <img src="./img/other/num13.png" alt="">
                                             </div>
 
                                         </div>
@@ -803,7 +803,7 @@ require './parts/movwe_connect_db.php';
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/center/04.svg" alt="">
+                                            <img src="./img/other/num14.png" alt="">
                                             </div>
 
                                         </div>
@@ -818,7 +818,7 @@ require './parts/movwe_connect_db.php';
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/center/05.svg" alt="">
+                                            <img src="./img/other/num15.png" alt="">
                                             </div>
 
                                         </div>
@@ -835,7 +835,7 @@ require './parts/movwe_connect_db.php';
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/center/06.svg" alt="">
+                                            <img src="./img/other/num16.png" alt="">
                                             </div>
 
                                         </div>
@@ -850,7 +850,7 @@ require './parts/movwe_connect_db.php';
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/center/07.svg" alt="">
+                                            <img src="./img/other/num17.png" alt="">
                                             </div>
 
                                         </div>
@@ -865,7 +865,7 @@ require './parts/movwe_connect_db.php';
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/center/08.svg" alt="">
+                                            <img src="./img/other/num18.png" alt="">
                                             </div>
 
                                         </div>
@@ -880,7 +880,7 @@ require './parts/movwe_connect_db.php';
 
                                             </div>
                                             <div class="single__page__dark_number">
-                                                <img src="./img/center/09.svg" alt="">
+                                            <img src="./img/other/num19.png" alt="">
                                             </div>
                                         </div>
                                         <div class="image__card__6 wish__card-2 carousel__opacity_0">
