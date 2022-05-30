@@ -1,24 +1,23 @@
 <?php
 
 require './parts/movwe_connect_db.php';
-$pageName = 'login';
 $title = 'Movwe-購物車內容';
 
 ?>
 
-<?php include __DIR__ . './parts/movwe_head.php' ?>
+<?php include __DIR__. '/parts/movwe_head.php' ?>
 
 
 <link rel="stylesheet" href="./css/mystyle.css">
 <link rel="stylesheet" href="./css/order_cart.css">
-   
+
 </head>
 
 <body>
-<?php include __DIR__ . './parts/movwe_nav.php' ?>
+<?php include __DIR__. '/parts/movwe_nav_fin.php' ?>
     <div class="layout">
     
-        <?php include __DIR__ . './parts/movwe_nav_leftdiv.php' ?>
+        <?php include __DIR__. '/parts/movwe_nav_leftdiv.php' ?>
 
         <div class="container">
 
@@ -331,12 +330,14 @@ $title = 'Movwe-購物車內容';
                     </a>
                 </div>
             </div>
+
+            <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
     </div>
 
     
-    <?php include __DIR__ . './parts/movwe_scripts.php' ?>
+    <?php include __DIR__ . '/parts/movwe_scripts.php' ?>
     <script src="./js/order_cart.js"></script>
 
-
-    <?php include __DIR__ . './parts/movwe_footer.php' ?>
+</body>
+</html>

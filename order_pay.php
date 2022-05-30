@@ -1,12 +1,11 @@
 <?php
 
 require './parts/movwe_connect_db.php';
-$pageName = 'login';
 $title = 'Movwe-付款資訊';
 
 ?>
 
-<?php include __DIR__ . './parts/movwe_head.php' ?>
+<?php include __DIR__ . '/parts/movwe_head.php' ?>
 
 
 <link rel="stylesheet" href="./css/mystyle.css">
@@ -15,10 +14,10 @@ $title = 'Movwe-付款資訊';
 </head>
 
 <body>
-    <?php include __DIR__ . './parts/movwe_nav.php' ?>
+    <?php include __DIR__. '/parts/movwe_nav.php' ?>
     <div class="layout">
 
-        <?php include __DIR__ . './parts/movwe_nav_leftdiv.php' ?>
+        <?php include __DIR__. '/parts/movwe_nav_leftdiv.php' ?>
 
         <div class="container">
 
@@ -435,9 +434,10 @@ $title = 'Movwe-付款資訊';
                     </div>
                 </div>
             </div>
+            <?php include __DIR__. '/parts/movwe_footer.php' ?>
         </div>
 
-        <?php include __DIR__ . './parts/movwe_scripts.php' ?>
+        <?php include __DIR__. '/parts/movwe_scripts.php' ?>
         <script src="./js/order_pay.js"></script>
-
-        <?php include __DIR__ . './parts/movwe_footer.php' ?>
+</body>
+</html>

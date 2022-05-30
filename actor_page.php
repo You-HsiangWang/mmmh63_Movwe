@@ -1,20 +1,21 @@
 <?php
 
 require './parts/movwe_connect_db.php';
+$title = 'MOVWE-孔劉';
 
 ?>
 
 <?php include __DIR__ . '/parts/movwe_head.php'; ?>
-    <link href="./fontawesome/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/Nav.css">
-    <link rel="stylesheet" href="./css/BS.css">
+    <!-- <link href="./fontawesome/css/all.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="./css/Nav.css">
+    <link rel="stylesheet" href="./css/BS.css"> -->
     <link rel="stylesheet" href="./css/actor_02.css">
     <link rel="stylesheet" href="./css/Carousel_1.css">
     <link rel="stylesheet" href="./css/go_to_ott-3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <title>Document</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
+    <!-- <title>Document</title> -->
     <style>
         * {
             margin: 0;
