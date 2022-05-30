@@ -318,7 +318,7 @@ $title = 'MOVWE-如何累積Movwe點數';
                                 </div>
                             </div>
                             <div class="point-section_info_numberpic">
-                                <img src="./img/banner/mall_banner_s.jpg" alt="">
+                                <img src="./img/banner/mall_banner_s.jpg" alt="" style="border-radius: 10px">
                             </div>
                         </div>
                         <div class="point-section_info_numbercard_fullsize p_slide-in p_silde-r">
@@ -334,7 +334,7 @@ $title = 'MOVWE-如何累積Movwe點數';
                                 </div>
                             </div>
                             <div class="point-section_info_numberpic">
-                                <img src="./img/banner/forum_banner01_s.jpg" alt="">
+                                <img src="./img/banner/forum_banner01_s.jpg" alt="" style="border-radius: 10px">
                             </div>
                         </div>
                     </div>

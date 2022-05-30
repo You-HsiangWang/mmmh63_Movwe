@@ -3281,7 +3281,7 @@ $title = 'MOVWE-就要你放膽搜';
                     <div class="carousel__big__box__3">
                         <div class="carousel__title__section__3">
                             <div class="stick_desk"></div>
-                            <div class="carousel__title__3">
+                            <div class="carousel__title__3" id="goingtoupdate">
                                 <p>
                                     即將上線
                                 </p>

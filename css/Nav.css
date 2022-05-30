@@ -517,14 +517,17 @@
   color: rgb(16, 255, 162);
   opacity: 1;
 }
+
 .top__nav__member:hover .home__logout {
   color: rgb(16, 255, 162);
   opacity: 1;
 }
+
 .top__nav__member:hover .movie__like__text {
   color: rgb(16, 255, 162);
   opacity: 1;
 }
+
 .top__nav__member:hover .shopcard__text {
   color: rgb(16, 255, 162);
   opacity: 1;
@@ -546,6 +549,105 @@
 .top__nave__nember {
   margin-right: 5%;
 }
+.nav_phone_d-none{
+  display: none;
+}
+/* navbar會員專區 */
+.top__nav__member__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100px;
+  height: 100%;
+}
+
+.top__nav__member__login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top__nav__member__login a {
+  color: rgb(201, 201, 201);
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top__nav__member__login i {
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+.top__nav__member__login p {
+  line-height: 1;
+  font-size: 1.2rem;
+}
+
+.top__nav__member__login:hover a {
+  color: rgb(16, 255, 162);
+  transform: translateY(-2px);
+}
+
+.top__nav__member__logout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 100px;
+  height: 100%;
+}
+
+.tn_avatar_wrap a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.tn_avatar_wrap a img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.tn_avatar_wrap a:hover img {
+  border: 1px solid rgb(16, 255, 162);
+  transform: translateY(-2px);
+}
+
+.tn_logout_wrap a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tn_logout_wrap a p {
+  font-size: 1.2rem;
+  color: rgb(201, 201, 201);
+  line-height: 1;
+  text-decoration: none;
+}
+
+.tn_logout_wrap a:hover p {
+  color: rgb(16, 255, 162);
+  transform: translateY(-2px);
+}
+
+.nav_web_d-none{
+  display: flex;
+}
+
 
 @media screen and (min-width: 750px) {
   .Home__banner {
@@ -635,5 +737,13 @@
 
   .top_nav_movwe_img-2 {
     display: none !important;
+  }
+
+  .nav_phone_d-none{
+    display: block;
+  }
+
+  .nav_web_d-none{
+    display: none;
   }
 }
