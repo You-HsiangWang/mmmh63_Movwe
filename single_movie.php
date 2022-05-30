@@ -331,12 +331,12 @@ require './parts/movwe_connect_db.php';
             <!--banner__container----------------->
             <div class="banner__container">
                 <!-- <img src="./img/center/single_page_banner-2.png" alt=""> -->
-                <video src="./img/center/single_mv-2.mov" autoplay loop muted></video>
+                <video src="./img/video_dino/single_mv-2.mov" autoplay loop muted></video>
                 <!-- autoplay  loop  muted -->
                 <div class="shadow"></div>
                 <div class="shadow2"></div>
                 <div class="banner__logo">
-                    <img src="./img/center/banner__logo.png" alt="">
+                    <img src="./img/other/movie_title.png" alt="">
                 </div>
             </div>
 

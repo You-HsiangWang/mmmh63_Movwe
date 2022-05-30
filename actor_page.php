@@ -609,7 +609,7 @@ require './parts/movwe_connect_db.php';
                                                             </div>
                                                             <div class="carousel__images__box">
                                                                 <img class="carousel__images"
-                                                                    src="./img/center/h-1.jpeg" alt="">
+                                                                    src="./img/center/h_1.jpeg" alt="">
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>

@@ -1125,7 +1125,7 @@ require './parts/movwe_connect_db.php';
     <div class="Big__container">
         <div class="Page01__container">
             <div class="video_box">
-                <video class="Stars" src="./img/wish_img/lightning.mov" autoplay loop muted></video>
+                <video class="Stars" src="./img/video_dino/lightning.mov" autoplay loop muted></video>
             </div>
             <div class="Cloud__left__box">
                 <img class="Cloud__left" src="./img/wish_img/cloud-left.png" alt="">
@@ -1157,7 +1157,7 @@ require './parts/movwe_connect_db.php';
 
         <div class="Page__2__container">
             <div class="Page__2__insidecontainer">
-                <video src="./img/wish_img/stars.mov" autoplay loop muted></video>
+                <video src="./img/video_dino/stars.mov" autoplay loop muted></video>
                 <img class="treasure__cave" src="./img/wish_img/treasure_cave.png" alt="">
                 <div class="Page__2_text__box">
                     <div class="Page__2_text">
@@ -1177,8 +1177,8 @@ require './parts/movwe_connect_db.php';
             <div class="Page__3__insidecoiner">
                 <img class="Page__3__bg" src="./img/wish_img/Page_3.png" alt="">
                 <div class="Lamp__box">
-                    <img class="lamp__1" src="./img/wish_img/lamp_1.png" alt="">
-                    <img class="lamp__2" src="./img/wish_img/lamp_2.png" alt="">
+                    <img class="lamp__1" src="./img/wish_img/magic_lamp.png" alt="">
+                    <img class="lamp__2" src="./img/wish_img/magic_lamp_hover.png" alt="">
                 </div>
                 <div class="gb__box">
                     <img src="./img/wish_img/gb_1.png" alt="" class="gb_1">
@@ -1216,16 +1216,16 @@ require './parts/movwe_connect_db.php';
         </div>
         <div class="Page__4__container">
             <div class="Page__4__insidecoiner">
-                <video class="Page_4_mv" src="./img/wish_img/Page_4_mv.mov" autoplay loop muted></video>
+                <video class="Page_4_mv" src="./img/video_dino/Page_4_mv.mov" autoplay loop muted></video>
                 <div class="Page4__lamp__box">
-                    <img class="Page4__lamp" src="./img/wish_img/Page4__lamp.png" alt="">
+                    <img class="Page4__lamp" src="./img/wish_img/magic_lamp.png" alt="">
                 </div>
                 <div class="Page__4__text__box">
                     <p class="Color_anmation">
                         Show me the Movwe genie!
                     </p>
                     <button class="Enter_4">
-                        Wipe the lamp
+                        Click
                     </button>
                 </div>
                 <div class="Page__4__genie__box">
@@ -1244,7 +1244,7 @@ require './parts/movwe_connect_db.php';
                     <div class="Page4__TV__box">
                         <img class="Page4__TV" src="./img/wish_img/TV.png" alt="">
                         <img class="TV__mv1" src="./img/wish_img/filter02.gif"></img>
-                        <video class="TV__mv2" src="./img/wish_img/pd_mv.mov"autoplay loop muted></video>
+                        <video class="TV__mv2" src="./img/video_dino/pd_mv.mov"autoplay loop muted></video>
                     </div>
                 </div>
                 <div class="Thanks__card">
