@@ -130,6 +130,9 @@
             .posticon-hashtag{
                 cursor: pointer;
             }
+            .account_children{
+                margin-bottom: 100px;
+            }
         }
     </style>
 </head>
@@ -2069,9 +2072,7 @@
                                     
                                 </div>                                
                             </div>
-                            
-                            
-                        </div>                    
+                        </div>                   
                     </div>
                 </div>
                 <div class="kuang_bg display_none">
@@ -2100,7 +2101,11 @@
                         </div>
                     </div>
                 </div> 
+            </div>   
+            
+            
     </div>
+    
 
     
     <script src="./js/Nav.js"></script>

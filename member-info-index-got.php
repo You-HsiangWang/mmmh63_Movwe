@@ -1870,6 +1870,9 @@
                     </div>
                 </div>
             </div>
+
+            <!-- footer -->
+            <?php include __DIR__. '/parts/movwe_footer.php' ?>
             <!-- <div class="footer__container">
                 <div class="footer-wrap">
                     <div class="footer">
