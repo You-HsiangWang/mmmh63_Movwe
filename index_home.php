@@ -29,9 +29,9 @@ require './parts/movwe_connect_db.php';
 <title>Movwe</title>
 <style>
     /* --------------------- */
-    * {
+    /* * {
         outline: 1px solid greenyellow;
-    }
+    } */
 </style>
 </head>
 

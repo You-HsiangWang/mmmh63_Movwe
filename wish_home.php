@@ -31,9 +31,9 @@ require './parts/movwe_connect_db.php';
 
 
 
-        *{
+        /* *{
             outline: 1px solid greenyellow;
-        }
+        } */
         @media screen and (min-width: 750px) {
             .text__container {
                 width: 94%;

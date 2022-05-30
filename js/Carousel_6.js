@@ -223,6 +223,16 @@ const switchIQiyi_10 = document.querySelector('.switch__iQiyi_10')
 
 
 
+// switchIQiyi.style.display = ('block');
+// switchIQiyi_2.style.display = ('block');
+// switchIQiyi_3.style.display = ('block');
+// switchIQiyi_4.style.display = ('block');
+// switchIQiyi_5.style.display = ('block');
+// switchIQiyi_6.style.display = ('block');
+// switchIQiyi_7.style.display = ('block');
+// switchIQiyi_8.style.display = ('block');
+// switchIQiyi_9.style.display = ('block');
+// switchIQiyi_10.style.display = ('block');
 
 singlePageIQiYi.addEventListener('click',()=>{
 
@@ -249,6 +259,17 @@ singlePageIQiYi.addEventListener('click',()=>{
     switchNetflex_10.style.display = ('none')
 
 })
+
+switchNetflex.style.display = ('block')
+switchNetflex_2.style.display = ('block')
+switchNetflex_3.style.display = ('block')
+switchNetflex_4.style.display = ('block')
+switchNetflex_5.style.display = ('block')
+switchNetflex_6.style.display = ('block')
+switchNetflex_7.style.display = ('block')
+switchNetflex_8.style.display = ('block')
+switchNetflex_9.style.display = ('block')
+switchNetflex_10.style.display = ('block')
 
 
 singlePageNetflix.addEventListener('click',()=>{

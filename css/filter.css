@@ -7,13 +7,12 @@
     /* width: 350px;
     outline: 1px solid red; */
 }
+
 .index_filter button, .browse-filter-item{
     font-size: 12px;
 }
 .ott_platform_title ,.genre_title, .browse-filter-title{
     width: 40px;
-
-
     font-size: 14px;
 }
 .platform button, .genre_item button{
@@ -33,14 +32,16 @@
 }
 .platform button, .genre button, .browse-filter-item{
     width: 64px;
-    height: 20px;
+    /* height: 40px; */
     text-align: center;
     margin: 0px 4px;
 }
 .platform, .genre_item, .browse-filter-items{
+    /* height: 40px; */
     overflow-x: scroll;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     display: flex;
+    align-items: center;
 }
 .browse-filter{
     /* overflow-x: scroll;
@@ -113,6 +114,7 @@
     .platform, .genre_item, .browse-filter-items{
         margin-left: 4px;
         margin-top: 4px;
+        height: 40px;
     }
 
     .location{
