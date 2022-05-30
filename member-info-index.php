@@ -42,9 +42,6 @@
         .display_none{
             display: none;
         }
-        .text__container{
-            height: 80vh;
-        }
         .wish_pic{ 
             overflow: hidden;
             border-radius: 7px
@@ -580,7 +577,7 @@
                                                                         ];
                                                                         if($FLrowinfo['video_genre'] == '影劇'){
                                                                             $color = $ottcolor['1'];
-                                                                        }else if($HLrowinfo['video_genre'] == '電影'){
+                                                                        }else if($FLrowinfo['video_genre'] == '電影'){
                                                                             $color = $ottcolor['2'];
                                                                         }else if($FLrowinfo['video_genre'] == '動畫'){
                                                                             $color = $ottcolor['3'];
@@ -2103,8 +2100,9 @@
                 </div> 
             </div>   
             
-            
+        <?php include __DIR__. '/parts/movwe_footer.php' ?>
     </div>
+    
     
 
     
