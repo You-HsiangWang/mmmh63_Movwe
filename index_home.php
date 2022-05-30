@@ -417,7 +417,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        5.0
+                                                                        9.0
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -539,7 +539,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                             </div>
                                                             <div class="information__point">
                                                                 <p>
-                                                                    4.9
+                                                                    9.9
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -664,7 +664,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.6
+                                                                        9.0
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -788,7 +788,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.3
+                                                                        8.9
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -912,7 +912,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.6
+                                                                        8.5
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -1037,7 +1037,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.9
+                                                                        8.3
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -1162,7 +1162,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.5
+                                                                        9.1
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -1290,7 +1290,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.8
+                                                                        9.5
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -1414,7 +1414,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.5
+                                                                        9.6
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -1538,7 +1538,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.8
+                                                                        9.8
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -1661,7 +1661,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.5
+                                                                        8.8
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -1785,7 +1785,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.7
+                                                                        8.4
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -1909,7 +1909,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.6
+                                                                        8.2
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -2033,7 +2033,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.3
+                                                                        9.3
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -2160,7 +2160,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.7
+                                                                        9.7
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -2285,7 +2285,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.9
+                                                                        9.2
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -2410,7 +2410,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.9
+                                                                        9.6
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -2535,7 +2535,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.5
+                                                                        8.8
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -2657,7 +2657,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.6
+                                                                        8.3
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -2782,7 +2782,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.3
+                                                                        8.9
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -2907,7 +2907,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                                 </div>
                                                                 <div class="information__point">
                                                                     <p>
-                                                                        4.8
+                                                                        9.2
                                                                     </p>
                                                                 </div>
                                                             </div>
