@@ -89,7 +89,7 @@
 
         movieBtn.addEventListener('click', () => {
             if (MovieHeight.style.height === '40px') {
-                MovieHeight.style.height = '280px'
+                MovieHeight.style.height = '180px'
                 console.log("hihi");
             }
             else {
@@ -103,7 +103,7 @@
 
         storeBtn.addEventListener('click', () => {
             if (StoreHeight.style.height === '40px') {
-                StoreHeight.style.height = '150px'
+                StoreHeight.style.height = '125px'
                 console.log("hihi");
             }
             else {
