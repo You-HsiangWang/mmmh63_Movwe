@@ -1,5 +1,5 @@
 html{
-    overflow-x:hidden;
+    /* overflow-x:hidden; */
 }
 
 
@@ -472,6 +472,7 @@ text-align: center;
         position: absolute;
         top: 0;
         opacity: .75;
+
     }
     /* ------------------------------------- */
 

@@ -271,12 +271,14 @@ $title = 'MOVWE-孔劉';
             </div>
         </div>
         <div class="with-coupon-last">
-            還沒將MOVWE加入書籤嗎？ <a href="#">現在加入</a>
+            還沒登入MOVWE嗎？
         </div>
         <div class="go_to_ott_box">
-            <button class="btn_2w close_ott_box">
-                確認
-            </button>
+            <a href="member_login.php">
+                <button class="btn_2w close_ott_box">
+                    前往登入
+                </button>
+            </a>
         </div>
     </div>
 

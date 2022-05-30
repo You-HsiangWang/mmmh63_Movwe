@@ -6,174 +6,172 @@ $title = 'MOVWE-搜尋結果';
 ?>
 
 <?php include __DIR__ . '/parts/movwe_head.php'; ?>
-    <!-- <link href="./fontawesome/css/all.css" rel="stylesheet">
+<!-- <link href="./fontawesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/Nav.css">
     <link rel="stylesheet" href="./css/BS.css"> -->
-    <link rel="stylesheet" href="./css/mystyle.css">
-    <link rel="stylesheet" href="./css/search__filter.css">
-    <link rel="stylesheet" href="./css/Carousel_1.css">
-    <link rel="stylesheet" href="./css/Carousel_7.css">
-    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="./img/nav_images/LOGO.png">
+<link rel="stylesheet" href="./css/mystyle.css">
+<link rel="stylesheet" href="./css/search__filter.css">
+<link rel="stylesheet" href="./css/Carousel_1.css">
+<link rel="stylesheet" href="./css/Carousel_7.css">
+<!-- <link rel="stylesheet" href="./css/reset.css"> -->
+<!-- <link rel="shortcut icon" type="image/x-icon" href="./img/nav_images/LOGO.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
 
-    <!-- <title>Movwe</title> -->
-    <style>
+<!-- <title>Movwe</title> -->
+<style>
+    /* 手機版 */
+
+    .single {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .multiple {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* 文章 */
+
+    .card-article {
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ffffff80;
+    }
+
+    .card-article-left {
+        width: 65%;
+    }
+
+    /* 文章作者頭像 */
+
+    .author-img-wrap {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .author-img-wrap img {
+        width: 100%;
+    }
+
+    /* 文章圖 */
+
+    .card-article-right {
+        width: 30%;
+    }
+
+    .article-img-wrap {
+        width: 90%;
+        overflow: hidden;
+
+    }
+
+    .article-img-wrap img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .article__container {
+        display: none;
+    }
 
 
-        /* 手機版 */
 
-        .single {
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
+    /* 電腦版 */
+
+    @media screen and (min-width: 750px) {
+
+        h4 {
+            font-size: 20px;
         }
 
-        .multiple {
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
+        p {
+            font-size: 18px;
+        }
+
+        a {
+            font-size: 16px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+
+        .text__container {
+            width: 94%;
+            /* background-color: rgb(124, 124, 124); */
+            margin: 0px auto;
+            /* display: flex; */
+            /* justify-content: space-around; */
+        }
+
+        .top_nav_searchbar_box {
+            width: 200px;
+        }
+
+        .left_nav {
+            display: block !important;
+        }
+
+        .left_div {
+            display: block !important;
+        }
+
+        .bars {
+            opacity: 0;
+        }
+
+        .top_nav_movwe_img-2 {
+            transform: scale(1);
         }
 
         /* 文章 */
 
-        .card-article {
+        .article__container {
+
             width: 100%;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #ffffff80;
+            margin: 100px auto 0 auto;
         }
 
         .card-article-left {
-            width: 65%;
+            width: 85%;
         }
 
-        /* 文章作者頭像 */
+        .card-article-right {
+            width: 10%;
+        }
 
-        .author-img-wrap {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
+        .card-article-left .multiple {
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
             overflow: hidden;
-        }
-
-        .author-img-wrap img {
-            width: 100%;
         }
 
         /* 文章圖 */
 
-        .card-article-right {
-            width: 30%;
-        }
-
         .article-img-wrap {
-            width: 90%;
-            overflow: hidden;
-
-        }
-
-        .article-img-wrap img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .article__container {
-            display: none;
+            width: 150px;
+            height: 150px;
         }
 
 
-
-        /* 電腦版 */
-
-        @media screen and (min-width: 750px) {
-
-            h4 {
-                font-size: 20px;
-            }
-
-            p {
-                font-size: 18px;
-            }
-
-            a {
-                font-size: 16px;
-            }
-
-            span {
-                font-size: 14px;
-            }
-
-            .text__container {
-                width: 94%;
-                /* background-color: rgb(124, 124, 124); */
-                margin: 0px auto;
-                /* display: flex; */
-                /* justify-content: space-around; */
-            }
-
-            .top_nav_searchbar_box {
-                width: 200px;
-            }
-
-            .left_nav {
-                display: block !important;
-            }
-
-            .left_div {
-                display: block !important;
-            }
-
-            .bars {
-                opacity: 0;
-            }
-
-            .top_nav_movwe_img-2 {
-                transform: scale(1);
-            }
-
-            /* 文章 */
-
-            .article__container {
-
-                width: 100%;
-                margin: 100px auto 0 auto;
-            }
-
-            .card-article-left {
-                width: 85%;
-            }
-
-            .card-article-right {
-                width: 10%;
-            }
-
-            .card-article-left .multiple {
-                display: -webkit-box;
-                -webkit-line-clamp: 5;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-            }
-
-            /* 文章圖 */
-
-            .article-img-wrap {
-                width: 150px;
-                height: 150px;
-            }
-
-
-        }
-    </style>
+    }
+</style>
 </head>
 
 <body>
     <!----------nav_top-------------->
-    <?php include __DIR__. '/parts/movwe_nav_fin.php' ?>
+    <?php include __DIR__ . '/parts/movwe_nav_fin.php' ?>
     <div class="layout">
-        <?php include __DIR__. '/parts/movwe_nav_leftdiv.php' ?>
+        <?php include __DIR__ . '/parts/movwe_nav_leftdiv.php' ?>
         <!-- <div class="left_div"></div> -->
         <!----------nav_left-------------->
 
@@ -210,7 +208,7 @@ $title = 'MOVWE-搜尋結果';
                         <button class="filter_4w filter__btn">依熱門度</button>
                     </div>
                 </div>
-                
+
 
                 <!----------------------------------------------->
 
@@ -236,8 +234,7 @@ $title = 'MOVWE-搜尋結果';
                                     <div class="image__box__7">
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -263,8 +260,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_2.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product_2.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -290,8 +286,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -317,8 +312,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card4__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_4.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product_4.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -344,8 +338,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card5__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -371,8 +364,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card6__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_2.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product_2.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -398,8 +390,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card7__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -431,8 +422,7 @@ $title = 'MOVWE-搜尋結果';
                                     <div class="image__box__7">
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -458,8 +448,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_2.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product_2.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -485,8 +474,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -512,8 +500,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card4__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_4.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product_4.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -539,8 +526,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card5__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -566,8 +552,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card6__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_2.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product_2.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -593,8 +578,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card7__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -626,8 +610,7 @@ $title = 'MOVWE-搜尋結果';
                                     <div class="image__box__7">
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -653,8 +636,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_2.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product_2.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -680,8 +662,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -707,8 +688,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card4__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_4.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product_4.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -734,8 +714,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card5__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -761,8 +740,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card6__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_2.jpg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product_2.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -788,8 +766,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card7__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg"
-                                                    alt="">
+                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
@@ -863,101 +840,100 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                <div class="information__bottom">
+                                                    <div class="information__bottom_1 Bottom__display">
+                                                        <p class="information__typ">
+                                                            影劇
+                                                        </p>
+                                                        <div class="bottom_6_icon_box">
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                            </a>
+                                                            </p>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                        </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__point">
-                                                                <p>
-                                                                    4.9
-                                                                </p>
+                                                    </div>
+                                                    <div class="information__bottom_2 Bottom__display">
+                                                        <p class="information__name">
+                                                            孤單又燦爛的神 鬼怪
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_3 Bottom__display">
+                                                        <div class="information__star">
+                                                            <div class="information__staricon_box">
+                                                                <img src="./img/icons/start.svg" alt="">
                                                             </div>
                                                         </div>
-                                                        <div class="information__bottom_4 Bottom__display">
+                                                        <div class="information__point">
                                                             <p>
-                                                                浪漫愛情 /
+                                                                4.9
                                                             </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
                                                         </div>
                                                     </div>
-                                                
+                                                    <div class="information__bottom_4 Bottom__display">
+                                                        <p>
+                                                            浪漫愛情 /
+                                                        </p>
+                                                        <p>
+                                                            奇幻冒險
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_5 Bottom__display">
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                孔劉
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                金高銀
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+
+                                                            <p class="information__actor__name">
+                                                                劉寅娜
+                                                            </p>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                        <a href="./single-movie-page0511.html">
+                                                            <p class="detail">
+                                                                查看詳細..
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="information__bottom_6 Bottom__display">
+                                                        <button class="push__up">
+                                                            <p>
+                                                                ＋ 加入片單
+                                                            </p>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                             <div class="carousel__images__box">
                                                 <img class="carousel__images" src="./img/center/h-1.jpeg" alt="">
@@ -979,7 +955,7 @@ $title = 'MOVWE-搜尋結果';
                                                         </div>
                                                         <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
-                                                            
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -988,100 +964,99 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                <div class="information__bottom">
+                                                    <div class="information__bottom_1 Bottom__display">
+                                                        <p class="information__typ">
+                                                            影劇
+                                                        </p>
+                                                        <div class="bottom_6_icon_box">
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                            </a>
+                                                            </p>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                        </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__point">
-                                                                <p>
-                                                                    4.9
-                                                                </p>
+                                                    </div>
+                                                    <div class="information__bottom_2 Bottom__display">
+                                                        <p class="information__name">
+                                                            孤單又燦爛的神 鬼怪
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_3 Bottom__display">
+                                                        <div class="information__star">
+                                                            <div class="information__staricon_box">
+                                                                <img src="./img/icons/start.svg" alt="">
                                                             </div>
                                                         </div>
-                                                        <div class="information__bottom_4 Bottom__display">
+                                                        <div class="information__point">
                                                             <p>
-                                                                浪漫愛情 /
+                                                                4.9
                                                             </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
                                                         </div>
                                                     </div>
+                                                    <div class="information__bottom_4 Bottom__display">
+                                                        <p>
+                                                            浪漫愛情 /
+                                                        </p>
+                                                        <p>
+                                                            奇幻冒險
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_5 Bottom__display">
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                孔劉
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                金高銀
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+
+                                                            <p class="information__actor__name">
+                                                                劉寅娜
+                                                            </p>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                        <a href="./single-movie-page0511.html">
+                                                            <p class="detail">
+                                                                查看詳細..
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="information__bottom_6 Bottom__display">
+                                                        <button class="push__up">
+                                                            <p>
+                                                                ＋ 加入片單
+                                                            </p>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="carousel__images__box">
                                                 <img class="carousel__images" src="./img/center/h-7.jpeg" alt="">
@@ -1111,100 +1086,99 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                <div class="information__bottom">
+                                                    <div class="information__bottom_1 Bottom__display">
+                                                        <p class="information__typ">
+                                                            影劇
+                                                        </p>
+                                                        <div class="bottom_6_icon_box">
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                            </a>
+                                                            </p>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                        </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__point">
-                                                                <p>
-                                                                    4.9
-                                                                </p>
+                                                    </div>
+                                                    <div class="information__bottom_2 Bottom__display">
+                                                        <p class="information__name">
+                                                            孤單又燦爛的神 鬼怪
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_3 Bottom__display">
+                                                        <div class="information__star">
+                                                            <div class="information__staricon_box">
+                                                                <img src="./img/icons/start.svg" alt="">
                                                             </div>
                                                         </div>
-                                                        <div class="information__bottom_4 Bottom__display">
+                                                        <div class="information__point">
                                                             <p>
-                                                                浪漫愛情 /
+                                                                4.9
                                                             </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
                                                         </div>
                                                     </div>
+                                                    <div class="information__bottom_4 Bottom__display">
+                                                        <p>
+                                                            浪漫愛情 /
+                                                        </p>
+                                                        <p>
+                                                            奇幻冒險
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_5 Bottom__display">
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                孔劉
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                金高銀
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+
+                                                            <p class="information__actor__name">
+                                                                劉寅娜
+                                                            </p>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                        <a href="./single-movie-page0511.html">
+                                                            <p class="detail">
+                                                                查看詳細..
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="information__bottom_6 Bottom__display">
+                                                        <button class="push__up">
+                                                            <p>
+                                                                ＋ 加入片單
+                                                            </p>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="carousel__images__box">
                                                 <img class="carousel__images" src="./img/center/h-6.jpeg" alt="">
@@ -1234,100 +1208,99 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card card4">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                <div class="information__bottom">
+                                                    <div class="information__bottom_1 Bottom__display">
+                                                        <p class="information__typ">
+                                                            影劇
+                                                        </p>
+                                                        <div class="bottom_6_icon_box">
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                            </a>
+                                                            </p>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                        </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__point">
-                                                                <p>
-                                                                    4.9
-                                                                </p>
+                                                    </div>
+                                                    <div class="information__bottom_2 Bottom__display">
+                                                        <p class="information__name">
+                                                            孤單又燦爛的神 鬼怪
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_3 Bottom__display">
+                                                        <div class="information__star">
+                                                            <div class="information__staricon_box">
+                                                                <img src="./img/icons/start.svg" alt="">
                                                             </div>
                                                         </div>
-                                                        <div class="information__bottom_4 Bottom__display">
+                                                        <div class="information__point">
                                                             <p>
-                                                                浪漫愛情 /
+                                                                4.9
                                                             </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
                                                         </div>
                                                     </div>
+                                                    <div class="information__bottom_4 Bottom__display">
+                                                        <p>
+                                                            浪漫愛情 /
+                                                        </p>
+                                                        <p>
+                                                            奇幻冒險
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_5 Bottom__display">
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                孔劉
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                金高銀
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+
+                                                            <p class="information__actor__name">
+                                                                劉寅娜
+                                                            </p>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                        <a href="./single-movie-page0511.html">
+                                                            <p class="detail">
+                                                                查看詳細..
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="information__bottom_6 Bottom__display">
+                                                        <button class="push__up">
+                                                            <p>
+                                                                ＋ 加入片單
+                                                            </p>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="carousel__images__box">
                                                 <img class="carousel__images" src="./img/center/h-5.jpeg" alt="">
@@ -1357,100 +1330,99 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card card5">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                <div class="information__bottom">
+                                                    <div class="information__bottom_1 Bottom__display">
+                                                        <p class="information__typ">
+                                                            影劇
+                                                        </p>
+                                                        <div class="bottom_6_icon_box">
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                            </a>
+                                                            </p>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                        </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__point">
-                                                                <p>
-                                                                    4.9
-                                                                </p>
+                                                    </div>
+                                                    <div class="information__bottom_2 Bottom__display">
+                                                        <p class="information__name">
+                                                            孤單又燦爛的神 鬼怪
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_3 Bottom__display">
+                                                        <div class="information__star">
+                                                            <div class="information__staricon_box">
+                                                                <img src="./img/icons/start.svg" alt="">
                                                             </div>
                                                         </div>
-                                                        <div class="information__bottom_4 Bottom__display">
+                                                        <div class="information__point">
                                                             <p>
-                                                                浪漫愛情 /
+                                                                4.9
                                                             </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
                                                         </div>
                                                     </div>
+                                                    <div class="information__bottom_4 Bottom__display">
+                                                        <p>
+                                                            浪漫愛情 /
+                                                        </p>
+                                                        <p>
+                                                            奇幻冒險
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_5 Bottom__display">
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                孔劉
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                金高銀
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+
+                                                            <p class="information__actor__name">
+                                                                劉寅娜
+                                                            </p>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                        <a href="./single-movie-page0511.html">
+                                                            <p class="detail">
+                                                                查看詳細..
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="information__bottom_6 Bottom__display">
+                                                        <button class="push__up">
+                                                            <p>
+                                                                ＋ 加入片單
+                                                            </p>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="carousel__images__box">
                                                 <img class="carousel__images" src="./img/center/h-4.jpeg" alt="">
@@ -1480,100 +1452,99 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card card6">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                <div class="information__bottom">
+                                                    <div class="information__bottom_1 Bottom__display">
+                                                        <p class="information__typ">
+                                                            影劇
+                                                        </p>
+                                                        <div class="bottom_6_icon_box">
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                            </a>
+                                                            </p>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                        </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__point">
-                                                                <p>
-                                                                    4.9
-                                                                </p>
+                                                    </div>
+                                                    <div class="information__bottom_2 Bottom__display">
+                                                        <p class="information__name">
+                                                            孤單又燦爛的神 鬼怪
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_3 Bottom__display">
+                                                        <div class="information__star">
+                                                            <div class="information__staricon_box">
+                                                                <img src="./img/icons/start.svg" alt="">
                                                             </div>
                                                         </div>
-                                                        <div class="information__bottom_4 Bottom__display">
+                                                        <div class="information__point">
                                                             <p>
-                                                                浪漫愛情 /
+                                                                4.9
                                                             </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
                                                         </div>
                                                     </div>
+                                                    <div class="information__bottom_4 Bottom__display">
+                                                        <p>
+                                                            浪漫愛情 /
+                                                        </p>
+                                                        <p>
+                                                            奇幻冒險
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_5 Bottom__display">
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                孔劉
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                金高銀
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+
+                                                            <p class="information__actor__name">
+                                                                劉寅娜
+                                                            </p>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                        <a href="./single-movie-page0511.html">
+                                                            <p class="detail">
+                                                                查看詳細..
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="information__bottom_6 Bottom__display">
+                                                        <button class="push__up">
+                                                            <p>
+                                                                ＋ 加入片單
+                                                            </p>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="carousel__images__box">
                                                 <img class="carousel__images" src="./img/center/h-3.jpeg" alt="">
@@ -1603,100 +1574,99 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card card7">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                <div class="information__bottom">
+                                                    <div class="information__bottom_1 Bottom__display">
+                                                        <p class="information__typ">
+                                                            影劇
+                                                        </p>
+                                                        <div class="bottom_6_icon_box">
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                            </a>
+                                                            </p>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                        </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__point">
-                                                                <p>
-                                                                    4.9
-                                                                </p>
+                                                    </div>
+                                                    <div class="information__bottom_2 Bottom__display">
+                                                        <p class="information__name">
+                                                            孤單又燦爛的神 鬼怪
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_3 Bottom__display">
+                                                        <div class="information__star">
+                                                            <div class="information__staricon_box">
+                                                                <img src="./img/icons/start.svg" alt="">
                                                             </div>
                                                         </div>
-                                                        <div class="information__bottom_4 Bottom__display">
+                                                        <div class="information__point">
                                                             <p>
-                                                                浪漫愛情 /
+                                                                4.9
                                                             </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
                                                         </div>
                                                     </div>
+                                                    <div class="information__bottom_4 Bottom__display">
+                                                        <p>
+                                                            浪漫愛情 /
+                                                        </p>
+                                                        <p>
+                                                            奇幻冒險
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_5 Bottom__display">
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                孔劉
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                金高銀
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+
+                                                            <p class="information__actor__name">
+                                                                劉寅娜
+                                                            </p>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                        <a href="./single-movie-page0511.html">
+                                                            <p class="detail">
+                                                                查看詳細..
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="information__bottom_6 Bottom__display">
+                                                        <button class="push__up">
+                                                            <p>
+                                                                ＋ 加入片單
+                                                            </p>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="carousel__images__box">
                                                 <img class="carousel__images" src="./img/center/h-2.jpeg" alt="">
@@ -1731,101 +1701,100 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                <div class="information__bottom">
+                                                    <div class="information__bottom_1 Bottom__display">
+                                                        <p class="information__typ">
+                                                            影劇
+                                                        </p>
+                                                        <div class="bottom_6_icon_box">
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                            </a>
+                                                            </p>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                        </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__point">
-                                                                <p>
-                                                                    4.9
-                                                                </p>
+                                                    </div>
+                                                    <div class="information__bottom_2 Bottom__display">
+                                                        <p class="information__name">
+                                                            孤單又燦爛的神 鬼怪
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_3 Bottom__display">
+                                                        <div class="information__star">
+                                                            <div class="information__staricon_box">
+                                                                <img src="./img/icons/start.svg" alt="">
                                                             </div>
                                                         </div>
-                                                        <div class="information__bottom_4 Bottom__display">
+                                                        <div class="information__point">
                                                             <p>
-                                                                浪漫愛情 /
+                                                                4.9
                                                             </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
                                                         </div>
                                                     </div>
-                                                
+                                                    <div class="information__bottom_4 Bottom__display">
+                                                        <p>
+                                                            浪漫愛情 /
+                                                        </p>
+                                                        <p>
+                                                            奇幻冒險
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_5 Bottom__display">
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                孔劉
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                金高銀
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+
+                                                            <p class="information__actor__name">
+                                                                劉寅娜
+                                                            </p>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                        <a href="./single-movie-page0511.html">
+                                                            <p class="detail">
+                                                                查看詳細..
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="information__bottom_6 Bottom__display">
+                                                        <button class="push__up">
+                                                            <p>
+                                                                ＋ 加入片單
+                                                            </p>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                             <div class="carousel__images__box">
                                                 <img class="carousel__images" src="./img/center/h-1.jpeg" alt="">
@@ -1847,7 +1816,7 @@ $title = 'MOVWE-搜尋結果';
                                                         </div>
                                                         <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
-                                                            
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1856,100 +1825,99 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                <div class="information__bottom">
+                                                    <div class="information__bottom_1 Bottom__display">
+                                                        <p class="information__typ">
+                                                            影劇
+                                                        </p>
+                                                        <div class="bottom_6_icon_box">
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                            </a>
+                                                            </p>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                        </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__point">
-                                                                <p>
-                                                                    4.9
-                                                                </p>
+                                                    </div>
+                                                    <div class="information__bottom_2 Bottom__display">
+                                                        <p class="information__name">
+                                                            孤單又燦爛的神 鬼怪
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_3 Bottom__display">
+                                                        <div class="information__star">
+                                                            <div class="information__staricon_box">
+                                                                <img src="./img/icons/start.svg" alt="">
                                                             </div>
                                                         </div>
-                                                        <div class="information__bottom_4 Bottom__display">
+                                                        <div class="information__point">
                                                             <p>
-                                                                浪漫愛情 /
+                                                                4.9
                                                             </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
                                                         </div>
                                                     </div>
+                                                    <div class="information__bottom_4 Bottom__display">
+                                                        <p>
+                                                            浪漫愛情 /
+                                                        </p>
+                                                        <p>
+                                                            奇幻冒險
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_5 Bottom__display">
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                孔劉
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                金高銀
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+
+                                                            <p class="information__actor__name">
+                                                                劉寅娜
+                                                            </p>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                        <a href="./single-movie-page0511.html">
+                                                            <p class="detail">
+                                                                查看詳細..
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="information__bottom_6 Bottom__display">
+                                                        <button class="push__up">
+                                                            <p>
+                                                                ＋ 加入片單
+                                                            </p>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="carousel__images__box">
                                                 <img class="carousel__images" src="./img/center/h-7.jpeg" alt="">
@@ -1979,100 +1947,99 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                <div class="information__bottom">
+                                                    <div class="information__bottom_1 Bottom__display">
+                                                        <p class="information__typ">
+                                                            影劇
+                                                        </p>
+                                                        <div class="bottom_6_icon_box">
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                            </a>
+                                                            </p>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                        </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__point">
-                                                                <p>
-                                                                    4.9
-                                                                </p>
+                                                    </div>
+                                                    <div class="information__bottom_2 Bottom__display">
+                                                        <p class="information__name">
+                                                            孤單又燦爛的神 鬼怪
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_3 Bottom__display">
+                                                        <div class="information__star">
+                                                            <div class="information__staricon_box">
+                                                                <img src="./img/icons/start.svg" alt="">
                                                             </div>
                                                         </div>
-                                                        <div class="information__bottom_4 Bottom__display">
+                                                        <div class="information__point">
                                                             <p>
-                                                                浪漫愛情 /
+                                                                4.9
                                                             </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
                                                         </div>
                                                     </div>
+                                                    <div class="information__bottom_4 Bottom__display">
+                                                        <p>
+                                                            浪漫愛情 /
+                                                        </p>
+                                                        <p>
+                                                            奇幻冒險
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_5 Bottom__display">
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                孔劉
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                金高銀
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+
+                                                            <p class="information__actor__name">
+                                                                劉寅娜
+                                                            </p>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                        <a href="./single-movie-page0511.html">
+                                                            <p class="detail">
+                                                                查看詳細..
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="information__bottom_6 Bottom__display">
+                                                        <button class="push__up">
+                                                            <p>
+                                                                ＋ 加入片單
+                                                            </p>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="carousel__images__box">
                                                 <img class="carousel__images" src="./img/center/h-6.jpeg" alt="">
@@ -2102,100 +2069,99 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card card4">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                <div class="information__bottom">
+                                                    <div class="information__bottom_1 Bottom__display">
+                                                        <p class="information__typ">
+                                                            影劇
+                                                        </p>
+                                                        <div class="bottom_6_icon_box">
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                            </a>
+                                                            </p>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                        </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__point">
-                                                                <p>
-                                                                    4.9
-                                                                </p>
+                                                    </div>
+                                                    <div class="information__bottom_2 Bottom__display">
+                                                        <p class="information__name">
+                                                            孤單又燦爛的神 鬼怪
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_3 Bottom__display">
+                                                        <div class="information__star">
+                                                            <div class="information__staricon_box">
+                                                                <img src="./img/icons/start.svg" alt="">
                                                             </div>
                                                         </div>
-                                                        <div class="information__bottom_4 Bottom__display">
+                                                        <div class="information__point">
                                                             <p>
-                                                                浪漫愛情 /
+                                                                4.9
                                                             </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
                                                         </div>
                                                     </div>
+                                                    <div class="information__bottom_4 Bottom__display">
+                                                        <p>
+                                                            浪漫愛情 /
+                                                        </p>
+                                                        <p>
+                                                            奇幻冒險
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_5 Bottom__display">
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                孔劉
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                金高銀
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+
+                                                            <p class="information__actor__name">
+                                                                劉寅娜
+                                                            </p>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                        <a href="./single-movie-page0511.html">
+                                                            <p class="detail">
+                                                                查看詳細..
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="information__bottom_6 Bottom__display">
+                                                        <button class="push__up">
+                                                            <p>
+                                                                ＋ 加入片單
+                                                            </p>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="carousel__images__box">
                                                 <img class="carousel__images" src="./img/center/h-5.jpeg" alt="">
@@ -2225,100 +2191,99 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card card5">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                <div class="information__bottom">
+                                                    <div class="information__bottom_1 Bottom__display">
+                                                        <p class="information__typ">
+                                                            影劇
+                                                        </p>
+                                                        <div class="bottom_6_icon_box">
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                            </a>
+                                                            </p>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                        </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__point">
-                                                                <p>
-                                                                    4.9
-                                                                </p>
+                                                    </div>
+                                                    <div class="information__bottom_2 Bottom__display">
+                                                        <p class="information__name">
+                                                            孤單又燦爛的神 鬼怪
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_3 Bottom__display">
+                                                        <div class="information__star">
+                                                            <div class="information__staricon_box">
+                                                                <img src="./img/icons/start.svg" alt="">
                                                             </div>
                                                         </div>
-                                                        <div class="information__bottom_4 Bottom__display">
+                                                        <div class="information__point">
                                                             <p>
-                                                                浪漫愛情 /
+                                                                4.9
                                                             </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
                                                         </div>
                                                     </div>
+                                                    <div class="information__bottom_4 Bottom__display">
+                                                        <p>
+                                                            浪漫愛情 /
+                                                        </p>
+                                                        <p>
+                                                            奇幻冒險
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_5 Bottom__display">
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                孔劉
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                金高銀
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+
+                                                            <p class="information__actor__name">
+                                                                劉寅娜
+                                                            </p>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                        <a href="./single-movie-page0511.html">
+                                                            <p class="detail">
+                                                                查看詳細..
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="information__bottom_6 Bottom__display">
+                                                        <button class="push__up">
+                                                            <p>
+                                                                ＋ 加入片單
+                                                            </p>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="carousel__images__box">
                                                 <img class="carousel__images" src="./img/center/h-4.jpeg" alt="">
@@ -2348,100 +2313,99 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card card6">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                <div class="information__bottom">
+                                                    <div class="information__bottom_1 Bottom__display">
+                                                        <p class="information__typ">
+                                                            影劇
+                                                        </p>
+                                                        <div class="bottom_6_icon_box">
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                            </a>
+                                                            </p>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                        </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__point">
-                                                                <p>
-                                                                    4.9
-                                                                </p>
+                                                    </div>
+                                                    <div class="information__bottom_2 Bottom__display">
+                                                        <p class="information__name">
+                                                            孤單又燦爛的神 鬼怪
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_3 Bottom__display">
+                                                        <div class="information__star">
+                                                            <div class="information__staricon_box">
+                                                                <img src="./img/icons/start.svg" alt="">
                                                             </div>
                                                         </div>
-                                                        <div class="information__bottom_4 Bottom__display">
+                                                        <div class="information__point">
                                                             <p>
-                                                                浪漫愛情 /
+                                                                4.9
                                                             </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
                                                         </div>
                                                     </div>
+                                                    <div class="information__bottom_4 Bottom__display">
+                                                        <p>
+                                                            浪漫愛情 /
+                                                        </p>
+                                                        <p>
+                                                            奇幻冒險
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_5 Bottom__display">
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                孔劉
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                金高銀
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+
+                                                            <p class="information__actor__name">
+                                                                劉寅娜
+                                                            </p>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                        <a href="./single-movie-page0511.html">
+                                                            <p class="detail">
+                                                                查看詳細..
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="information__bottom_6 Bottom__display">
+                                                        <button class="push__up">
+                                                            <p>
+                                                                ＋ 加入片單
+                                                            </p>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="carousel__images__box">
                                                 <img class="carousel__images" src="./img/center/h-3.jpeg" alt="">
@@ -2471,100 +2435,99 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card card7">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video"
-                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
-                                                    <div class="information__bottom">
-                                                        <div class="information__bottom_1 Bottom__display">
-                                                            <p class="information__typ">
-                                                                影劇
-                                                            </p>
-                                                            <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
+                                                <div class="information__bottom">
+                                                    <div class="information__bottom_1 Bottom__display">
+                                                        <p class="information__typ">
+                                                            影劇
+                                                        </p>
+                                                        <div class="bottom_6_icon_box">
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/kktv_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                            </a>
+                                                            </p>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                        </div>
 
-                                                        </div>
-                                                        <div class="information__bottom_2 Bottom__display">
-                                                            <p class="information__name">
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_3 Bottom__display">
-                                                            <div class="information__star">
-                                                                <div class="information__staricon_box">
-                                                                    <img src="./img/icons/start.svg" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__point">
-                                                                <p>
-                                                                    4.9
-                                                                </p>
+                                                    </div>
+                                                    <div class="information__bottom_2 Bottom__display">
+                                                        <p class="information__name">
+                                                            孤單又燦爛的神 鬼怪
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_3 Bottom__display">
+                                                        <div class="information__star">
+                                                            <div class="information__staricon_box">
+                                                                <img src="./img/icons/start.svg" alt="">
                                                             </div>
                                                         </div>
-                                                        <div class="information__bottom_4 Bottom__display">
+                                                        <div class="information__point">
                                                             <p>
-                                                                浪漫愛情 /
+                                                                4.9
                                                             </p>
-                                                            <p>
-                                                                奇幻冒險
-                                                            </p>
-                                                        </div>
-                                                        <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    孔劉
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-                                                                <p class="information__actor__name">
-                                                                    金高銀
-                                                                </p>
-                                                            </a>
-                                                            <span class="speace"> / </span>
-                                                            <a href="#">
-
-                                                                <p class="information__actor__name">
-                                                                    劉寅娜
-                                                                </p>
-                                                            </a>
-
-                                                        </div>
-
-                                                        <div class="information__bottom_6-5 Bottom__display">
-                                                            <a href="./single-movie-page0511.html">
-                                                                <p class="detail">
-                                                                    查看詳細..
-                                                                </p>
-                                                            </a>
-                                                        </div>
-                                                        <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p>
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
                                                         </div>
                                                     </div>
+                                                    <div class="information__bottom_4 Bottom__display">
+                                                        <p>
+                                                            浪漫愛情 /
+                                                        </p>
+                                                        <p>
+                                                            奇幻冒險
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_5 Bottom__display">
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                孔劉
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+                                                            <p class="information__actor__name">
+                                                                金高銀
+                                                            </p>
+                                                        </a>
+                                                        <span class="speace"> / </span>
+                                                        <a href="#">
+
+                                                            <p class="information__actor__name">
+                                                                劉寅娜
+                                                            </p>
+                                                        </a>
+
+                                                    </div>
+
+                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                        <a href="./single-movie-page0511.html">
+                                                            <p class="detail">
+                                                                查看詳細..
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="information__bottom_6 Bottom__display">
+                                                        <button class="push__up">
+                                                            <p>
+                                                                ＋ 加入片單
+                                                            </p>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="carousel__images__box">
                                                 <img class="carousel__images" src="./img/center/h-2.jpeg" alt="">
@@ -2686,12 +2649,9 @@ $title = 'MOVWE-搜尋結果';
                             <!-- 包svgㄉdiv -->
                             <div class="d-flex align-item-center">
                                 <input type="button" hidden>
-                                <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_1427_26189)">
-                                        <path
-                                            d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z"
-                                            fill="#ffffff80" />
+                                        <path d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z" fill="#ffffff80" />
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_1427_26189">
@@ -2702,23 +2662,15 @@ $title = 'MOVWE-搜尋結果';
                                 </input>
                                 <span class="ml-10 mr-20">25</span>
                                 <input type="button" hidden>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z"
-                                        fill="#ffffff80" />
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z" fill="#ffffff80" />
                                 </svg>
                                 </input>
                                 <span class="ml-10 mr-20">45</span>
                                 <input type="button" hidden>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z"
-                                        stroke="#ffffff80" />
-                                    <path
-                                        d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z"
-                                        fill="#ffffff80" />
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z" stroke="#ffffff80" />
+                                    <path d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z" fill="#ffffff80" />
                                 </svg>
                                 </input>
                                 <span class="ml-10">30</span>
@@ -2777,12 +2729,9 @@ $title = 'MOVWE-搜尋結果';
                             <!-- 包svgㄉdiv -->
                             <div class="d-flex align-item-center">
                                 <input type="button" hidden>
-                                <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_1427_26189)">
-                                        <path
-                                            d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z"
-                                            fill="#ffffff80" />
+                                        <path d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z" fill="#ffffff80" />
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_1427_26189">
@@ -2793,23 +2742,15 @@ $title = 'MOVWE-搜尋結果';
                                 </input>
                                 <span class="ml-10 mr-20">25</span>
                                 <input type="button" hidden>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z"
-                                        fill="#ffffff80" />
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z" fill="#ffffff80" />
                                 </svg>
                                 </input>
                                 <span class="ml-10 mr-20">45</span>
                                 <input type="button" hidden>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z"
-                                        stroke="#ffffff80" />
-                                    <path
-                                        d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z"
-                                        fill="#ffffff80" />
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z" stroke="#ffffff80" />
+                                    <path d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z" fill="#ffffff80" />
                                 </svg>
                                 </input>
                                 <span class="ml-10">30</span>
@@ -2870,12 +2811,9 @@ $title = 'MOVWE-搜尋結果';
                             <!-- 包svgㄉdiv -->
                             <div class="d-flex align-item-center">
                                 <input type="button" hidden>
-                                <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_1427_26189)">
-                                        <path
-                                            d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z"
-                                            fill="#ffffff80" />
+                                        <path d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z" fill="#ffffff80" />
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_1427_26189">
@@ -2886,23 +2824,15 @@ $title = 'MOVWE-搜尋結果';
                                 </input>
                                 <span class="ml-10 mr-20">25</span>
                                 <input type="button" hidden>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z"
-                                        fill="#ffffff80" />
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z" fill="#ffffff80" />
                                 </svg>
                                 </input>
                                 <span class="ml-10 mr-20">45</span>
                                 <input type="button" hidden>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z"
-                                        stroke="#ffffff80" />
-                                    <path
-                                        d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z"
-                                        fill="#ffffff80" />
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z" stroke="#ffffff80" />
+                                    <path d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z" fill="#ffffff80" />
                                 </svg>
                                 </input>
                                 <span class="ml-10">30</span>
@@ -2985,12 +2915,9 @@ $title = 'MOVWE-搜尋結果';
                             <!-- 包svgㄉdiv -->
                             <div class="d-flex align-item-center">
                                 <input type="button" hidden>
-                                <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_1427_26189)">
-                                        <path
-                                            d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z"
-                                            fill="#ffffff80" />
+                                        <path d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z" fill="#ffffff80" />
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_1427_26189">
@@ -3001,23 +2928,15 @@ $title = 'MOVWE-搜尋結果';
                                 </input>
                                 <span class="ml-10 mr-20">25</span>
                                 <input type="button" hidden>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z"
-                                        fill="#ffffff80" />
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z" fill="#ffffff80" />
                                 </svg>
                                 </input>
                                 <span class="ml-10 mr-20">45</span>
                                 <input type="button" hidden>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z"
-                                        stroke="#ffffff80" />
-                                    <path
-                                        d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z"
-                                        fill="#ffffff80" />
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z" stroke="#ffffff80" />
+                                    <path d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z" fill="#ffffff80" />
                                 </svg>
                                 </input>
                                 <span class="ml-10">30</span>
@@ -3074,12 +2993,9 @@ $title = 'MOVWE-搜尋結果';
                             <!-- 包svgㄉdiv -->
                             <div class="d-flex align-item-center">
                                 <input type="button" hidden>
-                                <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_1427_26189)">
-                                        <path
-                                            d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z"
-                                            fill="#ffffff80" />
+                                        <path d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z" fill="#ffffff80" />
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_1427_26189">
@@ -3090,23 +3006,15 @@ $title = 'MOVWE-搜尋結果';
                                 </input>
                                 <span class="ml-10 mr-20">25</span>
                                 <input type="button" hidden>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z"
-                                        fill="#ffffff80" />
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z" fill="#ffffff80" />
                                 </svg>
                                 </input>
                                 <span class="ml-10 mr-20">45</span>
                                 <input type="button" hidden>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z"
-                                        stroke="#ffffff80" />
-                                    <path
-                                        d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z"
-                                        fill="#ffffff80" />
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z" stroke="#ffffff80" />
+                                    <path d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z" fill="#ffffff80" />
                                 </svg>
                                 </input>
                                 <span class="ml-10">30</span>
@@ -3162,12 +3070,9 @@ $title = 'MOVWE-搜尋結果';
                             <!-- 包svgㄉdiv -->
                             <div class="d-flex align-item-center">
                                 <input type="button" hidden>
-                                <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_1427_26189)">
-                                        <path
-                                            d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z"
-                                            fill="#ffffff80" />
+                                        <path d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z" fill="#ffffff80" />
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_1427_26189">
@@ -3178,23 +3083,15 @@ $title = 'MOVWE-搜尋結果';
                                 </input>
                                 <span class="ml-10 mr-20">25</span>
                                 <input type="button" hidden>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z"
-                                        fill="#ffffff80" />
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z" fill="#ffffff80" />
                                 </svg>
                                 </input>
                                 <span class="ml-10 mr-20">45</span>
                                 <input type="button" hidden>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z"
-                                        stroke="#ffffff80" />
-                                    <path
-                                        d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z"
-                                        fill="#ffffff80" />
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z" stroke="#ffffff80" />
+                                    <path d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z" fill="#ffffff80" />
                                 </svg>
                                 </input>
                                 <span class="ml-10">30</span>
@@ -3250,12 +3147,9 @@ $title = 'MOVWE-搜尋結果';
                             <!-- 包svgㄉdiv -->
                             <div class="d-flex align-item-center">
                                 <input type="button" hidden>
-                                <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_1427_26189)">
-                                        <path
-                                            d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z"
-                                            fill="#ffffff80" />
+                                        <path d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z" fill="#ffffff80" />
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_1427_26189">
@@ -3266,23 +3160,15 @@ $title = 'MOVWE-搜尋結果';
                                 </input>
                                 <span class="ml-10 mr-20">25</span>
                                 <input type="button" hidden>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z"
-                                        fill="#ffffff80" />
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.4999 5.24993C7.35156 5.24993 7.20656 5.29391 7.08322 5.37632C6.95989 5.45873 6.86376 5.57587 6.807 5.71291C6.75023 5.84995 6.73538 6.00075 6.76432 6.14623C6.79326 6.29172 6.86469 6.42535 6.96957 6.53024C7.07446 6.63513 7.2081 6.70656 7.35358 6.7355C7.49906 6.76443 7.64986 6.74958 7.78691 6.69282C7.92395 6.63605 8.04108 6.53992 8.12349 6.41659C8.2059 6.29325 8.24989 6.14825 8.24989 5.99992C8.24989 5.80101 8.17087 5.61024 8.03022 5.46959C7.88957 5.32894 7.69881 5.24993 7.4999 5.24993ZM12.7498 0H2.24997C1.65324 0 1.08095 0.23705 0.659001 0.659001C0.23705 1.08095 0 1.65324 0 2.24997V9.74986C0 10.3466 0.23705 10.9189 0.659001 11.3408C1.08095 11.7628 1.65324 11.9998 2.24997 11.9998H10.9423L13.7173 14.7823C13.7874 14.8518 13.8705 14.9068 13.9619 14.9441C14.0533 14.9814 14.1511 15.0004 14.2498 14.9998C14.3482 15.0023 14.4458 14.9818 14.5348 14.9398C14.6718 14.8835 14.789 14.788 14.8718 14.6652C14.9545 14.5424 14.9991 14.3979 14.9998 14.2498V2.24997C14.9998 1.65324 14.7627 1.08095 14.3408 0.659001C13.9188 0.23705 13.3466 0 12.7498 0ZM13.4998 12.4423L11.7823 10.7174C11.7123 10.6478 11.6291 10.5928 11.5378 10.5555C11.4464 10.5182 11.3485 10.4993 11.2498 10.4999H2.24997C2.05106 10.4999 1.8603 10.4208 1.71965 10.2802C1.579 10.1395 1.49998 9.94877 1.49998 9.74986V2.24997C1.49998 2.05106 1.579 1.8603 1.71965 1.71965C1.8603 1.579 2.05106 1.49998 2.24997 1.49998H12.7498C12.9487 1.49998 13.1395 1.579 13.2801 1.71965C13.4208 1.8603 13.4998 2.05106 13.4998 2.24997V12.4423ZM4.49994 5.24993C4.3516 5.24993 4.2066 5.29391 4.08327 5.37632C3.95993 5.45873 3.8638 5.57587 3.80704 5.71291C3.75027 5.84995 3.73542 6.00075 3.76436 6.14623C3.7933 6.29172 3.86473 6.42535 3.96962 6.53024C4.0745 6.63513 4.20814 6.70656 4.35362 6.7355C4.49911 6.76443 4.6499 6.74958 4.78695 6.69282C4.92399 6.63605 5.04112 6.53992 5.12353 6.41659C5.20594 6.29325 5.24993 6.14825 5.24993 5.99992C5.24993 5.80101 5.17091 5.61024 5.03026 5.46959C4.88961 5.32894 4.69885 5.24993 4.49994 5.24993V5.24993ZM10.4999 5.24993C10.3515 5.24993 10.2065 5.29391 10.0832 5.37632C9.95985 5.45873 9.86372 5.57587 9.80695 5.71291C9.75019 5.84995 9.73534 6.00075 9.76428 6.14623C9.79321 6.29172 9.86464 6.42535 9.96953 6.53024C10.0744 6.63513 10.2081 6.70656 10.3535 6.7355C10.499 6.76443 10.6498 6.74958 10.7869 6.69282C10.9239 6.63605 11.041 6.53992 11.1234 6.41659C11.2059 6.29325 11.2498 6.14825 11.2498 5.99992C11.2498 5.80101 11.1708 5.61024 11.0302 5.46959C10.8895 5.32894 10.6988 5.24993 10.4999 5.24993Z" fill="#ffffff80" />
                                 </svg>
                                 </input>
                                 <span class="ml-10 mr-20">45</span>
                                 <input type="button" hidden>
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z"
-                                        stroke="#ffffff80" />
-                                    <path
-                                        d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z"
-                                        fill="#ffffff80" />
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.97267 1.00018L14.0048 7.03233C14.6651 7.69257 14.6651 8.77295 14.0048 9.43319L9.43319 14.0048C8.77295 14.6651 7.69257 14.6651 7.03233 14.0048L1.00018 7.97267C0.680064 7.65255 0.5 7.2224 0.5 6.77224V1.65041C0.5 1.01018 1.01018 0.5 1.65041 0.5H6.77224C7.2224 0.5 7.65255 0.680064 7.97267 1.00018Z" stroke="#ffffff80" />
+                                    <path d="M3.34 4.48859C3.94199 4.48859 4.43 4.00058 4.43 3.39859C4.43 2.7966 3.94199 2.30859 3.34 2.30859C2.73801 2.30859 2.25 2.7966 2.25 3.39859C2.25 4.00058 2.73801 4.48859 3.34 4.48859Z" fill="#ffffff80" />
                                 </svg>
                                 </input>
                                 <span class="ml-10">30</span>
@@ -3291,11 +3177,10 @@ $title = 'MOVWE-搜尋結果';
                     </div>
                 </div>
             </div>
-
-            <?php include __DIR__. '/parts/movwe_footer.php' ?>
         </div>
     </div>
-    </div>
+    <?php include __DIR__ . '/parts/movwe_footer.php' ?>
+</div>
 
 
 

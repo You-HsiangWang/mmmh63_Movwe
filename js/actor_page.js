@@ -81,15 +81,18 @@ actorShow.addEventListener('click',()=>{
 const goToott03 = document.querySelector('.go-to-ott-03')
 const bottom6Icon = document.querySelector('.go_to_ott')
 const close_Ott_Box = document.querySelector('.close_ott_box')
+const textContainer = document.querySelector('.text__container')
 
 goToott03.style.display = 'none'
 bottom6Icon.addEventListener('click',()=>{
     console.log("hihi");
     goToott03.style.display = 'block'
+    textContainer.style.filter = 'brightness(30%)'
 })
 
 close_Ott_Box.addEventListener('click',()=>{
 goToott03.style.display = 'none'
+textContainer.style.filter = 'brightness(100%)'
 
 })
 

@@ -197,7 +197,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                             </div>
                             <div class="actor__card">
                                 <div class="actor__img-box">
-                                    <img src="./img/center/actor-4.jpeg" alt="">
+                                    <img src="./img/center/actor-6.jpeg" alt="">
                                 </div>
                                 <div class="actor__card__text">
                                     <p class="Actor__name">郭東延</p>
@@ -215,7 +215,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                             </div>
                             <div class="actor__card">
                                 <div class="actor__img-box">
-                                    <img src="./img/center/actor-6.jpeg" alt="">
+                                    <img src="./img/center/actor-4.jpeg" alt="">
                                 </div>
                                 <div class="actor__card__text">
                                     <p class="Actor__name">劉寅娜</p>
@@ -260,9 +260,11 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                 <li class="carousel__slide__6 current-slide__6 ">
                                     <div class="image__box__6">
                                         <div class="image__card__6">
-                                            <div class="carousel__images__box__6">
-                                                <img class="carousel__images__6" src="./img/center/Episode-1.jpg" alt="">
-                                            </div>
+                                            <a href="https://www.iq.com/play/%E9%AC%BC%E6%80%AA-%E7%AC%AC1%E9%9B%86-19rr9zts4k?lang=zh_tw">
+                                                <div class="carousel__images__box__6">
+                                                    <img class="carousel__images__6" src="./img/center/Episode-1.jpg" alt="">
+                                                </div>
+                                            </a>
                                             <div class="single__page__dark_box switch__iQiyi">
                                                 <img class="carousel__images__6" src="./img/center/Episode-1.jpg" alt="">
                                             </div>
