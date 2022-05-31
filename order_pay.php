@@ -94,7 +94,7 @@ $title = 'Movwe-付款資訊';
                     <div class="stick_desk"></div>
                     <h3 class="main-color">購物車內商品</h3>
                 </div>
-                <div class="mt-10 pointer border-bottom-main-color pb-10" id="cartInfo">
+                <div class="mt-10 border-bottom-main-color pb-10" id="cartInfo">
                     <p class="white">購物車內商品
                         <svg class="ml-10" width="6" height="10" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1427_26206)">
@@ -114,43 +114,47 @@ $title = 'Movwe-付款資訊';
                         <tr class="yellow">
                             <th>商品圖片</th>
                             <th>商品名稱</th>
-                            <th>顏色</th>
-                            <th>規格</th>
+                            <th>選項</th>
+                            <th>尺寸</th>
                             <th>數量</th>
                             <th>單價</th>
                             <th>小計</th>
                         </tr>
-                        <tr>
+                        <tr id="text">
                             <td>
-                                <img src="../img/mall/1.jpg" alt="">
+                                <img src="./img/mall/1.jpg" alt="">
                             </td>
                             <td>
                                 <h4>孤單又燦爛的神-鬼怪 周邊娃娃</h4>
                             </td>
                             <td>
-                                <h4>白色</h4>
+                                <h4>蕎麥君</h4>
                             </td>
                             <td>
-                                <h4>M</h4>
+                                <h4>S</h4>
                             </td>
                             <td>
-                                <h4>5</h4>
+                                <h4 id="quantity">1</h4>
+
                             </td>
                             <td>
-                                <h4>NTD840</h4>
+                                <h4 id="singlePrice">840</h4>
                             </td>
                             <td>
-                                <h4>NTD4200</h4>
+                                <h4 id="subTotalPrice">840</h4>
                             </td>
                         </tr>
                     </table>
+                    <div id="noProduct">
+                        <h3>目前購物車內沒有商品</h3>
+                    </div>
                 </div>
                 <!-- 優惠券 -->
                 <div class="d-flex mt-30 pb-10 border-bottom-main-color">
                     <div class="stick_desk"></div>
                     <h3 class="main-color">優惠券</h3>
                 </div>
-                <div class="mt-10 pointer border-bottom-main-color pb-10" id="discountInfo">
+                <div class="mt-10 border-bottom-main-color pb-10" id="discountInfo">
                     <p class="white">已選取的優惠券
                         <svg class="ml-10" width="6" height="10" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1427_26206)">
@@ -167,7 +171,7 @@ $title = 'Movwe-付款資訊';
                 <div class="discount-info border-bottom-main-color d-none">
                     <fieldset class="d-flex justify-around">
                         <div class="d-flex align-item-center">
-                            <input type="radio" id="discount1" name="discount1" class="mr-10">
+                            <input type="radio" id="discount1" name="discount1" class="mr-10" checked>
                             <label for="discount1">
                                 <svg width="350" height="120" viewBox="0 0 350 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2173_26287)">
@@ -285,9 +289,9 @@ $title = 'Movwe-付款資訊';
                     <!-- 宅配 -->
                     <div class="delivery delivery-home d-flex flex-col justify-center align-item-center">
                         <svg width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 11.9375L26.3906 1L37.1328 6.46875M1 11.9375V41.625L26.3906 51M1 11.9375L13.6953 17.2109M47.875 11.9375L26.3906 22.4844M47.875 11.9375V41.625L26.3906 51M47.875 11.9375L37.1328 6.46875M26.3906 22.4844V51M26.3906 22.4844L13.6953 17.2109M13.6953 17.2109L37.1328 6.46875" stroke="#fff" stroke-width="1.5" />
+                            <path d="M1 11.9375L26.3906 1L37.1328 6.46875M1 11.9375V41.625L26.3906 51M1 11.9375L13.6953 17.2109M47.875 11.9375L26.3906 22.4844M47.875 11.9375V41.625L26.3906 51M47.875 11.9375L37.1328 6.46875M26.3906 22.4844V51M26.3906 22.4844L13.6953 17.2109M13.6953 17.2109L37.1328 6.46875" stroke="#10FFA2" stroke-width="1.5" />
                         </svg>
-                        <h4 class="mt-10">宅配到府</h4>
+                        <h4 class="mt-10 main-color">宅配到府</h4>
                     </div>
                     <!-- 711取貨 -->
                     <div class="delivery delivery-711 d-flex flex-col justify-center align-item-center">
@@ -303,7 +307,7 @@ $title = 'Movwe-付款資訊';
                     <div class="stick_desk"></div>
                     <h3 class="main-color">收件資料</h3>
                 </div>
-                <div class="mt-10 pointer border-bottom-main-color pb-10" id="deliveryInfo">
+                <div class="mt-10 border-bottom-main-color pb-10" id="deliveryInfo">
                     <p class="white">查看收件資料
                         <svg class="ml-10" width="6" height="10" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1427_26206)">
@@ -375,7 +379,7 @@ $title = 'Movwe-付款資訊';
                 </div>
                 <!-- 總計金額 -->
                 <div class="w-100 mt-30 d-flex justify-end">
-                    <div class="w-20">
+                    <div class="w-30">
                         <div class="d-flex justify-between">
                             <h4><strong>總共五項商品</strong></h4>
                             <h4>NTD:</h4>
@@ -434,7 +438,7 @@ $title = 'Movwe-付款資訊';
                     </div>
                 </div>
             </div>
-            <?php include __DIR__. '/parts/movwe_footer.php' ?>
+            <!-- <?php include __DIR__. '/parts/movwe_footer.php' ?> -->
         </div>
 
         <?php include __DIR__. '/parts/movwe_scripts.php' ?>
