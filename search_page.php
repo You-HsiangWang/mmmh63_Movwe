@@ -24,7 +24,7 @@ $title = 'MOVWE-搜尋結果';
     /* 手機版 */
 
     *{
-        outline: 1px solid greenyellow;
+        /* outline: 1px solid greenyellow; */
     }
 
     .single {
@@ -217,7 +217,7 @@ $title = 'MOVWE-搜尋結果';
                 <!----------------------------------------------->
 
 
-                <div class="carousel__big__box__7 actor__text__container">
+                <div class="carousel__big__box__7 actor__text__container mb_search_page">
                     <div class="carousel__title__section__7">
                         <div class="stick_desk"></div>
                         <div class="carousel__title__7">
@@ -233,11 +233,37 @@ $title = 'MOVWE-搜尋結果';
                                     <div class="image__box__7">
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                                <img class="carousel__images__7" src="./img/mall/gst/gst01.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
-                                                            豪華精裝典藏A版/2CD </p>
+                                                        鬼怪限量貼紙組 </p>
+                                                    </div>
+                                                    <div class="movie__icons__7">
+                                                        <div class="movie__icon__box__7">
+                                                            <p class="Price">
+                                                                599
+                                                            </p>
+                                                            <p class="ntd">
+                                                                NTD
+                                                            </p>
+                                                        </div>
+                                                        <div class="movie__icon__box__7">
+                                                            <p class="product__typ-1">
+                                                                鬼怪
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="image__card__7">
+                                            <div class="carousel__images__box__7">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst02.jpg" alt="">
+                                                <div class="image__card__text__7">
+                                                    <div class="movie__name__7">
+                                                        <p>
+                                                        韓劇鬼怪PVC夾鍊袋 </p>
                                                     </div>
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
@@ -259,37 +285,11 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_2.jpg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst03.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
-                                                            豪華精裝典藏A版/2CD </p>
-                                                    </div>
-                                                    <div class="movie__icons__7">
-                                                        <div class="movie__icon__box__7">
-                                                            <p class="Price">
-                                                                799
-                                                            </p>
-                                                            <p class="ntd">
-                                                                NTD
-                                                            </p>
-                                                        </div>
-                                                        <div class="movie__icon__box__7">
-                                                            <p class="product__typ-1">
-                                                                鬼怪
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image__card__7">
-                                            <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
-                                                <div class="image__card__text__7">
-                                                    <div class="movie__name__7">
-                                                        <p>
-                                                            豪華精裝典藏A版/2CD </p>
+                                                        機支架人形立牌 </p>
                                                     </div>
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
@@ -311,16 +311,16 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card4__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_4.jpg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst04.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
-                                                            豪華精裝典藏A版/2CD </p>
+                                                        桌上小台曆 </p>
                                                     </div>
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
                                                             <p class="Price">
-                                                                799
+                                                                350
                                                             </p>
                                                             <p class="ntd">
                                                                 NTD
@@ -337,11 +337,11 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card5__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst05.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
-                                                            豪華精裝典藏A版/2CD </p>
+                                                        韓劇鬼怪照片集 </p>
                                                     </div>
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
@@ -363,11 +363,11 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card6__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_2.jpg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst06.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
-                                                            豪華精裝典藏A版/2CD </p>
+                                                        鬼怪哇娃 白色 </p>
                                                     </div>
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
@@ -389,11 +389,11 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card7__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst07.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
-                                                            豪華精裝典藏A版/2CD </p>
+                                                        鬼怪娃娃 黑色 </p>
                                                     </div>
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
@@ -421,11 +421,11 @@ $title = 'MOVWE-搜尋結果';
                                     <div class="image__box__7">
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst08.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
-                                                            豪華精裝典藏A版/2CD </p>
+                                                        鬼怪娃娃 白色 </p>
                                                     </div>
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
@@ -447,11 +447,11 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_2.jpg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst09.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
-                                                            豪華精裝典藏A版/2CD </p>
+                                                        鬼怪娃娃 藍色 </p>
                                                     </div>
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
@@ -473,11 +473,11 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst10.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
-                                                            豪華精裝典藏A版/2CD </p>
+                                                        鬼怪娃娃 紅色 </p>
                                                     </div>
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
@@ -499,11 +499,11 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card4__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_4.jpg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst11.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
-                                                            豪華精裝典藏A版/2CD </p>
+                                                        鬼怪娃娃經典系列組 </p>
                                                     </div>
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
@@ -525,11 +525,11 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card5__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst12.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
-                                                            豪華精裝典藏A版/2CD </p>
+                                                        鬼怪鑰匙圈 </p>
                                                     </div>
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
@@ -551,16 +551,16 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card6__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product_2.jpg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst13.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
-                                                            豪華精裝典藏A版/2CD </p>
+                                                        鬼怪原子筆</p>
                                                     </div>
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
                                                             <p class="Price">
-                                                                799
+                                                                280
                                                             </p>
                                                             <p class="ntd">
                                                                 NTD
@@ -577,16 +577,16 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                         <div class="image__card__7 card7__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst14.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p>
-                                                            豪華精裝典藏A版/2CD </p>
+                                                        鬼怪筆記本 </p>
                                                     </div>
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
                                                             <p class="Price">
-                                                                799
+                                                                199
                                                             </p>
                                                             <p class="ntd">
                                                                 NTD
@@ -624,7 +624,7 @@ $title = 'MOVWE-搜尋結果';
                 <!----------------------------------------------->
 
 
-                <div class="carousel__big__box margin__tp__100">
+                <div class="carousel__big__box margin__tp__100 mb_search_page">
                     <div class="carousel__title__section">
                         <div class="stick_desk"></div>
                         <div class="carousel__title">
@@ -1501,7 +1501,7 @@ $title = 'MOVWE-搜尋結果';
                                         </div>
                                 </li>
                             </ul>
-                            <ul class="carousel__track search__track">
+                            <ul class="carousel__track search__track mb_search_page">
                                 <li class="carousel__slide current-slide">
                                     <div class="image__box">
                                         <div class="image__card">
@@ -2985,7 +2985,7 @@ $title = 'MOVWE-搜尋結果';
             </div>
         </div>
     </div>
-    <!-- <?php include __DIR__ . '/parts/movwe_footer.php' ?> -->
+    <?php include __DIR__ . '/parts/movwe_footer.php' ?>/
 </div>
 
 

@@ -426,7 +426,7 @@ $title = 'MOVWE-商城';
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
-                                                   黑風暴兵公仔
+                                                    黑風暴兵公仔
                                                 </p>
 
                                                 <button class="Shop__card__icon__box">

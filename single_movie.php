@@ -17,6 +17,9 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
 <link rel="stylesheet" href="./css/slider.css">
 <!-- <link rel="stylesheet" href="./css/footer.css"> -->
 <style>
+    *{
+        /* outline: 1px solid greenyellow; */
+    }
     /*  */
 </style>
 </head>
@@ -29,7 +32,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
         <?php include __DIR__. '/parts/movwe_nav_leftdiv.php' ?>
 
         <!--------------------------------------------------------------------------->
-        <div class="container">
+        <div class="container overflow-x">
 
             <!--banner__container----------------->
             <div class="banner__container">
@@ -597,7 +600,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
-                                                            豪華精裝典藏A版/2CD
+                                                            鬼怪限量貼紙組
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -607,7 +610,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
                                                             <p class="Price">
-                                                                799
+                                                                599
                                                             </p>
                                                             <p class="ntd">
                                                                 NTD
@@ -752,7 +755,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
-                                                            豪華精裝典藏A版/2CD
+                                                            鬼怪哇娃 白色
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -783,7 +786,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
-                                                            豪華精裝典藏A版/2CD
+                                                            鬼怪娃娃 黑色
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -818,7 +821,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
-                                                            豪華精裝典藏A版/2CD
+                                                            鬼怪娃娃 白色
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -849,7 +852,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
-                                                            豪華精裝典藏A版/2CD
+                                                            鬼怪娃娃 藍色
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -880,7 +883,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
-                                                            豪華精裝典藏A版/2CD
+                                                            鬼怪娃娃 紅色
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -942,7 +945,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
-                                                            豪華精裝典藏A版/2CD
+                                                            鬼怪鑰匙圈
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -1662,7 +1665,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                 <!--文章-------------------------------------------- -->
 
 
-                <div class="carousel__big__box">
+                <div class="carousel__big__box mb_single_page">
                     <div class="carousel__title__section">
                         <div class="stick_desk"></div>
                         <div class="carousel__title">

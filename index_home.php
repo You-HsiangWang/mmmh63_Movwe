@@ -44,7 +44,7 @@ $title = 'MOVWE-就要你放膽搜';
         <?php include __DIR__ . '/parts/movwe_nav_leftdiv.php'; ?>
 
         <!--------------------------------------------------------------------------->
-        <div class="container">
+        <div class="container overflow-x">
 
             <!--banner__container----------------->
             <div class="banner__container Home__banner">
