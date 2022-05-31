@@ -4944,37 +4944,39 @@ $title = 'MOVWE-就要你放膽搜';
                             </div>
                         </div>
                     </div>
-                    <div class="Movwe__test__section">
-                        <div class="carousel__title__section__5">
-                            <div class="stick_desk"></div>
-                            <div class="carousel__title__5">
-                                <p>
-                                    影劇平台合適度檢測
-                                </p>
-                            </div>
-                        </div>
-                        <div class="discoudt__bigbox">
-                            <div class="discount__title">
-                                <p>
-                                    追劇平台如何選?
-                                </p>
-                                <p class="discount__text">
-                                    4大ott平台比較：Netflix、iQiYi、KKTV、Friday影音
-                                    總是在花冤枉錢？到底哪個才是最適合自己的平台呢?
-                                    就讓movwe幫你找到命定的影劇平台
-                                </p>
-                                <div class="test__number">
-                                    已有2345678人完成檢測
-                                </div>
-                                <div class="join__box">
-                                    <button class="btn_4w">立即檢測</button>
+                    <a href="./dragon_quest.php">
+                        <div class="Movwe__test__section">
+                            <div class="carousel__title__section__5">
+                                <div class="stick_desk"></div>
+                                <div class="carousel__title__5">
+                                    <p>
+                                        影劇平台合適度檢測
+                                    </p>
                                 </div>
                             </div>
-                            <div class="discount__img__box game__box">
-                                <img src="./img/banner/game_s.png" alt="">
+                            <div class="discoudt__bigbox">
+                                <div class="discount__title">
+                                    <p>
+                                        追劇平台如何選?
+                                    </p>
+                                    <p class="discount__text">
+                                        4大ott平台比較：Netflix、iQiYi、KKTV、Friday影音
+                                        總是在花冤枉錢？到底哪個才是最適合自己的平台呢?
+                                        就讓movwe幫你找到命定的影劇平台
+                                    </p>
+                                    <div class="test__number">
+                                        已有2345678人完成檢測
+                                    </div>
+                                    <div class="join__box">
+                                        <button class="btn_4w">立即檢測</button>
+                                    </div>
+                                </div>
+                                <div class="discount__img__box game__box">
+                                    <img src="./img/banner/game_s.png" alt="">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
 
