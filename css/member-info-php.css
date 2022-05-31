@@ -758,6 +758,11 @@ th, td{
 
 .od-pic{
     margin-right: 28px;
+    width: 100px;
+    height: 100%;
+}
+.od-pic img{
+    width: 100%;
 }
 .od-left{
     display: flex;

@@ -125,7 +125,10 @@
             }       
             .posticon-hashtag{
                 cursor: pointer;
-            }     
+            }   
+            .text__container{
+                height: 100vh;
+            }
         }    
         .no-article{
             display:flex
@@ -1943,7 +1946,7 @@
         $('info_child_acc02 ').on('click',saveinitial);
     </script>
 <!-- 影劇>我的片單 -->    
-    <script>
+        <script>
         function accinitial(){
         
         // 4個大頁籤 影劇發亮
@@ -1952,8 +1955,7 @@
 
         // 影劇的tablet分類 僅顯示"影劇"
         $('#acc_films').css('display', 'flex')
-        $('.info_child02 a').css('color','#ffffff80')
-        $('.info_child04 a').css('color','#ffffff80')
+        $('#acc_films').siblings().css('display', 'none');
 
         // 僅顯示影劇內容
         $('.account_children_films').css('display','block')
@@ -1965,7 +1967,8 @@
 
         //影劇tablet分類 我的片單亮起 
         $('.info_child01 a').css('color','#10ffa2')
-        $('.info_child01').siblings('li').css('color','#ffffff80');
+        $('.info_child02 a').css('color','#ffffff80')
+        $('.info_child04 a').css('color','#ffffff80')
 
 
         };
