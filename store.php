@@ -167,7 +167,7 @@ $title = 'MOVWE-商城';
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
-                                                孔劉亞克力手機支架人形立牌
+                                                手機支架人形立牌
                                                 </p>
 
                                                 <button class="Shop__card__icon__box">
@@ -199,7 +199,7 @@ $title = 'MOVWE-商城';
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
-                                                孤單又燦爛的神-桌上小台曆
+                                                桌上小台曆
                                                 </p>
 
                                                 <button class="Shop__card__icon__box">
