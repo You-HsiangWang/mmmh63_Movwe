@@ -57,6 +57,12 @@ if(!empty($row)){
     ];
     $output['mNickname'] = $row['member_nickname'];
     $output['mAvatar'] = $row['member_avatar'];
+
+    // 這邊判斷是否從某個需要回去的頁面來
+    if(isset($_SESSION['backtourl']['url'])){
+        $output['backtourl'] = $_SESSION['backtourl']['url'];
+        unset($_SESSION['backtourl']);
+    };
     echo json_encode($output, JSON_UNESCAPED_UNICODE);
     // echo json_encode($_SESSION, JSON_UNESCAPED_UNICODE);
     exit;
