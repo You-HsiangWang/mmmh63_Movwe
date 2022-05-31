@@ -1955,7 +1955,8 @@
 
         // 影劇的tablet分類 僅顯示"影劇"
         $('#acc_films').css('display', 'flex')
-        $('#acc_films').siblings().css('display', 'none');
+        $('.info_child02 a').css('color','#ffffff80')
+        $('.info_child04 a').css('color','#ffffff80')
 
         // 僅顯示影劇內容
         $('.account_children_films').css('display','block')

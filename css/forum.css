@@ -37,7 +37,44 @@
     display: block;
 }
 
+li.filter_2w:hover,
+li.filter_3w:hover,
+li.filter_4w:hover {
+    color: #10FFA2;
+    cursor: pointer;
+}
+
 /* 我要發文 */
+
+.woyaofa svg {
+    transform: scale(1.0);
+    transition: .3s;
+}
+
+.woyaofa:hover svg {
+    transform: scale(1.2);
+}
+
+/* 提示視窗 */
+
+.woyaofa {
+    position: relative;
+}
+
+.woyaofa::before {
+    content: "我要發文.ᐟ.ᐟ.ᐟ";
+    position: absolute;
+    top: -10px;
+    left: -110px;
+    width: 100px;
+    height: 30px;
+    color: #10FFA2;
+    display: none;
+}
+
+.woyaofa:hover::before {
+    display: block;
+}
 
 .member-img-wrap {
     width: 50px;
@@ -137,7 +174,7 @@ a.hashtag:hover {
 
 .hot-article .article-img-wrap {
     width: 100%;
-    height: 200px;
+    height: 300px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -255,6 +292,23 @@ a.hashtag:hover {
     content: "";
     position: absolute;
     width: 35%;
+    height: 10px;
+    background-color: #10FFA2;
+    border-radius: 10px;
+}
+
+.progress-bar-4 {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #Ffffff80;
+    border-radius: 10px;
+}
+
+.progress-bar-4::before {
+    content: "";
+    position: absolute;
+    width: 23%;
     height: 10px;
     background-color: #10FFA2;
     border-radius: 10px;
@@ -456,7 +510,7 @@ a.hashtag:hover {
 
     .hot-article .article-img-wrap {
         width: 100%;
-        height: 200px;
+        /* height: 200px; */
     }
 
     /* 熱門作者 */

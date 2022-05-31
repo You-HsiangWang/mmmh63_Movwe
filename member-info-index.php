@@ -177,6 +177,7 @@
 
                             
                         </div>
+
                         <div class="account-pc-right">
                             <!-- 上方4大頁籤 -->
                             <div class="account-nav">
@@ -2038,6 +2039,7 @@
                                             <div class="stick_mobile"></div>
                                             <div class="info_acc_word">一般資料</div>
                                         </div>
+
                                         <div class="info_gen01">
                                             <div class="info_upload_word">
                                                 為您的會員頁面附上特色頭像
@@ -2109,7 +2111,6 @@
         <?php include __DIR__. '/parts/movwe_footer.php' ?>
         
     </div>
-    
     
     
     

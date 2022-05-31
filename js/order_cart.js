@@ -22,9 +22,12 @@ function deleteFunction() {
     // Get the output text
     var text = document.getElementById("text");
 
+    var noProduct = document.getElementById('noProduct');
+
     if (checkBox.checked == true) {
         if (confirm("確定要移除本商品嗎?") == true) {
             text.style.display = "none";
+            noProduct.style.display = 'flex';
         }
     } else {
         alert("請勾選要移除的商品");

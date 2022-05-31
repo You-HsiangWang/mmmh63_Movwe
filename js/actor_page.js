@@ -96,6 +96,31 @@ close_Ott_Box.addEventListener('click', () => {
 
 })
 
+
+
+const addTofild = document.querySelector('.addtofild');
+const movieLikes = document.querySelector('.movie__likes');
+
+addTofild.addEventListener('click',()=>{
+
+    // movieLikes.style.color = 'rgb(16, 255, 162)'
+    movieLikes.style.transform = 'scale(1.2)'
+    movieLikes.style.animationName = 'addfild'
+    movieLikes.style.animationDuration = '1s'
+    movieLikes.style.animationIterationCount = 'infinite'
+
+
+
+
+
+})
+
+
+// ----------------------------------
+
+
+
+
 // 新增儲存網址
 $('.go_to_ott_box > .saveurl').on('click', function () {
     console.log('有了');

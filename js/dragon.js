@@ -761,7 +761,8 @@ function startSceenFive () {
 
 function startResult(){
     console.log('結果計算');
-    window.location.assign('dragon_sceensix.html');
+    // window.location.assign('dragon_sceensix.html');
+    window.location.assign('dragon_quset_result.php');
 };
 
 

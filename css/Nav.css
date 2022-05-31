@@ -45,8 +45,12 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  overflow-x:hidden ;
+  /* overflow-x:hidden ; */
 
+}
+
+.overflow-x{
+  overflow-x: hidden;
 }
 
 .container ::-webkit-scrollbar {
