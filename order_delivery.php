@@ -115,13 +115,13 @@ $title = 'Movwe-物流選擇';
                         <tr class="yellow">
                             <th>商品圖片</th>
                             <th>商品名稱</th>
-                            <th>顏色</th>
-                            <th>規格</th>
+                            <th>選項</th>
+                            <th>尺寸</th>
                             <th>數量</th>
                             <th>單價</th>
                             <th>小計</th>
                         </tr>
-                        <tr>
+                        <tr id="text">
                             <td>
                                 <img src="./img/mall/1.jpg" alt="">
                             </td>
@@ -129,22 +129,26 @@ $title = 'Movwe-物流選擇';
                                 <h4>孤單又燦爛的神-鬼怪 周邊娃娃</h4>
                             </td>
                             <td>
-                                <h4>白色</h4>
+                                <h4>蕎麥君</h4>
                             </td>
                             <td>
-                                <h4>M</h4>
+                                <h4>S</h4>
                             </td>
                             <td>
-                                <h4>5</h4>
+                                <h4 id="quantity">1</h4>
+
                             </td>
                             <td>
-                                <h4>NTD840</h4>
+                                <h4 id="singlePrice">840</h4>
                             </td>
                             <td>
-                                <h4>NTD4200</h4>
+                                <h4 id="subTotalPrice">840</h4>
                             </td>
                         </tr>
                     </table>
+                    <div id="noProduct">
+                        <h3>目前購物車內沒有商品</h3>
+                    </div>
                 </div>
                 <!-- 優惠券 -->
                 <div class="d-flex mt-30 pb-10 border-bottom-main-color">
@@ -168,7 +172,7 @@ $title = 'Movwe-物流選擇';
                 <div class="discount-info border-bottom-main-color d-none">
                     <fieldset class="d-flex justify-around">
                         <div class="d-flex align-item-center">
-                            <input type="radio" id="discount1" name="discount1" class="mr-10">
+                            <input type="radio" id="discount1" name="discount1" class="mr-10" checked>
                             <label for="discount1">
                                 <svg width="350" height="120" viewBox="0 0 350 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2173_26287)">
@@ -310,7 +314,7 @@ $title = 'Movwe-物流選擇';
                 </div>
                 <!-- 總計金額 -->
                 <div class="w-100 mt-30 d-flex justify-end">
-                    <div class="w-20">
+                    <div class="w-30">
                         <div class="d-flex justify-between">
                             <h4><strong>總共五項商品</strong></h4>
                             <h4>NTD:</h4>
@@ -358,8 +362,8 @@ $title = 'Movwe-物流選擇';
                         </div>
                     </div>
                     <!-- 上一步 + 下一步按鈕 -->
-                    <div class="w-20 d-flex justify-between">
-                        <a href="./order-cart.html">
+                    <div class="w-30 d-flex justify-between">
+                        <a href="./order_cart.php">
                             <button class="prev_btn_3w">上一步</button>
                         </a>
                         <a href="./order_pay.php">
@@ -369,7 +373,7 @@ $title = 'Movwe-物流選擇';
                 </div>
 
             </div>
-            <?php include __DIR__ . '/parts/movwe_footer.php' ?>
+            <!-- <?php include __DIR__ . '/parts/movwe_footer.php' ?> -->
         </div>
     </div>
 

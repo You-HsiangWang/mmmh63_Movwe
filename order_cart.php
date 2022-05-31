@@ -331,12 +331,12 @@ $title = 'Movwe-購物車內容';
                 </div>
             </div>
 
-            <?php include __DIR__ . '/parts/movwe_footer.php' ?>
+            <!-- <?php include __DIR__ . '/parts/movwe_footer.php' ?> -->
         </div>
     </div>
 
     
-    <?php include __DIR__ . '/parts/movwe_scripts.php' ?>
+    <!-- <?php include __DIR__ . '/parts/movwe_scripts.php' ?> -->
     <script src="./js/order_cart.js"></script>
 
 </body>
