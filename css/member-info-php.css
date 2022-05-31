@@ -105,7 +105,12 @@ a {
 
 
 /* ---------account------------ */
-
+.account_filter_word li{
+    cursor: pointer;
+}
+.info_child_content li{
+    cursor: pointer;
+}
 .account{
     /* outline: 1px solid red; */
     padding-top: 72px;

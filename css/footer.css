@@ -37,6 +37,8 @@
 }
 .f-content li{
     cursor: pointer;
+    color: #FFFFFD;
+    font-weight: normal;
 }
 .f-content a{
     color: #FFFFFD ;
