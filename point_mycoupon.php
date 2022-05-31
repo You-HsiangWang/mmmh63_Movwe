@@ -177,6 +177,7 @@ $myrowlenght = count($myrow);
                     }, function(data) {
                         console.log('pass');
                         $(mcCouponDetail).css('display', 'flex');
+                        $('.footer__container').css('display', 'none');
                         $('body').css({
                             'height': '100vh',
                             'overflow': 'hidden'
@@ -201,6 +202,7 @@ $myrowlenght = count($myrow);
                 console.log('hi');
                 if (eve.target.id == "pointMycpSectionLightBox") {
                     $('#pointMycpSectionLightBox').css('display', 'none');
+                    $('.footer__container').css('display', 'block');
                     $('body').css({
                         'overflow': 'auto',
                         'height': 'auto',

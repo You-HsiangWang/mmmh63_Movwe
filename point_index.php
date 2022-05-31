@@ -62,7 +62,8 @@ $title = 'MOVWE-如何累積Movwe點數';
             </div>
             <div class="point-section_banner">
                 <div class="point-section_banner_container">
-                    <img src="./img/banner/point_banner.jpg" alt="">
+                    <img src="./img/banner/point_banner.jpg" alt="" class="p_web_d-none">
+                    <img src="./img/banner/point_banner_s.jpg" alt="" class="p_phone_d-none">
                     <!-- <h1>用MOVWE<br>換Movie</h1> -->
                 </div>
             </div>
