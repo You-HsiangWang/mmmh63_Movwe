@@ -180,6 +180,24 @@ justify-content: center;
 .ac_netflix img{
  width: 104.8%;
 }
+
+@keyframes  addfild {
+
+    0%{
+        color: rgb(199, 199, 199);
+    }
+    50%{
+        color: aquamarine;
+
+    }
+    100%{
+        color: rgb(199, 199, 199);
+
+    }
+
+
+}
+
 /* ---PC版--------------------------- */
 @media screen and (min-width: 750px) {
     .actor{
