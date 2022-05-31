@@ -27,7 +27,7 @@ $rowShop = $stmtShop->fetchAll();
 
 <body>
     <!----------nav_top-------------->
-<?php include __DIR__ . '/parts/movwe_nav.php' ?>
+<?php include __DIR__ . '/parts/movwe_nav_fin.php' ?>
     <div class="layout">
         <?php include __DIR__ . '/parts/movwe_nav_leftdiv.php' ?>
         <!--------------------------------------------------------------------------->
@@ -90,7 +90,7 @@ $rowShop = $stmtShop->fetchAll();
                                     <img src="./img/other/discount_card.png" alt="">
                                     <img src="./img/other/discount_tag.png" alt="">
                                     <img src="./img/other/discount_string.png" alt="">
-                                    <img src="./img/other/discount_collected.svg" alt="" id="cpCantChange">
+                                    <img src="./img/other/points_less.png" alt="" id="cpCantChange">
                                     <div class="point-ce-section_coupon-limited-content-wrap">
                                         <div class="point-ce-section_coupon-limited-img">
                                             <img src="./img/other/<?= $rowinfo['coupon_picture'] ?>" alt="">
@@ -143,7 +143,7 @@ $rowShop = $stmtShop->fetchAll();
                                 <div class="point-ce-section_coupon-normal-content-wrap">
                                     <div class="point-ce-section_coupon-normal-img">
                                         <img src="./img/other/<?= $rowOttinfo['coupon_picture'] ?>" alt="">
-                                        <img src="./img/other/discount_collected.svg" id="cpCantChange" alt="">
+                                        <img src="./img/other/points_less.png" id="cpCantChange" alt="">
                                     </div>
                                     <div class="point-ce-section_coupon-normal-content">
                                         <div class="point-ce-section_coupon-normal-content-info">
@@ -193,7 +193,7 @@ $rowShop = $stmtShop->fetchAll();
                                 <div class="point-ce-section_coupon-normal-content-wrap">
                                     <div class="point-ce-section_coupon-normal-img">
                                         <img src="./img/other/<?= $rowShopinfo['coupon_picture'] ?>" alt="">
-                                        <img src="./img/other/discount_collected.svg" alt="" id="cpCantChange">
+                                        <img src="./img/other/points_less.png" alt="" id="cpCantChange">
                                     </div>
                                     <div class="point-ce-section_coupon-normal-content">
                                         <div class="point-ce-section_coupon-normal-content-info">
@@ -273,10 +273,10 @@ $rowShop = $stmtShop->fetchAll();
                 </div>
             </div>
 
+            <?php include __DIR__. '/parts/movwe_footer.php' ?>
         </div>
     </div>
 
-    <script src="./js/jquery-3.6.0.js"></script>
     <script src="./js/Nav.js"></script>
     <script src="./js/dropdown_customstyle.js"></script>
     <!-- <script src="./js/point_coupon_exchange.js"></script> -->
@@ -303,7 +303,7 @@ $rowShop = $stmtShop->fetchAll();
                         domid
                     }, function(data) {
                         console.log(data);
-                        if (data.coupongeto && <?php echo $_SESSION['admin']['member_points'] ?> - data.cpPrice >= 0) {
+                        if (data.coupongeto && data.money - data.cpPrice >= 0) {
                             console.log('pass');
                             $(ceCouponDetail).css('display', 'flex');
                             $('body').css({
@@ -313,7 +313,7 @@ $rowShop = $stmtShop->fetchAll();
                             $('.point-section_coupon-detail-card-title-left h2').text(data.cpName);
                             $('.point-section_coupon-detail-card-title-left > div > img').attr('src', `./img/logo/${data.cpBrandimg}`);
                             $('.point-section_coupon-detail-card-title-left > div > p').text(data.cpBrand);
-                            $('.point-section_coupon-detail-card-title-right > div:nth-child(2) > p:nth-child(2) > span').text(<?php echo $_SESSION['admin']['member_points'] ?>);
+                            $('.point-section_coupon-detail-card-title-right > div:nth-child(2) > p:nth-child(2) > span').text(data.money);
                             $('.point-section_coupon-detail-card-coupunimg > img').attr('src', `./img/other/${data.cpImg}`);
                             document.querySelector('.point-section_coupon-detail-card-notice').innerHTML = data.cpNotice;
                             $('.point-section_coupon-detail-card-changenow > p').text('使用' + data.cpPrice + '點');
@@ -322,7 +322,7 @@ $rowShop = $stmtShop->fetchAll();
                                 $('.point-section_coupon-detail-card-code > .point-section_coupon-detail-card-code-wrap > h2').text(couponCode);
                                 // 有bug有可能出現一樣的數字
                                 generatedcpcode = couponCode;
-                                restpoints = <?php echo $_SESSION['admin']['member_points'] ?> - data.cpPrice;
+                                restpoints = data.money - data.cpPrice;
                                 nowmbsid = <?php echo $_SESSION['admin']['member_sid'] ?>;
                                 nowcpsid = data.cpSid;
                                 console.log(generatedcpcode, restpoints, nowmbsid, nowcpsid);
@@ -344,7 +344,7 @@ $rowShop = $stmtShop->fetchAll();
                                     });
                                 }, 'json');
                             });
-                        } else if (data.coupongeto && data.cpPrice - <?php echo $_SESSION['admin']['member_points'] ?> > 0) {
+                        } else if (data.coupongeto && data.cpPrice - data.money > 0) {
                             console.log('點數不足');
                         } else {
                             console.log('資料失敗');
@@ -385,7 +385,7 @@ $rowShop = $stmtShop->fetchAll();
                 }; //點選的如果不是選單，選單隱藏。如果是選單，選單顯現
             };
 
-            function couponStatuslimited() {
+            function couponStatuslimited(money) {
                 if (<?php echo !empty($_SESSION['admin']) ?>) {
                     const alllimited = document.querySelectorAll('.point-ce-section_coupon-limited-content-quantity > div > p > span');
                     for (let i = 0; i < alllimited.length; i++) {
@@ -404,7 +404,7 @@ $rowShop = $stmtShop->fetchAll();
                 };
             };
 
-            function couponStatusnormal() {
+            function couponStatusnormal(money) {
                 if (<?php echo !empty($_SESSION['admin']) ?>) {
                     const allnormal = document.querySelectorAll('.point-ce-section_coupon-normal > .point-ce-section_coupon-normal-content-wrap > .point-ce-section_coupon-normal-content > .point-ce-section_coupon-normal-content-quantity > div > p > span');
                     for (let i = 0; i < allnormal.length; i++) {
