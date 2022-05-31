@@ -593,7 +593,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                     <div class="image__box__7">
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                                <img class="carousel__images__7" src="./img/mall/gst/gst01.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -624,11 +624,11 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst02.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
-                                                            豪華精裝典藏A版/2CD
+                                                        韓劇鬼怪PVC夾鍊袋
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -638,7 +638,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
                                                             <p class="Price">
-                                                                799
+                                                                190
                                                             </p>
                                                             <p class="ntd">
                                                                 NTD
@@ -655,11 +655,11 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst03.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
-                                                            豪華精裝典藏A版/2CD
+                                                        手機支架人形立牌
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -669,7 +669,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
                                                             <p class="Price">
-                                                                799
+                                                                360
                                                             </p>
                                                             <p class="ntd">
                                                                 NTD
@@ -686,11 +686,11 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7 card4__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst04.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
-                                                            豪華精裝典藏A版/2CD
+                                                        桌上小台曆
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -700,7 +700,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
                                                             <p class="Price">
-                                                                799
+                                                                350
                                                             </p>
                                                             <p class="ntd">
                                                                 NTD
@@ -717,11 +717,11 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7 card5__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst05.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
-                                                            豪華精裝典藏A版/2CD
+                                                        韓劇鬼怪照片集
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -731,7 +731,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
                                                             <p class="Price">
-                                                                799
+                                                                500
                                                             </p>
                                                             <p class="ntd">
                                                                 NTD
@@ -748,7 +748,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7 card6__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst06.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -779,7 +779,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7 card7__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst07.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -814,7 +814,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                     <div class="image__box__7">
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst08.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -845,7 +845,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst09.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -876,7 +876,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst10.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -907,11 +907,11 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7 card4__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst11.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
-                                                            豪華精裝典藏A版/2CD
+                                                        鬼怪娃娃經典系列組
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -921,7 +921,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
                                                             <p class="Price">
-                                                                799
+                                                                899
                                                             </p>
                                                             <p class="ntd">
                                                                 NTD
@@ -938,7 +938,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7 card5__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst12.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
@@ -969,11 +969,11 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7 card6__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst13.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
-                                                            豪華精裝典藏A版/2CD
+                                                        鬼怪原子筆
                                                         </p>
                                                         <button class="Shop__card__icon__box">
                                                             <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
@@ -982,7 +982,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
                                                             <p class="Price">
-                                                                799
+                                                                280
                                                             </p>
                                                             <p class="ntd">
                                                                 NTD
@@ -999,11 +999,11 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7 card7__7">
                                             <div class="carousel__images__box__7">
-                                                <img class="carousel__images__7" src="./img/center/product-3.jpeg" alt="">
+                                            <img class="carousel__images__7" src="./img/mall/gst/gst14.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id">
-                                                            豪華精裝典藏A版/2CD
+                                                        鬼怪筆記本
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -1013,7 +1013,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     <div class="movie__icons__7">
                                                         <div class="movie__icon__box__7">
                                                             <p class="Price">
-                                                                799
+                                                                199
                                                             </p>
                                                             <p class="ntd">
                                                                 NTD
