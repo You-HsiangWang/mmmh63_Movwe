@@ -193,8 +193,8 @@
                                 <div class="info_child">
                                     <ul class="info_child_content films_content">
                                         <span>分類 / </span>
-                                        <li class="info_child01 filter_4w"><a href="#myList">我的片單</a></li>
-                                        <li class="info_child02 filter_4w"><a href="#myWishList">許願清單</a></li>
+                                        <li class="info_child01 filter_4w"><a href="">我的片單</a></li>
+                                        <li class="info_child02 filter_4w"><a href="#">許願清單</a></li>
                                         <li class="info_child04 filter_4w"><a href="#myHistory">曾經瀏覽</a></li>
                                     </ul>
                                 </div>
@@ -1932,7 +1932,7 @@
 
             //個人tablet分類 一般資料亮起 
             $('.info_child_acc02  a').css('color','#10ffa2')
-            $('.info_child_acc02 ').siblings('li').css('color','#ffffff80');
+            $('.info_child_acc01 a').css('color','#ffffff80')
 
             //下方內容 僅顯示"一般資料
             $('#info_gen').css('display','block')
@@ -1952,7 +1952,8 @@
 
         // 影劇的tablet分類 僅顯示"影劇"
         $('#acc_films').css('display', 'flex')
-        $('#acc_films').siblings().css('display', 'none');
+        $('.info_child02 a').css('color','#ffffff80')
+        $('.info_child04 a').css('color','#ffffff80')
 
         // 僅顯示影劇內容
         $('.account_children_films').css('display','block')
@@ -1985,7 +1986,8 @@
 
         //影劇tablet分類 許願清單亮起 
         $('.info_child02 a').css('color','#10ffa2')
-        $('.info_child02').siblings('li').css('color','#ffffff80');
+        $('.info_child01 a').css('color','#ffffff80')
+        $('.info_child04 a').css('color','#ffffff80')
 
         //影劇下方內容 僅顯示"我的片單
         $('#myWishList').css('display','block')
@@ -1996,22 +1998,6 @@
 
     </script>
 
-<!-- 影劇>預約上片 -->
-    <script>
-        function booking(){
-
-        //影劇tablet分類 預約上片亮起 
-        $('.info_child03 a').css('color','#10ffa2')
-        $('.info_child03').siblings('li').css('color','#ffffff80');
-
-        //影劇下方內容 僅顯示"預約上片
-        $('#myBooking').css('display','block')
-        $('#myBooking').siblings().css('display','none');
-
-        }
-        $('.info_child03').on('click',booking);
-
-    </script>
 
 <!-- 影劇>曾經瀏覽 -->
     <script>
@@ -2019,7 +2005,8 @@
 
         //影劇tablet分類 曾經瀏覽亮起 
         $('.info_child04 a').css('color','#10ffa2')
-        $('.info_child04').siblings('li').css('color','#ffffff80');
+        $('.info_child01 a').css('color','#ffffff80')
+        $('.info_child02 a').css('color','#ffffff80')
 
         //影劇下方內容 僅顯示"曾經瀏覽
         $('#myHistory').css('display','block')
@@ -2093,7 +2080,7 @@
         
         //討論tablet分類 收藏文章亮起 
         $('.info_child_forum01 a').css('color','#10ffa2')
-        $('.info_child_forum01').siblings('li').css('color','#ffffff80');
+        $('.info_child_forum02 a').css('color','#ffffff80')
             
         }
         $('.account_forum').on('click',test);
@@ -2114,7 +2101,7 @@
 
     //影劇tablet分類 我的發文亮起 
     $('.info_child_forum02 a').css('color','#10ffa2')
-    $('.info_child_forum02').siblings('li').css('color','#ffffff80');
+    $('.info_child_forum01 a').css('color','#ffffff80')
 
     //影劇下方內容 僅顯示"我的發文
     $('#myArtPost').css('display','block')
@@ -2144,7 +2131,7 @@
 
     //影劇tablet分類 帳戶資料亮起 
     $('.info_child_acc01 a').css('color','#10ffa2')
-    $('.info_child_acc01').siblings('li').css('color','#ffffff80');
+    $('.info_child_acc02 a').css('color','#ffffff80')
 
     //影劇下方內容 僅顯示"帳戶資料
     $('#info_acc').css('display','block')
@@ -2170,7 +2157,7 @@
 
     //影劇tablet分類 一般資料 亮起 
     $('.info_child_acc02 a').css('color','#10ffa2')
-    $('.info_child_acc02').siblings('li').css('color','#ffffff80');
+    $('.info_child_acc01 a').css('color','#ffffff80')
 
     //影劇下方內容 僅顯示"一般資料 
     $('#info_gen').css('display','block')

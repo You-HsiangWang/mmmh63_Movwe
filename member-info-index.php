@@ -149,7 +149,7 @@
                     <div class="account">
                         <div class="account-left">
                             <div class="account-pic">
-                                <img class="img-ori" src="./img/member/account.jfif" alt="">
+                                <img class="img-ori" src="./img/member/member_pic1.jpeg" alt="">
                                 <img class="img-new display_none" src="./img/talls_img/hehe.png" alt="">
                             </div>
                             <div class="account-name">Eric</div>                        
@@ -196,7 +196,6 @@
                                         <span>分類 / </span>
                                         <li class="info_child01 filter_4w"><a href="#myList">我的片單</a></li>
                                         <li class="info_child02 filter_4w"><a href="#myWishList">許願清單</a></li>
-                                        <!-- <li class="info_child03 filter_4w"><a href="#myBooking">預約上片</a></li> -->
                                         <li class="info_child04 filter_4w"><a href="#myHistory">曾經瀏覽</a></li>
                                     </ul>
                                 </div>
@@ -2040,7 +2039,7 @@
                                         <div class="info_upload">
                                             <div class="info_upload_square">
                                                 <div id="preview" class="info_gen_img">
-                                                    <img src="./img/member/account.jfif" alt="">
+                                                    <img src="./img/member/member_pic1.jpeg" alt="">
                                                 </div>    
                                             </div>
                                         
@@ -2098,10 +2097,11 @@
                         </div>
                     </div>
                 </div> 
-            </div>   
-            
+        </div>   
+        
         <?php include __DIR__. '/parts/movwe_footer.php' ?>
     </div>
+    
     
     
 
@@ -2119,11 +2119,11 @@
 </script>
     
 <!-- tablet a click綠色 -->
-<script>
-        $('.info_child_content a').click(function(){
+<!-- <script>
+        $('.info_child_content li').click(function(){
             $(this).css('color','#10ffa2').parent().siblings().children().css('color','#ffffff80')
         })
-</script>
+</script> -->
 
 <!-- 文章一鍵刪除 -->
 <script>
@@ -2163,7 +2163,8 @@
 
         //影劇tablet分類 我的片單亮起 
         $('.info_child01 a').css('color','#10ffa2')
-        $('.info_child01').siblings('li').css('color','#ffffff80');
+        $('.info_child02 a').css('color','#ffffff80')
+        $('.info_child04 a').css('color','#ffffff80')
 
         //影劇下方內容 僅顯示"我的片單
         $('#myList').css('display','block')
@@ -2191,7 +2192,8 @@
 
         //影劇tablet分類 許願清單亮起 
         $('.info_child02 a').css('color','#10ffa2')
-        $('.info_child02').siblings('li').css('color','#ffffff80');
+        $('.info_child01 a').css('color','#ffffff80')
+        $('.info_child04 a').css('color','#ffffff80')
 
         //影劇下方內容 僅顯示"我的片單
         $('#myWishList').css('display','block')
@@ -2202,22 +2204,6 @@
 
 </script>
 
-<!-- 影劇>預約上片 -->
-<script>
-        function booking(){
-
-        //影劇tablet分類 預約上片亮起 
-        $('.info_child03 a').css('color','#10ffa2')
-        $('.info_child03').siblings('li').css('color','#ffffff80');
-
-        //影劇下方內容 僅顯示"預約上片
-        $('#myBooking').css('display','block')
-        $('#myBooking').siblings().css('display','none');
-
-        }
-        $('.info_child03').on('click',booking);
-
-</script>
 
 <!-- 影劇>曾經瀏覽 -->
 <script>
@@ -2225,7 +2211,8 @@
 
         //影劇tablet分類 曾經瀏覽亮起 
         $('.info_child04 a').css('color','#10ffa2')
-        $('.info_child04').siblings('li').css('color','#ffffff80');
+        $('.info_child01 a').css('color','#ffffff80')
+        $('.info_child02 a').css('color','#ffffff80')
 
         //影劇下方內容 僅顯示"曾經瀏覽
         $('#myHistory').css('display','block')
@@ -2299,7 +2286,7 @@
     
     //討論tablet分類 收藏文章亮起 
     $('.info_child_forum01 a').css('color','#10ffa2')
-    $('.info_child_forum01').siblings('li').css('color','#ffffff80');
+    $('.info_child_forum02 a').css('color','#ffffff80')
         
     }
     $('.account_forum').on('click',test);
@@ -2320,7 +2307,7 @@
 
     //影劇tablet分類 我的發文亮起 
     $('.info_child_forum02 a').css('color','#10ffa2')
-    $('.info_child_forum02').siblings('li').css('color','#ffffff80');
+    $('.info_child_forum01 a').css('color','#ffffff80')
 
     //影劇下方內容 僅顯示"我的發文
     $('#myArtPost').css('display','block')
@@ -2350,7 +2337,7 @@
 
     //影劇tablet分類 帳戶資料亮起 
     $('.info_child_acc01 a').css('color','#10ffa2')
-    $('.info_child_acc01').siblings('li').css('color','#ffffff80');
+    $('.info_child_acc02 a').css('color','#ffffff80')
 
     //影劇下方內容 僅顯示"帳戶資料
     $('#info_acc').css('display','block')
@@ -2376,7 +2363,8 @@
 
     //影劇tablet分類 一般資料 亮起 
     $('.info_child_acc02 a').css('color','#10ffa2')
-    $('.info_child_acc02').siblings('li').css('color','#ffffff80');
+    $('.info_child_acc01 a').css('color','#ffffff80')
+
 
     //影劇下方內容 僅顯示"一般資料 
     $('#info_gen').css('display','block')
