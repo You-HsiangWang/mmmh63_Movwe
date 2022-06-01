@@ -105,7 +105,8 @@ $title = 'MOVWE-商城';
                             <div class="row_products">
                                 <div class="image__card__12">
                                     <div class="carousel__images__box__12">
-                                        <img class="carousel__images__12" src="./img/mall/gst/gst11.jpg" alt="">
+                                        <a href="./product.php"><img class="carousel__images__12" src="./img/mall/gst/gst11.jpg" alt=""></a>
+                    
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
