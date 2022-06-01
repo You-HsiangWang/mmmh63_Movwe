@@ -126,20 +126,20 @@ $title = 'Movwe-物流選擇';
                                 <img src="./img/mall/1.jpg" alt="">
                             </td>
                             <td>
-                                <h4>孤單又燦爛的神-鬼怪 周邊娃娃</h4>
+                            <h4><?= $_SESSION['cart']['ProductName'] ?></h4>
                             </td>
                             <td>
-                                <h4>蕎麥君</h4>
+                            <h4><?= $_SESSION['cart']['ProductChoice'] ?></h4>
                             </td>
                             <td>
-                                <h4>S</h4>
+                                <h4><?= $_SESSION['cart']['ProductSize'] ?></h4>
                             </td>
                             <td>
-                                <h4 id="quantity">1</h4>
+                                <h4 id="quantity"><?= $_SESSION['cart']['ProductQuantity'] ?></h4>
 
                             </td>
                             <td>
-                                <h4 id="singlePrice">840</h4>
+                                <h4 id="singlePrice">899</h4>
                             </td>
                             <td>
                                 <h4 id="subTotalPrice">840</h4>

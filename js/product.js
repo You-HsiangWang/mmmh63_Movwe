@@ -101,5 +101,5 @@ function AddtoCart() {
     };
 
     $.get('api_product.php', aa, function (data) { console.log(data); },'json')
-    
+
 };
