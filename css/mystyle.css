@@ -54,12 +54,24 @@
     align-content: space-between;
 }
 
+.t-a-center {
+    text-align: center;
+}
+
 .inline {
     display: inline;
 }
 
 .white-space {
     white-space: nowrap;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-20 {
+    width: 20%;
 }
 
 .w-30 {

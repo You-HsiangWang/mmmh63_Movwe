@@ -45,7 +45,7 @@
     display: none;
 }
 
-/* 優惠券選取 input樣式 */
+/* 商品選項 input樣式 */
 
 /* https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
 
@@ -81,21 +81,6 @@ fieldset input[type="radio"]:checked::before {
 
 fieldset input[type="radio"]:checked::before {
     transform: scale(1);
-}
-
-
-/* 商品規格 */
-
-.product-size {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 2px solid #fff;
 }
 
 /* 商品數量 */
@@ -185,7 +170,8 @@ table.size td {
 .row_products {
     display: flex;
     flex-direction: row;
-    gap: 3%;
+    /* gap: 3%; */
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -216,7 +202,7 @@ table.size td {
 @media screen and (min-width: 750px) {
     .text__container {
         width: 94%;
-        height: 100vh;
+        /* height: 100vh; */
         /* background-color: rgb(124, 124, 124); */
         margin: 80px auto 0 auto;
     }
@@ -296,7 +282,6 @@ table.size td {
         height: 120px;
     }
 
-
     /* 商品敘述 */
 
     .product-description-pc {
@@ -323,6 +308,12 @@ table.size td {
         width: 50%;
         padding-bottom: 20px;
         border-bottom: none;
+    }
+
+    .gooood {
+        position: absolute;
+        top: 400px;
+        right: 100px;
     }
 
     /* 優惠券與規格說明 */
@@ -360,7 +351,7 @@ table.size td {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 3%;
+        /* gap: 3%; */
     }
 
 

@@ -9,6 +9,7 @@ $title = 'Movwe-訂單完成';
 
 
 <link rel="stylesheet" href="./css/mystyle.css">
+<!-- <link rel="stylesheet" href="./css/order_finish.css"> -->
 <link rel="stylesheet" href="./css/order_finish.css">
 
 </head>
@@ -91,8 +92,11 @@ $title = 'Movwe-訂單完成';
                 </div>
 
                 <!-- 訂單完成 -->
-                <div class="order-finish d-flex justify-center align-item-center">
-                    <h2 class="main-color">訂單完成，感謝您的訂購!</h2>
+                <div class="order-finish d-flex flex-col justify-center align-item-center mt-20">
+                    <div class="hahahalogo">
+                        <img src="./img/logo/logo.png" alt="">
+                    </div>
+                    <h2 class="main-color mt-20">訂單完成，感謝您的訂購!</h2>
                 </div>
                 <div class="mt-10 border-bottom-main-color pb-10" id="cartInfo">
                     <h3 class="white">訂單明細如下:</h3>
@@ -103,21 +107,21 @@ $title = 'Movwe-訂單完成';
                         <tr class="yellow">
                             <th>商品圖片</th>
                             <th>商品名稱</th>
-                            <th>顏色</th>
-                            <th>規格</th>
+                            <th>選項</th>
+                            <th>尺寸</th>
                             <th>數量</th>
                             <th>單價</th>
                             <th>小計</th>
                         </tr>
                         <tr>
                             <td>
-                                <img src="../img/mall/1.jpg" alt="">
+                                <img src="./img/mall/gst/gst11.jpg" alt="">
                             </td>
                             <td>
                                 <h4>孤單又燦爛的神-鬼怪 周邊娃娃</h4>
                             </td>
                             <td>
-                                <h4>白色</h4>
+                                <h4>蕎麥君</h4>
                             </td>
                             <td>
                                 <h4>M</h4>
@@ -126,10 +130,10 @@ $title = 'Movwe-訂單完成';
                                 <h4>5</h4>
                             </td>
                             <td>
-                                <h4>NTD840</h4>
+                                <h4>NTD899</h4>
                             </td>
                             <td>
-                                <h4 class="orange">NTD4200</h4>
+                                <h4 class="orange">NTD4495</h4>
                             </td>
                         </tr>
                     </table>
@@ -143,11 +147,11 @@ $title = 'Movwe-訂單完成';
                     <table class="mt-30">
                         <tr>
                             <th>商品金額</th>
-                            <td>NTD 4200</td>
+                            <td>NTD 4495</td>
                         </tr>
                         <tr>
                             <th>優惠券折扣</th>
-                            <td>NTD 100</td>
+                            <td>-NTD 100</td>
                         </tr>
                         <tr>
                             <th>運費</th>
@@ -155,16 +159,16 @@ $title = 'Movwe-訂單完成';
                         </tr>
                         <tr class="orange">
                             <th>總計金額</th>
-                            <td>NTD 10000</td>
+                            <td>NTD 4515</td>
                         </tr>
                     </table>
                 </div>
                 <!-- 繼續購物 + 回首頁按鈕 -->
                 <div class="w-30 m-0 d-flex justify-between">
-                    <a href="./index-product.html">
+                    <a href="./store.php">
                         <button class="btn_4w">繼續購物</button>
                     </a>
-                    <a href="./index-product.html">
+                    <a href="./index_home.php">
                         <button class="btn_4w">回到首頁</button>
                     </a>
                 </div>
