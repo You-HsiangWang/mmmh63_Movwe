@@ -101,6 +101,7 @@ function AddDiscount() {
     const rr = +ProductPrice;
     const dd = document.querySelector('input[name="discount"]:checked').value;
 
+
     discountQQ = `<h4 class="orange"> - NTD ${dd}</h4>`;
     totalPayment = `<h4 class="orange"> NTD ${rr - dd}</h4>`
 
