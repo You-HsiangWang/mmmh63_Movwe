@@ -2,16 +2,16 @@
 
 require './parts/movwe_connect_db.php';
 
-// 判斷是否拿到email
-$regMail = strval(trim($_POST['regMail']));
+// 判斷是否拿到einvite
+$regInvite = strval(trim($_POST['regInvite']));
 
 // sql搜尋資料庫
-$regmailsql = 'SELECT `member_email`FROM `member` WHERE `member_email` = ?';
-$regmailstmt = $pdo->prepare($regmailsql);
-$regmailstmt->execute([$regMail]);
-$regmailrow = $regmailstmt->fetch();
+$reginvitesql = 'SELECT `member_sid` FROM `member` WHERE `member_invitecode` = ?';
+$reginvitestmt = $pdo->prepare($reginvitesql);
+$reginvitestmt->execute([$regInvite]);
+$reginviterow = $reginvitestmt->fetch();
 
-if (empty($regmailrow)){
+if (!empty($reginviterow)){
     echo 'true';
     exit;
 }else{

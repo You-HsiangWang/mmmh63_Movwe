@@ -1619,7 +1619,7 @@
                                     </div>
                                     <div class="info_acc_email">
                                         <div class="acc_email_title">Email</div>
-                                        <input class="acc_input" type="email" id="" name="acc_email" value="yozish0ng@gmail.com" readOnly />
+                                        <input class="acc_input" type="email" id="" name="acc_email" value="example@gmail.com" readOnly />
                                     </div>
                                     <div class="info_acc_change">
                                         <a href="#">
