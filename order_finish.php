@@ -111,7 +111,7 @@ $title = 'Movwe-訂單完成';
                         </tr>
                         <tr>
                             <td>
-                                <img src="../img/mall/1.jpg" alt="">
+                                <img src="./img/mall//gst/gst11.jpg" alt="">
                             </td>
                             <td>
                                 <h4>孤單又燦爛的神-鬼怪 周邊娃娃</h4>

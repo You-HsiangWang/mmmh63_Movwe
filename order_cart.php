@@ -1,8 +1,26 @@
 <?php
 
-require './parts/movwe_connect_db.php';
+session_start();
+$pageName = 'cart';
 $title = 'Movwe-購物車內容';
+require './parts/movwe_connect_db.php';
 
+$rows = [];
+$sids = [];
+if (!empty($_SESSION['cart'])) {
+
+    $sids = array_keys($_SESSION['cart']);
+
+    $sql = sprintf("SELECT * FROM products WHERE sid IN (%s)", implode(',', $sids));
+
+
+    $stmt = $pdo->query($sql);
+
+    while ($r = $stmt->fetch()) {
+        $r['quantity'] = $_SESSION['cart'][$r['sid']];
+        $rows[$r['sid']] = $r;
+    }
+}
 ?>
 
 <?php include __DIR__. '/parts/movwe_head.php' ?>
@@ -243,31 +261,31 @@ $title = 'Movwe-購物車內容';
                     <fieldset class="d-flex justify-around">
                         <!-- <legend>Select a maintenance drone:</legend> -->
                         <div class="d-flex align-item-center">
-                            <input type="radio" id="discount1" name="discount" class="mr-10" data-discount-value="50">
+                            <input type="radio" id="discount1" name="discount" class="mr-10" onclick="AddDiscount()" value="50">
                             <label for="discount">
                                 <img src="./img/other/discount_50.png" alt="">
                             </label>
                         </div>
                         <div class="d-flex align-item-center">
-                            <input type="radio" id="discount2" name="discount" class="mr-10">
+                            <input type="radio" id="discount2" name="discount" class="mr-10" onclick="AddDiscount()" value="100">
                             <label for="discount">
                                 <img src="./img/other/discount_100.png" alt="">
                             </label>
                         </div>
                         <div class="d-flex align-item-center">
-                            <input type="radio" id="discount3" name="discount" class="mr-10">
+                            <input type="radio" id="discount3" name="discount" class="mr-10" onclick="AddDiscount()" value="150">
                             <label for="discount">
                                 <img src="./img/other/discount_150.png" alt="">
                             </label>
                         </div>
                         <div class="d-flex align-item-center">
-                            <input type="radio" id="discount3" name="discount" class="mr-10">
+                            <input type="radio" id="discount4" name="discount" class="mr-10" onclick="AddDiscount()" value="200">
                             <label for="discount">
                                 <img src="./img/other/discount_200.png" alt="">
                             </label>
                         </div>
                         <div class="d-flex align-item-center">
-                            <input type="radio" id="discount3" name="discount" class="mr-10">
+                            <input type="radio" id="discount5" name="discount" class="mr-10" onclick="AddDiscount()" value="250">
                             <label for="discount">
                                 <img src="./img/other/discount_250.png" alt="">
                             </label>
@@ -287,7 +305,7 @@ $title = 'Movwe-購物車內容';
                         </div>
                         <div class="d-flex justify-between mt-10">
                             <h4>商品總金額</h4>
-                            <h4 class="orange" id="totalPayment">NTD:</h4>
+                            <h4 class="orange" id="totalPayment"></h4>
                         </div>
                         <div class="d-flex justify-end">
                             <p class="grey">皆以新台幣付款</p>

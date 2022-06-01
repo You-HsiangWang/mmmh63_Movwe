@@ -88,4 +88,20 @@ $('.close').click(function(){
     $('.blackblack').css('display' , 'none');
 });
 
-// TODO: 印出所選的商品規格跟數量
+// 印出所選的商品選項
+
+function WWW() {
+    var ww = document.querySelector('input[name="selectdoll"]:checked').value;
+    console.log(ww);
+};
+
+
+// 加入購物車
+
+function AddtoCart() {
+    const xx = document.querySelector('input[name="selectdoll"]:checked').value;
+    const yy = document.querySelector('input[name="productsize"]:checked').value;
+    const zz = document.querySelector('#quantityPC').value;
+
+    console.log(xx, yy, zz);
+};
