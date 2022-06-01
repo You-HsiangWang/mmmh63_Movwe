@@ -46,18 +46,19 @@ $title = 'MOVWE-商城';
                 <div>
 
                     <!-- 優惠券連結 -->
-                    <div class="title_item">
+                    <div class="title_item ">
                         <div class="stick_desk"></div>
                         <h3>優惠券專區</h3>
                     </div>
 
-                    <div class="mall_discount">
-                        <div class="mall_content">
+                    <div class="mall_discount ">
+                        <div class="mall_content mt_20">
                             <p>使用Movwe點數來換取優惠折價券吧！<br>
                             透過Movwe商城點數換取更多種商城折價券，累積點數越多折扣越高！<br>
                             Movwe商城與各大品牌合作，含括迪士尼、漫威、星戰、其他熱門影劇相關周邊，每季定期換新賣場商品。</p>
                         </div>
-                        <div class="img_wrap"><img src="./img/banner/mell_point.jpg" alt=""></div>
+                        <a class="img_wrap mt_20" href="./point_index.php"><img src="./img/banner/mell_point.jpg" alt=""></a>
+                    
                     </div>
 
 
@@ -68,14 +69,12 @@ $title = 'MOVWE-商城';
                     </div>
 
                     <div class="products_filter mt_60">
-                        <div class="w_300 main__btn" href=""><img src="./img/other/brand01.png" alt=""></div>
-                        <div class="w_300 star__btn" href=""><img src="./img/other/brand02.png" alt=""></div>
-                        <div class="w_300 dis__btn" href=""><img src="./img/other/brand03.png" alt=""></div>
-                        <div class="w_300 marvel__btn" href=""><img src="./img/other/brand04.png" alt=""></div>
-
+                        <div class=" main__btn" href=""><img src="./img/other/brand01.png" alt=""></div>
+                        <div class=" star__btn" href=""><img src="./img/other/brand02.png" alt=""></div>
+                        <div class=" dis__btn" href=""><img src="./img/other/brand03.png" alt=""></div>
+                        <div class=" marvel__btn" href=""><img src="./img/other/brand04.png" alt=""></div>
 
                     </div>
-
 
                     <!-- 商品選擇 -->
                     <ul class="title mt_60">
@@ -167,7 +166,7 @@ $title = 'MOVWE-商城';
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
-                                                手機支架人形立牌
+                                                孔劉亞克力手機支架人形立牌
                                                 </p>
 
                                                 <button class="Shop__card__icon__box">
@@ -199,7 +198,7 @@ $title = 'MOVWE-商城';
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
-                                                桌上小台曆
+                                                孤單又燦爛的神-桌上小台曆
                                                 </p>
 
                                                 <button class="Shop__card__icon__box">
@@ -412,6 +411,8 @@ $title = 'MOVWE-商城';
                                     </div>
                                 </div>
 
+
+
                             </div>
                         </div>
                     </div>
@@ -424,7 +425,7 @@ $title = 'MOVWE-商城';
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
-                                                    黑風暴兵公仔
+                                                   黑風暴兵公仔
                                                 </p>
 
                                                 <button class="Shop__card__icon__box">
