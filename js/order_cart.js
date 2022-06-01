@@ -56,31 +56,31 @@ $('.button-number-plus').click(function () {
 
 // 數量改變金額也要變
 
-var q = parseInt(document.getElementById('quantity').value);
+// var q = parseInt(document.getElementById('quantity').value);
 
-var singlePrice = '840';
-var subTotalPrice = `<h4>${singlePrice * q}</h4>`;
-document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
+// var singlePrice = '840';
+// var subTotalPrice = `<h4>${singlePrice * q}</h4>`;
+// document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
 
-function addFunction() {
-    // var q = parseInt(document.getElementById('quantity').value);
-    q = isNaN(q) ? 0 : q;
-    q++;
-    document.getElementById('quantity').value = q;
-    subTotalPrice = `<h4>${singlePrice * q}</h4>`;
-    document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
-};
+// function addFunction() {
+//     // var q = parseInt(document.getElementById('quantity').value);
+//     q = isNaN(q) ? 0 : q;
+//     q++;
+//     document.getElementById('quantity').value = q;
+//     subTotalPrice = `<h4>${singlePrice * q}</h4>`;
+//     document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
+// };
 
-function subFunction() {
-    // var q = parseInt(document.getElementById('quantity').value);
-    q = isNaN(q) ? 0 : q;
-    if (q > 1) {
-        q--;
-        document.getElementById('quantity').value = q;
-        subTotalPrice = `<h4>${singlePrice * q}</h4>`;
-        document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
-    }
-};
+// function subFunction() {
+//     // var q = parseInt(document.getElementById('quantity').value);
+//     q = isNaN(q) ? 0 : q;
+//     if (q > 1) {
+//         q--;
+//         document.getElementById('quantity').value = q;
+//         subTotalPrice = `<h4>${singlePrice * q}</h4>`;
+//         document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
+//     }
+// };
 
 // 優惠券詳情 展開
 
@@ -90,87 +90,22 @@ function subFunction() {
 //     $('#discountInfo').toggleClass('border-bottom-main-color');
 // });
 
-// 商品總數量與總金額
-
-// var totalQuantity = `<h4>總共有${q}項商品</h4>`;
-// document.getElementById('totalQuantity').innerHTML =
-//     totalQuantity
-
 
 // 點優惠券折抵金額
 
+// 商品總金額加總
+
+
 function AddDiscount() {
-    var dd = document.querySelector('input[name="discount"]:checked').value;
-    console.log('dd', dd);
+    const ProductPrice = document.getElementById('ProductPrice').innerText;
+    const rr = +ProductPrice;
+    const dd = document.querySelector('input[name="discount"]:checked').value;
+
     discountQQ = `<h4 class="orange"> - NTD ${dd}</h4>`;
+    totalPayment = `<h4 class="orange"> NTD ${rr - dd}</h4>`
+
     document.getElementById('discountQQ').innerHTML = discountQQ;
+    document.getElementById('totalPayment').innerHTML = totalPayment;
+
 };
 
-
-// 商品總金額加總
-var ss = parseInt(subTotalPrice);
-// var ff = document.querySelector('input[name="discount"]:checked').value;
-var totalPayment = `<h4>NTD ${ss - dd}</h4>`;
-
-console.log(ss);
-
-document.getElementById('totalPayment').innerHTML = totalPayment;
-
-
-// 購物車購物車購物車
-
-// const dallorCommas = function (n) {
-//     return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-// };
-
-// const calcPrices = () => {
-//     const trs = $('tbody > tr');
-
-//     let totalPrice = 0;
-//     trs.each(function () {
-//         const tr = $(this);
-//         const price = +tr.find('.price').attr('data-price');
-//         tr.find('.price').text('$ ' + dallorCommas(price)); // 顯示單價
-//         const quantity = +tr.find('select').val();
-//         tr.find('.sub-total').text('$ ' + dallorCommas(price * quantity)); // 顯示小計
-//         totalPrice += price * quantity;
-//     });
-
-//     $('#total-price').text('$ ' + dallorCommas(totalPrice));
-
-// };
-// calcPrices();
-
-// $('.quantity').on('change', function () {
-//     const me = $(this);
-//     // console.log('me:', me);
-//     const quantity = me.val();
-//     const sid = me.closest('tr').attr('data-sid');
-
-//     // console.log('tr:', me.find('tr'));
-
-//     $.get('cart-api.php', {
-//         sid,
-//         quantity
-//     }, function (data) {
-//         console.log(data);
-//         showCount(data);
-//         calcPrices(); // 重算所有價格
-//     }, 'json');
-
-// });
-
-// const removeItem = event => {
-
-//     const me = $(event.currentTarget);
-//     const sid = me.closest('tr').attr('data-sid');
-//     $.get('cart-api.php', {
-//         sid
-//     }, function (data) {
-//         console.log(data);
-//         me.closest('tr').remove();
-//         showCount(data);
-//         calcPrices(); // 重算所有價格
-//     }, 'json');
-
-// }
