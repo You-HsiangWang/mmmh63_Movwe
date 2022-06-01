@@ -72,7 +72,7 @@ if (!empty($row)) {
     $output['cpName'] = $row['coupon_name'];
     $output['cpCode'] = $row['coupon_code'];
     $output['cpBrand'] = $row['coupon_brand'];
-    $output['cpBrandimg'] = $row['coupon_brand_img'];
+    $output['cpBrandimg'] = $row['coupon_brand_img']? $row['coupon_brand_img'] : '';
     $output['cpPrice'] = $row['coupon_price'];
     $output['cpNotice'] = $row['coupon_notice'];
     $output['cpRest'] = $row['coupon_rest'];
