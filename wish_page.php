@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Caveat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <title>Document</title>
     </head>
@@ -27,11 +27,11 @@
             background-color: rgb(22, 22, 22);
             overflow: hidden;
             font-family: 'Cairo', sans-serif;
-    font-family: 'Noto Sans TC', sans-serif;
+            font-family: 'Noto Sans TC', sans-serif;
 
         }
 
-        .magic__text{
+        .magic__text {
             font-family: 'Cairo', sans-serif;
             font-family: 'Caveat', cursive;
 
@@ -970,10 +970,9 @@
             transition: 2s;
             transition-delay: 2.8s;
             transform-origin: 40%, 40%;
-
-
         }
 
+        
         .Page__4__genie {
             width: 100%;
             transition: 2s;
@@ -1298,9 +1297,9 @@
                                 恭喜！<br> <span class="Text__gold Wish">成功尋覓彩蛋</span> <br> 已獲得100 Movwe point!
                             </p>
                         </div>
-                            <button class="Enter_6 Page3__btn">
-                                確認
-                            </button>
+                        <button class="Enter_6 Page3__btn">
+                            確認
+                        </button>
                     </div>
                     <!-- --------------------------------------------- -->
 
@@ -1558,7 +1557,7 @@
             Abu__3.style.opacity = '0'
             Cat__1.style.opacity = '0'
 
-            LampBox.addEventListener('mouseenter',() => {
+            LampBox.addEventListener('mouseenter', () => {
                 lamp__1.style.opacity = '0'
                 lamp__2.style.opacity = '1'
                 lamp__2.style.transform = 'scale(1.15) translateY(-12%) rotate(5deg)'
@@ -1581,17 +1580,15 @@
             let ThanksCardPage3 = document.querySelector('.Thanks__card__page3')
             let Page3Btn = document.querySelector('.Page3__btn')
 
-            CoinBox.addEventListener('click',()=>{
+            CoinBox.addEventListener('click', () => {
                 ThanksCardPage3.style.transform = 'translate(-50%,-50%) scale(1)'
 
             })
 
-            Page3Btn.addEventListener('click',()=>{
+            Page3Btn.addEventListener('click', () => {
                 ThanksCardPage3.style.transform = 'translate(-50%,-50%) scale(0)'
 
-
             })
-
 
         </script>
     </body>

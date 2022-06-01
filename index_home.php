@@ -85,16 +85,16 @@ $title = 'MOVWE-就要你放膽搜';
                         </div>
                         <div class="search_p2">
                             <div class="home__title__box">
-                                <div class="home__title-1">提</div>
-                                <div class="home__title-2">供</div>
-                                <div class="home__title-3">您</div>
-                                <div class="home__title-4">最</div>
-                                <div class="home__title-5">新</div>
-                                <div class="home__title-6">的</div>
-                                <div class="home__title-7">上</div>
-                                <div class="home__title-8">片</div>
-                                <div class="home__title-9">資</div>
-                                <div class="home__title-10">訊</div>
+                                <div class="home__title-1">您</div>
+                                <div class="home__title-2">的</div>
+                                <div class="home__title-3">影</div>
+                                <div class="home__title-4">劇</div>
+                                <div class="home__title-5">搜</div>
+                                <div class="home__title-6">尋</div>
+                                <div class="home__title-7">神</div>
+                                <div class="home__title-8">器</div>
+                                <!-- <div class="home__title-9">資</div>
+                                <div class="home__title-10">訊</div> -->
                             </div>
                         </div>
                     </div>
@@ -104,18 +104,38 @@ $title = 'MOVWE-就要你放膽搜';
 
                     </div>
                     <div class="search_p4">
-                        <div class="ott__logo">
-                            <img src="./img/logo/friday.svg" alt="">
+                        <div class="home__ott__bigbox">
+
+                            <div class="ott__logo">
+                                <img src="./img/logo/friday.svg" alt="">
+                            </div>
+                            <div class="ott__logo">
+                                <img src="./img/logo/iqiyi.svg" alt="">
+                            </div>
+                            <div class="ott__logo">
+                                <img src="./img/logo/kktv.svg" alt="">
+                            </div>
+                            <div class="ott__logo">
+                                <img src="./img/logo/netflix.svg" alt="">
+                            </div>
+
+                        </div>    
+                        <div class="banner__icon__bigbox">
+                            <div class="banner__icon__box">
+                                <img src="./img/logo/friday_s.svg" alt="">
+                            </div>
+                            <div class="banner__icon__box">
+                                <img src="./img/logo/iqiyi_s.svg" alt="">
+                            </div>
+                            <div class="banner__icon__box">
+                                <img src="./img/logo/kktv_s.svg" alt="">
+                            </div>
+                            <div class="banner__icon__box">
+                                <img src="./img/logo/netflix_s.svg" alt="">
+                            </div>
                         </div>
-                        <div class="ott__logo">
-                            <img src="./img/logo/iqiyi.svg" alt="">
-                        </div>
-                        <div class="ott__logo">
-                            <img src="./img/logo/kktv.svg" alt="">
-                        </div>
-                        <div class="ott__logo">
-                            <img src="./img/logo/netflix.svg" alt="">
-                        </div>
+
+
                     </div>
                 </div>
             </div>
