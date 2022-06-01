@@ -104,10 +104,9 @@ const movieLikes = document.querySelector('.movie__likes');
 addTofild.addEventListener('click',()=>{
 
     // movieLikes.style.color = 'rgb(16, 255, 162)'
-    movieLikes.style.transform = 'scale(1.2)'
     movieLikes.style.animationName = 'addfild'
-    movieLikes.style.animationDuration = '1s'
-    movieLikes.style.animationIterationCount = 'infinite'
+    movieLikes.style.animationDuration = '.5s'
+    // movieLikes.style.animationIterationCount = 'infinite'
 
 
 

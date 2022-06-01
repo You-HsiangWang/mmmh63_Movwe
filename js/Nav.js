@@ -137,3 +137,27 @@
 
         // })
 
+
+        $(window).scroll(function () {
+            console.log('scrollTop', $(window).scrollTop());
+            // console.log('window height', $(window).height());
+            // console.log('body height', $('body').height());
+    
+            const scorllTop = $(window).scrollTop();
+            const widowHeight = $(window).height();
+            const bodyHeight = $('body').height();
+            // console.log('scrollTop/ widow height', `${Math.floor(scorllTop / (bodyHeight - widowHeight) * 100)}%`);
+            $('.bar').css('width', `${scorllTop / (bodyHeight - widowHeight) * 100}%`)
+    
+            if (scorllTop > 5) {
+                $('.top_nav').css('background-color', 'rgb(43, 44, 49)');
+
+
+            }
+            else {
+                $('.top_nav').css('background-color', 'rgba(43, 44, 49, 0)');
+            }
+    
+    
+        })
+    

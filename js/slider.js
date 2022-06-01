@@ -1,8 +1,4 @@
 /**
-* A simple JavaScript library, to display a content slider
-*
-* @author Matthias Thalmann (https://github.com/m-thalmann/)
-* @license MIT
 */
 
 var Slider = (function(){
@@ -397,6 +393,13 @@ var Slider = (function(){
   return Slider;
 }());
 
+
+var slider = new Slider("slider", {
+  play_icon: '<i class="fas fa-play"></i>',
+  pause_icon: '<i class="far fa-pause-circle"></i>',
+  prev_icon: '<i class="fas fa-angle-left"></i>',
+  next_icon: '<i class="fas fa-angle-right"></i>'
+});
+
 /*
-IDEA: Integration with pan event
 */

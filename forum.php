@@ -12,6 +12,7 @@ $title = 'Movwe-討論區';
 <link rel="stylesheet" href="./css/mystyle.css">
 <link rel="stylesheet" href="./css/forum.css">
 <link rel="stylesheet" href="./css/slider.css">
+<link rel="stylesheet" href="./css/dropdown_customstyle.css">
 
 </head>
 
@@ -50,7 +51,7 @@ $title = 'Movwe-討論區';
                 </div>
             </div>
 
-            <!-- <div class="forum__banner__carousel__box forum__banner__carousel__box__pc">
+            <div class="forum__banner__carousel__box forum__banner__carousel__box__pc">
                 <div id="slider" class="slider__forum" style=" width: 100%; margin: 0 auto">
                     <div class="slide">
                         <img src="./img/banner/forum_banner01.jpg" alt="">
@@ -62,9 +63,9 @@ $title = 'Movwe-討論區';
                         <img src="./img/banner/forum_banner03.jpg" alt="">
                     </div>
                 </div>
-            </div> -->
+            </div>
 
-            <!-- <div class="forum__banner__carousel__box forum__banner__carousel__box__m">
+            <div class="forum__banner__carousel__box forum__banner__carousel__box__m">
                 <div id="sliderM" class="slider__forum" style=" width: 100%; margin: 0 auto">
                     <div class="slide">
                         <img src="./img/banner/forum_banner01_s.jpg" alt="">
@@ -76,7 +77,7 @@ $title = 'Movwe-討論區';
                         <img src="./img/banner/forum_banner03_s.jpg" alt="">
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <!--text__container------內容放這邊------------->
             <div class="text__container">
@@ -1019,12 +1020,15 @@ $title = 'Movwe-討論區';
                     </div>
                 </div>
             </div>
-
+            
             <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
 
         <script src="./js/forum.js"></script>
         <script src="./js/slider.js"></script>
+
+        <script>
+    </script>
 
 </body>
 

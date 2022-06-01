@@ -17,6 +17,11 @@
     margin-top: 40px;
 
 }
+.carousel__big__box__5__wish{
+    width: 100%;
+    margin-top: 40px;
+
+}
 .carousel__title__section__5{
     display: flex;
 }
@@ -460,6 +465,11 @@ background-color:rgba(255, 255, 255, 0.487)
     .carousel__big__box__5{
         width: 100%;
         margin-top: 240px;
+    
+    }
+    .carousel__big__box__5__wish{
+        width: 100%;
+        margin-top: 100px;
     
     }
     

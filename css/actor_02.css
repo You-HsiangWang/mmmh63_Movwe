@@ -309,13 +309,17 @@ opacity: 0;
 @keyframes  addfild {
 
     0%{
+        transform: scale(1) rotate(0deg);
         color: rgb(199, 199, 199);
     }
     50%{
+        transform: scale(1.2) rotate(5deg);
         color: aquamarine;
+text-shadow: 0 0 5px rgb(16, 255, 162);
 
     }
     100%{
+        transform: scale(1) rotate(0deg);
         color: rgb(199, 199, 199);
 
     }
