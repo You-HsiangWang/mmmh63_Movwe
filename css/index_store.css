@@ -81,7 +81,11 @@ h3 {
 .mall_content {
     display: flex;
     align-items: center;
+}
 
+.mall_content svg{
+    display: none;
+    /* animation: projucts 2s linear infinite; */
 }
 
 .mall_discount .img_wrap {
@@ -173,6 +177,28 @@ h3 {
 
     .mall_banner {
         display: block;
+    }
+
+    .mall_content svg{
+        display: block;
+        animation: projucts 2s linear infinite;
+    }
+    
+    @keyframes projucts{
+        0%{
+            /* filter: brightness(100%); */
+            filter:drop-shadow(0px 0px 0px rgba(16, 255, 162,1));
+        }
+    
+        50%{
+            /* filter: brightness(500%); */
+            filter:drop-shadow(0px 0px 5px rgba(16, 255, 162,1));
+        }
+    
+        100%{
+            /* filter: brightness(100%); */
+            filter:drop-shadow(0px 0px 0px rgba(16, 255, 162,1));
+        }
     }
 
     /* products_filter */
