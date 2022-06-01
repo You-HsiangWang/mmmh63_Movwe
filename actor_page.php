@@ -143,6 +143,19 @@ $title = 'MOVWE-孔劉';
 
             <!--text__container------內容放這邊------------->
             <div class="text__container">
+                                    <a href="./wish_page.php">
+                        <div class="wish__lamp__box">
+                            <div class="home__make__a__wish">
+                                <p>
+                                    Make a wish?
+                                </p>
+                            </div>
+                            <img class="magic__lamp-1" src="./img/center/magic_lamp_hover.png" alt="">
+                            <img class="magic__lamp-2" src="./img/center/magic_lamp.png" alt="">
+                        </div>
+                    </a>
+
+
                 <div class="actor">
                     <div class="actor-top">
                         <div class="actor_pic">
@@ -151,7 +164,6 @@ $title = 'MOVWE-孔劉';
                         <div class="actor_name">GONG <br> YOO</div>
                     </div>
                     <div class="actor__right__container">
-
                         <div class="actor_right">
                             <div class="actor_filter" id="actor_tab">
                                 <ul class="actor_filter_word">
@@ -3318,12 +3330,12 @@ $title = 'MOVWE-孔劉';
                                     </div>
                                     <div class="carousel">
                                         <div class="carousel__track-container">
-                                            <button
+                                            <!-- <button
                                                 class="carousle__button carousel__button--left is-hidden carousle__button__actor carousle__button__actor--left">
                                                 <div class="side__left">
                                                     <i class="fa-solid fa-chevron-left left__icon"></i>
                                                 </div>
-                                            </button>
+                                            </button> -->
                                             <ul class="carousel__track">
                                                 <li class="carousel__slide current-slide">
                                                     <div class="image__box">
@@ -4358,12 +4370,12 @@ $title = 'MOVWE-孔劉';
                                                     </div>
                                                 </li>
                                             </ul>
-                                            <button
+                                            <!-- <button
                                                 class="carousle__button carousel__button--right carousle__button__actor carousle__button__actor--right">
                                                 <div class="side__right">
                                                     <i class="fa-solid fa-chevron-right right__icon"></i>
                                                 </div>
-                                            </button>
+                                            </button> -->
                                             <div class="carousel__nav">
                                                 <button class="carousel__indicator current-slide"></button>
                                                 <button class="carousel__indicator"></button>
@@ -4386,12 +4398,12 @@ $title = 'MOVWE-孔劉';
                                     </div>
                                     <div class="carousel">
                                         <div class="carousel__track-container">
-                                            <button
+                                            <!-- <button
                                                 class="carousle__button carousel__button--left is-hidden carousle__button__actor carousle__button__actor--left">
                                                 <div class="side__left">
                                                     <i class="fa-solid fa-chevron-left left__icon"></i>
                                                 </div>
-                                            </button>
+                                            </button> -->
                                             <ul class="carousel__track">
                                                 <li class="carousel__slide current-slide">
                                                     <div class="image__box">
@@ -4655,7 +4667,7 @@ $title = 'MOVWE-孔劉';
                                                             </div>
                                                             <div class="carousel__images__box">
                                                                 <img class="carousel__images"
-                                                                    src="./img/center/ky-tv-1.webp" alt="">
+                                                                    src="./img/center/ky-tvl-1.jpeg" alt="">
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
@@ -5426,12 +5438,12 @@ $title = 'MOVWE-孔劉';
                                                     </div>
                                                 </li>
                                             </ul>
-                                            <button
+                                            <!-- <button
                                                 class="carousle__button carousel__button--right carousle__button__actor carousle__button__actor--right">
                                                 <div class="side__right">
                                                     <i class="fa-solid fa-chevron-right right__icon"></i>
                                                 </div>
-                                            </button>
+                                            </button> -->
                                             <div class="carousel__nav">
                                                 <button class="carousel__indicator current-slide"></button>
                                                 <button class="carousel__indicator"></button>
@@ -5454,12 +5466,12 @@ $title = 'MOVWE-孔劉';
                                     </div>
                                     <div class="carousel">
                                         <div class="carousel__track-container">
-                                            <button
+                                            <!-- <button
                                                 class="carousle__button carousel__button--left is-hidden carousle__button__actor carousle__button__actor--left">
                                                 <div class="side__left">
                                                     <i class="fa-solid fa-chevron-left left__icon"></i>
                                                 </div>
-                                            </button>
+                                            </button> -->
                                             <ul class="carousel__track">
                                                 <li class="carousel__slide current-slide">
                                                     <div class="image__box">
@@ -6494,12 +6506,12 @@ $title = 'MOVWE-孔劉';
                                                     </div>
                                                 </li>
                                             </ul>
-                                            <button
+                                            <!-- <button
                                                 class="carousle__button carousel__button--right carousle__button__actor carousle__button__actor--right">
                                                 <div class="side__right">
                                                     <i class="fa-solid fa-chevron-right right__icon"></i>
                                                 </div>
-                                            </button>
+                                            </button> -->
                                             <div class="carousel__nav">
                                                 <button class="carousel__indicator current-slide"></button>
                                                 <button class="carousel__indicator"></button>

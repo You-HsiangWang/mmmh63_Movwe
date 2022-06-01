@@ -193,7 +193,7 @@ $title = 'MOVWE-搜尋結果';
 
                 <div class="searchpage__filter">
                     <div class="big__search">
-                        <input type="text" class="search__input">
+                            <input id="myInput" placeholder="輸入片名">
                     </div>
                     <div class="searchpage__filter__top">
                         <div class="filter__title">
@@ -655,9 +655,9 @@ $title = 'MOVWE-搜尋結果';
                                                         </p>
                                                         <div class="bottom_6_icon_box">
                                                             <a href="#">
-                                                                <p class="bottom_6_icon">
+                                                                <!-- <p class="bottom_6_icon">
                                                                     <img src="./img/logo/friday_s.svg" alt="">
-                                                                </p>
+                                                                </p> -->
                                                             </a>
                                                             <a href="#">
                                                                 <p class="bottom_6_icon">
@@ -665,9 +665,9 @@ $title = 'MOVWE-搜尋結果';
                                                             </a>
                                                             </p>
                                                             <a href="#">
-                                                                <p class="bottom_6_icon">
+                                                                <!-- <p class="bottom_6_icon">
                                                                     <img src="./img/logo/kktv_s.svg" alt="">
-                                                                </p>
+                                                                </p> -->
                                                             </a>
                                                             <a href="#">
                                                                 <p class="bottom_6_icon">
@@ -690,7 +690,7 @@ $title = 'MOVWE-搜尋結果';
                                                         </div>
                                                         <div class="information__point">
                                                             <p>
-                                                                4.9
+                                                                9.9
                                                             </p>
                                                         </div>
                                                     </div>
@@ -732,8 +732,8 @@ $title = 'MOVWE-搜尋結果';
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up">
-                                                            <p>
+                                                        <button class="push__up Color__blk">
+                                                            <p class="Color__blk">
                                                                 ＋ 加入片單
                                                             </p>
                                                         </button>
@@ -746,22 +746,21 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
-                                                            真愛每一天
+                                                            孤單又燦爛的神 鬼怪
                                                         </p>
                                                     </div>
                                                     <div class="movie__icons">
-                                                        <div class="movie__icon__box">
+                                                        <!-- <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="movie__icon__box"> <a href=""></a>
                                                             <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
-                                                        <div class="movie__icon__box">
+                                                        <!-- <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
-
                                                         </div>
                                                     </div>
                                                 </div>
@@ -779,9 +778,9 @@ $title = 'MOVWE-搜尋結果';
                                                         </p>
                                                         <div class="bottom_6_icon_box">
                                                             <a href="#">
-                                                                <p class="bottom_6_icon">
+                                                                <!-- <p class="bottom_6_icon">
                                                                     <img src="./img/logo/friday_s.svg" alt="">
-                                                                </p>
+                                                                </p> -->
                                                             </a>
                                                             <a href="#">
                                                                 <p class="bottom_6_icon">
@@ -803,7 +802,7 @@ $title = 'MOVWE-搜尋結果';
                                                     </div>
                                                     <div class="information__bottom_2 Bottom__display">
                                                         <p class="information__name">
-                                                            孤單又燦爛的神 鬼怪
+                                                            鬼怪
                                                         </p>
                                                     </div>
                                                     <div class="information__bottom_3 Bottom__display">
@@ -814,35 +813,35 @@ $title = 'MOVWE-搜尋結果';
                                                         </div>
                                                         <div class="information__point">
                                                             <p>
-                                                                4.9
+                                                                8.6
                                                             </p>
                                                         </div>
                                                     </div>
                                                     <div class="information__bottom_4 Bottom__display">
                                                         <p>
-                                                            浪漫愛情 /
+                                                        運動競技 /
                                                         </p>
                                                         <p>
-                                                            奇幻冒險
+                                                            
                                                         </p>
                                                     </div>
                                                     <div class="information__bottom_5 Bottom__display">
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                孔劉
+                                                                金賢
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                金高銀
+                                                                鄭明君
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
 
                                                             <p class="information__actor__name">
-                                                                劉寅娜
+                                                                
                                                             </p>
                                                         </a>
 
@@ -856,8 +855,8 @@ $title = 'MOVWE-搜尋結果';
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up">
-                                                            <p>
+                                                        <button class="push__up Color__blk">
+                                                            <p class="Color__blk">
                                                                 ＋ 加入片單
                                                             </p>
                                                         </button>
@@ -869,13 +868,13 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
-                                                            真愛每一天
+                                                            鬼怪
                                                         </p>
                                                     </div>
                                                     <div class="movie__icons">
-                                                        <div class="movie__icon__box">
+                                                        <!-- <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="movie__icon__box"> <a href=""></a>
                                                             <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
@@ -897,13 +896,13 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
                                                         <p class="information__typ">
-                                                            影劇
+                                                            動畫
                                                         </p>
                                                         <div class="bottom_6_icon_box">
                                                             <a href="#">
-                                                                <p class="bottom_6_icon">
+                                                                <!-- <p class="bottom_6_icon">
                                                                     <img src="./img/logo/friday_s.svg" alt="">
-                                                                </p>
+                                                                </p> -->
                                                             </a>
                                                             <a href="#">
                                                                 <p class="bottom_6_icon">
@@ -911,9 +910,9 @@ $title = 'MOVWE-搜尋結果';
                                                             </a>
                                                             </p>
                                                             <a href="#">
-                                                                <p class="bottom_6_icon">
+                                                                <!-- <p class="bottom_6_icon">
                                                                     <img src="./img/logo/kktv_s.svg" alt="">
-                                                                </p>
+                                                                </p> -->
                                                             </a>
                                                             <a href="#">
                                                                 <p class="bottom_6_icon">
@@ -925,7 +924,7 @@ $title = 'MOVWE-搜尋結果';
                                                     </div>
                                                     <div class="information__bottom_2 Bottom__display">
                                                         <p class="information__name">
-                                                            孤單又燦爛的神 鬼怪
+                                                            繼怪怪守護神
                                                         </p>
                                                     </div>
                                                     <div class="information__bottom_3 Bottom__display">
@@ -936,13 +935,13 @@ $title = 'MOVWE-搜尋結果';
                                                         </div>
                                                         <div class="information__point">
                                                             <p>
-                                                                4.9
+                                                                8.9
                                                             </p>
                                                         </div>
                                                     </div>
                                                     <div class="information__bottom_4 Bottom__display">
                                                         <p>
-                                                            浪漫愛情 /
+                                                            輕鬆喜劇 /
                                                         </p>
                                                         <p>
                                                             奇幻冒險
@@ -951,20 +950,20 @@ $title = 'MOVWE-搜尋結果';
                                                     <div class="information__bottom_5 Bottom__display">
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                孔劉
+                                                                
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                金高銀
+                                                            三瓶由布子
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
 
                                                             <p class="information__actor__name">
-                                                                劉寅娜
+                                                                大空直美
                                                             </p>
                                                         </a>
 
@@ -978,8 +977,8 @@ $title = 'MOVWE-搜尋結果';
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up">
-                                                            <p>
+                                                        <button class="push__up Color__blk">
+                                                            <p class="Color__blk">
                                                                 ＋ 加入片單
                                                             </p>
                                                         </button>
@@ -991,19 +990,19 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
-                                                            真愛每一天
+                                                            繼怪怪守護神
                                                         </p>
                                                     </div>
                                                     <div class="movie__icons">
-                                                        <div class="movie__icon__box">
+                                                        <!-- <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="movie__icon__box"> <a href=""></a>
                                                             <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
-                                                        <div class="movie__icon__box">
+                                                        <!-- <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                         </div>
@@ -1037,17 +1036,17 @@ $title = 'MOVWE-搜尋結果';
                                                                     <img src="./img/logo/kktv_s.svg" alt="">
                                                                 </p>
                                                             </a>
-                                                            <a href="#">
+                                                            <!-- <a href="#">
                                                                 <p class="bottom_6_icon">
                                                                     <img src="./img/logo/netflix_s.svg" alt="">
                                                                 </p>
-                                                            </a>
+                                                            </a> -->
                                                         </div>
 
                                                     </div>
                                                     <div class="information__bottom_2 Bottom__display">
                                                         <p class="information__name">
-                                                            孤單又燦爛的神 鬼怪
+                                                            鬼滅之刃
                                                         </p>
                                                     </div>
                                                     <div class="information__bottom_3 Bottom__display">
@@ -1058,13 +1057,13 @@ $title = 'MOVWE-搜尋結果';
                                                         </div>
                                                         <div class="information__point">
                                                             <p>
-                                                                4.9
+                                                                9.2
                                                             </p>
                                                         </div>
                                                     </div>
                                                     <div class="information__bottom_4 Bottom__display">
                                                         <p>
-                                                            浪漫愛情 /
+                                                             /
                                                         </p>
                                                         <p>
                                                             奇幻冒險
@@ -1073,20 +1072,20 @@ $title = 'MOVWE-搜尋結果';
                                                     <div class="information__bottom_5 Bottom__display">
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                孔劉
+                                                                花江夏樹
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                金高銀
+                                                                鬼頭明理
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
 
                                                             <p class="information__actor__name">
-                                                                劉寅娜
+                                                                
                                                             </p>
                                                         </a>
 
@@ -1100,8 +1099,8 @@ $title = 'MOVWE-搜尋結果';
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up">
-                                                            <p>
+                                                        <button class="push__up Color__blk">
+                                                            <p class="Color__blk">
                                                                 ＋ 加入片單
                                                             </p>
                                                         </button>
@@ -1113,7 +1112,7 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
-                                                            真愛每一天
+                                                            鬼滅之刃
                                                         </p>
                                                     </div>
                                                     <div class="movie__icons">
@@ -1126,9 +1125,9 @@ $title = 'MOVWE-搜尋結果';
                                                         <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div>
-                                                        <div class="movie__icon__box">
+                                                        <!-- <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -1141,7 +1140,7 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
                                                         <p class="information__typ">
-                                                            影劇
+                                                            動畫
                                                         </p>
                                                         <div class="bottom_6_icon_box">
                                                             <a href="#">
@@ -1149,10 +1148,10 @@ $title = 'MOVWE-搜尋結果';
                                                                     <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p>
                                                             </a>
-                                                            <a href="#">
+                                                            <!-- <a href="#">
                                                                 <p class="bottom_6_icon">
                                                                     <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                            </a>
+                                                            </a> -->
                                                             </p>
                                                             <a href="#">
                                                                 <p class="bottom_6_icon">
@@ -1169,7 +1168,7 @@ $title = 'MOVWE-搜尋結果';
                                                     </div>
                                                     <div class="information__bottom_2 Bottom__display">
                                                         <p class="information__name">
-                                                            孤單又燦爛的神 鬼怪
+                                                            怪物事變
                                                         </p>
                                                     </div>
                                                     <div class="information__bottom_3 Bottom__display">
@@ -1180,7 +1179,7 @@ $title = 'MOVWE-搜尋結果';
                                                         </div>
                                                         <div class="information__point">
                                                             <p>
-                                                                4.9
+                                                                8.8
                                                             </p>
                                                         </div>
                                                     </div>
@@ -1195,20 +1194,20 @@ $title = 'MOVWE-搜尋結果';
                                                     <div class="information__bottom_5 Bottom__display">
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                孔劉
+                                                                花江夏樹
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                金高銀
+                                                                賴部春
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
 
                                                             <p class="information__actor__name">
-                                                                劉寅娜
+                                                                
                                                             </p>
                                                         </a>
 
@@ -1222,8 +1221,8 @@ $title = 'MOVWE-搜尋結果';
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up">
-                                                            <p>
+                                                        <button class="push__up Color__blk">
+                                                            <p class="Color__blk">
                                                                 ＋ 加入片單
                                                             </p>
                                                         </button>
@@ -1235,16 +1234,16 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
-                                                            真愛每一天
+                                                            怪物事變
                                                         </p>
                                                     </div>
                                                     <div class="movie__icons">
                                                         <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div>
-                                                        <div class="movie__icon__box"> <a href=""></a>
+                                                        <!-- <div class="movie__icon__box"> <a href=""></a>
                                                             <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div>
@@ -1263,13 +1262,13 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
                                                         <p class="information__typ">
-                                                            影劇
+                                                            動畫
                                                         </p>
                                                         <div class="bottom_6_icon_box">
                                                             <a href="#">
-                                                                <p class="bottom_6_icon">
+                                                                <!-- <p class="bottom_6_icon">
                                                                     <img src="./img/logo/friday_s.svg" alt="">
-                                                                </p>
+                                                                </p> -->
                                                             </a>
                                                             <a href="#">
                                                                 <p class="bottom_6_icon">
@@ -1282,16 +1281,16 @@ $title = 'MOVWE-搜尋結果';
                                                                 </p>
                                                             </a>
                                                             <a href="#">
-                                                                <p class="bottom_6_icon">
+                                                                <!-- <p class="bottom_6_icon">
                                                                     <img src="./img/logo/netflix_s.svg" alt="">
-                                                                </p>
+                                                                </p> -->
                                                             </a>
                                                         </div>
 
                                                     </div>
                                                     <div class="information__bottom_2 Bottom__display">
                                                         <p class="information__name">
-                                                            孤單又燦爛的神 鬼怪
+                                                            整容液
                                                         </p>
                                                     </div>
                                                     <div class="information__bottom_3 Bottom__display">
@@ -1302,7 +1301,7 @@ $title = 'MOVWE-搜尋結果';
                                                         </div>
                                                         <div class="information__point">
                                                             <p>
-                                                                4.9
+                                                                9.3
                                                             </p>
                                                         </div>
                                                     </div>
@@ -1317,20 +1316,20 @@ $title = 'MOVWE-搜尋結果';
                                                     <div class="information__bottom_5 Bottom__display">
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                孔劉
+                                                                文南淑
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                金高銀
+                                                                張民赫
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
 
                                                             <p class="information__actor__name">
-                                                                劉寅娜
+                                                                
                                                             </p>
                                                         </a>
 
@@ -1344,8 +1343,8 @@ $title = 'MOVWE-搜尋結果';
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up">
-                                                            <p>
+                                                        <button class="push__up Color__blk">
+                                                            <p class="Color__blk">
                                                                 ＋ 加入片單
                                                             </p>
                                                         </button>
@@ -1357,22 +1356,22 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
-                                                            真愛每一天
+                                                            整容液
                                                         </p>
                                                     </div>
                                                     <div class="movie__icons">
-                                                        <div class="movie__icon__box">
+                                                        <!-- <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="movie__icon__box"> <a href=""></a>
                                                             <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
                                                         <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div>
-                                                        <div class="movie__icon__box">
+                                                        <!-- <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -1385,7 +1384,7 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
                                                         <p class="information__typ">
-                                                            影劇
+                                                            動畫
                                                         </p>
                                                         <div class="bottom_6_icon_box">
                                                             <a href="#">
@@ -1404,16 +1403,16 @@ $title = 'MOVWE-搜尋結果';
                                                                 </p>
                                                             </a>
                                                             <a href="#">
-                                                                <p class="bottom_6_icon">
+                                                                <!-- <p class="bottom_6_icon">
                                                                     <img src="./img/logo/netflix_s.svg" alt="">
-                                                                </p>
+                                                                </p> -->
                                                             </a>
                                                         </div>
 
                                                     </div>
                                                     <div class="information__bottom_2 Bottom__display">
                                                         <p class="information__name">
-                                                            孤單又燦爛的神 鬼怪
+                                                            妖怪手錶
                                                         </p>
                                                     </div>
                                                     <div class="information__bottom_3 Bottom__display">
@@ -1424,13 +1423,13 @@ $title = 'MOVWE-搜尋結果';
                                                         </div>
                                                         <div class="information__point">
                                                             <p>
-                                                                4.9
+                                                                9.1
                                                             </p>
                                                         </div>
                                                     </div>
                                                     <div class="information__bottom_4 Bottom__display">
                                                         <p>
-                                                            浪漫愛情 /
+                                                             /
                                                         </p>
                                                         <p>
                                                             奇幻冒險
@@ -1439,20 +1438,20 @@ $title = 'MOVWE-搜尋結果';
                                                     <div class="information__bottom_5 Bottom__display">
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                孔劉
+                                                                上白石萌音
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                金高銀
+                                                                
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
 
                                                             <p class="information__actor__name">
-                                                                劉寅娜
+                                                                
                                                             </p>
                                                         </a>
 
@@ -1466,8 +1465,8 @@ $title = 'MOVWE-搜尋結果';
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up">
-                                                            <p>
+                                                        <button class="push__up Color__blk">
+                                                            <p class="Color__blk">
                                                                 ＋ 加入片單
                                                             </p>
                                                         </button>
@@ -1479,7 +1478,7 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
-                                                            真愛每一天
+                                                            妖怪手錶
                                                         </p>
                                                     </div>
                                                     <div class="movie__icons">
@@ -1492,9 +1491,9 @@ $title = 'MOVWE-搜尋結果';
                                                         <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div>
-                                                        <div class="movie__icon__box">
+                                                        <!-- <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -1512,7 +1511,7 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
                                                         <p class="information__typ">
-                                                            影劇
+                                                            動畫
                                                         </p>
                                                         <div class="bottom_6_icon_box">
                                                             <a href="#">
@@ -1520,27 +1519,27 @@ $title = 'MOVWE-搜尋結果';
                                                                     <img src="./img/logo/friday_s.svg" alt="">
                                                                 </p>
                                                             </a>
-                                                            <a href="#">
+                                                            <!-- <a href="#">
                                                                 <p class="bottom_6_icon">
                                                                     <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                            </a>
+                                                            </a> -->
                                                             </p>
                                                             <a href="#">
                                                                 <p class="bottom_6_icon">
                                                                     <img src="./img/logo/kktv_s.svg" alt="">
                                                                 </p>
                                                             </a>
-                                                            <a href="#">
+                                                            <!-- <a href="#">
                                                                 <p class="bottom_6_icon">
                                                                     <img src="./img/logo/netflix_s.svg" alt="">
-                                                                </p>
+                                                                </p> -->
                                                             </a>
                                                         </div>
 
                                                     </div>
                                                     <div class="information__bottom_2 Bottom__display">
                                                         <p class="information__name">
-                                                            孤單又燦爛的神 鬼怪
+                                                            吸血鬼馬上死
                                                         </p>
                                                     </div>
                                                     <div class="information__bottom_3 Bottom__display">
@@ -1551,13 +1550,13 @@ $title = 'MOVWE-搜尋結果';
                                                         </div>
                                                         <div class="information__point">
                                                             <p>
-                                                                4.9
+                                                                8.9
                                                             </p>
                                                         </div>
                                                     </div>
                                                     <div class="information__bottom_4 Bottom__display">
                                                         <p>
-                                                            浪漫愛情 /
+                                                             /
                                                         </p>
                                                         <p>
                                                             奇幻冒險
@@ -1566,20 +1565,20 @@ $title = 'MOVWE-搜尋結果';
                                                     <div class="information__bottom_5 Bottom__display">
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                孔劉
+                                                                福山潤
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                金高銀
+                                                                谷川慎
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
 
                                                             <p class="information__actor__name">
-                                                                劉寅娜
+                                                                
                                                             </p>
                                                         </a>
 
@@ -1593,8 +1592,8 @@ $title = 'MOVWE-搜尋結果';
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up">
-                                                            <p>
+                                                        <button class="push__up Color__blk">
+                                                            <p class="Color__blk">
                                                                 ＋ 加入片單
                                                             </p>
                                                         </button>
@@ -1603,27 +1602,27 @@ $title = 'MOVWE-搜尋結果';
 
                                             </div>
                                             <div class="carousel__images__box">
-                                            <img class="carousel__images" src="./img/center/search-7.sm.jpg" alt="">
+                                            <img class="carousel__images" src="./img/center/search-7.jpg" alt="">
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
-                                                            真愛每一天
+                                                            吸血鬼馬上死
                                                         </p>
                                                     </div>
                                                     <div class="movie__icons">
                                                         <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
                                                         </div>
-                                                        <div class="movie__icon__box"> <a href=""></a>
+                                                        <!-- <div class="movie__icon__box"> <a href=""></a>
                                                             <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
                                                         </div>
-                                                        <div class="movie__icon__box">
+                                                        <!-- <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
 
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -1636,13 +1635,13 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
                                                         <p class="information__typ">
-                                                            影劇
+                                                            動畫
                                                         </p>
                                                         <div class="bottom_6_icon_box">
                                                             <a href="#">
-                                                                <p class="bottom_6_icon">
+                                                                <!-- <p class="bottom_6_icon">
                                                                     <img src="./img/logo/friday_s.svg" alt="">
-                                                                </p>
+                                                                </p> -->
                                                             </a>
                                                             <a href="#">
                                                                 <p class="bottom_6_icon">
@@ -1650,9 +1649,9 @@ $title = 'MOVWE-搜尋結果';
                                                             </a>
                                                             </p>
                                                             <a href="#">
-                                                                <p class="bottom_6_icon">
+                                                                <!-- <p class="bottom_6_icon">
                                                                     <img src="./img/logo/kktv_s.svg" alt="">
-                                                                </p>
+                                                                </p> -->
                                                             </a>
                                                             <a href="#">
                                                                 <p class="bottom_6_icon">
@@ -1664,7 +1663,7 @@ $title = 'MOVWE-搜尋結果';
                                                     </div>
                                                     <div class="information__bottom_2 Bottom__display">
                                                         <p class="information__name">
-                                                            孤單又燦爛的神 鬼怪
+                                                            怪盜基德
                                                         </p>
                                                     </div>
                                                     <div class="information__bottom_3 Bottom__display">
@@ -1675,13 +1674,13 @@ $title = 'MOVWE-搜尋結果';
                                                         </div>
                                                         <div class="information__point">
                                                             <p>
-                                                                4.9
+                                                                8.3
                                                             </p>
                                                         </div>
                                                     </div>
                                                     <div class="information__bottom_4 Bottom__display">
                                                         <p>
-                                                            浪漫愛情 /
+                                                             /
                                                         </p>
                                                         <p>
                                                             奇幻冒險
@@ -1690,20 +1689,20 @@ $title = 'MOVWE-搜尋結果';
                                                     <div class="information__bottom_5 Bottom__display">
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                孔劉
+                                                                山口勝平
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                金高銀
+                                                                
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
 
                                                             <p class="information__actor__name">
-                                                                劉寅娜
+                                                                
                                                             </p>
                                                         </a>
 
@@ -1717,8 +1716,8 @@ $title = 'MOVWE-搜尋結果';
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up">
-                                                            <p>
+                                                        <button class="push__up Color__blk">
+                                                            <p class="Color__blk">
                                                                 ＋ 加入片單
                                                             </p>
                                                         </button>
@@ -1730,19 +1729,19 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
-                                                            真愛每一天
+                                                            怪盜基德
                                                         </p>
                                                     </div>
                                                     <div class="movie__icons">
-                                                        <div class="movie__icon__box">
+                                                        <!-- <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="movie__icon__box"> <a href=""></a>
                                                             <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
                                                         </div>
-                                                        <div class="movie__icon__box">
+                                                        <!-- <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="movie__icon__box">
                                                             <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
                                                         </div>
@@ -1786,7 +1785,7 @@ $title = 'MOVWE-搜尋結果';
                                                     </div>
                                                     <div class="information__bottom_2 Bottom__display">
                                                         <p class="information__name">
-                                                            孤單又燦爛的神 鬼怪
+                                                            猛鬼抓交替
                                                         </p>
                                                     </div>
                                                     <div class="information__bottom_3 Bottom__display">
@@ -1797,13 +1796,13 @@ $title = 'MOVWE-搜尋結果';
                                                         </div>
                                                         <div class="information__point">
                                                             <p>
-                                                                4.9
+                                                                8.4
                                                             </p>
                                                         </div>
                                                     </div>
                                                     <div class="information__bottom_4 Bottom__display">
                                                         <p>
-                                                            浪漫愛情 /
+                                                             靈異驚悚 /
                                                         </p>
                                                         <p>
                                                             奇幻冒險
@@ -1812,20 +1811,20 @@ $title = 'MOVWE-搜尋結果';
                                                     <div class="information__bottom_5 Bottom__display">
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                孔劉
+                                                                思考泰勒
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                金高銀
+                                                                詹姆士蘭
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
 
                                                             <p class="information__actor__name">
-                                                                劉寅娜
+
                                                             </p>
                                                         </a>
 
@@ -1839,8 +1838,8 @@ $title = 'MOVWE-搜尋結果';
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up">
-                                                            <p>
+                                                        <button class="push__up Color__blk">
+                                                            <p class="Color__blk">
                                                                 ＋ 加入片單
                                                             </p>
                                                         </button>
@@ -1852,7 +1851,7 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
-                                                            真愛每一天
+                                                            猛鬼抓交替
                                                         </p>
                                                     </div>
                                                     <div class="movie__icons">
@@ -1880,7 +1879,7 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
                                                         <p class="information__typ">
-                                                            影劇
+                                                            動畫
                                                         </p>
                                                         <div class="bottom_6_icon_box">
                                                             <a href="#">
@@ -1908,7 +1907,7 @@ $title = 'MOVWE-搜尋結果';
                                                     </div>
                                                     <div class="information__bottom_2 Bottom__display">
                                                         <p class="information__name">
-                                                            孤單又燦爛的神 鬼怪
+                                                            新比怪怪屋
                                                         </p>
                                                     </div>
                                                     <div class="information__bottom_3 Bottom__display">
@@ -1919,13 +1918,13 @@ $title = 'MOVWE-搜尋結果';
                                                         </div>
                                                         <div class="information__point">
                                                             <p>
-                                                                4.9
+                                                                9.3
                                                             </p>
                                                         </div>
                                                     </div>
                                                     <div class="information__bottom_4 Bottom__display">
                                                         <p>
-                                                            浪漫愛情 /
+                                                             /
                                                         </p>
                                                         <p>
                                                             奇幻冒險
@@ -1934,20 +1933,20 @@ $title = 'MOVWE-搜尋結果';
                                                     <div class="information__bottom_5 Bottom__display">
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                孔劉
+                                                                
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                金高銀
+                                                                
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
 
                                                             <p class="information__actor__name">
-                                                                劉寅娜
+                                                                
                                                             </p>
                                                         </a>
 
@@ -1961,8 +1960,8 @@ $title = 'MOVWE-搜尋結果';
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up">
-                                                            <p>
+                                                        <button class="push__up Color__blk">
+                                                            <p class="Color__blk">
                                                                 ＋ 加入片單
                                                             </p>
                                                         </button>
@@ -1974,7 +1973,7 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
-                                                            真愛每一天
+                                                        新比怪怪屋
                                                         </p>
                                                     </div>
                                                     <div class="movie__icons">
@@ -2030,7 +2029,7 @@ $title = 'MOVWE-搜尋結果';
                                                     </div>
                                                     <div class="information__bottom_2 Bottom__display">
                                                         <p class="information__name">
-                                                            孤單又燦爛的神 鬼怪
+                                                            怪物們
                                                         </p>
                                                     </div>
                                                     <div class="information__bottom_3 Bottom__display">
@@ -2041,13 +2040,13 @@ $title = 'MOVWE-搜尋結果';
                                                         </div>
                                                         <div class="information__point">
                                                             <p>
-                                                                4.9
+                                                                8.5
                                                             </p>
                                                         </div>
                                                     </div>
                                                     <div class="information__bottom_4 Bottom__display">
                                                         <p>
-                                                            浪漫愛情 /
+                                                             /
                                                         </p>
                                                         <p>
                                                             奇幻冒險
@@ -2056,20 +2055,20 @@ $title = 'MOVWE-搜尋結果';
                                                     <div class="information__bottom_5 Bottom__display">
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                孔劉
+                                                                
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                金高銀
+                                                                
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
 
                                                             <p class="information__actor__name">
-                                                                劉寅娜
+                                                                
                                                             </p>
                                                         </a>
 
@@ -2083,8 +2082,8 @@ $title = 'MOVWE-搜尋結果';
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up">
-                                                            <p>
+                                                        <button class="push__up Color__blk">
+                                                            <p class="Color__blk">
                                                                 ＋ 加入片單
                                                             </p>
                                                         </button>
@@ -2096,7 +2095,7 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
-                                                            真愛每一天
+                                                            怪物們
                                                         </p>
                                                     </div>
                                                     <div class="movie__icons">
@@ -2152,7 +2151,7 @@ $title = 'MOVWE-搜尋結果';
                                                     </div>
                                                     <div class="information__bottom_2 Bottom__display">
                                                         <p class="information__name">
-                                                            孤單又燦爛的神 鬼怪
+                                                            鬼燈冷撒
                                                         </p>
                                                     </div>
                                                     <div class="information__bottom_3 Bottom__display">
@@ -2163,13 +2162,13 @@ $title = 'MOVWE-搜尋結果';
                                                         </div>
                                                         <div class="information__point">
                                                             <p>
-                                                                4.9
+                                                                9.4
                                                             </p>
                                                         </div>
                                                     </div>
                                                     <div class="information__bottom_4 Bottom__display">
                                                         <p>
-                                                            浪漫愛情 /
+                                                             /
                                                         </p>
                                                         <p>
                                                             奇幻冒險
@@ -2178,20 +2177,20 @@ $title = 'MOVWE-搜尋結果';
                                                     <div class="information__bottom_5 Bottom__display">
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                孔劉
+                                                                
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                金高銀
+                                                                
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
 
                                                             <p class="information__actor__name">
-                                                                劉寅娜
+                                                                
                                                             </p>
                                                         </a>
 
@@ -2205,8 +2204,8 @@ $title = 'MOVWE-搜尋結果';
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up">
-                                                            <p>
+                                                        <button class="push__up Color__blk">
+                                                            <p class="Color__blk">
                                                                 ＋ 加入片單
                                                             </p>
                                                         </button>
@@ -2218,7 +2217,7 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
-                                                            真愛每一天
+                                                            鬼燈冷撒
                                                         </p>
                                                     </div>
                                                     <div class="movie__icons">
@@ -2274,7 +2273,7 @@ $title = 'MOVWE-搜尋結果';
                                                     </div>
                                                     <div class="information__bottom_2 Bottom__display">
                                                         <p class="information__name">
-                                                            孤單又燦爛的神 鬼怪
+                                                            神鬼網戰
                                                         </p>
                                                     </div>
                                                     <div class="information__bottom_3 Bottom__display">
@@ -2285,7 +2284,7 @@ $title = 'MOVWE-搜尋結果';
                                                         </div>
                                                         <div class="information__point">
                                                             <p>
-                                                                4.9
+                                                                8.4
                                                             </p>
                                                         </div>
                                                     </div>
@@ -2300,20 +2299,20 @@ $title = 'MOVWE-搜尋結果';
                                                     <div class="information__bottom_5 Bottom__display">
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                孔劉
+                                                                尼克羅賓
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
                                                             <p class="information__actor__name">
-                                                                金高銀
+                                                                傑森克拉克
                                                             </p>
                                                         </a>
                                                         <span class="speace"> / </span>
                                                         <a href="#">
 
                                                             <p class="information__actor__name">
-                                                                劉寅娜
+                                                                
                                                             </p>
                                                         </a>
 
@@ -2327,8 +2326,8 @@ $title = 'MOVWE-搜尋結果';
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up">
-                                                            <p>
+                                                        <button class="push__up Color__blk">
+                                                            <p class="Color__blk">
                                                                 ＋ 加入片單
                                                             </p>
                                                         </button>
@@ -2340,7 +2339,7 @@ $title = 'MOVWE-搜尋結果';
                                                 <div class="image__card__text">
                                                     <div class="movie__name">
                                                         <p>
-                                                            真愛每一天
+                                                            神鬼網戰
                                                         </p>
                                                     </div>
                                                     <div class="movie__icons">

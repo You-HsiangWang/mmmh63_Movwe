@@ -178,8 +178,133 @@ justify-content: center;
     margin-right: 4px;
 }
 .ac_netflix img{
- width: 104.8%;
+width: 104.8%;
 }
+
+
+.wish__lamp__box{
+    width: 10%;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 999;
+    animation-name: shake;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+
+}
+
+
+.home__make__a__wish{
+    transition: .3s;
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(16, 255, 162);
+    position: absolute;
+    top: -25%  ;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.magic__lamp-1{
+opacity: 0;
+transition: .3s;
+}
+
+
+.magic__lamp-2{
+opacity: 1;
+transition: .3s;
+position: absolute;
+top:0;
+left: 0;
+}
+
+.wish__lamp__box:hover{
+animation-name: none;
+
+}
+
+.wish__lamp__box:hover .home__make__a__wish{
+opacity: 1;
+}
+
+.wish__lamp__box:hover .magic__lamp-1{
+opacity: 1;
+}
+
+.wish__lamp__box:hover .magic__lamp-2{
+opacity: 0;
+}
+
+
+@keyframes shake {
+
+    0% {
+        transform: rotate(3deg);
+    }
+    
+    5% {
+        transform: rotate(-3deg);
+    
+    }
+    
+    10% {
+        transform: rotate(3deg);
+    
+    }
+    
+    15% {
+        transform: rotate(-3deg);
+    
+    }
+    
+    20% {
+        transform: rotate(3deg);
+    
+    }
+    
+    25% {
+        transform: rotate(-3deg);
+    
+    }
+    
+    30% {
+        transform: rotate(3deg);
+    
+    }
+    
+    35% {
+        transform: rotate(-3deg);
+    
+    }
+    
+    40% {
+        transform: rotate(5deg);
+    
+    }
+    
+    45% {
+        transform: rotate(-3deg);
+    
+    }
+    
+    50% {
+        transform: rotate(3deg);
+    
+    }
+    
+    55% {
+        transform: rotate(-3deg);
+    
+    }
+    
+    }
+
+
 
 @keyframes  addfild {
 
@@ -197,6 +322,8 @@ justify-content: center;
 
 
 }
+
+
 
 /* ---PC版--------------------------- */
 @media screen and (min-width: 750px) {

@@ -555,24 +555,20 @@ $title = 'MOVWE-就要你放膽搜';
                                                             </p>
                                                         </div>
                                                         <div class="information__bottom_5 Bottom__display">
-                                                            <a href="#">
+                                                            <a href="./actor_page.php">
                                                                 <p class="information__actor__name">
                                                                     孔劉
                                                                 </p>
                                                             </a>
                                                             <span class="speace"> / </span>
-                                                            <a href="#">
                                                                 <p class="information__actor__name">
                                                                     金高銀
                                                                 </p>
-                                                            </a>
                                                             <span class="speace"> / </span>
-                                                            <a href="#">
 
                                                                 <p class="information__actor__name">
                                                                     劉寅娜
                                                                 </p>
-                                                            </a>
 
                                                         </div>
 
@@ -593,30 +589,32 @@ $title = 'MOVWE-就要你放膽搜';
                                                     </div>
                                                     </a>
                                                 </div>
-                                                <div class="carousel__images__box">
-                                                    <img class="carousel__images" src="./img/center/h_1.jpeg" alt="">
-                                                    <div class="image__card__text">
-                                                        <div class="movie__name">
-                                                            <p>
-                                                                孤單又燦爛的神 鬼怪
-                                                            </p>
-                                                        </div>
-                                                        <div class="movie__icons">
-                                                            <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
-                                                        </div> -->
-                                                            <div class="movie__icon__box"> <a href=""></a>
-                                                                <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
+                                                <a class="single_page_a" href="./single_movie.php">
+                                                    <div class="carousel__images__box">
+                                                        <img class="carousel__images" src="./img/center/h_1.jpeg" alt="">
+                                                        <div class="image__card__text">
+                                                            <div class="movie__name main_movie">
+                                                                <p>
+                                                                    孤單又燦爛的神 鬼怪
+                                                                </p>
                                                             </div>
-                                                            <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                        </div> -->
-                                                            <div class="movie__icon__box">
-                                                                <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+                                                            <div class="movie__icons">
+                                                                <!-- <div class="movie__icon__box">
+                                                                <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
+                                                            </div> -->
+                                                                <div class="movie__icon__box"> <a href=""></a>
+                                                                    <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
+                                                                </div>
+                                                                <!-- <div class="movie__icon__box">
+                                                                <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
+                                                            </div> -->
+                                                                <div class="movie__icon__box">
+                                                                    <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </a>
                                             </div>
 
                                             <div class="image__card">
@@ -682,13 +680,13 @@ $title = 'MOVWE-就要你放膽搜';
                                                             <div class="information__bottom_5 Bottom__display">
                                                                 <a href="#">
                                                                     <p class="information__actor__name">
-                                                                        神木隆之介
+                                                                        神木隆介
                                                                     </p>
                                                                 </a>
                                                                 <span class="speace"> / </span>
                                                                 <a href="#">
                                                                     <p class="information__actor__name">
-                                                                        上白石萌音
+                                                                        上白石音
                                                                     </p>
                                                                 </a>
                                                                 <span class="speace"> / </span>
@@ -4924,9 +4922,7 @@ $title = 'MOVWE-就要你放膽搜';
                                     會員透過Movwe連結觀看影片，即可領取50點we points!
                                     we point點數可用來兌換訂閱影音平台優惠，快來加入我們!
                                 </p>
-
                             </div>
-
                             <div class="discount__img__box">
                                 <img src="./img/banner/share.png" alt="">
                             </div>
@@ -4940,11 +4936,10 @@ $title = 'MOVWE-就要你放膽搜';
                                 <p class="discount__text">
                                     朋友透過您的專屬連結註冊Movwe會員，即可獲得100點we point! 同時您也會收到100點we points回饋唷!
                                 </p>
-
                             </div>
                         </div>
                     </div>
-                    <a href="./dragon_quest.php">
+                    <a class="dragon_a" href="./dragon_quest.php">
                         <div class="Movwe__test__section">
                             <div class="carousel__title__section__5">
                                 <div class="stick_desk"></div>
