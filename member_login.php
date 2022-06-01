@@ -176,82 +176,76 @@ $title = 'MOVWE-帳戶登入';
                         <form action="" name="register_form" method="post" class="register_form" id="registerEmailForm" onsubmit="checkRegister(); return false;" novalidate>
                             <section class="register_form_data_feild">
                                 <div>
-                                    <label for="member_email">電子郵件地址</label>
-                                    <input type="email" name="member_email" id="register_form_email" placeholder="example@email.com" class="member_email" autocomplete="off">
-                                    <div class="register_member_email_status">
+                                    <label for="register_email">電子郵件地址</label>
+                                    <input type="email" name="register_email" id="register_form_email" placeholder="example@email.com" class="member_email" autocomplete="off" onchange="checkRegEmail()">
+                                    <div class="register_email_status">
+                                        <i class="fa-solid fa-triangle-exclamation login_d_none"></i>
+                                        <i class="fa-solid fa-check login_d_none"></i>
+                                    </div>
+                                    <div class="register_email_alert login_d_none">
+                                        <p>請輸入電子郵件地址。</p>
+                                    </div>
+                                    <div class="register_email_alert login_d_none">
+                                        <p>電子郵件地址格式錯誤，請重新輸入。</p>
+                                    </div>
+                                    <div class="register_email_alert login_d_none">
+                                        <p>此電子郵件已經註冊過帳號。<span>請</span><br>
+                                            <a>更換電子郵件</a><span>或</span><a href="member_login.php">馬上登入</a>
+                                        </p>
+                                    </div>
+                                    <div class="register_email_alert login_d_none">
+                                        <p>電子郵件地址可以使用。</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="register_form_data_feild">
+                                <div>
+                                    <label for="register_password">密碼</label>
+                                    <input type="password" name="register_password" id="register_form_psd" placeholder="" class="register_password" autocomplete="off" onchange="checkRegPassword()">
+                                    <div class="register_password_status">
+                                        <i class="fa-solid fa-eye-slash"></i>
+                                        <i class="fa-solid fa-eye login_d_none"></i>
+                                        <i class="fa-solid fa-triangle-exclamation login_d_none"></i>
+                                        <i class="fa-solid fa-check login_d_none"></i>
+                                    </div>
+                                    <div class="register_password_alert login_d_none">
+                                        <p>請輸入密碼。</p>
+                                    </div>
+                                    <div class="register_password_alert login_d_none">
+                                        <p>密碼須包含大小寫字母和數字，7~13位數。</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="register_form_data_feild">
+                                <div>
+                                    <label for="register_password_confirm">再次輸入密碼</label>
+                                    <input type="password" name="register_password_confirm" id="register_form_psdconfirm" placeholder="" class="register_password_confirm" autocomplete="off" onchange="checkRegPasswordConfirm()">
+                                    <div class="register_password_confirm_status">
+                                        <i class="fa-solid fa-eye-slash"></i>
+                                        <i class="fa-solid fa-eye login_d_none"></i>
+                                        <i class="fa-solid fa-triangle-exclamation login_d_none"></i>
+                                        <i class="fa-solid fa-check login_d_none"></i>
+                                    </div>
+                                    <div class="register_password_confirm_alert login_d_none">
+                                        <p>兩次密碼輸入不同。</p>
+                                    </div>
+                                    <div class="register_password_confirm_alert login_d_none">
+                                        <p>請再次輸入密碼。</p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="register_form_data_feild">
+                                <div>
+                                    <label for="register_invite">輸入邀請碼</label>
+                                    <input type="text" name="register_invite" id="register_form_invite" placeholder="" class="register_invite" autocomplete="off">
+                                    <div class="register_invite_status">
                                         <!-- <i class="fa-solid fa-eye-slash"></i> -->
                                         <!-- <i class="fa-solid fa-eye login_d_none"></i> -->
                                         <i class="fa-solid fa-triangle-exclamation login_d_none"></i>
                                         <i class="fa-solid fa-check login_d_none"></i>
-                                        <!-- <img src="./img/icons/check.svg" alt=""> -->
                                     </div>
-                                    <div class="register_member_email_alert login_d_none">
-                                        <p>請輸入電子郵件地址。</p>
-                                    </div>
-                                    <div class="register_member_email_alert login_d_none">
-                                        <p>電子郵件地址格式錯誤，請重新輸入。</p>
-                                    </div>
-                                    <div class="register_member_email_alert login_d_none">
-                                        <p>此電子郵件已經註冊過帳號。<span>請</span><br>
-                                            <a href="">更換電子郵件</a><span>或</span><a href="">馬上登入</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="register_form_data_feild">
-                                <div>
-                                    <label for="member_email">密碼</label>
-                                    <input type="email" name="member_email" id="register_form_psd" placeholder="" class="member_email" autocomplete="off">
-                                    <div class="register_member_email_alert login_d_none">
-                                        <p>請輸入電子郵件地址</p>
-                                        <img src="./img/icons/triangle-exclamation.svg" alt="">
-                                    </div>
-                                    <div class="register_member_email_alert login_d_none">
-                                        <p>找不到與該電子郵件地址相關的帳戶。<span>請</span><br>
-                                            <a href="">尋找您的帳戶</a><span>或</span><a href="">建立新帳戶</a>
-                                        </p>
-                                        <img src="./img/icons/triangle-exclamation.svg" alt="">
-                                    </div>
-                                    <div class="register_member_email_alert login_d_none">
-                                        <img src="./img/icons/check.svg" alt="">
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="register_form_data_feild">
-                                <div>
-                                    <label for="member_email">再次輸入密碼</label>
-                                    <input type="email" name="member_email" id="register_form_psdpsd" placeholder="" class="member_email" autocomplete="off">
-                                    <div class="register_member_email_alert login_d_none">
-                                        <p>請輸入電子郵件地址</p>
-                                        <img src="./img/icons/triangle-exclamation.svg" alt="">
-                                    </div>
-                                    <div class="register_member_email_alert login_d_none">
-                                        <p>找不到與該電子郵件地址相關的帳戶。<span>請</span><br>
-                                            <a href="">尋找您的帳戶</a><span>或</span><a href="">建立新帳戶</a>
-                                        </p>
-                                        <img src="./img/icons/triangle-exclamation.svg" alt="">
-                                    </div>
-                                    <div class="register_member_email_alert login_d_none">
-                                        <img src="./img/icons/check.svg" alt="">
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="register_form_data_feild">
-                                <div>
-                                    <label for="member_email">輸入邀請碼</label>
-                                    <input type="email" name="member_email" id="register_form_invite" placeholder="非必填" class="member_email" autocomplete="off">
-                                    <div class="register_member_email_alert login_d_none">
-                                        <p>請輸入電子郵件地址</p>
-                                        <img src="./img/icons/triangle-exclamation.svg" alt="">
-                                    </div>
-                                    <div class="register_member_email_alert login_d_none">
-                                        <p>找不到與該電子郵件地址相關的帳戶。<span>請</span><br>
-                                            <a href="">尋找您的帳戶</a><span>或</span><a href="">建立新帳戶</a>
-                                        </p>
-                                        <img src="./img/icons/triangle-exclamation.svg" alt="">
-                                    </div>
-                                    <div class="register_member_email_alert login_d_none">
-                                        <img src="./img/icons/check.svg" alt="">
+                                    <div class="register_invite_alert login_d_none">
+                                        <p>序號錯誤。</p>
                                     </div>
                                 </div>
                             </section>
@@ -386,7 +380,7 @@ $title = 'MOVWE-帳戶登入';
             if (isPass) {
                 $.post('member_login_psd_api.php', $(document.login_form_password).serialize(), function(data) {
                     console.log(data);
-                    if (data.passwordsuccess && data.backtourl){
+                    if (data.passwordsuccess && data.backtourl) {
                         console.log('回到來的頁面');
                         location.href = data.backtourl;
                     } else if (data.passwordsuccess) {
@@ -459,12 +453,181 @@ $title = 'MOVWE-帳戶登入';
             // 預設先給通過
             let ispass = true;
             // 檢查欄位有無問題
-            if(!$('#register_form_email').val().trim()){
+            if (!$('#register_form_email').val().trim()) {
                 let ispass = false;
-                console.log('操你媽 沒填email啦');
+                console.log('草枝擺沒填email啦');
+                $('#register_form_email .register_email_alert:nth-of-type(1)').removeClass('login_d_none');
+                $('#register_form_email .register_email_alert:nth-of-type(2)').addClass('login_d_none');
+                $('#register_form_email .register_email_alert:nth-of-type(3)').addClass('login_d_none');
+                $('.register_email_status i:nth-child(1)').removeClass('login_d_none');
+                $('.register_email_status i:nth-child(2)').addClass('login_d_none');
             };
+        };
 
-        }
+        // 註冊emailinput onchange時就執行的
+        function checkRegEmail() {
+            if (!$('#register_form_email').val().trim()) {
+                // let ispass = false;
+                console.log('草枝擺沒填email啦');
+                $('.register_email_alert:nth-of-type(2)').removeClass('login_d_none');
+                $('.register_email_alert:nth-of-type(3)').addClass('login_d_none');
+                $('.register_email_alert:nth-of-type(4)').addClass('login_d_none');
+                $('.register_email_alert:nth-of-type(5)').addClass('login_d_none');
+                $('.register_email_status i:nth-child(1)').removeClass('login_d_none');
+                $('.register_email_status i:nth-child(2)').addClass('login_d_none');
+                $('#register_form_email').blur();
+                return;
+            } else if (!IsEmail($('#register_form_email').val())) {
+                console.log('email格式不符');
+                $('.register_email_alert:nth-of-type(3)').removeClass('login_d_none');
+                $('.register_email_alert:nth-of-type(2)').addClass('login_d_none');
+                $('.register_email_alert:nth-of-type(4)').addClass('login_d_none');
+                $('.register_email_alert:nth-of-type(5)').addClass('login_d_none');
+                $('.register_email_status i:nth-child(1)').removeClass('login_d_none');
+                $('.register_email_status i:nth-child(2)').addClass('login_d_none');
+                $('#register_form_email').blur();
+                return;
+            } else {
+                // 送api做初步檢驗
+                console.log('送檢');
+                const regMail = $('#register_form_email').val().trim();
+                const passobj = {
+                    'regMail': regMail,
+                };
+                $.post('api_checkemail.php', passobj, function(data) {
+                    if (data == 'false') {
+                        console.log('email重複摟');
+                        $('.register_email_alert:nth-of-type(4)').removeClass('login_d_none');
+                        $('.register_email_alert:nth-of-type(3)').addClass('login_d_none');
+                        $('.register_email_alert:nth-of-type(2)').addClass('login_d_none');
+                        $('.register_email_alert:nth-of-type(5)').addClass('login_d_none');
+                        $('.register_email_status i:nth-child(1)').removeClass('login_d_none');
+                        $('.register_email_status i:nth-child(2)').addClass('login_d_none');
+                        $('#register_form_email').blur();
+                        return;
+                    } else if (data == 'true') {
+                        console.log('email可以使用');
+                        $('.register_email_alert:nth-of-type(5)').removeClass('login_d_none');
+                        $('.register_email_alert:nth-of-type(3)').addClass('login_d_none');
+                        $('.register_email_alert:nth-of-type(4)').addClass('login_d_none');
+                        $('.register_email_alert:nth-of-type(2)').addClass('login_d_none');
+                        $('.register_email_status i:nth-child(2)').removeClass('login_d_none');
+                        $('.register_email_status i:nth-child(1)').addClass('login_d_none');
+                        $('#register_form_email').blur();
+                    };
+                }, 'text');
+            };
+        };
+        // 註冊密碼input onchange時就執行的
+        function checkRegPassword() {
+            // 沒填密碼
+            if (!$('#register_form_psd').val().trim()) {
+                console.log('沒填密碼');
+                $('.register_password_alert:nth-of-type(2)').removeClass('login_d_none');
+                $('.register_password_alert:nth-of-type(3)').addClass('login_d_none');
+                $('.register_password_status i:nth-child(3)').removeClass('login_d_none');
+                $('.register_password_status i:nth-child(4)').addClass('login_d_none');
+                $('#register_form_psd').blur();
+                return;
+            } else if (!IsPassword($('#register_form_psd').val())) {
+                console.log('格式不符');
+                $('.register_password_alert:nth-of-type(3)').removeClass('login_d_none');
+                $('.register_password_alert:nth-of-type(2)').addClass('login_d_none');
+                $('.register_password_status i:nth-child(3)').removeClass('login_d_none');
+                $('.register_password_status i:nth-child(4)').addClass('login_d_none');
+                $('#register_form_psd').blur();
+                return;
+            } else if (IsPassword($('#register_form_psd').val())) {
+                console.log('密碼ok');
+                $('.register_password_alert:nth-of-type(2)').addClass('login_d_none');
+                $('.register_password_alert:nth-of-type(3)').addClass('login_d_none');
+                $('.register_password_status i:nth-child(4)').removeClass('login_d_none');
+                $('.register_password_status i:nth-child(3)').addClass('login_d_none');
+                $('#register_form_psd').blur();
+            };
+        };
+
+        // 註冊時密碼確認
+        function checkRegPasswordConfirm() {
+            // 沒填密碼
+            if (!$('#register_form_psdconfirm').val().trim()) {
+                console.log('沒填密碼確認');
+                $('.register_password_confirm_alert:nth-of-type(3)').removeClass('login_d_none');
+                $('.register_password_confirm_alert:nth-of-type(2)').addClass('login_d_none');
+                $('.register_password_confirm_status i:nth-child(3)').removeClass('login_d_none');
+                $('.register_password_confirm_status i:nth-child(4)').addClass('login_d_none');
+                $('#register_form_psdconfirm').blur();
+                return;
+            } else if ($('#register_form_psdconfirm').val().trim() != $('#register_form_psd').val().trim()) {
+                console.log('兩次輸入密碼不同');
+                $('.register_password_confirm_alert:nth-of-type(2)').removeClass('login_d_none');
+                $('.register_password_confirm_alert:nth-of-type(3)').addClass('login_d_none');
+                $('.register_password_confirm_status i:nth-child(3)').removeClass('login_d_none');
+                $('.register_password_confirm_status i:nth-child(4)').addClass('login_d_none');
+                $('#register_form_psdconfirm').blur();
+                return;
+            } else if (($('#register_form_psdconfirm').val().trim()) && ($('#register_form_psdconfirm').val().trim() == $('#register_form_psd').val().trim())) {
+                console.log('再次密碼ok');
+                $('.register_password_confirm_alert:nth-of-type(2)').addClass('login_d_none');
+                $('.register_password_confirm_alert:nth-of-type(3)').addClass('login_d_none');
+                $('.register_password_confirm_status i:nth-child(3)').addClass('login_d_none');
+                $('.register_password_confirm_status i:nth-child(4)').removeClass('login_d_none');
+                $('#register_form_psdconfirm').blur();
+            };
+        };
+
+        function checkRegInvite() {
+            // 沒有此邀請碼 有填再送
+            if ($('#register_form_invite').val().trim()) {
+                // 送api做初步檢驗
+                console.log('送檢');
+                const regMail = $('#register_form_email').val().trim();
+                const passobj = {
+                    'regMail': regMail,
+                };
+                $.post('api_checkemail.php', passobj, function(data) {
+                    if (data == 'false') {
+                        console.log('email重複摟');
+                        $('.register_email_alert:nth-of-type(4)').removeClass('login_d_none');
+                        $('.register_email_alert:nth-of-type(3)').addClass('login_d_none');
+                        $('.register_email_alert:nth-of-type(2)').addClass('login_d_none');
+                        $('.register_email_alert:nth-of-type(5)').addClass('login_d_none');
+                        $('.register_email_status i:nth-child(1)').removeClass('login_d_none');
+                        $('.register_email_status i:nth-child(2)').addClass('login_d_none');
+                        $('#register_form_email').blur();
+                        return;
+                    } else if (data == 'true') {
+                        console.log('email可以使用');
+                        $('.register_email_alert:nth-of-type(5)').removeClass('login_d_none');
+                        $('.register_email_alert:nth-of-type(3)').addClass('login_d_none');
+                        $('.register_email_alert:nth-of-type(4)').addClass('login_d_none');
+                        $('.register_email_alert:nth-of-type(2)').addClass('login_d_none');
+                        $('.register_email_status i:nth-child(2)').removeClass('login_d_none');
+                        $('.register_email_status i:nth-child(1)').addClass('login_d_none');
+                        $('#register_form_email').blur();
+                    };
+                }, 'text');
+            };
+        };
+
+        // email regex
+        function IsEmail(email) {
+            const regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            if (!regex.test(email)) {
+                return false;
+            } else {
+                return true;
+            };
+        };
+        // psd regex
+        function IsPassword(psd) {
+            const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,13}$/;
+            if (!regex.test(psd)) {
+                return false;
+            } else {
+                return true;
+            };
+        };
     </script>
 
 </body>

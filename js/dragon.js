@@ -697,7 +697,7 @@ function princessthankyou() {
             setTimeout(function(){
                 const moveout = 100;
                 $('#mainChar .conver_box').css('display', 'none');
-                $('.elif > img').css('transform', 'scaleX(1)');
+                $('.elif > img').css('transform', 'scaleX(-1)');
                 $(mainChar).css(
                     {   
                         "transform": `translateX(-100vw)`,
@@ -762,7 +762,7 @@ function startSceenFive () {
 function startResult(){
     console.log('結果計算');
     // window.location.assign('dragon_sceensix.html');
-    window.location.assign('dragon_quset_result.php');
+    window.location.assign('dragon_quest_result.php');
 };
 
 
