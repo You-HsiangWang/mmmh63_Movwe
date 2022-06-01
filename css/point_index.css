@@ -4,6 +4,13 @@
 }
 
 /* 點數區 banner------------------------------------------- */
+/* 桌機版消失 */
+.p_web_d-none{
+    display: none;
+}
+.p_phone_d-none{
+    display: block;
+}
 /* 點數區 banner */
 p {
     font-size: 16px;
@@ -368,6 +375,13 @@ p {
     }
 
     /* 點數區 banner ------------------------------------------ */
+    /* 手機版消失 */
+    .p_web_d-none{
+        display: block;
+    }
+    .p_phone_d-none{
+        display: none;
+    }
     .point-section_banner h1 {
         font-size: 5rem;
         bottom: 3rem;

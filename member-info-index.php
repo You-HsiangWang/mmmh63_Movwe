@@ -120,10 +120,10 @@
                 box-shadow: 0 -15px 5px -16px rgba(16, 255, 163, 0);
             }
             .card-article:hover{
-            transform: translateY(-5%);
-            border-radius: 8px;
-            transform: scale(1.02);
-            transition: .5s;
+                transform: translateY(-5%);
+                border-radius: 8px;
+                transform: scale(1.02);
+                transition: .5s;
             }
             .posticon-hashtag{
                 cursor: pointer;
@@ -183,10 +183,10 @@
                             <div class="account-nav">
                                 <div class="account_filter">
                                     <ul class="account_filter_word">
-                                        <li class="account_films"><a href="#acc_films">影劇</a></li>
-                                        <li class="account_product"><a href="#acc_product">商品</a></li>
-                                        <li class="account_forum"><a href="#acc_forum">討論區</a></li>
-                                        <li class="account_info"><a href="#acc_info">個人資料</a></li>
+                                        <li class="account_films">影劇</li>
+                                        <li class="account_product">商品</li>
+                                        <li class="account_forum">討論區</li>
+                                        <li class="account_info">個人資料</li>
                                         <li class="account_space01"><a href=""></a></li>
                                         <li class="account_space02"><a href=""></a></li> 
                                     </ul>
@@ -200,9 +200,9 @@
                                     <div class="info_child">
                                         <ul class="info_child_content films_content">
                                             <span>分類 / </span>
-                                            <li class="info_child01 filter_4w"><a href="#myList">我的片單</a></li>
-                                            <li class="info_child02 filter_4w"><a href="#myWishList">許願清單</a></li>
-                                            <li class="info_child04 filter_4w"><a href="#myHistory">曾經瀏覽</a></li>
+                                            <li class="info_child01 filter_4w">我的片單</li>
+                                            <li class="info_child02 filter_4w">許願清單</li>
+                                            <li class="info_child04 filter_4w">曾經瀏覽</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -218,8 +218,8 @@
                                     <div class="info_child">
                                         <ul class="info_child_content forum-content">
                                             <span>分類 / </span>
-                                            <li class="info_child_forum01 filter_4w"><a href="#myArtCollect">收藏文章</a></li>
-                                            <li class="info_child_forum02 filter_4w"><a href="#myArtPost">我的貼文</a></li>
+                                            <li class="info_child_forum01 filter_4w">收藏文章</li>
+                                            <li class="info_child_forum02 filter_4w">我的貼文</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -227,8 +227,8 @@
                                     <div class="info_child">
                                         <ul class="info_child_content info_content">
                                             <span>分類 / </span>
-                                            <li class="info_child_acc01 filter_4w"><a href="#info_acc">帳戶資料</a></li>
-                                            <li class="info_child_acc02 filter_4w"><a href="#info_gen">一般資料</a></li>
+                                            <li class="info_child_acc01 filter_4w">帳戶資料</li>
+                                            <li class="info_child_acc02 filter_4w">一般資料</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1237,7 +1237,7 @@
                                                         </td>
                                                         <td>白色</td>
                                                         <td>M</td>
-                                                        <td>NTD80</td>
+                                                        <td>NTD480</td>
                                                         <td>5</td>
                                                         <td class="gw">NTD4,200</td>
                                                     <!-- </tr>
@@ -1288,63 +1288,24 @@
                                                     <tr>
                                                         <td class="od-left">
                                                             <div class="od-pic">
-                                                                <img src="./img/talls_img/t-shirt.png" alt="">
+                                                                <img src="./img/mall/1.jpg" alt="">
                                                             </div>
                                                             <div class="od-info">
-                                                                <div class="od-nam">國王排名 T-shirt</div>
-                                                                <div class="od-col">顏色：黑</div>
-                                                                <div class="od-size">尺寸：L</div>
+                                                                <div class="od-nam">孤單又燦爛的神-鬼怪 周邊娃娃</div>
+                                                                <div class="od-col">顏色：白色</div>
+                                                                <div class="od-size">尺寸：M</div>
                                                             </div>
                                                         </td>
                                                         <td class="od-right">
                                                             <div class="od-quantity">
-                                                                數量：1
+                                                                數量：5
                                                             </div>
                                                             <div class="od-price">
-                                                                NTD890
+                                                                NTD480
                                                             </div>
                                                         </td>
                                                     </tr>
-                                                    <tr>
-                                                        <td class="od-left">
-                                                            <div class="od-pic">
-                                                                <img src="./img/talls_img/t-shirt.png" alt="">
-                                                            </div>
-                                                            <div class="od-info">
-                                                                <div class="od-nam">國王排名 T-shirt</div>
-                                                                <div class="od-col">顏色：黑</div>
-                                                                <div class="od-size">尺寸：L</div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="od-right">
-                                                            <div class="od-quantity">
-                                                                數量：1
-                                                            </div>
-                                                            <div class="od-price">
-                                                                NTD890
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="od-left">
-                                                            <div class="od-pic">
-                                                                <img src="./img/talls_img/t-shirt.png" alt="">
-                                                            </div>
-                                                            <div class="od-info">
-                                                                <div class="od-nam">國王排名 T-shirt</div>
-                                                                <div class="od-col">顏色：黑</div>
-                                                                <div class="od-size">尺寸：L</div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="od-right">
-                                                            <div class="od-quantity">
-                                                                數量：1
-                                                            </div>
-                                                            <div class="od-price">
-                                                                NTD890
-                                                            </div>
-                                                        </td>
-                                                    </tr>
+
                                                 </tbody>
                                             </table>
 
@@ -1837,9 +1798,9 @@
                                                             <div class="d-flex align-item-center">
                                                                 <!-- 文章作者圖片 -->
                                                                 <div class="ar-img-wrap mr-10">
-                                                                    <a href="#"><img src="./img/member/jieyi.jfif" alt=""></a>
+                                                                    <a href="#"><img src="./img/member/member_pic1.jpeg" alt=""></a>
                                                                 </div>
-                                                                <a href="#"><span>桌布是結衣</span></a>
+                                                                <a href="#"><span>Eric</span></a>
                                                             </div>
                                                         </div>
                                                         <!-- 發文時間 -->
@@ -1932,9 +1893,9 @@
                                                             <div class="d-flex align-item-center">
                                                                 <!-- 文章作者圖片 -->
                                                                 <div class="ar-img-wrap mr-10">
-                                                                    <a href="#"><img src="./img/center/dino.jpg" alt=""></a>
+                                                                    <a href="#"><img src="./img/member/member_pic1.jpeg" alt=""></a>
                                                                 </div>
-                                                                <a href="#"><span>切版王笠哥</span></a>
+                                                                <a href="#"><span>Eric</span></a>
                                                             </div>
                                                         </div>
                                                         <!-- 發文時間 -->
@@ -2129,11 +2090,11 @@
 </script>
     
 <!-- tablet a click綠色 -->
-<!-- <script>
+<script>
         $('.info_child_content li').click(function(){
             $(this).css('color','#10ffa2').parent().siblings().children().css('color','#ffffff80')
         })
-</script> -->
+</script>
 
 <!-- 文章一鍵刪除 -->
 <script>
@@ -2159,7 +2120,7 @@
         function accinitial(){
 
         // 4個大頁籤 影劇發亮
-        $('.account_films a').css('color','#10ffa2')
+        $('.account_films').css('color','#10ffa2')
         $('.account_films').siblings().css('color','#ffffff80');
         
         
@@ -2172,9 +2133,11 @@
         $('.account_children_films').siblings().css('display','none');
 
         //影劇tablet分類 我的片單亮起 
-        $('.info_child01 a').css('color','#10ffa2')
-        $('.info_child02 a').css('color','#ffffff80')
-        $('.info_child04 a').css('color','#ffffff80')
+        $('.info_child01').css('color','#10ffa2')
+        $('.info_child01').css('border','1px solid #10ffa2')
+        $('.info_child01').siblings().css('color','#ffffff80')
+        $('.info_child02').css('border','1px solid #ffffff80')
+        $('.info_child04').css('border','1px solid #ffffff80')
 
         //影劇下方內容 僅顯示"我的片單
         $('#myList').css('display','block')
@@ -2201,9 +2164,11 @@
         function wishList(){
 
         //影劇tablet分類 許願清單亮起 
-        $('.info_child02 a').css('color','#10ffa2')
-        $('.info_child01 a').css('color','#ffffff80')
-        $('.info_child04 a').css('color','#ffffff80')
+        $('.info_child02').css('color','#10ffa2')
+        $('.info_child02').css('border','1px solid #10ffa2')
+        $('.info_child02').siblings().css('color','#ffffff80')
+        $('.info_child01').css('border','1px solid #ffffff80')
+        $('.info_child04').css('border','1px solid #ffffff80')
 
         //影劇下方內容 僅顯示"我的片單
         $('#myWishList').css('display','block')
@@ -2220,9 +2185,11 @@
         function historyview(){
 
         //影劇tablet分類 曾經瀏覽亮起 
-        $('.info_child04 a').css('color','#10ffa2')
-        $('.info_child01 a').css('color','#ffffff80')
-        $('.info_child02 a').css('color','#ffffff80')
+        $('.info_child04').css('color','#10ffa2')
+        $('.info_child04').css('border','1px solid #10ffa2')
+        $('.info_child04').siblings().css('color','#ffffff80')
+        $('.info_child01').css('border','1px solid #ffffff80')
+        $('.info_child02').css('border','1px solid #ffffff80');
 
         //影劇下方內容 僅顯示"曾經瀏覽
         $('#myHistory').css('display','block')
@@ -2240,7 +2207,7 @@
     function oldOreder(){
 
     // 4個大頁籤 商品發亮
-    $('.account_product a').css('color','#10ffa2')
+    $('.account_product').css('color','#10ffa2')
     $('.account_product').siblings().css('color','#ffffff80');
     
     // 影劇的tablet分類 僅顯示"影劇區"
@@ -2279,7 +2246,7 @@
     function test(){
     
     // 4個大頁籤 文章發亮
-    $('.account_forum a').css('color','#10ffa2')
+    $('.account_forum').css('color','#10ffa2')
     $('.account_forum').siblings().css('color','#ffffff80');
 
     // 影劇的tablet分類 僅顯示"討論區"
@@ -2295,8 +2262,10 @@
     $('#myArtCollect').siblings().css('display','none');
     
     //討論tablet分類 收藏文章亮起 
-    $('.info_child_forum01 a').css('color','#10ffa2')
-    $('.info_child_forum02 a').css('color','#ffffff80')
+    $('.info_child_forum01').css('color','#10ffa2')
+    $('.info_child_forum01').css('border','1px solid #10ffa2')
+    $('.info_child_forum02').css('color','#ffffff80')
+    $('.info_child_forum02').css('border','1px solid #ffffff80')
         
     }
     $('.account_forum').on('click',test);
@@ -2316,8 +2285,10 @@
     function mypost(){
 
     //影劇tablet分類 我的發文亮起 
-    $('.info_child_forum02 a').css('color','#10ffa2')
-    $('.info_child_forum01 a').css('color','#ffffff80')
+    $('.info_child_forum02').css('color','#10ffa2')
+    $('.info_child_forum02').css('border','1px solid #10ffa2')
+    $('.info_child_forum01').css('color','#ffffff80')
+    $('.info_child_forum01').css('border','1px solid #ffffff80')
 
     //影劇下方內容 僅顯示"我的發文
     $('#myArtPost').css('display','block')
@@ -2334,7 +2305,7 @@
     function memberpage(){
 
     // 4個大頁籤 個人發亮
-    $('.account_info a').css('color','#10ffa2')
+    $('.account_info').css('color','#10ffa2')
     $('.account_info').siblings().css('color','#ffffff80');
     
     // 影劇的tablet分類 僅顯示"個人區"
@@ -2346,8 +2317,10 @@
     $('.account_children_account').siblings().css('display','none');
 
     //影劇tablet分類 帳戶資料亮起 
-    $('.info_child_acc01 a').css('color','#10ffa2')
-    $('.info_child_acc02 a').css('color','#ffffff80')
+    $('.info_child_acc01').css('color','#10ffa2')
+    $('.info_child_acc01').css('border','1px solid #10ffa2')
+    $('.info_child_acc02').css('color','#ffffff80')
+    $('.info_child_acc02').css('border','1px solid #ffffff80')
 
     //影劇下方內容 僅顯示"帳戶資料
     $('#info_acc').css('display','block')
@@ -2372,8 +2345,10 @@
     function generalMember(){
 
     //影劇tablet分類 一般資料 亮起 
-    $('.info_child_acc02 a').css('color','#10ffa2')
-    $('.info_child_acc01 a').css('color','#ffffff80')
+    $('.info_child_acc02').css('color','#10ffa2')
+    $('.info_child_acc02').css('border','1px solid #10ffa2')
+    $('.info_child_acc01').css('color','#ffffff80')
+    $('.info_child_acc01').css('border','1px solid #ffffff80')
 
 
     //影劇下方內容 僅顯示"一般資料 
@@ -2484,7 +2459,18 @@
     })
 </script>
 
-
+<!-- footer -->
+<script>
+        $('.han1').click(function () {
+            $('.f-con1').toggle()
+        })
+        $('.han2').click(function () {
+            $('.f-con2').toggle()
+        })
+        $('.han3').click(function () {
+            $('.f-con3').toggle()
+        })
+</script>
 
 </body>
 

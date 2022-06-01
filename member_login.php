@@ -178,18 +178,23 @@ $title = 'MOVWE-帳戶登入';
                                 <div>
                                     <label for="member_email">電子郵件地址</label>
                                     <input type="email" name="member_email" id="register_form_email" placeholder="example@email.com" class="member_email" autocomplete="off">
-                                    <div class="register_member_email_alert login_d_none">
-                                        <p>請輸入電子郵件地址</p>
-                                        <img src="./img/icons/triangle-exclamation.svg" alt="">
+                                    <div class="register_member_email_status">
+                                        <!-- <i class="fa-solid fa-eye-slash"></i> -->
+                                        <!-- <i class="fa-solid fa-eye login_d_none"></i> -->
+                                        <i class="fa-solid fa-triangle-exclamation login_d_none"></i>
+                                        <i class="fa-solid fa-check login_d_none"></i>
+                                        <!-- <img src="./img/icons/check.svg" alt=""> -->
                                     </div>
                                     <div class="register_member_email_alert login_d_none">
-                                        <p>找不到與該電子郵件地址相關的帳戶。<span>請</span><br>
-                                            <a href="">尋找您的帳戶</a><span>或</span><a href="">建立新帳戶</a>
+                                        <p>請輸入電子郵件地址。</p>
+                                    </div>
+                                    <div class="register_member_email_alert login_d_none">
+                                        <p>電子郵件地址格式錯誤，請重新輸入。</p>
+                                    </div>
+                                    <div class="register_member_email_alert login_d_none">
+                                        <p>此電子郵件已經註冊過帳號。<span>請</span><br>
+                                            <a href="">更換電子郵件</a><span>或</span><a href="">馬上登入</a>
                                         </p>
-                                        <img src="./img/icons/triangle-exclamation.svg" alt="">
-                                    </div>
-                                    <div class="register_member_email_alert login_d_none">
-                                        <img src="./img/icons/check.svg" alt="">
                                     </div>
                                 </div>
                             </section>
@@ -448,6 +453,17 @@ $title = 'MOVWE-帳戶登入';
                     };
                 }, 'json');
             }
+        }
+
+        function checkRegister() {
+            // 預設先給通過
+            let ispass = true;
+            // 檢查欄位有無問題
+            if(!$('#register_form_email').val().trim()){
+                let ispass = false;
+                console.log('操你媽 沒填email啦');
+            };
+
         }
     </script>
 
