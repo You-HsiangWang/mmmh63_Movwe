@@ -113,27 +113,28 @@ $title = 'Movwe-訂單完成';
                             <th>單價</th>
                             <th>小計</th>
                         </tr>
-                        <tr>
+                        <tr id="text">
                             <td>
-                                <img src="./img/mall/gst/gst11.jpg" alt="">
+                                <img src="./img/mall/1.jpg" alt="">
                             </td>
                             <td>
-                                <h4>孤單又燦爛的神-鬼怪 周邊娃娃</h4>
+                            <h4><?= $_SESSION['cart']['ProductName'] ?></h4>
                             </td>
                             <td>
-                                <h4>蕎麥君</h4>
+                            <h4><?= $_SESSION['cart']['ProductChoice'] ?></h4>
                             </td>
                             <td>
-                                <h4>M</h4>
+                                <h4><?= $_SESSION['cart']['ProductSize'] ?></h4>
                             </td>
                             <td>
-                                <h4>5</h4>
+                                <h4 id="quantity"><?= $_SESSION['cart']['ProductQuantity'] ?></h4>
+
                             </td>
                             <td>
-                                <h4>NTD899</h4>
+                                <h4 id="singlePrice">899</h4>
                             </td>
                             <td>
-                                <h4 class="orange">NTD4495</h4>
+                                <h4 id="subTotalPrice"><?= $_SESSION['cart']['ProductPrice'] ?></h4>
                             </td>
                         </tr>
                     </table>
@@ -147,19 +148,19 @@ $title = 'Movwe-訂單完成';
                     <table class="mt-30">
                         <tr>
                             <th>商品金額</th>
-                            <td>NTD 4495</td>
+                            <td>NTD <?= $_SESSION['cart']['ProductPrice'] ?></td>
                         </tr>
                         <tr>
                             <th>優惠券折扣</th>
-                            <td>-NTD 100</td>
+                            <td><?= $_SESSION['cartcart']['ProductDiscount'] ?></td>
                         </tr>
                         <tr>
                             <th>運費</th>
-                            <td>NTD 120</td>
+                            <td>免運</td>
                         </tr>
                         <tr class="orange">
                             <th>總計金額</th>
-                            <td>NTD 4515</td>
+                            <td><?= $_SESSION['cartcart']['ProductTotalPrice'] ?></td>
                         </tr>
                     </table>
                 </div>

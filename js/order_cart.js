@@ -109,3 +109,23 @@ function AddDiscount() {
 
 };
 
+function DatatoDelivery() {
+    const pp = document.getElementById('discountQQ').innerText;
+    const ss = document.getElementById('totalPayment').innerText;
+
+    console.log( pp, ss);
+
+    const gg = {
+        'ProductDiscount': pp,
+        'ProductTotalPrice': ss,
+    };
+
+    console.log(gg);
+
+    $.get('api_cart.php', gg, function (data) {
+         console.log(data); 
+        location.href = './order_delivery.php'
+        }, 'json')
+
+};
+
