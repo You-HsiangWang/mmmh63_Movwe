@@ -12,6 +12,7 @@ $title = 'Movwe-討論區';
 <link rel="stylesheet" href="./css/mystyle.css">
 <link rel="stylesheet" href="./css/forum.css">
 <link rel="stylesheet" href="./css/slider.css">
+<link rel="stylesheet" href="./css/dropdown_customstyle.css">
 
 </head>
 
@@ -1341,12 +1342,15 @@ $title = 'Movwe-討論區';
                     </div>
                 </div>
             </div>
-
+            
             <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
 
         <script src="./js/forum.js"></script>
         <script src="./js/slider.js"></script>
+
+        <script>
+    </script>
 
 </body>
 

@@ -115,6 +115,7 @@
   position: fixed;
   top: 0;
   z-index: 100;
+  transition: .2s;
 }
 
 .top_nav_left {
@@ -651,6 +652,20 @@
 
 .nav_web_d-none{
   display: flex;
+}
+
+/* forcart5 購物車專用 */
+h6.forcart5{
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  padding: 4px;
+  color: rgb(254, 183, 58);
+  transition: .1s;
+  opacity: 0;
+}
+.papaforcart5:hover h6.forcart5{
+  transform: translateY(-8%);
 }
 
 

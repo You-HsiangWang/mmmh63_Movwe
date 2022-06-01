@@ -33,10 +33,11 @@ if (isset($_SESSION['admin']['member_avatar'])) {
                 <div class="search_icon"><i class="fa-solid fa-magnifying-glass"></i></div>
             </div>
 
-            <a class="top__nav__icon__box nav_phone_d-none" href="order_cart.php">
+            <a class="top__nav__icon__box nav_phone_d-none papaforcart5" href="order_cart.php">
                 <div class="top__nav__member">
                     <div class="nav_icon_box icon_W-H">
                         <i class="fa-solid fa-cart-shopping shop__card"></i>
+                        <h6 class="forcart5">5</h6>
                     </div>
                     <p class="shopcard__text">購物車</p>
                 </div>
@@ -117,7 +118,7 @@ if (isset($_SESSION['admin']['member_avatar'])) {
                     <a href="wish_home.php">
                         <p class="text_a">許願池</p>
                     </a>
-                    <a href="#">
+                    <a href="dragon_quest.php">
                         <p class="text_a">心理測驗</p>
                     </a>
                     <a href="member-info-index.php">
@@ -202,11 +203,12 @@ if (isset($_SESSION['admin']['member_avatar'])) {
             <div class="title_">優惠</div>
         </div>
         <!-- 手機版購物車我的片單 會員狀態 -->
-        <div class="left_nav_box nav_web_d-none">
+        <div class="left_nav_box nav_web_d-none papaforcart5">
             <div class="left_nav_discount icon_box_W-H">
                 <a href="order_cart.php">
                     <div class="nav_icon_box icon_W-H">
                         <i class="fa-solid fa-cart-shopping shop__card"></i>
+                        <h6 class="forcart5">5</h6>
                     </div>
                     <div class="nav_text_01">
                         <div class="h-60px">購物車 <span class="down">

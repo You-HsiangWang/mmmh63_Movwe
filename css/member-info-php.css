@@ -105,7 +105,12 @@ a {
 
 
 /* ---------account------------ */
-
+.account_filter_word li{
+    cursor: pointer;
+}
+.info_child_content li{
+    cursor: pointer;
+}
 .account{
     /* outline: 1px solid red; */
     padding-top: 72px;
@@ -442,6 +447,23 @@ a {
     content: "";
     position: absolute;
     width: 35%;
+    height: 5px;
+    border-radius: 4px;
+    background-color:#10FFA2;
+    top: 0;
+    left: 0;
+}
+.wish_total_4{
+    width: 100%;
+    height: 5px;
+    border-radius: 4px;
+    background-color: #3C3C3C;
+    position: relative;
+}
+.wish_total_4::after{
+    content: "";
+    position: absolute;
+    width: 28%;
     height: 5px;
     border-radius: 4px;
     background-color:#10FFA2;

@@ -90,10 +90,11 @@ $rowShop = $stmtShop->fetchAll();
                                     <img src="./img/other/discount_card.png" alt="">
                                     <img src="./img/other/discount_tag.png" alt="">
                                     <img src="./img/other/discount_string.png" alt="">
-                                    <img src="./img/other/points_less.png" alt="" id="cpCantChange">
+                                    <!-- <img src="./img/other/points_less.png" alt="" id="cpCantChange" style="width: 100px;"> -->
                                     <div class="point-ce-section_coupon-limited-content-wrap">
                                         <div class="point-ce-section_coupon-limited-img">
                                             <img src="./img/other/<?= $rowinfo['coupon_picture'] ?>" alt="">
+                                            <img src="./img/other/points_less.png" alt="" id="cpCantChange">
                                         </div>
                                         <div class="point-ce-section_coupon-limited-content">
                                             <div class="point-ce-section_coupon-limited-content-info">
@@ -290,6 +291,7 @@ $rowShop = $stmtShop->fetchAll();
             let restpoints = '';
             let nowmbsid = '';
             let nowcpsid = '';
+            let moneymoney = <?php echo $_SESSION['admin']['member_points'] ?>;
 
             function getCouponLightboxData() {
                 const domid = this.getAttribute('data-couponid');
@@ -305,6 +307,7 @@ $rowShop = $stmtShop->fetchAll();
                         console.log(data);
                         if (data.coupongeto && data.money - data.cpPrice >= 0) {
                             console.log('pass');
+                            $('.footer__container').css('display', 'none');
                             $(ceCouponDetail).css('display', 'flex');
                             $('body').css({
                                 'height': '100vh',
@@ -325,6 +328,7 @@ $rowShop = $stmtShop->fetchAll();
                                 restpoints = data.money - data.cpPrice;
                                 nowmbsid = <?php echo $_SESSION['admin']['member_sid'] ?>;
                                 nowcpsid = data.cpSid;
+                                moneymoney = restpoints;
                                 console.log(generatedcpcode, restpoints, nowmbsid, nowcpsid);
                                 $.post('point_coupon_addtomember_api.php', {
                                     generatedcpcode,
@@ -364,8 +368,9 @@ $rowShop = $stmtShop->fetchAll();
                 return result1;
             };
 
-            function closeCouponLightbox(eve) {
+            function closeCouponLightbox(eve , mm) {
                 if (eve.target.id == "pointCeSectionLightBox") {
+                    $('.footer__container').css('display', 'block');
                     $('#pointCeSectionLightBox').css('display', 'none');
                     $('body').css({
                         'overflow': 'auto',
@@ -379,17 +384,17 @@ $rowShop = $stmtShop->fetchAll();
                     $('.point-section_coupon-detail-card-notice').css('display', 'block');
                     $('.point-section_coupon-detail-card-title-left').css('display', 'flex');
                     $('.point-section_coupon-detail-card-title-right').css('display', 'flex');
-                    couponStatuslimited();
-                    couponStatusnormal();
+                    couponStatuslimited(mm);
+                    couponStatusnormal(mm);
                     // location.href = 'point_coupon_exchange.php';
                 }; //點選的如果不是選單，選單隱藏。如果是選單，選單顯現
             };
 
-            function couponStatuslimited(money) {
+            function couponStatuslimited(mm) {
                 if (<?php echo !empty($_SESSION['admin']) ?>) {
                     const alllimited = document.querySelectorAll('.point-ce-section_coupon-limited-content-quantity > div > p > span');
                     for (let i = 0; i < alllimited.length; i++) {
-                        if (alllimited[i].innerText > <?php echo $_SESSION['admin']['member_points'] ?>) {
+                        if (alllimited[i].innerText > mm) {
                             console.log('你錢不夠');
                             $(alllimited[i]).parents('.point-ce-section_coupon').addClass('point_coupon_cant_change');
                             $(alllimited[i]).parents('.point-ce-section_coupon').find('#cpCantChange').css('display', 'block');
@@ -404,11 +409,11 @@ $rowShop = $stmtShop->fetchAll();
                 };
             };
 
-            function couponStatusnormal(money) {
+            function couponStatusnormal(mm) {
                 if (<?php echo !empty($_SESSION['admin']) ?>) {
                     const allnormal = document.querySelectorAll('.point-ce-section_coupon-normal > .point-ce-section_coupon-normal-content-wrap > .point-ce-section_coupon-normal-content > .point-ce-section_coupon-normal-content-quantity > div > p > span');
                     for (let i = 0; i < allnormal.length; i++) {
-                        if (allnormal[i].innerText > <?php echo $_SESSION['admin']['member_points'] ?>) {
+                        if (allnormal[i].innerText > mm) {
                             console.log('你錢不夠');
                             $(allnormal[i]).parents('.point-ce-section_coupon').addClass('point_coupon_cant_change');
                             $(allnormal[i]).parents('.point-ce-section_coupon').find('#cpCantChange').css('display', 'block');
@@ -427,8 +432,8 @@ $rowShop = $stmtShop->fetchAll();
                 $(element).one('click', getCouponLightboxData);
             });
             document.addEventListener('click', closeCouponLightbox);
-            couponStatuslimited();
-            couponStatusnormal();
+            couponStatuslimited(<?php echo $_SESSION['admin']['member_points'] ?>);
+            couponStatusnormal(<?php echo $_SESSION['admin']['member_points'] ?>);
 
             // function ceCouponToArray(ceCouponNodeList) {
             //     ceCouponNodeList.forEach(element => {

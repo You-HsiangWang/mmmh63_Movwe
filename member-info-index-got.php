@@ -94,13 +94,16 @@
             box-shadow: 0 0 5px rgb(16, 255, 163)
         }        
         .image__card{
-            width: 110px;
+            width: 106px;
         }
         .imge__card__information{
             display:none;
         }
         .push__up p{
             color: #1A1D24;
+        }
+        .ac_ott img{
+            width: 100%;
         }
         @media screen and (min-width: 750px) {
             .imge__card__information{
@@ -126,9 +129,9 @@
             .posticon-hashtag{
                 cursor: pointer;
             }   
-            .text__container{
+            /* .text__container{
                 height: 100vh;
-            }
+            } */
         }    
         .no-article{
             display:flex
@@ -179,10 +182,10 @@
                         <div class="account-nav">
                             <div class="account_filter">
                                 <ul class="account_filter_word">
-                                    <li class="account_films"><a href="#acc_films">影劇</a></li>
-                                    <li class="account_product"><a href="#acc_product">商品</a></li>
-                                    <li class="account_forum"><a href="#acc_forum">討論區</a></li>
-                                    <li class="account_info"><a href="#acc_info">個人資料</a></li>
+                                    <li class="account_films">影劇</li>
+                                    <li class="account_product">商品</li>
+                                    <li class="account_forum">討論區</li>
+                                    <li class="account_info">個人資料</li>
                                     <li class="account_space01"><a href=""></a></li>
                                     <li class="account_space02"><a href=""></a></li> 
                                 </ul>
@@ -196,9 +199,9 @@
                                 <div class="info_child">
                                     <ul class="info_child_content films_content">
                                         <span>分類 / </span>
-                                        <li class="info_child01 filter_4w"><a href="">我的片單</a></li>
-                                        <li class="info_child02 filter_4w"><a href="#">許願清單</a></li>
-                                        <li class="info_child04 filter_4w"><a href="#myHistory">曾經瀏覽</a></li>
+                                        <li class="info_child01 filter_4w">我的片單</li>
+                                        <li class="info_child02 filter_4w">許願清單</li>
+                                        <li class="info_child04 filter_4w">曾經瀏覽</li>
                                     </ul>
                                 </div>
                             </div>
@@ -214,8 +217,8 @@
                                 <div class="info_child">
                                     <ul class="info_child_content forum-content">
                                         <span>分類 / </span>
-                                        <li class="info_child_forum01 filter_4w"><a href="#myArtCollect">收藏文章</a></li>
-                                        <li class="info_child_forum02 filter_4w"><a href="#myArtPost">我的貼文</a></li>
+                                        <li class="info_child_forum01 filter_4w">收藏文章</li>
+                                        <li class="info_child_forum02 filter_4w">我的貼文</li>
                                     </ul>
                                 </div>
                             </div>
@@ -223,8 +226,8 @@
                                 <div class="info_child">
                                     <ul class="info_child_content info_content">
                                         <span>分類 / </span>
-                                        <li class="info_child_acc01 filter_4w"><a href="#info_acc">帳戶資料</a></li>
-                                        <li class="info_child_acc02 filter_4w"><a href="#info_gen">一般資料</a></li>
+                                        <li class="info_child_acc01 filter_4w">帳戶資料</li>
+                                        <li class="info_child_acc02 filter_4w">一般資料</li>
                                     </ul>
                                 </div>
                             </div>
@@ -235,386 +238,53 @@
                         <div class="account_children">
                             <div class="account_children_films">
                                 <div id="myList" class="child-inner">
-                                    <div class="info_acc_title">
-                                        <div class="stick_mobile"></div>
-                                        <div class="info_acc_word">我的片單</div>
-                                    </div>
-                                    <!-- 我的片單row -->
-                                    <div class="actor_flims">
-                                        <div class="image__card">
-                                            <div class="imge__card__information">
-
-                                                <div class="information__top">
-                                                            <img class="information__video"
-                                                                src="./img/movie-poster/spy.png" alt="">
-                                                </div>
-                                                        
-                                                <div class="information__bottom">
-                                                            <div class="information__bottom_1 Bottom__display">
-                                                                <p class="information__typ">
-                                                                    動畫
-                                                                </p>
-                                                                <div class="bottom_6_icon_box">
-                                                                    <a href="#">
-                                                                        <p class="bottom_6_icon">
-                                                                            <img src="./img/logo/friday_s.svg" alt="">
-                                                                        </p>
-                                                                    </a>
-                                                                    <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw"
-                                                                        target="_blank">
-                                                                        <p class="bottom_6_icon">
-                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                    </a>
-                                                                    </p>
-                                                                    <a href="#">
-                                                                        <p class="bottom_6_icon">
-                                                                            <img src="./img/logo/kktv_s.svg" alt="">
-                                                                        </p>
-                                                                    </a>
-                                                                    <a href="#">
-                                                                        <p class="bottom_6_icon">
-                                                                            <img src="./img/logo/netflix_s.svg" alt="">
-                                                                        </p>
-                                                                    </a>
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="information__bottom_2 Bottom__display">
-                                                                <p class="information__name">
-                                                                    SPY x FAMILY間諜家家酒
-                                                                </p>
-                                                            </div>
-                                                            <div class="information__bottom_3 Bottom__display">
-                                                                <div class="information__star">
-                                                                    <div class="information__staricon_box">
-                                                                        <img src="./img/icons/start.svg" alt="">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="information__point">
-                                                                    <p>
-                                                                        9.8
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__bottom_4 Bottom__display">
-                                                                <p>
-                                                                    輕鬆喜劇 /
-                                                                </p>
-                                                                <p>
-                                                                    闔家觀賞
-                                                                </p>
-                                                            </div>
-                                                            <!-- <div class="information__bottom_5 Bottom__display">
-                                                                <a href="#">
-                                                                    <p class="information__actor__name">
-                                                                        安妮亞
-                                                                    </p>
-                                                                </a>
-                                                                <span class="speace"> / </span>
-                                                                <a href="#">
-                                                                    <p class="information__actor__name">
-                                                                        洛伊德
-                                                                    </p>
-                                                                </a>
-                                                                <span class="speace"> / </span>
-                                                                <a href="#">
-
-                                                                    <p class="information__actor__name">
-                                                                        約兒
-                                                                    </p>
-                                                                </a>
-
-                                                            </div> -->
-
-                                                            <div class="information__bottom_6-5 Bottom__display">
-                                                                <a href="./single-movie-page0511.html">
-                                                                    <p class="detail">
-                                                                        查看詳細...
-                                                                    </p>
-                                                                </a>
-                                                            </div>
-                                                </div>
-                                            </div>    
-                                        
-                                            <div class="actor_flim">
-                                                        <div class="ac_flim_pic">
-                                                            <img src="./img/movie-poster/spy.webp" alt="">
-                                                        </div>
-                                                        <div class="ac_flim_name">
-                                                            SPY X FAMILY間諜家家酒
-                                                        </div>
-                                                        <div class="ac_ott">
-                                                            <div class="ac_friday">
-                                                                <img src="./img/logo/friday_s.svg" alt="">
-                                                            </div>
-                                                            <div class="ac_iqiyi">
-                                                                <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                            </div>
-                                                            <div class="ac_kktv">
-                                                                <img src="./img/logo/kktv_s.svg" alt="">
-                                                            </div>
-                                                            <div class="ac_netflix">
-                                                                <img src="./img/logo/netflix_s.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                            </div>                        
-                                        </div>
-
-                                        <div class="image__card">
-                                            <div class="imge__card__information">
-
-                                                <div class="information__top">
-                                                            <img class="information__video"
-                                                                src="./img/movie-poster/w_doctor_hor.jpg" alt="">
-                                                </div>
-                                                        
-                                                <div class="information__bottom">
-                                                            <div class="information__bottom_1 Bottom__display">
-                                                                <p class="information__typ d-filter-d">
-                                                                    影劇
-                                                                </p>
-                                                                <div class="bottom_6_icon_box">
-                                                                    <a href="#">
-                                                                        <p class="bottom_6_icon">
-                                                                            <img src="./img/logo/netflix_s.svg" alt="">
-                                                                        </p>
-                                                                    </a>
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="information__bottom_2 Bottom__display">
-                                                                <p class="information__name">
-                                                                    村裡來了個暴走女外科
-                                                                </p>
-                                                            </div>
-                                                            <div class="information__bottom_3 Bottom__display">
-                                                                <div class="information__star">
-                                                                    <div class="information__staricon_box">
-                                                                        <img src="./img/icons/start.svg" alt="">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="information__point">
-                                                                    <p>
-                                                                        9.8
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__bottom_4 Bottom__display">
-                                                                <p>
-                                                                    輕鬆喜劇 /
-                                                                </p>
-                                                                <p>
-                                                                    闔家觀賞
-                                                                </p>
-                                                            </div>
-                                                            <!-- <div class="information__bottom_5 Bottom__display">
-                                                                <a href="#">
-                                                                    <p class="information__actor__name">
-                                                                        蔡淑臻
-                                                                    </p>
-                                                                </a>
-                                                                <span class="speace"> / </span>
-                                                                <a href="#">
-                                                                    <p class="information__actor__name">
-                                                                        朱軒洋
-                                                                    </p>
-                                                                </a>
-                                                                <span class="speace"> / </span>
-                                                                <a href="#">
-
-                                                                    <p class="information__actor__name">
-                                                                        湯志偉
-                                                                    </p>
-                                                                </a>
-
-                                                            </div> -->
-
-                                                            <div class="information__bottom_6-5 Bottom__display">
-                                                                <a href="./single-movie-page0511.html">
-                                                                    <p class="detail">
-                                                                        查看詳細...
-                                                                    </p>
-                                                                </a>
-                                                            </div>
-                                                            
-                                                </div>
-                                            </div>    
-                                        
-                                            <div class="actor_flim">
-                                                        <div class="ac_flim_pic">
-                                                            <img src="./img/movie-poster/w_doctor.jpg" alt="">
-                                                        </div>
-                                                        <div class="ac_flim_name">
-                                                            村裡來了個暴走女外科
-                                                        </div>
-                                                        <div class="ac_ott">
-                                                            <div class="ac_netflix">
-                                                                <img src="./img/logo/netflix_s.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                            </div>                        
-                                        </div>
-
-                                        <div class="image__card">
-                                            <div class="imge__card__information">
-
-                                                <div class="information__top">
-                                                            <img class="information__video"
-                                                                src="./img/movie-poster/love_robot.jpeg" alt="">
-                                                </div>
-                                                        
-                                                <div class="information__bottom">
-                                                            <div class="information__bottom_1 Bottom__display">
-                                                                <p class="information__typ d-filter-a">
-                                                                    動畫
-                                                                </p>
-                                                                <div class="bottom_6_icon_box">
-                                                                    <!-- <a href="#">
-                                                                        <p class="bottom_6_icon">
-                                                                            <img src="./img/logo/friday_s.svg" alt="">
-                                                                        </p>
-                                                                    </a>
-                                                                    <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw"
-                                                                        target="_blank">
-                                                                        <p class="bottom_6_icon">
-                                                                            <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                    </a>
-                                                                    </p>
-                                                                    <a href="#">
-                                                                        <p class="bottom_6_icon">
-                                                                            <img src="./img/logo/kktv_s.svg" alt="">
-                                                                        </p>
-                                                                    </a> -->
-                                                                    <a href="#">
-                                                                        <p class="bottom_6_icon">
-                                                                            <img src="./img/logo/netflix_s.svg" alt="">
-                                                                        </p>
-                                                                    </a>
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="information__bottom_2 Bottom__display">
-                                                                <p class="information__name">
-                                                                    愛x死x機器人
-                                                                </p>
-                                                            </div>
-                                                            <div class="information__bottom_3 Bottom__display">
-                                                                <div class="information__star">
-                                                                    <div class="information__staricon_box">
-                                                                        <img src="./img/icons/start.svg" alt="">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="information__point">
-                                                                    <p>
-                                                                        9.6
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="information__bottom_4 Bottom__display">
-                                                                <p>
-                                                                    靈異驚悚 /
-                                                                </p>
-                                                                <p>
-                                                                    懸疑推理
-                                                                </p>
-                                                            </div>
-                                                            <!-- <div class="information__bottom_5 Bottom__display">
-                                                                <a href="#">
-                                                                    <p class="information__actor__name">
-                                                                        大衛·芬奇
-                                                                    </p>
-                                                                </a>
-                                                                <span class="speace"> / </span>
-                                                                <a href="#">
-                                                                    <p class="information__actor__name">
-                                                                        喬舒亞·多南
-                                                                    </p>
-                                                                </a>
-
-                                                            </div> -->
-
-                                                            <div class="information__bottom_6-5 Bottom__display">
-                                                                <a href="./single-movie-page0511.html">
-                                                                    <p class="detail">
-                                                                        查看詳細...
-                                                                    </p>
-                                                                </a>
-                                                            </div>
-                                                </div>
-                                            </div>    
-                                        
-                                            <div class="actor_flim">
-                                                        <div class="ac_flim_pic">
-                                                            <img src="./img/movie-poster/love_robot_ver.jpg" alt="">
-                                                        </div>
-                                                        <div class="ac_flim_name">
-                                                            愛x死x機器人
-                                                        </div>
-                                                        <div class="ac_ott">
-                                                            <div class="ac_netflix">
-                                                                <img src="./img/logo/netflix_s.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                            </div>                        
-                                        </div>
-
-                                        
-                                        <!-- 動態產生 -->
-                                            <?php foreach ($FLrow as $FLrowinfo) : ?>
+                                            <div class="info_acc_title">
+                                                <div class="stick_mobile"></div>
+                                                <div class="info_acc_word">我的片單</div>
+                                            </div>
+                                            <!-- 我的片單row -->
+                                            <div class="actor_flims">
                                                 <div class="image__card">
                                                     <div class="imge__card__information">
 
                                                         <div class="information__top">
                                                                     <img class="information__video"
-                                                                        src="./videodb/video/<?= $FLrowinfo['video_poster_hor'] ?>" alt="">
+                                                                        src="./img/movie-poster/spy.png" alt="">
                                                         </div>
                                                                 
                                                         <div class="information__bottom">
                                                                     <div class="information__bottom_1 Bottom__display">
-                                                                    <p class="information__typ" style="<?php
-                                                                        $ottcolor = [
-                                                                            '2' => '#10FFA2',
-                                                                            '3' => '#1CD8FF',
-                                                                            '1' => '#FC6F51',
-                                                                        ];
-                                                                        if($FLrowinfo['video_genre'] == '影劇'){
-                                                                            $color = $ottcolor['1'];
-                                                                        }else if($FLrowinfo['video_genre'] == '電影'){
-                                                                            $color = $ottcolor['2'];
-                                                                        }else if($FLrowinfo['video_genre'] == '動畫'){
-                                                                            $color = $ottcolor['3'];
-                                                                        };
-                                                                        echo 'color:' . $color .'; border: 1px solid' . $color;
-                                                                        ?>"><?= $FLrowinfo['video_genre'] ?>
-                                                                    </p>
+                                                                        <p class="information__typ">
+                                                                            動畫
+                                                                        </p>
                                                                         <div class="bottom_6_icon_box">
-                                                                            <?php
-                                                                            $ottdata = [
-                                                                                '4' => 'friday_s.svg',
-                                                                                '2' => 'iqiyi_s.svg',
-                                                                                '3' => 'kktv_s.svg',
-                                                                                '1' => 'netflix_s.svg',
-                                                                            ];
-
-                                                                            $ar = json_decode($FLrowinfo['video_ott'], true);
-                                                                            if ($ar and count($ar)) {
-                                                                                foreach ($ar as $v) {
-                                                                                    if (!empty($ottdata[$v])) {
-                                                                                        echo '<a href="#">
-                                                                                        <p class="bottom_6_icon">
-                                                                                            <img src="./img/logo/' . $ottdata[$v] . '" alt="">
-                                                                                        </p>
-                                                                                    </a>';
-                                                                                    }
-                                                                                }
-                                                                            }
-                                                                            ?>
+                                                                            <a href="#">
+                                                                                <p class="bottom_6_icon">
+                                                                                    <img src="./img/logo/friday_s.svg" alt="">
+                                                                                </p>
+                                                                            </a>
+                                                                            <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw"
+                                                                                target="_blank">
+                                                                                <p class="bottom_6_icon">
+                                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                            </a>
+                                                                            </p>
+                                                                            <a href="#">
+                                                                                <p class="bottom_6_icon">
+                                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                                </p>
+                                                                            </a>
+                                                                            <a href="#">
+                                                                                <p class="bottom_6_icon">
+                                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                                </p>
+                                                                            </a>
                                                                         </div>
 
                                                                     </div>
                                                                     <div class="information__bottom_2 Bottom__display">
                                                                         <p class="information__name">
-                                                                            <?= $FLrowinfo['video_name'] ?>
+                                                                            SPY x FAMILY間諜家家酒
                                                                         </p>
                                                                     </div>
                                                                     <div class="information__bottom_3 Bottom__display">
@@ -625,35 +295,35 @@
                                                                         </div>
                                                                         <div class="information__point">
                                                                             <p>
-                                                                                <?= $FLrowinfo['video_rating'] ?>
+                                                                                9.8
                                                                             </p>
                                                                         </div>
                                                                     </div>
                                                                     <div class="information__bottom_4 Bottom__display">
                                                                         <p>
-                                                                            <?= str_replace('，', ' / ', str_replace(' ', '', $FLrowinfo['video_style'])) ?>
-                                                                            </p>
-                                                                        <!-- <p>
-                                                                            奇幻冒險
-                                                                        </p> -->
+                                                                            輕鬆喜劇 /
+                                                                        </p>
+                                                                        <p>
+                                                                            闔家觀賞
+                                                                        </p>
                                                                     </div>
                                                                     <!-- <div class="information__bottom_5 Bottom__display">
                                                                         <a href="#">
                                                                             <p class="information__actor__name">
-                                                                                孔劉
+                                                                                安妮亞
                                                                             </p>
                                                                         </a>
                                                                         <span class="speace"> / </span>
                                                                         <a href="#">
                                                                             <p class="information__actor__name">
-                                                                                金高銀
+                                                                                洛伊德
                                                                             </p>
                                                                         </a>
                                                                         <span class="speace"> / </span>
                                                                         <a href="#">
 
                                                                             <p class="information__actor__name">
-                                                                                劉寅娜
+                                                                                約兒
                                                                             </p>
                                                                         </a>
 
@@ -667,45 +337,379 @@
                                                                         </a>
                                                                     </div>
                                                         </div>
-                                                    </div>                                            
-                                                   
+                                                    </div>    
+                                                
                                                     <div class="actor_flim">
-                                                        <div class="ac_flim_pic">
-                                                            <img src="./videodb/video/<?= $FLrowinfo['video_poster_ver'] ?>" alt="">
-                                                        </div>
-                                                        <div class="ac_flim_name">
-                                                            <?= $FLrowinfo['video_name'] ?>
-                                                        </div>
-
-                                                        <div class="ac_ott">
-                                                            <?php
-                                                            $ottdata = [
-                                                                '4' => 'friday_s.svg',
-                                                                '2' => 'iqiyi_s.svg',
-                                                                '3' => 'kktv_s.svg',
-                                                                '1' => 'netflix_s.svg',
-                                                            ];
-                                                            $ar = json_decode($FLrowinfo['video_ott'], true);
-                                                                if ($ar and count($ar)) {
-                                                                    foreach ($ar as $v) {
-                                                                        if (!empty($ottdata[$v])) {
-                                                                            echo '<a href="#">
-                                                                            <div class="ac_netflix">
-                                                                                <img src="./img/logo/' . $ottdata[$v] . '" alt="">
-                                                                            </div>
-                                                                            
-                                                                        </a>';
-                                                                        }
-                                                                    }
-                                                                }
-                                                            ?>
-                                                        </div>
-                                                    </div>
+                                                                <div class="ac_flim_pic">
+                                                                    <img src="./img/movie-poster/spy.webp" alt="">
+                                                                </div>
+                                                                <div class="ac_flim_name">
+                                                                    SPY X FAMILY間諜家家酒
+                                                                </div>
+                                                                <div class="ac_ott">
+                                                                    <div class="ac_friday">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
+                                                                    </div>
+                                                                    <div class="ac_iqiyi">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                    </div>
+                                                                    <div class="ac_kktv">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
+                                                                    </div>
+                                                                    <div class="ac_netflix">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                    </div>                        
                                                 </div>
-                                            <?php endforeach; ?>
-                                        
-                                    </div>
-                                </div>     
+
+                                                <div class="image__card">
+                                                    <div class="imge__card__information">
+
+                                                        <div class="information__top">
+                                                                    <img class="information__video"
+                                                                        src="./img/movie-poster/w_doctor_hor.jpg" alt="">
+                                                        </div>
+                                                                
+                                                        <div class="information__bottom">
+                                                                    <div class="information__bottom_1 Bottom__display">
+                                                                        <p class="information__typ d-filter-d">
+                                                                            影劇
+                                                                        </p>
+                                                                        <div class="bottom_6_icon_box">
+                                                                            <a href="#">
+                                                                                <p class="bottom_6_icon">
+                                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                                </p>
+                                                                            </a>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="information__bottom_2 Bottom__display">
+                                                                        <p class="information__name">
+                                                                            村裡來了個暴走女外科
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="information__bottom_3 Bottom__display">
+                                                                        <div class="information__star">
+                                                                            <div class="information__staricon_box">
+                                                                                <img src="./img/icons/start.svg" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="information__point">
+                                                                            <p>
+                                                                                9.8
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="information__bottom_4 Bottom__display">
+                                                                        <p>
+                                                                            輕鬆喜劇 /
+                                                                        </p>
+                                                                        <p>
+                                                                            闔家觀賞
+                                                                        </p>
+                                                                    </div>
+                                                                    <!-- <div class="information__bottom_5 Bottom__display">
+                                                                        <a href="#">
+                                                                            <p class="information__actor__name">
+                                                                                蔡淑臻
+                                                                            </p>
+                                                                        </a>
+                                                                        <span class="speace"> / </span>
+                                                                        <a href="#">
+                                                                            <p class="information__actor__name">
+                                                                                朱軒洋
+                                                                            </p>
+                                                                        </a>
+                                                                        <span class="speace"> / </span>
+                                                                        <a href="#">
+
+                                                                            <p class="information__actor__name">
+                                                                                湯志偉
+                                                                            </p>
+                                                                        </a>
+
+                                                                    </div> -->
+
+                                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                                        <a href="./single-movie-page0511.html">
+                                                                            <p class="detail">
+                                                                                查看詳細...
+                                                                            </p>
+                                                                        </a>
+                                                                    </div>
+                                                                    
+                                                        </div>
+                                                    </div>    
+                                                
+                                                    <div class="actor_flim">
+                                                                <div class="ac_flim_pic">
+                                                                    <img src="./img/movie-poster/w_doctor.jpg" alt="">
+                                                                </div>
+                                                                <div class="ac_flim_name">
+                                                                    村裡來了個暴走女外科
+                                                                </div>
+                                                                <div class="ac_ott">
+                                                                    <div class="ac_netflix">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                    </div>                        
+                                                </div>
+
+                                                <div class="image__card">
+                                                    <div class="imge__card__information">
+
+                                                        <div class="information__top">
+                                                                    <img class="information__video"
+                                                                        src="./img/movie-poster/love_robot.jpeg" alt="">
+                                                        </div>
+                                                                
+                                                        <div class="information__bottom">
+                                                                    <div class="information__bottom_1 Bottom__display">
+                                                                        <p class="information__typ d-filter-a">
+                                                                            動畫
+                                                                        </p>
+                                                                        <div class="bottom_6_icon_box">
+                                                                            <!-- <a href="#">
+                                                                                <p class="bottom_6_icon">
+                                                                                    <img src="./img/logo/friday_s.svg" alt="">
+                                                                                </p>
+                                                                            </a>
+                                                                            <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw"
+                                                                                target="_blank">
+                                                                                <p class="bottom_6_icon">
+                                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                            </a>
+                                                                            </p>
+                                                                            <a href="#">
+                                                                                <p class="bottom_6_icon">
+                                                                                    <img src="./img/logo/kktv_s.svg" alt="">
+                                                                                </p>
+                                                                            </a> -->
+                                                                            <a href="#">
+                                                                                <p class="bottom_6_icon">
+                                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                                </p>
+                                                                            </a>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="information__bottom_2 Bottom__display">
+                                                                        <p class="information__name">
+                                                                            愛x死x機器人
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="information__bottom_3 Bottom__display">
+                                                                        <div class="information__star">
+                                                                            <div class="information__staricon_box">
+                                                                                <img src="./img/icons/start.svg" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="information__point">
+                                                                            <p>
+                                                                                9.6
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="information__bottom_4 Bottom__display">
+                                                                        <p>
+                                                                            靈異驚悚 /
+                                                                        </p>
+                                                                        <p>
+                                                                            懸疑推理
+                                                                        </p>
+                                                                    </div>
+                                                                    <!-- <div class="information__bottom_5 Bottom__display">
+                                                                        <a href="#">
+                                                                            <p class="information__actor__name">
+                                                                                大衛·芬奇
+                                                                            </p>
+                                                                        </a>
+                                                                        <span class="speace"> / </span>
+                                                                        <a href="#">
+                                                                            <p class="information__actor__name">
+                                                                                喬舒亞·多南
+                                                                            </p>
+                                                                        </a>
+
+                                                                    </div> -->
+
+                                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                                        <a href="./single-movie-page0511.html">
+                                                                            <p class="detail">
+                                                                                查看詳細...
+                                                                            </p>
+                                                                        </a>
+                                                                    </div>
+                                                        </div>
+                                                    </div>    
+                                                
+                                                    <div class="actor_flim">
+                                                                <div class="ac_flim_pic">
+                                                                    <img src="./img/movie-poster/love_robot_ver.jpg" alt="">
+                                                                </div>
+                                                                <div class="ac_flim_name">
+                                                                    愛x死x機器人
+                                                                </div>
+                                                                <div class="ac_ott">
+                                                                    <div class="ac_netflix">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                    </div>                        
+                                                </div>
+
+                                                
+                                                <!-- 動態產生 -->
+                                                    <?php foreach ($FLrow as $FLrowinfo) : ?>
+                                                        <div class="image__card">
+                                                            <div class="imge__card__information">
+
+                                                                <div class="information__top">
+                                                                            <img class="information__video"
+                                                                                src="./videodb/video/<?= $FLrowinfo['video_poster_hor'] ?>" alt="">
+                                                                </div>
+                                                                        
+                                                                <div class="information__bottom">
+                                                                            <div class="information__bottom_1 Bottom__display">
+                                                                            <p class="information__typ" style="<?php
+                                                                                $ottcolor = [
+                                                                                    '2' => '#10FFA2',
+                                                                                    '3' => '#1CD8FF',
+                                                                                    '1' => '#FC6F51',
+                                                                                ];
+                                                                                if($FLrowinfo['video_genre'] == '影劇'){
+                                                                                    $color = $ottcolor['1'];
+                                                                                }else if($FLrowinfo['video_genre'] == '電影'){
+                                                                                    $color = $ottcolor['2'];
+                                                                                }else if($FLrowinfo['video_genre'] == '動畫'){
+                                                                                    $color = $ottcolor['3'];
+                                                                                };
+                                                                                echo 'color:' . $color .'; border: 1px solid' . $color;
+                                                                                ?>"><?= $FLrowinfo['video_genre'] ?>
+                                                                            </p>
+                                                                                
+                                                                                <div class="bottom_6_icon_box">
+                                                                                    <?php
+                                                                                    $ottdata = [
+                                                                                        '4' => 'friday_s.svg',
+                                                                                        '2' => 'iqiyi_s.svg',
+                                                                                        '3' => 'kktv_s.svg',
+                                                                                        '1' => 'netflix_s.svg',
+                                                                                    ];
+
+                                                                                    $ar = json_decode($FLrowinfo['video_ott'], true);
+                                                                                    if ($ar and count($ar)) {
+                                                                                        foreach ($ar as $v) {
+                                                                                            if (!empty($ottdata[$v])) {
+                                                                                                echo '<a href="#">
+                                                                                                <p class="bottom_6_icon">
+                                                                                                    <img src="./img/logo/' . $ottdata[$v] . '" alt="">
+                                                                                                </p>
+                                                                                            </a>';
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                    ?>
+                                                                                </div>
+
+                                                                            </div>
+                                                                            <div class="information__bottom_2 Bottom__display">
+                                                                                <p class="information__name">
+                                                                                    <?= $FLrowinfo['video_name'] ?>
+                                                                                </p>
+                                                                            </div>
+                                                                            <div class="information__bottom_3 Bottom__display">
+                                                                                <div class="information__star">
+                                                                                    <div class="information__staricon_box">
+                                                                                        <img src="./img/icons/start.svg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="information__point">
+                                                                                    <p>
+                                                                                        <?= $FLrowinfo['video_rating'] ?>
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="information__bottom_4 Bottom__display">
+                                                                                <p>
+                                                                                    <?= str_replace('，', ' / ', str_replace(' ', '', $FLrowinfo['video_style'])) ?>
+                                                                                </p>
+                                                                                <!-- <p>
+                                                                                    奇幻冒險
+                                                                                </p> -->
+                                                                            </div>
+                                                                            <!-- <div class="information__bottom_5 Bottom__display">
+                                                                                <a href="#">
+                                                                                    <p class="information__actor__name">
+                                                                                        孔劉
+                                                                                    </p>
+                                                                                </a>
+                                                                                <span class="speace"> / </span>
+                                                                                <a href="#">
+                                                                                    <p class="information__actor__name">
+                                                                                        金高銀
+                                                                                    </p>
+                                                                                </a>
+                                                                                <span class="speace"> / </span>
+                                                                                <a href="#">
+
+                                                                                    <p class="information__actor__name">
+                                                                                        劉寅娜
+                                                                                    </p>
+                                                                                </a>
+
+                                                                            </div> -->
+
+                                                                            <div class="information__bottom_6-5 Bottom__display">
+                                                                                <a href="./single-movie-page0511.html">
+                                                                                    <p class="detail">
+                                                                                        查看詳細...
+                                                                                    </p>
+                                                                                </a>
+                                                                            </div>
+                                                                </div>
+                                                            </div>                                            
+                                                        
+                                                            <div class="actor_flim">
+                                                                <div class="ac_flim_pic">
+                                                                    <img src="./videodb/video/<?= $FLrowinfo['video_poster_ver'] ?>" alt="">
+                                                                </div>
+                                                                <div class="ac_flim_name">
+                                                                    <?= $FLrowinfo['video_name'] ?>
+                                                                </div>
+
+                                                                <div class="ac_ott">
+                                                                    <?php
+                                                                    $ottdata = [
+                                                                        '4' => 'friday_s.svg',
+                                                                        '2' => 'iqiyi_s.svg',
+                                                                        '3' => 'kktv_s.svg',
+                                                                        '1' => 'netflix_s.svg',
+                                                                    ];
+                                                                    $ar = json_decode($FLrowinfo['video_ott'], true);
+                                                                        if ($ar and count($ar)) {
+                                                                            foreach ($ar as $v) {
+                                                                                if (!empty($ottdata[$v])) {
+                                                                                    echo '<a href="#">
+                                                                                    <div class="ac_netflix">
+                                                                                        <img src="./img/logo/' . $ottdata[$v] . '" alt="">
+                                                                                    </div>
+                                                                                    
+                                                                                </a>';
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    ?>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    <?php endforeach; ?>
+                                                
+                                            </div>
+                                </div>    
 
                                 <div id="myWishList" class="child-inner">
                                     <div class="info_acc_title">
@@ -717,7 +721,7 @@
                                     <div class="wishlist_cards">
                                         <div class="wishcard">
                                                 <div class="wish_pic">
-                                                    <img src="./img/movie-poster/paradise_kiss.jpg" alt="">
+                                                    <img src="./img/center/pd.jpg" alt="">
                                                 </div>
                                                 <div class="wish_words">
                                                     <div class="wish_word_top">
@@ -795,7 +799,7 @@
                                         </div> 
                                         <div class="wishcard">
                                                 <div class="wish_pic">
-                                                    <img src="./img/movie-poster/dongda.jpg" alt="">
+                                                    <img src="./img/center/wish_movie-7.jpeg" alt="">
                                                 </div>
                                                 <div class="wish_words">
                                                     <div class="wish_word_top">
@@ -819,140 +823,7 @@
                                                     </div>
                                                 </div>
                                         </div> 
-                                            <!-- 動態產生 -->
-                                            <!-- <?php foreach ($WLrow as $WLrowinfo) : ?>
-                                                <div class="wishcard">
-                                                    <div class="wish_pic">
-                                                        <img src="./videodb/video/<?= $WLrowinfo['video_poster_hor'] ?>" alt="">
-                                                    </div>
-                                                    <div class="wish_words">
-                                                        <div class="wish_word_top">
-                                                            <div class="wish_type">
-                                                                <?= $WLrowinfo['video_genre'] ?>
-                                                            </div>
-                                                            <button class="wish_btn">
-                                                                <div class="wish_icon">
-                                                                    <img src="./img/icons/wish.svg" alt="">
-                                                                </div>
-                                                            </button>
-                                                        </div>
-                                                        <div class="wish_word_middle">
-                                                        <?= $WLrowinfo['video_name'] ?>
-                                                        </div>
-                                                        <div class="wish_word_bottom">
-                                                            <div class="wish_total"></div>
-                                                            <div class="wish_vote">
-                                                                已有 <span>2467</span> 人參與許願
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            <?php endforeach; ?> -->
-
-                                            <!-- <div class="wishcard">
-                                                <div class="wish_pic">
-                                                    <img src="./img/member/batman.png" alt="">
-                                                </div>
-                                                <div class="wish_words">
-                                                    <div class="wish_word_top">
-                                                        <div class="wish_type">
-                                                            電影
-                                                        </div>
-                                                        <button class="wish_btn">
-                                                            <div class="wish_icon">
-                                                                <img src="./img/icons/wish.svg" alt="">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="wish_word_middle">
-                                                        蝙蝠俠
-                                                    </div>
-                                                    <div class="wish_word_bottom">
-                                                        <div class="wish_total"></div>
-                                                        <div class="wish_vote">
-                                                            已有 <span>2467</span> 人參與許願
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wishcard">
-                                                <div class="wish_pic">
-                                                    <img src="./img/member/batman.png" alt="">
-                                                </div>
-                                                <div class="wish_words">
-                                                    <div class="wish_word_top">
-                                                        <div class="wish_type">
-                                                            電影
-                                                        </div>
-                                                        <button class="wish_btn">
-                                                            <div class="wish_icon">
-                                                                <img src="./img/icons/wish.svg" alt="">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="wish_word_middle">
-                                                        蝙蝠俠
-                                                    </div>
-                                                    <div class="wish_word_bottom">
-                                                        <div class="wish_total"></div>
-                                                        <div class="wish_vote">
-                                                            已有 <span>2467</span> 人參與許願
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wishcard">
-                                                <div class="wish_pic">
-                                                    <img src="./img/member/batman.png" alt="">
-                                                </div>
-                                                <div class="wish_words">
-                                                    <div class="wish_word_top">
-                                                        <div class="wish_type">
-                                                            電影
-                                                        </div>
-                                                        <button class="wish_btn">
-                                                            <div class="wish_icon">
-                                                                <img src="./img/icons/wish.svg" alt="">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="wish_word_middle">
-                                                        蝙蝠俠
-                                                    </div>
-                                                    <div class="wish_word_bottom">
-                                                        <div class="wish_total"></div>
-                                                        <div class="wish_vote">
-                                                            已有 <span>2467</span> 人參與許願
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wishcard">
-                                                <div class="wish_pic">
-                                                    <img src="./img/member/batman.png" alt="">
-                                                </div>
-                                                <div class="wish_words">
-                                                    <div class="wish_word_top">
-                                                        <div class="wish_type">
-                                                            電影
-                                                        </div>
-                                                        <button class="wish_btn">
-                                                            <div class="wish_icon">
-                                                                <img src="./img/icons/wish.svg" alt="">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="wish_word_middle">
-                                                        蝙蝠俠
-                                                    </div>
-                                                    <div class="wish_word_bottom">
-                                                        <div class="wish_total"></div>
-                                                        <div class="wish_vote">
-                                                            已有 <span>2467</span> 人參與許願
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div> -->
+                                            
                                             
                                     </div>
                                 </div>
@@ -1247,263 +1118,224 @@
                             </div>  
                             
                             <div class="account_children_mall">
-                                <!-- 歷史訂單 -->
-                                <div id="info_mall" class="child-inner hs-order">
-                                    <div class="info_acc_title">
-                                        <div class="stick_mobile"></div>
-                                        <div class="info_acc_word">歷史訂單</div>
-                                    </div>
-                                    <div class="account-order-table">
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th>訂單編號</th>
-                                                    <th>訂購日期</th>
-                                                    <th>金額總計</th>
-                                                    <th>付款方式</th>
-                                                    <th>訂單狀態</th>
-                                                    <th>配送情況</th>
-                                                    <th>詳情</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td data-title="訂單編號">087-016836-003</td>
-                                                    <td data-title="訂購日期">2022-06-08 09:51:20</td>
-                                                    <td data-title="金額總計">NTD4,389</td>
-                                                    <td data-title="付款方式">線上刷卡</td>
-                                                    <td data-title="訂單狀態">已發貨</td>
-                                                    <td data-title="配送情況">已出貨</td>
-                                                    <td class="orderDetail-btn" data-title="詳情"><a   href="#">詳情</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td data-title="訂單編號">066-236126-323</td>
-                                                    <td data-title="訂購日期">2022-04-25 12:22:10</td>
-                                                    <td data-title="金額總計">NTD1,239</td>
-                                                    <td data-title="付款方式">線上刷卡</td>
-                                                    <td data-title="訂單狀態">已完成</td>
-                                                    <td data-title="配送情況">已取貨</td>
-                                                    <td data-title="詳情"><a href="#">詳情</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td data-title="訂單編號">092-123946-129</td>
-                                                    <td data-title="訂購日期">2022-01-03 23:11:20</td>
-                                                    <td data-title="金額總計">NTD399</td>
-                                                    <td data-title="付款方式">線上刷卡</td>
-                                                    <td data-title="訂單狀態">已完成</td>
-                                                    <td data-title="配送情況">已取貨</td>
-                                                    <td data-title="詳情"><a href="#">詳情</a></td>
-                                                </tr>
+                                    <!-- 歷史訂單 -->
+                                    <div id="info_mall" class="child-inner hs-order">
+                                        <div class="info_acc_title">
+                                            <div class="stick_mobile"></div>
+                                            <div class="info_acc_word">歷史訂單</div>
+                                        </div>
+                                        <div class="account-order-table">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>訂單編號</th>
+                                                        <th>訂購日期</th>
+                                                        <th>金額總計</th>
+                                                        <th>付款方式</th>
+                                                        <th>訂單狀態</th>
+                                                        <th>配送情況</th>
+                                                        <th>詳情</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td data-title="訂單編號">087-016836-003</td>
+                                                        <td data-title="訂購日期">2022-06-08 09:51:20</td>
+                                                        <td data-title="金額總計">NTD4,200</td>
+                                                        <td data-title="付款方式">線上刷卡</td>
+                                                        <td data-title="訂單狀態">訂單成立</td>
+                                                        <td data-title="配送情況">備貨中</td>
+                                                        <td class="orderDetail-btn" data-title="詳情"><a   href="#">詳情</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-title="訂單編號">066-236126-323</td>
+                                                        <td data-title="訂購日期">2022-04-25 12:22:10</td>
+                                                        <td data-title="金額總計">NTD1,239</td>
+                                                        <td data-title="付款方式">線上刷卡</td>
+                                                        <td data-title="訂單狀態">已完成</td>
+                                                        <td data-title="配送情況">已取貨</td>
+                                                        <td data-title="詳情"><a href="#">詳情</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-title="訂單編號">092-123946-129</td>
+                                                        <td data-title="訂購日期">2022-01-03 23:11:20</td>
+                                                        <td data-title="金額總計">NTD399</td>
+                                                        <td data-title="付款方式">線上刷卡</td>
+                                                        <td data-title="訂單狀態">已完成</td>
+                                                        <td data-title="配送情況">已取貨</td>
+                                                        <td data-title="詳情"><a href="#">詳情</a></td>
+                                                    </tr>
+                                                    
                                                 
-                                            
-                                            </tbody>
-                                        </table>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- 訂單明細 -->
-                                <div id="info_mall-02 order-detail " class="child-inner cuxian">
-                                    <div class="info_acc_title">
-                                        <div class="stick_mobile"></div>
-                                        <div class="info_acc_word">訂單明細</div>
-                                    </div>
-                                    
-                                    <div class="account-order-table-dd">
-                                        <!-- 訂單明細1 -->
-                                        <table class="orderDetail-table-1">
-                                            <thead>
-                                                <tr>
-                                                    <th>訂單編號</th>
-                                                    <th>訂購日期</th>
-                                                    <th>訂單狀態</th>
-                                                    <th>配送情況</th>
-                                                    <th>收件人</th>
-                                                    <th>收件地址</th>
-                                                    <th>付款方式</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td data-title="訂單編號">087-016836-003</td>
-                                                    <td  data-title="訂購日期">2022-02-05 20:51:20</td>
-                                                    <td  data-title="訂單狀態">已發貨</td>
-                                                    <td  data-title="配送情況">已出貨</td>
-                                                    <td data-title="收件人">翔子醬</td>
-                                                    <td data-title="收件地址">台北市蛋黃區超貴路23巷6號6樓</td>
-                                                    <td data-title="付款方式">線上刷卡</td>
-                                                </tr>
-                                            
-                                            </tbody>
-                                        </table>
+                                    <!-- 訂單明細 -->
+                                    <div id="info_mall-02 order-detail " class="child-inner cuxian">
+                                        <div class="info_acc_title">
+                                            <div class="stick_mobile"></div>
+                                            <div class="info_acc_word">訂單明細</div>
+                                        </div>
                                         
-                                        <br>
-                                        <!-- 訂單明細2 -->
-                                        <table class="orderDetail-table-2 od-pc">
-                                            <thead>
-                                                <tr>
-                                                    <th>商品名</th>
-                                                    <th>顏色</th>
-                                                    <th>尺寸</th>
-                                                    <th>價格</th>
-                                                    <th>數量</th>
-                                                    <th>小計</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="od-product">
-                                                        <div class="od-num">1.</div>
-                                                        <div class="od-pic">
-                                                            <img src="./img/talls_img/t-shirt.png" alt="">
-                                                        </div>
-                                                        <div class="od-nam">國王排名 T-shirt</div>
-                                                    </td>
-                                                    <td>黑</td>
-                                                    <td>L</td>
-                                                    <td>NTD890</td>
-                                                    <td>1</td>
-                                                    <td class="gw">NTD890</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="od-product pc1">
-                                                        <div class="od-num">2.</div>
-                                                        <div class="od-pic">
-                                                            <img src="./img/talls_img/t-shirt.png" alt="">
-                                                        </div>
-                                                        <div class="od-nam">國王排名 T-shirt</div>
-                                                    </td>
-                                                    <td>黑</td>
-                                                    <td>L</td>
-                                                    <td>NTD890</td>
-                                                    <td>1</td>
-                                                    <td class="gw">NTD890</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="od-product">
-                                                        <div class="od-num">3.</div>
-                                                        <div class="od-pic">
-                                                            <img src="./img/talls_img/t-shirt.png" alt="">
-                                                        </div>
-                                                        <div class="od-nam">國王排名 T-shirt</div>
-                                                    </td>
-                                                    <td>黑</td>
-                                                    <td>L</td>
-                                                    <td>NTD890</td>
-                                                    <td>1</td>
-                                                    <td class="gw">NTD890</td>
-                                                </tr>
-                                            </tbody>    
-                                        </table>
-
-                                        <table class="orderDetail-table-2 od-mweb">
+                                        <div class="account-order-table-dd">
+                                            <!-- 訂單明細1 -->
+                                            <table class="orderDetail-table-1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>訂單編號</th>
+                                                        <th>訂購日期</th>
+                                                        <th>訂單狀態</th>
+                                                        <th>配送情況</th>
+                                                        <th>收件人</th>
+                                                        <th>收件地址</th>
+                                                        <th>付款方式</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td data-title="訂單編號">087-016836-003</td>
+                                                        <td  data-title="訂購日期">2022-06-08 09:51:20</td>
+                                                        <td  data-title="訂單狀態">訂單成立</td>
+                                                        <td  data-title="配送情況">備貨中</td>
+                                                        <td data-title="收件人">王笠鴿</td>
+                                                        <td data-title="收件地址">臺北市信義區松高路68號</td>
+                                                        <td data-title="付款方式">線上刷卡</td>
+                                                    </tr>
+                                                
+                                                </tbody>
+                                            </table>
                                             
-                                            <thead>
-                                                <tr>
-                                                    <th>商品名</th>
-                                                    <th>顏色</th>
-                                                    <th>尺寸</th>
-                                                    <th>價格</th>
-                                                    <th>數量</th>
-                                                    <th>小計</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="od-left">
-                                                        <div class="od-pic">
-                                                            <img src="./img/talls_img/t-shirt.png" alt="">
-                                                        </div>
-                                                        <div class="od-info">
+                                            <br>
+                                            <!-- 訂單明細2 -->
+                                            <table class="orderDetail-table-2 od-pc">
+                                                <thead>
+                                                    <tr>
+                                                        <th>商品名</th>
+                                                        <th>顏色</th>
+                                                        <th>尺寸</th>
+                                                        <th>價格</th>
+                                                        <th>數量</th>
+                                                        <th>小計</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="od-product">
+                                                            <div class="od-num">1.</div>
+                                                            <div class="od-pic">
+                                                                <img src="./img/mall/1.jpg" alt="">
+                                                            </div>
+                                                            <div class="od-nam">孤單又燦爛的神-鬼怪 周邊娃娃</div>
+                                                        </td>
+                                                        <td>白色</td>
+                                                        <td>M</td>
+                                                        <td>NTD80</td>
+                                                        <td>5</td>
+                                                        <td class="gw">NTD4,200</td>
+                                                    <!-- </tr>
+                                                    <tr>
+                                                        <td class="od-product pc1">
+                                                            <div class="od-num">2.</div>
+                                                            <div class="od-pic">
+                                                                <img src="./img/talls_img/t-shirt.png" alt="">
+                                                            </div>
                                                             <div class="od-nam">國王排名 T-shirt</div>
-                                                            <div class="od-col">顏色：黑</div>
-                                                            <div class="od-size">尺寸：L</div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="od-right">
-                                                        <div class="od-quantity">
-                                                            數量：1
-                                                        </div>
-                                                        <div class="od-price">
-                                                            NTD890
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="od-left">
-                                                        <div class="od-pic">
-                                                            <img src="./img/talls_img/t-shirt.png" alt="">
-                                                        </div>
-                                                        <div class="od-info">
+                                                        </td>
+                                                        <td>黑</td>
+                                                        <td>L</td>
+                                                        <td>NTD890</td>
+                                                        <td>1</td>
+                                                        <td class="gw">NTD890</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="od-product">
+                                                            <div class="od-num">3.</div>
+                                                            <div class="od-pic">
+                                                                <img src="./img/talls_img/t-shirt.png" alt="">
+                                                            </div>
                                                             <div class="od-nam">國王排名 T-shirt</div>
-                                                            <div class="od-col">顏色：黑</div>
-                                                            <div class="od-size">尺寸：L</div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="od-right">
-                                                        <div class="od-quantity">
-                                                            數量：1
-                                                        </div>
-                                                        <div class="od-price">
-                                                            NTD890
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="od-left">
-                                                        <div class="od-pic">
-                                                            <img src="./img/talls_img/t-shirt.png" alt="">
-                                                        </div>
-                                                        <div class="od-info">
-                                                            <div class="od-nam">國王排名 T-shirt</div>
-                                                            <div class="od-col">顏色：黑</div>
-                                                            <div class="od-size">尺寸：L</div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="od-right">
-                                                        <div class="od-quantity">
-                                                            數量：1
-                                                        </div>
-                                                        <div class="od-price">
-                                                            NTD890
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                        </td>
+                                                        <td>黑</td>
+                                                        <td>L</td>
+                                                        <td>NTD890</td>
+                                                        <td>1</td>
+                                                        <td class="gw">NTD890</td>
+                                                    </tr> -->
+                                                </tbody>    
+                                            </table>
 
-                                        <br>
-                                        <!-- 訂單明細3 -->
-                                        <table class="orderDetail-table-1">
-                                            <thead>
-                                                <tr>
-                                                    <th>商品總計</th>
-                                                    <th>運費</th>
-                                                    <th>折扣</th>
-                                                    <th>使用優惠券</th>
-                                                    <th>總計金額</th>
-                                                    <th>本次消費獲得MOVEWE點</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td data-title="商品總計">NTD2670</td>
-                                                    <td data-title="運費">NTD120</td>
-                                                    <td data-title="折扣">NTD100</td>
-                                                    <td data-title="使用優惠券">NTD180</td>
-                                                    <td data-title="總計金額"> <span class="gw">NTD2510</span> </td>
-                                                    <td data-title="本次消費獲得MOVEWE點">25pt</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                            <table class="orderDetail-table-2 od-mweb">
+                                                
+                                                <thead>
+                                                    <tr>
+                                                        <th>商品名</th>
+                                                        <th>顏色</th>
+                                                        <th>尺寸</th>
+                                                        <th>價格</th>
+                                                        <th>數量</th>
+                                                        <th>小計</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="od-left">
+                                                            <div class="od-pic">
+                                                                <img src="./img/mall/1.jpg" alt="">
+                                                            </div>
+                                                            <div class="od-info">
+                                                                <div class="od-nam">孤單又燦爛的神-鬼怪 周邊娃娃</div>
+                                                                <div class="od-col">顏色：白色</div>
+                                                                <div class="od-size">尺寸：M</div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="od-right">
+                                                            <div class="od-quantity">
+                                                                數量：5
+                                                            </div>
+                                                            <div class="od-price">
+                                                                NTD480
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                            <br>
+                                            <!-- 訂單明細3 -->
+                                            <table class="orderDetail-table-1">
+                                                <thead>
+                                                    <tr>
+                                                        <th>商品總計</th>
+                                                        <th>運費</th>
+                                                        <th>折扣</th>
+                                                        <th>使用優惠券</th>
+                                                        <th>總計金額</th>
+                                                        <th>本次消費獲得MOVEWE點</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td data-title="商品總計">NTD4,200</td>
+                                                        <td data-title="運費">NTD120</td>
+                                                        <td data-title="折扣">NTD100</td>
+                                                        <td data-title="使用優惠券">NTD180</td>
+                                                        <td data-title="總計金額"> <span class="gw">NTD2510</span> </td>
+                                                        <td data-title="本次消費獲得MOVEWE點">25pt</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <a href="#"><button class="account-pointExchange od-btn">返回歷史訂單</button></a>  
                                     </div>
-
-                                    <a href="#"><button class="account-pointExchange od-btn">返回歷史訂單</button></a>  
-                                </div>
                             </div>
 
                             <div class="account_children_forum">
@@ -1605,9 +1437,9 @@
                                                         <div class="d-flex align-item-center">
                                                             <!-- 文章作者圖片 -->
                                                             <div class="ar-img-wrap mr-10">
-                                                                <a href="#"><img src="./img/member/jieyi.jfif" alt=""></a>
+                                                                <a href="#"><img src="./img/talls_img/hehe.png" alt=""></a>
                                                             </div>
-                                                            <a href="#"><span>桌布是結衣</span></a>
+                                                            <a href="#"><span>123</span></a>
                                                         </div>
                                                     </div>
                                                     <!-- 發文時間 -->
@@ -1700,9 +1532,9 @@
                                                         <div class="d-flex align-item-center">
                                                             <!-- 文章作者圖片 -->
                                                             <div class="ar-img-wrap mr-10">
-                                                                <a href="#"><img src="./img/center/dino.jpg" alt=""></a>
+                                                                <a href="#"><img src="./img/talls_img/hehe.png" alt=""></a>
                                                             </div>
-                                                            <a href="#"><span>切版王笠哥</span></a>
+                                                            <a href="#"><span>123</span></a>
                                                         </div>
                                                     </div>
                                                     <!-- 發文時間 -->
@@ -1922,7 +1754,7 @@
     <script>
         function saveinitial(){
             // 4個大頁籤 個人發亮
-            $('.account_info a').css('color','#10ffa2')
+            $('.account_info').css('color','#10ffa2')
             $('.account_info').siblings().css('color','#ffffff80');
 
             // 影劇的tablet分類 僅顯示"個人區"
@@ -1934,8 +1766,10 @@
             $('.account_children_account').siblings().css('display','none');
 
             //個人tablet分類 一般資料亮起 
-            $('.info_child_acc02  a').css('color','#10ffa2')
-            $('.info_child_acc01 a').css('color','#ffffff80')
+            $('.info_child_acc02').css('color','#10ffa2')
+            $('.info_child_acc02').css('border','1px solid #10ffa2')
+            $('.info_child_acc01').css('color','#ffffff80')
+            $('.info_child_acc01').css('border','1px solid #ffffff80')
 
             //下方內容 僅顯示"一般資料
             $('#info_gen').css('display','block')
@@ -1943,20 +1777,19 @@
         };
         saveinitial();
         $('.account_info').on('click',saveinitial);
-        $('info_child_acc02 ').on('click',saveinitial);
+        $('info_child_acc02').on('click',saveinitial);
     </script>
 <!-- 影劇>我的片單 -->    
         <script>
         function accinitial(){
         
         // 4個大頁籤 影劇發亮
-        $('.account_films a').css('color','#10ffa2')
+        $('.account_films').css('color','#10ffa2')
         $('.account_films').siblings().css('color','#ffffff80');
 
         // 影劇的tablet分類 僅顯示"影劇"
         $('#acc_films').css('display', 'flex')
-        $('.info_child02 a').css('color','#ffffff80')
-        $('.info_child04 a').css('color','#ffffff80')
+        $('#acc_films').siblings().css('display', 'none');
 
         // 僅顯示影劇內容
         $('.account_children_films').css('display','block')
@@ -1967,9 +1800,11 @@
         $('#myList').siblings().css('display','none');
 
         //影劇tablet分類 我的片單亮起 
-        $('.info_child01 a').css('color','#10ffa2')
-        $('.info_child02 a').css('color','#ffffff80')
-        $('.info_child04 a').css('color','#ffffff80')
+        $('.info_child01').css('color','#10ffa2')
+        $('.info_child01').css('border','1px solid #10ffa2')
+        $('.info_child01').siblings().css('color','#ffffff80')
+        $('.info_child02').css('border','1px solid #ffffff80')
+        $('.info_child04').css('border','1px solid #ffffff80')
 
 
         };
@@ -1989,9 +1824,11 @@
         function wishList(){
 
         //影劇tablet分類 許願清單亮起 
-        $('.info_child02 a').css('color','#10ffa2')
-        $('.info_child01 a').css('color','#ffffff80')
-        $('.info_child04 a').css('color','#ffffff80')
+        $('.info_child02').css('color','#10ffa2')
+        $('.info_child02').css('border','1px solid #10ffa2')
+        $('.info_child02').siblings().css('color','#ffffff80')
+        $('.info_child01').css('border','1px solid #ffffff80')
+        $('.info_child04').css('border','1px solid #ffffff80')
 
         //影劇下方內容 僅顯示"我的片單
         $('#myWishList').css('display','block')
@@ -2008,9 +1845,11 @@
         function historyview(){
 
         //影劇tablet分類 曾經瀏覽亮起 
-        $('.info_child04 a').css('color','#10ffa2')
-        $('.info_child01 a').css('color','#ffffff80')
-        $('.info_child02 a').css('color','#ffffff80')
+        $('.info_child04').css('color','#10ffa2')
+        $('.info_child04').css('border','1px solid #10ffa2')
+        $('.info_child04').siblings().css('color','#ffffff80')
+        $('.info_child01').css('border','1px solid #ffffff80')
+        $('.info_child02').css('border','1px solid #ffffff80');
 
         //影劇下方內容 僅顯示"曾經瀏覽
         $('#myHistory').css('display','block')
@@ -2028,7 +1867,7 @@
         function oldOreder(){
 
         // 4個大頁籤 商品發亮
-        $('.account_product a').css('color','#10ffa2')
+        $('.account_product').css('color','#10ffa2')
         $('.account_product').siblings().css('color','#ffffff80');
 
         // 影劇的tablet分類 僅顯示"影劇區"
@@ -2042,6 +1881,7 @@
 
         //商品tablet分類 歷史訂單亮起 
         $('.info_child_order01 a').css('color','#10ffa2')
+        $('.info_child_order01').css('border','1px solid #10ffa2')
         $('.info_child_order01').siblings('li').css('color','#ffffff80');
         };
 
@@ -2067,7 +1907,7 @@
         function test(){
         
         // 4個大頁籤 文章發亮
-        $('.account_forum a').css('color','#10ffa2')
+        $('.account_forum').css('color','#10ffa2')
         $('.account_forum').siblings().css('color','#ffffff80');
 
         // 影劇的tablet分類 僅顯示"討論區"
@@ -2083,8 +1923,10 @@
         $('#myArtCollect').siblings().css('display','none');
         
         //討論tablet分類 收藏文章亮起 
-        $('.info_child_forum01 a').css('color','#10ffa2')
-        $('.info_child_forum02 a').css('color','#ffffff80')
+        $('.info_child_forum01').css('color','#10ffa2')
+        $('.info_child_forum01').css('border','1px solid #10ffa2')
+        $('.info_child_forum02').css('color','#ffffff80')
+        $('.info_child_forum02').css('border','1px solid #ffffff80')
             
         }
         $('.account_forum').on('click',test);
@@ -2104,8 +1946,10 @@
     function mypost(){
 
     //影劇tablet分類 我的發文亮起 
-    $('.info_child_forum02 a').css('color','#10ffa2')
-    $('.info_child_forum01 a').css('color','#ffffff80')
+    $('.info_child_forum02').css('color','#10ffa2')
+    $('.info_child_forum02').css('border','1px solid #10ffa2')
+    $('.info_child_forum01').css('color','#ffffff80')
+    $('.info_child_forum01').css('border','1px solid #ffffff80')
 
     //影劇下方內容 僅顯示"我的發文
     $('#myArtPost').css('display','block')
@@ -2134,8 +1978,10 @@
     $('.account_children_account').siblings().css('display','none');
 
     //影劇tablet分類 帳戶資料亮起 
-    $('.info_child_acc01 a').css('color','#10ffa2')
-    $('.info_child_acc02 a').css('color','#ffffff80')
+    $('.info_child_acc01').css('color','#10ffa2')
+    $('.info_child_acc01').css('border','1px solid #10ffa2')
+    $('.info_child_acc02').css('color','#ffffff80')
+    $('.info_child_acc02').css('border','1px solid #ffffff80')
 
     //影劇下方內容 僅顯示"帳戶資料
     $('#info_acc').css('display','block')
@@ -2160,8 +2006,10 @@
     function generalMember(){
 
     //影劇tablet分類 一般資料 亮起 
-    $('.info_child_acc02 a').css('color','#10ffa2')
-    $('.info_child_acc01 a').css('color','#ffffff80')
+    $('.info_child_acc02').css('color','#10ffa2')
+    $('.info_child_acc02').css('border','1px solid #10ffa2')
+    $('.info_child_acc01').css('color','#ffffff80')
+    $('.info_child_acc01').css('border','1px solid #ffffff80')
 
     //影劇下方內容 僅顯示"一般資料 
     $('#info_gen').css('display','block')
@@ -2277,6 +2125,18 @@
     })
 </script>
 
+<!-- footer -->
+<script>
+        $('.han1').click(function () {
+            $('.f-con1').toggle()
+        })
+        $('.han2').click(function () {
+            $('.f-con2').toggle()
+        })
+        $('.han3').click(function () {
+            $('.f-con3').toggle()
+        })
+</script>
 </body>
 
 </html>

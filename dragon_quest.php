@@ -653,7 +653,7 @@
                     <p id="sloganLast" style="display: none;">哈哈哈！小事啦，讚的</p>
                 </div>
             </div>
-            <img src="./img/logo/logo_8bit.svg" alt="cat">
+            <img src="./img/other/gif/logo_8bit_gif.gif" alt="cat">
         </div>
         <div class="dragon" id="bosscharAll" style="display: none;">
             <div class="conver_box" id="conversation" style="display: none;">

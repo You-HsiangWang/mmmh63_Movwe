@@ -337,7 +337,7 @@
 <body>
     <div class="cont">
         <div class="bg" id="bgelif">
-            <img src="./img/logo/logo_8bit.svg" alt="">
+            <img src="./img/other/gif/logo_8bit_gif.gif" alt="">
         </div>
         <div class="bg" id="bgprincess">
             <img src="./img/other/princess.png" alt="">
