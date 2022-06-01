@@ -6,18 +6,6 @@
     $('.product-img-wrap-demo img').attr('src', thisImg)
 })
 
-// 商品選項
-
-// 商品規格
-
-$('.product-size').click(function() {
-    console.log('hello', this);
-    $(this).css('border', '2px solid #10FFA2');
-    $(this).css('color', '#10FFA2');
-    $(this).siblings().css('border', '2px solid #fff');
-    $(this).siblings().css('color', '#fff');
-})
-
 // 商品數量調整
 
 $('.button-number-minus').click(function() {
@@ -99,9 +87,19 @@ function WWW() {
 // 加入購物車
 
 function AddtoCart() {
-    const xx = document.querySelector('input[name="selectdoll"]:checked').value;
-    const yy = document.querySelector('input[name="productsize"]:checked').value;
-    const zz = document.querySelector('#quantityPC').value;
+    const item = document.getElementById('itemName').innerText;  // 商品名稱
+    const xx = document.querySelector('input[name="selectdoll"]:checked').value;  // 商品選項
+    const yy = document.querySelector('input[name="productsize"]:checked').value; // 尺寸
+    const zz = document.querySelector('#quantityPC').value; // 數量
 
-    console.log(xx, yy, zz);
+    const aa = {
+        'ProductName': item,
+        'ProductChoice': xx,
+        'ProductSize': yy,
+        'ProductQuantity': zz,
+        'ProductPrice': zz * 899
+    };
+
+    $.get('api_product.php', aa, function (data) { console.log(data); },'json')
+    
 };

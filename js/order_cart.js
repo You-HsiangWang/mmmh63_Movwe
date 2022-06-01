@@ -102,7 +102,7 @@ function subFunction() {
 function AddDiscount() {
     var dd = document.querySelector('input[name="discount"]:checked').value;
     console.log('dd', dd);
-    discountQQ = `<h4>NTD ${dd}</h4>`;
+    discountQQ = `<h4 class="orange"> - NTD ${dd}</h4>`;
     document.getElementById('discountQQ').innerHTML = discountQQ;
 };
 

@@ -301,7 +301,7 @@ if (!empty($_SESSION['cart'])) {
                         </div>
                         <div class="d-flex justify-between border-bottom-main-color mt-10 pb-10">
                             <h4>優惠券折抵</h4>
-                            <h4 id="discountQQ">NTD:</h4>
+                            <h4 id="discountQQ"></h4>
                         </div>
                         <div class="d-flex justify-between mt-10">
                             <h4>商品總金額</h4>

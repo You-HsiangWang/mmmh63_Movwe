@@ -45,7 +45,7 @@
     display: none;
 }
 
-/* 優惠券選取 input樣式 */
+/* 商品選項 input樣式 */
 
 /* https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
 
@@ -308,6 +308,12 @@ table.size td {
         width: 50%;
         padding-bottom: 20px;
         border-bottom: none;
+    }
+
+    .gooood {
+        position: absolute;
+        top: 400px;
+        right: 100px;
     }
 
     /* 優惠券與規格說明 */
