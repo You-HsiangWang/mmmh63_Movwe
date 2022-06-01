@@ -294,26 +294,25 @@ $title = 'Movwe-付款資訊';
                 <!-- 總計金額 -->
                 <div class="w-100 mt-30 d-flex justify-end">
                     <div class="w-30">
-                        <div class="d-flex justify-between">
-                            <h4><strong>總共五項商品</strong></h4>
-                            <h4>NTD:</h4>
+                    <div class="d-flex justify-between">
+                            <h4>總共有<?= $_SESSION['cart']['ProductQuantity'] ?>項商品</h4>
+                            <h4>NTD:<?= $_SESSION['cart']['ProductPrice'] ?></h4>
                         </div>
                         <div class="d-flex justify-between mt-10">
                             <h4>優惠券折抵</h4>
-                            <h4>NTD:</h4>
+                            <h4><?= $_SESSION['cartcart']['ProductDiscount'] ?></h4>
                         </div>
                         <div class="d-flex justify-between border-bottom-main-color mt-10 pb-10">
                             <h4>運費</h4>
-                            <h4>NTD:</h4>
+                            <h4 id="deliveryFee">免 運 哦</h4>
                         </div>
                         <div class="d-flex justify-between mt-10">
                             <h4><strong>商品總金額</strong></h4>
-                            <h4 class="orange">NTD:</h4>
+                            <h4 class="orange"><?= $_SESSION['cartcart']['ProductTotalPrice'] ?></h4>
                         </div>
                         <div class="d-flex justify-end">
                             <p class="grey">皆以新台幣付款</p>
                         </div>
-
                     </div>
                 </div>
                 <!-- 運送地區 + 上下一步 -->

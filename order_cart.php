@@ -1,10 +1,3 @@
-<!-- <?php
-        session_start();
-        $pageName = 'cart';
-        $title = '購物車內容';
-
-        ?> -->
-
 <?php include __DIR__ . '/parts/movwe_head.php' ?>
 
 
@@ -297,8 +290,8 @@
                         <a href="./store.php">
                             <button class="prev_btn_4w">繼續購物</button>
                         </a>
-                        <a href="./order_delivery.php" class="ml-20">
-                            <button class="btn_3w">下一步</button>
+                        <a class="ml-20">
+                            <button class="btn_3w" onclick="DatatoDelivery()">下一步</button>
                         </a>
                     </div>
                 </div>

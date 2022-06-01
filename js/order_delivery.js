@@ -25,4 +25,6 @@ $('.delivery').click(function () {
     $(this).siblings().css('border', '1.5px solid #fff');
     $(this).siblings().children().css('color', '#fff');
     $(this).siblings().children().children().css('stroke', '#fff');
+
+    $('#deliveryFee').removeClass('d-none');
 });

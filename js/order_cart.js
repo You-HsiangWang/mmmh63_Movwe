@@ -101,11 +101,32 @@ function AddDiscount() {
     const rr = +ProductPrice;
     const dd = document.querySelector('input[name="discount"]:checked').value;
 
+
     discountQQ = `<h4 class="orange"> - NTD ${dd}</h4>`;
     totalPayment = `<h4 class="orange"> NTD ${rr - dd}</h4>`
 
     document.getElementById('discountQQ').innerHTML = discountQQ;
     document.getElementById('totalPayment').innerHTML = totalPayment;
+
+};
+
+function DatatoDelivery() {
+    const pp = document.getElementById('discountQQ').innerText;
+    const ss = document.getElementById('totalPayment').innerText;
+
+    console.log( pp, ss);
+
+    const gg = {
+        'ProductDiscount': pp,
+        'ProductTotalPrice': ss,
+    };
+
+    console.log(gg);
+
+    $.get('api_cart.php', gg, function (data) {
+         console.log(data); 
+        location.href = './order_delivery.php'
+        }, 'json')
 
 };
 
