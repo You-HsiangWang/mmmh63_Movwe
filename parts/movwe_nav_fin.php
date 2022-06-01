@@ -118,7 +118,7 @@ if (isset($_SESSION['admin']['member_avatar'])) {
                     <a href="wish_home.php">
                         <p class="text_a">許願池</p>
                     </a>
-                    <a href="#">
+                    <a href="dragon_quest.php">
                         <p class="text_a">心理測驗</p>
                     </a>
                     <a href="member-info-index.php">
