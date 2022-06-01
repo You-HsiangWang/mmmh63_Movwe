@@ -94,6 +94,11 @@
             background-color:rgb(16, 255, 163);
             box-shadow: 0 0 5px rgb(16, 255, 163)
         }
+        .wishcard:hover .wish_total_4::after{
+            filter: brightness(130%);
+            background-color:rgb(16, 255, 163);
+            box-shadow: 0 0 5px rgb(16, 255, 163)
+        }
         .image__card{
             width: 110px;
         }
@@ -767,6 +772,32 @@
                                                             <div class="wish_total_1"></div>
                                                             <div class="wish_vote">
                                                                 已有 <span>2467</span> 人參與許願
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="wishcard">
+                                                    <div class="wish_pic">
+                                                        <img src="./img/forum/forum_img01.jpg" alt="">
+                                                    </div>
+                                                    <div class="wish_words">
+                                                        <div class="wish_word_top">
+                                                            <div class="wish_type d-filter-a">
+                                                                動漫
+                                                            </div>
+                                                            <button class="wish_btn">
+                                                                <div class="wish_icon">
+                                                                    <img src="./img/icons/wish.svg" alt="">
+                                                                </div>
+                                                            </button>
+                                                        </div>
+                                                        <div class="wish_word_middle">
+                                                            Keroro
+                                                        </div>
+                                                        <div class="wish_word_bottom">
+                                                            <div class="wish_total_4"></div>
+                                                            <div class="wish_vote">
+                                                                已有 <span>214</span> 人參與許願
                                                             </div>
                                                         </div>
                                                     </div>

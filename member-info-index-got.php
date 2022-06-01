@@ -1439,7 +1439,7 @@
                                                             <div class="ar-img-wrap mr-10">
                                                                 <a href="#"><img src="./img/talls_img/hehe.png" alt=""></a>
                                                             </div>
-                                                            <a href="#"><span>Eric</span></a>
+                                                            <a href="#"><span>123</span></a>
                                                         </div>
                                                     </div>
                                                     <!-- 發文時間 -->
@@ -1534,7 +1534,7 @@
                                                             <div class="ar-img-wrap mr-10">
                                                                 <a href="#"><img src="./img/talls_img/hehe.png" alt=""></a>
                                                             </div>
-                                                            <a href="#"><span>Eric</span></a>
+                                                            <a href="#"><span>123</span></a>
                                                         </div>
                                                     </div>
                                                     <!-- 發文時間 -->
