@@ -214,10 +214,10 @@ $title = 'MOVWE-孔劉';
                                                                             </p>
                                                                             <div class="bottom_6_icon_box">
                                                                                 <a href="#">
-                                                                                    <p class="bottom_6_icon">
+                                                                                    <!-- <p class="bottom_6_icon">
                                                                                         <img src="./img/logo/friday_s.svg"
                                                                                             alt="">
-                                                                                    </p>
+                                                                                    </p> -->
                                                                                 </a>
                                                                                 <a
                                                                                     href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw" target="_blank">
@@ -227,10 +227,10 @@ $title = 'MOVWE-孔劉';
                                                                                 </a>
                                                                                 </p>
                                                                                 <a href="#">
-                                                                                    <p class="bottom_6_icon">
+                                                                                    <!-- <p class="bottom_6_icon">
                                                                                         <img src="./img/logo/kktv_s.svg"
                                                                                             alt="">
-                                                                                    </p>
+                                                                                    </p> -->
                                                                                 </a>
                                                                                 <a href="#">
                                                                                     <p class="bottom_6_icon">
@@ -257,7 +257,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.9
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -294,9 +294,9 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
-                                                                                <p class="detail">
+                                                                                <p class="detail ">
                                                                                     查看詳細..
                                                                                 </p>
                                                                             </a>
@@ -318,7 +318,7 @@ $title = 'MOVWE-孔劉';
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真愛每一天
+                                                                            孤單又燦爛的神 鬼怪
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
@@ -327,16 +327,16 @@ $title = 'MOVWE-孔劉';
                                                                                 <img src="./img/logo/iqiyi_s.svg"
                                                                                     alt="">
                                                                         </div>
-                                                                        <div class="movie__icon__box">
+                                                                        <!-- <div class="movie__icon__box">
                                                                             <a href="">
                                                                                 <img src="./img/logo/friday_s.svg"
                                                                                     alt="">
-                                                                        </div>
-                                                                        <div class="movie__icon__box">
+                                                                        </div> -->
+                                                                        <!-- <div class="movie__icon__box">
                                                                             <a href="">
                                                                                 <img src="./img/logo/kktv_s.svg"
                                                                                     alt="">
-                                                                        </div>
+                                                                        </div> -->
                                                                         <div class="movie__icon__box">
                                                                             <a href="">
                                                                                 <img src="./img/logo/netflix_s.svg"
@@ -350,7 +350,7 @@ $title = 'MOVWE-孔劉';
                                                             <div class="imge__card__information">
                                                                 <div class="information__top">
                                                                     <img class="information__video"
-                                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                                        src="./img/center/ky-all-1.jpeg" alt="">
                                                                 </div>
                                                                 <a href="#">
                                                                     <div class="information__bottom">
@@ -373,10 +373,10 @@ $title = 'MOVWE-孔劉';
                                                                                 </a>
                                                                                 </p>
                                                                                 <a href="#">
-                                                                                    <p class="bottom_6_icon">
+                                                                                    <!-- <p class="bottom_6_icon">
                                                                                         <img src="./img/logo/kktv_s.svg"
                                                                                             alt="">
-                                                                                    </p>
+                                                                                    </p> -->
                                                                                 </a>
                                                                                 <a href="#">
                                                                                     <p class="bottom_6_icon">
@@ -390,7 +390,7 @@ $title = 'MOVWE-孔劉';
                                                                         <div
                                                                             class="information__bottom_2 Bottom__display">
                                                                             <p class="information__name">
-                                                                                孤單又燦爛的神 鬼怪
+                                                                                屍速列車
                                                                             </p>
                                                                         </div>
                                                                         <div
@@ -403,14 +403,14 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.6
                                                                                 </p>
                                                                             </div>
                                                                         </div>
                                                                         <div
                                                                             class="information__bottom_4 Bottom__display">
                                                                             <p>
-                                                                                浪漫愛情 /
+                                                                            社會現場 /
                                                                             </p>
                                                                             <p>
                                                                                 奇幻冒險
@@ -426,21 +426,21 @@ $title = 'MOVWE-孔劉';
                                                                             <span class="speace"> / </span>
                                                                             <a href="#">
                                                                                 <p class="information__actor__name">
-                                                                                    金高銀
+                                                                                    
                                                                                 </p>
                                                                             </a>
                                                                             <span class="speace"> / </span>
                                                                             <a href="#">
 
                                                                                 <p class="information__actor__name">
-                                                                                    劉寅娜
+                                                                                    
                                                                                 </p>
                                                                             </a>
 
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -464,7 +464,7 @@ $title = 'MOVWE-孔劉';
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真愛每一天
+                                                                            屍速列車
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
@@ -478,11 +478,11 @@ $title = 'MOVWE-孔劉';
                                                                                 <img src="./img/logo/friday_s.svg"
                                                                                     alt="">
                                                                         </div>
-                                                                        <div class="movie__icon__box">
-                                                                            <a href="">
-                                                                                <img src="./img/logo/kktv_s.svg"
-                                                                                    alt="">
-                                                                        </div>
+                                                                            <!-- <div class="movie__icon__box">
+                                                                                <a href="">
+                                                                                    <img src="./img/logo/kktv_s.svg"
+                                                                                        alt="">
+                                                                            </div> -->
                                                                         <div class="movie__icon__box">
                                                                             <a href="">
                                                                                 <img src="./img/logo/netflix_s.svg"
@@ -497,7 +497,7 @@ $title = 'MOVWE-孔劉';
                                                             <div class="imge__card__information">
                                                                 <div class="information__top">
                                                                     <img class="information__video"
-                                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                                        src="./img/center/ky-all-2.jpeg" alt="">
                                                                 </div>
                                                                 <a href="#">
                                                                     <div class="information__bottom">
@@ -508,10 +508,10 @@ $title = 'MOVWE-孔劉';
                                                                             </p>
                                                                             <div class="bottom_6_icon_box">
                                                                                 <a href="#">
-                                                                                    <p class="bottom_6_icon">
+                                                                                    <!-- <p class="bottom_6_icon">
                                                                                         <img src="./img/logo/friday_s.svg"
                                                                                             alt="">
-                                                                                    </p>
+                                                                                    </p> -->
                                                                                 </a>
                                                                                 <a href="#">
                                                                                     <p class="bottom_6_icon">
@@ -537,7 +537,7 @@ $title = 'MOVWE-孔劉';
                                                                         <div
                                                                             class="information__bottom_2 Bottom__display">
                                                                             <p class="information__name">
-                                                                                孤單又燦爛的神 鬼怪
+                                                                                密探
                                                                             </p>
                                                                         </div>
                                                                         <div
@@ -550,7 +550,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.5
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -573,21 +573,21 @@ $title = 'MOVWE-孔劉';
                                                                             <span class="speace"> / </span>
                                                                             <a href="#">
                                                                                 <p class="information__actor__name">
-                                                                                    金高銀
+                                                                                    
                                                                                 </p>
                                                                             </a>
                                                                             <span class="speace"> / </span>
                                                                             <a href="#">
 
                                                                                 <p class="information__actor__name">
-                                                                                    劉寅娜
+                                                                                    
                                                                                 </p>
                                                                             </a>
 
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -611,7 +611,7 @@ $title = 'MOVWE-孔劉';
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真愛每一天
+                                                                            密探
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
@@ -620,11 +620,11 @@ $title = 'MOVWE-孔劉';
                                                                                 <img src="./img/logo/iqiyi_s.svg"
                                                                                     alt="">
                                                                         </div>
-                                                                        <div class="movie__icon__box">
+                                                                        <!-- <div class="movie__icon__box">
                                                                             <a href="">
                                                                                 <img src="./img/logo/friday_s.svg"
                                                                                     alt="">
-                                                                        </div>
+                                                                        </div> -->
                                                                         <div class="movie__icon__box">
                                                                             <a href="">
                                                                                 <img src="./img/logo/kktv_s.svg"
@@ -643,7 +643,7 @@ $title = 'MOVWE-孔劉';
                                                             <div class="imge__card__information">
                                                                 <div class="information__top">
                                                                     <img class="information__video"
-                                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                                        src="./img/center/ky-all-3.jpeg" alt="">
                                                                 </div>
                                                                 <a href="#">
                                                                     <div class="information__bottom">
@@ -653,17 +653,17 @@ $title = 'MOVWE-孔劉';
                                                                                 影劇
                                                                             </p>
                                                                             <div class="bottom_6_icon_box">
-                                                                                <a href="#">
+                                                                                <!-- <a href="#">
                                                                                     <p class="bottom_6_icon">
                                                                                         <img src="./img/logo/friday_s.svg"
                                                                                             alt="">
                                                                                     </p>
-                                                                                </a>
-                                                                                <a href="#">
+                                                                                </a> -->
+                                                                                <!-- <a href="#">
                                                                                     <p class="bottom_6_icon">
                                                                                         <img src="./img/logo/iqiyi_s.svg"
                                                                                             alt="">
-                                                                                </a>
+                                                                                </a> -->
                                                                                 </p>
                                                                                 <a href="#">
                                                                                     <p class="bottom_6_icon">
@@ -683,7 +683,7 @@ $title = 'MOVWE-孔劉';
                                                                         <div
                                                                             class="information__bottom_2 Bottom__display">
                                                                             <p class="information__name">
-                                                                                孤單又燦爛的神 鬼怪
+                                                                                關不住的誘惑
                                                                             </p>
                                                                         </div>
                                                                         <div
@@ -696,7 +696,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.6
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -733,7 +733,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -757,20 +757,20 @@ $title = 'MOVWE-孔劉';
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真愛每一天
+                                                                            關不住的誘惑
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
-                                                                        <div class="movie__icon__box">
+                                                                        <!-- <div class="movie__icon__box">
                                                                             <a href="">
                                                                                 <img src="./img/logo/iqiyi_s.svg"
                                                                                     alt="">
-                                                                        </div>
-                                                                        <div class="movie__icon__box">
+                                                                        </div> -->
+                                                                        <!-- <div class="movie__icon__box">
                                                                             <a href="">
                                                                                 <img src="./img/logo/friday_s.svg"
                                                                                     alt="">
-                                                                        </div>
+                                                                        </div> -->
                                                                         <div class="movie__icon__box">
                                                                             <a href="">
                                                                                 <img src="./img/logo/kktv_s.svg"
@@ -843,7 +843,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.4
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -880,7 +880,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -991,7 +991,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.8
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -1028,7 +1028,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -1139,7 +1139,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.7
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -1176,7 +1176,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -1290,7 +1290,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.6
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -1327,7 +1327,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -1436,7 +1436,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.5
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -1473,7 +1473,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -1582,7 +1582,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.9
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -1619,7 +1619,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -1728,7 +1728,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.6
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -1765,7 +1765,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -1875,7 +1875,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.5
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -1912,7 +1912,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -2023,7 +2023,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.7
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -2060,7 +2060,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -2171,7 +2171,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.5
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -2208,7 +2208,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -2322,7 +2322,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.5
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -2359,7 +2359,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -2468,7 +2468,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.7
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -2505,7 +2505,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -2614,7 +2614,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.3
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -2651,7 +2651,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -2760,7 +2760,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.6
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -2797,7 +2797,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -2907,7 +2907,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.7
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -2944,7 +2944,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -3055,7 +3055,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.6
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -3092,7 +3092,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -3203,7 +3203,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.8
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -3240,7 +3240,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -3339,7 +3339,7 @@ $title = 'MOVWE-孔劉';
                                             <ul class="carousel__track">
                                                 <li class="carousel__slide current-slide">
                                                     <div class="image__box">
-                                                        <div class="image__card image__card__actor">
+                                                    <div class="image__card image__card__actor">
                                                             <div class="imge__card__information">
                                                                 <div class="information__top">
                                                                     <img class="information__video"
@@ -3354,22 +3354,23 @@ $title = 'MOVWE-孔劉';
                                                                             </p>
                                                                             <div class="bottom_6_icon_box">
                                                                                 <a href="#">
-                                                                                    <p class="bottom_6_icon">
+                                                                                    <!-- <p class="bottom_6_icon">
                                                                                         <img src="./img/logo/friday_s.svg"
                                                                                             alt="">
-                                                                                    </p>
+                                                                                    </p> -->
                                                                                 </a>
-                                                                                <a href="#">
-                                                                                    <p class="bottom_6_icon">
+                                                                                <a
+                                                                                    href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw" target="_blank">
+                                                                                    <p class="bottom_6_icon go_to_ott">
                                                                                         <img src="./img/logo/iqiyi_s.svg"
                                                                                             alt="">
                                                                                 </a>
                                                                                 </p>
                                                                                 <a href="#">
-                                                                                    <p class="bottom_6_icon">
+                                                                                    <!-- <p class="bottom_6_icon">
                                                                                         <img src="./img/logo/kktv_s.svg"
                                                                                             alt="">
-                                                                                    </p>
+                                                                                    </p> -->
                                                                                 </a>
                                                                                 <a href="#">
                                                                                     <p class="bottom_6_icon">
@@ -3396,7 +3397,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.9
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -3433,7 +3434,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -3442,7 +3443,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
                                                                         <div
                                                                             class="information__bottom_6 Bottom__display">
-                                                                            <button class="push__up">
+                                                                            <button class="push__up addtofild">
                                                                                 <p>
                                                                                     ＋ 加入片單
                                                                                 </p>
@@ -3453,11 +3454,11 @@ $title = 'MOVWE-孔劉';
                                                             </div>
                                                             <div class="carousel__images__box">
                                                                 <img class="carousel__images"
-                                                                    src="./img/center/ky-all-1.jpeg" alt="">
+                                                                    src="./img/center/h_1.jpeg" alt="">
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真愛每一天
+                                                                            孤單又燦爛的神 鬼怪
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
@@ -3466,16 +3467,16 @@ $title = 'MOVWE-孔劉';
                                                                                 <img src="./img/logo/iqiyi_s.svg"
                                                                                     alt="">
                                                                         </div>
-                                                                        <div class="movie__icon__box">
+                                                                        <!-- <div class="movie__icon__box">
                                                                             <a href="">
                                                                                 <img src="./img/logo/friday_s.svg"
                                                                                     alt="">
-                                                                        </div>
-                                                                        <div class="movie__icon__box">
+                                                                        </div> -->
+                                                                        <!-- <div class="movie__icon__box">
                                                                             <a href="">
                                                                                 <img src="./img/logo/kktv_s.svg"
                                                                                     alt="">
-                                                                        </div>
+                                                                        </div> -->
                                                                         <div class="movie__icon__box">
                                                                             <a href="">
                                                                                 <img src="./img/logo/netflix_s.svg"
@@ -3488,8 +3489,8 @@ $title = 'MOVWE-孔劉';
                                                         <div class="image__card image__card__actor">
                                                             <div class="imge__card__information">
                                                                 <div class="information__top">
-                                                                    <img class="information__video"
-                                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                                <img class="carousel__images"
+                                                                    src="./img/center/ky-all-2.jpeg" alt="">
                                                                 </div>
                                                                 <a href="#">
                                                                     <div class="information__bottom">
@@ -3529,7 +3530,7 @@ $title = 'MOVWE-孔劉';
                                                                         <div
                                                                             class="information__bottom_2 Bottom__display">
                                                                             <p class="information__name">
-                                                                                孤單又燦爛的神 鬼怪
+                                                                            密探
                                                                             </p>
                                                                         </div>
                                                                         <div
@@ -3542,7 +3543,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.5
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -3579,7 +3580,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -3603,7 +3604,7 @@ $title = 'MOVWE-孔劉';
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真愛每一天
+                                                                            密探
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
@@ -3634,8 +3635,8 @@ $title = 'MOVWE-孔劉';
                                                         <div class="image__card image__card__actor">
                                                             <div class="imge__card__information">
                                                                 <div class="information__top">
-                                                                    <img class="information__video"
-                                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                                <img class="carousel__images"
+                                                                    src="./img/center/ky-all-3.jpeg" alt="">
                                                                 </div>
                                                                 <a href="#">
                                                                     <div class="information__bottom">
@@ -3675,7 +3676,7 @@ $title = 'MOVWE-孔劉';
                                                                         <div
                                                                             class="information__bottom_2 Bottom__display">
                                                                             <p class="information__name">
-                                                                                孤單又燦爛的神 鬼怪
+                                                                            關不住的誘惑
                                                                             </p>
                                                                         </div>
                                                                         <div
@@ -3688,7 +3689,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.4
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -3725,7 +3726,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -3749,7 +3750,7 @@ $title = 'MOVWE-孔劉';
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真愛每一天
+                                                                            關不住的誘惑
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
@@ -3780,8 +3781,8 @@ $title = 'MOVWE-孔劉';
                                                         <div class="image__card image__card__actor">
                                                             <div class="imge__card__information">
                                                                 <div class="information__top">
-                                                                    <img class="information__video"
-                                                                        src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                                <img class="carousel__images"
+                                                                    src="./img/center/ky-all-5.jpeg" alt="">
                                                                 </div>
                                                                 <a href="#">
                                                                     <div class="information__bottom">
@@ -3821,7 +3822,7 @@ $title = 'MOVWE-孔劉';
                                                                         <div
                                                                             class="information__bottom_2 Bottom__display">
                                                                             <p class="information__name">
-                                                                                孤單又燦爛的神 鬼怪
+                                                                                碟影殺機
                                                                             </p>
                                                                         </div>
                                                                         <div
@@ -3834,7 +3835,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.4
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -3871,7 +3872,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -3895,7 +3896,7 @@ $title = 'MOVWE-孔劉';
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真
+                                                                        諜影殺機
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
@@ -3981,7 +3982,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.3
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -4018,7 +4019,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -4043,7 +4044,7 @@ $title = 'MOVWE-孔劉';
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真愛每一天
+                                                                        諜影殺機
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
@@ -4129,7 +4130,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.5
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -4166,7 +4167,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -4277,7 +4278,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.5
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -4314,7 +4315,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -4464,7 +4465,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.4
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -4501,7 +4502,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -4525,7 +4526,7 @@ $title = 'MOVWE-孔劉';
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真愛每一天
+                                                                            孤單又燦爛的神 鬼怪
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
@@ -4610,7 +4611,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.2
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -4647,7 +4648,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -4671,7 +4672,7 @@ $title = 'MOVWE-孔劉';
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真愛每一天
+                                                                            魷魚遊戲
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
@@ -4743,7 +4744,7 @@ $title = 'MOVWE-孔劉';
                                                                         <div
                                                                             class="information__bottom_2 Bottom__display">
                                                                             <p class="information__name">
-                                                                                孤單又燦爛的神 鬼怪
+                                                                                魷魚遊戲
                                                                             </p>
                                                                         </div>
                                                                         <div
@@ -4756,7 +4757,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.7
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -4793,7 +4794,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -4817,7 +4818,7 @@ $title = 'MOVWE-孔劉';
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真愛每一天
+                                                                            真愛上錯身
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
@@ -4902,7 +4903,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.2
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -4939,7 +4940,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -4959,11 +4960,11 @@ $title = 'MOVWE-孔劉';
                                                             </div>
                                                             <div class="carousel__images__box">
                                                                 <img class="carousel__images"
-                                                                    src="./img/center/h-1.jpeg" alt="">
+                                                                    src="./img/center/ky-all-4.jpeg" alt="">
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真愛每一天
+                                                                            寧靜海
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
@@ -5049,7 +5050,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.5
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -5086,7 +5087,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -5197,7 +5198,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.4
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -5234,7 +5235,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -5345,7 +5346,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.6
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -5382,7 +5383,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -5532,7 +5533,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.7
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -5569,7 +5570,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -5589,11 +5590,11 @@ $title = 'MOVWE-孔劉';
                                                             </div>
                                                             <div class="carousel__images__box">
                                                                 <img class="carousel__images"
-                                                                    src="./img/center/h-1.jpeg" alt="">
+                                                                    src="./img/center/ky-fun-1.jpeg" alt="">
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真愛每一天
+                                                                        柳喜烈的寫生簿
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
@@ -5678,7 +5679,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.9
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -5715,7 +5716,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -5735,11 +5736,11 @@ $title = 'MOVWE-孔劉';
                                                             </div>
                                                             <div class="carousel__images__box">
                                                                 <img class="carousel__images"
-                                                                    src="./img/center/h-4.jpeg" alt="">
+                                                                    src="./img/center/ky-fun-2.jpeg" alt="">
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真愛每一天
+                                                                        李棟旭脫口秀
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
@@ -5824,7 +5825,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.1
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -5861,7 +5862,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -5881,11 +5882,11 @@ $title = 'MOVWE-孔劉';
                                                             </div>
                                                             <div class="carousel__images__box">
                                                                 <img class="carousel__images"
-                                                                    src="./img/center/h-3.jpeg" alt="">
+                                                                    src="./img/center/ky-fun-3.jpeg" alt="">
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真愛每一天
+                                                                        QUIZ ON THE BLOCK
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
@@ -5970,7 +5971,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.3
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -6007,7 +6008,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -6027,11 +6028,11 @@ $title = 'MOVWE-孔劉';
                                                             </div>
                                                             <div class="carousel__images__box">
                                                                 <img class="carousel__images"
-                                                                    src="./img/center/h-2.jpeg" alt="">
+                                                                    src="./img/center/ky-fun-4.jpeg" alt="">
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
                                                                         <p>
-                                                                            真愛每一天
+                                                                            Running man
                                                                         </p>
                                                                     </div>
                                                                     <div class="movie__icons">
@@ -6117,7 +6118,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    9.5
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -6154,7 +6155,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -6265,7 +6266,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.6
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -6302,7 +6303,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..
@@ -6413,7 +6414,7 @@ $title = 'MOVWE-孔劉';
                                                                             </div>
                                                                             <div class="information__point">
                                                                                 <p>
-                                                                                    4.9
+                                                                                    8.9
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -6450,7 +6451,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div
-                                                                            class="information__bottom_6-5 Bottom__display">
+                                                                            class="information__bottom_6-5_actor Bottom__display">
                                                                             <a href="./single-movie-page0511.html">
                                                                                 <p class="detail">
                                                                                     查看詳細..

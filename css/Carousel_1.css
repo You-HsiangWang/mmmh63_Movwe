@@ -402,6 +402,14 @@ bottom: 0;
     /* padding: 10px 0  ; */
 }
 
+.information__bottom_6-5_actor{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+    margin-top: 1%;
+    /* padding: 10px 0  ; */
+}
+
 .detail{
     transition: .2s ;
 }
@@ -418,6 +426,11 @@ bottom: 0;
     color: rgb(1, 195, 121);
 
 }
+.information__bottom_6-5_actor a{
+    text-decoration: none;
+    color: rgb(1, 195, 121);
+
+}
 
 
 .push__up{
@@ -427,6 +440,11 @@ border-radius: 5px;
 border: none;
     background-color: rgb(16, 255, 162);
     transition: .2s;
+}
+.actor__bt{
+
+    margin-bottom: 20px;
+
 }
 
 .push__up:hover{
