@@ -10,6 +10,12 @@
 
 }
 
+.single__page__mt{
+
+    margin-top: -40px;
+
+}
+
 .actor__text__container{
     width: 100%;
     margin-top: 100px;
@@ -115,7 +121,7 @@ color:rgb(16, 255, 162) ;
 
 
 .carousel__7 {
-    height: 360px;
+    height: 260px;
 
     position: relative;
     /* height: 600px; */
@@ -336,6 +342,11 @@ left: -15%;
 .Product__id{
     transition: .3s;
 }
+
+.product__name__single{
+
+    font-size: 12px;
+}
 .Price{
     transition: .3s;
     font-size: 20px;
@@ -430,4 +441,15 @@ height: 350px;
         margin-top: 200px;
 
     }
+
+    .product__name__single{
+        font-size: 16px;
+    }
+    
+    .carousel__7 {
+        height: 360px;
+    
+    }
+    
+
 }

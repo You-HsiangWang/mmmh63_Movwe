@@ -340,7 +340,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
 
                                         </div>
                                     </div>
-                                    <div class="image__box__6">
+                                    <div class="image__box__6 single__displaynone">
                                         <div class="image__card__6">
                                             <div class="carousel__images__box__6">
                                                 <img class="carousel__images__6" src="./img/center/Episode-6.jpg" alt="">
@@ -484,7 +484,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
 
                                         </div>
                                     </div>
-                                    <div class="image__box__6">
+                                    <div class="image__box__6 single__displaynone">
                                         <div class="image__card__6">
                                             <div class="carousel__images__box__6">
                                                 <img class="carousel__images__6" src="./img/center/Episode-16.jpg" alt="">
@@ -575,7 +575,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
 
                 <!--商品-------------------------------------------- -->
 
-                <div class="carousel__big__box__7">
+                <div class="carousel__big__box__7 single__page__mt">
                     <div class="carousel__title__section__7">
                         <div class="stick_desk"></div>
                         <div class="carousel__title__7">
@@ -599,7 +599,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                 <img class="carousel__images__7" src="./img/mall/gst/gst01.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
-                                                        <p class="Product__id">
+                                                        <p class="Product__id product__name__single">
                                                             鬼怪限量貼紙組
                                                         </p>
 
@@ -630,7 +630,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                             <img class="carousel__images__7" src="./img/mall/gst/gst02.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
-                                                        <p class="Product__id">
+                                                        <p class="Product__id product__name__single">
                                                         韓劇鬼怪PVC夾鍊袋
                                                         </p>
 
@@ -661,7 +661,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                             <img class="carousel__images__7" src="./img/mall/gst/gst03.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
-                                                        <p class="Product__id">
+                                                        <p class="Product__id product__name__single">
                                                         手機支架人形立牌
                                                         </p>
 
@@ -692,7 +692,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                             <img class="carousel__images__7" src="./img/mall/gst/gst04.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
-                                                        <p class="Product__id">
+                                                        <p class="Product__id product__name__single">
                                                         桌上小台曆
                                                         </p>
 
@@ -723,7 +723,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                             <img class="carousel__images__7" src="./img/mall/gst/gst05.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
-                                                        <p class="Product__id">
+                                                        <p class="Product__id product__name__single">
                                                         韓劇鬼怪照片集
                                                         </p>
 
@@ -754,7 +754,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                             <img class="carousel__images__7" src="./img/mall/gst/gst06.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
-                                                        <p class="Product__id">
+                                                        <p class="Product__id product__name__single">
                                                             鬼怪哇娃 白色
                                                         </p>
 
@@ -785,7 +785,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                             <img class="carousel__images__7" src="./img/mall/gst/gst07.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
-                                                        <p class="Product__id">
+                                                        <p class="Product__id product__name__single">
                                                             鬼怪娃娃 黑色
                                                         </p>
 
@@ -820,7 +820,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                             <img class="carousel__images__7" src="./img/mall/gst/gst08.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
-                                                        <p class="Product__id">
+                                                        <p class="Product__id product__name__single">
                                                             鬼怪娃娃 白色
                                                         </p>
 
@@ -851,7 +851,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                             <img class="carousel__images__7" src="./img/mall/gst/gst09.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
-                                                        <p class="Product__id">
+                                                        <p class="Product__id product__name__single">
                                                             鬼怪娃娃 藍色
                                                         </p>
 
@@ -882,7 +882,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                             <img class="carousel__images__7" src="./img/mall/gst/gst10.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
-                                                        <p class="Product__id">
+                                                        <p class="Product__id product__name__single">
                                                             鬼怪娃娃 紅色
                                                         </p>
 
@@ -913,7 +913,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                             <img class="carousel__images__7" src="./img/mall/gst/gst11.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
-                                                        <p class="Product__id">
+                                                        <p class="Product__id product__name__single">
                                                         鬼怪娃娃經典系列組
                                                         </p>
 
@@ -944,7 +944,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                             <img class="carousel__images__7" src="./img/mall/gst/gst12.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
-                                                        <p class="Product__id">
+                                                        <p class="Product__id product__name__single">
                                                             鬼怪鑰匙圈
                                                         </p>
 
@@ -975,7 +975,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                             <img class="carousel__images__7" src="./img/mall/gst/gst13.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
-                                                        <p class="Product__id">
+                                                        <p class="Product__id product__name__single">
                                                         鬼怪原子筆
                                                         </p>
                                                         <button class="Shop__card__icon__box">
@@ -1005,7 +1005,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                             <img class="carousel__images__7" src="./img/mall/gst/gst14.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
-                                                        <p class="Product__id">
+                                                        <p class="Product__id product__name__single">
                                                         鬼怪筆記本
                                                         </p>
 

@@ -394,12 +394,6 @@ var Slider = (function(){
 }());
 
 
-var slider = new Slider("slider", {
-  play_icon: '<i class="fas fa-play"></i>',
-  pause_icon: '<i class="far fa-pause-circle"></i>',
-  prev_icon: '<i class="fas fa-angle-left"></i>',
-  next_icon: '<i class="fas fa-angle-right"></i>'
-});
 
 /*
 */

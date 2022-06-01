@@ -312,18 +312,62 @@ text-align: center;
     }
     
 .search_p4{
+    width: 100%;
+    position: relative;
     transition: .3s;
     display: flex;
     justify-content: space-between;
-    filter: brightness(80%);
+    /* filter: brightness(80%); */
+    /* background-color: #fff; */
 }
 
-.search__bigbox:hover .search_p4{
+.home__ott__bigbox{
+    transform: scale(0);
+    width: 100%;
+    position: relative;
+    transition: .8s;
+    display: flex;
+    justify-content: space-between;
+    filter: brightness(80%);
+    transition-delay: .1s;
+}
+
+.banner__icon__bigbox{
+    margin-top: 20px;
+    width: 75%;
+    /* height: 100%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+
+.banner__icon__box{
+
+    transition: .8s;
+    transition-delay: .1s;
+    transform: scale(1);
+    width: 23%;
+}
+
+
+.banner__icon__bigbox img{
+    filter:drop-shadow(0px 0px 5px rgba(16, 255, 162,1));
+    border-radius: 10px;
+    width: 100%;
+}
+
+.search__bigbox:hover .home__ott__bigbox{
     transform: scale(1.1);
     filter: brightness(120%);
-
 }
 
+ .search__bigbox:hover .banner__icon__box{
+width: 0px;
+ }
 
     .ott__logo{
         /* border-bottom: 1px solid rgb(16, 255, 162); */
@@ -336,14 +380,17 @@ text-align: center;
     }
 
     .ott__logo{
+        transition: .3s;
         width: 100%;
     }
+
     /* ----------------- */
+
     .section__home__wish{
         width: 100%;
         margin-top: 154px;
-
     }
+
     .home__wish_card{
         width: 450px;
         height: 200px;
@@ -924,6 +971,7 @@ opacity: 0;
 
 
         #myInput{
+
             width: 48%;
             height: 40px;
             border-radius: 5px;
@@ -935,6 +983,7 @@ opacity: 0;
         font-size: 20px;
         color:rgb(16, 255, 162);
         text-align: center;
+
         }
 
 
@@ -946,7 +995,19 @@ opacity: 0;
             justify-content: space-between;
         }
         
+    .banner__icon__bigbox{
+
+    width: 48%;
+    /* height: 100%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
     
+}
+
     
 
     }

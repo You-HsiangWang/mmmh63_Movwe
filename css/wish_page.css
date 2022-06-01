@@ -25,6 +25,7 @@ body {
     width: 100%;
 }
 .wish__input__title{
+    position: relative;
     width: 100%;
     color: rgb(16, 255, 162);
     font-size: 20px;
@@ -73,6 +74,49 @@ text-align: center;
 
 
 }
+
+.Page__4__genie__box_home{
+
+    /* opacity: 0; */
+    /* transform: scale(0); */
+    width: 5%;
+    position: absolute;
+    top: -110%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 2s;
+    transition-delay: 2.8s;
+    transform-origin: 40%, 40%;
+}
+
+.Page__4__genie{
+    width: 100%;
+    transition: 2s;
+    animation-name: genie;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes genie {
+    0% {
+        filter: brightness(80%);
+        transform: scale(1) rotate(2deg);
+    }
+
+    50% {
+        filter: brightness(150%);
+        transform: scale(1.1) rotate(-2deg);
+
+    }
+
+    100% {
+        filter: brightness(80%);
+        transform: scale(1) rotate(2deg);
+
+    }
+}
+
+
 
 
 @media screen and (min-width: 750px) {

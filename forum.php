@@ -12,7 +12,9 @@ $title = 'Movwe-討論區';
 <link rel="stylesheet" href="./css/mystyle.css">
 <link rel="stylesheet" href="./css/forum.css">
 <link rel="stylesheet" href="./css/slider.css">
-<link rel="stylesheet" href="./css/dropdown_customstyle.css">
+<link rel="stylesheet" href="./css/Carousel_12.css">
+
+<!-- <link rel="stylesheet" href="./css/dropdown_customstyle.css"> -->
 
 </head>
 
@@ -56,12 +58,12 @@ $title = 'Movwe-討論區';
                     <div class="slide">
                         <img src="./img/banner/forum_banner01.jpg" alt="">
                     </div>
-                    <!-- <div class="slide">
+                    <div class="slide">
                         <img src="./img/banner/forum_banner02.jpg" alt="">
                     </div>
                     <div class="slide">
                         <img src="./img/banner/forum_banner03.jpg" alt="">
-                    </div> -->
+                    </div>
                 </div>
             </div>
 
@@ -70,12 +72,12 @@ $title = 'Movwe-討論區';
                     <div class="slide">
                         <img src="./img/banner/forum_banner01_s.jpg" alt="">
                     </div>
-                    <!-- <div class="slide">
+                    <div class="slide">
                         <img src="./img/banner/forum_banner02_s.jpg" alt="">
                     </div>
                     <div class="slide">
                         <img src="./img/banner/forum_banner03_s.jpg" alt="">
-                    </div> -->
+                    </div>
                 </div>
             </div>
 
@@ -122,8 +124,8 @@ $title = 'Movwe-討論區';
                                 <a href="./forum_edit.php" class="woyaofa">
                                     <svg width="30" height="30" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M14.2459 7.50217C14.047 7.50217 13.8563 7.58117 13.7157 7.72178C13.5751 7.86239 13.4961 8.0531 13.4961 8.25196V12.7507C13.4961 12.9495 13.4171 13.1402 13.2765 13.2808C13.1359 13.4214 12.9452 13.5004 12.7463 13.5004H2.24935C2.05049 13.5004 1.85978 13.4214 1.71917 13.2808C1.57856 13.1402 1.49957 12.9495 1.49957 12.7507V2.2537C1.49957 2.05484 1.57856 1.86413 1.71917 1.72352C1.85978 1.58291 2.05049 1.50391 2.24935 1.50391H6.74804C6.9469 1.50391 7.13761 1.42492 7.27822 1.28431C7.41883 1.1437 7.49783 0.952985 7.49783 0.75413C7.49783 0.555275 7.41883 0.364565 7.27822 0.223954C7.13761 0.0833422 6.9469 0.00434749 6.74804 0.00434749H2.24935C1.65278 0.00434749 1.08065 0.241332 0.658819 0.663166C0.236984 1.085 0 1.65713 0 2.2537V12.7507C0 13.3472 0.236984 13.9193 0.658819 14.3412C1.08065 14.763 1.65278 15 2.24935 15H12.7463C13.3429 15 13.915 14.763 14.3368 14.3412C14.7587 13.9193 14.9957 13.3472 14.9957 12.7507V8.25196C14.9957 8.0531 14.9167 7.86239 14.776 7.72178C14.6354 7.58117 14.4447 7.50217 14.2459 7.50217ZM2.99913 8.07201V11.2511C2.99913 11.4499 3.07813 11.6407 3.21874 11.7813C3.35935 11.9219 3.55006 12.0009 3.74891 12.0009H6.92799C7.02667 12.0014 7.12449 11.9825 7.21584 11.9452C7.30719 11.9079 7.39028 11.8529 7.46034 11.7834L12.6488 6.58744L14.7782 4.50304C14.8485 4.43334 14.9043 4.35041 14.9423 4.25905C14.9804 4.16768 15 4.06968 15 3.9707C15 3.87172 14.9804 3.77372 14.9423 3.68235C14.9043 3.59098 14.8485 3.50805 14.7782 3.43835L11.5991 0.221784C11.5294 0.151508 11.4465 0.0957289 11.3551 0.0576635C11.2638 0.019598 11.1658 0 11.0668 0C10.9678 0 10.8698 0.019598 10.7784 0.0576635C10.6871 0.0957289 10.6041 0.151508 10.5344 0.221784L8.42006 2.34367L3.21657 7.53966C3.14708 7.60972 3.0921 7.69281 3.05479 7.78416C3.01747 7.87551 2.99856 7.97333 2.99913 8.07201V8.07201ZM11.0668 1.81132L13.1887 3.93321L12.124 4.9979L10.0021 2.87601L11.0668 1.81132ZM4.4987 8.37942L8.94491 3.93321L11.0668 6.05509L6.62058 10.5013H4.4987V8.37942Z" fill="#10FFA2" />
-                                    </svg>                   
-                                </a>              
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1027,7 +1029,7 @@ $title = 'Movwe-討論區';
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
-                                                鬼怪娃娃經典系列組
+                                                    鬼怪娃娃經典系列組
                                                 </p>
 
                                                 <button class="Shop__card__icon__box">
@@ -1037,7 +1039,7 @@ $title = 'Movwe-討論區';
                                             <div class="movie__icons__12">
                                                 <div class="movie__icon__box__12">
                                                     <p class="Price">
-                                                    899
+                                                        899
 
                                                     </p>
                                                     <p class="ntd">
@@ -1060,7 +1062,7 @@ $title = 'Movwe-討論區';
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
-                                                韓劇鬼怪PVC夾鍊袋
+                                                    韓劇鬼怪PVC夾鍊袋
                                                 </p>
 
                                                 <button class="Shop__card__icon__box">
@@ -1070,7 +1072,7 @@ $title = 'Movwe-討論區';
                                             <div class="movie__icons__12">
                                                 <div class="movie__icon__box__12">
                                                     <p class="Price">
-                                                    190
+                                                        190
                                                     </p>
                                                     <p class="ntd">
                                                         NTD
@@ -1092,7 +1094,7 @@ $title = 'Movwe-討論區';
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
-                                                手機支架人形立牌
+                                                    手機支架人形立牌
                                                 </p>
 
                                                 <button class="Shop__card__icon__box">
@@ -1102,7 +1104,7 @@ $title = 'Movwe-討論區';
                                             <div class="movie__icons__12">
                                                 <div class="movie__icon__box__12">
                                                     <p class="Price">
-                                                    360
+                                                        360
                                                     </p>
                                                     <p class="ntd">
                                                         NTD
@@ -1124,7 +1126,7 @@ $title = 'Movwe-討論區';
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
-                                                桌上小台曆
+                                                    桌上小台曆
                                                 </p>
 
                                                 <button class="Shop__card__icon__box">
@@ -1134,7 +1136,7 @@ $title = 'Movwe-討論區';
                                             <div class="movie__icons__12">
                                                 <div class="movie__icon__box__12">
                                                     <p class="Price">
-                                                    350
+                                                        350
                                                     </p>
                                                     <p class="ntd">
                                                         NTD
@@ -1156,7 +1158,7 @@ $title = 'Movwe-討論區';
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
-                                                韓劇鬼怪照片集
+                                                    韓劇鬼怪照片集
                                                 </p>
 
                                                 <button class="Shop__card__icon__box">
@@ -1166,7 +1168,7 @@ $title = 'Movwe-討論區';
                                             <div class="movie__icons__12">
                                                 <div class="movie__icon__box__12">
                                                     <p class="Price">
-                                                    500
+                                                        500
                                                     </p>
                                                     <p class="ntd">
                                                         NTD
@@ -1187,7 +1189,7 @@ $title = 'Movwe-討論區';
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
-                                                鬼怪原子筆
+                                                    鬼怪原子筆
                                                 </p>
 
                                                 <button class="Shop__card__icon__box">
@@ -1218,7 +1220,7 @@ $title = 'Movwe-討論區';
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
-                                                鬼怪筆記本
+                                                    鬼怪筆記本
                                                 </p>
 
                                                 <button class="Shop__card__icon__box">
@@ -1228,7 +1230,7 @@ $title = 'Movwe-討論區';
                                             <div class="movie__icons__12">
                                                 <div class="movie__icon__box__12">
                                                     <p class="Price">
-                                                    199
+                                                        199
                                                     </p>
                                                     <p class="ntd">
                                                         NTD
@@ -1249,7 +1251,7 @@ $title = 'Movwe-討論區';
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
-                                                鬼怪行李箱吊牌
+                                                    鬼怪行李箱吊牌
                                                 </p>
 
                                                 <button class="Shop__card__icon__box">
@@ -1259,7 +1261,7 @@ $title = 'Movwe-討論區';
                                             <div class="movie__icons__12">
                                                 <div class="movie__icon__box__12">
                                                     <p class="Price">
-                                                    250
+                                                        250
                                                     </p>
                                                     <p class="ntd">
                                                         NTD
@@ -1280,7 +1282,7 @@ $title = 'Movwe-討論區';
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
-                                                鬼怪原聲帶
+                                                    鬼怪原聲帶
                                                 </p>
 
                                                 <button class="Shop__card__icon__box">
@@ -1290,7 +1292,7 @@ $title = 'Movwe-討論區';
                                             <div class="movie__icons__12">
                                                 <div class="movie__icon__box__12">
                                                     <p class="Price">
-                                                    800
+                                                        800
                                                     </p>
                                                     <p class="ntd">
                                                         NTD
@@ -1311,7 +1313,7 @@ $title = 'Movwe-討論區';
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
-                                                鬼怪隨身鏡子
+                                                    鬼怪隨身鏡子
                                                 </p>
 
                                                 <button class="Shop__card__icon__box">
@@ -1342,15 +1344,22 @@ $title = 'Movwe-討論區';
                     </div>
                 </div>
             </div>
-            
+
             <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
 
         <script src="./js/forum.js"></script>
         <script src="./js/slider.js"></script>
+        <script src="./js/Nav.js"></script>
 
         <script>
-    </script>
+            var slider = new Slider("slider", {
+                play_icon: '<i class="fas fa-play"></i>',
+                pause_icon: '<i class="far fa-pause-circle"></i>',
+                prev_icon: '<i class="fas fa-angle-left"></i>',
+                next_icon: '<i class="fas fa-angle-right"></i>'
+            });
+        </script>
 
 </body>
 
