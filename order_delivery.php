@@ -231,7 +231,7 @@ $title = 'Movwe-物流選擇';
                     <div class="w-30">
                         <div class="d-flex justify-between">
                             <h4>總共有<?= $_SESSION['cart']['ProductQuantity'] ?>項商品</h4>
-                            <h4>NTD<?= $_SESSION['cart']['ProductPrice'] ?></h4>
+                            <h4>NTD <?= $_SESSION['cart']['ProductPrice'] ?></h4>
                         </div>
                         <div class="d-flex justify-between mt-10">
                             <h4>優惠券折抵</h4>
