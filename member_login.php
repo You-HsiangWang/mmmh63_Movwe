@@ -237,7 +237,7 @@ $title = 'MOVWE-帳戶登入';
                             <section class="register_form_data_feild">
                                 <div>
                                     <label for="register_invite">輸入邀請碼</label>
-                                    <input type="text" name="register_invite" id="register_form_invite" placeholder="" class="register_invite" autocomplete="off">
+                                    <input type="text" name="register_invite" id="register_form_invite" placeholder="" class="register_invite" autocomplete="off" onchange="checkRegInvite()">
                                     <div class="register_invite_status">
                                         <!-- <i class="fa-solid fa-eye-slash"></i> -->
                                         <!-- <i class="fa-solid fa-eye login_d_none"></i> -->
@@ -245,7 +245,7 @@ $title = 'MOVWE-帳戶登入';
                                         <i class="fa-solid fa-check login_d_none"></i>
                                     </div>
                                     <div class="register_invite_alert login_d_none">
-                                        <p>序號錯誤。</p>
+                                        <p>查無此序號。</p>
                                     </div>
                                 </div>
                             </section>
@@ -356,8 +356,7 @@ $title = 'MOVWE-帳戶登入';
                     };
                 }, 'json');
             }
-        }
-
+        };
         function checkPassword() {
             // TODO: 檢查欄位資料.
 
@@ -447,25 +446,10 @@ $title = 'MOVWE-帳戶登入';
                     };
                 }, 'json');
             }
-        }
-
-        function checkRegister() {
-            // 預設先給通過
-            let ispass = true;
-            // 檢查欄位有無問題
-            if (!$('#register_form_email').val().trim()) {
-                let ispass = false;
-                console.log('草枝擺沒填email啦');
-                $('#register_form_email .register_email_alert:nth-of-type(1)').removeClass('login_d_none');
-                $('#register_form_email .register_email_alert:nth-of-type(2)').addClass('login_d_none');
-                $('#register_form_email .register_email_alert:nth-of-type(3)').addClass('login_d_none');
-                $('.register_email_status i:nth-child(1)').removeClass('login_d_none');
-                $('.register_email_status i:nth-child(2)').addClass('login_d_none');
-            };
         };
-
         // 註冊emailinput onchange時就執行的
         function checkRegEmail() {
+            let regmailtf = false;
             if (!$('#register_form_email').val().trim()) {
                 // let ispass = false;
                 console.log('草枝擺沒填email啦');
@@ -514,9 +498,12 @@ $title = 'MOVWE-帳戶登入';
                         $('.register_email_status i:nth-child(2)').removeClass('login_d_none');
                         $('.register_email_status i:nth-child(1)').addClass('login_d_none');
                         $('#register_form_email').blur();
+                        regmailtf = true;
+                        console.log(regmailtf,'regmailtf');
                     };
                 }, 'text');
             };
+            console.log(regmailtf);
         };
         // 註冊密碼input onchange時就執行的
         function checkRegPassword() {
@@ -544,9 +531,9 @@ $title = 'MOVWE-帳戶登入';
                 $('.register_password_status i:nth-child(4)').removeClass('login_d_none');
                 $('.register_password_status i:nth-child(3)').addClass('login_d_none');
                 $('#register_form_psd').blur();
+                return true;
             };
         };
-
         // 註冊時密碼確認
         function checkRegPasswordConfirm() {
             // 沒填密碼
@@ -573,43 +560,42 @@ $title = 'MOVWE-帳戶登入';
                 $('.register_password_confirm_status i:nth-child(3)').addClass('login_d_none');
                 $('.register_password_confirm_status i:nth-child(4)').removeClass('login_d_none');
                 $('#register_form_psdconfirm').blur();
+                return true;
             };
         };
-
+        // 註冊時邀請碼
         function checkRegInvite() {
+            let tf = false;
             // 沒有此邀請碼 有填再送
             if ($('#register_form_invite').val().trim()) {
                 // 送api做初步檢驗
                 console.log('送檢');
-                const regMail = $('#register_form_email').val().trim();
+                const regInvite = $('#register_form_invite').val().trim();
                 const passobj = {
-                    'regMail': regMail,
+                    'regInvite': regInvite,
                 };
-                $.post('api_checkemail.php', passobj, function(data) {
+                $.post('api_checkinvite.php', passobj, function(data) {
                     if (data == 'false') {
-                        console.log('email重複摟');
-                        $('.register_email_alert:nth-of-type(4)').removeClass('login_d_none');
-                        $('.register_email_alert:nth-of-type(3)').addClass('login_d_none');
-                        $('.register_email_alert:nth-of-type(2)').addClass('login_d_none');
-                        $('.register_email_alert:nth-of-type(5)').addClass('login_d_none');
-                        $('.register_email_status i:nth-child(1)').removeClass('login_d_none');
-                        $('.register_email_status i:nth-child(2)').addClass('login_d_none');
-                        $('#register_form_email').blur();
+                        console.log('無此序號');
+                        $('.register_invite_alert:nth-of-type(2)').removeClass('login_d_none');
+                        $('.register_invite_status i:nth-child(1)').removeClass('login_d_none');
+                        $('.register_invite_status i:nth-child(2)').addClass('login_d_none');
+                        $('#register_form_invite').blur();
                         return;
                     } else if (data == 'true') {
-                        console.log('email可以使用');
-                        $('.register_email_alert:nth-of-type(5)').removeClass('login_d_none');
-                        $('.register_email_alert:nth-of-type(3)').addClass('login_d_none');
-                        $('.register_email_alert:nth-of-type(4)').addClass('login_d_none');
-                        $('.register_email_alert:nth-of-type(2)').addClass('login_d_none');
-                        $('.register_email_status i:nth-child(2)').removeClass('login_d_none');
-                        $('.register_email_status i:nth-child(1)').addClass('login_d_none');
-                        $('#register_form_email').blur();
+                        console.log('序號可以使用');
+                        $('.register_invite_alert:nth-of-type(2)').addClass('login_d_none');
+                        $('.register_invite_status i:nth-child(1)').addClass('login_d_none');
+                        $('.register_invite_status i:nth-child(2)').removeClass('login_d_none');
+                        $('#register_form_invite').blur();
+                        tf = true;
                     };
                 }, 'text');
+            }else if (! $('#register_form_invite').val().trim()){
+                tf = true;
             };
+            return tf;
         };
-
         // email regex
         function IsEmail(email) {
             const regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -627,6 +613,18 @@ $title = 'MOVWE-帳戶登入';
             } else {
                 return true;
             };
+        };
+        // 表單送出時執行判斷和呼叫api
+        function checkRegister() {
+            // 預設先給通過
+            let ispass = false;
+            console.log(checkRegEmail() == true , checkRegPassword() == true , checkRegPasswordConfirm() == true , checkRegInvite() == true);
+            // 檢查欄位有無問題
+            if (checkRegEmail() == true && checkRegPassword() == true && checkRegPasswordConfirm() == true && checkRegInvite() == true){
+                ispass = true;
+                console.log('okok');
+            };
+            console.log(ispass);
         };
     </script>
 

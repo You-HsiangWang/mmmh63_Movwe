@@ -2011,7 +2011,7 @@
                                         </div>
                                         <div class="info_acc_email">
                                             <div class="acc_email_title">Email</div>
-                                            <input class="acc_input" type="email" id="" name="acc_email" value="yozish0ng@gmail.com" readOnly />
+                                            <input class="acc_input" type="email" id="" name="acc_email" value="example@gmail.com" readOnly />
                                         </div>
                                         <div class="info_acc_change">
                                             <a href="#">
@@ -2440,11 +2440,17 @@
     function handleFiles(files) {
         for (var i = 0; i < files.length; i++) {
             const file = files[i];
+            console.log(files[i].name);
+            const picname = files[i].name;
+            // 這邊偷偷串資料庫
+            $.get('api_picto_db.php', {picname}, function(data){console.log(data);},'json');
             const imageType = /image.*/;
-
             if (!file.type.match(imageType)) {
                 continue;
-            }
+            };
+
+            // 這邊偷偷改nav
+            const navAva = $('.tn_avatar_wrap > a > img').attr('src', `./img/member/${picname}`);
 
             const img = document.createElement("img");
             img.classList.add("obj");
