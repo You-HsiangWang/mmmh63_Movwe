@@ -55,6 +55,14 @@
             width: 100%;
         }
 
+        /* .mce-notification-inner {
+            display: none;
+        } */
+
+        #mceu_36 {
+            display: none;
+        }
+
 
         @media screen and (min-width: 750px) {
 

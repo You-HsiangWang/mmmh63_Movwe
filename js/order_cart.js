@@ -56,31 +56,31 @@ $('.button-number-plus').click(function () {
 
 // 數量改變金額也要變
 
-// var q = parseInt(document.getElementById('quantity').value);
+var q = parseInt(document.getElementById('quantity').value);
 
-// var singlePrice = '840';
-// var subTotalPrice = `<h4>${singlePrice * q}</h4>`;
-// document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
+var singlePrice = '840';
+var subTotalPrice = `<h4>${singlePrice * q}</h4>`;
+document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
 
-// function addFunction() {
-//     // var q = parseInt(document.getElementById('quantity').value);
-//     q = isNaN(q) ? 0 : q;
-//     q++;
-//     document.getElementById('quantity').value = q;
-//     subTotalPrice = `<h4>${singlePrice * q}</h4>`;
-//     document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
-// };
+function addFunction() {
+    // var q = parseInt(document.getElementById('quantity').value);
+    q = isNaN(q) ? 0 : q;
+    q++;
+    document.getElementById('quantity').value = q;
+    subTotalPrice = `<h4>${singlePrice * q}</h4>`;
+    document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
+};
 
-// function subFunction() {
-//     // var q = parseInt(document.getElementById('quantity').value);
-//     q = isNaN(q) ? 0 : q;
-//     if (q > 1) {
-//         q--;
-//         document.getElementById('quantity').value = q;
-//         subTotalPrice = `<h4>${singlePrice * q}</h4>`;
-//         document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
-//     }
-// };
+function subFunction() {
+    // var q = parseInt(document.getElementById('quantity').value);
+    q = isNaN(q) ? 0 : q;
+    if (q > 1) {
+        q--;
+        document.getElementById('quantity').value = q;
+        subTotalPrice = `<h4>${singlePrice * q}</h4>`;
+        document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
+    }
+};
 
 // 優惠券詳情 展開
 
