@@ -211,7 +211,7 @@
                         <div class="d-flex align-item-center">
                             <input type="radio" id="discount1" name="discount" class="mr-10" onclick="AddDiscount()" value="50">
                             <label for="discount">
-                                <img src="./img/other/discount_50.png" alt="">
+                                <img src="./img/other/discount_50.png" alt="" class="discountKK">
                             </label>
                         </div>
                         <div class="d-flex align-item-center">

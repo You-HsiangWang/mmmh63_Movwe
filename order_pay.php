@@ -173,7 +173,7 @@ $title = 'Movwe-付款資訊';
                         <div class="d-flex align-item-center">
                             <input type="radio" id="discount1" name="discount1" class="mr-10" checked>
                             <label for="discount1">
-                                <img src="./img/other/discount_100.png" alt="">
+                                <img src="./img/other/discount_<?= $_SESSION['cartcart']['DiscountValue'] ?>.png" alt="">
                             </label>
                         </div>
                     </fieldset>

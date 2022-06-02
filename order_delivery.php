@@ -110,7 +110,7 @@ $title = 'Movwe-物流選擇';
                     </p>
                 </div>
                 <!-- ㄚㄚㄚ是table 購物車商品詳情 -->
-                <div class="booking-list mb-30 border-bottom-main-color d-none">
+                <div class="booking-list mb-30 border-bottom-main-color">
                     <table>
                         <tr class="yellow">
                             <th>商品圖片</th>
@@ -169,12 +169,12 @@ $title = 'Movwe-物流選擇';
                         </svg>
                     </p>
                 </div>
-                <div class="discount-info border-bottom-main-color d-none">
+                <div class="discount-info border-bottom-main-color">
                     <fieldset class="d-flex justify-around">
                         <div class="d-flex align-item-center">
                             <input type="radio" id="discount1" name="discount1" class="mr-10" checked>
                             <label for="discount1">
-                                <img src="./img/other/discount_100.png" alt="">
+                                <img src="./img/other/discount_<?= $_SESSION['cartcart']['DiscountValue'] ?>.png" alt="">
                             </label>
                         </div>
                     </fieldset>
