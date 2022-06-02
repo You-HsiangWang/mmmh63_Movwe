@@ -23,7 +23,14 @@
     $getHistoryList = "SELECT * FROM `video` WHERE 1 ORDER BY RAND() LIMIT 10";
     $stmtHL = $pdo->query($getHistoryList);
     $HLrow = $stmtHL->fetchAll();
+
+    // 拿會員點數欄位
+    $getPoints = "SELECT * FROM `member` WHERE `member_sid` = 1";
+    $stmtHL = $pdo->query($getPoints);
+    $getP = $stmtHL->fetchAll();
     ?>
+
+    
 
 <?php include __DIR__ . '/parts/movwe_head.php' ?>
     
@@ -163,16 +170,18 @@
                             ?>
                         </div>
                         <div class="account-line"></div>
-                        <div class="account-myMovie">我的片單：300部影片</div>
-                        <div class="account-myPost">我的貼文：300篇貼文</div>
+                        <div class="account-myMovie">我的片單：5部影片</div>
+                        <div class="account-myPost">我的貼文：2篇貼文</div>
                         <div class="account-right">
-                            <div class="account-myPoint"> <span>點數：</span> 
-                                <div class="account-myPoint-logo">
-                                    <img src="./img/other/coin.svg" alt="">
-                                </div>
-                                3400點
-                            </div>
-                            <a href="#"><button class="account-pointExchange">兌換專區</button></a>                        
+                            <?php foreach ($getP as $Pinfo) : ?>
+                                    <div class="account-myPoint"> <span>點數：</span> 
+                                        <div class="account-myPoint-logo">
+                                            <img src="./img/other/coin.svg" alt="">
+                                        </div>
+                                        <?= $Pinfo['member_points'] ?>點
+                                    </div>
+                            <?php endforeach; ?>
+                            <a href="point_coupon_exchange.php"><button class="account-pointExchange">兌換專區</button></a>                        
                         </div>
 
                         

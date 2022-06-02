@@ -24,6 +24,11 @@
     $getHistoryList = "SELECT * FROM `video` WHERE 1 ORDER BY RAND() LIMIT 10";
     $stmtHL = $pdo->query($getHistoryList);
     $HLrow = $stmtHL->fetchAll();
+
+    // 拿會員點數欄位
+    $getPoints = "SELECT * FROM `member` WHERE `member_sid` = 1";
+    $stmtHL = $pdo->query($getPoints);
+    $getP = $stmtHL->fetchAll();
     ?>
     
     <?php include __DIR__ . '/parts/movwe_head.php' ?>
@@ -168,16 +173,18 @@
                             翔子學妹看日劇，只分享不劇透 <br> 日劇分享、戀愛實境秀、電影、動漫<br> 日劇（播出完畢）做分享<br> 每週不定期更新，和大家分享我喜歡的作品
                             </div>
                             <div class="account-line"></div>
-                            <div class="account-myMovie">我的片單：300部影片</div>
-                            <div class="account-myPost">我的貼文：300篇貼文</div>
+                            <div class="account-myMovie">我的片單：6部影片</div>
+                            <div class="account-myPost">我的貼文：2篇貼文</div>
                             <div class="account-right">
-                                <div class="account-myPoint"> <span>點數：</span> 
-                                    <div class="account-myPoint-logo">
-                                        <img src="./img/other/coin.svg" alt="">
+                                <?php foreach ($getP as $Pinfo) : ?>
+                                    <div class="account-myPoint"> <span>點數：</span> 
+                                        <div class="account-myPoint-logo">
+                                            <img src="./img/other/coin.svg" alt="">
+                                        </div>
+                                        <?= $Pinfo['member_points'] ?>點
                                     </div>
-                                    3400點
-                                </div>
-                                <a href="#"><button class="account-pointExchange">兌換專區</button></a>                        
+                                <?php endforeach; ?>
+                                <a href="point_coupon_exchange.php"><button class="account-pointExchange">兌換專區</button></a>                        
                             </div>
 
                             
