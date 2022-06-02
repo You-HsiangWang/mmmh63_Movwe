@@ -1,0 +1,96 @@
+@media screen and (min-width: 750px) {
+    .bubbles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* overflow: hidden; */
+        /* outline: 1px red solid; */
+        
+    }
+
+    .bubbles span {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        background-color: rgb(16, 255, 163,.7);
+        margin: 0 4px;
+        
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px rgba(106, 255, 198, .3),
+            0 0 10px rgba(16, 255, 163,.5),
+            0 0 20px rgba(16, 255, 163,.5);
+        animation: animate 5s linear infinite;
+        animation-duration: calc(600s / var(--i));
+        /* animation-delay: calc(30s/var(--i)); */
+        transform: translateY(0vh) scale(0);
+    }
+
+    .bubbles span:nth-child(even) {
+        background-color: rgb(255, 199, 85.7);
+        box-shadow: 0 0 0 5px rgb(255, 199, 85, .3),
+            0 0 10px rgba(255, 199, 85,.5),
+            0 0 20px rgba(255, 199, 85,.5);
+    }
+
+    @keyframes animate {
+        0% {
+            transform: translateY(0vh) scale(0);
+        }
+
+        100% {
+            transform: translateY(250vh) scale(1);
+        }
+
+    }
+
+
+    .bubbles2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* overflow: hidden; */
+        /* outline: 1px red solid; */
+        
+    }
+
+    .bubbles2 span {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        background-color: rgb(16, 255, 163,.7);
+        margin: 0 4px;
+        
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px rgba(106, 255, 198, .3),
+            0 0 10px rgba(16, 255, 163,.5),
+            0 0 20px rgba(16, 255, 163,.5);
+        animation: animate2 5s linear infinite;
+        animation-duration: calc(600s / var(--i));
+        animation-delay: calc(200s/var(--i));
+        transform: translateY(0vh) scale(0);
+    }
+
+    .bubbles2 span:nth-child(even) {
+        background-color: rgb(255, 199, 85.7);
+        box-shadow: 0 0 0 5px rgb(255, 199, 85, .3),
+            0 0 10px rgba(255, 199, 85,.5),
+            0 0 20px rgba(255, 199, 85,.5);
+    }
+
+    @keyframes animate2 {
+        0% {
+            transform: translateY(0vh) scale(0);
+        }
+
+        100% {
+            transform: translateY(250vh) scale(1);
+        }
+
+    }
+}

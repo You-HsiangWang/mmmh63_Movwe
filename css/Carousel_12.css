@@ -200,7 +200,7 @@ color:rgb(16, 255, 162) ;
 .image__card__12:hover .carousel__images__12{
     z-index: 99;
     transform: scale(1.05) translateY(-5%);
-    filter: brightness(120%);
+    /* filter: brightness(120%); */
     /* outline: solid rgb(16, 255, 162); */
     /* border: 2px solid rgb(16, 255, 162); */
     /* border: 5px solid wheat; */
@@ -208,25 +208,26 @@ color:rgb(16, 255, 162) ;
 
 
 .image__card__12:hover .Product__id{
-    transform: translateX(65%);
+    /* transform: translateX(65%); */
 
     /* border: 5px solid wheat; */
 }
 
 .image__card__12:hover .Shop__card__icon__box{
-    transform: translateX(455%);
+    /* transform: translateX(455%); */
 
     /* border: 5px solid wheat; */
 }
 
 .image__card__12:hover .Product__id{
-    opacity: 0;
-
+    /* opacity: 0; */
+    /* transform: translateX(100px); */
+    filter: brightness(130%);
     /* border: 5px solid wheat; */
 }
 
 .image__card__12:hover .movie__icon__box__12{
-transform: translateX(85%);
+/* transform: translateX(115px); */
     filter: brightness(130%);
 
 }
