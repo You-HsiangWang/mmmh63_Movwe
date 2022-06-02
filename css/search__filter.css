@@ -17,7 +17,7 @@
 .filter__btn{
 margin-right: 12px;
 }
-.big__search{
+.big__search{    
     margin: 0 auto;
     width: 40%;
     padding: 20px 0;
@@ -49,6 +49,22 @@ font-size: 20px;
 color:rgb(16, 255, 162);
 text-align: center;
 }
+
+.search__final{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 10px 0 ;
+}
+
+.search__point{
+    color: goldenrod;
+    font-size: 20px;
+}
+
+
 
 
 

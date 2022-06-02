@@ -223,18 +223,39 @@ const switchIQiyi_10 = document.querySelector('.switch__iQiyi_10')
 
 
 
-// switchIQiyi.style.display = ('block');
-// switchIQiyi_2.style.display = ('block');
-// switchIQiyi_3.style.display = ('block');
-// switchIQiyi_4.style.display = ('block');
-// switchIQiyi_5.style.display = ('block');
-// switchIQiyi_6.style.display = ('block');
-// switchIQiyi_7.style.display = ('block');
-// switchIQiyi_8.style.display = ('block');
-// switchIQiyi_9.style.display = ('block');
-// switchIQiyi_10.style.display = ('block');
+switchIQiyi.style.display = ('block');
+switchIQiyi_2.style.display = ('block');
+switchIQiyi_3.style.display = ('block');
+switchIQiyi_4.style.display = ('block');
+switchIQiyi_5.style.display = ('block');
+switchIQiyi_6.style.display = ('block');
+switchIQiyi_7.style.display = ('block');
+switchIQiyi_8.style.display = ('block');
+switchIQiyi_9.style.display = ('block');
+switchIQiyi_10.style.display = ('block');
+
+// switchIQiyi.style.display = ('none');
+// switchIQiyi_2.style.display = ('none');
+// switchIQiyi_3.style.display = ('none');
+// switchIQiyi_4.style.display = ('none');
+// switchIQiyi_5.style.display = ('none');
+// switchIQiyi_6.style.display = ('none');
+// switchIQiyi_7.style.display = ('none');
+// switchIQiyi_8.style.display = ('none');
+// switchIQiyi_9.style.display = ('none');
+// switchIQiyi_10.style.display = ('none');
+
+singlePageIQiYi.style.borderBottom = '1px solid rgb(16, 255, 162)'
+singlePageIQiYi.style.color = 'rgb(16, 255, 162)'
 
 singlePageIQiYi.addEventListener('click',()=>{
+
+    singlePageIQiYi.style.borderBottom = '1px solid rgb(16, 255, 162)'
+    singlePageIQiYi.style.color = 'rgb(16, 255, 162)'
+
+    singlePageNetflix.style.borderBottom = '0px solid rgba(16, 255, 163, 0)'
+    singlePageNetflix.style.color = 'white'
+
 
     switchIQiyi.style.display = ('block');
     switchIQiyi_2.style.display = ('block');
@@ -260,19 +281,27 @@ singlePageIQiYi.addEventListener('click',()=>{
 
 })
 
-switchNetflex.style.display = ('block')
-switchNetflex_2.style.display = ('block')
-switchNetflex_3.style.display = ('block')
-switchNetflex_4.style.display = ('block')
-switchNetflex_5.style.display = ('block')
-switchNetflex_6.style.display = ('block')
-switchNetflex_7.style.display = ('block')
-switchNetflex_8.style.display = ('block')
-switchNetflex_9.style.display = ('block')
-switchNetflex_10.style.display = ('block')
+switchNetflex.style.display = ('none')
+switchNetflex_2.style.display = ('none')
+switchNetflex_3.style.display = ('none')
+switchNetflex_4.style.display = ('none')
+switchNetflex_5.style.display = ('none')
+switchNetflex_6.style.display = ('none')
+switchNetflex_7.style.display = ('none')
+switchNetflex_8.style.display = ('none')
+switchNetflex_9.style.display = ('none')
+switchNetflex_10.style.display = ('none')
 
 
 singlePageNetflix.addEventListener('click',()=>{
+
+
+    singlePageNetflix.style.borderBottom = '1px solid rgb(16, 255, 162)'
+    singlePageNetflix.style.color = 'rgb(16, 255, 162)'
+
+    singlePageIQiYi.style.borderBottom = '0px solid rgba(16, 255, 163, 0)'
+    singlePageIQiYi.style.color = 'white'
+
 
     switchIQiyi.style.display = ('none');
     switchIQiyi_2.style.display = ('none');

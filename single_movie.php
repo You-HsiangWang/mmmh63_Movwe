@@ -15,6 +15,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
 <link rel="stylesheet" href="./css/Carousel_7.css">
 <link rel="stylesheet" href="./css/Carousel_8.css">
 <link rel="stylesheet" href="./css/slider.css">
+<link rel="stylesheet" href="./css/lightbox.css" type="text/css" media="screen" />
 <!-- <link rel="stylesheet" href="./css/footer.css"> -->
 <style>
     *{
@@ -4336,7 +4337,6 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
 
 
     <!-- <script src="./js/jquery-3.6.0.js"></script> -->
-    <script src="./js/jquery-1.7.2.min.js"></script>
     <script src="./js/Nav.js"></script>
     <script src="./js/Carousel_1.js"></script>
     <script src="./js/Carousel_6.js"></script>
@@ -4344,8 +4344,9 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
     <script src="./js/Carousel_8.js"></script>
     <script src="./js/Carousel_9.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/jquery-1.7.2.min.js"></script>
     <script src="./js/lightbox.js"></script>
-    <script src="./js/jquery-ui-1.8.18.custom.min.js"></script>
+    <!-- <script src="./js/jquery-ui-1.8.18.custom.min.js"></script> -->
     <script>
         var slider = new Slider("slider", {
             play_icon: '<i class="fas fa-play"></i>',

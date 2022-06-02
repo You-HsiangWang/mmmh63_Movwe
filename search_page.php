@@ -43,9 +43,16 @@ $title = 'MOVWE-搜尋結果';
     /* 文章 */
 
     .card-article {
+
+        transition: .2s;
         width: 100%;
         padding-bottom: 10px;
         border-bottom: 1px solid #ffffff80;
+    }
+
+    .card-article:hover{
+
+        transform: scale(1.01);
     }
 
     .card-article-left {
@@ -194,7 +201,10 @@ $title = 'MOVWE-搜尋結果';
                 <div class="searchpage__filter">
                     <div class="big__search">
                             <input id="myInput" placeholder="輸入片名">
-                    </div>
+                        </div>
+                        <div class="search__final">
+                            <p>根據您輸入的關鍵字“<span class="search__point">鬼怪</span>”, 為您找到以下搜索結果</p>
+                        </div>
                     <div class="searchpage__filter__top">
                         <div class="filter__title">
                             <p>類別 /</p>

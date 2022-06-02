@@ -34,7 +34,7 @@
         .magic__text {
             font-family: 'Cairo', sans-serif;
             font-family: 'Caveat', cursive;
-
+            text-shadow: 0 0 8px goldenrod;
         }
 
         .Text__gold {
@@ -163,6 +163,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            text-shadow: 0 0 8px goldenrod;
         }
 
         .Wish__text {
@@ -723,8 +724,8 @@
         .Grangon-haad {
             width: 20%;
             position: absolute;
-            bottom: 6%;
-            right: 8%;
+            bottom: 8%;
+            right: 10%;
             transition: .3s;
         }
 
@@ -947,7 +948,6 @@
             transition: .2s;
             cursor: pointer;
 
-
         }
 
         .Enter_4:hover {
@@ -972,7 +972,7 @@
             transform-origin: 40%, 40%;
         }
 
-        
+
         .Page__4__genie {
             width: 100%;
             transition: 2s;
@@ -1024,6 +1024,7 @@
             box-shadow: 0 0 10px rgb(16, 255, 162);
             transform: translateY(-10%);
             cursor: pointer;
+
         }
 
         .Wish__input {
@@ -1103,6 +1104,7 @@
             align-items: center;
             transition: 1s;
             transition-delay: 2.8s;
+
         }
 
         .Thanks__card__page3 {
@@ -1181,16 +1183,18 @@
         @keyframes Color {
             0% {
                 filter: brightness(70%);
-
+                transform: scale(1);
             }
 
             50% {
                 filter: brightness(150%);
+                transform: scale(1.05);
 
             }
 
             100% {
                 filter: brightness(70%);
+                transform: scale(1);
 
             }
         }
@@ -1203,6 +1207,19 @@
         }
 
 
+        .wish__logo__box {
+            width: 10%;
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            z-index: 999;
+
+        }
+
+        .wish__logo__box img {
+            width: 100%;
+
+        }
 
 
         /* ------------------------------------------- */
@@ -1211,6 +1228,11 @@
     <body>
         <div class="Big__container">
             <div class="Page01__container">
+                <a href="./index_home.php">
+                    <div class="wish__logo__box">
+                        <img src="./img/logo/logo_word.png" alt="">
+                    </div>
+                </a>
                 <div class="video_box">
                     <video class="Stars" src="./img/video_dino/lightning.mov" autoplay loop muted></video>
                 </div>
@@ -1224,9 +1246,11 @@
                     <img class="Carpet Carpet-animation" src="./img/wish_img/Carpet.png" alt="">
                 </div>
                 <div class="Wish__text__box">
-                    <p class="Wish__text Color_anmation magic__text">
-                        Find out the <span class="Text__gold">lamp</span> and make a wish .
-                    </p>
+                    <div class="Wish__text magic__text">
+                        <p class="Color_anmation">
+                            Find out the <span class="Text__gold">lamp</span> and make a wish .
+                        </p>
+                    </div>
                     <button class="Enter">
                         Continue
                     </button>
@@ -1258,8 +1282,7 @@
                     </div>
                 </div>
             </div>
-            <!-- ------------------------------------- -->
-
+            <!-- --------------------------------------->
             <div class="Page__3__conrainer">
                 <div class="Page__3__insidecoiner">
                     <img class="Page__3__bg" src="./img/wish_img/Page_3.png" alt="">
@@ -1454,7 +1477,7 @@
             continutBtn_4.addEventListener('click', () => {
                 Page4Lamp.style.filter = 'brightness(1000%)'
                 // Page4Lamp.style.transitionDelay = '1s'
-                Page4LampBox.style.animationDuration = '.3s'
+                Page4LampBox.style.animationDuration = '.1s'
                 Page4LampBox.style.opacity = '0'
                 Page4LampBox.style.width = '0%'
                 Page4Lamp.style.transform = 'rotate(1080deg)'
@@ -1484,7 +1507,6 @@
             let cheeseBox = document.querySelector('.cheese__box')
             let jerryHaad = document.querySelector('.jerry-haad')
             let tomHaad = document.querySelector('.tom-haad')
-
 
             jerryHaad.style.transform = 'translateX(110%)'
             tomHaad.style.transform = 'translateX(-110%)'
@@ -1519,12 +1541,12 @@
 
             GrangonHaad.style.opacity = '0'
             gbBox.addEventListener('mouseenter', () => {
-                GrangonHaad.style.opacity = '.7'
+                GrangonHaad.style.opacity = '.9'
             })
+
             gbBox.addEventListener('click', () => {
                 GrangonHaad.style.opacity = '0'
                 gbBox.style.width = "0%"
-
             })
 
             // -------------------------------------------------------
@@ -1589,7 +1611,6 @@
                 ThanksCardPage3.style.transform = 'translate(-50%,-50%) scale(0)'
 
             })
-
         </script>
     </body>
 
