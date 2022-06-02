@@ -3,9 +3,12 @@
     /* outline: 1px red solid; */
 }
 
-/* .outline {
-    outline: 3px rgb(0, 255, 0) solid;
-} */
+.hidden{
+    /* box-sizing: border-box; */
+    /* outline: 10px red solid; */
+    position: relative;
+    overflow: hidden;
+}
 
 p {
     color: #fff;
@@ -114,6 +117,7 @@ h3 {
 .marvel__btn {
     width: 49%;
     border-radius: 5%;
+    z-index: 5;
 }
 
 .main__btn:hover,
@@ -186,23 +190,18 @@ h3 {
     
     @keyframes projucts{
         0%{
-            /* filter: brightness(100%); */
             filter:drop-shadow(0px 0px 0px rgba(16, 255, 162,1));
         }
     
         50%{
-            /* filter: brightness(500%); */
-            filter:drop-shadow(0px 0px 5px rgba(16, 255, 162,1));
+            filter:drop-shadow(0px 0px 8px rgba(16, 255, 162,1));
         }
     
         100%{
-            /* filter: brightness(100%); */
             filter:drop-shadow(0px 0px 0px rgba(16, 255, 162,1));
         }
     }
 
-    /* products_filter */
-    /* products_filter */
     .products_filter {
         display: flex;
         flex-wrap: wrap;

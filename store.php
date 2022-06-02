@@ -10,8 +10,11 @@ $title = 'MOVWE-商城';
 <!-- <link href="./fontawesome-free-6.0.0-web/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="./css/Nav.css">
 <link rel="stylesheet" href="./css/BS.css"> -->
+<link rel="stylesheet" href="./css/bubbles_bg.css">
 <link rel="stylesheet" href="./css/index_store.css">
 <link rel="stylesheet" href="./css/Carousel_12.css">
+
+
 
 <!-- <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,300&family=Noto+Serif+TC:wght@200;300;500;700;900&display=swap" rel="stylesheet"> -->
 
@@ -27,10 +30,11 @@ $title = 'MOVWE-商城';
         <!----------nav_left-------------->
 
         <!--------------------------------------------------------------------------->
-        <div class="container outline">
+        <div class="container hidden">
 
             <!--banner__container----------------->
             <!-- 電商banner -->
+
             <div class="banner__container ">
                 <!-- 手機圖 -->
                 <img class="mall_banner_s" src="./img/banner/mall_banner_s.jpg" alt="">
@@ -39,6 +43,194 @@ $title = 'MOVWE-商城';
                 <!-- 桌機圖 -->
                 <img class="mall_banner" src="./img/banner/mall_banner.jpg" alt="">
                 <!-- <img class="mall_banner" src="./imgs/forum_banner03.jpg" alt=""> -->
+            </div>
+
+            <div class="bubbles">
+                <span style="--i:11;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:30;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:29;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:27;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:29;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:27;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:30;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:21;"></span>
+                <!-- <span style="--i:11;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:22;"></span> -->
+                <!-- <span style="--i:12;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:30;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:27;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:21;"></span> -->
+            </div>
+
+            <div class="bubbles2 ">
+                <span style="--i:11;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:30;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:29;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:27;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:29;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:27;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:30;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:21;"></span>
+                <!-- <span style="--i:11;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:22;"></span> -->
+                <!-- <span style="--i:12;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:30;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:27;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:21;"></span> -->
             </div>
 
             <!--text__container------內容放這邊------------->
@@ -106,7 +298,7 @@ $title = 'MOVWE-商城';
                                 <div class="image__card__12">
                                     <div class="carousel__images__box__12">
                                         <a href="./product.php"><img class="carousel__images__12" src="./img/mall/gst/gst11.jpg" alt=""></a>
-                    
+
                                         <div class="image__card__text__12">
                                             <div class="movie__name__12">
                                                 <p class="Product__id">
@@ -1400,10 +1592,12 @@ $title = 'MOVWE-商城';
                         </div>
                     </div>
 
+
                 </div>
 
 
             </div>
+
 
             <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
