@@ -194,7 +194,7 @@ $title = 'MOVWE-帳戶登入';
                                         </p>
                                     </div>
                                     <div class="register_email_alert login_d_none">
-                                        <p>電子郵件地址可以使用。</p>
+                                        <a>電子郵件地址可以使用。</a>
                                     </div>
                                 </div>
                             </section>
@@ -275,6 +275,25 @@ $title = 'MOVWE-帳戶登入';
                                 <img src="./img/logo/facebook_block.svg" alt="">
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="register_form_col login_d_none">
+                    <div class="register_form_register_success">
+                        <!-- 抓資料庫的頭像 -->
+                        <div class="register_form_title_usericon">
+                            <div class="register_form_title_usericon_frame" style="background-image: url(./img/banner/mall_banner.jpg);">
+                            </div>
+                            <h2 class="register_form_title"><span>Eric</span><br>,歡迎加入！</h2>
+                        </div>
+                        <div class="register_form_divideline">
+                            <div class="register_form_divideline_full"></div>
+                        </div>
+                        <div class="register_form_toindex">
+                            <p><a href="index_home.php">先去首頁逛逛！</a></p>
+                        </div>
+                        <button onclick="location.href = 'member_login.php'">
+                            馬上登入
+                        </button>
                     </div>
                 </div>
             </div>
@@ -448,16 +467,27 @@ $title = 'MOVWE-帳戶登入';
                 }, 'json');
             }
         };
-        // 註冊emailinput onchange時就執行的 用async 把非同步變成同步
+
+        // ---------------------------------------------
+        // 宣告判斷註冊資料是否正確
         let ispassm = false;
         let ispassp = false;
         let ispasspc = false;
         let ispassi = false;
+        // 抖動function
+        function shakeit() {
+            $('.register_form_col:nth-child(1)').css('animation-name', 'formshake');
+            $('.register_form_col:nth-child(1)').one('animationend', () => {
+                $('.register_form_col:nth-child(1)').css('animation-name', 'none');
+            });
+        };
+        // 註冊emailinput onchange時就執行的 用async 把非同步變成同步
         async function checkRegEmail() {
             ispassm = false;
             if (!$('#register_form_email').val().trim()) {
                 // let ispass = false;
                 console.log('草枝擺沒填email啦');
+                shakeit();
                 $('.register_email_alert:nth-of-type(2)').removeClass('login_d_none');
                 $('.register_email_alert:nth-of-type(3)').addClass('login_d_none');
                 $('.register_email_alert:nth-of-type(4)').addClass('login_d_none');
@@ -468,6 +498,7 @@ $title = 'MOVWE-帳戶登入';
                 return;
             } else if (!IsEmail($('#register_form_email').val())) {
                 console.log('email格式不符');
+                shakeit();
                 $('.register_email_alert:nth-of-type(3)').removeClass('login_d_none');
                 $('.register_email_alert:nth-of-type(2)').addClass('login_d_none');
                 $('.register_email_alert:nth-of-type(4)').addClass('login_d_none');
@@ -486,6 +517,7 @@ $title = 'MOVWE-帳戶登入';
                 await $.post('api_checkemail.php', passobj, function(data) {
                     if (data == 'false') {
                         console.log('email重複摟');
+                        shakeit();
                         $('.register_email_alert:nth-of-type(4)').removeClass('login_d_none');
                         $('.register_email_alert:nth-of-type(3)').addClass('login_d_none');
                         $('.register_email_alert:nth-of-type(2)').addClass('login_d_none');
@@ -519,6 +551,7 @@ $title = 'MOVWE-帳戶登入';
             // 沒填密碼
             if (!$('#register_form_psd').val().trim()) {
                 console.log('沒填密碼');
+                shakeit();
                 $('.register_password_alert:nth-of-type(2)').removeClass('login_d_none');
                 $('.register_password_alert:nth-of-type(3)').addClass('login_d_none');
                 $('.register_password_status i:nth-child(3)').removeClass('login_d_none');
@@ -527,6 +560,7 @@ $title = 'MOVWE-帳戶登入';
                 return;
             } else if (!IsPassword($('#register_form_psd').val())) {
                 console.log('格式不符');
+                shakeit();
                 $('.register_password_alert:nth-of-type(3)').removeClass('login_d_none');
                 $('.register_password_alert:nth-of-type(2)').addClass('login_d_none');
                 $('.register_password_status i:nth-child(3)').removeClass('login_d_none');
@@ -552,6 +586,7 @@ $title = 'MOVWE-帳戶登入';
             // 沒填密碼
             if (!$('#register_form_psdconfirm').val().trim()) {
                 console.log('沒填密碼確認');
+                shakeit();
                 $('.register_password_confirm_alert:nth-of-type(3)').removeClass('login_d_none');
                 $('.register_password_confirm_alert:nth-of-type(2)').addClass('login_d_none');
                 $('.register_password_confirm_status i:nth-child(3)').removeClass('login_d_none');
@@ -560,6 +595,7 @@ $title = 'MOVWE-帳戶登入';
                 return;
             } else if ($('#register_form_psdconfirm').val().trim() != $('#register_form_psd').val().trim()) {
                 console.log('兩次輸入密碼不同');
+                shakeit();
                 $('.register_password_confirm_alert:nth-of-type(2)').removeClass('login_d_none');
                 $('.register_password_confirm_alert:nth-of-type(3)').addClass('login_d_none');
                 $('.register_password_confirm_status i:nth-child(3)').removeClass('login_d_none');
@@ -591,6 +627,7 @@ $title = 'MOVWE-帳戶登入';
                 await $.post('api_checkinvite.php', passobj, function(data) {
                     if (data == 'false') {
                         console.log('無此序號');
+                        shakeit();
                         $('.register_invite_alert:nth-of-type(2)').removeClass('login_d_none');
                         $('.register_invite_status i:nth-child(1)').removeClass('login_d_none');
                         $('.register_invite_status i:nth-child(2)').addClass('login_d_none');
@@ -651,7 +688,7 @@ $title = 'MOVWE-帳戶登入';
                 registerapi(rmail, rpsd, rinvt);
             };
         };
-
+        // 送資料到api輸入資料庫
         async function registerapi(rm, rp, ri) {
             const regobj = {
                 newmail: rm,
@@ -659,10 +696,45 @@ $title = 'MOVWE-帳戶登入';
                 newinvite: ri
             };
             await $.post('api_register_db.php', regobj, function(data) {
-                if(data.success == 'true'){
+                if (data.success == 'true') {
                     console.log('可以去下一頁');
+                    registerSuccess(data.success,data);
                 };
             }, 'json')
+        };
+        // 輸入成功之後 表單復原 切換畫面
+        function registerSuccess(succ, data) {
+            if (succ == 'true') {
+                setTimeout(function() {
+                            $('.register_form_register_success .register_form_title_usericon_frame').css({
+                                'background-image': `url(./img/member/${data.avatar})`
+                            });
+                            $('.register_form_title_usericon .register_form_title span').text(`${data.name}`);
+                            $('.register_form_col:nth-child(1)').css({
+                                'transition': '.5s',
+                                'transform': 'translateX(-100%)',
+                                'opacity': '0'
+                            });
+                            $('.register_form_col:nth-child(2)').css({
+                                'transition': '.5s',
+                                'transform': 'translateX(100%)',
+                                'opacity': '0'
+                            });
+                            setTimeout(function() {
+                                $('.register_form_col:nth-child(1)').addClass('login_d_none');
+                                $('.register_form_col:nth-child(2)').removeClass('login_d_none');
+                                setTimeout(function() {
+                                    $('.register_form_col:nth-child(2)').css({
+                                        'transition': '.5s',
+                                        'transform': 'translateX(0%)',
+                                        'opacity': '1',
+                                    });
+                                }, 200)
+                            }, 500);
+                        }, 300)
+            } else {
+                return;
+            };
         };
     </script>
 

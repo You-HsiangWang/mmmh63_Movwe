@@ -31,7 +31,7 @@ if (empty($mbgetcpcode)) {
     $output['code'] = 'mbcp403'; //靠code判斷哪邊結束
     echo json_encode($output, JSON_UNESCAPED_UNICODE);
     exit;
-}else if(empty($mbgetrestpoints)){
+}else if(empty($mbgetrestpoints) && $mbgetrestpoints != 0){
     $output['error'] = '沒有拿到剩餘點數';
     $output['code'] = 'mbcp404'; //靠code判斷哪邊結束
     echo json_encode($output, JSON_UNESCAPED_UNICODE);

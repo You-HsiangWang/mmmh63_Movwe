@@ -41,6 +41,26 @@
         $('.member_password_status i:nth-child(1)').css('display', 'block');
         $('#login_form_password_first_password').attr('type', 'password');
     });
+    $('.register_password_status i:nth-child(1)').on('click', function () {
+        $('.register_password_status i:nth-child(1)').css('display', 'none');
+        $('.register_password_status i:nth-child(2)').css('display', 'block');
+        $('#register_form_psd').attr('type', 'text');
+    });
+    $('.register_password_status i:nth-child(2)').on('click', function () {
+        $('.register_password_status i:nth-child(2)').css('display', 'none');
+        $('.register_password_status i:nth-child(1)').css('display', 'block');
+        $('#register_form_psd').attr('type', 'password');
+    });
+    $('.register_password_confirm_status i:nth-child(1)').on('click', function () {
+        $('.register_password_confirm_status i:nth-child(1)').css('display', 'none');
+        $('.register_password_confirm_status i:nth-child(2)').css('display', 'block');
+        $('#register_form_psdconfirm').attr('type', 'text');
+    });
+    $('.register_password_confirm_status i:nth-child(2)').on('click', function () {
+        $('.register_password_confirm_status i:nth-child(2)').css('display', 'none');
+        $('.register_password_confirm_status i:nth-child(1)').css('display', 'block');
+        $('#register_form_psdconfirm').attr('type', 'password');
+    });
 
     $('.login_form_email_first .login_form_title_discrib a').on('click', function () {
         $('.login_form_container').css({
