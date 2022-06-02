@@ -346,15 +346,10 @@ a.hashtag:hover {
 
 /* 商城 */
 
-.mall_product {
+/* .w_485 {
     width: 48.5%;
-}
+} */
 
-.container_product_details {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
 
 .row_products {
     display: flex;
@@ -363,28 +358,77 @@ a.hashtag:hover {
     flex-wrap: wrap;
 }
 
-.mall_product p {
-    color: #FFFFFD;
+
+.carousel__images__12 {
+    transition: .3s;
+    width: 100%;
+    border-radius: 10px;
+    /* height: 500px; */
 }
 
-.mall_product .price {
-    color: #FEB73A;
+.image__card__12 {
+    margin-top: 40px;
+    /* overflow: hidden; */
+    width: 48%;
+    transition: .5s;
+    padding: 0 2px;
+    border-radius: 10px;
+    /* margin-right: 10px; */
 }
 
-.mall_product p span {
-    color: rgb(150, 150, 150);
+.image__card__text__12{
+    transition: .3s;
 }
 
-.product_text {
+
+.image__card__12:hover .carousel__images__12 {
+    z-index: 99;
+    transform: scale(1.05) translateY(-5%);
+
+}
+
+.image__card__12:hover .image__card__text__12 {
+    /* opacity: 0; */
+    /* transform: translateX(100px); */
+    transform: scale(1.1)translateX(10px);
+    filter: brightness(130%);
+    /* border: 5px solid wheat; */
+}
+.image__card__12:hover .product__typ-1 {
+    opacity: 0;
+}
+
+.movie__icon__box__12 {
+    /* background-color: #fff; */
+    transition: .3s;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    /* height: 24px; */
 }
 
-.product_text .tag {
-    color: rgba(255, 255, 255, 0.5);
-    line-height: 20px;
+
+.image__card__12:hover .ntd {
+    color: rgb(16, 255, 162);
+    /* font-size: 18px; */
+
 }
 
+.Product__id {
+    transition: .3s;
+}
+
+.Price {
+    transition: .3s;
+    font-size: 20px;
+    color: goldenrod;
+    margin-right: 3px;
+}
+
+.ntd {
+    transition: .3s;
+    font-size: 14px;
+    color: white;
+}
 
 /* 頁數 */
 
