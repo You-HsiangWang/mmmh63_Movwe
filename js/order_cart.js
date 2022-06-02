@@ -58,7 +58,7 @@ $('.button-number-plus').click(function () {
 
 var q = parseInt(document.getElementById('quantity').value);
 
-var singlePrice = '840';
+var singlePrice = '899';
 var subTotalPrice = `<h4>${singlePrice * q}</h4>`;
 document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
 
@@ -113,12 +113,14 @@ function AddDiscount() {
 function DatatoDelivery() {
     const pp = document.getElementById('discountQQ').innerText;
     const ss = document.getElementById('totalPayment').innerText;
+    const vv = document.querySelector('input[name="discount"]:checked').value;
 
-    console.log( pp, ss);
+    console.log( pp, ss, vv);
 
     const gg = {
         'ProductDiscount': pp,
         'ProductTotalPrice': ss,
+        'DiscountValue': vv,
     };
 
     console.log(gg);

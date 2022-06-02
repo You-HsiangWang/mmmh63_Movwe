@@ -109,10 +109,14 @@ fieldset input[type="radio"]:checked::before {
 }
 
 .buy {
-    width: 100%;
+    width: 120%;
     height: 40px;
     background-color: #333;
     border: none;
+}
+
+.buy:hover {
+    transform: scale(1.05);
 }
 
 /* 優惠券與規格說明 */
