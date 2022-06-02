@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： localhost
--- 產生時間： 2022 年 05 月 23 日 10:35
+-- 產生時間： 2022 年 06 月 02 日 03:59
 -- 伺服器版本： 10.4.21-MariaDB
 -- PHP 版本： 8.0.17
 
@@ -41,20 +41,20 @@ CREATE TABLE `coupon` (
 --
 
 INSERT INTO `coupon` (`coupon_sid`, `coupon_id`, `coupon_type`, `coupon_brand`, `coupon_brand_img`, `coupon_name`, `coupon_picture`, `coupon_price`, `coupon_total`, `coupon_rest`, `coupon_code`, `coupon_notice`) VALUES
-(1, 1, 1, 'Netflix優惠券', 'netflix_s.svg', 'Netflix 7天試用兌換券', 'discount_18.svg', 4000, 20, 15, 'MHA33RTY679', '<p>兌換後可將序號於註冊netflix帳號時使用，可獲得7天的免費試用期。</p><p>兌換後不可退貨。<br>一個帳號僅能兌換一次。<br>限量優惠，換完為止。</p>'),
-(2, 2, 1, 'IQIYI優惠券', 'iqiyi_s.svg', '愛奇藝 4天試用兌換券', 'discount_16.svg', 3500, 20, 10, 'HAM231T7K7Q', '<p>兌換後可將序號於註冊愛奇藝帳號時使用，可獲得4天的免費試用期。</p><p>兌換後不可退貨。<br>一個帳號僅能兌換一次。<br>限量優惠，換完為止。</p>'),
-(3, 3, 1, 'IQIYI優惠券', 'iqiyi_s.svg', '愛奇藝 7天試用兌換券', 'discount_15.svg', 4000, 20, 4, 'HVM927T2K7A', '<p>兌換後可將序號於註冊愛奇藝帳號時使用，可獲得7天的免費試用期。</p><p>兌換後不可退貨。<br>一個帳號僅能兌換一次。<br>限量優惠，換完為止。</p>'),
-(4, 4, 2, 'Friday影音優惠券', 'friday_s.svg', 'Friday影音 免費租片兌換券', 'discount_14.svg', 1000, NULL, NULL, 'GRP922T2K7A', '<p>兌換後使用序號，可換取friday影音免費租片乙部。</p><p>兌換後不可退貨。<br>本平台有權修改使用規則。'),
-(5, 5, 2, 'IQIYI影音優惠券', 'iqiyi_s.svg', 'IQIYI影音 免費租片兌換券', 'discount_12.svg', 1200, NULL, NULL, 'ARP922T2K7A', '<p>兌換後使用序號，可換取iqiyi影音免費租片乙部。</p><p>兌換後不可退貨。<br>本平台有權修改使用規則。'),
-(6, 6, 2, 'IQIYI影音優惠券', 'iqiyi_s.svg', 'IQIYI影音 體驗2hr兌換券', 'discount_12.svg', 1500, NULL, NULL, 'BRP922T2K7A', '<p>兌換後使用序號，可換取iqiyi免費體驗2hr。</p><p>兌換後不可退貨。<br>本平台有權修改使用規則。'),
-(7, 7, 2, 'IQIYI影音優惠券', 'iqiyi_s.svg', 'IQIYI影音 體驗3hr兌換券', 'discount_12.svg', 2000, NULL, NULL, 'CRP922T2K7A', '<p>兌換後使用序號，可換取iqiyi免費體驗3hr。</p><p>兌換後不可退貨。<br>本平台有權修改使用規則。'),
-(8, 8, 2, 'Friday影音優惠券', 'friday_s.svg', 'Friday影音 體驗2hr兌換券', 'discount_14.svg', 1500, NULL, NULL, 'ZRP922T2K7A', '<p>兌換後使用序號，可換取friday影音免費體驗2hr。</p><p>兌換後不可退貨。<br>本平台有權修改使用規則。'),
-(9, 9, 2, 'Friday影音優惠券', 'friday_s.svg', 'Friday影音 體驗3hr兌換券', 'discount_14.svg', 2000, NULL, NULL, 'ZRP922T2K5A', '<p>兌換後使用序號，可換取friday影音免費體驗3hr。</p><p>兌換後不可退貨。<br>本平台有權修改使用規則。'),
-(10, 10, 3, '周邊商城折價券', NULL, '50元折價券', 'discount_11.svg', 2500, NULL, NULL, '1RP922T2K5A', '<p>兌換後使用序號，消費滿1000元即可折抵50元。</p><p>一筆訂單只能使用一張。<br>兌換後不可退貨。<br>本平台有權修改使用規則。'),
-(11, 11, 3, '周邊商城折價券', NULL, '100元折價券', 'discount_12.svg', 5000, NULL, NULL, '2RP922T2K5A', '<p>兌換後使用序號，消費滿1000元即可折抵100元。</p><p>一筆訂單只能使用一張。<br>兌換後不可退貨。<br>本平台有權修改使用規則。'),
-(12, 12, 3, '周邊商城折價券', NULL, '150元折價券', 'discount_13.svg', 7500, NULL, NULL, '3RP922T2K5A', '<p>兌換後使用序號，消費滿1000元即可折抵150元。</p><p>一筆訂單只能使用一張。<br>兌換後不可退貨。<br>本平台有權修改使用規則。'),
-(13, 13, 3, '周邊商城折價券', NULL, '200元折價券', 'discount_14.svg', 9900, NULL, NULL, '4RP922T2K5A', '<p>兌換後使用序號，消費滿1000元即可折抵200元。</p><p>一筆訂單只能使用一張。<br>兌換後不可退貨。<br>本平台有權修改使用規則。'),
-(14, 13, 3, '周邊商城折價券', NULL, '250元折價券', 'discount_15.svg', 12000, NULL, NULL, '5RP922T2K5A', '<p>兌換後使用序號，消費滿1000元即可折抵250元。</p><p>一筆訂單只能使用一張。<br>兌換後不可退貨。<br>本平台有權修改使用規則。');
+(1, 1, 1, 'Netflix優惠券', 'netflix_s.svg', 'Netflix 7天試用兌換券', 'discount_7days.png', 4000, 20, 15, 'MHA33RTY679', '<p>兌換後可將序號於註冊netflix帳號時使用，可獲得7天的免費試用期。</p><p>兌換後不可退貨。<br>一個帳號僅能兌換一次。<br>限量優惠，換完為止。</p>'),
+(2, 2, 1, 'IQIYI優惠券', 'iqiyi_s.svg', '愛奇藝 4天試用兌換券', 'discount_4days.png', 3500, 20, 10, 'HAM231T7K7Q', '<p>兌換後可將序號於註冊愛奇藝帳號時使用，可獲得4天的免費試用期。</p><p>兌換後不可退貨。<br>一個帳號僅能兌換一次。<br>限量優惠，換完為止。</p>'),
+(3, 3, 1, 'IQIYI優惠券', 'iqiyi_s.svg', '愛奇藝 7天試用兌換券', 'discount_7days.png', 4000, 20, 4, 'HVM927T2K7A', '<p>兌換後可將序號於註冊愛奇藝帳號時使用，可獲得7天的免費試用期。</p><p>兌換後不可退貨。<br>一個帳號僅能兌換一次。<br>限量優惠，換完為止。</p>'),
+(4, 4, 2, 'Friday影音優惠券', 'friday_s.svg', 'Friday影音 免費租片兌換券', 'discount_free.png', 1000, NULL, NULL, 'GRP922T2K7A', '<p>兌換後使用序號，可換取friday影音免費租片乙部。</p><p>兌換後不可退貨。<br>本平台有權修改使用規則。'),
+(5, 5, 2, 'IQIYI影音優惠券', 'iqiyi_s.svg', 'IQIYI影音 免費租片兌換券', 'discount_free.png', 1200, NULL, NULL, 'ARP922T2K7A', '<p>兌換後使用序號，可換取iqiyi影音免費租片乙部。</p><p>兌換後不可退貨。<br>本平台有權修改使用規則。'),
+(6, 6, 2, 'IQIYI影音優惠券', 'iqiyi_s.svg', 'IQIYI影音 體驗2hr兌換券', 'discount_2hr.png', 1500, NULL, NULL, 'BRP922T2K7A', '<p>兌換後使用序號，可換取iqiyi免費體驗2hr。</p><p>兌換後不可退貨。<br>本平台有權修改使用規則。'),
+(7, 7, 2, 'IQIYI影音優惠券', 'iqiyi_s.svg', 'IQIYI影音 體驗3hr兌換券', 'discount_3hr.png', 2000, NULL, NULL, 'CRP922T2K7A', '<p>兌換後使用序號，可換取iqiyi免費體驗3hr。</p><p>兌換後不可退貨。<br>本平台有權修改使用規則。'),
+(8, 8, 2, 'Friday影音優惠券', 'friday_s.svg', 'Friday影音 體驗2hr兌換券', 'discount_2hr.png', 1500, NULL, NULL, 'ZRP922T2K7A', '<p>兌換後使用序號，可換取friday影音免費體驗2hr。</p><p>兌換後不可退貨。<br>本平台有權修改使用規則。'),
+(9, 9, 2, 'Friday影音優惠券', 'friday_s.svg', 'Friday影音 體驗3hr兌換券', 'discount_3hr.png', 2000, NULL, NULL, 'ZRP922T2K5A', '<p>兌換後使用序號，可換取friday影音免費體驗3hr。</p><p>兌換後不可退貨。<br>本平台有權修改使用規則。'),
+(10, 10, 3, '周邊商城折價券', NULL, '50元折價券', 'discount_50.png', 2500, NULL, NULL, '1RP922T2K5A', '<p>兌換後使用序號，消費滿1000元即可折抵50元。</p><p>一筆訂單只能使用一張。<br>兌換後不可退貨。<br>本平台有權修改使用規則。'),
+(11, 11, 3, '周邊商城折價券', NULL, '100元折價券', 'discount_100.png', 5000, NULL, NULL, '2RP922T2K5A', '<p>兌換後使用序號，消費滿1000元即可折抵100元。</p><p>一筆訂單只能使用一張。<br>兌換後不可退貨。<br>本平台有權修改使用規則。'),
+(12, 12, 3, '周邊商城折價券', NULL, '150元折價券', 'discount_150.png', 7500, NULL, NULL, '3RP922T2K5A', '<p>兌換後使用序號，消費滿1000元即可折抵150元。</p><p>一筆訂單只能使用一張。<br>兌換後不可退貨。<br>本平台有權修改使用規則。'),
+(13, 13, 3, '周邊商城折價券', NULL, '200元折價券', 'discount_200.png', 9900, NULL, NULL, '4RP922T2K5A', '<p>兌換後使用序號，消費滿1000元即可折抵200元。</p><p>一筆訂單只能使用一張。<br>兌換後不可退貨。<br>本平台有權修改使用規則。'),
+(14, 13, 3, '周邊商城折價券', NULL, '250元折價券', 'discount_250.png', 12000, NULL, NULL, '5RP922T2K5A', '<p>兌換後使用序號，消費滿1000元即可折抵250元。</p><p>一筆訂單只能使用一張。<br>兌換後不可退貨。<br>本平台有權修改使用規則。');
 
 --
 -- 已傾印資料表的索引
