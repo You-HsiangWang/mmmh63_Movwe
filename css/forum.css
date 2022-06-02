@@ -16,6 +16,18 @@
     display: none;
 }
 
+.banner__m {
+    width: 100%;
+}
+
+.banner-img-wrap {
+    width: 100%;
+}
+
+.banner-img-wrap img {
+    width: 100%;
+}
+
 
 /* 最新與熱門篩選器 */
 
@@ -129,6 +141,12 @@ a.hashtag:hover {
     width: 65%;
 }
 
+/* 文章hover效果 */
+
+.card-article:hover {
+    transform: scale(1.01);
+}
+
 /* 文章作者頭像 */
 
 .author-img-wrap {
@@ -204,7 +222,19 @@ a.hashtag:hover {
 
 /* 熱門創作者 */
 
-/* 輪播強喔 強不是錯字 我就強 */
+.hot-creator ul li:hover {
+    cursor: pointer;
+}
+
+/* 電腦版 滑入效果 見JS */
+
+.hot-creator {
+    transform: translateX(400px);
+    opacity: 0;
+    transition: 1s;
+}
+
+/* 手機板的輪播牆 */
 
 .hot-creator {
     width: 100%;
@@ -456,7 +486,7 @@ a.hashtag:hover {
         display: block;
     }
 
-    .forum__banner__carousel__box__m {
+    .banner__m {
         display: none;
     }
 

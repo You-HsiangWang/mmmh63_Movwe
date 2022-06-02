@@ -66,6 +66,10 @@
     white-space: nowrap;
 }
 
+.overflowX {
+    overflow-x: hidden;
+}
+
 .w-10 {
     width: 10%;
 }

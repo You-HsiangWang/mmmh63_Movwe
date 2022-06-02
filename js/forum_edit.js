@@ -43,9 +43,15 @@ tinyMCE.init({
     }
 });
 
+// textarea 大小
+
+$('#editor1').css('height', '500px');
+
+
 // 捨棄文章
 
-document.querySelector('.delete');
 function myFunction() {
-    confirm("確定要捨棄文章嗎?");
-}
+        if (confirm("確定要捨棄文章嗎?") == true) {
+            location.href = './forum.php'
+        }
+};
