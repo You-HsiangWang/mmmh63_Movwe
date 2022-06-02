@@ -60,6 +60,12 @@
     display: none;
 }
 
+#ottFilterSearchFunc .filter__card__box{
+
+    margin-right: 10px;
+}
+
+
 /* RWD------------------------------- */
 @media screen and (min-width: 750px) {
     #ottFilterSearchFunc .filter__card {

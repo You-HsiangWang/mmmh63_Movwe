@@ -139,7 +139,7 @@
 
 
         $(window).scroll(function () {
-            console.log('scrollTop', $(window).scrollTop());
+            // console.log('scrollTop', $(window).scrollTop());
             // console.log('window height', $(window).height());
             // console.log('body height', $('body').height());
     

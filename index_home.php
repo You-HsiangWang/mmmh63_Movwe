@@ -4954,7 +4954,7 @@ $title = 'MOVWE-就要你放膽搜';
                                     與朋友分享專屬連結
                                 </p>
                                 <p class="discount__text">
-                                    朋友透過您的專屬連結註冊Movwe會員，即可獲得100點we point! 同時您也會收到100點we points回饋唷!
+                                    朋友透過您的專屬連結註冊Movwe會員，即可獲得2000點we point! 同時您也會收到2000點we points回饋唷!
                                 </p>
                             </div>
                         </div>
