@@ -1785,7 +1785,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                             <div class="carousel__images__box">
                                                 <img class="carousel__images" src="./img/center/h_1.jpeg" alt="">
                                                 <div class="image__card__text">
-                                                    <div class="movie__name">
+                                                    <div class="movie__name main_movie">
                                                         <p>
                                                             孤單又燦爛的神 鬼怪
                                                         </p>

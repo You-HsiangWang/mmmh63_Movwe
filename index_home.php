@@ -122,16 +122,16 @@ $title = 'MOVWE-就要你放膽搜';
                         </div>    
                         <div class="banner__icon__bigbox">
                             <div class="banner__icon__box">
-                                <img src="./img/logo/friday_s.svg" alt="">
+                                <img class="banner__icon_img01" src="./img/logo/friday_s.svg" alt="">
                             </div>
                             <div class="banner__icon__box">
-                                <img src="./img/logo/iqiyi_s.svg" alt="">
+                                <img class="banner__icon_img02" src="./img/logo/iqiyi_s.svg" alt="">
                             </div>
                             <div class="banner__icon__box">
-                                <img src="./img/logo/kktv_s.svg" alt="">
+                                <img class="banner__icon_img03" src="./img/logo/kktv_s.svg" alt="">
                             </div>
                             <div class="banner__icon__box">
-                                <img src="./img/logo/netflix_s.svg" alt="">
+                                <img class="banner__icon_img04" src="./img/logo/netflix_s.svg" alt="">
                             </div>
                         </div>
 
