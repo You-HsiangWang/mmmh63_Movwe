@@ -22,7 +22,7 @@ function generateRandomString($length){
 $givepoint = 1000;
 $regmail = isset($_POST['newmail']) ? trim($_POST['newmail']) : '';
 $regpsd = isset($_POST['newpsd']) ? trim($_POST['newpsd']) : '';
-$reginvite = ($_POST['newmail'] == '') ? '' : $givepoint;
+$reginvite = ($_POST['newmail'] == 0) ? '' : $givepoint;
 
 // 如果沒拿到email or psd 返回
 if ($regmail == '' || $regpsd == '') {
@@ -43,6 +43,8 @@ $regsqlstmt->execute([$newnickname, $regmail, $regpsd, $newinvite, $newnickname,
 $output['rowcount'] = $regsqlstmt->rowCount();
 if ($regsqlstmt->rowCount()) {
     $output['success'] = 'true'; 
+    $output['avatar']= $newavatar;
+    $output['name']= $newnickname;
 }else{
     $output['success'] = 'false'; 
     $output['error'] = '沒新增成功'; 

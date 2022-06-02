@@ -96,6 +96,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    overflow: auto;
 }
 
 /* 登入區塊container */
@@ -343,10 +344,6 @@ body {
     border-bottom: 1px solid #10FFA2;
 }
 
-/* 消失----------------------------------------------------------------------- */
-.login_d_none {
-    display: none;
-}
 
 /* loading狀態 ---------------------------------------------------------------------*/
 /* 區塊二的loading畫面 */
@@ -800,7 +797,7 @@ body {
     box-shadow: 0px 0px 3px 3px rgba(16, 255, 163, 0.2);
 }
 
-/* 第一張表的input只有email */
+
 .register_form_wrap form input {
     all: unset;
     width: 100%;
@@ -930,6 +927,232 @@ body {
     border: 1px solid #10FFA2;
 }
 
+/* 註冊欄位爸爸 */
+.register_form_data_feild>div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* 註冊email狀態欄 */
+.register_email_status {
+    position: absolute;
+        width: 20%;
+        height: 42px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        top: 24px;
+        right: 10px;
+}
+
+.register_email_status i {
+    margin-right: 4px;
+}
+
+.register_email_status i:nth-child(1) {
+    color: #E70C10;
+}
+
+.register_email_status i:nth-child(2) {
+    color: #10FFA2;
+}
+
+/* 註冊email狀態文字 */
+.register_email_alert p {
+    color: #E70C10;
+}
+
+.register_email_alert a {
+    color: #10FFA2;
+    text-decoration: none;
+}
+
+.register_email_alert span {
+    color: white;
+}
+
+/* 註冊密碼狀態欄 */
+.register_password_status {
+    position: absolute;
+        width: 20%;
+        height: 42px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        top: 24px;
+        right: 10px;
+}
+
+.register_password_status i {
+    margin-right: 4px;
+}
+
+.register_password_status i:nth-child(1):hover,
+.register_password_status i:nth-child(2):hover {
+    color: #10FFA2;
+}
+
+.register_password_status i:nth-child(3) {
+    color: #E70C10;
+}
+
+.register_password_status i:nth-child(4) {
+    color: #10FFA2;
+}
+
+/* 註冊密碼狀態文字 */
+.register_password_alert p {
+    color: #E70C10;
+}
+
+.register_password_alert a {
+    color: #10FFA2;
+    text-decoration: none;
+}
+
+.register_password_alert span {
+    color: white;
+}
+
+/* 註冊密碼確認狀態欄 */
+.register_password_confirm_status {
+    position: absolute;
+        width: 20%;
+        height: 42px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        top: 24px;
+        right: 10px;
+}
+
+.register_password_confirm_status i {
+    margin-right: 4px;
+}
+
+.register_password_confirm_status i:nth-child(1):hover,
+.register_password_confirm_status i:nth-child(2):hover {
+    color: #10FFA2;
+}
+
+.register_password_confirm_status i:nth-child(3) {
+    color: #E70C10;
+}
+
+.register_password_confirm_status i:nth-child(4) {
+    color: #10FFA2;
+}
+
+/* 註冊密碼確認狀態文字 */
+.register_password_confirm_alert p {
+    color: #E70C10;
+}
+
+.register_password_confirm_alert a {
+    color: #10FFA2;
+    text-decoration: none;
+}
+
+.register_password_confirm_alert span {
+    color: white;
+}
+/* 註冊invite撞態欄 */
+.register_invite_status {
+    position: absolute;
+        width: 20%;
+        height: 42px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        top: 24px;
+        right: 10px;
+}
+
+.register_invite_confirm_status i {
+    margin-right: 4px;
+}
+
+.register_invite_status i:nth-child(1) {
+    color: #E70C10;
+}
+
+.register_invite_status i:nth-child(2) {
+    color: #10FFA2;
+}
+
+/* 註冊invite狀態文字 */
+.register_invite_confirm_alert p {
+    color: #E70C10;
+}
+
+.register_invite_confirm_alert a {
+    color: #10FFA2;
+    text-decoration: none;
+}
+
+.register_invite_confirm_alert span {
+    color: white;
+}
+/* 註冊成功 */
+.register_form_register_success {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 200px;
+}
+
+.register_form_register_success .register_form_title_usericon .register_form_title {
+    margin-bottom: 0;
+}
+
+.register_form_toindex {
+    margin: 0 0 40px 0;
+}
+
+.register_form_register_success button {
+    all: unset;
+    margin: 40px 0;
+    width: 100%;
+    height: 48px;
+    /* margin: 20px 0; */
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #10FFA2;
+    color: #10FFA2;
+    transition: .1s;
+}
+
+.register_form_register_success button:hover {
+    background-color: #10FFA2;
+    color: #1A1D24;
+    box-shadow: 0px 0px 3px 3px rgba(16, 255, 163, 0.2);
+}
+
+.register_form_toindex a {
+    color: #10FFA2;
+    text-decoration: none;
+}
+.register_form_title_usericon{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.register_form_title_usericon_frame{
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* 消失----------------------------------------------------------------------- */
+.login_d_none {
+    display: none;
+}
 /* ---RWD--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width: 750px) {
 
@@ -1012,11 +1235,6 @@ body {
         /* margin: 20px 0; */
     }
 
-    /* 消失 */
-    .login_d_none {
-        display: none;
-    }
-
     /* 密碼狀態控制 */
     .member_password_status {
         top: 30px;
@@ -1047,9 +1265,11 @@ body {
         /* margin: 20px 0; */
         text-indent: 20px;
     }
-    .register_form_col{
+
+    .register_form_col {
         padding: 40px 40px;
     }
+
     /* 表單一的標題 */
     .register_form_col h2 {
         font-size: 3rem;
@@ -1083,5 +1303,20 @@ body {
     /* 註冊表單 */
     .register_form_wrap form input {
         height: 48px;
+    }
+    .register_invite_status, .register_password_confirm_status, .register_password_status, .register_email_status{
+        position: absolute;
+    width: 20%;
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 30px;
+    right: 10px;
+    }
+
+    /* 消失----------------------------------------------------------------------------- */
+    .login_d_none {
+        display: none;
     }
 }
