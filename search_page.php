@@ -769,7 +769,7 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/search-1.sm.jpg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
@@ -891,7 +891,7 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/search-2.sm.jpg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
@@ -1013,7 +1013,7 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card card4">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/search-3.sm.jpg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
@@ -1135,7 +1135,7 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card card5">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/search-4.sm.jpg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
@@ -1257,7 +1257,7 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card card6">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/search-5.sm.jpg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
@@ -1379,7 +1379,7 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card card7">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/search-6.sm.jpg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
@@ -1506,7 +1506,7 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/search-7.jpg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
@@ -1630,7 +1630,7 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/search-8.sm.jpg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
@@ -1752,7 +1752,7 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/search-9.sm.jpg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
@@ -1874,7 +1874,7 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card card4">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/search-10.sm.jpg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
@@ -1996,7 +1996,7 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card card5">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/search-11.sm.jpg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
@@ -2118,7 +2118,7 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card card6">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/search-12.sm.jpg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
@@ -2240,7 +2240,7 @@ $title = 'MOVWE-搜尋結果';
                                         <div class="image__card card7">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                    <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
+                                                <img class="carousel__images" src="./img/center/search-13.sm.jpg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
