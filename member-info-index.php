@@ -43,7 +43,7 @@
 
 
     <style>
-        /*  */
+        /* 飄點點背景 */
         .hidden {
             position: relative;
             overflow: hidden;
@@ -324,13 +324,19 @@
                         <div class="account">
                             <div class="account-left">
                                 <div class="account-pic">
-                                    <img class="img-ori" src="./img/member/member_pic1.jpeg" alt="">
+                                    <?php foreach ($getP as $Pinfo) : ?>
+                                        <img class="img-ori" src="./img/member/<?= $Pinfo['member_avatar'] ?>" alt="">
+                                    <?php endforeach; ?> 
                                     <img class="img-new display_none" src="./img/talls_img/hehe.png" alt="">
                                 </div>
-                                <div class="account-name">Eric</div>
+                                <?php foreach ($getP as $Pinfo) : ?>
+                                    <div class="account-name"><?= $Pinfo['member_nickname'] ?></div>
+                                <?php endforeach; ?>    
                             </div>
                             <div class="account-info">
-                                翔子學妹看日劇，只分享不劇透 <br> 日劇分享、戀愛實境秀、電影、動漫<br> 日劇（播出完畢）做分享<br> 每週不定期更新，和大家分享我喜歡的作品
+                                <?php foreach ($getP as $Pinfo) : ?>
+                                    <?= $Pinfo['member_info'] ?>
+                                <?php endforeach; ?>
                             </div>
                             <div class="account-line"></div>
                             <div class="account-myMovie">我的片單：6部影片</div>
@@ -2152,7 +2158,9 @@
                                             <div class="info_upload">
                                                 <div class="info_upload_square">
                                                     <div id="preview" class="info_gen_img">
-                                                        <img src="./img/member/member_pic1.jpeg" alt="">
+                                                        <?php foreach ($getP as $Pinfo) : ?>
+                                                            <img src="./img/member/<?= $Pinfo['member_avatar'] ?>" alt="">
+                                                        <?php endforeach; ?> 
                                                     </div>
                                                 </div>
 
@@ -2162,19 +2170,26 @@
 
                                         </div>
 
-                                        <form action="member-info-index-got.php" method='post'>
+                                        <!-- <form action="member-info-index-got.php" method='post'> -->
 
                                             <div class="info_gen02">
-                                                <div class="info_gen_nickname">暱稱</div>
-                                                <input class="acc_input" type="text" id="" name='acc_nickname' value="Eric" />
+                                                <?php foreach ($getP as $Pinfo) : ?>
+                                                    <div class="info_gen_nickname">暱稱</div>
+                                                    <input id="nick_acc" class="acc_input acc_nickname" type="text" id="" name='acc_nickname' value="<?= $Pinfo['member_nickname'] ?>" />
+                                                    <p id="valueInput"></p> 
+                                                <?php endforeach; ?>
                                             </div>
 
                                             <div class="info_gen03">
                                                 <div class="info_gen_intro">簡介</div>
-                                                <input class="acc_input" type="text" name='acc_intro' value="翔子學妹看日劇只分享不劇透日劇分享、戀愛實境秀、電影、動漫日劇（播出完畢）做分享每週不定期更新和大家分享我喜歡的作品">
+                                                <?php foreach ($getP as $Pinfo) : ?>
+                                                    <input id="insfo_acc" class="acc_input acc_info" type="text" name='acc_intro' value="<?= $Pinfo['member_info'] ?>">
+                                                <?php endforeach; ?>
+                                                <p id="infoInput"></p> 
                                             </div>
+
                                             <div class="info_gen04">
-                                                <button type='submit' class="info_save">儲存資料</button>
+                                                <button type='submit' class="info_save" onclick="getmemInput()">儲存資料</button>
                                             </div>
 
                                         </form>
@@ -2547,6 +2562,8 @@
                         const file = files[i];
                         console.log(files[i].name);
                         const picname = files[i].name;
+                        // change html
+                        $('.account-pic > .img-new').attr('src', `./img/member/${picname}`);
                         // 這邊偷偷串資料庫
                         $.get('api_picto_db.php', {
                             picname
@@ -2617,6 +2634,32 @@
                 })
             </script>
 
+            <!-- 改暱稱 -->
+            <script>
+                let inputValuea;
+                let inputValueb;
+                // step1
+                const getmemInput = () =>{
+                    inputValuea = document.getElementById("nick_acc").value; 
+                    inputValueb = document.getElementById("insfo_acc").value; 
+                    // document.getElementById("valueInput").innerHTML = inputValueb;
+                    throwtoapi(inputValuea, inputValueb);   
+                };
+                // step2
+                function throwtoapi (a,b){
+                    $('.account-info').text(b);
+                    $('.account-name').text(a);
+                    const obj = {
+                        'nn': a,
+                        'ii':b,
+                    };
+                    $.post('api_member_info_db.php', obj, function(data){
+                        console.log('okok');
+                        $('.kuang_bg').css('display', 'block');
+                    }, 'json');
+                }
+
+            </script>
     </body>
 
     </html>
