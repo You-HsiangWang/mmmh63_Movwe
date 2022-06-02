@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： localhost
--- 產生時間： 2022 年 05 月 23 日 10:37
+-- 產生時間： 2022 年 06 月 02 日 04:01
 -- 伺服器版本： 10.4.21-MariaDB
 -- PHP 版本： 8.0.17
 
@@ -29,7 +29,7 @@ CREATE TABLE `member` (
   `member_invitecode` varchar(255) NOT NULL,
   `member_nickname` varchar(255) NOT NULL,
   `member_avatar` varchar(255) NOT NULL,
-  `member_points` int(11) NOT NULL
+  `member_points` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `member` (
 --
 
 INSERT INTO `member` (`member_sid`, `member_id`, `member_email`, `member_password`, `member_invitecode`, `member_nickname`, `member_avatar`, `member_points`) VALUES
-(1, 'user0001', 'example@gmail.com', 'example', '', 'Eric', 'member_pic1.jpeg', 1688),
+(1, 'user0001', 'example@gmail.com', 'example', '7654321', 'Eric', 'member_pic1.jpeg', 12000),
 (2, 'user0002', 'yoli@gmail.com', 'yoliyoli', '', 'Yoli', 'member_pic2.jpeg', 3000);
 
 --
