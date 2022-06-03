@@ -1,6 +1,6 @@
- // 商品圖 點小圖換大圖
+// 商品圖 點小圖換大圖
 
- $('.product-img-wrap img').click(function() {
+$('.product-img-wrap img').click(function () {
     console.log('img src:', $(this).attr('src'));
     const thisImg = $(this).attr('src')
     $('.product-img-wrap-demo img').attr('src', thisImg)
@@ -8,11 +8,11 @@
 
 // 商品數量調整
 
-$('.button-number-minus').click(function() {
+$('.button-number-minus').click(function () {
     console.log('hello -', this);
 })
 
-$('.button-number-plus').click(function() {
+$('.button-number-plus').click(function () {
     console.log('hello +', this);
 })
 
@@ -64,16 +64,16 @@ function addPCFunction() {
 
 // 加入購物車 彈跳視窗
 
-$('.buy').click(function(){
-    console.log('hello' , this);
-    $('.blackblack').css('display' , 'flex');
+$('.buy').click(function () {
+    console.log('hello', this);
+    $('.blackblack').css('display', 'flex');
 });
 
 // 點選關閉彈跳視窗
 
-$('.close').click(function(){
-    console.log('hello' , this);
-    $('.blackblack').css('display' , 'none');
+$('.close').click(function () {
+    console.log('hello', this);
+    $('.blackblack').css('display', 'none');
 });
 
 // 印出所選的商品選項
@@ -83,6 +83,22 @@ function WWW() {
     console.log(ww);
 };
 
+// 選尺寸 顯示相對應的金額
+
+function CCC() {
+
+    const priceArray = ['899', '999', '1099'];
+
+    const cc = document.querySelector('input[name="productsize"]:checked').value; // 尺寸
+    console.log(cc);
+    
+    $('#district option').each(function (index, item) {
+        console.log('index', index);
+        console.log('item', $(item));
+        console.log('index', districtData[index]);
+        $(item).text(districtData[index]);
+    })
+}
 
 // 加入購物車
 
@@ -100,6 +116,6 @@ function AddtoCart() {
         'ProductPrice': zz * 899
     };
 
-    $.get('api_product.php', aa, function (data) { console.log(data); },'json')
+    $.get('api_product.php', aa, function (data) { console.log(data); }, 'json')
 
 };

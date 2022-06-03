@@ -1,9 +1,35 @@
 <?php
 
 require './parts/movwe_connect_db.php';
-// $pageName = 'login';
-$title = 'MOVWE-孤單又燦爛的神-鬼怪 周邊娃娃';
+$title = '孤單又燦爛的神-鬼怪 娃娃';
 
+$productname = $_GET['productname'];  //apple banana car dog
+
+//isset 該變數再不再?
+//$_GET 取得網址變數
+//intval 
+//? : 判斷式子 if true ? do this : 
+
+// $sql = sprintf("SELECT * FROM products ");
+$sql = sprintf("SELECT * FROM products WHERE productname = \"$title\"");
+// print_r($sql);
+// print_r("<br>");
+$rows = $pdo->query($sql)->fetchAll();
+//$pdo 資料庫 模組
+//query 模組的資料挑選 () 帶入SQL指令
+//fetchAll() query 模組的功能
+// $rows = $output['rows'];
+//
+// print_r($rows);
+
+// print_r("<br>");
+$myproductchoices = $rows[0]["productchoice"];
+print_r('eddie' . "myproductchoices ->" . $rows[0]["productchoice"]);
+
+
+//["蕎麥君","紅豆君","鬼怪","阿使","德華"]
+// sizeof($myproductchoices);
+//$myproductchoices $rows $r foreach
 ?>
 
 <?php include __DIR__ . '/parts/movwe_head.php' ?>
@@ -63,38 +89,21 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪 周邊娃娃';
                             </div>
                             <div class="mt-20">
                                 <h4 class="yellow mb-10">選項</h4>
+
                                 <div class="d-flex">
                                     <fieldset class="d-flex justify-around">
-                                        <div class="d-flex align-item-center mr-10">
-                                            <input type="radio" id="" name="selectdoll" class="mr-10" onclick="WWW()" value="蕎麥君">
-                                            <label for="">
-                                                <p class="white-space">蕎麥君</p>
-                                            </label>
-                                        </div>
-                                        <div class="d-flex align-item-center mr-10">
-                                            <input type="radio" id="" name="selectdoll" class="mr-10" onclick="WWW()" value="紅豆君">
-                                            <label for="">
-                                                <p class="white-space">紅豆君</p>
-                                            </label>
-                                        </div>
-                                        <div class="d-flex align-item-center mr-10">
-                                            <input type="radio" id="" name="selectdoll" class="mr-10" onclick="WWW()" value="鬼怪">
-                                            <label for="">
-                                                <p class="white-space">鬼怪</p>
-                                            </label>
-                                        </div>
-                                        <div class="d-flex align-item-center mr-10">
-                                            <input type="radio" id="" name="selectdoll" class="mr-10" onclick="WWW()" value="阿使">
-                                            <label for="">
-                                                <p class="white-space">阿使</p>
-                                            </label>
-                                        </div>
-                                        <div class="d-flex align-item-center mr-10">
-                                            <input type="radio" id="" name="selectdoll" class="mr-10" onclick="WWW()" value="德華">
-                                            <label for="">
-                                                <p class="white-space">德華</p>
-                                            </label>
-                                        </div>
+                                        <?php foreach ($rows as $m) : ?>
+                                            <?php foreach (json_decode($m['productchoice']) as $mm) : ?>
+                                                <div class="d-flex align-item-center mr-10">
+                                                    <input type="radio" id="" name="selectdoll" class="mr-10" onclick="WWW()" value="<?= $mm ?>">
+                                                    <label for="">
+                                                        <p class="white-space">
+                                                            <?= $mm ?>
+                                                        </p>
+                                                    </label>
+                                                </div>
+                                            <?php endforeach; ?>
+                                        <?php endforeach; ?>
                                     </fieldset>
                                 </div>
                             </div>
@@ -102,21 +111,16 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪 周邊娃娃';
                                 <h4 class="yellow mb-10">尺寸</h4>
                                 <div class="d-flex align-item-center">
                                     <fieldset class="d-flex justify-around">
-                                        <div class="d-flex align-item-center mr-20">
-                                            <input type="radio" class="product-size mr-10" name="productsize" value="S">
-                                            <label for="" class="white">S</label>
-                                        </div>
-
-                                        <div class="d-flex align-item-center mr-20">
-                                            <input type="radio" class="product-size mr-10" name="productsize" value="M">
-                                            <label for="" class="white">M</label>
-                                        </div>
-
-                                        <div class="d-flex align-item-center mr-20">
-                                            <input type="radio" class="product-size mr-10" name="productsize" value="L">
-                                            <label for="" class="white">L</label>
-                                        </div>
-
+                                        <?php foreach ($rows as $s) : ?>
+                                            <?php foreach (json_decode($s['productsize']) as $ss) : ?>
+                                                <div class="d-flex align-item-center mr-20">
+                                                    <input type="radio" class="product-size mr-10" name="productsize" value="<?= $ss ?>" onclick="CCC()" >
+                                                    <label for="" class="white">
+                                                        <?= $ss ?>
+                                                    </label>
+                                                </div>
+                                            <?php endforeach; ?>
+                                        <?php endforeach; ?>
                                     </fieldset>
                                 </div>
                             </div>
@@ -130,8 +134,10 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪 周邊娃娃';
                                 </div>
                             </div>
                             <div class="mt-20">
-                                <span class="yellow mr-10">NTD</span>
-                                <h3 class="inline orange">899</h3>
+                            
+                                        <span class="yellow mr-10">NTD</span>
+                                        <h3 class="inline orange" id="productPrice"></h3>
+                    
                             </div>
                             <!-- 購買按鈕 -->
                             <div class="d-flex justify-between">
@@ -784,7 +790,6 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪 周邊娃娃';
                     </div>
                 </div>
             </div>
-            
 
             <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
