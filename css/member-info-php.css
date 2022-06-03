@@ -576,6 +576,9 @@ a {
 }
 
 /* 文章 */
+.short-one{
+    height: 3px;
+}
 .appear{
     display: none;
 }
@@ -595,7 +598,7 @@ a {
 .card-article{
     width: 95%;
 }
-.art-setting, .art-trash{
+.art-setting, .art-trash, .art-ch{
         background-color:#fc705100;
         border: 1px solid transparent;
         cursor: pointer;
@@ -700,6 +703,11 @@ ul.ar-filter li {
 }
 
 /* 商城 */
+.order_tit{
+    background-color: #FEB73A;
+    color: #1A1D24;
+    font-weight: bolder;
+}
 .account-order-table thead{
     text-align:left;
 }
@@ -1038,6 +1046,11 @@ th, td{
     }
 
     /* 商城 */
+    .order_tit{
+        background-color: #feb63a00;
+        color: #FFFFFD;
+        font-weight: bolder;
+    }
     .od-mweb{
         display: none;
     }

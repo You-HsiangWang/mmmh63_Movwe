@@ -24,7 +24,7 @@
     $stmtHL = $pdo->query($getHistoryList);
     $HLrow = $stmtHL->fetchAll();
 
-    // 拿會員點數欄位
+    // 拿會員點數/暱稱/頭貼欄位
     $getPoints = "SELECT * FROM `member` WHERE `member_sid` = 1";
     $stmtHL = $pdo->query($getPoints);
     $getP = $stmtHL->fetchAll();
@@ -396,8 +396,8 @@
                                     <div class="info_child">
                                         <ul class="info_child_content forum-content">
                                             <span>分類 / </span>
-                                            <li class="info_child_forum01 filter_4w">收藏文章</li>
-                                            <li class="info_child_forum02 filter_4w">我的貼文</li>
+                                            <li class="info_child_forum01 filter_4w">我的貼文</li>
+                                            <li class="info_child_forum02 filter_4w">收藏文章</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1334,9 +1334,10 @@
                                                         <th>詳情</th>
                                                     </tr>
                                                 </thead>
+
                                                 <tbody>
                                                     <tr>
-                                                        <td data-title="訂單編號">087-016836-003</td>
+                                                        <td class="order_tit" data-title="訂單編號">087-016836-003</td>
                                                         <td data-title="訂購日期">2022-06-08 09:51:20</td>
                                                         <td data-title="金額總計">NTD4,200</td>
                                                         <td data-title="付款方式">線上刷卡</td>
@@ -1344,11 +1345,9 @@
                                                         <td data-title="配送情況">備貨中</td>
                                                         <td class="orderDetail-btn" data-title="詳情"><a href="#">詳情</a></td>
                                                     </tr>
+
                                                     <tr>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td data-title="訂單編號">066-236126-323</td>
+                                                        <td class="order_tit" data-title="訂單編號">066-236126-323</td>
                                                         <td data-title="訂購日期">2022-04-25 12:22:10</td>
                                                         <td data-title="金額總計">NTD1,239</td>
                                                         <td data-title="付款方式">線上刷卡</td>
@@ -1356,11 +1355,9 @@
                                                         <td data-title="配送情況">已取貨</td>
                                                         <td data-title="詳情"><a href="#">詳情</a></td>
                                                     </tr>
+
                                                     <tr>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td data-title="訂單編號">092-123946-129</td>
+                                                        <td class="order_tit" data-title="訂單編號">092-123946-129</td>
                                                         <td data-title="訂購日期">2022-01-03 23:11:20</td>
                                                         <td data-title="金額總計">NTD399</td>
                                                         <td data-title="付款方式">線上刷卡</td>
@@ -1368,7 +1365,6 @@
                                                         <td data-title="配送情況">已取貨</td>
                                                         <td data-title="詳情"><a href="#">詳情</a></td>
                                                     </tr>
-
 
                                                 </tbody>
                                             </table>
@@ -1397,7 +1393,7 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td data-title="訂單編號">087-016836-003</td>
+                                                        <td class="order_tit" data-title="訂單編號">087-016836-003</td>
                                                         <td data-title="訂購日期">2022-06-08 09:51:20</td>
                                                         <td data-title="訂單狀態">訂單成立</td>
                                                         <td data-title="配送情況">備貨中</td>
@@ -1436,35 +1432,7 @@
                                                         <td>NTD480</td>
                                                         <td>5</td>
                                                         <td class="gw">NTD4,200</td>
-                                                        <!-- </tr>
-                                                    <tr>
-                                                        <td class="od-product pc1">
-                                                            <div class="od-num">2.</div>
-                                                            <div class="od-pic">
-                                                                <img src="./img/talls_img/t-shirt.png" alt="">
-                                                            </div>
-                                                            <div class="od-nam">國王排名 T-shirt</div>
-                                                        </td>
-                                                        <td>黑</td>
-                                                        <td>L</td>
-                                                        <td>NTD890</td>
-                                                        <td>1</td>
-                                                        <td class="gw">NTD890</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="od-product">
-                                                            <div class="od-num">3.</div>
-                                                            <div class="od-pic">
-                                                                <img src="./img/talls_img/t-shirt.png" alt="">
-                                                            </div>
-                                                            <div class="od-nam">國王排名 T-shirt</div>
-                                                        </td>
-                                                        <td>黑</td>
-                                                        <td>L</td>
-                                                        <td>NTD890</td>
-                                                        <td>1</td>
-                                                        <td class="gw">NTD890</td>
-                                                    </tr> -->
+                                                        
                                                 </tbody>
                                             </table>
 
@@ -1536,6 +1504,7 @@
                                 </div>
 
                                 <div class="account_children_forum">
+
                                     <div id="myArtCollect" class="child-inner">
                                         <div class="myArtCollect-top">
                                             <div class="info_acc_title">
@@ -1568,6 +1537,17 @@
                                                     </svg>
                                                 </button>
                                             </div>
+                                        </div>
+                                        <!-- 假的一鍵刪除用 -->
+                                        <div class="art-card co-art-card short-one">
+                                            <svg class="art-card-checked appear" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.25 0H0.75C0.551088 0 0.360322 0.0790176 0.21967 0.21967C0.0790176 0.360322 0 0.551088 0 0.75V14.25C0 14.4489 0.0790176 14.6397 0.21967 14.7803C0.360322 14.921 0.551088 15 0.75 15H14.25C14.4489 15 14.6397 14.921 14.7803 14.7803C14.921 14.6397 15 14.4489 15 14.25V0.75C15 0.551088 14.921 0.360322 14.7803 0.21967C14.6397 0.0790176 14.4489 0 14.25 0V0ZM13.5 13.5H1.5V1.5H13.5V13.5Z" fill="#10FFA2" />
+                                                <path d="M11.8117 4.20543C12.0628 4.4789 12.0628 4.92082 11.8117 5.19429L6.66851 10.7949C6.41738 11.0684 6.01155 11.0684 5.76042 10.7949L3.18829 7.99459C2.93724 7.72113 2.93724 7.2792 3.18829 7.00574C3.43938 6.73227 3.84641 6.73227 4.09754 7.00574L6.19638 9.30942L10.9036 4.20543C11.1547 3.93152 11.5605 3.93152 11.8117 4.20543Z" fill="#10FFA2" />
+                                            </svg>
+                                            <svg class="art-card-check appear" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.25 0H0.75C0.551088 0 0.360322 0.0790176 0.21967 0.21967C0.0790176 0.360322 0 0.551088 0 0.75V14.25C0 14.4489 0.0790176 14.6397 0.21967 14.7803C0.360322 14.921 0.551088 15 0.75 15H14.25C14.4489 15 14.6397 14.921 14.7803 14.7803C14.921 14.6397 15 14.4489 15 14.25V0.75C15 0.551088 14.921 0.360322 14.7803 0.21967C14.6397 0.0790176 14.4489 0 14.25 0V0ZM13.5 13.5H1.5V1.5H13.5V13.5Z" fill="#10FFA2" />
+                                            </svg>
+                                            
                                         </div>
                                         <div class="art-card co-art-card">
                                             <svg class="art-card-checked appear" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1768,7 +1748,7 @@
                                                         <a href="#">
                                                             <h2 class="mt-10 art-title">《間諜家家酒》第6集之安妮亞表情包</h2>
                                                         </a>
-                                                        <p class="mt-10">#微更：補上原畫對照 萬眾期盼的表情終於來了😂 雖然漫畫刷過三次了，但動畫化果然還是有其笑果 每一幕還原都...</p>
+                                                        <p class="mt-10">#微更：補上原畫對照 萬眾期盼的表情終於來了😂 雖然漫畫刷過三次了，但動畫化果然還是有其笑果 每一幕...</p>
                                                     </div>
                                                     <!-- 愛心 留言 收藏 hashtag -->
                                                     <div class="d-flex justify-between mt-30">
@@ -1969,10 +1949,12 @@
                                                             <!-- 文章作者 -->
                                                             <div class="d-flex align-item-center">
                                                                 <!-- 文章作者圖片 -->
-                                                                <div class="ar-img-wrap mr-10">
-                                                                    <a href="#"><img src="./img/member/member_pic1.jpeg" alt=""></a>
-                                                                </div>
-                                                                <a href="#"><span>Eric</span></a>
+                                                                <?php foreach ($getP as $Pinfo) : ?>
+                                                                    <div class="ar-img-wrap mr-10">
+                                                                        <a href="#"><img src="./img/member/<?= $Pinfo['member_avatar'] ?>" alt=""></a>
+                                                                    </div>
+                                                                    <a href="#"><span><?= $Pinfo['member_nickname'] ?></span></a>
+                                                                <?php endforeach; ?>
                                                             </div>
                                                         </div>
                                                         <!-- 發文時間 -->
@@ -2053,10 +2035,12 @@
                                                             <!-- 文章作者 -->
                                                             <div class="d-flex align-item-center">
                                                                 <!-- 文章作者圖片 -->
-                                                                <div class="ar-img-wrap mr-10">
-                                                                    <a href="#"><img src="./img/member/member_pic1.jpeg" alt=""></a>
-                                                                </div>
-                                                                <a href="#"><span>Eric</span></a>
+                                                                <?php foreach ($getP as $Pinfo) : ?>
+                                                                    <div class="ar-img-wrap mr-10">
+                                                                        <a href="#"><img src="./img/member/<?= $Pinfo['member_avatar'] ?>" alt=""></a>
+                                                                    </div>
+                                                                    <a href="#"><span><?= $Pinfo['member_nickname'] ?></span></a>
+                                                                <?php endforeach; ?>
                                                             </div>
                                                         </div>
                                                         <!-- 發文時間 -->
@@ -2214,7 +2198,7 @@
                             <div class="kuang-center">
                                 <div class="with-kuang">
                                     <div class="kuang-word">
-                                        相片上傳成功！
+                                        資料更新成功！
                                     </div>
                                 </div>
                             </div>
@@ -2377,6 +2361,7 @@
 
                     //商品tablet分類 歷史訂單亮起 
                     $('.info_child_order01 a').css('color', '#10ffa2')
+                    $('.info_child_order01').css('border', '1px solid #10ffa2')
                     $('.info_child_order01').siblings('li').css('color', '#ffffff80');
                 };
 
@@ -2412,8 +2397,8 @@
                     $('.account_children_forum').siblings().css('display', 'none');
 
                     //影劇下方內容 僅顯示"收藏文章
-                    $('#myArtCollect').css('display', 'block')
-                    $('#myArtCollect').siblings().css('display', 'none');
+                    $('#myArtPost').css('display', 'block')
+                    $('#myArtPost').siblings().css('display', 'none');
 
                     //討論tablet分類 收藏文章亮起 
                     $('.info_child_forum01').css('color', '#10ffa2')
@@ -2444,8 +2429,8 @@
                     $('.info_child_forum01').css('border', '1px solid #ffffff80')
 
                     //影劇下方內容 僅顯示"我的發文
-                    $('#myArtPost').css('display', 'block')
-                    $('#myArtPost').siblings().css('display', 'none');
+                    $('#myArtCollect').css('display', 'block')
+                    $('#myArtCollect').siblings().css('display', 'none');
 
                 }
 
@@ -2655,8 +2640,9 @@
                     };
                     $.post('api_member_info_db.php', obj, function(data){
                         console.log('okok');
-                        $('.kuang_bg').css('display', 'block');
+                        
                     }, 'json');
+                    $('.kuang_bg').css('display', 'block')
                 }
 
             </script>
