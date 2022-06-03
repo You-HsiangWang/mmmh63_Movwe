@@ -197,18 +197,16 @@
     /* margin-right: 10px; */
 }
 
+.image__card__text__12{
+    transition: .3s;
+}
+
+
 .image__card__12:hover .carousel__images__12 {
     z-index: 99;
     transform: scale(1.05) translateY(-5%);
 
 }
-
-
-
-.image__card__text__12{
-    transition: .3s;
-}
-
 
 .image__card__12:hover .image__card__text__12 {
     /* opacity: 0; */
@@ -218,17 +216,19 @@
     /* border: 5px solid wheat; */
 }
 
-
-
 .image__card__12:hover .product__typ-1 {
     opacity: 0;
 }
 
 
-.image__card__12:hover .ntd {
+/* .image__card__12:hover .ntd {
+    color: rgb(16, 255, 162);
+    
+} */
+
+.image__card__12:hover .Product__id {
     color: rgb(16, 255, 162);
     /* font-size: 18px; */
-
 }
 
 .Shop__card__icon__box:hover .shop__card {

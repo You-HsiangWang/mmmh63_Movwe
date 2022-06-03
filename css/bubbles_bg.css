@@ -23,7 +23,7 @@
             0 0 10px rgba(16, 255, 163,.5),
             0 0 20px rgba(16, 255, 163,.5);
         animation: animate 5s linear infinite;
-        animation-duration: calc(600s / var(--i));
+        animation-duration: calc(1000s / var(--i));
         /* animation-delay: calc(30s/var(--i)); */
         transform: translateY(0vh) scale(0);
     }
@@ -37,11 +37,11 @@
 
     @keyframes animate {
         0% {
-            transform: translateY(0vh) scale(0);
+            transform: translateY(-10vh) scale(0);
         }
 
         100% {
-            transform: translateY(250vh) scale(1);
+            transform: translateY(200vh) scale(1);
         }
 
     }
@@ -89,7 +89,7 @@
         }
 
         100% {
-            transform: translateY(250vh) scale(1);
+            transform: translateY(260vh) scale(1);
         }
 
     }
