@@ -5,6 +5,31 @@
 
 } */
 
+.hidden {
+    /* box-sizing: border-box; */
+    /* outline: 10px red solid; */
+    position: relative;
+    overflow: hidden;
+}
+
+.shinny {
+    animation: shinny 1s linear infinite;
+}
+
+@keyframes shinny {
+    0% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(2);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+}
+
 .text__container {
     width: 95%;
     /* height: 100vh; */

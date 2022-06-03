@@ -33,12 +33,20 @@ h3 {
     width: 50%;
 }
 
-.mt_20 {
-    margin-top: 20px;
+.mt_24 {
+    margin-top: 24px;
 }
 
-.mt_60 {
-    margin-top: 60px;
+.mt_48 {
+    margin-top: 48px;
+}
+
+.mt_72 {
+    margin-top: 72px;
+}
+
+.mb_150 {
+    margin-bottom: 150px;
 }
 
 .opacity {
@@ -86,9 +94,12 @@ h3 {
     align-items: center;
 }
 
-.mall_content svg{
-    display: none;
-    /* animation: projucts 2s linear infinite; */
+.product_svg{ 
+    position: absolute;
+    top:-80px;
+    right: -50px;
+    transform: scale(0.5);
+    animation: projuct_svg 2s linear infinite;
 }
 
 .mall_discount .img_wrap {
@@ -118,13 +129,15 @@ h3 {
     width: 49%;
     border-radius: 5%;
     z-index: 5;
+   
 }
 
 .main__btn:hover,
 .star__btn:hover,
 .dis__btn:hover,
 .marvel__btn:hover {
-    box-shadow: 0 0 10px#10FFA2;
+    /* box-shadow: 0 0 10px#10FFA2; */
+   
 }
 
 
@@ -183,12 +196,15 @@ h3 {
         display: block;
     }
 
-    .mall_content svg{
-        display: block;
-        animation: projucts 2s linear infinite;
+    .product_svg{ 
+        position:relative;
+        top:0px;
+        right:0px;
+        transform: scale(1);
+        animation: projuct_svg 2s linear infinite;
     }
     
-    @keyframes projucts{
+    @keyframes projuct_svg{
         0%{
             filter:drop-shadow(0px 0px 0px rgba(16, 255, 162,1));
         }
@@ -227,7 +243,7 @@ h3 {
     .mall_discount {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
 
