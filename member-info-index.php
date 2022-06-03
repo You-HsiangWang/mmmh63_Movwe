@@ -14,11 +14,6 @@
     $stmtFL = $pdo->query($getFilmList);
     $FLrow = $stmtFL->fetchAll();
 
-    //許願清單4部 
-    $getWishList = "SELECT * FROM `video` WHERE 1 ORDER BY RAND() LIMIT 4";
-    $stmtWL = $pdo->query($getWishList);
-    $WLrow = $stmtWL->fetchAll();
-
     //瀏覽紀錄10部 
     $getHistoryList = "SELECT * FROM `video` WHERE 1 ORDER BY RAND() LIMIT 10";
     $stmtHL = $pdo->query($getHistoryList);
@@ -28,6 +23,11 @@
     $getPoints = "SELECT * FROM `member` WHERE `member_sid` = 1";
     $stmtHL = $pdo->query($getPoints);
     $getP = $stmtHL->fetchAll();
+
+    // 拿許願清單
+    $getWish = "SELECT * FROM `wishlist` WHERE 1 LIMIT 5";
+    $stmtWL = $pdo->query($getWish);
+    $getW = $stmtWL->fetchAll();
     ?>
 
     <?php include __DIR__ . '/parts/movwe_head.php' ?>
@@ -891,140 +891,61 @@
                                         </div>
 
                                         <!-- 許願清單 -->
+                                        
                                         <div class="wishlist_cards">
-                                            <div class="wishcard">
-                                                <div class="wish_pic">
-                                                    <img src="./img/center/pd.jpg" alt="">
-                                                </div>
-                                                <div class="wish_words">
-                                                    <div class="wish_word_top">
-                                                        <div class="wish_type d-filter-a">
-                                                            動漫
-                                                        </div>
-                                                        <button class="wish_btn">
-                                                            <div class="wish_icon">
-                                                                <img src="./img/icons/wish.svg" alt="">
+                                            <?php foreach ($getW as $Winfo) : ?>
+                                                <div class="wishcard">
+                                                    <div class="wish_pic">
+                                                        <img src="./img/movie-poster/<?= $Winfo['wish_pic'] ?>" alt="">
+                                                    </div>
+                                                    <div class="wish_words">
+                                                        <div class="wish_word_top">
+                                                            <div class="wish_type" style="<?php
+                                                                                                    $ottcolor = [
+                                                                                                        '4' => '#FEB73A',
+                                                                                                        '2' => '#10FFA2',
+                                                                                                        '3' => '#1CD8FF',
+                                                                                                        '1' => '#FC6F51',
+                                                                                                    ];
+                                                                                                    if ($Winfo['wish_label'] == '影劇') {
+                                                                                                        $color = $ottcolor['1'];
+                                                                                                    } else if ($Winfo['wish_label'] == '電影') {
+                                                                                                        $color = $ottcolor['2'];
+                                                                                                    } else if ($Winfo['wish_label'] == '動畫') {
+                                                                                                        $color = $ottcolor['3'];
+                                                                                                    }else if ($Winfo['wish_label'] == '綜藝') {
+                                                                                                        $color = $ottcolor['4'];
+                                                                                                    };
+                                                                                                    echo 'color:' . $color . '; border: 1px solid' . $color;
+                                                                                                    ?>">
+
+                                                            
+
+                                                                <?= $Winfo['wish_label'] ?>
                                                             </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="wish_word_middle">
-                                                        天國之吻
-                                                    </div>
-                                                    <div class="wish_word_bottom">
-                                                        <div class="wish_total"></div>
-                                                        <div class="wish_vote">
-                                                            已有 <span>1</span> 人參與許願
+                                                            <button class="wish_btn">
+                                                                <div class="wish_icon">
+                                                                    <img src="./img/icons/wish.svg" alt="">
+                                                                </div>
+                                                            </button>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wishcard">
-                                                <div class="wish_pic">
-                                                    <img src="./img/movie-poster/mader.jfif" alt="">
-                                                </div>
-                                                <div class="wish_words">
-                                                    <div class="wish_word_top">
-                                                        <div class="wish_type d-filter-m">
-                                                            電影
+                                                        <div class="wish_word_middle">
+                                                            <?= $Winfo['wish_name'] ?>
                                                         </div>
-                                                        <button class="wish_btn">
-                                                            <div class="wish_icon">
-                                                                <img src="./img/icons/wish.svg" alt="">
+                                                        <div class="wish_word_bottom">
+                                                            <div class="wish_total_1"></div>
+                                                            <div class="wish_vote">
+                                                                已有 <span><?= $Winfo['wish_number'] ?></span> 人參與許願
                                                             </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="wish_word_middle">
-                                                        媽的多重宇宙
-                                                    </div>
-                                                    <div class="wish_word_bottom">
-                                                        <div class="wish_total_1"></div>
-                                                        <div class="wish_vote">
-                                                            已有 <span>2467</span> 人參與許願
                                                         </div>
                                                     </div>
                                                 </div>
+                                            <?php endforeach; ?>
+
                                             </div>
-                                            <div class="wishcard">
-                                                <div class="wish_pic">
-                                                    <img src="./img/forum/forum_img01.jpg" alt="">
-                                                </div>
-                                                <div class="wish_words">
-                                                    <div class="wish_word_top">
-                                                        <div class="wish_type d-filter-a">
-                                                            動漫
-                                                        </div>
-                                                        <button class="wish_btn">
-                                                            <div class="wish_icon">
-                                                                <img src="./img/icons/wish.svg" alt="">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="wish_word_middle">
-                                                        Keroro
-                                                    </div>
-                                                    <div class="wish_word_bottom">
-                                                        <div class="wish_total_4"></div>
-                                                        <div class="wish_vote">
-                                                            已有 <span>214</span> 人參與許願
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wishcard">
-                                                <div class="wish_pic">
-                                                    <img src="./img/movie-poster/sister.png" alt="">
-                                                </div>
-                                                <div class="wish_words">
-                                                    <div class="wish_word_top">
-                                                        <div class="wish_type d-filter-e">
-                                                            綜藝
-                                                        </div>
-                                                        <button class="wish_btn">
-                                                            <div class="wish_icon">
-                                                                <img src="./img/icons/wish.svg" alt="">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="wish_word_middle">
-                                                        乘風破浪的姊姊 第三季
-                                                    </div>
-                                                    <div class="wish_word_bottom">
-                                                        <div class="wish_total_3"></div>
-                                                        <div class="wish_vote">
-                                                            已有 <span>348</span> 人參與許願
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wishcard">
-                                                <div class="wish_pic">
-                                                    <img src="./img/center/wish_movie-7.jpeg
-                                                        " alt="">
-                                                </div>
-                                                <div class="wish_words">
-                                                    <div class="wish_word_top">
-                                                        <div class="wish_type d-filter-m">
-                                                            電影
-                                                        </div>
-                                                        <button class="wish_btn">
-                                                            <div class="wish_icon">
-                                                                <img src="./img/icons/wish.svg" alt="">
-                                                            </div>
-                                                        </button>
-                                                    </div>
-                                                    <div class="wish_word_middle">
-                                                        變身國王
-                                                    </div>
-                                                    <div class="wish_word_bottom">
-                                                        <div class="wish_total_2"></div>
-                                                        <div class="wish_vote">
-                                                            已有 <span>127</span> 人參與許願
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            
+                                        
                                         </div>
-                                    </div>
 
                                     <!-- 瀏覽紀錄 -->
                                     <div id="myHistory" class="child-inner">
@@ -1047,11 +968,7 @@
                                                                 影劇
                                                             </p>
                                                             <div class="bottom_6_icon_box">
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/friday_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
+
                                                                 <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw" target="_blank">
                                                                     <p class="bottom_6_icon">
                                                                         <img src="./img/logo/iqiyi_s.svg" alt="">
@@ -1142,9 +1059,7 @@
                                                         孤單又燦爛的神－鬼怪
                                                     </div>
                                                     <div class="ac_ott">
-                                                        <div class="ac_friday">
-                                                            <img src="./img/logo/friday_s.svg" alt="">
-                                                        </div>
+
                                                         <div class="ac_iqiyi">
                                                             <img src="./img/logo/iqiyi_s.svg" alt="">
                                                         </div>
