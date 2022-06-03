@@ -310,6 +310,9 @@ color:rgb(16, 255, 162) ;
 }
 
 .information__name{
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     font-size: 18px;
     color: white;
 }
@@ -352,6 +355,7 @@ color:rgb(16, 255, 162) ;
 margin-top: 10px;
 }
 .information__bottom_2{
+    width: 100%;
     margin-top: 15px;
 }
 .information__bottom_3{
@@ -508,6 +512,8 @@ filter: brightness(120%);
 
 
 .movie__name{
+    white-space: nowrap;
+    text-overflow: ellipsis;
     color: white;
     font-size: 14px;
     padding: 0px 0;
