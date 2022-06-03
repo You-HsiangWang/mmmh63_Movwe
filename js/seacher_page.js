@@ -92,6 +92,30 @@ productButton.addEventListener('click',()=>{
 })
 
 
+var eId = "Title";
+var inputId = "myInput";
+var hElement = document.getElementById(eId);
+var inputElement = document.getElementById(inputId);
+
+inputElement.addEventListener("input",function () {
+    var value = inputElement.value
+    hElement.innerHTML = value
+
+})
+
+
+// var testInput = document.getElementById('myInput')
+// var submitBtn = document.querySelector('.submitBtn')
+// var searchPoint = document.querySelector('.search__point')
+
+// function FsubmitBtn(value) {
+//     var str = "";
+//     var submitValue = testInput.value;
+//     str = submitValue;
+//     alert(str);
+// }
+// submitBtn.addEventListener('click',FsubmitBtn);
+
 
 
 
