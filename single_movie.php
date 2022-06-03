@@ -94,9 +94,9 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                             </div>
                             <div class="icon__box">
 
-                                <a href=""><img class="bottom_6_icon" src="./img/logo/friday_s.svg" alt=""></a>
+                                <!-- <a href=""><img class="bottom_6_icon" src="./img/logo/friday_s.svg" alt=""></a> -->
                                 <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw" target="_blank"><img class="bottom_6_icon" src="./img/logo/iqiyi_s.svg" alt=""></a>
-                                <a href=""><img class="bottom_6_icon" src="./img/logo/kktv_s.svg" alt=""></a>
+                                <!-- <a href=""><img class="bottom_6_icon" src="./img/logo/kktv_s.svg" alt=""></a> -->
                                 <a href=""><img class="bottom_6_icon" src="./img/logo/netflix_s.svg" alt=""></a>
                             </div>
                             <div class="section__1_bottombox display__show mobile__none">
@@ -119,7 +119,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                         </div>
                         <div class="movie__poster">
                             <div class="movie__poster__box">
-                                <h1 class="movie__poster__box__h1">精彩劇照</h1>
+                                <!-- <h1 class="movie__poster__box__h1">精彩劇照</h1> -->
 
                                 <div id="slider" style="max-height: 400px; width: 90%; max-width: 960px; margin: 0 auto">
                                     <div class="slide">
@@ -1077,195 +1077,6 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                 </div>
                             </button>
                             <ul class="carousel__track__8">
-                                <li class="carousel__slide__8 current-slide__8">
-                                    <div class="image__box__8">
-                                        <div class="image__card__8">
-                                            <div class="carousel__images__box__8">
-                                                <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8" src="./img/center/single__post-5.png" alt="">
-                                                </div>
-                                                <div class="ott__article__typ">
-                                                    電視劇
-                                                </div>
-                                                <div class="ott__article__productname">
-                                                    明天也想見到你明信片
-                                                </div>
-                                                <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
-                                                </div>
-                                                <div class="ott__likeicons">
-                                                    <div class="ott__likeicon-box">
-                                                        <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
-                                                            <div>500</div>
-                                                        </div>
-                                                        <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
-                                                            <div>
-                                                                500
-                                                            </div>
-                                                        </div>
-                                                        <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
-                                                            </div>
-                                                            <div>
-                                                                500
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image__card__8 image__card__8__mob_none">
-                                            <div class="carousel__images__box__8">
-                                                <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8" src="./img/center/single__post-4.png" alt="">
-                                                </div>
-                                                <div class="ott__article__typ">
-                                                    電視劇
-                                                </div>
-                                                <div class="ott__article__productname">
-                                                    明天也想見到你明信片
-                                                </div>
-                                                <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
-                                                </div>
-                                                <div class="ott__likeicons">
-                                                    <div class="ott__likeicon-box">
-                                                        <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
-                                                            <div>500</div>
-                                                        </div>
-                                                        <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
-                                                            <div>
-                                                                500
-                                                            </div>
-                                                        </div>
-                                                        <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
-                                                            </div>
-                                                            <div>
-                                                                500
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image__card__8 image__card__8__mob_none">
-                                            <div class="carousel__images__box__8">
-                                                <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8" src="./img/center/single__post-3.png" alt="">
-                                                </div>
-                                                <div class="ott__article__typ">
-                                                    電視劇
-                                                </div>
-                                                <div class="ott__article__productname">
-                                                    明天也想見到你明信片
-                                                </div>
-                                                <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
-                                                </div>
-                                                <div class="ott__likeicons">
-                                                    <div class="ott__likeicon-box">
-                                                        <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
-                                                            <div>500</div>
-                                                        </div>
-                                                        <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
-                                                            <div>
-                                                                500
-                                                            </div>
-                                                        </div>
-                                                        <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
-                                                            </div>
-                                                            <div>
-                                                                500
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image__card__8 image__card__8__mob_none">
-                                            <div class="carousel__images__box__8">
-                                                <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8" src="./img/center/single__post-2.png" alt="">
-                                                </div>
-                                                <div class="ott__article__typ">
-                                                    電視劇
-                                                </div>
-                                                <div class="ott__article__productname">
-                                                    明天也想見到你明信片
-                                                </div>
-                                                <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
-                                                </div>
-                                                <div class="ott__likeicons">
-                                                    <div class="ott__likeicon-box">
-                                                        <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
-                                                            <div>500</div>
-                                                        </div>
-                                                        <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
-                                                            <div>
-                                                                500
-                                                            </div>
-                                                        </div>
-                                                        <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
-                                                            </div>
-                                                            <div>
-                                                                500
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image__card__8 image__card__8__mob_none">
-                                            <div class="carousel__images__box__8">
-                                                <div class="ott__article__imgbox">
-                                                    <img class="carousel__images__8" src="./img/center/single__post-1.png" alt="">
-                                                </div>
-                                                <div class="ott__article__typ">
-                                                    電視劇
-                                                </div>
-                                                <div class="ott__article__productname">
-                                                    明天也想見到你明信片
-                                                </div>
-                                                <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
-                                                </div>
-                                                <div class="ott__likeicons">
-                                                    <div class="ott__likeicon-box">
-                                                        <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
-                                                            <div>500</div>
-                                                        </div>
-                                                        <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
-                                                            <div>
-                                                                500
-                                                            </div>
-                                                        </div>
-                                                        <div class="likeicon__box">
-                                                            <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
-                                                            </div>
-                                                            <div>
-                                                                500
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
                                 <li class="carousel__slide__8 current-slide__8">
                                     <div class="image__box__8">
                                         <div class="image__card__8">

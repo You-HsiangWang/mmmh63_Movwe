@@ -42,16 +42,6 @@ function deleteFunction() {
 //     $('#cartInfo').toggleClass('border-bottom-main-color');
 // });
 
-// 商品數量調整
-
-$('.button-number-minus').click(function () {
-    console.log('hello -', this);
-});
-
-$('.button-number-plus').click(function () {
-    console.log('hello +', this);
-});
-
 // 改變商品數量
 
 // 數量改變金額也要變
@@ -60,7 +50,9 @@ var q = parseInt(document.getElementById('quantity').value);
 
 var singlePrice = '899';
 var subTotalPrice = `<h4>${singlePrice * q}</h4>`;
-document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
+// var productQuantityQQ = `<h4>總共有${q}項商品</h4>`;
+
+// document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
 
 function addFunction() {
     // var q = parseInt(document.getElementById('quantity').value);
@@ -69,6 +61,8 @@ function addFunction() {
     document.getElementById('quantity').value = q;
     subTotalPrice = `<h4>${singlePrice * q}</h4>`;
     document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
+    // document.getElementById('productTotalPrice').innerHTML = subTotalPrice;
+    // document.getElementById('productQuantityQQ').innerHTML = productQuantityQQ;
 };
 
 function subFunction() {
@@ -79,6 +73,8 @@ function subFunction() {
         document.getElementById('quantity').value = q;
         subTotalPrice = `<h4>${singlePrice * q}</h4>`;
         document.getElementById('subTotalPrice').innerHTML = subTotalPrice;
+        // document.getElementById('productTotalPrice').innerHTML = subTotalPrice;
+        // document.getElementById('productQuantityQQ').innerHTML = productQuantityQQ;
     }
 };
 
@@ -91,10 +87,7 @@ function subFunction() {
 // });
 
 
-// 點優惠券折抵金額
-
-// 商品總金額加總
-
+// 點優惠券折抵金額 + 商品總金額加總
 
 function AddDiscount() {
     const ProductPrice = document.getElementById('ProductPrice').innerText;
@@ -110,12 +103,14 @@ function AddDiscount() {
 
 };
 
+// 送資料到下一頁的物流選擇
+
 function DatatoDelivery() {
     const pp = document.getElementById('discountQQ').innerText;
     const ss = document.getElementById('totalPayment').innerText;
     const vv = document.querySelector('input[name="discount"]:checked').value;
 
-    console.log( pp, ss, vv);
+    console.log(pp, ss, vv);
 
     const gg = {
         'ProductDiscount': pp,
@@ -126,9 +121,9 @@ function DatatoDelivery() {
     console.log(gg);
 
     $.get('api_cart.php', gg, function (data) {
-         console.log(data); 
+        console.log(data);
         location.href = './order_delivery.php'
-        }, 'json')
+    }, 'json')
 
 };
 

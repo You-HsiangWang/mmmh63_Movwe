@@ -7,7 +7,7 @@ $title = 'Movwe-訂單完成';
 
 <?php include __DIR__ . '/parts/movwe_head.php' ?>
 
-
+<link rel="stylesheet" href="./css/bubbles_bg.css">
 <link rel="stylesheet" href="./css/mystyle.css">
 <!-- <link rel="stylesheet" href="./css/order_finish.css"> -->
 <link rel="stylesheet" href="./css/order_finish.css">
@@ -23,7 +23,142 @@ $title = 'Movwe-訂單完成';
         <div class="container">
 
             <!--text__container------內容放這邊------------->
-            <div class="text__container">
+            <div class="text__container hidden">
+                <div class="bubbles">
+                    <span style="--i:11;"></span>
+                    <span style="--i:25;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:22;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:28;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:21;"></span>
+                    <span style="--i:15;"></span>
+                    <span style="--i:30;"></span>
+                    <span style="--i:11;"></span>
+                    <span style="--i:23;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:23;"></span>
+                    <span style="--i:29;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:14;"></span>
+                    <span style="--i:25;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:23;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:20;"></span>
+                    <span style="--i:22;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:27;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:21;"></span>
+                    <span style="--i:15;"></span>
+                    <span style="--i:29;"></span>
+                    <span style="--i:21;"></span>
+                    <span style="--i:13;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:23;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:14;"></span>
+                    <span style="--i:26;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:22;"></span>
+                    <span style="--i:20;"></span>
+                    <span style="--i:22;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:27;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:23;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:13;"></span>
+                    <span style="--i:14;"></span>
+                    <span style="--i:26;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:24;"></span>
+                    <span style="--i:19;"></span>
+                    <span style="--i:22;"></span>
+                    <span style="--i:30;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:24;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:21;"></span>
+                    
+                
+                </div>
+
+                <div class="bubbles2 ">
+                    <span style="--i:11;"></span>
+                    <span style="--i:25;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:22;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:28;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:21;"></span>
+                    <span style="--i:15;"></span>
+                    <span style="--i:30;"></span>
+                    <span style="--i:11;"></span>
+                    <span style="--i:23;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:23;"></span>
+                    <span style="--i:29;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:14;"></span>
+                    <span style="--i:25;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:23;"></span>
+                    <span style="--i:18;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:20;"></span>
+                    <span style="--i:22;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:27;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:21;"></span>
+                    <span style="--i:15;"></span>
+                    <span style="--i:29;"></span>
+                    <span style="--i:21;"></span>
+                    <span style="--i:13;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:23;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:14;"></span>
+                    <span style="--i:26;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:22;"></span>
+                    <span style="--i:20;"></span>
+                    <span style="--i:22;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:27;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:23;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:13;"></span>
+                    <span style="--i:14;"></span>
+                    <span style="--i:26;"></span>
+                    <span style="--i:17;"></span>
+                    <span style="--i:24;"></span>
+                    <span style="--i:19;"></span>
+                    <span style="--i:22;"></span>
+                    <span style="--i:30;"></span>
+                    <span style="--i:12;"></span>
+                    <span style="--i:24;"></span>
+                    <span style="--i:16;"></span>
+                    <span style="--i:21;"></span>
+    
+                
+                </div>
                 <!-- 上面進度條 -->
                 <div class="progress-bar d-flex justify-between align-item-center mt-80">
                     <div class="d-flex justify-center align-item-center">
@@ -94,7 +229,7 @@ $title = 'Movwe-訂單完成';
                 <!-- 訂單完成 -->
                 <div class="order-finish d-flex flex-col justify-center align-item-center mt-20">
                     <div class="hahahalogo">
-                        <img src="./img/logo/logo.png" alt="">
+                        <img class="shinny" src="./img/other/gif/logo_gif.gif" alt="">
                     </div>
                     <h2 class="main-color mt-20">訂單完成，感謝您的訂購!</h2>
                 </div>
@@ -118,10 +253,10 @@ $title = 'Movwe-訂單完成';
                                 <img src="./img/mall/1.jpg" alt="">
                             </td>
                             <td>
-                            <h4><?= $_SESSION['cart']['ProductName'] ?></h4>
+                                <h4><?= $_SESSION['cart']['ProductName'] ?></h4>
                             </td>
                             <td>
-                            <h4><?= $_SESSION['cart']['ProductChoice'] ?></h4>
+                                <h4><?= $_SESSION['cart']['ProductChoice'] ?></h4>
                             </td>
                             <td>
                                 <h4><?= $_SESSION['cart']['ProductSize'] ?></h4>
@@ -181,4 +316,5 @@ $title = 'Movwe-訂單完成';
         <script src="./js/order_finish.js"></script>
 
 </body>
+
 </html>

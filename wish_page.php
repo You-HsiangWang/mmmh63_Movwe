@@ -172,9 +172,10 @@
         }
 
         .Enter {
-            padding: 5px 15px;
+            font-weight: 500;
+            padding: 5px 18px;
             margin-top: 50px;
-            font-size: 20px;
+            font-size: 16px;
             border-radius: 20px;
             border: 1px solid rgb(16, 255, 162);
             color: rgb(16, 255, 162);
@@ -1153,7 +1154,7 @@
 
         .Enter_6 {
             padding: 5px 15px;
-            margin: 30px auto 0 auto;
+            margin: 30px auto 20px auto;
             font-size: 20px;
             border-radius: 20px;
             border: 1px solid rgb(16, 255, 162);
@@ -1252,7 +1253,7 @@
                         </p>
                     </div>
                     <button class="Enter">
-                        Continue
+                        繼續
                     </button>
                 </div>
                 <div class="audio__box">
@@ -1277,7 +1278,7 @@
                             </p>
                         </div>
                         <button class="Enter_2">
-                            Continue
+                            繼續
                         </button>
                     </div>
                 </div>
@@ -1317,7 +1318,7 @@
                         </div>
                         <div class="Thanks__text">
                             <p> <span></span>
-                                恭喜！<br> <span class="Text__gold Wish">成功尋覓彩蛋</span> <br> 已獲得100 Movwe point!
+                                恭喜！<br> <span class="Text__gold Wish">成功尋覓彩蛋</span> <br> 已獲得100 We point!
                             </p>
                         </div>
                         <button class="Enter_6 Page3__btn">
@@ -1339,7 +1340,7 @@
                             It's it !
                         </p>
                         <button class="Enter_3">
-                            Take it
+                            取得
                         </button>
                     </div>
                 </div>
@@ -1355,7 +1356,7 @@
                             Show me the Movwe genie!
                         </p>
                         <button class="Enter_4">
-                            Click
+                            點擊
                         </button>
                     </div>
                     <div class="Page__4__genie__box">
@@ -1367,7 +1368,7 @@
                         </p>
                         <input type="text" class="Wish__input" placeholder="輸入片名">
                         <button class="Enter_5">
-                            Enter
+                            許願
                         </button>
                     </div>
 
