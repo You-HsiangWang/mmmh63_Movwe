@@ -34,17 +34,6 @@ $title = 'MOVWE-商城';
 
             <!--banner__container----------------->
             <!-- 電商banner -->
-
-            <div class="banner__container ">
-                <!-- 手機圖 -->
-                <img class="mall_banner_s" src="./img/banner/mall_banner_s.jpg" alt="">
-                <!-- <img class="mall_banner_s" src="./imgs/forum_banner03_s.jpg" alt=""> -->
-
-                <!-- 桌機圖 -->
-                <img class="mall_banner" src="./img/banner/mall_banner.jpg" alt="">
-                <!-- <img class="mall_banner" src="./imgs/forum_banner03.jpg" alt=""> -->
-            </div>
-
             <div class="bubbles">
                 <span style="--i:11;"></span>
                 <span style="--i:25;"></span>
@@ -109,34 +98,8 @@ $title = 'MOVWE-商城';
                 <span style="--i:24;"></span>
                 <span style="--i:16;"></span>
                 <span style="--i:21;"></span>
-                <!-- <span style="--i:11;"></span>
-                <span style="--i:25;"></span>
-                <span style="--i:18;"></span>
-                <span style="--i:22;"></span>
-                <span style="--i:12;"></span>
-                <span style="--i:28;"></span>
-                <span style="--i:17;"></span>
-                <span style="--i:11;"></span>
-                <span style="--i:28;"></span>
-                <span style="--i:18;"></span>
-                <span style="--i:22;"></span> -->
-                <!-- <span style="--i:12;"></span>
-                <span style="--i:28;"></span>
-                <span style="--i:11;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:21;"></span>
-                <span style="--i:25;"></span>
-                <span style="--i:18;"></span>
-                <span style="--i:23;"></span>
-                <span style="--i:18;"></span>
-                <span style="--i:11;"></span>
-                <span style="--i:30;"></span>
-                <span style="--i:22;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:12;"></span>
-                <span style="--i:27;"></span>
-                <span style="--i:12;"></span>
-                <span style="--i:21;"></span> -->
+               
+               
             </div>
 
             <div class="bubbles2 ">
@@ -203,35 +166,20 @@ $title = 'MOVWE-商城';
                 <span style="--i:24;"></span>
                 <span style="--i:16;"></span>
                 <span style="--i:21;"></span>
-                <!-- <span style="--i:11;"></span>
-                <span style="--i:25;"></span>
-                <span style="--i:18;"></span>
-                <span style="--i:22;"></span>
-                <span style="--i:12;"></span>
-                <span style="--i:28;"></span>
-                <span style="--i:17;"></span>
-                <span style="--i:11;"></span>
-                <span style="--i:28;"></span>
-                <span style="--i:18;"></span>
-                <span style="--i:22;"></span> -->
-                <!-- <span style="--i:12;"></span>
-                <span style="--i:28;"></span>
-                <span style="--i:11;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:21;"></span>
-                <span style="--i:25;"></span>
-                <span style="--i:18;"></span>
-                <span style="--i:23;"></span>
-                <span style="--i:18;"></span>
-                <span style="--i:11;"></span>
-                <span style="--i:30;"></span>
-                <span style="--i:22;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:12;"></span>
-                <span style="--i:27;"></span>
-                <span style="--i:12;"></span>
-                <span style="--i:21;"></span> -->
+                
             </div>
+
+            <div class="banner__container ">
+                <!-- 手機圖 -->
+                <img class="mall_banner_s" src="./img/banner/mall_banner_s.jpg" alt="">
+                <!-- <img class="mall_banner_s" src="./imgs/forum_banner03_s.jpg" alt=""> -->
+
+                <!-- 桌機圖 -->
+                <img class="mall_banner" src="./img/banner/mall_banner.jpg" alt="">
+                <!-- <img class="mall_banner" src="./imgs/forum_banner03.jpg" alt=""> -->
+            </div>
+
+
 
             <!--text__container------內容放這邊------------->
             <div class="text__container mb_150">
@@ -254,12 +202,13 @@ $title = 'MOVWE-商城';
                         <div class="mall_content mt_24">
 
                             <p>使用Movwe點數來換取優惠折價券吧！
-                            <br>
-                            <br>
-                            透過Movwe商城點數換取更多種商城折價券，累積點數越多折扣越高！
-                            <br>
-                            <br>
-                            Movwe商城與各大品牌合作，含括迪士尼、漫威、星戰、其他熱門影劇相關周邊，每季定期換新賣場商品。</p>
+                                <br>
+                                <br>
+                                透過Movwe商城點數換取更多種商城折價券，累積點數越多折扣越高！
+                                <br>
+                                <br>
+                                Movwe商城與各大品牌合作，含括迪士尼、漫威、星戰、其他熱門影劇相關周邊，每季定期換新賣場商品。
+                            </p>
                         </div>
                         <a class="img_wrap " href="./point_index.php"><img src="./img/banner/mell_point.jpg" alt=""></a>
 
