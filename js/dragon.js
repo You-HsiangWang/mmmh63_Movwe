@@ -148,7 +148,7 @@ function startSceenOne() {
         if (i <= sloganOne.length) {
             showOne.innerHTML = sloganOne.substring(0, i);
             i++;
-            setTimeout(sOne, 200);
+            setTimeout(sOne, 100);
             // console.log('h1');
         }
         if (i === sloganOne.length) {
@@ -164,7 +164,7 @@ function startSceenOne() {
         if (ii <= sloganTwo.length) {
             showTwo.innerHTML = sloganTwo.substring(0, ii);
             ii++;
-            setTimeout(sTwo, 200);
+            setTimeout(sTwo, 100);
             // console.log('h1');
         }
         if (ii === sloganTwo.length) {
@@ -178,7 +178,7 @@ function startSceenOne() {
                     console.log('第一幕結束');
                 });
                 // console.log('end');
-            }, 1200);
+            }, 1000);
         }
     }
     setTimeout(sOne, 200);
@@ -215,14 +215,14 @@ function startSceenTwo() {
         if (i <= sloganThree.length) {
             showThree.innerHTML = sloganThree.substring(0, i);
             i++;
-            setTimeout(sThree, 200);
+            setTimeout(sThree, 100);
             // console.log('h1');
         }
         if (i === sloganThree.length) {
             setTimeout(function () {
                 showThree.style = 'transition: 2s; opacity: 0;';
                 $(showThree).one('transitionend', sFour);
-            }, 300)
+            }, 200)
             // $(btnOne).one('click', sTwo);
             // btnOne.style = 'display: block';
             // sTwo();
@@ -675,14 +675,14 @@ function princessthankyou() {
     $(mainChar).css(
         {   
             "transform": `translateX(${moverate}px)`,
-            "transition": "3s",
+            "transition": "1.5s",
             "transition-timing-function": "linear"
         }
     );
     $(princess).css(
         {   
             "transform": `translateX(-${moverate}px)`,
-            "transition": "3s",
+            "transition": "1.5s",
             "transition-timing-function": "linear"
         }
     );
@@ -701,20 +701,20 @@ function princessthankyou() {
                 $(mainChar).css(
                     {   
                         "transform": `translateX(-100vw)`,
-                        "transition": "3s",
+                        "transition": "1.5s",
                         "transition-timing-function": "linear"
                     }
                 );
                 $(princess).css(
                     {   
                         "transform": `translateX(-100vw)`,
-                        "transition": "3s",
+                        "transition": "1.5s",
                         "transition-timing-function": "linear"
                     }
                 );
-                setTimeout(fadeout,2000);
-            },1200);
-        },1200)
+                setTimeout(fadeout,1000);
+            },1000);
+        },1000)
     });
 };
 
@@ -724,7 +724,7 @@ function fadeout(){
         startSceenFive();
     });
     $('#bgi').css({
-        'transition': '3s',
+        'transition': '2s',
         'opacity': '0'
     });
 };

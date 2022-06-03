@@ -173,7 +173,7 @@ $title = 'MOVWE-帳戶登入';
                     <div class="register_form_wrap">
                         <h2 class="register_form_title">註冊</h2>
                         <h5 class="register_form_title_discrib">已經有帳戶了嗎？馬上<a>登入</a></h5>
-                        <form action="" name="register_form" method="post" class="register_form" id="registerEmailForm" onsubmit="checkRegister(); return false;" novalidate>
+                        <form action="" name="register_form" method="post" class="register_form" id="registerEmailForm" onsubmit="checkRegister(); return false;" novalidate autocomplete="off">
                             <section class="register_form_data_feild">
                                 <div>
                                     <label for="register_email">電子郵件地址</label>
@@ -189,8 +189,8 @@ $title = 'MOVWE-帳戶登入';
                                         <p>電子郵件地址格式錯誤，請重新輸入。</p>
                                     </div>
                                     <div class="register_email_alert login_d_none">
-                                        <p>此電子郵件已經註冊過帳號。<span>請</span><br>
-                                            <a>更換電子郵件</a><span>或</span><a href="member_login.php">馬上登入</a>
+                                        <p>此電子郵件已經註冊過帳號。<span>請更換電子郵件或</span><br>
+                                            <a href="member_login.php">馬上登入</a>
                                         </p>
                                     </div>
                                     <div class="register_email_alert login_d_none">
