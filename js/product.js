@@ -87,16 +87,23 @@ function WWW() {
 
 function CCC() {
 
-    const priceArray = ['899', '999', '1099'];
+    // const sss = document.querySelector('input[value="S"]');
+    // const mmm = document.querySelector('input[value="M"]');
+    // const lll = document.querySelector('input[value="L"]');
 
-    const cc = document.querySelector('input[name="productsize"]:checked').value; // 尺寸
-    console.log(cc);
+    // console.log(sss,mmm,lll);
     
-    $('#district option').each(function (index, item) {
-        console.log('index', index);
-        console.log('item', $(item));
-        console.log('index', districtData[index]);
-        $(item).text(districtData[index]);
+    // $(sss).prop("checked", true) 
+    // $('#productPrice').text('899');
+    
+    if(document.querySelector('input[value="S"]').checked) {
+        $('#productPrice').text('899');
+      }else if(document.querySelector('input[value="M"]').checked) {
+        $('#productPrice').text('999');
+      }
+
+    $('input[value="L"]').click(function(){
+        $('#productPrice').text('1099');
     })
 }
 
@@ -107,13 +114,16 @@ function AddtoCart() {
     const xx = document.querySelector('input[name="selectdoll"]:checked').value;  // 商品選項
     const yy = document.querySelector('input[name="productsize"]:checked').value; // 尺寸
     const zz = document.querySelector('#quantityPC').value; // 數量
+    const zzz = document.getElementById('productPrice').innerText; // 單價
+
 
     const aa = {
         'ProductName': item,
         'ProductChoice': xx,
         'ProductSize': yy,
         'ProductQuantity': zz,
-        'ProductPrice': zz * 899
+        'ProductPrice': zzz,
+        'SubTotalPrice': zz * zzz,
     };
 
     $.get('api_product.php', aa, function (data) { console.log(data); }, 'json')

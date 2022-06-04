@@ -3,7 +3,8 @@
 require './parts/movwe_connect_db.php';
 $title = '孤單又燦爛的神-鬼怪 娃娃';
 
-$productname = $_GET['productname'];  //apple banana car dog
+// $productname = $_GET['productname'];  
+//apple banana car dog
 
 //isset 該變數再不再?
 //$_GET 取得網址變數
@@ -24,7 +25,7 @@ $rows = $pdo->query($sql)->fetchAll();
 
 // print_r("<br>");
 $myproductchoices = $rows[0]["productchoice"];
-print_r('eddie' . "myproductchoices ->" . $rows[0]["productchoice"]);
+// print_r('eddie' . "myproductchoices ->" . $rows[0]["productchoice"]);
 
 
 //["蕎麥君","紅豆君","鬼怪","阿使","德華"]
@@ -114,7 +115,7 @@ print_r('eddie' . "myproductchoices ->" . $rows[0]["productchoice"]);
                                         <?php foreach ($rows as $s) : ?>
                                             <?php foreach (json_decode($s['productsize']) as $ss) : ?>
                                                 <div class="d-flex align-item-center mr-20">
-                                                    <input type="radio" class="product-size mr-10" name="productsize" value="<?= $ss ?>" onclick="CCC()" >
+                                                    <input type="radio" class="product-size mr-10" name="productsize" value="<?= $ss ?>" onclick="CCC()">
                                                     <label for="" class="white">
                                                         <?= $ss ?>
                                                     </label>
@@ -134,10 +135,8 @@ print_r('eddie' . "myproductchoices ->" . $rows[0]["productchoice"]);
                                 </div>
                             </div>
                             <div class="mt-20">
-                            
-                                        <span class="yellow mr-10">NTD</span>
-                                        <h3 class="inline orange" id="productPrice"></h3>
-                    
+                                <span class="yellow mr-10">NTD</span>
+                                <h3 class="inline orange" id="productPrice">899～1099</h3>
                             </div>
                             <!-- 購買按鈕 -->
                             <div class="d-flex justify-between">
