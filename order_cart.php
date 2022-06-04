@@ -103,7 +103,7 @@
                 </div>
                 <!-- ㄚㄚㄚ是table 購物車商品詳情 -->
                 <div class="booking-list mb-30 border-bottom-main-color">
-                    <table>
+                    <table id="bookingList">
                         <tr class="yellow">
                             <th class="d-flex justify-center align-item-center">
                                 <label>
@@ -134,60 +134,57 @@
                             </th>
                         </tr>
                         <?php foreach ($_SESSION['cart'] as $f) : ?>
-
-                        <tr id="text<?= $f['ProductSize'] ?>">
-                            <td class="d-flex justify-center align-item-center">
-                                <label>
-                                    <input type="checkbox" id="checkOneItem<?= $f['ProductSize'] ?>" class="checkitem" hidden>
-                                    <span>
-                                        <svg width="14" height="10" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_1427_26028)">
-                                                <path d="M20.5616 0.440204C21.1476 1.02621 21.1476 1.97318 20.5616 2.55919L8.56031 14.5605C7.97431 15.1465 7.02733 15.1465 6.44133 14.5605L0.439361 8.55984C-0.146454 7.97384 -0.146454 7.02686 0.439361 6.44086C1.02527 5.85486 1.97506 5.85486 2.56106 6.44086L7.45863 11.3773L18.4426 0.440204C19.0287 -0.146735 19.9756 -0.146735 20.5616 0.440204Z" fill="#fff" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_1427_26028">
-                                                    <rect width="21.0011" height="15" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>
-                                </label>
-                            </td>                    
-                            <td>
-                                <img src="./img/mall/1.jpg" alt="">
-                            </td>
-                            <td>
-                                <h4><?= $f['ProductName'] ?></h4>
-                            </td>
-                            <td>
-                                <h4><?= $f['ProductChoice'] ?></h4>
-                            </td>
-                            <td>
-                                <h4><?= $f['ProductSize'] ?></h4>
-                            </td>
-                            <td>
-                                <div class="d-flex justify-center">
-                                    <button class="button-number button-number-minus mr-10" onclick="subFunction('<?= $f['ProductSize'] ?>')">-</button>
-                                    <input type="text" class="quantity-input" value="<?= $f['ProductQuantity'] ?>" id="quantity<?= $f['ProductSize'] ?>">
-                                    <button class="button-number button-number-plus ml-10" onclick="addFunction('<?= $f['ProductSize'] ?>')">+</button>
-                                </div>
-                            </td>
-                            <td>
-                                <h4 id="singlePrice<?= $f['ProductSize'] ?>" data-value="<?= $f['ProductPrice'] ?>"><?= $f['ProductPrice'] ?></h4>
-                            </td>
-                            <td>
-                                <h4 id="subTotalPrice<?= $f['ProductSize'] ?>"><?= $f['SubTotalPrice'] ?></h4>
-                            </td>
-                            <td>
-                                <button class="delete-one-button btn_2w" onclick="deleteFunction(b)">移除</button>
-                            </td>
-                        </tr>
+                            <tr id="text<?= $f['ProductSize'] ?>">
+                                <td class="d-flex justify-center align-item-center">
+                                    <label>
+                                        <input type="checkbox" id="checkOneItem<?= $f['ProductSize'] ?>" class="checkitem" hidden>
+                                        <span>
+                                            <svg width="14" height="10" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_1427_26028)">
+                                                    <path d="M20.5616 0.440204C21.1476 1.02621 21.1476 1.97318 20.5616 2.55919L8.56031 14.5605C7.97431 15.1465 7.02733 15.1465 6.44133 14.5605L0.439361 8.55984C-0.146454 7.97384 -0.146454 7.02686 0.439361 6.44086C1.02527 5.85486 1.97506 5.85486 2.56106 6.44086L7.45863 11.3773L18.4426 0.440204C19.0287 -0.146735 19.9756 -0.146735 20.5616 0.440204Z" fill="#fff" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1427_26028">
+                                                        <rect width="21.0011" height="15" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <img src="./img/mall/1.jpg" alt="">
+                                </td>
+                                <td>
+                                    <h4>
+                                        <?= $f['ProductName'] ?>
+                                    </h4>
+                                </td>
+                                <td>
+                                    <h4><?= $f['ProductChoice'] ?></h4>
+                                </td>
+                                <td>
+                                    <h4><?= $f['ProductSize'] ?></h4>
+                                </td>
+                                <td>
+                                    <div class="d-flex justify-center">
+                                        <button class="button-number button-number-minus mr-10" onclick="subFunction('<?= $f['ProductSize'] ?>')">-</button>
+                                        <input type="text" class="quantity-input" value="<?= $f['ProductQuantity'] ?>" id="quantity<?= $f['ProductSize'] ?>">
+                                        <button class="button-number button-number-plus ml-10" onclick="addFunction('<?= $f['ProductSize'] ?>')">+</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4 id="singlePrice<?= $f['ProductSize'] ?>" data-value="<?= $f['ProductPrice'] ?>"><?= $f['ProductPrice'] ?></h4>
+                                </td>
+                                <td>
+                                    <h4 id="subTotalPrice<?= $f['ProductSize'] ?>"><?= $f['SubTotalPrice'] ?></h4>
+                                </td>
+                                <td>
+                                    <button class="delete-one-button btn_2w" onclick="deleteFunction('<?= $f['ProductSize'] ?>')">移除</button>
+                                </td>
+                            </tr>
                         <?php endforeach; ?>
-
                     </table>
-                    <div id="noProduct">
-                        <!-- <h3>目前購物車內沒有商品</h3> -->
-                    </div>
                 </div>
                 <!-- 優惠券 -->
                 <div class="d-flex mt-30 pb-10 border-bottom-main-color">
@@ -294,7 +291,7 @@
                             <button class="prev_btn_4w">繼續購物</button>
                         </a>
                         <a class="ml-20">
-                            <button class="btn_3w" onclick="DatatoDelivery()">下一步</button>
+                            <button class="btn_3w" onclick="DatatoDelivery('<?= $f['ProductSize'] ?>')">下一步</button>
                         </a>
                     </div>
                 </div>
