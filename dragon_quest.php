@@ -10,7 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+
     <script src="./js/jquery-3.6.0.js"></script>
+
+
 
     <style>
         * {
@@ -26,6 +31,20 @@
             background-color: rgb(0, 0, 0);
         }
 
+        /* 新增 */
+        p {
+            margin-bottom: 0;
+        }
+
+        /* 新增 */
+        .d_none {
+            display: none;
+        }
+
+        .pd_lr_20 {
+            padding: 0 40px;
+        }
+
         .fs {
             width: 100%;
             height: 100vh;
@@ -34,6 +53,17 @@
         .slogan {
             font-size: 3rem;
             transition: 3s;
+        }
+
+        /* 新增 */
+        .b_border {
+            /* position: relative; */
+            margin: 4px;
+            /* color: #fff; */
+            background-color: #212529;
+            /* border-color: #fff; */
+            border: 4px solid #fff;
+            padding: 1.5rem 2rem;
         }
 
         .bgi {
@@ -130,14 +160,27 @@
             z-index: 99;
         }
 
-        .sceen_four p {
+        /* 舊版 */
+        /* .sceen_four p {
             background-color: black;
             padding: 2rem;
             border-radius: 1rem;
             border: 1px solid goldenrod;
+        } */
+
+        /* 新增 */
+        .sceen_four p {
+            /* background-color: black; */
+            padding: 2rem;
+            /* border-radius: 1rem; */
+            /* border: 1px solid goldenrod; */
+            /* position: relative; */
+            margin: 4px;
+            background-color: #212529;
+            border: 4px white solid;
         }
 
-        .sceen_five{
+        .sceen_five {
             position: absolute;
             top: 0;
             left: 0;
@@ -149,7 +192,8 @@
             /* transition: 4s; */
         }
 
-        .slogan_btn {
+        /* 舊版 */
+        /* .slogan_btn {
             position: relative;
             z-index: 99;
             display: flex;
@@ -160,6 +204,20 @@
             padding: 2rem;
             border-radius: 1rem;
             border: 1px solid goldenrod;
+        } */
+
+        /* 新版 */
+        .slogan_btn {
+            position: relative;
+            /* z-index: 99; */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: black;
+            padding: 2rem;
+            /* border-radius: 1rem; */
+            /* border: 1px solid goldenrod; */
         }
 
         .heart {
@@ -261,13 +319,23 @@
             width: 100%;
         }
 
-        .btn {
+        /* 舊版 */
+        /* .btn {
             background-color: chocolate;
             position: absolute;
             right: 10%;
             bottom: 10%;
             padding: 20px;
             border-radius: 30px;
+        } */
+        /* 新版 */
+        .btn {
+            /* background-color: chocolate; */
+            position: absolute;
+            right: 10%;
+            bottom: 10%;
+            /* padding: 20px; */
+            /* border-radius: 30px; */
         }
 
         #btnTwo {
@@ -276,21 +344,32 @@
             bottom: 0;
         }
 
-        .conver_box {
+        /* 舊版 */
+        /* .conver_box {
             border: 2px solid rgb(174, 131, 21);
             border-radius: 20px;
             background-color: rgb(36, 35, 35);
             transition: .2s;
+        } */
+
+        /* 新版 */
+        .conver_box {
+            /* border: 2px solid rgb(174, 131, 21);
+            border-radius: 20px;
+            background-color: rgb(36, 35, 35); */
+            transition: .2s;
         }
 
+        /* 改寫 */
         .conver_sation {
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 1.5rem;
             width: 100%;
-            height: 100px;
-            padding: 20px;
+            /* 移除 */
+            /* height: 100px;
+            padding: 20px; */
         }
 
         .fightbox_boss {
@@ -556,7 +635,7 @@
     <div class="bgi fs" id="bgi">
         <!-- 第五幕 結算結果 -->
         <div class="sceen_six fs" id="sceen_six" style="display: none;">
-        
+
         </div>
         <!-- 第四幕 結算畫面 -->
         <div class="sceen_five fs" id="sceen_five" style="display: none;">
@@ -576,9 +655,11 @@
             <p class="slogan" id="sloganTenthree" style="display: none;">FIGHT!</p>
 
             <!-- 下方show -->
-            <div class="slogan_btn" id="sloganBtnOne">
+            <!-- nes-container is-dark is-centered -->
+            <div class="slogan_btn nes-container is-dark is-centered" id="sloganBtnOne">
                 <h6 class="slogan" id="showSloganTentwo" style="display: none;"></h6>
-                <button class="btn" id="btnTwo" style="display: none; z-index: 99;">戰鬥</button>
+                <!-- nes-btn is-warning -->
+                <button class="btn nes-btn is-warning" id="btnTwo" style="display: none; z-index: 99;">戰鬥</button>
             </div>
             <p class="slogan" id="showSloganTenthree" style="display: none; z-index: 99;">FIGHT!</p>
             <p class="slogan" id="showSloganTenfour" style="display: none; z-index: 99;">ATTACK!</p>
@@ -602,8 +683,9 @@
                 <div class="sceen_three_bgs"></div>
                 <div class="sceen_three_bgs">
                     <div class="dragon" id="bosschar">
-                        <div class="conver_box" id="conversation" style="display: none;">
-                            <div class="conver_sation">
+                        <!-- nes-balloon is-dark -->
+                        <div class="conver_box nes-balloon is-dark" id="conversation" style="display: none;">
+                            <div class="conver_sation ">
                                 <p id="sloganTen">哈哈哈，小精靈你終於來了</p>
                                 <p id="sloganTenone" style="display: none;">想救公主的話就先答對所有問題打敗我!!!</p>
                             </div>
@@ -611,7 +693,8 @@
                         <img src="./img/other/dragon.webp" alt="dragon">
                     </div>
                     <div class="princess" id="princesschar">
-                        <div class="conver_box" id="conversation">
+                        <!-- nes-balloon is-dark -->
+                        <div class="conver_box nes-balloon is-dark" id="conversation">
                             <div class="conver_sation">
                                 <p id="sloganHelp">help!!!</p>
                             </div>
@@ -624,17 +707,20 @@
         <!-- 第二幕 黑背景切有色背景-->
         <div class="sceen_two fs" id="sceen_two">
             <!-- slogan放這裡 -->
+            <!-- nes-container is-dark is-centered -->
+
             <p class="slogan" id="sloganThree" style="display: none;">小精靈踏上了拯救公主的旅程!!!</p>
 
             <!-- 下方show -->
-            <p class="slogan" id="showSloganThree"></p>
+            <p class="slogan b_border d-none" id="showSloganThree">（準備中...）</i></p>
         </div>
         <!-- 第一幕 slogan介紹故事背景-->
         <div class="sceen_one fs" id="sceen_one">
             <!-- slogan放這裡 -->
             <p class="slogan" id="sloganOne" style="display: none;">從前從前，在精靈國度有一位被巨龍囚禁的公主...</p>
             <p class="slogan" id="sloganTwo" style="display: none;">有天，MOVWE小精靈收到了公主的求救信...</p>
-            <button id="btnOne" class="btn" style="display: none;">繼續...</button>
+            <!-- nes-btn is-warning -->
+            <button id="btnOne" class="btn nes-btn is-warning" style="display: none;">繼續...</button>
             <!-- 下方show 上方準備 -->
             <p class="slogan" id="showSloganOne"></p>
             <p class="slogan" id="showSloganTwo"></p>
@@ -642,7 +728,8 @@
 
         <!-- 主角 -->
         <div class="elif" id="mainChar">
-            <div class="conver_box" id="conversationElif">
+            <!-- nes-balloon is-dark -->
+            <div class="conver_box nes-balloon is-dark" id="conversationElif">
                 <div class="conver_sation">
                     <p id="sloganFour">press -></p>
                     <p id="sloganFive" style="display: none;">公主！我來救你了！</p>
@@ -656,7 +743,8 @@
             <img src="./img/other/gif/logo_8bit_gif.gif" alt="cat">
         </div>
         <div class="dragon" id="bosscharAll" style="display: none;">
-            <div class="conver_box" id="conversation" style="display: none;">
+            <!-- nes-balloon is-dark -->
+            <div class="conver_box nes-balloon is-dark" id="conversation" style="display: none;">
                 <div class="conver_sation">
                 </div>
             </div>
@@ -666,8 +754,9 @@
             <img src="./img/other/fireball.png" alt="fireball">
         </div>
         <div class="princess" id="princesscharAll" style="display: none;">
-            <div class="conver_box" id="conversation" style="display: none">
-                <div class="conver_sation">
+            <!-- nes-balloon is-dark -->
+            <div class="conver_box nes-balloon is-dark " id="conversation" style="display: none">
+                <div class="conver_sation ">
                     <p id="sloganHelp">help!!!</p>
                 </div>
             </div>
