@@ -15,10 +15,10 @@ $title = 'Movwe-訂單完成';
 </head>
 
 <body>
-    <?php include __DIR__ . '/parts/movwe_nav_fin.php' ?>
+<?php include __DIR__ . '/parts/movwe_nav_fin.php' ?>
     <div class="layout">
 
-        <?php include __DIR__ . '/parts/movwe_nav_leftdiv.php' ?>
+    <?php include __DIR__ . '/parts/movwe_nav_leftdiv.php' ?>
 
         <div class="container">
 
@@ -319,6 +319,8 @@ $title = 'Movwe-訂單完成';
 
         <?php include __DIR__ . '/parts/movwe_scripts.php' ?>
         <script src="./js/order_finish.js"></script>
+        <script src="./js/Nav.js"></script>
+
 
 </body>
 
