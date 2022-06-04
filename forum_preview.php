@@ -147,7 +147,10 @@ $title = '預覽文章';
 
             function gotopublish() {
                 $.post('api_forum_publish.php', fpreview, function(data){
-                    console.log('success');
+                    console.log(data,'success');
+                    if(data.success == true){
+                        location.href = './forum_publish.php'
+                    };
                 }, 'json');
             };
         </script>

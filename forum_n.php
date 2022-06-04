@@ -19,7 +19,8 @@ if (!empty($hashtagrows)) {
 };
 
 // 從資笠庫裡拿文章資料
-$forumsql = 'SELECT * FROM `forum` FULL join `member` WHERE `forum_arthur` = `member_sid` LIMIT 7;';
+$forumsql = 'SELECT * FROM `forum` FULL join `member` WHERE `forum_arthur` = `member_sid` ORDER BY `forum_sid` DESC LIMIT 7;';
+// $forumsql = 'SELECT * FROM `forum` ORDER BY `forum_sid` DESC LIMIT 7;';
 $forumstmt = $pdo->prepare($forumsql);
 $forumstmt->execute();
 $forumrows = $forumstmt->fetchAll();
@@ -855,6 +856,12 @@ $tags = $pdo->query($tagsql)->fetchAll();
                 pause_icon: '<i class="far fa-pause-circle"></i>',
                 prev_icon: '<i class="fas fa-angle-left"></i>',
                 next_icon: '<i class="fas fa-angle-right"></i>'
+            });
+
+            $('.card-article').on('click', function(){
+                const dataid = $(this).attr('data-forumid');
+                console.log('dataid', dataid);
+                location.href = './forum_article_n.php?art=' + dataid;
             });
         </script>
 
