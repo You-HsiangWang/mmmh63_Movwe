@@ -137,7 +137,15 @@
         .push__up p {
             color: #1A1D24;
         }
-
+        /* 進度條動畫 */
+        @keyframes runrunani {
+            from {
+                width: 0;
+            }
+            to {
+                width: <?= $Winfo['wish_number']*0.04 ?>%;
+            }
+        }
         @media screen and (min-width: 750px) {
             .imge__card__information {
                 display: block;
@@ -936,7 +944,7 @@
                                                             <?= $Winfo['wish_name'] ?>
                                                         </div>
                                                         <div class="wish_word_bottom">
-                                                            <div class="wish_total">
+                                                            <div class="wish_total progress-striped">
                                                                 <div class="wish_people" style="width: <?= $Winfo['wish_number']*0.04 ?>%"></div>
                                                             </div>
                                                             <div class="wish_vote">
@@ -2212,6 +2220,7 @@
                 accinitial();
                 $('.account_films').on('click', accinitial);
                 $('.info_child01').on('click', accinitial);
+                $('.account_films').css('border-bottom', '1px solid #10ffa2')
 
                 //影劇底線亮起 其餘底線消失
                 $('.account_films').click(function() {
