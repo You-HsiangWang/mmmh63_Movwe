@@ -100,7 +100,7 @@ $title = 'MOVWE-就要你放膽搜';
                     </div>
                     <div class="search_p3">
                         <input id="myInput" placeholder="輸入片名">
-                        <button id="myBtn" onclick="javascript:window.location.href='./search_page.php'">Button</button>
+                        <button id="myBtn" onclick="javascript:window.location.href='./search_page copy.php'">Button</button>
 
                     </div>
                     <div class="search_p4">

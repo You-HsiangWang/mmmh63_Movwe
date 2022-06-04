@@ -104,6 +104,41 @@ inputElement.addEventListener("input",function () {
 })
 
 
+var input = document.getElementById("myInput");
+var inputbtn = document.getElementById("myInput");
+input.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("search__Btn").click();
+    }
+});
+
+const searchFinal = document.querySelector('.search__final')
+const searchBtn = document.querySelector('#search__Btn')
+const searchInputSwitch = document.querySelector('.search__input__switch')
+const searchInputSwitch02 = document.querySelector('.search__input__switch-2')
+const carouselSearch = document.querySelector('.carousel')
+const searchCaryContainer = document.querySelector('.search__Cary__container')
+
+
+console.log(searchBtn);
+
+searchInputSwitch02.style.display = 'none'
+searchCaryContainer.style.display = 'none'
+searchBtn.addEventListener('click',()=>{
+
+    searchInputSwitch.style.display = 'none'
+    searchInputSwitch02.style.display = 'block'
+    carouselSearch.style.display = 'none'
+    searchCaryContainer.style.display = 'block'
+
+})
+
+
+
+
+
+
 // var testInput = document.getElementById('myInput')
 // var submitBtn = document.querySelector('.submitBtn')
 // var searchPoint = document.querySelector('.search__point')

@@ -1,9 +1,35 @@
 <?php
 
 require './parts/movwe_connect_db.php';
-$title = 'MOVWE-搜尋結果';
+$pageName = 'my_film_list';
+$title = 'MOVWE-我的片單';
 
+// 拿到所有電影
+// $getFilmList = "SELECT * FROM `video` WHERE 1 ORDER BY RAND() LIMIT 10";
+// $stmtFL = $pdo->query($getFilmList);
+// $FLrow = $stmtFL->fetchAll();
+
+//我的片單7部 
+$getFilmList = "SELECT * FROM `video` WHERE 1 ORDER BY RAND() LIMIT 13";
+$stmtFL = $pdo->query($getFilmList);
+$FLrow = $stmtFL->fetchAll();
+
+// //許願清單4部 
+// $getWishList = "SELECT * FROM `video` WHERE 1 ORDER BY RAND() LIMIT 4";
+// $stmtWL = $pdo->query($getWishList);
+// $WLrow = $stmtWL->fetchAll();
+
+// //瀏覽紀錄10部 
+// $getHistoryList = "SELECT * FROM `video` WHERE 1 ORDER BY RAND() LIMIT 10";
+// $stmtHL = $pdo->query($getHistoryList);
+// $HLrow = $stmtHL->fetchAll();
+
+// // 拿會員點數/暱稱/頭貼欄位
+// $getPoints = "SELECT * FROM `member` WHERE `member_sid` = 1";
+// $stmtHL = $pdo->query($getPoints);
+// $getP = $stmtHL->fetchAll();
 ?>
+
 
 <?php include __DIR__ . '/parts/movwe_head.php'; ?>
 <!-- <link href="./fontawesome/css/all.css" rel="stylesheet">
@@ -13,6 +39,11 @@ $title = 'MOVWE-搜尋結果';
 <link rel="stylesheet" href="./css/search__filter.css">
 <link rel="stylesheet" href="./css/Carousel_1.css">
 <link rel="stylesheet" href="./css/Carousel_7.css">
+<link rel="stylesheet" href="./css/bubbles_bg.css">
+<link rel="stylesheet" href="./css/member-info-php.css">
+<link rel="stylesheet" href="./css/kuang.css">
+<link rel="stylesheet" href="./css/no-article.css">
+
 <!-- <link rel="stylesheet" href="./css/reset.css"> -->
 <!-- <link rel="shortcut icon" type="image/x-icon" href="./img/nav_images/LOGO.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -187,7 +218,7 @@ $title = 'MOVWE-搜尋結果';
         <!----------nav_left-------------->
 
         <!--------------------------------------------------------------------------->
-        <div class="container">
+        <div class="container flex-wrap">
 
             <!--banner__container----------------->
             <div class="banner__container">
@@ -196,17 +227,18 @@ $title = 'MOVWE-搜尋結果';
             </div>
 
             <!--text__container------內容放這邊------------->
-            <div class="text__container flex-col margin__bt__100">
+            <div class="text__container flex-col margin__bt__100 flex-wrap">
 
                 <div class="searchpage__filter">
                     <div class="big__search">
-                        <input id="myInput" placeholder="輸入片名" value="hihi">
+                        <input id="myInput" placeholder="輸入片名" value="">
                     </div>
                     <div class="submit__btn">
-                        <button class="submitBtn">輸入</button>
+                    <button class="search__btn01" id="search__Btn" >Button</button>
                     </div>
                     <div class="search__final">
-                        <p>根據您輸入的關鍵字“<span id="Title" class="search__point">鬼怪</span>”, 為您找到以下搜索結果</p>
+                        <p class="search__input__switch-2">很抱歉! 根據您輸入的關鍵字“<span id="Title" class="search__point"></span>”, 找不到符合的相關結果</p>
+                        <p class="search__input__switch">根據您輸入的關鍵字“<span id="Title" class="search__point">鬼怪</span>”, 為您找到以下搜索結果</p>
                     </div>
                     <div class="searchpage__filter__top">
                         <div class="filter__title">
@@ -230,7 +262,7 @@ $title = 'MOVWE-搜尋結果';
                 <!----------------------------------------------->
 
 
-                <div class="carousel__big__box__7 actor__text__container mb_search_page">
+                <div class="carousel__big__box__7 actor__text__container mb_search_page carousel__big__box__7__search__page">
                     <div class="carousel__title__section__7">
                         <div class="stick_desk"></div>
                         <div class="carousel__title__7">
@@ -637,13 +669,18 @@ $title = 'MOVWE-搜尋結果';
                 <!----------------------------------------------->
 
 
-                <div class="carousel__big__box margin__tp__100 mb_search_page">
+                <div class="carousel__big__box margin__tp__100 mb_search_page flex-wrap">
                     <div class="carousel__title__section">
                         <div class="stick_desk"></div>
                         <div class="carousel__title">
                             <p>
                                 搜尋結果
                             </p>
+                        </div>
+                    </div>
+                    <div class="search__Cary__container">
+                        <div class="cearch__Cary__box">
+                            <img src="./img/talls_img/crying.gif" alt="">
                         </div>
                     </div>
                     <div class="carousel">
@@ -655,45 +692,40 @@ $title = 'MOVWE-搜尋結果';
                             </button> -->
                             <ul class="carousel__track search__track">
                                 <li class="carousel__slide current-slide">
-                                    <div class="image__box">
-                                        <?php
-                                        for ($i = 0; $i < 7; $i++) {
-                                            echo "
-                                            ";
-                                        }
-                                        ?>
-                                        <div class="image__card">
+                                    <div class="image__box flex-wrap">
+                                        <div class="image__card image__card__search_page">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
                                                     <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
-                                                        <p class="information__typ">
+                                                        <p class="information__typ d-filter-a">
                                                             影劇
                                                         </p>
                                                         <div class="bottom_6_icon_box">
-                                                            <a href="#">
-                                                                <!-- <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                                </p> -->
-                                                            </a>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                            </a>
-                                                            </p>
-                                                            <a href="#">
-                                                                <!-- <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                                </p> -->
-                                                            </a>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                <!-- <a href="#">
+                                                                    <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
+                                                                    </p>
+                                                                </a> -->
+                                                                <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw" target="_blank">
+                                                                    <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                </a>
                                                                 </p>
-                                                            </a>
-                                                        </div>
+                                                                <!-- <a href="#">
+                                                                    <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
+                                                                    </p>
+                                                                </a> -->
+                                                                <a href="#">
+                                                                    <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
+                                                                    </p>
+                                                                </a>
+                                                            </div>
+
 
                                                     </div>
                                                     <div class="information__bottom_2 Bottom__display">
@@ -721,931 +753,209 @@ $title = 'MOVWE-搜尋結果';
                                                             奇幻冒險
                                                         </p>
                                                     </div>
-                                                    <div class="information__bottom_5 Bottom__display">
-                                                        <a href="#">
-                                                            <p class="information__actor__name">
-                                                                孔劉
-                                                            </p>
-                                                        </a>
-                                                        <span class="speace"> / </span>
-                                                        <a href="#">
-                                                            <p class="information__actor__name">
-                                                                金高銀
-                                                            </p>
-                                                        </a>
-                                                        <span class="speace"> / </span>
-                                                        <a href="#">
+                                                    <!-- <div class="information__bottom_5 Bottom__display">
+                                                                    <a href="#">
+                                                                        <p class="information__actor__name">
+                                                                            大衛·芬奇
+                                                                        </p>
+                                                                    </a>
+                                                                    <span class="speace"> / </span>
+                                                                    <a href="#">
+                                                                        <p class="information__actor__name">
+                                                                            喬舒亞·多南
+                                                                        </p>
+                                                                    </a>
 
-                                                            <p class="information__actor__name">
-                                                                劉寅娜
-                                                            </p>
-                                                        </a>
-
-                                                    </div>
-
-                                                    <div class="information__bottom_6-5 Bottom__display">
-                                                        <a href="./single_movie.php">
-                                                            <p class="detail">
-                                                                查看詳細..
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                    <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up Color__blk">
-                                                            <p class="Color__blk">
-                                                                ＋ 加入片單
-                                                            </p>
-                                                        </button>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/h_1.jpeg" alt="">
-                                                <div class="image__card__text">
-                                                    <div class="movie__name">
-                                                        <p>
-                                                            孤單又燦爛的神 鬼怪
-                                                        </p>
-                                                    </div>
-                                                    <div class="movie__icons">
-                                                        <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
-                                                        </div> -->
-                                                        <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
-                                                        </div>
-                                                        <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                        </div> -->
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </li>
-                            </ul>
-                            <ul class="carousel__track search__track mb_search_page">
-                                <li class="carousel__slide current-slide">
-                                    <div class="image__box">
-                                        <div class="image__card">
-                                            <div class="imge__card__information">
-                                                <div class="information__top">
-                                                    <img class="carousel__images" src="./img/center/search-7.jpg" alt="">
-                                                </div>
-                                                <div class="information__bottom">
-                                                    <div class="information__bottom_1 Bottom__display">
-                                                        <p class="information__typ">
-                                                            動畫
-                                                        </p>
-                                                        <div class="bottom_6_icon_box">
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                            <!-- <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                            </a> -->
-                                                            </p>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                            <!-- <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                                </p> -->
-                                                            </a>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="information__bottom_2 Bottom__display">
-                                                        <p class="information__name">
-                                                            吸血鬼馬上死
-                                                        </p>
-                                                    </div>
-                                                    <div class="information__bottom_3 Bottom__display">
-                                                        <div class="information__star">
-                                                            <div class="information__staricon_box">
-                                                                <img src="./img/icons/start.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="information__point">
-                                                            <p>
-                                                                8.9
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="information__bottom_4 Bottom__display">
-                                                        <p>
-                                                            /
-                                                        </p>
-                                                        <p>
-                                                            奇幻冒險
-                                                        </p>
-                                                    </div>
-                                                    <div class="information__bottom_5 Bottom__display">
-                                                        <a href="#">
-                                                            <p class="information__actor__name">
-                                                                福山潤
-                                                            </p>
-                                                        </a>
-                                                        <span class="speace"> / </span>
-                                                        <a href="#">
-                                                            <p class="information__actor__name">
-                                                                谷川慎
-                                                            </p>
-                                                        </a>
-                                                        <span class="speace"> / </span>
-                                                        <a href="#">
-
-                                                            <p class="information__actor__name">
-
-                                                            </p>
-                                                        </a>
-
-                                                    </div>
+                                                                </div> -->
 
                                                     <div class="information__bottom_6-5 Bottom__display">
                                                         <a href="./single-movie-page0511.html">
                                                             <p class="detail">
-                                                                查看詳細..
+                                                                查看詳細...
                                                             </p>
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up Color__blk">
-                                                            <p class="Color__blk">
-                                                                ＋ 加入片單
-                                                            </p>
-                                                        </button>
-                                                    </div>
+                                                            <button class="push__up">
+                                                                <p class="search__black">
+                                                                    ＋ 加入片單
+                                                                </p>
+                                                            </button>
+                                                        </div>
+
                                                 </div>
-
                                             </div>
-                                            <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/search-7.jpg" alt="">
-                                                <div class="image__card__text">
-                                                    <div class="movie__name">
-                                                        <p>
-                                                            吸血鬼馬上死
-                                                        </p>
-                                                    </div>
-                                                    <div class="movie__icons">
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
-                                                        </div>
-                                                        <!-- <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
-                                                        </div> -->
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                        </div>
-                                                        <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
 
-                                                        </div> -->
+                                            <div class="actor_flim">
+                                                <div class="ac_flim_pic">
+                                                    <img src="./img/center/h_1.jpeg" alt="">
+                                                </div>
+                                                <div class="ac_flim_name">
+                                                    孤單又燦爛的神 鬼怪
+                                                </div>
+                                                <div class="ac_ott">
+                                                    <div class="ac_netflix">
+                                                        <img src="./img/logo/netflix_s.svg" alt="">
+                                                    </div>
+                                                    <div class="ac_netflix">
+                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="image__card">
-                                            <div class="imge__card__information">
-                                                <div class="information__top">
-                                                    <img class="carousel__images" src="./img/center/search-8.sm.jpg" alt="">
-                                                </div>
-                                                <div class="information__bottom">
-                                                    <div class="information__bottom_1 Bottom__display">
-                                                        <p class="information__typ">
-                                                            動畫
-                                                        </p>
-                                                        <div class="bottom_6_icon_box">
-                                                            <a href="#">
-                                                                <!-- <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                                </p> -->
-                                                            </a>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                            </a>
-                                                            </p>
-                                                            <a href="#">
-                                                                <!-- <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                                </p> -->
-                                                            </a>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                        </div>
 
+                                        <?php foreach ($FLrow as $FLrowinfo) : ?>
+                                            <div class="image__card image__card__search_page">
+                                                <div class="imge__card__information">
+
+                                                    <div class="information__top">
+                                                        <img class="information__video" src="./videodb/video/<?= $FLrowinfo['video_poster_hor'] ?>" alt="">
                                                     </div>
-                                                    <div class="information__bottom_2 Bottom__display">
-                                                        <p class="information__name">
-                                                            怪盜基德
-                                                        </p>
-                                                    </div>
-                                                    <div class="information__bottom_3 Bottom__display">
-                                                        <div class="information__star">
-                                                            <div class="information__staricon_box">
-                                                                <img src="./img/icons/start.svg" alt="">
+
+                                                    <div class="information__bottom">
+                                                        <div class="information__bottom_1 Bottom__display">
+                                                            <p class="information__typ" style="<?php
+                                                                                                $ottcolor = [
+                                                                                                    '2' => '#10FFA2',
+                                                                                                    '3' => '#1CD8FF',
+                                                                                                    '1' => '#FC6F51',
+                                                                                                ];
+                                                                                                if ($FLrowinfo['video_genre'] == '影劇') {
+                                                                                                    $color = $ottcolor['1'];
+                                                                                                } else if ($FLrowinfo['video_genre'] == '電影') {
+                                                                                                    $color = $ottcolor['2'];
+                                                                                                } else if ($FLrowinfo['video_genre'] == '動畫') {
+                                                                                                    $color = $ottcolor['3'];
+                                                                                                };
+                                                                                                echo 'color:' . $color . '; border: 1px solid' . $color;
+                                                                                                ?>"><?= $FLrowinfo['video_genre'] ?>
+                                                            </p>
+
+                                                            <div class="bottom_6_icon_box">
+                                                                <?php
+                                                                $ottdata = [
+                                                                    '4' => 'friday_s.svg',
+                                                                    '2' => 'iqiyi_s.svg',
+                                                                    '3' => 'kktv_s.svg',
+                                                                    '1' => 'netflix_s.svg',
+                                                                ];
+
+                                                                $ar = json_decode($FLrowinfo['video_ott'], true);
+                                                                if ($ar and count($ar)) {
+                                                                    foreach ($ar as $v) {
+                                                                        if (!empty($ottdata[$v])) {
+                                                                            echo '<a href="#">
+                                                                                            <p class="bottom_6_icon">
+                                                                                                <img src="./img/logo/' . $ottdata[$v] . '" alt="">
+                                                                                            </p>
+                                                                                        </a>';
+                                                                        }
+                                                                    }
+                                                                }
+                                                                ?>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="information__bottom_2 Bottom__display">
+                                                            <p class="information__name">
+                                                                <?= $FLrowinfo['video_name'] ?>
+                                                            </p>
+                                                        </div>
+                                                        <div class="information__bottom_3 Bottom__display">
+                                                            <div class="information__star">
+                                                                <div class="information__staricon_box">
+                                                                    <img src="./img/icons/start.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="information__point">
+                                                                <p>
+                                                                    <?= $FLrowinfo['video_rating'] ?>
+                                                                </p>
                                                             </div>
                                                         </div>
-                                                        <div class="information__point">
+                                                        <div class="information__bottom_4 Bottom__display">
                                                             <p>
-                                                                8.3
+                                                                <?= str_replace('，', ' / ', str_replace(' ', '', $FLrowinfo['video_style'])) ?>
                                                             </p>
+                                                            <!-- <p>
+                                                                                奇幻冒險
+                                                                            </p> -->
                                                         </div>
+                                                        <!-- <div class="information__bottom_5 Bottom__display">
+                                                                            <a href="#">
+                                                                                <p class="information__actor__name">
+                                                                                    孔劉
+                                                                                </p>
+                                                                            </a>
+                                                                            <span class="speace"> / </span>
+                                                                            <a href="#">
+                                                                                <p class="information__actor__name">
+                                                                                    金高銀
+                                                                                </p>
+                                                                            </a>
+                                                                            <span class="speace"> / </span>
+                                                                            <a href="#">
+
+                                                                                <p class="information__actor__name">
+                                                                                    劉寅娜
+                                                                                </p>
+                                                                            </a>
+
+                                                                        </div> -->
+
+                                                        <div class="information__bottom_6-5 Bottom__display">
+                                                            <a href="./single-movie-page0511.html">
+                                                                <p class="detail">
+                                                                    查看詳細...
+                                                                </p>
+                                                            </a>
+                                                        </div>
+                                                        <div class="information__bottom_6 Bottom__display">
+                                                            <button class="push__up">
+                                                                <p class="search__black">
+                                                                    ＋ 加入片單
+                                                                </p>
+                                                            </button>
+                                                        </div>
+
                                                     </div>
-                                                    <div class="information__bottom_4 Bottom__display">
-                                                        <p>
-                                                            /
-                                                        </p>
-                                                        <p>
-                                                            奇幻冒險
-                                                        </p>
+                                                </div>
+
+                                                <div class="actor_flim">
+                                                    <div class="ac_flim_pic">
+                                                        <img src="./videodb/video/<?= $FLrowinfo['video_poster_ver'] ?>" alt="">
                                                     </div>
-                                                    <div class="information__bottom_5 Bottom__display">
-                                                        <a href="#">
-                                                            <p class="information__actor__name">
-                                                                山口勝平
-                                                            </p>
-                                                        </a>
-                                                        <span class="speace"> / </span>
-                                                        <a href="#">
-                                                            <p class="information__actor__name">
-
-                                                            </p>
-                                                        </a>
-                                                        <span class="speace"> / </span>
-                                                        <a href="#">
-
-                                                            <p class="information__actor__name">
-
-                                                            </p>
-                                                        </a>
-
+                                                    <div class="ac_flim_name">
+                                                        <?= $FLrowinfo['video_name'] ?>
                                                     </div>
 
-                                                    <div class="information__bottom_6-5 Bottom__display">
-                                                        <a href="./single-movie-page0511.html">
-                                                            <p class="detail">
-                                                                查看詳細..
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                    <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up Color__blk">
-                                                            <p class="Color__blk">
-                                                                ＋ 加入片單
-                                                            </p>
-                                                        </button>
+                                                    <div class="ac_ott">
+                                                        <?php
+                                                        $ottdata = [
+                                                            '4' => 'friday_s.svg',
+                                                            '2' => 'iqiyi_s.svg',
+                                                            '3' => 'kktv_s.svg',
+                                                            '1' => 'netflix_s.svg',
+                                                        ];
+                                                        $ar = json_decode($FLrowinfo['video_ott'], true);
+                                                        if ($ar and count($ar)) {
+                                                            foreach ($ar as $v) {
+                                                                if (!empty($ottdata[$v])) {
+                                                                    echo '<a href="#">
+                                                                                <div class="ac_netflix">
+                                                                                    <img src="./img/logo/' . $ottdata[$v] . '" alt="">
+                                                                                </div>
+                                                                                
+                                                                            </a>';
+                                                                }
+                                                            }
+                                                        }
+                                                        ?>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/search-8.sm.jpg" alt="">
-                                                <div class="image__card__text">
-                                                    <div class="movie__name">
-                                                        <p>
-                                                            怪盜基德
-                                                        </p>
-                                                    </div>
-                                                    <div class="movie__icons">
-                                                        <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
-                                                        </div> -->
-                                                        <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
-                                                        </div>
-                                                        <!-- <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                        </div> -->
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image__card">
-                                            <div class="imge__card__information">
-                                                <div class="information__top">
-                                                    <img class="carousel__images" src="./img/center/search-9.sm.jpg" alt="">
-                                                </div>
-                                                <div class="information__bottom">
-                                                    <div class="information__bottom_1 Bottom__display">
-                                                        <p class="information__typ">
-                                                            影劇
-                                                        </p>
-                                                        <div class="bottom_6_icon_box">
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                            </a>
-                                                            </p>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                        </div>
+                                        <?php endforeach; ?>
 
-                                                    </div>
-                                                    <div class="information__bottom_2 Bottom__display">
-                                                        <p class="information__name">
-                                                            猛鬼抓交替
-                                                        </p>
-                                                    </div>
-                                                    <div class="information__bottom_3 Bottom__display">
-                                                        <div class="information__star">
-                                                            <div class="information__staricon_box">
-                                                                <img src="./img/icons/start.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="information__point">
-                                                            <p>
-                                                                8.4
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="information__bottom_4 Bottom__display">
-                                                        <p>
-                                                            靈異驚悚 /
-                                                        </p>
-                                                        <p>
-                                                            奇幻冒險
-                                                        </p>
-                                                    </div>
-                                                    <div class="information__bottom_5 Bottom__display">
-                                                        <a href="#">
-                                                            <p class="information__actor__name">
-                                                                思考泰勒
-                                                            </p>
-                                                        </a>
-                                                        <span class="speace"> / </span>
-                                                        <a href="#">
-                                                            <p class="information__actor__name">
-                                                                詹姆士蘭
-                                                            </p>
-                                                        </a>
-                                                        <span class="speace"> / </span>
-                                                        <a href="#">
-
-                                                            <p class="information__actor__name">
-
-                                                            </p>
-                                                        </a>
-
-                                                    </div>
-
-                                                    <div class="information__bottom_6-5 Bottom__display">
-                                                        <a href="./single-movie-page0511.html">
-                                                            <p class="detail">
-                                                                查看詳細..
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                    <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up Color__blk">
-                                                            <p class="Color__blk">
-                                                                ＋ 加入片單
-                                                            </p>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/search-9.sm.jpg" alt="">
-                                                <div class="image__card__text">
-                                                    <div class="movie__name">
-                                                        <p>
-                                                            猛鬼抓交替
-                                                        </p>
-                                                    </div>
-                                                    <div class="movie__icons">
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image__card card4">
-                                            <div class="imge__card__information">
-                                                <div class="information__top">
-                                                    <img class="carousel__images" src="./img/center/search-10.sm.jpg" alt="">
-                                                </div>
-                                                <div class="information__bottom">
-                                                    <div class="information__bottom_1 Bottom__display">
-                                                        <p class="information__typ">
-                                                            動畫
-                                                        </p>
-                                                        <div class="bottom_6_icon_box">
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                            </a>
-                                                            </p>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="information__bottom_2 Bottom__display">
-                                                        <p class="information__name">
-                                                            新比怪怪屋
-                                                        </p>
-                                                    </div>
-                                                    <div class="information__bottom_3 Bottom__display">
-                                                        <div class="information__star">
-                                                            <div class="information__staricon_box">
-                                                                <img src="./img/icons/start.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="information__point">
-                                                            <p>
-                                                                9.3
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="information__bottom_4 Bottom__display">
-                                                        <p>
-                                                            /
-                                                        </p>
-                                                        <p>
-                                                            奇幻冒險
-                                                        </p>
-                                                    </div>
-                                                    <div class="information__bottom_5 Bottom__display">
-                                                        <a href="#">
-                                                            <p class="information__actor__name">
-
-                                                            </p>
-                                                        </a>
-                                                        <span class="speace"> / </span>
-                                                        <a href="#">
-                                                            <p class="information__actor__name">
-
-                                                            </p>
-                                                        </a>
-                                                        <span class="speace"> / </span>
-                                                        <a href="#">
-
-                                                            <p class="information__actor__name">
-
-                                                            </p>
-                                                        </a>
-
-                                                    </div>
-
-                                                    <div class="information__bottom_6-5 Bottom__display">
-                                                        <a href="./single-movie-page0511.html">
-                                                            <p class="detail">
-                                                                查看詳細..
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                    <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up Color__blk">
-                                                            <p class="Color__blk">
-                                                                ＋ 加入片單
-                                                            </p>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/search-10.sm.jpg" alt="">
-                                                <div class="image__card__text">
-                                                    <div class="movie__name">
-                                                        <p>
-                                                            新比怪怪屋
-                                                        </p>
-                                                    </div>
-                                                    <div class="movie__icons">
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image__card card5">
-                                            <div class="imge__card__information">
-                                                <div class="information__top">
-                                                    <img class="carousel__images" src="./img/center/search-11.sm.jpg" alt="">
-                                                </div>
-                                                <div class="information__bottom">
-                                                    <div class="information__bottom_1 Bottom__display">
-                                                        <p class="information__typ">
-                                                            影劇
-                                                        </p>
-                                                        <div class="bottom_6_icon_box">
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                            </a>
-                                                            </p>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="information__bottom_2 Bottom__display">
-                                                        <p class="information__name">
-                                                            怪物們
-                                                        </p>
-                                                    </div>
-                                                    <div class="information__bottom_3 Bottom__display">
-                                                        <div class="information__star">
-                                                            <div class="information__staricon_box">
-                                                                <img src="./img/icons/start.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="information__point">
-                                                            <p>
-                                                                8.5
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="information__bottom_4 Bottom__display">
-                                                        <p>
-                                                            /
-                                                        </p>
-                                                        <p>
-                                                            奇幻冒險
-                                                        </p>
-                                                    </div>
-                                                    <div class="information__bottom_5 Bottom__display">
-                                                        <a href="#">
-                                                            <p class="information__actor__name">
-
-                                                            </p>
-                                                        </a>
-                                                        <span class="speace"> / </span>
-                                                        <a href="#">
-                                                            <p class="information__actor__name">
-
-                                                            </p>
-                                                        </a>
-                                                        <span class="speace"> / </span>
-                                                        <a href="#">
-
-                                                            <p class="information__actor__name">
-
-                                                            </p>
-                                                        </a>
-
-                                                    </div>
-
-                                                    <div class="information__bottom_6-5 Bottom__display">
-                                                        <a href="./single-movie-page0511.html">
-                                                            <p class="detail">
-                                                                查看詳細..
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                    <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up Color__blk">
-                                                            <p class="Color__blk">
-                                                                ＋ 加入片單
-                                                            </p>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/search-11.sm.jpg" alt="">
-                                                <div class="image__card__text">
-                                                    <div class="movie__name">
-                                                        <p>
-                                                            怪物們
-                                                        </p>
-                                                    </div>
-                                                    <div class="movie__icons">
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image__card card6">
-                                            <div class="imge__card__information">
-                                                <div class="information__top">
-                                                    <img class="carousel__images" src="./img/center/search-12.sm.jpg" alt="">
-                                                </div>
-                                                <div class="information__bottom">
-                                                    <div class="information__bottom_1 Bottom__display">
-                                                        <p class="information__typ">
-                                                            影劇
-                                                        </p>
-                                                        <div class="bottom_6_icon_box">
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                            </a>
-                                                            </p>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="information__bottom_2 Bottom__display">
-                                                        <p class="information__name">
-                                                            鬼燈冷撒
-                                                        </p>
-                                                    </div>
-                                                    <div class="information__bottom_3 Bottom__display">
-                                                        <div class="information__star">
-                                                            <div class="information__staricon_box">
-                                                                <img src="./img/icons/start.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="information__point">
-                                                            <p>
-                                                                9.4
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="information__bottom_4 Bottom__display">
-                                                        <p>
-                                                            /
-                                                        </p>
-                                                        <p>
-                                                            奇幻冒險
-                                                        </p>
-                                                    </div>
-                                                    <div class="information__bottom_5 Bottom__display">
-                                                        <a href="#">
-                                                            <p class="information__actor__name">
-
-                                                            </p>
-                                                        </a>
-                                                        <span class="speace"> / </span>
-                                                        <a href="#">
-                                                            <p class="information__actor__name">
-
-                                                            </p>
-                                                        </a>
-                                                        <span class="speace"> / </span>
-                                                        <a href="#">
-
-                                                            <p class="information__actor__name">
-
-                                                            </p>
-                                                        </a>
-
-                                                    </div>
-
-                                                    <div class="information__bottom_6-5 Bottom__display">
-                                                        <a href="./single-movie-page0511.html">
-                                                            <p class="detail">
-                                                                查看詳細..
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                    <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up Color__blk">
-                                                            <p class="Color__blk">
-                                                                ＋ 加入片單
-                                                            </p>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/search-12.sm.jpg" alt="">
-                                                <div class="image__card__text">
-                                                    <div class="movie__name">
-                                                        <p>
-                                                            鬼燈冷撒
-                                                        </p>
-                                                    </div>
-                                                    <div class="movie__icons">
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="image__card card7">
-                                            <div class="imge__card__information">
-                                                <div class="information__top">
-                                                    <img class="carousel__images" src="./img/center/search-13.sm.jpg" alt="">
-                                                </div>
-                                                <div class="information__bottom">
-                                                    <div class="information__bottom_1 Bottom__display">
-                                                        <p class="information__typ">
-                                                            影劇
-                                                        </p>
-                                                        <div class="bottom_6_icon_box">
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/friday_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                            </a>
-                                                            </p>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/kktv_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                            <a href="#">
-                                                                <p class="bottom_6_icon">
-                                                                    <img src="./img/logo/netflix_s.svg" alt="">
-                                                                </p>
-                                                            </a>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="information__bottom_2 Bottom__display">
-                                                        <p class="information__name">
-                                                            神鬼網戰
-                                                        </p>
-                                                    </div>
-                                                    <div class="information__bottom_3 Bottom__display">
-                                                        <div class="information__star">
-                                                            <div class="information__staricon_box">
-                                                                <img src="./img/icons/start.svg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="information__point">
-                                                            <p>
-                                                                8.4
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="information__bottom_4 Bottom__display">
-                                                        <p>
-                                                            浪漫愛情 /
-                                                        </p>
-                                                        <p>
-                                                            奇幻冒險
-                                                        </p>
-                                                    </div>
-                                                    <div class="information__bottom_5 Bottom__display">
-                                                        <a href="#">
-                                                            <p class="information__actor__name">
-                                                                尼克羅賓
-                                                            </p>
-                                                        </a>
-                                                        <span class="speace"> / </span>
-                                                        <a href="#">
-                                                            <p class="information__actor__name">
-                                                                傑森克拉克
-                                                            </p>
-                                                        </a>
-                                                        <span class="speace"> / </span>
-                                                        <a href="#">
-
-                                                            <p class="information__actor__name">
-
-                                                            </p>
-                                                        </a>
-
-                                                    </div>
-
-                                                    <div class="information__bottom_6-5 Bottom__display">
-                                                        <a href="./single-movie-page0511.html">
-                                                            <p class="detail">
-                                                                查看詳細..
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                    <div class="information__bottom_6 Bottom__display">
-                                                        <button class="push__up Color__blk">
-                                                            <p class="Color__blk">
-                                                                ＋ 加入片單
-                                                            </p>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="carousel__images__box">
-                                                <img class="carousel__images" src="./img/center/search-13.sm.jpg" alt="">
-                                                <div class="image__card__text">
-                                                    <div class="movie__name">
-                                                        <p>
-                                                            神鬼網戰
-                                                        </p>
-                                                    </div>
-                                                    <div class="movie__icons">
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/friday_s.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="movie__icon__box"> <a href=""></a>
-                                                            <a href=""><img src="./img/logo/iqiyi_s.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/kktv_s.svg" alt=""></a>
-                                                        </div>
-                                                        <div class="movie__icon__box">
-                                                            <a href=""><img src="./img/logo/netflix_s.svg" alt=""></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                 </li>
                             </ul>
                             <!-- <button class="carousle__button carousel__button--right">
@@ -1664,6 +974,13 @@ $title = 'MOVWE-搜尋結果';
                         </div>
                     </div>
                 </div>
+
+
+
+
+
+
+                <!----------------------------------------------->
 
 
 

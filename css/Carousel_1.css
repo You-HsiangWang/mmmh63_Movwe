@@ -13,8 +13,12 @@
 .carousel__big__box__10{
     width: 100%;
     margin-top: 80px;
-
+    flex-wrap: wrap;
 }
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
 
 .carousel__big__box{
     width: 100%;
@@ -545,6 +549,14 @@ filter: brightness(120%);
         padding: 3px;
     }
 
+    .image__card__search_page {
+        width: 13%;
+        padding: 3px;
+        margin-bottom: 60px;
+    }
+
+
+
 
     .card4 {
         display: block;
@@ -660,7 +672,7 @@ filter: brightness(120%);
     
     .image__card:hover .information__video {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    
+
     }
 
     .mb_single_page{
