@@ -14,10 +14,10 @@ $title = 'Movwe-物流選擇';
 </head>
 
 <body>
-    <?php include __DIR__ . '/parts/movwe_nav.php' ?>
+<?php include __DIR__ . '/parts/movwe_nav_fin.php' ?>
     <div class="layout">
 
-        <?php include __DIR__ . '/parts/movwe_nav_leftdiv.php' ?>
+    <?php include __DIR__ . '/parts/movwe_nav_leftdiv.php' ?>
 
         <div class="container">
 
@@ -302,6 +302,8 @@ $title = 'Movwe-物流選擇';
 
     <?php include __DIR__ . '/parts/movwe_scripts.php' ?>
     <script src="./js/order_delivery.js"></script>
+    <script src="./js/Nav.js"></script>
+
 
 
 </body>
