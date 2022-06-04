@@ -1,36 +1,8 @@
 <?php
 
-require './parts/movwe_connect_db.php';
+// require './parts/movwe_connect_db.php';
 // $pageName = 'login';
-$quertstr = strval($_SERVER['QUERY_STRING']);
-$pattern = "/[art=]+/";
-$ids = preg_split($pattern, $quertstr)[1];
-// 從資笠庫裡拿文章資料
-$getforumsql = 'SELECT * FROM `forum` FULL join `member` WHERE `forum_sid`= ?';
-// $getforumsql = 'SELECT * FROM `forum` ORDER BY `forum_sid` DESC LIMIT 7;';
-$getforumstmt = $pdo->prepare($getforumsql);
-$getforumstmt->execute([$ids]);
-$getforumrows = $getforumstmt->fetch();
-// 除錯
-if (!empty($getforumrows)) {
-};
-
-// 用forumsid去查找所有的hashtag
-// $getforumid = [];
-// foreach($getforumrows as $fr){
-//     $getforumid[] = $fr['forum_sid'];
-// };
-$tagsql = "SELECT * FROM `forum_has_hastag` WHERE `f_has_forum_sid` = " . $getforumrows['forum_sid'];
-$tags = $pdo->query($tagsql)->fetchAll();
-if(empty($tags)){
-    $tags = false;
-};
-
-
-
-$title = 'MOVWE-' . $getforumrows['forum_title'];
-// echo $_SERVER['QUERY_STRING'];
-
+$title = '2521感想ㄧ事與願違是另有安排';
 
 ?>
 
@@ -56,48 +28,57 @@ $title = 'MOVWE-' . $getforumrows['forum_title'];
                         <div class="d-flex">
                             <div class="d-flex justify-center align-item-center mr-20">
                                 <div class="member-img-wrap">
-                                    <img src="./img/member/<?php echo $getforumrows['member_avatar'] ?>" alt="">
+                                    <img src="./img/forum/tinytall.jpg" alt="">
                                 </div>
                             </div>
                             <div class="d-flex justify-center align-item-center">
-                                <h3><?php echo $getforumrows['member_nickname'] ?></h3>
+                                <h3>胎尼頭</h3>
                             </div>
                         </div>
-                        <div><span><?php echo $getforumrows['forum_uploadtime'] ?> 發表</span></div>
+                        <div><span>2022年06月07日 05:01 發表</span></div>
                     </div>
                     <div class="d-flex mt-20 align-item-center">
                         <div class="mr-10">
-                            <button class="d-filter d-filter-d" style="<?php
-                                                                        $ottcolor = [
-                                                                            '2' => '#10FFA2',
-                                                                            '3' => '#1CD8FF',
-                                                                            '1' => '#FC6F51',
-                                                                        ];
-                                                                        if ($getforumrows['forum_type'] == '影劇') {
-                                                                            $color = $ottcolor['1'];
-                                                                        } else if ($getforumrows['forum_type'] == '電影') {
-                                                                            $color = $ottcolor['2'];
-                                                                        } else if ($getforumrows['forum_type'] == '動畫') {
-                                                                            $color = $ottcolor['3'];
-                                                                        };
-                                                                        echo 'color:' . $color . '; border: 1px solid' . $color;
-                                                                        ?>"><?php echo $getforumrows['forum_type'] ?></button>
+                            <button class="d-filter d-filter-d">影劇</button>
                         </div>
-                        <h2><?php echo $getforumrows['forum_title'] ?></h2>
+                        <h2>2521感想ㄧ事與願違是另有安排</h2>
                     </div>
                     <div class="mt-20">
                         <div class="content-img-wrap">
-                            <img src="./img/forum/<?php echo $getforumrows['forum_pic'] ?>" alt="">
+                            <img src="./img/forum/2521_a.jpg" alt="">
                         </div>
-                        <p><?php echo $getforumrows['forum_content'] ?></p>
+                        <p>
+                            <br>
+                            「我們總是全力以赴，但其實一切都只是練習。」易辰在最後一集所說的這一句，總結2521所說的年輕時光。拼勁全力是因就只有這些，想努力守護僅擁有的一切。這之中最殘酷的練習，莫過於失敗與失去。不斷面臨「失敗」考驗的希度，最終悟出「世上沒有絕對的悲劇，也不存在著絕對的喜劇。」「笑過以後，要忘記就容易多了！忘了才能迎來下一次的挑戰。」
+
+                            <br>
+                            <br>
+
+                            會不知不覺承受起這種力度打在身上。
+                            總能從這之中領悟到些什麼，時代血淋淋的無情，使希度與易辰不得不去面對現實之冷酷。 從一次又一次的失敗練習中，她明白自己依然覺得擊劍有趣，被磨練出超強的復原力。這似乎是測試，看看到底是為受人吹捧，還是真的喜歡這件事的本質。每一次失敗都是一次直接且犀利的批評，但反而讓自己更能籍此來思考需要改進與加強的。雖會令人有些吃不消，可沒如此吃不消過，又要怎麼增加食量呢？
+
+                            <br>
+                            <br>
+
+                            希度就是因原來學校的擊劍社收掉，才能遇到更適合自己的教練。接著進步神速，從追夢擊劍少女一舉到國家代表。「失去」不過是殺那間，之後的總總才是重頭戲，易辰所要面對的試煉是「失去」近乎所有。家裏破產使他一夜成熟，不再是那意氣風發的少爺，而是大學輟學生。面對社會，不得不學會低頭，原來陽光的模樣也跟著消逝。「我只是因為這個工作不用跟人互動才來應徵。」第二集中易辰去應徵飯店打掃工作時說道。雖不再是富家少爺，但屬於貴族的自尊還在，僅剩的「面子」努力地守住。此時的他，不知怎麼面對看過他風光的別人，害怕遇見所以決定逃跑躲藏。但慶幸的是易辰最終還是選擇朝有光的地方走，重新站起來。
+
+
+                            <br>
+                            <br>
+
+                            易辰成功跨越了人生的一大坎，這足以讓他稍微適應未來更坎坷的路。面對挫拆後的成長，足以讓一個人改頭換面。從易辰高中時在廣播社的橋段，可以看出易辰很有「共感」能力。在加上經歷時代巨變的打擊，使他更能同感那些一夕失去所有的人，所以才能更有使命感去完成在美國的採訪。最終易辰還是到美國去了，却是在與少年時所憧憬的截然不同的位置。但也因如此，找到了更值得自己去犧牲奉獻的事，闖出了一條血汗路。
+
+                            <br>
+                            <br>
+
+                            因為經歷了這個「失去」，反而讓他可以好好做白易辰。不用擔心別人因物質而靠近他，也能更好地施展能力。易辰在第一集曾自嘲地說：「家裡破產還是有值得慶幸的事，讓我看清某人醜陋的一面。」
+                        </p>
                     </div>
                     <div class="hashtag d-flex mt-30">
                         <ul class="d-flex ar-filter">
-                            <?php if ($tags!=false) {
-                                foreach ($tags as $t) {
-                                        echo '<li class="filter_4w d-flex justify-center align-item-center">' . $t['f_has_hastag_name'] . '</li>';
-                                };
-                            }; ?>
+                            <li class="filter_4w d-flex justify-center align-item-center">#韓劇心得</li>
+                            <li class="filter_4w d-flex justify-center align-item-center ml-10">#2521</li>
+                            <li class="filter_3w d-flex justify-center align-item-center ml-10">#南柱赫</li>
                         </ul>
                     </div>
                     <!-- 愛心 留言 收藏  -->
@@ -319,7 +300,6 @@ $title = 'MOVWE-' . $getforumrows['forum_title'];
             <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
 
-        <script src="./js/Nav.js"></script>
+        <?php include __DIR__ . '/parts/movwe_scripts.php' ?>
 </body>
-
 </html>

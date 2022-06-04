@@ -11,6 +11,21 @@ $title = '預覽文章';
 
 <link rel="stylesheet" href="./css/mystyle.css">
 <link rel="stylesheet" href="./css/forum_article.css">
+<style>
+    .text__container {
+        flex-direction: column;
+        width: 94%;
+        margin: 120px auto;
+    }
+
+    @media screen and (min-width: 750px) {
+        .text__container {
+            flex-direction: column;
+            width: 70%;
+            margin: 120px auto;
+        }
+    }
+</style>
 
 </head>
 
@@ -20,16 +35,16 @@ $title = '預覽文章';
 
         <?php include __DIR__ . '/parts/movwe_nav_leftdiv.php' ?>
 
-        <div class="container" style="width: 70%; margin: auto;">
+        <div class="container">
             <!--text__container------內容放這邊------------->
-            <div class="text__container d-flex justify-between" style="flex-direction: column;">
-                <div class="progress-bar d-flex justify-between align-item-center">
+            <div class="text__container d-flex justify-between">
+                <div class="progress-bar d-flex justify-between align-item-center mb-2">
                     <div class="d-flex justify-center align-item-center">
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.7108 18.5V10.756C12.7108 10.5747 12.7108 10.3827 12.7108 10.18C12.7215 9.96667 12.7321 9.748 12.7428 9.524C12.3801 9.876 11.9588 10.1853 11.4788 10.452C10.9988 10.708 10.5081 10.8947 10.0068 11.012L9.67081 9.844C9.86281 9.82267 10.1028 9.75333 10.3908 9.636C10.6895 9.508 10.9988 9.35333 11.3188 9.172C11.6495 8.98 11.9535 8.77733 12.2308 8.564C12.5081 8.35067 12.7215 8.14267 12.8708 7.94H13.9908V18.5H12.7108Z" fill="#10FFA2" />
-                            <rect x="0.5" y="0.5" width="24" height="24" rx="12" stroke="#10FFA2" />
+                            <path d="M12.7108 18.5V10.756C12.7108 10.5747 12.7108 10.3827 12.7108 10.18C12.7215 9.96667 12.7321 9.748 12.7428 9.524C12.3801 9.876 11.9588 10.1853 11.4788 10.452C10.9988 10.708 10.5081 10.8947 10.0068 11.012L9.67081 9.844C9.86281 9.82267 10.1028 9.75333 10.3908 9.636C10.6895 9.508 10.9988 9.35333 11.3188 9.172C11.6495 8.98 11.9535 8.77733 12.2308 8.564C12.5081 8.35067 12.7215 8.14267 12.8708 7.94H13.9908V18.5H12.7108Z" fill="#fff" />
+                            <rect x="0.5" y="0.5" width="24" height="24" rx="12" stroke="#fff" />
                         </svg>
-                        <h3 class="ml-10" style="color: #10FFA2;">編輯文章</h3>
+                        <h3 class="ml-10" style="color: #fff;">編輯文章</h3>
                     </div>
                     <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1427_26206)">
@@ -44,10 +59,10 @@ $title = '預覽文章';
 
                     <div class="d-flex justify-center align-item-center">
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.01994 18.5V17.46C10.0759 16.6813 10.9559 15.9987 11.6599 15.412C12.3746 14.8253 12.9453 14.292 13.3719 13.812C13.7986 13.332 14.1026 12.8787 14.2839 12.452C14.4653 12.0147 14.5559 11.5613 14.5559 11.092C14.5559 10.4627 14.3533 9.956 13.9479 9.572C13.5533 9.17733 13.0093 8.98 12.3159 8.98C11.5906 8.98 11.0093 9.22 10.5719 9.7C10.1346 10.1693 9.8786 10.7987 9.80394 11.588L8.68394 10.916C8.77994 10.2973 8.97727 9.75333 9.27594 9.284C9.58527 8.81467 9.99594 8.44667 10.5079 8.18C11.0306 7.91333 11.6493 7.78 12.3639 7.78C12.9079 7.78 13.3933 7.86 13.8199 8.02C14.2573 8.18 14.6306 8.40933 14.9399 8.708C15.2493 8.996 15.4839 9.34267 15.6439 9.748C15.8146 10.1533 15.8999 10.6013 15.8999 11.092C15.8999 11.7533 15.7399 12.404 15.4199 13.044C15.0999 13.6733 14.5719 14.3347 13.8359 15.028C13.0999 15.7213 12.1026 16.4893 10.8439 17.332V17.348C10.9613 17.3373 11.1213 17.332 11.3239 17.332C11.5373 17.3213 11.7453 17.316 11.9479 17.316C12.1613 17.3053 12.3213 17.3 12.4279 17.3H16.1239V18.5H9.01994Z" fill="#FFFFFD" />
-                            <rect x="0.5" y="0.5" width="24" height="24" rx="12" stroke="#FFFFFD" />
+                            <path d="M9.01994 18.5V17.46C10.0759 16.6813 10.9559 15.9987 11.6599 15.412C12.3746 14.8253 12.9453 14.292 13.3719 13.812C13.7986 13.332 14.1026 12.8787 14.2839 12.452C14.4653 12.0147 14.5559 11.5613 14.5559 11.092C14.5559 10.4627 14.3533 9.956 13.9479 9.572C13.5533 9.17733 13.0093 8.98 12.3159 8.98C11.5906 8.98 11.0093 9.22 10.5719 9.7C10.1346 10.1693 9.8786 10.7987 9.80394 11.588L8.68394 10.916C8.77994 10.2973 8.97727 9.75333 9.27594 9.284C9.58527 8.81467 9.99594 8.44667 10.5079 8.18C11.0306 7.91333 11.6493 7.78 12.3639 7.78C12.9079 7.78 13.3933 7.86 13.8199 8.02C14.2573 8.18 14.6306 8.40933 14.9399 8.708C15.2493 8.996 15.4839 9.34267 15.6439 9.748C15.8146 10.1533 15.8999 10.6013 15.8999 11.092C15.8999 11.7533 15.7399 12.404 15.4199 13.044C15.0999 13.6733 14.5719 14.3347 13.8359 15.028C13.0999 15.7213 12.1026 16.4893 10.8439 17.332V17.348C10.9613 17.3373 11.1213 17.332 11.3239 17.332C11.5373 17.3213 11.7453 17.316 11.9479 17.316C12.1613 17.3053 12.3213 17.3 12.4279 17.3H16.1239V18.5H9.01994Z" fill="#10FFA2" />
+                            <rect x="0.5" y="0.5" width="24" height="24" rx="12" stroke="#10FFA2" />
                         </svg>
-                        <h3 class="ml-10">預覽文章</h3>
+                        <h3 class="ml-10" style="color: #10FFA2;">預覽文章</h3>
                     </div>
                     <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1427_26206)">
@@ -94,7 +109,7 @@ $title = '預覽文章';
                             <img src="./img/forum/2521_a.jpg" alt="" class="forum_image">
                         </div>
                         <p class="forum_content">
-                            
+
                         </p>
                     </div>
                     <div class="hashtag d-flex mt-30">
@@ -105,9 +120,9 @@ $title = '預覽文章';
                         </ul>
                     </div>
                 </div>
-                <div class="btn-bottom">
-                    <button class="btn_4w btn-preview mt-10" onclick="gotopublish()">發布文章</button>
-                    <button class="prev_btn_4w delete btn-quit mt-10">繼續編輯</button>
+                <div class="btn-bottom w-100 justify-center d-flex">
+                    <button class="btn_4w btn-preview mt-10" style="margin-right: 20px;" onclick="gotopublish()">發布文章</button>
+                    <button class="prev_btn_4w delete btn-quit mt-10" style="margin-right: 20px;">繼續編輯</button>
                 </div>
             </div>
 
@@ -122,17 +137,17 @@ $title = '預覽文章';
 
             // 放到dom裡面 type
             $('.forum_type').text(fpreview.type);
-            if(fpreview.type == '影劇'){
+            if (fpreview.type == '影劇') {
                 $('.forum_type').css({
                     'border': '1px solid #FC6F51',
                     'color': '#FC6F51',
                 });
-            }else if(fpreview.type == '電影'){
+            } else if (fpreview.type == '電影') {
                 $('.forum_type').css({
                     'border': '1px solid #10FFA2',
                     'color': '#10FFA2',
                 });
-            }else if(fpreview.type == '動畫'){
+            } else if (fpreview.type == '動畫') {
                 $('.forum_type').css({
                     'border': '1px solid #1CD8FF',
                     'color': '#1CD8FF',
@@ -146,9 +161,9 @@ $title = '預覽文章';
             $('.forum_content').text(fpreview.content);
 
             function gotopublish() {
-                $.post('api_forum_publish.php', fpreview, function(data){
-                    console.log(data,'success');
-                    if(data.success == true){
+                $.post('api_forum_publish.php', fpreview, function(data) {
+                    console.log(data, 'success');
+                    if (data.success == true) {
                         location.href = './forum_publish.php'
                     };
                 }, 'json');

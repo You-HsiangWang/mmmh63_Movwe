@@ -1,6 +1,6 @@
 <?php
 
-require './parts/movwe_connect_db.php';
+// require './parts/movwe_connect_db.php';
 // $pageName = 'login';
 $title = 'Movwe-我要發文';
 
@@ -13,15 +13,15 @@ $title = 'Movwe-我要發文';
 <link rel="stylesheet" href="./css/forum_edit.css">
 
 <!-- TinyMCE v4.7.6 -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.7.6/tinymce.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.7.6/tinymce.min.js"></script>
 
 </head>
 
 <body>
-    <?php include __DIR__ . '/parts/movwe_nav.php' ?>
+    <?php include __DIR__. '/parts/movwe_nav.php' ?>
     <div class="layout">
 
-        <?php include __DIR__ . '/parts/movwe_nav_leftdiv.php' ?>
+        <?php include __DIR__. '/parts/movwe_nav_leftdiv.php' ?>
 
         <div class="container">
 
@@ -80,42 +80,37 @@ $title = 'Movwe-我要發文';
                     </div>
                 </div>
                 <div class="d-flex mt-30">
-                    <!-- <div class="d-flex justify-center align-item-center mr-30">
-                            <div class="member-img-wrap">
-                                <img src="./img/member/default_avatar.jpeg" alt="">
-                            </div>
-                        </div> -->
+                    <div class="d-flex justify-center align-item-center mr-30">
+                        <div class="member-img-wrap">
+                            <img src="../img/1.jpg" alt="">
+                        </div>
+                    </div>
                     <div class="d-flex flex-col justify-between">
                         <div class="d-flex">
                             <label for="" class="mr-20">
                                 <h3>文章標題</h3>
                             </label>
-                            <input type="text" id="forum_title" name="forum_title">
+                            <input type="text" id="" name="">
                         </div>
                         <div class="ar-cate d-flex align-item-center">
                             <h3 class="mr-20">文章分類</h3>
                             <div class="ar-cate-btn">
-                                <button class="d-filter d-filter-m forum_type">電影</button>
-                                <button class="d-filter d-filter-d forum_type">影劇</button>
-                                <button class="d-filter d-filter-e forum_type">綜藝</button>
-                                <button class="d-filter d-filter-a forum_type">動畫</button>
+                                <button class="d-filter d-filter-m">電影</button>
+                                <button class="d-filter d-filter-d">影劇</button>
+                                <button class="d-filter d-filter-e">綜藝</button>
+                                <button class="d-filter d-filter-a">動畫</button>
                             </div>
-                        </div>
-                        <div class="d-flex">
-                            <label for="forum_image" class="mr-20">
-                                <h3>文章圖片</h3>
-                            </label>
-                            <input type="file" id="forum_image" name="forum_image">
                         </div>
                     </div>
                 </div>
                 <div class="mt-20">
-                    <textarea id="editor1" style="width: 100%; height: 50vh;"></textarea>
+                    <textarea id="editor1"></textarea>
                 </div>
 
                 <div class="btn-bottom">
-                    <button class="btn_4w btn-preview mt-10" onclick="gotopreview()">預覽文章</button>
+                    <button class="btn_4w btn-preview mt-10">預覽文章</button>
                     <button class="prev_btn_4w delete btn-quit mt-10" onclick="myFunction()">捨棄文章</button>
+
                 </div>
 
             </div>
@@ -124,32 +119,8 @@ $title = 'Movwe-我要發文';
     </div>
 
 
-    <script src="./js/Nav.js"></script>
-    <script src="./js/dropdown_customstyle.js"></script>
-    <!-- <script src="./js/forum_edit.js"></script> -->
-    <script>
-        $('.forum_type').on('click', function() {
-            $(this).addClass('forum_type_active');
-            $(this).siblings().removeClass('forum_type_active');
-        });
-
-        function gotopreview() {
-            const ftitle = $('#forum_title').val();
-            const ftype = $('.forum_type.forum_type_active').text();
-            const fimage = $('#forum_image').val().split('\\')[$('#forum_image').val().split('\\').length - 1];
-            const fcontent = $('#editor1').val();
-            console.log(ftitle, ftype, fimage, fcontent);
-            const preObj = {
-                'title': ftitle,
-                'type': ftype,
-                'pic': fimage,
-                'content': fcontent,
-            };
-            window.sessionStorage.setItem('foruminput', JSON.stringify(preObj));
-            location.href = 'forum_preview.php';
-        };
-    </script>
+    <?php include __DIR__ . '/parts/movwe_scripts.php' ?>
+    <script src="./js/forum_edit.js"></script>
 
 </body>
-
 </html>
