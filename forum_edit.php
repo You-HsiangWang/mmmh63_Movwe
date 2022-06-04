@@ -1,6 +1,6 @@
 <?php
 
-// require './parts/movwe_connect_db.php';
+require './parts/movwe_connect_db.php';
 // $pageName = 'login';
 $title = 'Movwe-我要發文';
 
@@ -13,15 +13,15 @@ $title = 'Movwe-我要發文';
 <link rel="stylesheet" href="./css/forum_edit.css">
 
 <!-- TinyMCE v4.7.6 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.7.6/tinymce.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.7.6/tinymce.min.js"></script> -->
 
 </head>
 
 <body>
-    <?php include __DIR__. '/parts/movwe_nav.php' ?>
+    <?php include __DIR__ . '/parts/movwe_nav_fin.php' ?>
     <div class="layout">
 
-        <?php include __DIR__. '/parts/movwe_nav_leftdiv.php' ?>
+        <?php include __DIR__ . '/parts/movwe_nav_leftdiv.php' ?>
 
         <div class="container">
 
@@ -33,7 +33,7 @@ $title = 'Movwe-我要發文';
             <!--text__container------內容放這邊------------->
 
             <div class="text__container">
-                <div class="progress-bar d-flex justify-between align-item-center">
+                <div class="progress-bar d-flex justify-between align-item-center mt-30">
                     <div class="d-flex justify-center align-item-center">
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.7108 18.5V10.756C12.7108 10.5747 12.7108 10.3827 12.7108 10.18C12.7215 9.96667 12.7321 9.748 12.7428 9.524C12.3801 9.876 11.9588 10.1853 11.4788 10.452C10.9988 10.708 10.5081 10.8947 10.0068 11.012L9.67081 9.844C9.86281 9.82267 10.1028 9.75333 10.3908 9.636C10.6895 9.508 10.9988 9.35333 11.3188 9.172C11.6495 8.98 11.9535 8.77733 12.2308 8.564C12.5081 8.35067 12.7215 8.14267 12.8708 7.94H13.9908V18.5H12.7108Z" fill="#10FFA2" />
@@ -80,37 +80,48 @@ $title = 'Movwe-我要發文';
                     </div>
                 </div>
                 <div class="d-flex mt-30">
-                    <div class="d-flex justify-center align-item-center mr-30">
-                        <div class="member-img-wrap">
-                            <img src="../img/1.jpg" alt="">
-                        </div>
-                    </div>
+                    <!-- <div class="d-flex justify-center align-item-center mr-30">
+                            <div class="member-img-wrap">
+                                <img src="./img/member/default_avatar.jpeg" alt="">
+                            </div>
+                        </div> -->
                     <div class="d-flex flex-col justify-between">
                         <div class="d-flex">
                             <label for="" class="mr-20">
                                 <h3>文章標題</h3>
                             </label>
-                            <input type="text" id="" name="">
+                            <input type="text" id="forum_title" name="forum_title">
                         </div>
                         <div class="ar-cate d-flex align-item-center">
                             <h3 class="mr-20">文章分類</h3>
                             <div class="ar-cate-btn">
-                                <button class="d-filter d-filter-m">電影</button>
-                                <button class="d-filter d-filter-d">影劇</button>
-                                <button class="d-filter d-filter-e">綜藝</button>
-                                <button class="d-filter d-filter-a">動畫</button>
+                                <button class="d-filter d-filter-m forum_type">電影</button>
+                                <button class="d-filter d-filter-d forum_type">影劇</button>
+                                <button class="d-filter d-filter-e forum_type">綜藝</button>
+                                <button class="d-filter d-filter-a forum_type">動畫</button>
                             </div>
+                        </div>
+                        <div class="d-flex ar-cate align-item-center">
+                            <label for="forum_image" class="mr-20">
+                                <h3>文章圖片</h3>
+                            </label>
+                            <input type="file" id="forum_image" name="forum_image" style="color:white;">
+                        </div>
+                        <div class="d-flex ar-cate align-item-center">
+                            <label for="forum_image" class="mr-20">
+                                <h3>#hashtag</h3>
+                            </label>
+                            <input type="text" id="forum_hashtag" name="forum_hashtag" style="color:white;">
                         </div>
                     </div>
                 </div>
                 <div class="mt-20">
-                    <textarea id="editor1"></textarea>
+                    <textarea id="editor1" style="width: 100%; height: 50vh;"></textarea>
                 </div>
 
                 <div class="btn-bottom">
-                    <button class="btn_4w btn-preview mt-10">預覽文章</button>
+                    <button class="btn_4w btn-preview mt-10" onclick="gotopreview()">預覽文章</button>
                     <button class="prev_btn_4w delete btn-quit mt-10" onclick="myFunction()">捨棄文章</button>
-
                 </div>
 
             </div>
@@ -119,8 +130,32 @@ $title = 'Movwe-我要發文';
     </div>
 
 
-    <?php include __DIR__ . '/parts/movwe_scripts.php' ?>
+    <script src="./js/Nav.js"></script>
+    <script src="./js/dropdown_customstyle.js"></script>
     <script src="./js/forum_edit.js"></script>
+    <script>
+        $('.forum_type').on('click', function() {
+            $(this).addClass('forum_type_active');
+            $(this).siblings().removeClass('forum_type_active');
+        });
+
+        function gotopreview() {
+            const ftitle = $('#forum_title').val();
+            const ftype = $('.forum_type.forum_type_active').text();
+            const fimage = $('#forum_image').val().split('\\')[$('#forum_image').val().split('\\').length - 1];
+            const fcontent = $('#editor1').val();
+            console.log(ftitle, ftype, fimage, fcontent);
+            const preObj = {
+                'title': ftitle,
+                'type': ftype,
+                'pic': fimage,
+                'content': fcontent,
+            };
+            window.sessionStorage.setItem('foruminput', JSON.stringify(preObj));
+            location.href = 'forum_preview.php';
+        };
+    </script>
 
 </body>
+
 </html>
