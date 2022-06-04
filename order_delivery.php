@@ -111,7 +111,7 @@ $title = 'Movwe-物流選擇';
                 </div>
                 <!-- ㄚㄚㄚ是table 購物車商品詳情 -->
                 <div class="booking-list mb-30 border-bottom-main-color">
-                    <table>
+                    <table id="bookingList">
                         <tr class="yellow">
                             <th>商品圖片</th>
                             <th>商品名稱</th>
@@ -137,7 +137,13 @@ $title = 'Movwe-物流選擇';
                                 </td>
                                 <td>
                                     <div class="d-flex justify-center">
-                                        <input type="text" class="quantity-input" value="<?= $f['ProductQuantity'] ?>" id="quantity<?= $f['ProductSize'] ?>" disabled>
+                                        <input 
+                                        type="text" 
+                                        class="quantity-input"
+                                    
+                                        value="<?= $f['ProductQuantity'] ?>" id="quantity<?= $f['ProductSize'] ?>" 
+                                        disabled>
+
                                     </div>
                                 </td>
                                 <td>
@@ -150,9 +156,7 @@ $title = 'Movwe-物流選擇';
                         <?php endforeach; ?>
 
                     </table>
-                    <div id="noProduct">
-                        <!-- <h3>目前購物車內沒有商品</h3> -->
-                    </div>
+                    <!-- <?= $_SESSION['cartcart']['Table'] ?> -->
                 </div>
                 <!-- 優惠券 -->
                 <div class="d-flex mt-30 pb-10 border-bottom-main-color">
@@ -291,7 +295,7 @@ $title = 'Movwe-物流選擇';
                 </div>
 
             </div>
-            <!-- <?php include __DIR__ . '/parts/movwe_footer.php' ?> -->
+            <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
     </div>
 

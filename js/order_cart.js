@@ -1,11 +1,3 @@
-// 一鍵移除 警告
-// 一鍵移除 remove
-
-// document.querySelector('.delete-button');
-// function deleteFunction() {
-//     confirm("確定要移除勾選的商品嗎?");
-// };
-
 // 移除單一商品 警告
 // 移除單一商品 remove
 
@@ -13,18 +5,22 @@
 // function deleteOneFunction() {
 //     if (document.getElementById('checkOneItem').attr)
 //         confirm("確定要移除本商品嗎?");
-
 // }
 
 // 移除單一商品
 
-// function deleteFunction(b) {
-//     // Get the checkbox
-//     var checkBox = document.getElementById(`checkOneItem${b}`);
-//     // Get the output text
-//     var text = document.getElementById(`text${b}`);
+function deleteFunction(b) {
+    var checkBox = document.getElementById(`checkOneItem${b}`);
+    // console.log(checkBox);
 
-// };
+    var text = document.getElementById(`text${b}`);
+
+    if (checkBox.checked == true) {
+        if (confirm("確認要移除此商品嗎?") == true) {
+            text.remove();
+          } 
+    }
+};
 
 // 改變商品數量
 
@@ -73,13 +69,14 @@ function subFunction(a) {
 // 點優惠券折抵金額 + 商品總金額加總
 
 function AddDiscount() {
-    const subTotalPriceS = document.getElementById("subTotalPriceS").innerText;
-    const subTotalPriceM = document.getElementById("subTotalPriceM").innerText;
-    const subTotalPriceL = document.getElementById("subTotalPriceL").innerText;
+    
+    const subTotalPriceS = document.getElementById("subTotalPriceS")?document.getElementById("subTotalPriceS").innerText:0;
+    const subTotalPriceM = document.getElementById("subTotalPriceM")?document.getElementById("subTotalPriceM").innerText:0;
+    const subTotalPriceL = document.getElementById("subTotalPriceL")?document.getElementById("subTotalPriceL").innerText:0;
 
-    const ss = document.getElementById("quantityS").value;
-    const mm = document.getElementById("quantityM").value;
-    const ll = document.getElementById("quantityL").value;
+    const ss = document.getElementById("quantityS")?document.getElementById("quantityS").value:0;
+    const mm = document.getElementById("quantityM")?document.getElementById("quantityM").value:0;
+    const ll = document.getElementById("quantityL")?document.getElementById("quantityL").value:0;
 
     const ps = +ss;
     const pm = +mm;
@@ -111,11 +108,13 @@ function AddDiscount() {
 
 // 送資料到下一頁的物流選擇
 
-function DatatoDelivery() {
+function DatatoDelivery(g) {
 
-    const subTotalPriceS1 = document.getElementById("subTotalPriceS").innerText;
-    const subTotalPriceM1 = document.getElementById("subTotalPriceM").innerText;
-    const subTotalPriceL1 = document.getElementById("subTotalPriceL").innerText;
+    // const bookingListTable = document.getElementById('bookingList');
+
+    const subTotalPriceS1 = document.getElementById("subTotalPriceS")?document.getElementById("subTotalPriceS").innerText:0;
+    const subTotalPriceM1 = document.getElementById("subTotalPriceM")?document.getElementById("subTotalPriceM").innerText:0;
+    const subTotalPriceL1 = document.getElementById("subTotalPriceL")?document.getElementById("subTotalPriceL").innerText:0;
 
     const sss1 = +subTotalPriceS1;
     const mmm1 = +subTotalPriceM1;
@@ -123,9 +122,9 @@ function DatatoDelivery() {
 
     const rrr1 = sss1 + mmm1 + lll1;
 
-    const ss1 = document.getElementById("quantityS").value;
-    const mm1 = document.getElementById("quantityM").value;
-    const ll1 = document.getElementById("quantityL").value;
+    const ss1 = document.getElementById("quantityS")?document.getElementById("quantityS").value:0;
+    const mm1 = document.getElementById("quantityM")?document.getElementById("quantityS").value:0;
+    const ll1 = document.getElementById("quantityL")?document.getElementById("quantityS").value:0;
 
     const ps1 = +ss1;
     const pm1 = +mm1;
@@ -139,7 +138,9 @@ function DatatoDelivery() {
 
     console.log(pp, ss, vv);
 
+
     const gg = {
+      
         'ProductQuantity': rr1,
         'ProductTotalPrice': rrr1,
         'ProductDiscount': pp,

@@ -306,7 +306,7 @@ $title = 'Movwe-付款資訊';
                         </div>
                         <div class="d-flex justify-between border-bottom-main-color mt-10 pb-10">
                             <h4>運費</h4>
-                            <h4 id="deliveryFee" class="d-none">免 運 哦</h4>
+                            <h4 id="deliveryFee">免 運 哦</h4>
                         </div>
                         <div class="d-flex justify-between mt-10">
                             <h4><strong>商品總金額</strong></h4>
@@ -354,7 +354,7 @@ $title = 'Movwe-付款資訊';
                     </div>
                 </div>
             </div>
-            <!-- <?php include __DIR__ . '/parts/movwe_footer.php' ?> -->
+            <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
 
         <?php include __DIR__ . '/parts/movwe_scripts.php' ?>
