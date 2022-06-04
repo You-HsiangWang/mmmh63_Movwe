@@ -39,7 +39,7 @@ if (isset($_SESSION['admin']['member_avatar'])) {
                         <i class="fa-solid fa-cart-shopping shop__card"></i>
                         <h6 class="forcart5">5</h6>
                     </div>
-                    <p class="shopcard__text" style="">購物車</p>
+                    <p class="shopcard__text" style="white-space:nowrap">購物車</p>
                 </div>
             </a>
 
