@@ -392,84 +392,15 @@ a {
     background-color: #3C3C3C;
     position: relative;
 }
-.wish_total::after{
-    content: "";
+.wish_people{
     position: absolute;
-    width: 5%;
     height: 5px;
     border-radius: 4px;
     background-color:#10FFA2;
     top: 0;
     left: 0;
 }
-.wish_total_1{
-    width: 100%;
-    height: 5px;
-    border-radius: 4px;
-    background-color: #3C3C3C;
-    position: relative;
-}
-.wish_total_1::after{
-    content: "";
-    position: absolute;
-    width: 60%;
-    height: 5px;
-    border-radius: 4px;
-    background-color:#10FFA2;
-    top: 0;
-    left: 0;
-}
-.wish_total_2{
-    width: 100%;
-    height: 5px;
-    border-radius: 4px;
-    background-color: #3C3C3C;
-    position: relative;
-}
-.wish_total_2::after{
-    content: "";
-    position: absolute;
-    width: 20%;
-    height: 5px;
-    border-radius: 4px;
-    background-color:#10FFA2;
-    top: 0;
-    left: 0;
-}
-.wish_total_3{
-    width: 100%;
-    height: 5px;
-    border-radius: 4px;
-    background-color: #3C3C3C;
-    position: relative;
-}
-.wish_total_3::after{
-    content: "";
-    position: absolute;
-    width: 35%;
-    height: 5px;
-    border-radius: 4px;
-    background-color:#10FFA2;
-    top: 0;
-    left: 0;
-}
-.wish_total_4{
-    width: 100%;
-    height: 5px;
-    border-radius: 4px;
-    background-color: #3C3C3C;
-    position: relative;
-}
-.wish_total_4::after{
-    content: "";
-    position: absolute;
-    width: 28%;
-    height: 5px;
-    border-radius: 4px;
-    background-color:#10FFA2;
-    top: 0;
-    left: 0;
-}
+
 .wish_vote{
     font-size: 12px;
     margin-top: 5px;

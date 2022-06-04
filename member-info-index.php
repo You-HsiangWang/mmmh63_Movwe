@@ -24,10 +24,13 @@
     $stmtHL = $pdo->query($getPoints);
     $getP = $stmtHL->fetchAll();
 
-    // 拿許願清單
-    $getWish = "SELECT * FROM `wishlist` WHERE 1 LIMIT 5";
-    $stmtWL = $pdo->query($getWish);
-    $getW = $stmtWL->fetchAll();
+
+    // 拿到這個會員sid=1的許願清單
+    $memid = $_SESSION['admin']['member_sid'];
+    $getWish = 'SELECT * FROM `member_has_wishlist` FULL JOIN `wishlist` ON `mhw_wishlist_sid` = `wish_sid` WHERE `mhw_member_sid` =?';
+    $stmtWl = $pdo->prepare($getWish);
+    $stmtWl->execute([$memid]);
+    $getW = $stmtWl->fetchAll();
     ?>
 
     <?php include __DIR__ . '/parts/movwe_head.php' ?>
@@ -933,7 +936,9 @@
                                                             <?= $Winfo['wish_name'] ?>
                                                         </div>
                                                         <div class="wish_word_bottom">
-                                                            <div class="wish_total_1"></div>
+                                                            <div class="wish_total">
+                                                                <div class="wish_people" style="width: <?= $Winfo['wish_number']*0.04 ?>%"></div>
+                                                            </div>
                                                             <div class="wish_vote">
                                                                 已有 <span><?= $Winfo['wish_number'] ?></span> 人參與許願
                                                             </div>
