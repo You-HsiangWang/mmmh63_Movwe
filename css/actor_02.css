@@ -2,12 +2,20 @@ body {
     overflow-x: hidden;
 }
 
+
+::-webkit-scrollbar {
+    display: none;
+    }
 .actor__right__container{
-    height: 90vh;
+    height: 110vh;
 width: 60%;
-overflow: hidden;
+overflow-x: hidden;
 display: flex;
 justify-content: center;
+    }
+
+.actor__right{
+    height: 100%;
 }
 .go_to_ott_box{
     width: 100%;
@@ -430,6 +438,10 @@ text-shadow: 0 0 5px rgb(16, 255, 162);
         width: 30px;
         height: 30px;
         margin-right: 8px;
+    }
+
+    .actor__right__container{
+        height: 110vh;
     }
 
 }

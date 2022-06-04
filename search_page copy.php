@@ -803,6 +803,116 @@ $FLrow = $stmtFL->fetchAll();
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="image__card image__card__search_page">
+                                            <div class="imge__card__information">
+                                                <div class="information__top">
+                                                <img class="carousel__images" src="./img/center/search-2.sm.jpg" alt="">
+                                                </div>
+                                                <div class="information__bottom">
+                                                    <div class="information__bottom_1 Bottom__display">
+                                                        <p class="information__typ d-filter-a">
+                                                            動畫
+                                                        </p>
+                                                        <div class="bottom_6_icon_box">
+                                                                <!-- <a href="#">
+                                                                    <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/friday_s.svg" alt="">
+                                                                    </p>
+                                                                </a> -->
+                                                                <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw" target="_blank">
+                                                                    <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                                </a>
+                                                                </p>
+                                                                <!-- <a href="#">
+                                                                    <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/kktv_s.svg" alt="">
+                                                                    </p>
+                                                                </a> -->
+                                                                <!-- <a href="#">
+                                                                    <p class="bottom_6_icon">
+                                                                        <img src="./img/logo/netflix_s.svg" alt="">
+                                                                    </p>
+                                                                </a> -->
+                                                            </div>
+
+
+                                                    </div>
+                                                    <div class="information__bottom_2 Bottom__display">
+                                                        <p class="information__name">
+                                                        繼怪怪守護神
+                                                        </p>
+                                                    </div>
+                                                    <div class="information__bottom_3 Bottom__display">
+                                                        <div class="information__star">
+                                                            <div class="information__staricon_box">
+                                                                <img src="./img/icons/start.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="information__point">
+                                                            <p>
+                                                                9.4
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="information__bottom_4 Bottom__display">
+                                                        <p>
+                                                            輕鬆喜劇 /
+                                                        </p>
+                                                        <p>
+                                                            奇幻冒險
+                                                        </p>
+                                                    </div>
+                                                    <!-- <div class="information__bottom_5 Bottom__display">
+                                                                    <a href="#">
+                                                                        <p class="information__actor__name">
+                                                                            大衛·芬奇
+                                                                        </p>
+                                                                    </a>
+                                                                    <span class="speace"> / </span>
+                                                                    <a href="#">
+                                                                        <p class="information__actor__name">
+                                                                            喬舒亞·多南
+                                                                        </p>
+                                                                    </a>
+
+                                                                </div> -->
+
+                                                    <div class="information__bottom_6-5 Bottom__display">
+                                                        <a href="./single-movie-page0511.html">
+                                                            <p class="detail">
+                                                                查看詳細...
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="information__bottom_6 Bottom__display">
+                                                            <button class="push__up">
+                                                                <p class="search__black">
+                                                                    ＋ 加入片單
+                                                                </p>
+                                                            </button>
+                                                        </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="actor_flim">
+                                                <div class="ac_flim_pic">
+                                                <img class="carousel__images" src="./img/center/search-2.sm.jpg" alt="">
+                                                </div>
+                                                <div class="ac_flim_name">
+                                                    繼怪怪守護神
+                                                </div>
+                                                <div class="ac_ott">
+                                                    <!-- <div class="ac_netflix">
+                                                        <img src="./img/logo/netflix_s.svg" alt="">
+                                                    </div> -->
+                                                    <div class="ac_netflix">
+                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                         <?php foreach ($FLrow as $FLrowinfo) : ?>
                                             <div class="image__card image__card__search_page">

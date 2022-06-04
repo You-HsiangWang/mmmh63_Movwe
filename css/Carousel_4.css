@@ -446,7 +446,68 @@ display: none;
 
 }
 
+
 @media screen and (min-width: 1600px) {
+
+    .carousle__button__4 {
+        height: 420px;
+    }
+
+
+    .carousel__button--left__4 {
+        position: absolute;
+        left: -75px;
+        top: 240px;
+        transform: translateY(-50%);
+        /* border-radius: 0 10px 10px 0; */
+    }
+    
+    
+    .carousel__button--right__4 {
+        position: absolute;
+        right: -75px;
+        top: 240px;
+        /* transform: translateY(-50%); */
+        /* border-radius: 10px 0 0 10px; */
+    
+    }
+
+    .image__card:hover .carousel__images__box{
+        transform: scale(0);
+        opacity: .3;
+        /* border: 5px solid wheat; */
+    }
+    
+    .image__card:hover .imge__card__information{
+        opacity: 1;
+        transform: scale(1.1) ;
+        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+        z-index: 105;
+        background-color: rgb(26, 29, 36);
+        /* border-top: 2px solid rgb(16, 255, 162);
+        border-bottom: 2px solid rgb(16, 255, 162); */
+        /* box-shadow: 0 -15px 5px -16px rgb(16, 255, 162); */
+    }
+    
+    
+    .image__card:hover .information__bottom{
+        opacity: 1;
+        color: rgba(0, 0, 0, 0);
+    }
+    
+    
+    
+    .image__card:hover .information__video {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 1800px) {
     .card7__4 {
         display: block;
     }
