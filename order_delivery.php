@@ -121,30 +121,34 @@ $title = 'Movwe-物流選擇';
                             <th>單價</th>
                             <th>小計</th>
                         </tr>
-                        <tr id="text">
-                            <td>
-                                <img src="./img/mall/1.jpg" alt="">
-                            </td>
-                            <td>
-                            <h4><?= $_SESSION['cart']['ProductName'] ?></h4>
-                            </td>
-                            <td>
-                            <h4><?= $_SESSION['cart']['ProductChoice'] ?></h4>
-                            </td>
-                            <td>
-                                <h4><?= $_SESSION['cart']['ProductSize'] ?></h4>
-                            </td>
-                            <td>
-                                <h4 id="quantity"><?= $_SESSION['cart']['ProductQuantity'] ?></h4>
+                        <?php foreach ($_SESSION['cart'] as $f) : ?>
+                            <tr id="text<?= $f['ProductSize'] ?>">
+                                <td>
+                                    <img src="./img/mall/1.jpg" alt="">
+                                </td>
+                                <td>
+                                    <h4><?= $f['ProductName'] ?></h4>
+                                </td>
+                                <td>
+                                    <h4><?= $f['ProductChoice'] ?></h4>
+                                </td>
+                                <td>
+                                    <h4><?= $f['ProductSize'] ?></h4>
+                                </td>
+                                <td>
+                                    <div class="d-flex justify-center">
+                                        <input type="text" class="quantity-input" value="<?= $f['ProductQuantity'] ?>" id="quantity<?= $f['ProductSize'] ?>" disabled>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4 id="singlePrice<?= $f['ProductSize'] ?>" data-value="<?= $f['ProductPrice'] ?>"><?= $f['ProductPrice'] ?></h4>
+                                </td>
+                                <td>
+                                    <h4 id="subTotalPrice<?= $f['ProductSize'] ?>"><?= $f['SubTotalPrice'] ?></h4>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
 
-                            </td>
-                            <td>
-                                <h4 id="singlePrice">899</h4>
-                            </td>
-                            <td>
-                                <h4 id="subTotalPrice"><?= $_SESSION['cart']['ProductPrice'] ?></h4>
-                            </td>
-                        </tr>
                     </table>
                     <div id="noProduct">
                         <!-- <h3>目前購物車內沒有商品</h3> -->
@@ -230,8 +234,8 @@ $title = 'Movwe-物流選擇';
                 <div class="w-100 mt-30 d-flex justify-end">
                     <div class="w-30">
                         <div class="d-flex justify-between">
-                            <h4>總共有<?= $_SESSION['cart']['ProductQuantity'] ?>項商品</h4>
-                            <h4>NTD <?= $_SESSION['cart']['ProductPrice'] ?></h4>
+                            <h4>總共有<?= $_SESSION['cartcart']['ProductQuantity'] ?>項商品</h4>
+                            <h4>NTD<?= $_SESSION['cartcart']['ProductTotalPrice'] ?></h4>
                         </div>
                         <div class="d-flex justify-between mt-10">
                             <h4>優惠券折抵</h4>
@@ -243,7 +247,7 @@ $title = 'Movwe-物流選擇';
                         </div>
                         <div class="d-flex justify-between mt-10">
                             <h4><strong>商品總金額</strong></h4>
-                            <h4 class="orange"><?= $_SESSION['cartcart']['ProductTotalPrice'] ?></h4>
+                            <h4 class="orange"><?= $_SESSION['cartcart']['ProductTotalPayment'] ?></h4>
                         </div>
                         <div class="d-flex justify-end">
                             <p class="grey">皆以新台幣付款</p>
@@ -276,11 +280,11 @@ $title = 'Movwe-物流選擇';
                         </div>
                     </div>
                     <!-- 上一步 + 下一步按鈕 -->
-                    <div class="w-30 d-flex justify-between">
+                    <div class="w-30 d-flex justify-end">
                         <a href="./order_cart.php">
                             <button class="prev_btn_3w">上一步</button>
                         </a>
-                        <a href="./order_pay.php">
+                        <a href="./order_pay.php" class="ml-20">
                             <button class="btn_3w">下一步</button>
                         </a>
                     </div>

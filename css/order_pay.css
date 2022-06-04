@@ -166,7 +166,7 @@ input[type="radio"]:checked::before {
 /* 信用卡資料 */
 
 .card-img-wrap {
-    width: 80%;
+    width: 150px;
 }
 
 .card-img-wrap img {

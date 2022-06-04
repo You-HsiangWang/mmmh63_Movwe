@@ -237,7 +237,7 @@ $title = 'Movwe-訂單完成';
                     <h3 class="white">訂單明細如下:</h3>
                 </div>
                 <!-- ㄚㄚㄚ是table 購物車商品詳情 -->
-                <div class="booking-list border-bottom-main-color">
+                <div class="booking-list mb-30 border-bottom-main-color">
                     <table>
                         <tr class="yellow">
                             <th>商品圖片</th>
@@ -248,31 +248,36 @@ $title = 'Movwe-訂單完成';
                             <th>單價</th>
                             <th>小計</th>
                         </tr>
-                        <tr id="text">
+                        <?php foreach ($_SESSION['cart'] as $f) : ?>
+                        <tr id="text">                  
                             <td>
                                 <img src="./img/mall/1.jpg" alt="">
                             </td>
                             <td>
-                                <h4><?= $_SESSION['cart']['ProductName'] ?></h4>
+                                <h4><?= $f['ProductName'] ?></h4>
                             </td>
                             <td>
-                                <h4><?= $_SESSION['cart']['ProductChoice'] ?></h4>
+                                <h4><?= $f['ProductChoice'] ?></h4>
                             </td>
                             <td>
-                                <h4><?= $_SESSION['cart']['ProductSize'] ?></h4>
+                                <h4><?= $f['ProductSize'] ?></h4>
                             </td>
                             <td>
-                                <h4 id="quantity"><?= $_SESSION['cart']['ProductQuantity'] ?></h4>
-
+                                <h4><?= $f['ProductQuantity'] ?></h4>
                             </td>
                             <td>
-                                <h4 id="singlePrice">899</h4>
+                                <h4 id="singlePrice" data-value="<?= $f['ProductPrice'] ?>"><?= $f['ProductPrice'] ?></h4>
                             </td>
                             <td>
-                                <h4 id="subTotalPrice"><?= $_SESSION['cart']['ProductPrice'] ?></h4>
+                                <h4 id="subTotalPrice"><?= $f['SubTotalPrice'] ?></h4>
                             </td>
                         </tr>
+                        <?php endforeach; ?>
+
                     </table>
+                    <div id="noProduct">
+                        <!-- <h3>目前購物車內沒有商品</h3> -->
+                    </div>
                 </div>
                 <!-- 結帳明細 -->
                 <div class="payment-list">
@@ -283,7 +288,7 @@ $title = 'Movwe-訂單完成';
                     <table class="mt-30">
                         <tr>
                             <th>商品金額</th>
-                            <td>NTD <?= $_SESSION['cart']['ProductPrice'] ?></td>
+                            <td>NTD <?= $_SESSION['cartcart']['ProductTotalPrice'] ?></td>
                         </tr>
                         <tr>
                             <th>優惠券折扣</th>
@@ -295,7 +300,7 @@ $title = 'Movwe-訂單完成';
                         </tr>
                         <tr class="orange">
                             <th>總計金額</th>
-                            <td><?= $_SESSION['cartcart']['ProductTotalPrice'] ?></td>
+                            <td><?= $_SESSION['cartcart']['ProductTotalPayment'] ?></td>
                         </tr>
                     </table>
                 </div>

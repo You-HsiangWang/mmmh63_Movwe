@@ -130,15 +130,15 @@
                             <th>單價</th>
                             <th>小計</th>
                             <th>
-                                <button class="delete-button btn_4w" onclick="deleteFunction()">一鍵移除</button>
+                                <button class="delete-button btn_4w">一鍵移除</button>
                             </th>
                         </tr>
                         <?php foreach ($_SESSION['cart'] as $f) : ?>
 
-                        <tr id="text">
+                        <tr id="text<?= $f['ProductSize'] ?>">
                             <td class="d-flex justify-center align-item-center">
                                 <label>
-                                    <input type="checkbox" id="checkOneItem" class="checkitem" hidden>
+                                    <input type="checkbox" id="checkOneItem<?= $f['ProductSize'] ?>" class="checkitem" hidden>
                                     <span>
                                         <svg width="14" height="10" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_1427_26028)">
@@ -167,28 +167,26 @@
                             </td>
                             <td>
                                 <div class="d-flex justify-center">
-                                    <button class="button-number button-number-minus mr-10" onclick="subFunction()">-</button>
-
-                                    <input type="text" value="<?= $f['ProductQuantity'] ?>" id="quantity">
-
-                                    <button class="button-number button-number-plus ml-10" onclick="addFunction()">+</button>
+                                    <button class="button-number button-number-minus mr-10" onclick="subFunction('<?= $f['ProductSize'] ?>')">-</button>
+                                    <input type="text" class="quantity-input" value="<?= $f['ProductQuantity'] ?>" id="quantity<?= $f['ProductSize'] ?>">
+                                    <button class="button-number button-number-plus ml-10" onclick="addFunction('<?= $f['ProductSize'] ?>')">+</button>
                                 </div>
                             </td>
                             <td>
-                                <h4 id="singlePrice"></h4>
+                                <h4 id="singlePrice<?= $f['ProductSize'] ?>" data-value="<?= $f['ProductPrice'] ?>"><?= $f['ProductPrice'] ?></h4>
                             </td>
                             <td>
-                                <h4 id="subTotalPrice"><?= $f['ProductPrice'] ?></h4>
+                                <h4 id="subTotalPrice<?= $f['ProductSize'] ?>"><?= $f['SubTotalPrice'] ?></h4>
                             </td>
                             <td>
-                                <button class="delete-one-button btn_2w" onclick="deleteFunction()">移除</button>
+                                <button class="delete-one-button btn_2w" onclick="deleteFunction(b)">移除</button>
                             </td>
                         </tr>
                         <?php endforeach; ?>
 
                     </table>
                     <div id="noProduct">
-                        <h3>目前購物車內沒有商品</h3>
+                        <!-- <h3>目前購物車內沒有商品</h3> -->
                     </div>
                 </div>
                 <!-- 優惠券 -->
@@ -211,7 +209,7 @@
                     </p>
                 </div>
                 <div class="discount-info border-bottom-main-color">
-                    <fieldset class="d-flex justify-around">
+                    <fieldset class="d-flex justify-around mt-20 pb-20">
                         <!-- <legend>Select a maintenance drone:</legend> -->
                         <div class="d-flex align-item-center">
                             <input type="radio" id="discount1" name="discount" class="mr-10" onclick="AddDiscount()" value="50">
@@ -305,7 +303,6 @@
             <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
     </div>
-
 
     <!-- <?php include __DIR__ . '/parts/movwe_scripts.php' ?> -->
     <script src="./js/order_cart.js"></script>

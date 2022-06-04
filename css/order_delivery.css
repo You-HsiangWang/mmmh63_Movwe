@@ -61,6 +61,11 @@
             height: 100px;
         }
 
+        .quantity-input {
+            text-align: center;
+            width: 50px;
+        }
+
         /* 優惠券 */
 
         .discount-info {
