@@ -10,7 +10,7 @@ $title = 'MOVWE-我的片單';
 // $FLrow = $stmtFL->fetchAll();
 
 //我的片單7部 
-$getFilmList = "SELECT * FROM `video` WHERE 1 ORDER BY RAND() LIMIT 13";
+$getFilmList = "SELECT * FROM `video` WHERE `video_name` like '%鬼%' or `video_name` like '%怪%' LIMIT 13";
 $stmtFL = $pdo->query($getFilmList);
 $FLrow = $stmtFL->fetchAll();
 
