@@ -9,6 +9,11 @@
     margin-top: 300px;
 
 }
+.carousel__big__box__7__search__page{
+    width: 100%;
+    margin-top: 300px;
+
+}
 
 .single__page__mt{
 
@@ -439,6 +444,10 @@ height: 350px;
 
     .carousel__big__box__7{
         margin-top: 200px;
+
+    }
+    .carousel__big__box__7__search__page{
+        margin-top: 100px;
 
     }
 
