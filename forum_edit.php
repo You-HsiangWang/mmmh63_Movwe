@@ -108,7 +108,7 @@ $title = 'Movwe-我要發文';
                             <input type="file" id="forum_image" name="forum_image" style="color:white;">
                         </div>
                         <div class="d-flex ar-cate align-item-center">
-                            <label for="forum_image" class="mr-20">
+                            <label for="forum_hashtag" class="mr-20">
                                 <h3>#hashtag</h3>
                             </label>
                             <input type="text" id="forum_hashtag" name="forum_hashtag" style="color:white;">
@@ -116,7 +116,7 @@ $title = 'Movwe-我要發文';
                     </div>
                 </div>
                 <div class="mt-20">
-                    <textarea id="editor1" style="width: 100%; height: 50vh;"></textarea>
+                    <textarea id="editor1" style="width: 100%; height: 50vh;outline-style: none;"></textarea>
                 </div>
 
                 <div class="btn-bottom">

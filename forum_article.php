@@ -12,8 +12,8 @@ $getforumstmt = $pdo->prepare($getforumsql);
 $getforumstmt->execute([$ids]);
 $getforumrows = $getforumstmt->fetch();
 // 除錯
-if (!empty($getforumrows)) {
-};
+// if (!empty($getforumrows)) {
+// };
 
 // 用forumsid去查找所有的hashtag
 // $getforumid = [];
@@ -22,15 +22,22 @@ if (!empty($getforumrows)) {
 // };
 $tagsql = "SELECT * FROM `forum_has_hastag` WHERE `f_has_forum_sid` = " . $getforumrows['forum_sid'];
 $tags = $pdo->query($tagsql)->fetchAll();
-if(empty($tags)){
+if (empty($tags)) {
     $tags = false;
+};
+
+// 用forumsid去找所有留言
+// 未來優化應該要把留言者的sid也加進來
+$comsql = 'SELECT * FROM `forum_comment` WHERE `f_comment_forum_sid` ='.$ids;
+$comrows =  $pdo->query($comsql)->fetchAll();
+if(empty($comrows)){
+    $comrows = false;
 };
 
 
 
 $title = 'MOVWE-' . $getforumrows['forum_title'];
 // echo $_SERVER['QUERY_STRING'];
-
 
 ?>
 
@@ -93,9 +100,9 @@ $title = 'MOVWE-' . $getforumrows['forum_title'];
                     </div>
                     <div class="hashtag d-flex mt-30">
                         <ul class="d-flex ar-filter">
-                            <?php if ($tags!=false) {
+                            <?php if ($tags != false) {
                                 foreach ($tags as $t) {
-                                        echo '<li class="filter_4w d-flex justify-center align-item-center">' . $t['f_has_hastag_name'] . '</li>';
+                                    echo '<li class="filter_4w d-flex justify-center align-item-center">' . $t['f_has_hastag_name'] . '</li>';
                                 };
                             }; ?>
                         </ul>
@@ -135,7 +142,7 @@ $title = 'MOVWE-' . $getforumrows['forum_title'];
                             <span class="ml-10">收藏</span>
                         </div>
                     </div>
-                    <div class="comment mt-20">
+                    <div class="comment mt-20" id="comment_head">
                         <div class="comment-card d-flex align-item-center">
                             <div>
                                 <div class="comment-img-wrap">
@@ -143,24 +150,29 @@ $title = 'MOVWE-' . $getforumrows['forum_title'];
                                 </div>
                             </div>
                             <div class="w-100 ml-20">
-                                <h4><?php echo $_SESSION['admin']['member_nickname'] ?></h4>
+                                <h4 data-authersid="<?php echo $_SESSION['admin']['member_sid'] ?>"><?php echo $_SESSION['admin']['member_nickname'] ?></h4>
                                 <div class="d-flex justify-between align-item-center">
-                                    <input type="text" placeholder="&nbsp;&nbsp;寫下你的留言～">
-                                    <button class="white">送出</button>
+                                    <input type="text" placeholder="&nbsp;&nbsp;寫下你的留言～" name="comment_input" id="comment_input">
+                                    <button class="white" id="comment_btn" onclick="getcomment()">送出</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="comment-card d-flex justify-between align-item-center mt-20">
+                    </div>
+                    <div class="comment mt-20" id="comment_bars">
+                        <!-- TODO:留言功能 這邊叫留言-->
+                        <?php if($comrows != false): ?>
+                            <?php foreach($comrows as $com): ?>
+                        <div class="comment-card d-flex justify-between align-item-center mt-20" data-forumsid="<?= $com['f_comment_forum_sid'] ?>">
                             <div class="d-flex">
                                 <div>
                                     <div class="comment-img-wrap">
-                                        <img src="./img/forum/dino.jpg" alt="">
+                                        <img src="./img/member/<?= $com['f_comment_pic'] ?>" alt="">
                                     </div>
                                 </div>
                                 <div class="ml-20">
-                                    <h4>切版王笠鴿</h4>
-                                    <p>我愛辣妹 辣妹愛我</p>
-                                    <span>39秒前</span>
+                                    <h4 data-authersid="<?= $com['f_comment_authur_sid'] ?>"><?= $com['f_comment_authur'] ?></h4>
+                                    <p><?= $com['f_comment_content'] ?></p>
+                                    <span><?= $com['f_comment_uploadtime'] ?></span>
                                 </div>
                             </div>
                             <div>
@@ -176,6 +188,8 @@ $title = 'MOVWE-' . $getforumrows['forum_title'];
                                 </svg>
                             </div>
                         </div>
+                                <?php endforeach; ?>
+                                    <?php endif; ?>
                     </div>
                 </div>
                 <div class="right__container">
@@ -320,6 +334,88 @@ $title = 'MOVWE-' . $getforumrows['forum_title'];
         </div>
 
         <script src="./js/Nav.js"></script>
+        <script>
+            // 拿到留言input
+            function getcomment() {
+                const $commentVal = $('#comment_input').val();
+                const $commentPic = $('#comment_head .comment-img-wrap > img').attr('src').split('/')[$('#comment_head .comment-img-wrap > img').attr('src').split('/').length - 1];
+                const $commentAva = $('#comment_head > .comment-card h4').text();
+                console.log($commentVal);
+
+                function pad(num) {
+                    return ('00' + num).slice(-2)
+                };
+                let date;
+                date = new Date();
+                date = date.getUTCFullYear() + '-' +
+                    pad(date.getUTCMonth() + 1) + '-' +
+                    pad(date.getUTCDate()) + ' ' +
+                    pad(date.getUTCHours()) + ':' +
+                    pad(date.getUTCMinutes()) + ':' +
+                    pad(date.getUTCSeconds());
+                // 送到append
+                appcomment($commentVal, $commentPic, $commentAva, date);
+                // 送到api
+                apicomment($commentVal, $commentPic, $commentAva, date);
+                $('#comment_input').val('');
+            };
+            // 留言成功
+
+            // append到 comment_bars底下
+            function appcomment(val, pic, ava, tim) {
+                const newDom = document.createElement('div');
+                newDom.classList.add('comment-card');
+                newDom.classList.add('d-flex');
+                newDom.classList.add('justify-between');
+                newDom.classList.add('align-item-center');
+                newDom.classList.add('mt-20');
+                newDom.innerHTML = `<div class="d-flex">
+                                <div>
+                                    <div class="comment-img-wrap">
+                                        <img src="./img/member/${pic}" alt="">
+                                    </div>
+                                </div>
+                                <div class="ml-20">
+                                    <h4>${ava}</h4>
+                                    <p>${val}</p>
+                                    <span>${tim}</span>
+                                </div>
+                            </div>
+                            <div>
+                                <svg width="24" height="20" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1427_26189)">
+                                        <path d="M8.35907 1.43364L8.73934 1.84474L9.15044 1.43433C10.2981 0.315787 11.8877 -0.193294 13.4499 0.0667277C15.8103 0.460015 17.5403 2.50251 17.5403 4.89717V5.09587C17.5403 6.5176 16.9511 7.87766 15.9096 8.84718L9.71913 14.6266C9.46219 14.8664 9.12303 15 8.77017 15C8.41731 15 8.07815 14.8664 7.82121 14.6266L1.63036 8.84718C0.590274 7.87766 0 6.5176 0 5.09587V4.89717C0 2.50251 1.73074 0.460015 4.09046 0.0667277C5.62182 -0.193294 7.24224 0.315787 8.35907 1.43364C8.35907 1.43398 8.32824 1.43364 8.35907 1.43364ZM8.73934 4.17089L7.19771 2.5676C6.4543 1.85434 5.39914 1.51586 4.3611 1.68852C2.79378 1.94992 1.64441 3.30758 1.64441 4.89717V5.09587C1.64441 6.06196 2.04557 6.98694 2.75233 7.6447L8.77017 13.2631L14.7894 7.6447C15.4951 6.98694 15.8959 6.06196 15.8959 5.09587V4.89717C15.8959 3.30758 14.7449 1.94992 13.1792 1.68852C12.1412 1.51586 11.086 1.85434 10.3426 2.5676L8.73934 4.17089Z" fill="#FC6F51" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1427_26189">
+                                            <rect width="17.5403" height="15" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>`;
+                const adddom = document.querySelector('#comment_bars');
+                adddom.prepend(newDom);
+            };
+            // 匯入資料庫
+            // TODO: 存getcomment的四個變數到
+            function apicomment(val, pic, ava, tim) {
+                const like = 0;
+                const qrs = new URLSearchParams(window.location.search).get('art');
+                const athursid = $('#comment_head h4').attr('data-authersid');
+                const obj = {
+                    'val': val,
+                    'pic': pic,
+                    'ava': ava,
+                    'tim': tim,
+                    'qrs': qrs,
+                    'like': like,
+                    'atsid': athursid
+                };
+                $.get('api_commemt_add.php', obj, function(data) {
+                    console.log('hihi');
+                }, 'json');
+            };
+        </script>
 </body>
 
 </html>
