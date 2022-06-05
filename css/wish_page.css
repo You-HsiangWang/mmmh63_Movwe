@@ -97,6 +97,7 @@ text-align: center;
     animation-iteration-count: infinite;
 }
 
+
 @keyframes genie {
     0% {
         filter: brightness(80%);

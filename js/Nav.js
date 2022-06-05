@@ -150,7 +150,7 @@
             $('.bar').css('width', `${scorllTop / (bodyHeight - widowHeight) * 100}%`)
     
             if (scorllTop > 5) {
-                $('.top_nav').css('background-color', 'rgb(43, 44, 49)');
+                $('.top_nav').css('background-color', 'rgba(43, 44, 49, 0.959)');
 
 
             }

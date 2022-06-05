@@ -258,6 +258,9 @@ color:rgb(16, 255, 162) ;
     margin-right: 10px;
     position: relative;
 }
+.image__card__actor{
+    width: 22%;
+}
 
 
 .carousel__images__box{

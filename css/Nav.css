@@ -407,6 +407,7 @@
 
 .text_a {
   transition: 0.1s;
+  font-size: 14.4px;
 }
 
 .text_a:hover {
