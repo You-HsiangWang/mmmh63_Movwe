@@ -545,6 +545,13 @@ filter: brightness(120%);
 }
 
 
+.actor__movie_name{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
 @media screen and (min-width: 750px) {
 
     .image__card {

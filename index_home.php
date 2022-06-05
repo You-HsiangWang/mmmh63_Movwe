@@ -4959,7 +4959,6 @@ $title = 'MOVWE-就要你放膽搜';
                             </div>
                         </div>
                     </div>
-                    <a class="dragon_a" href="./dragon_quest.php">
                         <div class="Movwe__test__section">
                             <div class="carousel__title__section__5">
                                 <div class="stick_desk"></div>
@@ -4982,16 +4981,18 @@ $title = 'MOVWE-就要你放膽搜';
                                     <div class="test__number">
                                         已有2345678人完成檢測
                                     </div>
+                                    <a class="dragon_a" href="./dragon_quest.php">
                                     <div class="join__box">
                                         <button class="btn_4w">立即檢測</button>
                                     </div>
+                                    </a>
+
                                 </div>
                                 <div class="discount__img__box game__box">
                                     <img src="./img/banner/game_s.png" alt="">
                                 </div>
                             </div>
                         </div>
-                    </a>
                 </div>
 
 

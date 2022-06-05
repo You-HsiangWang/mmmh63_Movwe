@@ -1314,7 +1314,7 @@
                     <!-- ---------------------------------------------- -->
                     <div class="Thanks__card__page3">
                         <div class="Thanks_logo">
-                            <img class="Thanks_Movwe" src="./img/logo/logo.png" alt="">
+                            <img class="Thanks_Movwe" src="./img/other/coin.svg" alt="">
                         </div>
                         <div class="Thanks__text">
                             <p> <span></span>
