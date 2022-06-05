@@ -151,16 +151,10 @@ function DatatoDelivery(g) {
 
     // 抓更新後的表格資料
 
-    // const name = document.getElementById(`name${g}`) ? document.getElementById(`name${g}`).innerText : 0;
-
-    // console.log(name);
-
     // --------------------------------------------------
 
     const gg = {
 
-        'ProductName': name,
-    
         'ProductQuantity': rr1,
         'ProductTotalPrice': rrr1,
         'ProductDiscount': pp,
