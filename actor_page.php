@@ -282,7 +282,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="./single_movie.php">
                                                                                 <p class="detail ">
                                                                                     查看詳細..
                                                                                 </p>
@@ -302,7 +302,7 @@ $title = 'MOVWE-孔劉';
                                                                 <img class="carousel__images" src="./img/center/h_1.jpeg" alt="">
                                                                 <div class="image__card__text">
                                                                     <div class="movie__name">
-                                                                        <p>
+                                                                        <p class="actor__movie_name">
                                                                             孤單又燦爛的神 鬼怪
                                                                         </p>
                                                                     </div>
@@ -413,7 +413,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -544,7 +544,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -675,7 +675,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -805,7 +805,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -930,7 +930,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -1055,7 +1055,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -1184,7 +1184,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -1312,7 +1312,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -1440,7 +1440,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -1568,7 +1568,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -1696,7 +1696,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -1821,7 +1821,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -1946,7 +1946,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -2075,7 +2075,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -2203,7 +2203,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -2331,7 +2331,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -2459,7 +2459,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -2587,7 +2587,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -2712,7 +2712,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -2837,7 +2837,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -3008,7 +3008,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -3138,7 +3138,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -3267,7 +3267,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -3395,7 +3395,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -3523,7 +3523,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -3648,7 +3648,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -3773,7 +3773,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -3938,7 +3938,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="./single_movie.php">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -4066,7 +4066,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -4194,7 +4194,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -4322,7 +4322,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -4490,7 +4490,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -4618,7 +4618,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -4746,7 +4746,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -4874,7 +4874,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -5002,7 +5002,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -5127,7 +5127,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
@@ -5252,7 +5252,7 @@ $title = 'MOVWE-孔劉';
                                                                         </div>
 
                                                                         <div class="information__bottom_6-5_actor Bottom__display">
-                                                                            <a href="./single-movie-page0511.html">
+                                                                            <a href="#">
                                                                                 <p class="detail">
                                                                                     查看詳細..
                                                                                 </p>
