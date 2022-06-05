@@ -299,9 +299,8 @@ $title = 'Movwe-物流選擇';
     </div>
 
 
-    <?php include __DIR__ . '/parts/movwe_scripts.php' ?>
-    <script src="./js/order_delivery.js"></script>
     <script src="./js/Nav.js"></script>
+    <script src="./js/order_delivery.js"></script>
 
 
 

@@ -154,7 +154,6 @@ function DatatoDelivery(g) {
     // --------------------------------------------------
 
     const gg = {
-
         'ProductQuantity': rr1,
         'ProductTotalPrice': rrr1,
         'ProductDiscount': pp,

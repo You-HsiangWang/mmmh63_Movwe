@@ -134,7 +134,7 @@
                             </th>
                         </tr>
                         <?php foreach ($_SESSION['cart'] as $f) : ?>
-                            <tr id="text<?= $f['ProductSize'] ?>">
+                            <tr id="text<?= $f['ProductSize'] ?>" class="needtoget">
                                 <td class="d-flex justify-center align-item-center">
                                     <label>
                                         <input type="checkbox" id="checkOneItem<?= $f['ProductSize'] ?>" class="checkitem" hidden>
@@ -156,15 +156,15 @@
                                     <img src="./img/mall/1.jpg" alt="">
                                 </td>
                                 <td>
-                                    <h4>
+                                    <h4 class="cart-name">
                                         <?= $f['ProductName'] ?>
                                     </h4>
                                 </td>
                                 <td>
-                                    <h4><?= $f['ProductChoice'] ?></h4>
+                                    <h4 class="cart-choice"><?= $f['ProductChoice'] ?></h4>
                                 </td>
                                 <td>
-                                    <h4><?= $f['ProductSize'] ?></h4>
+                                    <h4 class="cart-size"><?= $f['ProductSize'] ?></h4>
                                 </td>
                                 <td>
                                     <div class="d-flex justify-center">
@@ -174,10 +174,10 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <h4 id="singlePrice<?= $f['ProductSize'] ?>" data-value="<?= $f['ProductPrice'] ?>"><?= $f['ProductPrice'] ?></h4>
+                                    <h4 id="singlePrice<?= $f['ProductSize'] ?>" data-value="<?= $f['ProductPrice'] ?>" class="singlePrice"><?= $f['ProductPrice'] ?></h4>
                                 </td>
                                 <td>
-                                    <h4 id="subTotalPrice<?= $f['ProductSize'] ?>"><?= $f['SubTotalPrice'] ?></h4>
+                                    <h4 id="subTotalPrice<?= $f['ProductSize'] ?>" class="subTotalPrice"><?= $f['SubTotalPrice'] ?></h4>
                                 </td>
                                 <td>
                                     <button class="delete-one-button btn_2w" onclick="deleteFunction('<?= $f['ProductSize'] ?>')">移除</button>
@@ -291,7 +291,8 @@
                             <button class="prev_btn_4w">繼續購物</button>
                         </a>
                         <a class="ml-20">
-                            <button class="btn_3w" onclick="DatatoDelivery('<?= $f['ProductSize'] ?>')">下一步</button>
+                            <!-- <button class="btn_3w" onclick="DatatoDelivery('記得加')">下一步</button> -->
+                            <button class="btn_3w" onclick="getcart()">下一步</button>
                         </a>
                     </div>
                 </div>
@@ -304,6 +305,42 @@
     <!-- <?php include __DIR__ . '/parts/movwe_scripts.php' ?> -->
     <script src="./js/order_cart.js"></script>
     <script src="./js/Nav.js"></script>
+
+    <script>
+        // 專注拿東西
+        function getcart() {
+            const cartArray = document.querySelectorAll('.needtoget');
+            const packageArray = [];
+            for (let i = 0; i < cartArray.length; i++) {
+                const cartchoice = document.querySelector(`.needtoget:nth-child(${i+2}) .cart-choice`).innerText;
+                const cartname = document.querySelector(`.needtoget:nth-child(${i+2}) .cart-name`).innerText;
+                const cartsize = document.querySelector(`.needtoget:nth-child(${i+2}) .cart-size`).innerText;
+                const cartquan = document.querySelector(`.needtoget:nth-child(${i+2}) .quantity-input`).value;
+                const cartprice = document.querySelector(`.needtoget:nth-child(${i+2}) .singlePrice`).innerText;
+                const cartsubp = document.querySelector(`.needtoget:nth-child(${i+2}) .subTotalPrice`).innerText;
+                const cartobj = {
+                    'ProductName': cartname,
+                    'ProductChoice': cartchoice,
+                    'ProductSize': cartsize,
+                    'ProductQuantity': cartquan,
+                    'ProductPrice': cartprice,
+                    'SubTotalPrice': cartsubp,
+                };
+                packageArray.push(cartobj);
+            };
+            console.log(packageArray);
+            cartNextpage(packageArray);
+            DatatoDelivery();
+        };
+        // 把東西更新到session
+        function cartNextpage(a) {
+            console.log(a);
+            $.get('api_product_update.php', {a}, function(data){
+                console.log(data,'heyhey');
+                location.href = './order_delivery.php'
+            }, 'json');
+        };
+    </script>
 
 </body>
 

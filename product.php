@@ -202,15 +202,15 @@ $myproductchoices = $rows[0]["productchoice"];
                             <div class="mt-20">
                                 <h4 class="yellow mb-10">尺寸</h4>
                                 <div class="d-flex align-item-center">
-                                <fieldset class="d-flex justify-around">
-                                    <div class="d-flex align-item-center mr-20">
-                                        <input type="radio" class="product-size mr-10" name="productsize" onclick="CCC()">
-                                        <label for="" class="white">S</label>
-                                        <input type="radio" class="product-size ml-20 mr-10" name="productsize" onclick="CCC()">
-                                        <label for="" class="white">M</label>
-                                        <input type="radio" class="product-size ml-20 mr-10" name="productsize" onclick="CCC()">
-                                        <label for="" class="white">L</label>
-                                    </div>
+                                    <fieldset class="d-flex justify-around">
+                                        <div class="d-flex align-item-center mr-20">
+                                            <input type="radio" class="product-size mr-10" name="productsize" onclick="CCC()">
+                                            <label for="" class="white">S</label>
+                                            <input type="radio" class="product-size ml-20 mr-10" name="productsize" onclick="CCC()">
+                                            <label for="" class="white">M</label>
+                                            <input type="radio" class="product-size ml-20 mr-10" name="productsize" onclick="CCC()">
+                                            <label for="" class="white">L</label>
+                                        </div>
                                     </fieldset>
                                 </div>
                             </div>
@@ -799,7 +799,7 @@ $myproductchoices = $rows[0]["productchoice"];
 
             <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
-
+        <script src="./js/Nav.js"></script>
         <script src="./js/product.js"></script>
 </body>
 
