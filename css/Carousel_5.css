@@ -274,7 +274,27 @@ color:rgb(16, 255, 162) ;
     border-radius: 10px;
 
 }
+.wish__line-2__wish{
+    width: 3%;
+    height: 3px;
+    background-color: rgba(16, 255, 163, 0.484);
+    position: absolute;
+    top: 0;
+    transition: .2s;
+    border-radius: 10px;
+
+}
 .wish__line-3{
+    width: 0%;
+    height: 3px;
+    background-color: rgb(16, 255, 162);
+    position: absolute;
+    top: 0;
+    transition: .2s;
+    border-radius: 10px;
+
+}
+.wish__line-3__wish{
     width: 0%;
     height: 3px;
     background-color: rgb(16, 255, 162);
@@ -353,6 +373,15 @@ justify-content: flex-end;
 
 .image__card__5:hover .wish__line-3{
     width: 65%;
+    height: 3.8px;
+    filter: brightness(130%);
+    background-color:rgb(16, 255, 163);
+    box-shadow: 0 0 5px rgb(16, 255, 163)
+    /* transform: scale(1.15); */
+    /* border: 5px solid wheat; */
+}
+.image__card__5:hover .wish__line-3__wish{
+    width: 3%;
     height: 3.8px;
     filter: brightness(130%);
     background-color:rgb(16, 255, 163);

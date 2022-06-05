@@ -128,8 +128,8 @@ require './parts/movwe_connect_db.php';
                                                 </div>
                                                 <div class="wish__text__03">
                                                     <div class="wish__line-1 pd"></div>
-                                                    <div class="wish__line-2 pd"></div>
-                                                    <div class="wish__line-3 pd"></div>
+                                                    <div class="wish__line-2__wish pd"></div>
+                                                    <div class="wish__line-3__wish pd"></div>
                                                 </div>
                                                 <div class="wish__text__04">
                                                     <p>
@@ -165,7 +165,7 @@ require './parts/movwe_connect_db.php';
                                                 </div>
                                                 <div class="wish__text__04">
                                                     <p>
-                                                        已有3041人參與投票
+                                                        已有1584人參與投票
                                                     </p>
                                                 </div>
                                             </div>

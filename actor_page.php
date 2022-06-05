@@ -178,7 +178,6 @@ $title = 'MOVWE-孔劉';
                                 <div class="actor_underline"></div>
                             </div>
                             <div class="actor_bottom">
-
                                 <div class="carousel__big__box Actor__all">
                                     <div class="carousel__title__section">
                                         <div class="stick_desk"></div>
@@ -196,9 +195,9 @@ $title = 'MOVWE-孔劉';
                                                 </div>
                                             </button>
                                             <ul class="carousel__track">
-                                                <li class="carousel__slide current-slide">
-                                                    <div class="image__box">
-                                                        <div class="image__card image__card__actor">
+                                                <li class="carousel__slide current-slide ">
+                                                    <div class="image__box ">
+                                                        <div class="image__card image__card__actor ">
                                                             <div class="imge__card__information">
                                                                 <div class="information__top">
                                                                     <img class="information__video" src="./img/center/movie_card-W-1.jpeg" alt="">
@@ -330,7 +329,7 @@ $title = 'MOVWE-孔劉';
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="image__card image__card__actor">
+                                                        <div class="image__card image__card__actor actor__none">
                                                             <div class="imge__card__information">
                                                                 <div class="information__top">
                                                                     <img class="information__video" src="./img/center/ky-all-1.jpeg" alt="">

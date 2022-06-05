@@ -4711,7 +4711,7 @@ $title = 'MOVWE-就要你放膽搜';
                                                     </div>
                                                     <div class="wish__text__04">
                                                         <p>
-                                                            已有2543人參與投票
+                                                            已有1584人參與投票
                                                         </p>
                                                     </div>
                                                 </div>
