@@ -234,7 +234,7 @@ $FLrow = $stmtFL->fetchAll();
                         <input id="myInput" placeholder="輸入片名" value="">
                     </div>
                     <div class="submit__btn">
-                    <button class="search__btn01" id="search__Btn" >Button</button>
+                        <button class="search__btn01" id="search__Btn">Button</button>
                     </div>
                     <div class="search__final">
                         <p class="search__input__switch-2">很抱歉! 根據您輸入的關鍵字“<span id="Title" class="search__point"></span>”, 找不到符合的相關結果</p>
@@ -704,27 +704,27 @@ $FLrow = $stmtFL->fetchAll();
                                                             影劇
                                                         </p>
                                                         <div class="bottom_6_icon_box">
-                                                                <!-- <a href="#">
+                                                            <!-- <a href="#">
                                                                     <p class="bottom_6_icon">
                                                                         <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p>
                                                                 </a> -->
-                                                                <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw" target="_blank">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
-                                                                </p>
-                                                                <!-- <a href="#">
+                                                            <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw" target="_blank">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                            </a>
+                                                            </p>
+                                                            <!-- <a href="#">
                                                                     <p class="bottom_6_icon">
                                                                         <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p>
                                                                 </a> -->
-                                                                <a href="#">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/netflix_s.svg" alt="">
-                                                                    </p>
-                                                                </a>
-                                                            </div>
+                                                            <a href="#">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/netflix_s.svg" alt="">
+                                                                </p>
+                                                            </a>
+                                                        </div>
 
 
                                                     </div>
@@ -776,12 +776,12 @@ $FLrow = $stmtFL->fetchAll();
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p class="search__black">
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
+                                                        <button class="push__up">
+                                                            <p class="search__black">
+                                                                ＋ 加入片單
+                                                            </p>
+                                                        </button>
+                                                    </div>
 
                                                 </div>
                                             </div>
@@ -806,7 +806,7 @@ $FLrow = $stmtFL->fetchAll();
                                         <div class="image__card image__card__search_page">
                                             <div class="imge__card__information">
                                                 <div class="information__top">
-                                                <img class="carousel__images" src="./img/center/search-2.sm.jpg" alt="">
+                                                    <img class="carousel__images" src="./img/center/search-2.sm.jpg" alt="">
                                                 </div>
                                                 <div class="information__bottom">
                                                     <div class="information__bottom_1 Bottom__display">
@@ -814,33 +814,33 @@ $FLrow = $stmtFL->fetchAll();
                                                             動畫
                                                         </p>
                                                         <div class="bottom_6_icon_box">
-                                                                <!-- <a href="#">
+                                                            <!-- <a href="#">
                                                                     <p class="bottom_6_icon">
                                                                         <img src="./img/logo/friday_s.svg" alt="">
                                                                     </p>
                                                                 </a> -->
-                                                                <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw" target="_blank">
-                                                                    <p class="bottom_6_icon">
-                                                                        <img src="./img/logo/iqiyi_s.svg" alt="">
-                                                                </a>
-                                                                </p>
-                                                                <!-- <a href="#">
+                                                            <a href="https://www.iq.com/album/%E9%AC%BC%E6%80%AA-2016-19rrh9vpnt?lang=zh_tw" target="_blank">
+                                                                <p class="bottom_6_icon">
+                                                                    <img src="./img/logo/iqiyi_s.svg" alt="">
+                                                            </a>
+                                                            </p>
+                                                            <!-- <a href="#">
                                                                     <p class="bottom_6_icon">
                                                                         <img src="./img/logo/kktv_s.svg" alt="">
                                                                     </p>
                                                                 </a> -->
-                                                                <!-- <a href="#">
+                                                            <!-- <a href="#">
                                                                     <p class="bottom_6_icon">
                                                                         <img src="./img/logo/netflix_s.svg" alt="">
                                                                     </p>
                                                                 </a> -->
-                                                            </div>
+                                                        </div>
 
 
                                                     </div>
                                                     <div class="information__bottom_2 Bottom__display">
                                                         <p class="information__name">
-                                                        繼怪怪守護神
+                                                            繼怪怪守護神
                                                         </p>
                                                     </div>
                                                     <div class="information__bottom_3 Bottom__display">
@@ -886,19 +886,19 @@ $FLrow = $stmtFL->fetchAll();
                                                         </a>
                                                     </div>
                                                     <div class="information__bottom_6 Bottom__display">
-                                                            <button class="push__up">
-                                                                <p class="search__black">
-                                                                    ＋ 加入片單
-                                                                </p>
-                                                            </button>
-                                                        </div>
+                                                        <button class="push__up">
+                                                            <p class="search__black">
+                                                                ＋ 加入片單
+                                                            </p>
+                                                        </button>
+                                                    </div>
 
                                                 </div>
                                             </div>
 
                                             <div class="actor_flim">
                                                 <div class="ac_flim_pic">
-                                                <img class="carousel__images" src="./img/center/search-2.sm.jpg" alt="">
+                                                    <img class="carousel__images" src="./img/center/search-2.sm.jpg" alt="">
                                                 </div>
                                                 <div class="ac_flim_name">
                                                     繼怪怪守護神
@@ -1152,7 +1152,7 @@ $FLrow = $stmtFL->fetchAll();
                             <!-- 文章圖片 -->
                             <div class="card-article-right d-flex align-item-center">
                                 <div class="article-img-wrap d-flex align-item-center">
-                                    <img src="./img/center/2521.jpg" alt="">
+                                    <img src="./img/center/single__post-2.png" alt="">
                                 </div>
                             </div>
 
@@ -1233,7 +1233,7 @@ $FLrow = $stmtFL->fetchAll();
                             <!-- 文章圖片 -->
                             <div class="card-article-right d-flex align-item-center">
                                 <div class="article-img-wrap d-flex align-item-center">
-                                    <img src="./img/center/harry.jpg" alt="">
+                                <img src="./img/center/single__post-3.png" alt="">
                                 </div>
                             </div>
 
@@ -1295,15 +1295,26 @@ $FLrow = $stmtFL->fetchAll();
                             <div class="card-article-left">
                                 <div>
                                     <a href="#">
-                                        <h4 class="mt-10">人生的故事《我們的藍調時光》</h4>
+                                        <h4 class="mt-10">看鬼怪結局有哭的舉手</h4>
                                     </a>
                                     <p class="mt-10 multiple">
-                                        這部戲用剛剛好的三集，把男主角交織的情緒，透過和豪爽又嬌羞的大嬸再相遇，小品呈現。讓人特別喜歡的是，滿滿的內心戲，劇情很簡單，感情卻很厚重，而且這些情感都是很貼近小人物的我。
-                                        隨著年紀變大，雖然我經歷的事情不多，也沒有真正吃過什麼大苦，但是對於一些內心複雜的感受，好像漸漸可以開始理解、甚至是同理了。
-                                        你說，是什麼複雜的感受？鋪陳的好像在裝老陳的樣子？
-                                        其實也沒有多深奧，大概就是關於人跟人之間交織的複雜情緒，像恩喜她一個人獨自在晚上喝著小酒、唱著自己喜歡的歌，然後越唱越酸，心頭悶悶的感覺。
+                                        我是個幾乎不追劇的人，除非電視有播
+                                        我可以忍受每個禮拜在電視前固定觀看
+                                        卻無法忍受自己一集一集狂看
+                                        靠著電視看完的韓劇大概七部？
+                                        主君的太陽、有理的愛情、一起吃飯吧1 2
+                                        學校2015、急診男女、孤單又燦爛的神 鬼怪
+                                        真的是少的可憐…，其他網路看都會放棄
 
-                                        好久沒看我喜歡的車勝元演戲了，他在這部韓劇裡面，活生生的把「憂愁」演出來。而這份憂愁要詮釋得好很不簡單，因為這份憂愁不是大苦大悲，而是觀眾們都曾經歷的課題，也可能是許多人正深陷其中的苦悶，所以要演得細緻，讓大家有所共鳴、可以沈浸其中。
+                                        重點是我鬼怪大概拖了將近四個月才看完？
+                                        電視一直換台播出，一下子FOX一下子星衛
+                                        在星衛快結局，最後那週我有事就沒看到結局
+                                        接著換FOX開始播，前面都看過不想看
+                                        結果，他就完結了！！！欲哭無淚
+                                        雖然我知道結局是啥啦，可是還是想親眼看
+                                        最近FOX又重播了，今天隨便轉有幸看到結局
+                                        果然大哭一場是可遇不可求的
+
                                     </p>
                                     <br>
                                     <a href="#" class="hashtag">#李秉憲&nbsp;</a>
@@ -1315,7 +1326,7 @@ $FLrow = $stmtFL->fetchAll();
                             <!-- 文章圖片 -->
                             <div class="card-article-right d-flex align-item-center">
                                 <div class="article-img-wrap d-flex align-item-center">
-                                    <img src="./img/center/ourblues.jpg" alt="">
+                                <img src="./img/center/single__post-4.png" alt="">
                                 </div>
                             </div>
 
@@ -1377,7 +1388,7 @@ $FLrow = $stmtFL->fetchAll();
                             <div class="card-article-left">
                                 <div>
                                     <a href="#">
-                                        <h4 class="mt-10">國王排名 即使你很脆弱也沒關係</h4>
+                                        <h4 class="mt-10">看鬼怪結局有哭的舉手</h4>
                                     </a>
                                     <p class="mt-10 multiple">
                                         從什麼時候開始習慣了，
@@ -1419,7 +1430,7 @@ $FLrow = $stmtFL->fetchAll();
                             <!-- 文章圖片 -->
                             <div class="card-article-right d-flex align-item-center">
                                 <div class="article-img-wrap d-flex align-item-center">
-                                    <img src="./img/center/king.jpg" alt="">
+                                <img src="./img/center/single__post-5.png" alt="">
                                 </div>
                             </div>
 
@@ -1497,7 +1508,7 @@ $FLrow = $stmtFL->fetchAll();
                             <!-- 文章圖片 -->
                             <div class="card-article-right d-flex align-item-center">
                                 <div class="article-img-wrap d-flex align-item-center">
-                                    <img src="./img/center/love.png" alt="">
+                                <img src="./img/center/single__post-1.png" alt="">
                                 </div>
                             </div>
 
@@ -1559,7 +1570,7 @@ $FLrow = $stmtFL->fetchAll();
                             <div class="card-article-left">
                                 <div>
                                     <a href="#">
-                                        <h4 class="mt-10">來吧 營業中！第八集討論！</h4>
+                                        <h4 class="mt-10">鬼怪E01-02】 劇情分析</h4>
                                     </a>
                                     <p class="mt-10 multiple">
                                         經過上星期及上上星期的魔鬼般的考驗～本週藝人家庭們，來～營業中～過母親節嘍❤️本週只能說：跟上周比起來順暢舒服許多（因為畢竟都是自己人，而且還有不特別挑食的小朋友）所以相較起來好搞太多了～作為首個餐廳經營主題的台灣綜藝，《來吧！營業中》憑藉六名藝人真性情的互動及現實的營業流程，引起服務業者尤其餐飲業網友的共鳴，早前開放民眾用餐亦引爆排隊潮，即便未開門也吸引粉絲朝聖打卡，展現超高人氣。餐廳落腳北海岸石門區下員坑路，之前幸運一早排隊、成功嘗鮮的網友在IG上分享與炎亞綸的合照羨煞旁人，而根據曝光的餐點菜單，可見現場提供套餐含老屋凱撒沙拉、紅酒牛肉義大利麵、鬼圓圓佐奶油等，從開胃菜、正餐到甜點應有盡有。
@@ -1574,7 +1585,7 @@ $FLrow = $stmtFL->fetchAll();
                             <!-- 文章圖片 -->
                             <div class="card-article-right d-flex align-item-center">
                                 <div class="article-img-wrap d-flex align-item-center">
-                                    <img src="./img/center/e.jpg" alt="">
+                                <img src="./img/center/single__post-4.png" alt="">
                                 </div>
                             </div>
 
@@ -1636,7 +1647,7 @@ $FLrow = $stmtFL->fetchAll();
                             <div class="card-article-left">
                                 <div>
                                     <a href="#">
-                                        <h4 class="mt-10">蜘蛛人:無家日 難以言語的感動</h4>
+                                        <h4 class="mt-10">鬼怪 #搞笑</h4>
                                     </a>
                                     <p class="mt-10 multiple">
                                         很難在不劇透的情況下寫出什麼東西，但這次扣除掉許多驚喜的彩蛋外，在心境的刻畫又更上層樓，感覺很像第一代陶比的蜘蛛人，那時候還會探討作為英雄的本質，而這一集也給我類似的感受，只是這次更加的深刻、心痛。作為《漫威捍衛者聯盟》的一員，夜魔俠與潔西卡瓊斯、盧克凱奇、和鐵拳俠並稱「被漫威遺忘的超級英雄」。儘管已是五部影集中唯一獲得正面評價的劇集，《夜魔俠》仍在Netflix收獲足夠觀眾群、不再需要漫威招牌後，遭到策略性的無情腰砍。雖然眾所期待的蜘蛛人三代同堂終於在《蜘蛛人：無家日》中完美圓夢，不過卻獨漏了《蜘蛛人：新宇宙》的主角邁爾斯摩拉斯。有趣的是，雖然無法讓動畫版蜘蛛人一同團圓，編劇卻以漫威最擅長的譏諷玩笑對他可愛致意。
@@ -1651,7 +1662,7 @@ $FLrow = $stmtFL->fetchAll();
                             <!-- 文章圖片 -->
                             <div class="card-article-right d-flex align-item-center">
                                 <div class="article-img-wrap d-flex align-item-center">
-                                    <img src="./img/center/spider.jpg" alt="">
+                                <img src="./img/center/single__post-3.png" alt="">
                                 </div>
                             </div>
 

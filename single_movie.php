@@ -18,19 +18,20 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
 <link rel="stylesheet" href="./css/lightbox.css" type="text/css" media="screen" />
 <!-- <link rel="stylesheet" href="./css/footer.css"> -->
 <style>
-    *{
+    * {
         /* outline: 1px solid greenyellow; */
     }
+
     /*  */
 </style>
 </head>
 
 <body>
     <!----------nav_top-------------->
-    <?php include __DIR__. '/parts/movwe_nav_fin.php' ?>
+    <?php include __DIR__ . '/parts/movwe_nav_fin.php' ?>
     <div class="layout">
         <!----------nav_left-------------->
-        <?php include __DIR__. '/parts/movwe_nav_leftdiv.php' ?>
+        <?php include __DIR__ . '/parts/movwe_nav_leftdiv.php' ?>
 
         <!--------------------------------------------------------------------------->
         <div class="container overflow-x">
@@ -628,11 +629,11 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                            <img class="carousel__images__7" src="./img/mall/gst/gst02.jpg" alt="">
+                                                <img class="carousel__images__7" src="./img/mall/gst/gst02.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id product__name__single">
-                                                        韓劇鬼怪PVC夾鍊袋
+                                                            韓劇鬼怪PVC夾鍊袋
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -659,11 +660,11 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                            <img class="carousel__images__7" src="./img/mall/gst/gst03.jpg" alt="">
+                                                <img class="carousel__images__7" src="./img/mall/gst/gst03.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id product__name__single">
-                                                        手機支架人形立牌
+                                                            手機支架人形立牌
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -690,11 +691,11 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7 card4__7">
                                             <div class="carousel__images__box__7">
-                                            <img class="carousel__images__7" src="./img/mall/gst/gst04.jpg" alt="">
+                                                <img class="carousel__images__7" src="./img/mall/gst/gst04.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id product__name__single">
-                                                        桌上小台曆
+                                                            桌上小台曆
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -721,11 +722,11 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7 card5__7">
                                             <div class="carousel__images__box__7">
-                                            <img class="carousel__images__7" src="./img/mall/gst/gst05.jpg" alt="">
+                                                <img class="carousel__images__7" src="./img/mall/gst/gst05.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id product__name__single">
-                                                        韓劇鬼怪照片集
+                                                            韓劇鬼怪照片集
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -752,7 +753,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7 card6__7">
                                             <div class="carousel__images__box__7">
-                                            <img class="carousel__images__7" src="./img/mall/gst/gst06.jpg" alt="">
+                                                <img class="carousel__images__7" src="./img/mall/gst/gst06.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id product__name__single">
@@ -783,7 +784,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7 card7__7">
                                             <div class="carousel__images__box__7">
-                                            <img class="carousel__images__7" src="./img/mall/gst/gst07.jpg" alt="">
+                                                <img class="carousel__images__7" src="./img/mall/gst/gst07.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id product__name__single">
@@ -818,7 +819,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                     <div class="image__box__7">
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                            <img class="carousel__images__7" src="./img/mall/gst/gst08.jpg" alt="">
+                                                <img class="carousel__images__7" src="./img/mall/gst/gst08.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id product__name__single">
@@ -849,7 +850,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                            <img class="carousel__images__7" src="./img/mall/gst/gst09.jpg" alt="">
+                                                <img class="carousel__images__7" src="./img/mall/gst/gst09.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id product__name__single">
@@ -880,7 +881,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
-                                            <img class="carousel__images__7" src="./img/mall/gst/gst10.jpg" alt="">
+                                                <img class="carousel__images__7" src="./img/mall/gst/gst10.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id product__name__single">
@@ -911,11 +912,11 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7 card4__7">
                                             <div class="carousel__images__box__7">
-                                            <img class="carousel__images__7" src="./img/mall/gst/gst11.jpg" alt="">
+                                                <img class="carousel__images__7" src="./img/mall/gst/gst11.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id product__name__single">
-                                                        鬼怪娃娃經典系列組
+                                                            鬼怪娃娃經典系列組
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -942,7 +943,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7 card5__7">
                                             <div class="carousel__images__box__7">
-                                            <img class="carousel__images__7" src="./img/mall/gst/gst12.jpg" alt="">
+                                                <img class="carousel__images__7" src="./img/mall/gst/gst12.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id product__name__single">
@@ -973,11 +974,11 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7 card6__7">
                                             <div class="carousel__images__box__7">
-                                            <img class="carousel__images__7" src="./img/mall/gst/gst13.jpg" alt="">
+                                                <img class="carousel__images__7" src="./img/mall/gst/gst13.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id product__name__single">
-                                                        鬼怪原子筆
+                                                            鬼怪原子筆
                                                         </p>
                                                         <button class="Shop__card__icon__box">
                                                             <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
@@ -1003,11 +1004,11 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                         </div>
                                         <div class="image__card__7 card7__7">
                                             <div class="carousel__images__box__7">
-                                            <img class="carousel__images__7" src="./img/mall/gst/gst14.jpg" alt="">
+                                                <img class="carousel__images__7" src="./img/mall/gst/gst14.jpg" alt="">
                                                 <div class="image__card__text__7">
                                                     <div class="movie__name__7">
                                                         <p class="Product__id product__name__single">
-                                                        鬼怪筆記本
+                                                            鬼怪筆記本
                                                         </p>
 
                                                         <button class="Shop__card__icon__box">
@@ -1088,10 +1089,10 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     電視劇
                                                 </div>
                                                 <div class="ott__article__productname">
-                                                    明天也想見到你明信片
+                                                    孤獨又燦爛的神--鬼怪，神提的問題是命運，而答案是...
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
+                                                    去年2016年，年初最最最有名的電影就是"釜山行"，男主角也是同一個人【孔侑】，年底上檔的鬼怪也讓孔侑這位男神又大出風頭了一次。
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
@@ -1102,14 +1103,14 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
-                                                                500
+                                                                34
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
-                                                                500
+                                                                145
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1125,28 +1126,28 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     電視劇
                                                 </div>
                                                 <div class="ott__article__productname">
-                                                    明天也想見到你明信片
+                                                    超夯韓劇《孤單又燦爛的神－鬼怪》裡，這些細膩的外語插曲是他們唱的
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
+                                                    劇中的「使鬼CP」為了拯救被綁架的恩倬，從煙霧中帥氣現身所響起的〈Round and round〉，以及男女主角30年後再次重逢時所播出的〈Winter is coming〉，兩首唯美的歌都是由出道12年的女歌手韓秀芝所演唱。
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
-                                                            <div>500</div>
+                                                            <div></div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
-                                                                500
+                                                                112
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
-                                                                500
+                                                                324
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1162,28 +1163,28 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     電視劇
                                                 </div>
                                                 <div class="ott__article__productname">
-                                                    明天也想見到你明信片
+                                                    鬼怪》背後的鬼怪（四）：「高富帥」鬼怪Oppa篇
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
+                                                    前文我們提到日本人透過教科書灌輸來自日本鬼怪原型給朝鮮半島人民，迄今這樣的日本鬼在韓國人的生活世界內可見。
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
-                                                            <div>500</div>
+                                                            <div>37</div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
-                                                                500
+                                                                76
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
-                                                                500
+                                                                34
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1199,28 +1200,30 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     電視劇
                                                 </div>
                                                 <div class="ott__article__productname">
-                                                    明天也想見到你明信片
+                                                    21世紀童話書的鬼怪篇
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
+                                                    我們在《鬼怪》劇中，可以看到女主角池恩晫為了「調查」孔劉鬼怪身份，來到書局翻閱一些鬼怪童書，這些童話書都是韓國人極為熟悉的。筆者鑑於國內對於韓國文學仍顯陌生，挑出幾則同時也是女主角翻閱的童話書加以介紹。
+
+
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
-                                                            <div>500</div>
+                                                            <div>56</div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
-                                                                500
+                                                                234
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
-                                                                500
+                                                                51
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1236,10 +1239,10 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     電視劇
                                                 </div>
                                                 <div class="ott__article__productname">
-                                                    明天也想見到你明信片
+                                                    高麗到日據時代鬼怪篇
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
+                                                    韓國鬼怪的形象，來到高麗時代（918-1392）漸漸形成百姓人們信仰的對象，也逐漸昇華為如同之後朝鮮時代（1392-1897）張繼弛（장계이）《海東雜錄》（해동잡록） 內所記載，言「鬼怪」（도깨비）為「民間信仰中，具有超自然能力存在的一種」
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
@@ -1277,28 +1280,28 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     電視劇
                                                 </div>
                                                 <div class="ott__article__productname">
-                                                    明天也想見到你明信片
+                                                    新羅鬼怪篇
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
+                                                    鬼怪（特別是在第十、十一集）言及他活了935歲，真正的名字叫做金信（김신），且提到自己的身份為將軍，與高麗奸臣朴中元、畫他妹妹金善（김선）的王黎畫家等線索，許多網友考察出，金信的原型為崔瑩（최영，1316-1388）。
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
-                                                            <div>500</div>
+                                                            <div>332</div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
-                                                                500
+                                                                234
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
-                                                                500
+                                                                524
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1314,28 +1317,33 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     電視劇
                                                 </div>
                                                 <div class="ott__article__productname">
-                                                    明天也想見到你明信片
+                                                    鬼怪中最愛的使者和Sunny
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
+                                                    孤單又燦爛的神-鬼怪 是現在最紅的韓劇了吧
+                                                    一直沒有去追 昨天一口氣把1-12集看完
+                                                    很多人喜歡召喚cp 死鬼cp
+                                                    但我最喜歡的是地獄使者跟Sunny的故事
+                                                    他們的前世是王 和王后
+                                                    兩人之間有滿滿的愧疚和懊悔
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
-                                                            <div>500</div>
+                                                            <div>334</div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
-                                                                500
+                                                                253
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
-                                                                500
+                                                                768
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1351,28 +1359,32 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     電視劇
                                                 </div>
                                                 <div class="ott__article__productname">
-                                                    明天也想見到你明信片
+                                                    水島太太#孔劉
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
+                                                    你怎麼那麼像水島太太啦！
+                                                    吼你這樣我真的不知道該怎麼繼續看下去餒
+                                                    雖然孔劉看第一眼沒有很帥
+                                                    但怎麼可以越看越帥啦
+                                                    不說了 我要去看我的水島太太了
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
-                                                            <div>500</div>
+                                                            <div>341</div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
-                                                                500
+                                                                665
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
-                                                                500
+                                                                737
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1388,28 +1400,33 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     電視劇
                                                 </div>
                                                 <div class="ott__article__productname">
-                                                    明天也想見到你明信片
+                                                    重新思考生命意義的好劇
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
+                                                    看完這整部戲，影響我最多的
+                                                    應該是「對生命的態度」吧！
+                                                    很喜歡每一集小使茶館裡的劇情
+                                                    每一個亡者都有著自己的故事
+                                                    不管是自然死亡還是意外死亡
+                                                    都是在告訴我們要「活在當下」
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
-                                                            <div>500</div>
+                                                            <div>343</div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
-                                                                500
+                                                                234
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
-                                                                500
+                                                                827
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1425,28 +1442,31 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
                                                     電視劇
                                                 </div>
                                                 <div class="ott__article__productname">
-                                                    明天也想見到你明信片
+                                                    看鬼怪結局有哭的舉手
                                                 </div>
                                                 <div class="ott__article__productprice">
-                                                    加油吧威基基2 為韓國JTBC於2019年3月25日事月火連續劇。本劇講述高中同學聚集在「威基..
+                                                    我是個幾乎不追劇的人，除非電視有播
+                                                    我可以忍受每個禮拜在電視前固定觀看
+                                                    卻無法忍受自己一集一集狂看
+                                                    靠著電視看完的韓劇大概七部？
                                                 </div>
                                                 <div class="ott__likeicons">
                                                     <div class="ott__likeicon-box">
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/heart.svg" alt=""></div>
-                                                            <div>500</div>
+                                                            <div>434</div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/message.svg" alt=""></div>
                                                             <div>
-                                                                500
+                                                                323
                                                             </div>
                                                         </div>
                                                         <div class="likeicon__box">
                                                             <div class="mr__6px"><img src="./img/icons/tag.svg" alt="">
                                                             </div>
                                                             <div>
-                                                                500
+                                                                126
                                                             </div>
                                                         </div>
                                                     </div>
@@ -4140,7 +4160,7 @@ $title = 'MOVWE-孤單又燦爛的神-鬼怪';
 
             </div>
 
-            <?php include __DIR__. '/parts/movwe_footer.php' ?>
+            <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
     </div>
 
