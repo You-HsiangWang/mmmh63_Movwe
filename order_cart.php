@@ -156,7 +156,7 @@
                                     <img src="./img/mall/1.jpg" alt="">
                                 </td>
                                 <td>
-                                    <h4>
+                                    <h4 id="name<?= $f['ProductSize'] ?>">
                                         <?= $f['ProductName'] ?>
                                     </h4>
                                 </td>
