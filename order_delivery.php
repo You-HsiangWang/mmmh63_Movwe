@@ -156,7 +156,6 @@ $title = 'Movwe-物流選擇';
                         <?php endforeach; ?>
 
                     </table>
-                    <!-- <?= $_SESSION['cartcart']['Table'] ?> -->
                 </div>
                 <!-- 優惠券 -->
                 <div class="d-flex mt-30 pb-10 border-bottom-main-color">
