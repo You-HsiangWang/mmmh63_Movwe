@@ -96,7 +96,7 @@ $title = '預覽文章';
                                 <h3><?php echo $_SESSION['admin']['member_nickname'] ?></h3>
                             </div>
                         </div>
-                        <div><span>2022年06月07日 05:01 發表</span></div>
+                        <div><span>2022年06月07日 發表</span></div>
                     </div>
                     <div class="d-flex mt-20 align-item-center">
                         <div class="mr-10">

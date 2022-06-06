@@ -51,7 +51,7 @@ $comments = $pdo->query($commentsql)->fetchAll();
 <link rel="stylesheet" href="./css/forum.css">
 <link rel="stylesheet" href="./css/Nav.css">
 <link rel="stylesheet" href="./css/slider.css">
-<link rel="stylesheet" href="./css/Carousel_12.css">
+<!-- <link rel="stylesheet" href="./css/Carousel_12.css"> -->
 <link rel="stylesheet" href="./css/dropdown_customstyle.css">
 
 </head>
@@ -428,12 +428,12 @@ $comments = $pdo->query($commentsql)->fetchAll();
                                         <h4>天國之吻</h4>
                                     </a>
                                 </div>
-                                <div><span>2005</span></div>
+                                <div><span>1</span></div>
                             </div>
                             <div class="progress-bar-1 mt-10 mb-10"></div>
                             <div class="d-flex justify-end">
                                 <span>
-                                    已有2094人參與許願
+                                    已有1人參與許願
                                 </span>
                             </div>
                         </div>
@@ -457,7 +457,7 @@ $comments = $pdo->query($commentsql)->fetchAll();
                                 </span>
                             </div>
                         </div>
-                        <div>
+                        <!-- <div>
                             <div class="wish-img-wrap mt-20">
                                 <img src="./img/forum/forum_img04.jpg" alt="">
                             </div>
@@ -496,41 +496,10 @@ $comments = $pdo->query($commentsql)->fetchAll();
                                     已有457人參與許願
                                 </span>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
+ 
                     <!-- 商品 -->
-                    <!-- <div class="mt-20">
-                        <div class="d-flex align-item-center mt-20">
-                            <div class="stick_desk"></div>
-                            <h3>限時特惠中!</h3>
-                        </div>
-                        <div class="row_products mt-20">
-                            <div class="mall_product">
-
-                                <img src="./img/center/p.png" alt="">
-
-                                <div class="container_product_details">
-                                    <p>波吉卡克 1/7 PVC模型</p>
-                                    <div class="product_text">
-                                        <p class="price">2,350<span>NTD</span></p>
-                                        <p class="tag">國王排名</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mall_product">
-
-                                <img src="./img/center/p.png" alt="">
-
-                                <div class="container_product_details">
-                                    <p>波吉卡克 1/7 PVC模型</p>
-                                    <div class="product_text">
-                                        <p class="price">2,350<span>NTD</span></p>
-                                        <p class="tag">國王排名</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                     <div class="products store__main mt_20">
                         <div class="container_prodcts">
                             <div class="row_products">
@@ -542,10 +511,6 @@ $comments = $pdo->query($commentsql)->fetchAll();
                                                 <p class="Product__id">
                                                     鬼怪娃娃經典系列組
                                                 </p>
-
-                                                <button class="Shop__card__icon__box">
-                                                    <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
-                                                    </b>
                                             </div>
                                             <div class="movie__icons__12">
                                                 <div class="movie__icon__box__12">
@@ -555,11 +520,6 @@ $comments = $pdo->query($commentsql)->fetchAll();
                                                     </p>
                                                     <p class="ntd">
                                                         NTD
-                                                    </p>
-                                                </div>
-                                                <div class="movie__icon__box__12">
-                                                    <p class="product__typ-1">
-                                                        鬼怪
                                                     </p>
                                                 </div>
                                             </div>
@@ -575,10 +535,6 @@ $comments = $pdo->query($commentsql)->fetchAll();
                                                 <p class="Product__id">
                                                     韓劇鬼怪PVC夾鍊袋
                                                 </p>
-
-                                                <button class="Shop__card__icon__box">
-                                                    <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
-                                                    </b>
                                             </div>
                                             <div class="movie__icons__12">
                                                 <div class="movie__icon__box__12">
@@ -587,262 +543,6 @@ $comments = $pdo->query($commentsql)->fetchAll();
                                                     </p>
                                                     <p class="ntd">
                                                         NTD
-                                                    </p>
-                                                </div>
-                                                <div class="movie__icon__box__12">
-                                                    <p class="product__typ-1">
-                                                        鬼怪
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="image__card__12">
-                                    <div class="carousel__images__box__12">
-                                        <img class="carousel__images__12" src="./img/mall/gst/gst03.jpg" alt="">
-                                        <div class="image__card__text__12">
-                                            <div class="movie__name__12">
-                                                <p class="Product__id">
-                                                    手機支架人形立牌
-                                                </p>
-
-                                                <button class="Shop__card__icon__box">
-                                                    <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
-                                                    </b>
-                                            </div>
-                                            <div class="movie__icons__12">
-                                                <div class="movie__icon__box__12">
-                                                    <p class="Price">
-                                                        360
-                                                    </p>
-                                                    <p class="ntd">
-                                                        NTD
-                                                    </p>
-                                                </div>
-                                                <div class="movie__icon__box__12">
-                                                    <p class="product__typ-1">
-                                                        鬼怪
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="image__card__12">
-                                    <div class="carousel__images__box__12">
-                                        <img class="carousel__images__12" src="./img/mall/gst/gst04.jpg" alt="">
-                                        <div class="image__card__text__12">
-                                            <div class="movie__name__12">
-                                                <p class="Product__id">
-                                                    桌上小台曆
-                                                </p>
-
-                                                <button class="Shop__card__icon__box">
-                                                    <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
-                                                    </b>
-                                            </div>
-                                            <div class="movie__icons__12">
-                                                <div class="movie__icon__box__12">
-                                                    <p class="Price">
-                                                        350
-                                                    </p>
-                                                    <p class="ntd">
-                                                        NTD
-                                                    </p>
-                                                </div>
-                                                <div class="movie__icon__box__12">
-                                                    <p class="product__typ-1">
-                                                        鬼怪
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="image__card__12">
-                                    <div class="carousel__images__box__12">
-                                        <img class="carousel__images__12" src="./img/mall/gst/gst05.jpg" alt="">
-                                        <div class="image__card__text__12">
-                                            <div class="movie__name__12">
-                                                <p class="Product__id">
-                                                    韓劇鬼怪照片集
-                                                </p>
-
-                                                <button class="Shop__card__icon__box">
-                                                    <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
-                                                    </b>
-                                            </div>
-                                            <div class="movie__icons__12">
-                                                <div class="movie__icon__box__12">
-                                                    <p class="Price">
-                                                        500
-                                                    </p>
-                                                    <p class="ntd">
-                                                        NTD
-                                                    </p>
-                                                </div>
-                                                <div class="movie__icon__box__12">
-                                                    <p class="product__typ-1">
-                                                        鬼怪
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="image__card__12">
-                                    <div class="carousel__images__box__12">
-                                        <img class="carousel__images__12" src="./img/mall/gst/gst13.jpg" alt="">
-                                        <div class="image__card__text__12">
-                                            <div class="movie__name__12">
-                                                <p class="Product__id">
-                                                    鬼怪原子筆
-                                                </p>
-
-                                                <button class="Shop__card__icon__box">
-                                                    <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
-                                                    </b>
-                                            </div>
-                                            <div class="movie__icons__12">
-                                                <div class="movie__icon__box__12">
-                                                    <p class="Price">
-                                                        280
-                                                    </p>
-                                                    <p class="ntd">
-                                                        NTD
-                                                    </p>
-                                                </div>
-                                                <div class="movie__icon__box__12">
-                                                    <p class="product__typ-1">
-                                                        鬼怪
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="image__card__12">
-                                    <div class="carousel__images__box__12">
-                                        <img class="carousel__images__12" src="./img/mall/gst/gst14.jpg" alt="">
-                                        <div class="image__card__text__12">
-                                            <div class="movie__name__12">
-                                                <p class="Product__id">
-                                                    鬼怪筆記本
-                                                </p>
-
-                                                <button class="Shop__card__icon__box">
-                                                    <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
-                                                    </b>
-                                            </div>
-                                            <div class="movie__icons__12">
-                                                <div class="movie__icon__box__12">
-                                                    <p class="Price">
-                                                        199
-                                                    </p>
-                                                    <p class="ntd">
-                                                        NTD
-                                                    </p>
-                                                </div>
-                                                <div class="movie__icon__box__12">
-                                                    <p class="product__typ-1">
-                                                        鬼怪
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="image__card__12">
-                                    <div class="carousel__images__box__12">
-                                        <img class="carousel__images__12" src="./img/mall/gst/gst15.jpg" alt="">
-                                        <div class="image__card__text__12">
-                                            <div class="movie__name__12">
-                                                <p class="Product__id">
-                                                    鬼怪行李箱吊牌
-                                                </p>
-
-                                                <button class="Shop__card__icon__box">
-                                                    <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
-                                                    </b>
-                                            </div>
-                                            <div class="movie__icons__12">
-                                                <div class="movie__icon__box__12">
-                                                    <p class="Price">
-                                                        250
-                                                    </p>
-                                                    <p class="ntd">
-                                                        NTD
-                                                    </p>
-                                                </div>
-                                                <div class="movie__icon__box__12">
-                                                    <p class="product__typ-1">
-                                                        鬼怪
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="image__card__12">
-                                    <div class="carousel__images__box__12">
-                                        <img class="carousel__images__12" src="./img/mall/gst/gst16.jpg" alt="">
-                                        <div class="image__card__text__12">
-                                            <div class="movie__name__12">
-                                                <p class="Product__id">
-                                                    鬼怪原聲帶
-                                                </p>
-
-                                                <button class="Shop__card__icon__box">
-                                                    <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
-                                                    </b>
-                                            </div>
-                                            <div class="movie__icons__12">
-                                                <div class="movie__icon__box__12">
-                                                    <p class="Price">
-                                                        800
-                                                    </p>
-                                                    <p class="ntd">
-                                                        NTD
-                                                    </p>
-                                                </div>
-                                                <div class="movie__icon__box__12">
-                                                    <p class="product__typ-1">
-                                                        鬼怪
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="image__card__12">
-                                    <div class="carousel__images__box__12">
-                                        <img class="carousel__images__12" src="./img/mall/gst/gst17.jpg" alt="">
-                                        <div class="image__card__text__12">
-                                            <div class="movie__name__12">
-                                                <p class="Product__id">
-                                                    鬼怪隨身鏡子
-                                                </p>
-
-                                                <button class="Shop__card__icon__box">
-                                                    <i class="fa-solid fa-cart-shopping shop__card Shop__card__icon"></i>
-                                                    </b>
-                                            </div>
-                                            <div class="movie__icons__12">
-                                                <div class="movie__icon__box__12">
-                                                    <p class="Price">
-                                                        180
-                                                    </p>
-                                                    <p class="ntd">
-                                                        NTD
-                                                    </p>
-                                                </div>
-                                                <div class="movie__icon__box__12">
-                                                    <p class="product__typ-1">
-                                                        鬼怪
                                                     </p>
                                                 </div>
                                             </div>
