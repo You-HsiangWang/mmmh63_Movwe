@@ -199,3 +199,31 @@ input[type="radio"]:checked::before {
 .star-svg {
     transform: rotate(90deg);
 }
+
+input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#cartInfo:hover {
+    cursor: pointer;
+}
+
+#discountInfo:hover {
+    cursor: pointer;
+}
+
+.delivery:hover {
+    cursor: pointer;
+}
+
+.deliveryway:hover {
+    cursor: pointer;
+}
+
+.seedeliveryinfo:hover {
+    cursor: pointer;
+}

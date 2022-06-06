@@ -83,6 +83,10 @@ fieldset input[type="radio"]:checked::before {
     transform: scale(1);
 }
 
+fieldset input[type="radio"]:hover {
+    cursor: pointer;
+}
+
 /* 商品數量 */
 
 .button-number {
@@ -91,6 +95,10 @@ fieldset input[type="radio"]:checked::before {
     height: 20px;
     background-color: transparent;
     border: none;
+}
+
+.button-number:hover {
+    cursor: pointer;
 }
 
 #quantityM {
@@ -106,6 +114,10 @@ fieldset input[type="radio"]:checked::before {
 .button-buy {
     padding-bottom: 20px;
     border-bottom: 1px solid #10FFA2;
+}
+
+.buy:hover {
+    cursor: pointer;
 }
 
 .buy {
