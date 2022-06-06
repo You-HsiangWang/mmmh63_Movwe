@@ -370,6 +370,14 @@ left: -15%;
     font-size: 14px;
 }
 
+.search__height{
+    height: 360px;
+}
+.search__height_100{
+height: 100%;
+}
+
+
 
 @media screen and (min-width: 750px) {
 

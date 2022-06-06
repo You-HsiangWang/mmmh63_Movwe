@@ -273,8 +273,8 @@ $FLrow = $stmtFL->fetchAll();
                     </div>
                     <div class="carousel__7">
                         <div class="carousel__track-container__7">
-                            <ul class="carousel__track__7 search__track">
-                                <li class="carousel__slide__7 current-slide__7">
+                            <ul class="carousel__track__7 search__track search__height">
+                                <li class="carousel__slide__7 current-slide__7 search__height_100">
                                     <div class="image__box__7">
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">
@@ -461,8 +461,8 @@ $FLrow = $stmtFL->fetchAll();
                                     </div>
                                 </li>
                             </ul>
-                            <ul class="carousel__track__7">
-                                <li class="carousel__slide__7 current-slide__7">
+                            <ul class="carousel__track__7 search__height">
+                                <li class="carousel__slide__7 current-slide__7 search__height_100">
                                     <div class="image__box__7">
                                         <div class="image__card__7">
                                             <div class="carousel__images__box__7">

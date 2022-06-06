@@ -4979,7 +4979,7 @@ $title = 'MOVWE-就要你放膽搜';
                                         就讓movwe幫你找到命定的影劇平台
                                     </p>
                                     <div class="test__number">
-                                        已有2345678人完成檢測
+                                        已有3474人完成檢測
                                     </div>
                                     <a class="dragon_a" href="./dragon_quest.php">
                                     <div class="join__box">

@@ -55,6 +55,8 @@ $comments = $pdo->query($commentsql)->fetchAll();
 <link rel="stylesheet" href="./css/dropdown_customstyle.css">
 
 </head>
+<style>
+</style>
 
 <body>
     <?php include __DIR__ . '/parts/movwe_nav_fin.php' ?>
