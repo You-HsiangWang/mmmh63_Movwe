@@ -229,9 +229,9 @@ a.hashtag:hover {
 /* 電腦版 滑入效果 見JS */
 
 .hot-creator {
-    transform: translateX(400px);
-    opacity: 0;
-    transition: 1s;
+    transform: translateX(0px);
+    opacity: 1;
+    /* transition: 1s; */
 }
 
 /* 手機板的輪播牆 */
@@ -287,7 +287,7 @@ a.hashtag:hover {
 .progress-bar-1::before {
     content: "";
     position: absolute;
-    width: 75%;
+    width: 2%;
     height: 10px;
     background-color: #10FFA2;
     border-radius: 10px;
@@ -394,9 +394,6 @@ a.hashtag:hover {
     filter: brightness(130%);
     /* border: 5px solid wheat; */
 }
-.image__card__12:hover .product__typ-1 {
-    opacity: 0;
-}
 
 .movie__icon__box__12 {
     /* background-color: #fff; */
@@ -407,7 +404,7 @@ a.hashtag:hover {
 }
 
 
-.image__card__12:hover .ntd {
+.image__card__12:hover .Product__id {
     color: rgb(16, 255, 162);
     /* font-size: 18px; */
 
@@ -591,6 +588,12 @@ a.hashtag:hover {
 
     .hot-creator ul {
         display: block;
+    }
+
+    .hot-creator {
+        transform: translateX(400px);
+        opacity: 0;
+        transition: 1s;
     }
 
     .arrow-right {
