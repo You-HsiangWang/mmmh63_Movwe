@@ -217,7 +217,6 @@ $title = 'Movwe-物流選擇';
                 </div>
                 <div class="delivery-info mt-30 d-flex justify-center align-item-center">
                     <div>
-                        <form action="/action_page.php">
                             <div class="border-bottom-main-color pb-10">
                                 <label for="membername">收件人:</label>
                                 <input type="text" id="memberName" name="membername">
@@ -230,7 +229,6 @@ $title = 'Movwe-物流選擇';
                                 <label for="memberphone">聯絡電話:</label>
                                 <input type="text" id="memberPhone" name="memberphone">
                             </div>
-                        </form>
                     </div>
                 </div>
                 <!-- 總計金額 -->
@@ -288,7 +286,7 @@ $title = 'Movwe-物流選擇';
                             <button class="prev_btn_3w">上一步</button>
                         </a>
                         <a href="./order_pay.php" class="ml-20">
-                            <button class="btn_3w">下一步</button>
+                            <button class="btn_3w" onclick="GotoPay()">下一步</button>
                         </a>
                     </div>
                 </div>
