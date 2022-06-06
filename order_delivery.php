@@ -219,15 +219,15 @@ $title = 'Movwe-物流選擇';
                     <div>
                             <div class="border-bottom-main-color pb-10">
                                 <label for="membername">收件人:</label>
-                                <input type="text" id="memberName" name="membername">
+                                <input type="text" id="memberName" name="membername" placeholder="請輸入收件人姓名">
                             </div>
                             <div class="border-bottom-main-color mt-10 pb-10">
                                 <label for="memberaddress">聯絡地址:</label>
-                                <input type="text" id="memberAddress" name="memberaddress">
+                                <input type="text" id="memberAddress" name="memberaddress" placeholder="請輸入收件地址">
                             </div>
                             <div class="border-bottom-main-color mt-10 pb-10">
                                 <label for="memberphone">聯絡電話:</label>
-                                <input type="text" id="memberPhone" name="memberphone">
+                                <input type="text" id="memberPhone" name="memberphone" placeholder="請輸入聯絡電話">
                             </div>
                     </div>
                 </div>

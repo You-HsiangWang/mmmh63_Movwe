@@ -287,11 +287,11 @@ $title = 'Movwe-付款資訊';
                         <div class="inputCard d-flex align-item-center pb-10">
                             <h4 class="mr-20">信用卡卡號</h4>
                             <!-- <h4 class="mr-20">有效日期</h4> -->
-                            <input type="text">
+                            <input class="creditCardText" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
                         </div>
                         <div class="inputCard d-flex align-item-center mt-10 pb-10">
                             <h4 class="mr-20">有效日期</h4>
-                            <input type="text">
+                            <input type="text" class="creditcarddate" placeholder="mm/yy">
                         </div>
                         <div class="inputCard d-flex align-item-center mt-10 pb-10">
                             <h4 class="mr-20">持卡人姓名</h4>
@@ -299,7 +299,7 @@ $title = 'Movwe-付款資訊';
                         </div>
                         <div class="inputCard d-flex align-item-center mt-10 pb-10">
                             <h4 class="mr-20">輸入安全碼</h4>
-                            <input type="text">
+                            <input type="text" placeholder="cvv">
                         </div>
                     </div>
                 </div>
