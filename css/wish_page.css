@@ -77,7 +77,7 @@ text-align: center;
     /* transform: scale(0); */
     width: 5%;
     position: absolute;
-    top: -110%;
+    top: -130%;
     left: 50%;
     transform: translate(-50%,-50%);
     transition: 2s;
