@@ -428,7 +428,7 @@ $comments = $pdo->query($commentsql)->fetchAll();
                                         <h4>天國之吻</h4>
                                     </a>
                                 </div>
-                                <div><span>1</span></div>
+                                <div><span>2005</span></div>
                             </div>
                             <div class="progress-bar-1 mt-10 mb-10"></div>
                             <div class="d-flex justify-end">
