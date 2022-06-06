@@ -24,6 +24,8 @@
         border: 1px solid rgb(107, 107, 107);
         color: rgb(0, 0, 0);
         transition: .1s;
+        cursor:pointer;
+
     }
 
     .btn_2w:hover {
@@ -44,6 +46,8 @@
         border: 1px solid rgb(107, 107, 107);
         color: rgb(0, 0, 0);
         transition: .1s;
+        cursor:pointer;
+
     }
 
     .btn_3w:hover {
@@ -64,6 +68,8 @@
         border: 1px solid rgb(107, 107, 107);
         color: rgb(0, 0, 0);
         transition: .1s;
+        cursor:pointer;
+
     }
 
     .btn_4w:hover {
@@ -270,6 +276,8 @@
         border: 1px solid rgb(107, 107, 107);
         color: rgb(134, 133, 133);
         transition: .1s;
+        cursor:pointer;
+
     }
 
     .filter_2w:hover {
@@ -289,6 +297,8 @@
         border: 1px solid rgb(107, 107, 107);
         color: rgb(134, 133, 133);
         transition: .1s;
+        cursor:pointer;
+
     }
 
     .filter_3w:hover {
@@ -308,6 +318,8 @@
         border: 1px solid rgb(107, 107, 107);
         color: rgb(134, 133, 133);
         transition: .1s;
+        cursor:pointer;
+
     }
 
     .filter_4w:hover {
