@@ -181,6 +181,9 @@
         .pc-time{
             display:none;
         }
+        .duanduan{
+            height:65px ;
+        }
 
         /* 進度條動畫 */
         @keyframes runrunani {
@@ -237,6 +240,9 @@
             .mb-artpic{
                 margin-top: 0px;
                 margin-left: 20px ;
+            }
+            .duanduan{
+            height:30px ;
             }
         }
     </style>
@@ -2115,7 +2121,7 @@
                                             <div class="info_gen03">
                                                 <div class="info_gen_intro">簡介</div>
                                                 <?php foreach ($getP as $Pinfo) : ?>
-                                                    <input id="insfo_acc" class="acc_input acc_info" type="text" name='acc_intro' value="<?= $Pinfo['member_info'] ?>">
+                                                    <textarea id="insfo_acc" class="acc_input acc_info duanduan" type="text" name='acc_intro' value=""><?= $Pinfo['member_info'] ?></textarea>
                                                 <?php endforeach; ?>
                                                 <p id="infoInput"></p> 
                                             </div>
