@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOVWE-測驗結果</title>
     <link rel="icon" href="./img/logo/logo.png">
+
+    <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+
     <style>
         * {
             margin: 0;
@@ -39,9 +42,31 @@
             width: 70%;
             /* height: 90%; */
             z-index: 99;
+            /* background-color: black; */
+            /* border-radius: 20px; */
+            /* border: 6px solid goldenrod; */
+
+            margin: 4px;
+            /* color: #fff; */
+            background-color: #212529;
+            /* border-color: #fff; */
+            border: 4px solid #fff;
+            padding: 1.5rem 2rem;
+        }
+
+        
+        /* 新版 */
+        ._btn {
+            position: relative;
+            /* z-index: 99; */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
             background-color: black;
-            border-radius: 20px;
-            border: 6px solid goldenrod;
+            /* padding: 2rem; */
+            /* border-radius: 1rem; */
+            /* border: 1px solid goldenrod; */
         }
 
         .bg {
@@ -177,12 +202,19 @@
         .c-flex {
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
+
         }
 
         .ji-ac {
             justify-content: center;
             align-items: flex-start;
         }
+
+        .align-center{
+            text-align: center;
+        }
+
 
         .fg-1 {
             flex-grow: 1;
@@ -202,11 +234,15 @@
 
         .row {
             display: flex;
-            align-items: center;
+            /* align-items: center; */
         }
 
         .mg-t4 {
             margin-top: 4rem;
+        }
+
+        .gap-100{
+            gap:100px
         }
 
         .mg-b4 {
@@ -217,9 +253,14 @@
             margin-bottom: 2rem;
         }
 
+        .mg-r2 {
+            margin-right: 2rem;
+        }
+
         .mg-lr2 {
             margin-left: 2rem;
             margin-right: 2rem;
+            display: flex;
         }
 
         p {
@@ -235,7 +276,7 @@
         img {
             border-radius: 10px;
         }
-
+/* 
         button {
             all: unset;
             cursor: pointer;
@@ -244,12 +285,12 @@
             background-color: #10FFA2;
             font-size: 1.6rem;
             color: black;
-        }
+        } */
 
-        .tags {
+        /* .tags {
             margin-top: 2rem;
             margin-bottom: 2rem;
-        }
+        } */
 
         .tags span {
             padding: .8rem 1.5rem;
@@ -282,6 +323,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            padding-top: 65.44px;
         }
 
         .board_ott_score {
@@ -344,13 +386,13 @@
         </div>
         <div class="board">
             <div class="container w-100">
-                <div class="d-flex w-100 jc-aif">
+                <div class="d-flex w-100 jc-aif mg-b2 gap-100">
                     <div class="col w-100">
                         <div class="title d-flex w-100 mg-b2">
                             <img src="./img/icons/stick.svg" alt="">
                             <h3>您的隱藏性格是...</h3>
                         </div>
-                        <div class="d-flex">
+                        <div class="d-flex ">
                             <div class="">
                                 <img src="./img/other/bean.webp" alt="" style="width: 100%;">
                             </div>
@@ -362,7 +404,7 @@
                             </div>
                             <div class="c-flex ji-ac">
                                 
-                                <p class="mg-lr2 mg-t4">
+                                <p class="mg-lr2">
                                     喜歡看喜劇片的你，在思想上更有創意、個性也比較外向、大方。在看電影時，喜歡毫無遮攔的哈哈大笑，相對來說也比較沒心機
                                 </p>
                             </div>
@@ -376,7 +418,7 @@
                         </div>
                         <div class="d-flex">
                             <div class="">
-                                <img src="./videodb/video/a_100451604_m_601_zh-TW_m9_260_360.webp" alt="" style="height: 274.11px;">
+                                <img src="./videodb/video/a_100451604_m_601_zh-TW_m9_260_360.webp" alt="" style="height: 242.3px;">
                             </div>
                             <div class="c-flex">
                                 <div class="tags mg-lr2">
@@ -389,15 +431,17 @@
                                 <p class="mg-lr2 mg-b2">
                                     所以我和黑粉結婚了
                                 </p>
-                                <p class="mg-lr2 mg-b2">
+                                <!-- <p class="mg-lr2 mg-b2">
                                     改編自同名韓漫《所以我和黑粉結婚了》，世界級K-POP大明星侯俊和極度討厭他的「黑粉」李瑾盈兩人的同居浪漫羅曼史！
-                                </p>
-                                <p class="mg-lr2 mg-b2 d-flex jc-ai">
+                                </p> -->
+                                <p class="mg-lr2 mg-b2 d-flex jc-ai align-center">
                                     <i><img src="./img/icons/start.svg" alt=""></i><span>9.5</span><span style="color: rgba(255,255,255,.5); margin-left: 3rem">共16集</span>
                                 </p>
                                 <div class="mg-lr2">
-                                    <button>更多資訊</button>
-                                    <button style="color: #10FFA2; background-color: transparent; border: #10FFA2 1px solid;">+加入片單</button>
+                                    <!-- 修改 -->
+                                    <button class="_btn nes-btn is-warning">更多資訊</button>
+                                    <!-- style="color: #10FFA2; background-color: transparent; border: #10FFA2 1px solid;" -->
+                                    <button class="btn nes-btn is-warning" >+加入片單</button>
                                 </div>
                             </div>
                         </div>
@@ -444,18 +488,18 @@
                                     <div class="board_bar_green"></div>
                                 </div>
                             </div>
-                            <div class="board_ott_score d-flex">
+                            <!-- <div class="board_ott_score d-flex">
                                 <p class="board_ott_txt">北京愛奇藝科技有限公司是百度集團旗下的視訊網站平台，並同時經營內容製作及分銷，截止2019年，主要服務地區為中國大陸、香港、澳門、 台灣、馬來西亞、新加坡、緬甸、泰國、柬埔寨、菲律賓和印尼。愛奇藝為2021年中國市場份額最大的五個影音平台之一。</p>
-                                <!-- <div class="board_bar_gray">
+                                <div class="board_bar_gray">
                                     <div class="board_bar_green"></div>
-                                </div> -->
-                            </div>
+                                </div>
+                            </div> -->
                         </div>
 
                     </div>
                 </div>
-                <div class="row">
-                    <button onclick="location.href='index_home.php'">回首頁</button>
+                <div class="row mg-t4">
+                    <button class="_btn nes-btn is-warning" onclick="location.href='index_home.php'">回首頁</button>
                 </div>
             </div>
         </div>

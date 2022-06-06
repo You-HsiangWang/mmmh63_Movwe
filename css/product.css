@@ -13,6 +13,10 @@
     width: 100%;
 }
 
+.mgr-15 {
+    margin-right: 15%;
+}
+
 /* 商品圖 */
 
 .product-demo {
@@ -203,9 +207,11 @@ table.size td {
 
 .gooood {
     position: absolute;
-    top: 400px;
-    right: 100px;
+    top: 580px;
+    right: -75px;
+    transform: scale(0.8);
     animation: projuct_svg 2s linear infinite;
+    transition: .3s;
 }
 
 @keyframes projuct_svg{
@@ -337,8 +343,28 @@ table.size td {
 
     .gooood {
         position: absolute;
-        top: 400px;
-        right: 100px;
+        top: 280px;
+        right: 180px;
+        transform: scale(1);
+        animation: projuct_svg 2s linear infinite;
+        transition: .3s;
+    }
+
+    @keyframes projuct_svg{
+        0%{
+            filter:drop-shadow(0px 0px 0px rgba(16, 255, 162,1));
+            transform: scale(1);
+        }
+    
+        50%{
+            filter:drop-shadow(0px 0px 8px rgba(16, 255, 162,1));
+            transform: scale(1.1);
+        }
+    
+        100%{
+            filter:drop-shadow(0px 0px 0px rgba(16, 255, 162,1));
+            transform: scale(1);
+        }
     }
 
     /* 優惠券與規格說明 */

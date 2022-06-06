@@ -76,6 +76,7 @@ h3 {
 .title {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .title_item {
@@ -132,6 +133,7 @@ h3 {
 .marvel__btn {
     width: 49%;
     border-radius: 5%;
+    padding: 8px 0;
     z-index: 5;
    
 }
@@ -211,14 +213,17 @@ h3 {
     @keyframes projuct_svg{
         0%{
             filter:drop-shadow(0px 0px 0px rgba(16, 255, 162,1));
+            transform: scale(1);
         }
     
         50%{
             filter:drop-shadow(0px 0px 8px rgba(16, 255, 162,1));
+            transform: scale(1.1);
         }
     
         100%{
             filter:drop-shadow(0px 0px 0px rgba(16, 255, 162,1));
+            transform: scale(1);
         }
     }
 

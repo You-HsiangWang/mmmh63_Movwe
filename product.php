@@ -308,7 +308,7 @@ $myproductchoices = $rows[0]["productchoice"];
                                     請到優惠券專區了解詳情!</h4>
                             </div>
                             <div class="d-flex justify-center align-item-center mt-20">
-                                <img src="./img/banner/mell_point.jpg" alt="" href="./point_index.php">
+                                <img class="mgr-15" src="./img/banner/mell_point.jpg" alt="" href="./point_index.php">
                             </div>
                         </div>
 
@@ -799,7 +799,7 @@ $myproductchoices = $rows[0]["productchoice"];
 
             <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
-        
+
         <script src="./js/Nav.js"></script>
         <script src="./js/product.js"></script>
 </body>

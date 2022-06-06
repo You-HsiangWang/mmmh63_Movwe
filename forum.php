@@ -500,6 +500,10 @@ $comments = $pdo->query($commentsql)->fetchAll();
                     </div>
  
                     <!-- 商品 -->
+                    <div class="d-flex align-item-center ">
+                            <div class="stick_desk"></div>
+                            <h3>商城周邊</h3>
+                        </div>
                     <div class="products store__main mt_20">
                         <div class="container_prodcts">
                             <div class="row_products">
