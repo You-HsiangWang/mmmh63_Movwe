@@ -184,6 +184,9 @@
         .duanduan{
             height:65px ;
         }
+        .mw_none{
+            display:none;
+        }
 
         /* 進度條動畫 */
         @keyframes runrunani {
@@ -243,6 +246,9 @@
             }
             .duanduan{
             height:30px ;
+            }
+            .mw_none{
+                display:block;
             }
         }
     </style>
@@ -436,8 +442,8 @@
                                         <li class="account_product">商品</li>
                                         <li class="account_forum">討論區</li>
                                         <li class="account_info">個人資料</li>
-                                        <li class="account_space01"><a href=""></a></li>
-                                        <li class="account_space02"><a href=""></a></li>
+                                        <li class="account_space01 mw_none"><a href=""></a></li>
+                                        <li class="account_space02 mw_none"><a href=""></a></li>
                                     </ul>
                                     <div class="account_underline"></div>
                                 </div>
@@ -1480,7 +1486,7 @@
                                                         <td data-title="運費">NTD 0</td>
                                                         
                                                         <td data-title="使用優惠券">NTD 250</td>
-                                                        <td data-title="總計金額"> <span class="gw">NTD 4,4745</span> </td>
+                                                        <td data-title="總計金額"> <span class="gw">NTD 4,745</span> </td>
                                                         
                                                     </tr>
                                                 </tbody>
@@ -1898,7 +1904,7 @@
                                                             <a href="#">
                                                                 <h2 class="mt-10 art-title"><?= $f['forum_title'] ?></h2>
                                                             </a>
-                                                            <p class="mt-10 too_long"><?= $f['forum_content'] ?></p>
+                                                            <p class="mt-10 too_long"><?= $f['forum_content_preview'] ?></p>
                                                             
                                                         </div>
                                                         <!-- 愛心 留言 收藏 hashtag -->
