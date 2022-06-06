@@ -24,6 +24,10 @@ $title = '預覽文章';
             width: 70%;
             margin: 120px auto;
         }
+        .content-img-wrap {
+            width: 60%;
+            margin: 48px auto;
+        };
     }
 </style>
 
@@ -96,7 +100,7 @@ $title = '預覽文章';
                                 <h3><?php echo $_SESSION['admin']['member_nickname'] ?></h3>
                             </div>
                         </div>
-                        <div><span>2022年06月07日 發表</span></div>
+                        <!-- <div><span>2022年06月07日 發表</span></div> -->
                     </div>
                     <div class="d-flex mt-20 align-item-center">
                         <div class="mr-10">
@@ -108,17 +112,17 @@ $title = '預覽文章';
                         <div class="content-img-wrap">
                             <img src="./img/forum/2521_a.jpg" alt="" class="forum_image">
                         </div>
-                        <p class="forum_content">
+                        <div class="forum_content" style="margin: 48px auto;">
 
-                        </p>
+                        </div>
                     </div>
-                    <div class="hashtag d-flex mt-30">
+                    <!-- <div class="hashtag d-flex mt-30">
                         <ul class="d-flex ar-filter">
                             <li class="filter_4w d-flex justify-center align-item-center">#韓劇心得</li>
                             <li class="filter_4w d-flex justify-center align-item-center ml-10">#2521</li>
                             <li class="filter_3w d-flex justify-center align-item-center ml-10">#南柱赫</li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="btn-bottom w-100 justify-center d-flex">
                     <button class="btn_4w btn-preview mt-10" style="margin-right: 20px;" onclick="gotopublish()">發布文章</button>
@@ -158,7 +162,7 @@ $title = '預覽文章';
             // image
             $('.forum_image').attr('src', `./img/forum/${fpreview.pic}`);
             // 內文
-            $('.forum_content').text(fpreview.content);
+            document.querySelector('.forum_content').innerHTML = fpreview.content;
 
             function gotopublish() {
                 $.post('api_forum_publish.php', fpreview, function(data) {

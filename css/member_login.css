@@ -1,8 +1,45 @@
 /* color */
 body {
     color: white;
+    cursor: default;
+}
+/* 頁面cursor */
+a{
+    cursor: pointer;
+}
+input {
+    cursor: text;
+}
+i {
+    cursor: pointer;
+}
+.login_form_email_feild{
+    cursor: text;
+}
+.login_form_submit_feild_wrap{
+    cursor: pointer;
+}
+.register_form_data_feild{
+    cursor: text;
+}
+.register_form_submit_feild{
+    cursor: pointer;
+}
+.login_form_password_feild{
+    cursor: text;
+}
+.login_form_keeplogin_btn{
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
 }
 
+/* 避免左右scroll bar出現 */
+.login_right_col{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
 /* 背景動畫-------------------------------------------------------------- */
 .login_bgc_slide {
     width: 100%;

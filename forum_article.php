@@ -46,6 +46,14 @@ $title = 'MOVWE-' . $getforumrows['forum_title'];
 
 <link rel="stylesheet" href="./css/mystyle.css">
 <link rel="stylesheet" href="./css/forum_article.css">
+<style>
+    @media screen and (min-width: 750px) {
+        .content-img-wrap{
+            width: 60%;
+            margin: 48px auto;
+        }
+    }
+</style>
 
 </head>
 

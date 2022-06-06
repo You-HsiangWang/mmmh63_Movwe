@@ -1,8 +1,15 @@
+/* cursor */
+body{
+    cursor: default;
+}
 /* nav------------------------------------------------- */
 .top_nav {
     background-color: rgba(43, 44, 49, 0.993);
 }
-
+.container{
+    /* padding-left: 64px; */
+    overflow-x: hidden;
+}
 /* 點數區 banner------------------------------------------- */
 /* 桌機版消失 */
 .p_web_d-none{
@@ -78,7 +85,7 @@ p {
 }
 
 .point-section_info_text span {
-    color: #10FFA2;
+    color: #F6BB42;
 }
 
 /* 點數區animation roll wrap 包了卡片介紹跟animate 用flexdirection切換 */
@@ -356,7 +363,9 @@ p {
 ------------------------ */
 
 @media screen and (min-width: 750px) {
-
+    /* .container{
+        padding-left: 64px;
+    } */
     /* 大小改成60% */
     .text__container.point_index_width-60_destkoponly {
         width: 60%;
