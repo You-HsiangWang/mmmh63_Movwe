@@ -521,6 +521,13 @@ a {
 }
 
 /* 文章 */
+.too_long{
+    display : inline-block;
+    overflow : hidden;
+    text-overflow : ellipsis;
+    white-space : nowrap;
+    width : 720px;
+}
 .short-one{
     height: 3px;
 }
