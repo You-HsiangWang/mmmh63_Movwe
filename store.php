@@ -222,7 +222,7 @@ $title = 'MOVWE-商城';
                     </div>
 
                     <div class="products_filter mt_24">
-                        <div class=" __btn main__btn " href=""><img src="./img/other/brand01.svg" alt=""></div>
+                        <div class=" __btn main__btn shadow" href=""><img src="./img/other/brand01.svg" alt=""></div>
                         <div class=" __btn star__btn" href=""><img src="./img/other/brand02.svg" alt=""></div>
                         <div class=" __btn dis__btn" href=""><img src="./img/other/brand03.svg" alt=""></div>
                         <div class=" __btn marvel__btn" href=""><img src="./img/other/brand04.svg" alt=""></div>

@@ -57,6 +57,10 @@ h3 {
     color: #10FFA2;
 }
 
+.shadow{
+    box-shadow: rgb(16 255 162) 0px 0px 10px;
+}
+
 /* banner */
 .mall_banner_s {
     display: block;
