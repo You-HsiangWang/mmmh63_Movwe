@@ -169,6 +169,22 @@
         .push__up p {
             color: #1A1D24;
         }
+        .art-mb{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+        }
+        .mb-artpic{
+            margin-top: 28px;
+            margin-left: 5px;
+        }
+        .pc-time{
+            display:none;
+        }
+        .duanduan{
+            height:65px ;
+        }
+
         /* 進度條動畫 */
         @keyframes runrunani {
             from {
@@ -215,7 +231,19 @@
             .kuang_bg {
                 transform: translate(-3vw, -105vh);
             }
-
+            .mb-time{
+                display:none;
+            }
+            .pc-time{
+            display:block;
+            }
+            .mb-artpic{
+                margin-top: 0px;
+                margin-left: 20px ;
+            }
+            .duanduan{
+            height:30px ;
+            }
         }
     </style>
     </head>
@@ -1299,7 +1327,7 @@
                                                     <tr>
                                                         <td class="order_tit" data-title="訂單編號">087-016836-003</td>
                                                         <td data-title="訂購日期">2022-06-08 09:51:20</td>
-                                                        <td data-title="金額總計">NTD4,200</td>
+                                                        <td data-title="金額總計">NTD4,745</td>
                                                         <td data-title="付款方式">線上刷卡</td>
                                                         <td data-title="訂單狀態">訂單成立</td>
                                                         <td data-title="配送情況">備貨中</td>
@@ -1371,7 +1399,7 @@
                                                 <thead>
                                                     <tr>
                                                         <th>商品名</th>
-                                                        <th>顏色</th>
+                                                        <th>選項</th>
                                                         <th>尺寸</th>
                                                         <th>價格</th>
                                                         <th>數量</th>
@@ -1387,11 +1415,11 @@
                                                             </div>
                                                             <div class="od-nam">孤單又燦爛的神-鬼怪 周邊娃娃</div>
                                                         </td>
-                                                        <td>白色</td>
+                                                        <td>蕎麥君</td>
                                                         <td>M</td>
-                                                        <td>NTD480</td>
+                                                        <td>NTD999</td>
                                                         <td>5</td>
-                                                        <td class="gw">NTD4,200</td>
+                                                        <td class="gw">NTD4,745</td>
                                                         
                                                 </tbody>
                                             </table>
@@ -1401,7 +1429,7 @@
                                                 <thead>
                                                     <tr>
                                                         <th>商品名</th>
-                                                        <th>顏色</th>
+                                                        <th>選項</th>
                                                         <th>尺寸</th>
                                                         <th>價格</th>
                                                         <th>數量</th>
@@ -1416,7 +1444,7 @@
                                                             </div>
                                                             <div class="od-info">
                                                                 <div class="od-nam">孤單又燦爛的神-鬼怪 周邊娃娃</div>
-                                                                <div class="od-col">顏色：白色</div>
+                                                                <div class="od-col">選項：蕎麥君</div>
                                                                 <div class="od-size">尺寸：M</div>
                                                             </div>
                                                         </td>
@@ -1425,7 +1453,7 @@
                                                                 數量：5
                                                             </div>
                                                             <div class="od-price">
-                                                                NTD480
+                                                                NTD999
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -1440,20 +1468,20 @@
                                                     <tr>
                                                         <th>商品總計</th>
                                                         <th>運費</th>
-                                                        <th>折扣</th>
+                                            
                                                         <th>使用優惠券</th>
                                                         <th>總計金額</th>
-                                                        <th>本次消費獲得MOVEWE點</th>
+                                                        
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td data-title="商品總計">NTD4,200</td>
-                                                        <td data-title="運費">NTD120</td>
-                                                        <td data-title="折扣">NTD100</td>
-                                                        <td data-title="使用優惠券">NTD180</td>
-                                                        <td data-title="總計金額"> <span class="gw">NTD2510</span> </td>
-                                                        <td data-title="本次消費獲得MOVEWE點">25pt</td>
+                                                        <td data-title="商品總計">NTD 4,995</td>
+                                                        <td data-title="運費">NTD 0</td>
+                                                        
+                                                        <td data-title="使用優惠券">NTD 250</td>
+                                                        <td data-title="總計金額"> <span class="gw">NTD 4,4745</span> </td>
+                                                        
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -1534,13 +1562,13 @@
                                                             </div>
                                                         </div>
                                                         <!-- 發文時間 -->
-                                                        <div><span>2022-06-03 09:37:27</span></div>
+                                                        <div><span class="pc-time">2022-06-03 09:37:27</span></div>
                                                     </div>
                                                     <div>
                                                         <a href="#">
-                                                            <h2 class="mt-10 art-title">#台劇《村裡來了個暴走女外科》原聲帶音樂分享 有雷</h2>
+                                                            <h2 class="mt-10 art-title too_long">#台劇《村裡來了個暴走女外科》原聲帶音樂分享 有雷</h2>
                                                         </a>
-                                                        <p class="mt-10">最近很常在臉書刷到一部台劇的預告，而且預告就超火辣XD就好奇點開這部劇，看得差點笑瘋 沒錯就是由...</p>
+                                                        <p class="mt-10 too_long">最近很常在臉書刷到一部台劇的預告，而且預告就超火辣XD就好奇點開這部劇，看得差點笑瘋 沒錯就是由...</p>
                                                     </div>
                                                     <!-- 愛心 留言 收藏 hashtag -->
                                                     <div class="d-flex justify-between mt-30">
@@ -1587,8 +1615,11 @@
                                                 </div>
                                                 <!-- 文章圖(右邊) -->
                                                 <div>
-                                                    <div class="card-img-wrap ml-20">
-                                                        <img src="./img/movie-poster/w_doctor.jpg" alt="">
+                                                    <div class="art-mb">
+                                                        <div><span class="mb-time">2022-06-03 08:25:43</span></div>
+                                                        <div class="card-img-wrap ml-20 mb-artpic">
+                                                            <img src="./img/movie-poster/w_doctor.jpg" alt="">
+                                                        </div>                                                       
                                                     </div>
                                                 </div>
                                             </div>
@@ -1618,13 +1649,13 @@
                                                             </div>
                                                         </div>
                                                         <!-- 發文時間 -->
-                                                        <div><span>2022-06-02 09:37:27</span></div>
+                                                        <div><span class="pc-time">2022-06-02 09:37:27</span></div>
                                                     </div>
                                                     <div>
                                                         <a href="#">
-                                                            <h2 class="mt-10 art-title">✨2022韓劇清單✨男神們要回歸了</h2>
+                                                            <h2 class="mt-10 art-title too_long">✨2022韓劇清單✨男神們要回歸了</h2>
                                                         </a>
-                                                        <p class="mt-10">以下排序不分排名，也並非播出時間順序，隨機排序：1.《警校菜鳥》姜丹尼爾 2.《社內相親》安孝燮 3《...</p>
+                                                        <p class="mt-10 too_long">以下排序不分排名，也並非播出時間順序，隨機排序：1.《警校菜鳥》姜丹尼爾 2.《社內相親》安孝燮 3《...</p>
                                                     </div>
                                                     <!-- 愛心 留言 收藏 hashtag -->
                                                     <div class="d-flex justify-between mt-30">
@@ -1671,8 +1702,11 @@
                                                 </div>
                                                 <!-- 文章圖(右邊) -->
                                                 <div>
-                                                    <div class="card-img-wrap ml-20">
-                                                        <img src="./img/member/account.jfif" alt="">
+                                                    <div class="art-mb">
+                                                        <div><span class="mb-time">2022-06-02 09:37:27</span></div>
+                                                        <div class="card-img-wrap ml-20 mb-artpic">
+                                                            <img src="./img/member/account.jfif" alt="">
+                                                        </div>                                                       
                                                     </div>
                                                 </div>
                                             </div>
@@ -1703,13 +1737,13 @@
                                                             </div>
                                                         </div>
                                                         <!-- 發文時間 -->
-                                                        <div><span>2022-06-06 19:21:48</span></div>
+                                                        <div><span class="pc-time">2022-06-06 19:21:48</span></div>
                                                     </div>
                                                     <div>
                                                         <a href="#">
-                                                            <h2 class="mt-10 art-title">⚠️重度雷 媽的多重宇宙影評</h2>
+                                                            <h2 class="mt-10 art-title too_long">⚠️重度雷 媽的多重宇宙影評</h2>
                                                         </a>
-                                                        <p class="mt-10">媽的多重宇宙 這部我打得很主觀 其實我想了整整一天才有辦法恢復情緒好好講解影評 本篇不涉及爛翻譯的問題...</p>
+                                                        <p class="mt-10 too_long">媽的多重宇宙 這部我打得很主觀 其實我想了整整一天才有辦法恢復情緒好好講解影評 本篇不涉及爛翻譯的問題...</p>
                                                     </div>
                                                     <!-- 愛心 留言 收藏 hashtag -->
                                                     <div class="d-flex justify-between mt-30">
@@ -1756,9 +1790,13 @@
                                                 </div>
                                                 <!-- 文章圖(右邊) -->
                                                 <div>
-                                                    <div class="card-img-wrap ml-20">
-                                                        <img src="./img/movie-poster/mama.jpg" alt="">
+                                                    <div class="art-mb">
+                                                        <div><span class="mb-time">2022-06-01 11:16:07</span></div>
+                                                        <div class="card-img-wrap ml-20 mb-artpic">
+                                                            <img src="./img/movie-poster/mama.jpg" alt="">
+                                                        </div>                                                       
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -1809,6 +1847,9 @@
                                                 </button>
                                             </div>
                                         </div>
+
+                                                                           
+
                                         <?php foreach ($forumrows as $f) : ?>
                                             <div class="art-card">
                                                 <svg class="art-card-checked appear" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1851,7 +1892,7 @@
                                                                 </div>
                                                             </div>
                                                             <!-- 發文時間 -->
-                                                            <div><span><?= $f['forum_uploadtime'] ?></span></div>
+                                                            <div><span class="pc-time"><?= $f['forum_uploadtime'] ?></span></div>
                                                         </div>
                                                         <div>
                                                             <a href="#">
@@ -1912,9 +1953,15 @@
                                                     </div>
                                                     <!-- 文章圖(右邊) -->
                                                     <div>
-                                                        <div class="card-img-wrap ml-20">
-                                                            <img src="./img/forum/<?= $f['forum_pic'] ?>" alt="">
+                                                        <div class="art-mb">
+                                                            <div><span class="mb-time"><?= $f['forum_uploadtime'] ?></span></div>
+                                                            <div class="card-img-wrap ml-20 mb-artpic">
+                                                                <img src="./img/forum/<?= $f['forum_pic'] ?>" alt="">
+                                                            </div>                                                       
                                                         </div>
+                                                        <!-- <div class="card-img-wrap ml-20">
+                                                            <img src="./img/forum/<?= $f['forum_pic'] ?>" alt="">
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -1948,11 +1995,11 @@
                                                             </div>
                                                         </div>
                                                         <!-- 發文時間 -->
-                                                        <div><span>2022-06-01 22:23:49</span></div>
+                                                        <div><span class="pc-time">2022-06-01 22:23:49</span></div>
                                                     </div>
                                                     <div>
                                                         <a href="#">
-                                                            <h2 class="mt-10 art-title">#閒聊 愛死機器人的吉巴羅劇情有點不懂？</h2>
+                                                            <h2 class="mt-10 art-title too_long">#閒聊 愛死機器人的吉巴羅劇情有點不懂？</h2>
                                                         </a>
                                                         <p class="mt-10 too_long">愛死機器人前導預告剛出來時，就超超超期待 吉巴羅 這集，因為不論美術還有帶宗教詭異氣息的風格，都非常對我胃口。而星期五看完後，依然覺得這集不負眾望，就是超讚。</p>
                                                     </div>
@@ -2001,8 +2048,11 @@
                                                 </div>
                                                 <!-- 文章圖(右邊) -->
                                                 <div>
-                                                    <div class="card-img-wrap ml-20">
-                                                        <img src="./img/talls_img/robot.jpg" alt="">
+                                                    <div class="art-mb">
+                                                        <div><span class="mb-time">2022-06-01 22:23:49</span></div>
+                                                        <div class="card-img-wrap ml-20 mb-artpic">
+                                                            <img src="./img/talls_img/robot.jpg" alt="">
+                                                        </div>                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -2071,7 +2121,7 @@
                                             <div class="info_gen03">
                                                 <div class="info_gen_intro">簡介</div>
                                                 <?php foreach ($getP as $Pinfo) : ?>
-                                                    <input id="insfo_acc" class="acc_input acc_info" type="text" name='acc_intro' value="<?= $Pinfo['member_info'] ?>">
+                                                    <textarea id="insfo_acc" class="acc_input acc_info duanduan" type="text" name='acc_intro' value=""><?= $Pinfo['member_info'] ?></textarea>
                                                 <?php endforeach; ?>
                                                 <p id="infoInput"></p> 
                                             </div>

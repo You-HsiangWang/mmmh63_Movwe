@@ -102,6 +102,9 @@ ul li {
 a {
     text-decoration: none;
 }
+.w-100{
+    width: 100%;
+}
 
 
 /* ---------account------------ */
@@ -526,7 +529,7 @@ a {
     overflow : hidden;
     text-overflow : ellipsis;
     white-space : nowrap;
-    width : 720px;
+    width : 220px;
 }
 .short-one{
     height: 3px;
@@ -975,6 +978,10 @@ th, td{
     }
  
     /* 文章 */
+    .too_long{
+
+        width : 720px;
+    }
     .posticon-hashtag{
         display: flex;
         justify-content: space-between;
