@@ -320,6 +320,10 @@ $title = 'Movwe-訂單完成';
         <script src="./js/Nav.js"></script>
         <script src="./js/order_finish.js"></script>
 
+        <?php if(isset($_SESSION['cart'])){
+            unset($_SESSION['cart']);
+            unset($_SESSION['cartcart']);
+        }; ?>
 
 </body>
 
