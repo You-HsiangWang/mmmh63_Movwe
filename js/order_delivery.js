@@ -28,3 +28,27 @@ $('.delivery').click(function () {
 
     $('#deliveryFee').removeClass('d-none');
 });
+
+
+// 把資料帶到下一步
+
+function GotoPay() {
+    const memberName = document.querySelector('input[name="membername"]').value; 
+
+    const memberAddress = document.querySelector('input[name="memberaddress"]').value; 
+
+    const memberPhone = document.querySelector('input[name="memberphone"]').value; 
+
+    // console.log(memberName, memberAddress, memberPhone);
+
+    const deliveryInfo = {
+        'memberName': memberName,
+        'memberAddress': memberAddress,
+        'memberPhone': memberPhone,
+    };
+
+    $.get('api_delivery.php', deliveryInfo, function (data) { console.log(data); }, 'json')
+
+
+
+};

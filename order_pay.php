@@ -14,10 +14,10 @@ $title = 'Movwe-付款資訊';
 </head>
 
 <body>
-<?php include __DIR__ . '/parts/movwe_nav_fin.php' ?>
+    <?php include __DIR__ . '/parts/movwe_nav_fin.php' ?>
     <div class="layout">
 
-    <?php include __DIR__ . '/parts/movwe_nav_leftdiv.php' ?>
+        <?php include __DIR__ . '/parts/movwe_nav_leftdiv.php' ?>
 
         <div class="container">
 
@@ -121,29 +121,29 @@ $title = 'Movwe-付款資訊';
                             <th>小計</th>
                         </tr>
                         <?php foreach ($_SESSION['cart'] as $f) : ?>
-                        <tr id="text">                  
-                            <td>
-                                <img src="./img/mall/1.jpg" alt="">
-                            </td>
-                            <td>
-                                <h4><?= $f['ProductName'] ?></h4>
-                            </td>
-                            <td>
-                                <h4><?= $f['ProductChoice'] ?></h4>
-                            </td>
-                            <td>
-                                <h4><?= $f['ProductSize'] ?></h4>
-                            </td>
-                            <td>
-                                <h4><?= $f['ProductQuantity'] ?></h4>
-                            </td>
-                            <td>
-                                <h4 id="singlePrice" data-value="<?= $f['ProductPrice'] ?>"><?= $f['ProductPrice'] ?></h4>
-                            </td>
-                            <td>
-                                <h4 id="subTotalPrice"><?= $f['SubTotalPrice'] ?></h4>
-                            </td>
-                        </tr>
+                            <tr id="text">
+                                <td>
+                                    <img src="./img/mall/1.jpg" alt="">
+                                </td>
+                                <td>
+                                    <h4><?= $f['ProductName'] ?></h4>
+                                </td>
+                                <td>
+                                    <h4><?= $f['ProductChoice'] ?></h4>
+                                </td>
+                                <td>
+                                    <h4><?= $f['ProductSize'] ?></h4>
+                                </td>
+                                <td>
+                                    <h4><?= $f['ProductQuantity'] ?></h4>
+                                </td>
+                                <td>
+                                    <h4 id="singlePrice" data-value="<?= $f['ProductPrice'] ?>"><?= $f['ProductPrice'] ?></h4>
+                                </td>
+                                <td>
+                                    <h4 id="subTotalPrice"><?= $f['SubTotalPrice'] ?></h4>
+                                </td>
+                            </tr>
                         <?php endforeach; ?>
 
                     </table>
@@ -201,21 +201,23 @@ $title = 'Movwe-付款資訊';
                         </svg>
                     </p>
                 </div>
-                <div class="delivery-func d-flex justify-around mt-30 d-none">
-                    <!-- 宅配 -->
-                    <div class="delivery delivery-home d-flex flex-col justify-center align-item-center">
-                        <svg width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 11.9375L26.3906 1L37.1328 6.46875M1 11.9375V41.625L26.3906 51M1 11.9375L13.6953 17.2109M47.875 11.9375L26.3906 22.4844M47.875 11.9375V41.625L26.3906 51M47.875 11.9375L37.1328 6.46875M26.3906 22.4844V51M26.3906 22.4844L13.6953 17.2109M13.6953 17.2109L37.1328 6.46875" stroke="#10FFA2" stroke-width="1.5" />
-                        </svg>
-                        <h4 class="mt-10 main-color">宅配到府</h4>
-                    </div>
-                    <!-- 711取貨 -->
-                    <div class="delivery delivery-711 d-flex flex-col justify-center align-item-center">
-                        <svg width="36" height="50" viewBox="0 0 36 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24.2497 17.4349C24.2497 21.1992 21.1982 24.2507 17.434 24.2507C13.6697 24.2507 10.6182 21.1992 10.6182 17.4349C10.6182 13.6707 13.6697 10.6191 17.434 10.6191C21.1982 10.6191 24.2497 13.6707 24.2497 17.4349Z" stroke="#fff" stroke-width="1.5" />
-                            <path d="M34.7763 18.1102C34.7763 20.4726 33.9946 23.5397 32.7031 26.8757C31.4173 30.1967 29.6506 33.7229 27.7357 36.9831C25.8204 40.2442 23.7676 43.2206 21.9169 45.4459C20.9909 46.5594 20.1263 47.4718 19.3643 48.1353C18.6948 48.7183 18.1568 49.0623 17.7632 49.2134C17.3695 49.0623 16.8315 48.7183 16.162 48.1353C15.4001 47.4718 14.5354 46.5594 13.6094 45.4459C11.7588 43.2206 9.70597 40.2442 7.79058 36.9831C5.87571 33.7229 4.10901 30.1967 2.82327 26.8757C1.53167 23.5397 0.75 20.4726 0.75 18.1102C0.75 8.50869 8.38067 0.75 17.7632 0.75C27.1457 0.75 34.7763 8.50869 34.7763 18.1102Z" stroke="#fff" stroke-width="1.5" />
-                        </svg>
-                        <h4 class="mt-10">711取貨</h4>
+                <div class="delivery-func mt-30 d-none">
+                    <div class="d-flex justify-around">
+                        <!-- 宅配 -->
+                        <div class="delivery delivery-home d-flex flex-col justify-center align-item-center">
+                            <svg width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 11.9375L26.3906 1L37.1328 6.46875M1 11.9375V41.625L26.3906 51M1 11.9375L13.6953 17.2109M47.875 11.9375L26.3906 22.4844M47.875 11.9375V41.625L26.3906 51M47.875 11.9375L37.1328 6.46875M26.3906 22.4844V51M26.3906 22.4844L13.6953 17.2109M13.6953 17.2109L37.1328 6.46875" stroke="#10FFA2" stroke-width="1.5" />
+                            </svg>
+                            <h4 class="mt-10 main-color">宅配到府</h4>
+                        </div>
+                        <!-- 711取貨 -->
+                        <div class="delivery delivery-711 d-flex flex-col justify-center align-item-center">
+                            <svg width="36" height="50" viewBox="0 0 36 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.2497 17.4349C24.2497 21.1992 21.1982 24.2507 17.434 24.2507C13.6697 24.2507 10.6182 21.1992 10.6182 17.4349C10.6182 13.6707 13.6697 10.6191 17.434 10.6191C21.1982 10.6191 24.2497 13.6707 24.2497 17.4349Z" stroke="#fff" stroke-width="1.5" />
+                                <path d="M34.7763 18.1102C34.7763 20.4726 33.9946 23.5397 32.7031 26.8757C31.4173 30.1967 29.6506 33.7229 27.7357 36.9831C25.8204 40.2442 23.7676 43.2206 21.9169 45.4459C20.9909 46.5594 20.1263 47.4718 19.3643 48.1353C18.6948 48.7183 18.1568 49.0623 17.7632 49.2134C17.3695 49.0623 16.8315 48.7183 16.162 48.1353C15.4001 47.4718 14.5354 46.5594 13.6094 45.4459C11.7588 43.2206 9.70597 40.2442 7.79058 36.9831C5.87571 33.7229 4.10901 30.1967 2.82327 26.8757C1.53167 23.5397 0.75 20.4726 0.75 18.1102C0.75 8.50869 8.38067 0.75 17.7632 0.75C27.1457 0.75 34.7763 8.50869 34.7763 18.1102Z" stroke="#fff" stroke-width="1.5" />
+                            </svg>
+                            <h4 class="mt-10">711取貨</h4>
+                        </div>
                     </div>
                 </div>
                 <!-- 收件資料 -->
@@ -237,11 +239,19 @@ $title = 'Movwe-付款資訊';
                         </svg>
                     </p>
                 </div>
-                <div class="delivery-info mt-30 d-flex justify-center align-item-center d-none">
-                    <div>
-                        <h4 id="memberName" class="main-color border-bottom-main-color">王笠鴿</h4>
-                        <p id="memberAddress" class="main-color border-bottom-main-color">臺北市信義區松高路68號</p>
-                        <p id="memberPhone" class="main-color border-bottom-main-color">0981012729</p>
+                <div class="delivery-info mt-30 d-none">
+                    <div class="m-0" >
+
+                        <h4 id="memberName" class="main-color border-bottom-main-color">
+                            <?= $_SESSION['deliveryInfo']['memberName'] ?>
+                        </h4>
+                        <p id="memberAddress" class="main-color border-bottom-main-color">
+                            <?= $_SESSION['deliveryInfo']['memberAddress'] ?>
+                        </p>
+                        <p id="memberPhone" class="main-color border-bottom-main-color">
+                            <?= $_SESSION['deliveryInfo']['memberPhone'] ?>
+                        </p>
+
                     </div>
                 </div>
                 <!-- 線上付款 + 總計金額 -->
@@ -249,7 +259,7 @@ $title = 'Movwe-付款資訊';
                     <div class="stick_desk"></div>
                     <h3 class="main-color">線上付款</h3>
                 </div>
-                <div class="mt-10 pointer pb-10" id="deliveryFunc">
+                <div class="mt-10 pointer pb-10">
                     <p class="white">請以信用卡完成線上付款
                         <svg class="ml-10" width="6" height="10" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1427_26206)">
@@ -357,7 +367,6 @@ $title = 'Movwe-付款資訊';
             <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
 
-        <?php include __DIR__ . '/parts/movwe_scripts.php' ?>
         <script src="./js/order_pay.js"></script>
         <script src="./js/Nav.js"></script>
 
