@@ -1038,7 +1038,7 @@
             background-color: rgba(255, 255, 255, 0.616);
             outline-style: none;
             font-size: 18px;
-            color: rgb(21, 21, 21);
+            color: white;
         }
 
 
