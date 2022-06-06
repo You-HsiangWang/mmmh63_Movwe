@@ -799,6 +799,7 @@ $myproductchoices = $rows[0]["productchoice"];
 
             <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
+        
         <script src="./js/Nav.js"></script>
         <script src="./js/product.js"></script>
 </body>

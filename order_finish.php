@@ -317,9 +317,8 @@ $title = 'Movwe-訂單完成';
             <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
 
-        <?php include __DIR__ . '/parts/movwe_scripts.php' ?>
-        <script src="./js/order_finish.js"></script>
         <script src="./js/Nav.js"></script>
+        <script src="./js/order_finish.js"></script>
 
 
 </body>
