@@ -367,8 +367,9 @@ $title = 'Movwe-付款資訊';
             <?php include __DIR__ . '/parts/movwe_footer.php' ?>
         </div>
 
-        <script src="./js/order_pay.js"></script>
         <script src="./js/Nav.js"></script>
+
+        <script src="./js/order_pay.js"></script>
 
 </body>
 

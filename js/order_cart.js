@@ -28,11 +28,11 @@ function deleteFunction(b) {
 
 // var q = parseInt(document.getElementById('quantity').value);
 
-var singlePrice = document.getElementById('singlePrice').getAttribute("data-value");
+// var singlePrice = document.getElementById('singlePrice').getAttribute("data-value");
 
 // console.log(singlePrice);
 
-var subTotalPrice = `<h4>${singlePrice * q}</h4>`;
+// var subTotalPrice = `<h4>${singlePrice * q}</h4>`;
 
 function addFunction(a) {
     q = parseInt(document.getElementById(`quantity${a}`).value);
