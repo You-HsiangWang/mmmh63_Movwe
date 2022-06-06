@@ -13,7 +13,7 @@ $title = 'Movwe-我要發文';
 <link rel="stylesheet" href="./css/forum_edit.css">
 
 <!-- TinyMCE v4.7.6 -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.7.6/tinymce.min.js"></script> -->
+<script src="https://cdn.tiny.cloud/1/6q602jo8ot6n13t4spk93btfccpvq1h77xozuoxwhyto9dij/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 
 </head>
 
@@ -116,7 +116,9 @@ $title = 'Movwe-我要發文';
                     </div>
                 </div>
                 <div class="mt-20">
-                    <textarea id="editor1" style="width: 100%; height: 50vh;outline-style: none;"></textarea>
+                    <form method="post">
+                        <textarea id="editor1" style="width: 100%; height: 50vh;outline-style: none;"></textarea>
+                    </form>
                 </div>
 
                 <div class="btn-bottom">
@@ -134,6 +136,16 @@ $title = 'Movwe-我要發文';
     <script src="./js/dropdown_customstyle.js"></script>
     <script src="./js/forum_edit.js"></script>
     <script>
+        // tinymce 初始化
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'a11ychecker advcode casechange export formatpainter image editimage linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tableofcontents tinycomments tinymcespellchecker',
+            toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter image editimage pageembed permanentpen table tableofcontents',
+            toolbar_mode: 'floating',
+            tinycomments_mode: 'embedded',
+            tinycomments_author: 'Author name',
+        });
+
         $('.forum_type').on('click', function() {
             $(this).addClass('forum_type_active');
             $(this).siblings().removeClass('forum_type_active');
@@ -143,13 +155,18 @@ $title = 'Movwe-我要發文';
             const ftitle = $('#forum_title').val();
             const ftype = $('.forum_type.forum_type_active').text();
             const fimage = $('#forum_image').val().split('\\')[$('#forum_image').val().split('\\').length - 1];
-            const fcontent = $('#editor1').val();
-            console.log(ftitle, ftype, fimage, fcontent);
+            // const fcontent = $('#editor1').val();
+            // tinymce
+            const testtest = tinymce.get("editor1").getContent();
+            const fcontent = testtest.replace(/<[^>]+>/g, '');
+            console.log(testtest);
+            console.log(ftitle, ftype, fimage);
             const preObj = {
                 'title': ftitle,
                 'type': ftype,
                 'pic': fimage,
-                'content': fcontent,
+                'content': testtest,
+                'contentstrut': fcontent,
             };
             window.sessionStorage.setItem('foruminput', JSON.stringify(preObj));
             location.href = 'forum_preview.php';

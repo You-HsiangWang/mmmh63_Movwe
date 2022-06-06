@@ -120,7 +120,7 @@ $rowShop = $stmtShop->fetchAll();
                 </div>
                 <!-- TODO: 判斷到第幾頁 拿不同的a id 往右滑的箭頭 連a連結 id -->
                 <div class="point-ce-section_card-roll-limited-arrow">
-                    <a href="#coupon-limited_3"><i class="fa-solid fa-angle-right"></i></a>
+                    <a><i class="fa-solid fa-angle-right"></i></a>
                 </div>
             </div>
             <!-- OTT 一般優惠券 -->
@@ -170,7 +170,7 @@ $rowShop = $stmtShop->fetchAll();
                 </div>
                 <div class="point-ce-section_card-roll-normal-arrow">
                     <!-- #coupon-normal-ott_3 -->
-                    <a href=""><i class="fa-solid fa-angle-right"></i></a>
+                    <a><i class="fa-solid fa-angle-right"></i></a>
                 </div>
             </div>
             <!-- 商城用 一般優惠券 -->
@@ -218,7 +218,7 @@ $rowShop = $stmtShop->fetchAll();
                 </div>
                 <div class="point-ce-section_card-roll-normal-arrow">
                     <!-- #coupon-normal-ott_3 -->
-                    <a href=""><i class="fa-solid fa-angle-right"></i></a>
+                    <a><i class="fa-solid fa-angle-right"></i></a>
                 </div>
             </div>
 

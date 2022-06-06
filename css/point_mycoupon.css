@@ -1,3 +1,10 @@
+/* cursor */
+body{
+    cursor: default;
+}
+.point-ce-section_coupon{
+    cursor: pointer;
+}
 /* nav------------------------------------------------- */
 .top_nav {
     background-color: rgba(43, 44, 49, 0.993);
@@ -27,6 +34,10 @@
     margin-right: 10px;
 }
 
+.container{
+    /* padding-left: 64px; */
+    overflow-x: hidden;
+}
 /* 點數區 說明一 標題文字 */
 .point-mycp-section_title h2 {
     color: white;

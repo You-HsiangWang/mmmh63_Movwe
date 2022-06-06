@@ -1,6 +1,17 @@
+/* cursor */
+body{
+    cursor: default;
+}
+.point-ce-section_coupon{
+    cursor: pointer;
+}
 /* nav------------------------------------------------- */
 .top_nav {
     background-color: rgba(43, 44, 49, 0.993);
+}
+.container{
+    /* padding-left: 64px; */
+    overflow-x: hidden;
 }
 /* 限量優惠券 -------------------------------------------------------------------------------------------- */
 /* 第一個row 滿版的 */

@@ -217,7 +217,7 @@ $comments = $pdo->query($commentsql)->fetchAll();
                                                 <h4 class="mt-10"><?= $f['forum_title'] ?></h4>
                                             </a>
                                             <p class="mt-10 multiple">
-                                                <?= $f['forum_content'] ?>
+                                                <?= $f['forum_content_preview'] ?>
                                             </p>
                                             <br>
                                             <?php foreach ($tags as $t) {

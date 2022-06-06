@@ -121,13 +121,13 @@ addTofild.addEventListener('click',()=>{
 
 
 // 新增儲存網址
-$('.go_to_ott_box > .saveurl').on('click', function () {
-    console.log('有了');
-    const nowurl = window.location.href;
-    $.get('api_geturl.php', { nowurl }, function (data) {
-        console.log(data);
-    }, 'json');
-});
+// $('.go_to_ott_box > .saveurl').on('click', function () {
+//     console.log('有了');
+//     const nowurl = window.location.href;
+//     $.get('api_geturl.php', { nowurl }, function (data) {
+//         console.log(data);
+//     }, 'json');
+// });
 
 
 
