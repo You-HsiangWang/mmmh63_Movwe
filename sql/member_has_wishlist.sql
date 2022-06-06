@@ -2,10 +2,10 @@
 -- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
--- 主機： 127.0.0.1
--- 產生時間： 2022-06-04 13:56:45
--- 伺服器版本： 10.4.24-MariaDB
--- PHP 版本： 8.0.18
+-- 主機： localhost
+-- 產生時間： 2022 年 06 月 06 日 05:29
+-- 伺服器版本： 10.4.21-MariaDB
+-- PHP 版本： 8.0.17
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
