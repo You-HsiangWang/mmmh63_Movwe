@@ -2,7 +2,7 @@
 
 require './parts/movwe_connect_db.php';
 $pageName = 'my_film_list';
-$title = 'MOVWE-我的片單';
+$title = 'MOVWE-搜尋結果';
 
 // 拿到所有電影
 // $getFilmList = "SELECT * FROM `video` WHERE 1 ORDER BY RAND() LIMIT 10";
