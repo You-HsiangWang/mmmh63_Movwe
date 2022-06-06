@@ -188,7 +188,7 @@ $title = 'Movwe-付款資訊';
                     <h3 class="main-color">物流方式</h3>
                 </div>
                 <div class="mt-10 pointer border-bottom-main-color pb-10" id="deliveryFunc">
-                    <p class="white">查看已選取的物流方式
+                    <p class="white deliveryway">查看已選取的物流方式
                         <svg class="ml-10" width="6" height="10" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1427_26206)">
                                 <path d="M1.2498 15.001C0.929961 15.001 0.609961 14.8789 0.366211 14.6348C-0.12207 14.1465 -0.12207 13.3555 0.366211 12.8672L5.73418 7.50097L0.366211 2.13379C-0.12207 1.64551 -0.12207 0.854492 0.366211 0.366211C0.854492 -0.12207 1.64551 -0.12207 2.13379 0.366211L8.38379 6.61621C8.87207 7.10449 8.87207 7.8955 8.38379 8.38379L2.13379 14.6338C1.88965 14.8799 1.56973 15.001 1.2498 15.001Z" fill="#fff"></path>
@@ -226,7 +226,7 @@ $title = 'Movwe-付款資訊';
                     <h3 class="main-color">收件資料</h3>
                 </div>
                 <div class="mt-10 border-bottom-main-color pb-10" id="deliveryInfo">
-                    <p class="white">查看收件資料
+                    <p class="white seedeliveryinfo">查看收件資料
                         <svg class="ml-10" width="6" height="10" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1427_26206)">
                                 <path d="M1.2498 15.001C0.929961 15.001 0.609961 14.8789 0.366211 14.6348C-0.12207 14.1465 -0.12207 13.3555 0.366211 12.8672L5.73418 7.50097L0.366211 2.13379C-0.12207 1.64551 -0.12207 0.854492 0.366211 0.366211C0.854492 -0.12207 1.64551 -0.12207 2.13379 0.366211L8.38379 6.61621C8.87207 7.10449 8.87207 7.8955 8.38379 8.38379L2.13379 14.6338C1.88965 14.8799 1.56973 15.001 1.2498 15.001Z" fill="#fff"></path>
@@ -287,11 +287,11 @@ $title = 'Movwe-付款資訊';
                         <div class="inputCard d-flex align-item-center pb-10">
                             <h4 class="mr-20">信用卡卡號</h4>
                             <!-- <h4 class="mr-20">有效日期</h4> -->
-                            <input type="text">
+                            <input class="creditCardText" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
                         </div>
                         <div class="inputCard d-flex align-item-center mt-10 pb-10">
                             <h4 class="mr-20">有效日期</h4>
-                            <input type="text">
+                            <input type="text" class="creditcarddate" placeholder="mm/yy">
                         </div>
                         <div class="inputCard d-flex align-item-center mt-10 pb-10">
                             <h4 class="mr-20">持卡人姓名</h4>
@@ -299,7 +299,7 @@ $title = 'Movwe-付款資訊';
                         </div>
                         <div class="inputCard d-flex align-item-center mt-10 pb-10">
                             <h4 class="mr-20">輸入安全碼</h4>
-                            <input type="text">
+                            <input type="text" placeholder="cvv">
                         </div>
                     </div>
                 </div>

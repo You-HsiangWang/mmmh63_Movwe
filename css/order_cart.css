@@ -57,6 +57,14 @@
 
 }
 
+input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 .booking-list table img {
     /* width: 100%; */
     width: 100px;
@@ -71,6 +79,10 @@
     height: 20px;
     background-color: transparent;
     border: none;
+}
+
+.button-number:hover {
+    cursor: pointer;
 }
 
 .quantity-input {

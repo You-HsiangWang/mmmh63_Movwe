@@ -30,3 +30,13 @@ $('#deliveryInfo').click(function () {
     $('.delivery-info').toggleClass('d-none');
     $('#deliveryInfo').toggleClass('border-bottom-main-color');
 });
+
+// 信用卡格式
+
+$('.creditCardText').keyup(function() {
+    var foo = $(this).val().split("-").join(""); // remove hyphens
+    if (foo.length > 0) {
+      foo = foo.match(new RegExp('.{1,4}', 'g')).join("-");
+    }
+    $(this).val(foo);
+  });
