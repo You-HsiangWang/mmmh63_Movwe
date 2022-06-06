@@ -76,6 +76,7 @@ h3 {
 .title {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .title_item {
@@ -132,6 +133,7 @@ h3 {
 .marvel__btn {
     width: 49%;
     border-radius: 5%;
+    padding: 8px 0;
     z-index: 5;
    
 }
