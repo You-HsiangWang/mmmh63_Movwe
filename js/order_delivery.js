@@ -4,6 +4,7 @@ $('#cartInfo').click(function () {
     console.log('hello', this);
     $('.booking-list').toggleClass('d-none');
     $('#cartInfo').toggleClass('border-bottom-main-color');
+    $('#cartInfo .arrow').toggleClass('rotate-00');
 });
 
 
@@ -13,6 +14,7 @@ $('#discountInfo').click(function () {
     console.log('hello', this);
     $('.discount-info').toggleClass('d-none');
     $('#discountInfo').toggleClass('border-bottom-main-color');
+    $('#discountInfo .arrow').toggleClass('rotate-00');
 });
 
 // 物流選擇
