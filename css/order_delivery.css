@@ -33,6 +33,15 @@
             transform: scale(1);
         }
 
+        .arrow{
+            transform: rotate(90deg);
+            transition: .3s;
+        }
+
+        .rotate-00 {
+            transform: rotate(0deg);
+        }
+
         /* 進度條 */
 
         .progress-bar {
