@@ -147,7 +147,7 @@ $title = 'MOVWE-孔劉';
                     <div class="wish__lamp__box">
                         <div class="home__make__a__wish">
                             <p>
-                                Make a wish?
+                                來許個願吧～
                             </p>
                         </div>
                         <img class="magic__lamp-1" src="./img/center/magic_lamp_hover.png" alt="">
